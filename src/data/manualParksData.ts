@@ -29,6 +29,25 @@ export interface ManualParkData {
  */
 export const manualParksDB: Record<string, ManualParkData> = {
   // By ID
+  "donaupark": {
+    amenities: ["Grünfläche", "Sitzgelegenheiten", "Schatten", "Teich"],
+    publicTransport: ["U1 VIC/UNO City"],
+    description: 'Der Donaupark wurde 1964 im Zuge der "Wiener Internationalen Gartenschau 1964" (WIG 1964) unter der Gesamtplanung des damaligen Stadtgartendirektors Prof. Ing. Alfred Auer (1922 bis 2002) von einer ehemaligen Mülldeponie zu einer Parkanlage umgestaltet.',
+    accessibility: "Gut zugänglich, größtenteils ebene Wege",
+    links: [
+      {
+        title: "Donaupark auf Wikipedia",
+        url: "https://de.wikipedia.org/wiki/Donaupark",
+        type: "wiki"
+      },
+      {
+        title: "Offizielle Seite der Stadt Wien",
+        url: "https://www.wien.gv.at/umwelt/parks/anlagen/donaupark.html",
+        type: "official"
+      }
+    ]
+
+  },
   
   "stadtpark": {
     name: "Stadtpark",
@@ -73,14 +92,9 @@ export const manualParksDB: Record<string, ManualParkData> = {
     address: "Jesuitenwiese - Prater, 1020 Wien",
     amenities: ["Grünfläche", "Sitzgelegenheiten", "Schatten"],
     publicTransport: ["U2 Messe-Prater"],
+    description: "Die Jesuitenwiese ist eine Parkanlage im Prater.",
+    accessibility: "Flach, jedoch wenig asphaltierte Wege",
     tips: ["Volksstimme-Fest am letzten Wochenende in den Sommerferien"]
-  },
-  "donaupark": {
-    name: "Donaupark",
-    district: 22,
-    address: "Donaupark, 1220 Wien",
-    amenities: ["Grünfläche", "Sitzgelegenheiten", "Schatten", "Teich"],
-    publicTransport: ["U1 VIC/UNO City"]
   },
   "kurpark-oberlaa": {
     district: 10,

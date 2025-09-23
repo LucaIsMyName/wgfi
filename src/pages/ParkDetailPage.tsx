@@ -279,7 +279,7 @@ const ParkDetailPage: React.FC = () => {
         </Helmet>
         
         {/* Header with park name */}
-        <div className="px-4 py-6 lg:mr-[calc(30%+96px)]">
+        <div className="px-4 py-6 lg:mr-[calc(30%+64px)]">
           <Link
             to="/parks"
             className="mb-3 inline-flex items-center font-serif hover:underline"
@@ -512,7 +512,7 @@ const ParkDetailPage: React.FC = () => {
           </div>
 
         {/* Main Content Area */}
-        <div className="px-4 py-3 lg:mr-[calc(30%+96px)]">
+        <div className="px-4 py-3 lg:mr-[calc(30%+64px)]">
           <div className="space-y-6 block lg:hidden">
             {/* Basic Info */}
             <div
@@ -791,7 +791,7 @@ const ParkDetailPage: React.FC = () => {
                   }}
                 />
                 <p
-                  className="font-mono text-xs mt-3 flex items-center justify-center gap-2"
+                  className="font-mono text-xs mt-3 mb-8 flex items-center justify-start gap-2"
                   style={{ color: "var(--primary-green)" }}>
                   <MapPin className="w-4 h-4" /> KOORDINATEN: {park.coordinates?.lat.toFixed(6)}, {park.coordinates?.lng.toFixed(6)}
                 </p>

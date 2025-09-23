@@ -167,8 +167,8 @@ const MapPage = () => {
 
         // Create popup
         const popup = new mapboxgl.Popup({ offset: 25 }).setHTML(`
-            <div style="font-family: 'EB Garamond', serif; padding: 10px;">
-              <h3 style="margin: 0 0 5px 0; font-weight: 400; font-style: italic; color: var(--primary-green);">${park.name}</h3>
+            <div style="font-family: 'Geist Mono', serif; padding: 10px;">
+              <h3 style="margin: 0 0 5px 0; font-weight: 400; color: var(--primary-green); font-size: 20px;">${park.name}</h3>
               <p style="margin: 0; font-size: 12px; font-family: 'Geist Mono', monospace;">${park.district}. BEZIRK</p>
               <a href="/park/${slugifyParkName(park.name)}" style="color: var(--primary-green); text-decoration: none; font-size: 12px; font-family: 'Geist Mono', monospace; margin-top: 5px; display: block;">DETAILS</a>
             </div>

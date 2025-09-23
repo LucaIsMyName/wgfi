@@ -285,8 +285,8 @@ const ParksListPage = () => {
           {/* Sidebar for Search and Filters - Desktop */}
           <div className=" px-4 lg:px-0 w-full lg:w-72 lg:flex-shrink-0">
             <div
-              className="sticky top-8"
-              style={{ backgroundColor: "var(--card-bg)", borderRadius: "8px" }}>
+              className="sticky top-6 p-2"
+              style={{ backgroundColor: "var(--light-sage)", borderRadius: "8px" }}>
               <h2
                 className="font-mono text-lg mb-5"
                 style={{ color: "var(--primary-green)", letterSpacing: "0.02em" }}>
@@ -307,7 +307,7 @@ const ParksListPage = () => {
                   placeholder="Park suchen..."
                   className="w-full p-2 font-serif italic"
                   style={{
-                    backgroundColor: "var(--light-sage)",
+                    backgroundColor: "var(--soft-cream)",
                     color: "var(--deep-charcoal)",
                     borderRadius: "4px",
                     fontWeight: "400",
@@ -327,7 +327,7 @@ const ParksListPage = () => {
                   onChange={(e) => updateSelectedDistrict(e.target.value)}
                   className="w-full p-2 font-serif italic"
                   style={{
-                    backgroundColor: "var(--light-sage)",
+                    backgroundColor: "var(--soft-cream)",
                     color: "var(--deep-charcoal)",
                     borderRadius: "4px",
                     fontWeight: "400",
@@ -464,7 +464,7 @@ const ParksListPage = () => {
                   onClick={resetAllFilters}
                   className="px-3 py-2 text-[10px] font-mono w-full mt-4"
                   style={{
-                    backgroundColor: "var(--light-sage)",
+                    backgroundColor: "var(--soft-cream)",
                     color: "var(--deep-charcoal)",
                     borderRadius: "4px",
                   }}>
@@ -531,7 +531,7 @@ const ParksListPage = () => {
                           <span
                             className="px-2 py-1 text-xs font-mono flex items-center"
                             style={{
-                              backgroundColor: "var(--light-sage)",
+                              backgroundColor: "var(--soft-cream)",
                               color: "var(--deep-charcoal)",
                               borderRadius: "4px",
                             }}>
