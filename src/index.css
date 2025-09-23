@@ -1,0 +1,175 @@
+:root {
+  /* Art Nouveau inspired color palette */
+  --primary-green: #2d4a3e;
+  --secondary-green: #5a7c65;
+  --accent-gold: #c9a96e;
+  --warm-gold: #b8941f;
+  --deep-charcoal: #2c2c2c;
+  --soft-cream: #faf8f5;
+  --light-sage: #f2f5ee;
+  --light-gold: #f5f1e6;
+  --border-color: #e0e0d5;
+  --copper: #b87333;
+  
+  /* Main background color */
+  --main-bg: var(--soft-cream);
+  --card-bg: var(--soft-cream);
+  --sidebar-bg: var(--soft-cream);
+  
+  /* Typography */
+  --font-serif: 'EB Garamond', serif;
+  --font-mono: 'Geist Mono', monospace;
+  --font-sans: 'Geist', sans-serif;
+}
+
+* {
+  border-radius: 0 !important;
+}
+
+/* Smooth transitions for modern feel */
+* {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-serif, "EB Garamond", serif);
+  background: var(--main-bg);
+  color: var(--deep-charcoal);
+  line-height: 1.6;
+}
+
+.font-mono {
+  font-family: var(--font-mono, "Geist Mono", monospace);
+}
+
+.font-serif {
+  font-family: var(--font-serif, "EB Garamond", serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans, "Geist", sans-serif);
+}
+
+/* Art Nouveau inspired borders and elements */
+.art-border {
+  border: 2px solid var(--primary-green);
+  box-shadow: 0 4px 20px rgba(45, 74, 62, 0.1);
+}
+
+.art-border-gold {
+  border: 2px solid var(--accent-gold);
+  box-shadow: 0 4px 20px rgba(201, 169, 110, 0.15);
+}
+
+.art-border-copper {
+  border: 2px solid var(--copper);
+  box-shadow: 0 4px 20px rgba(184, 115, 51, 0.1);
+}
+
+/* Elegant hover effects */
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(45, 74, 62, 0.15);
+}
+
+/* Art Nouveau decorative elements */
+.decorative-corner::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 20px;
+  height: 20px;
+  border-top: 2px solid var(--accent-gold);
+  border-left: 2px solid var(--accent-gold);
+}
+
+.decorative-corner::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 20px;
+  height: 20px;
+  border-bottom: 2px solid var(--accent-gold);
+  border-right: 2px solid var(--accent-gold);
+}
+
+/* Desktop layout - main content starts at sidebar edge */
+@media (min-width: 1024px) {
+  main[data-lg-margin] {
+    margin-left: clamp(240px, 20vw, 360px) !important;
+    margin-right: 0 !important;
+    width: auto !important;
+    max-width: none !important;
+  }
+  
+  main[data-lg-margin] > div {
+    max-width: none !important;
+    margin: 0 !important;
+    padding-right: 2rem;
+  }
+}
+
+/* Typography hierarchy */
+.heading-primary {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.heading-secondary {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+}
+
+.text-body {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.text-small {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.text-ui {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  letter-spacing: 0.025em;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light-sage);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-green);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-green);
+}
+
+/* Hide scrollbar for filter container */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

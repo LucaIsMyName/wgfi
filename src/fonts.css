@@ -1,0 +1,45 @@
+/* Font loading optimization with local font files */
+
+/* Geist Sans */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 100 900; /* Variable font weight range */
+  font-display: swap;
+  src: local('Geist'),
+       url('/fonts/geist.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Geist Mono */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 100 900; /* Variable font weight range */
+  font-display: swap;
+  src: local('Geist Mono'),
+       url('/fonts/geist-mono.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* EB Garamond - Normal */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400 800; /* Variable font weight range */
+  font-display: swap;
+  src: local('EB Garamond'),
+       url('/fonts/eb-garamond-normal.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* EB Garamond - Italic */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 400 800; /* Variable font weight range */
+  font-display: swap;
+  src: local('EB Garamond Italic'),
+       url('/fonts/eb-garamond-italic.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
