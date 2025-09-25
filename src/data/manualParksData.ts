@@ -53,19 +53,19 @@ export const manualParksDB: Record<string, ManualParkData> = {
     name: "Stadtpark",
     district: 1,
     address: "Parkring, 1010 Wien",
-    amenities: ["Teich", "Denkmäler", "Kinderspielplatz", "Café"],
+    amenities: ["Spielplatz"],
     description: "Der Wiener Stadtpark erstreckt sich vom Parkring im 1. Wiener Gemeindebezirk bis zum Heumarkt im 3. Wiener Gemeindebezirk.",
     publicTransport: ["U4 Stadtpark", "Straßenbahn D, 71"],
     accessibility: "Gut zugänglich, größtenteils ebene Wege",
     tips: ["Johann-Strauss-Denkmal"],
     links: [
       {
-        title: "Stadtpark auf Wikipedia",
+        title: "Wikipedia",
         url: "https://de.wikipedia.org/wiki/Wiener_Stadtpark",
         type: "wiki"
       },
       {
-        title: "Offizielle Seite der Stadt Wien",
+        title: "Stadt Wien",
         url: "https://www.wien.gv.at/umwelt/parks/anlagen/stadtpark.html",
         type: "official"
       }

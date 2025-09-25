@@ -177,7 +177,7 @@ const Navigation = () => {
                 <p
                   className="text-xs italic opacity-50"
                   style={{ color: "var(--primary-green)", fontFamily: "EB Garamond, serif" }}>
-                  Wiener Beserl-Park <span className="font-mono not-italic text-[0.8em]">index</span>
+                  Wiener Grünflächen <span className="font-mono not-italic text-[0.8em]">index</span>
                 </p>
               </div>
             </div>
