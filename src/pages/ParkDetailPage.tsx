@@ -269,7 +269,9 @@ const ParkDetailPage: React.FC = () => {
 
   if (park) {
     return (
-      <div className="min-h-screen" style={{ background: "var(--main-bg)" }}>
+      <div
+        className="min-h-screen"
+        style={{ background: "var(--main-bg)" }}>
         <Helmet>
           <title>{`${park.name} | Wiener Grünflächen Index`}</title>
           <meta
@@ -277,7 +279,7 @@ const ParkDetailPage: React.FC = () => {
             content={`Entdecken Sie den ${park.name} im ${park.district}. Bezirk mit detaillierten Informationen zu Lage, Ausstattung und Größe.`}
           />
         </Helmet>
-        
+
         {/* Header with park name */}
         <div className="px-4 py-6 lg:mr-[calc(30%+64px)]">
           <Link
@@ -304,212 +306,215 @@ const ParkDetailPage: React.FC = () => {
             </span>
           </div>
         </div>
-        
+
         {/* Fixed Right Sidebar - Desktop */}
-        <div className="hidden lg:block fixed right-0 top-0 w-[30%] h-screen overflow-y-auto pb-8 pt-4 pr-4 z-10" 
-             style={{ backgroundColor: "var(--card-bg)", scrollbarWidth: 'thin', scrollbarColor: 'var(--light-sage) transparent' }}>
-          <div className="space-y-4 pl-4 mt-4" style={{ borderColor: "var(--primary-green)" }}>
-              {/* Basic Info */}
+        <div
+          className="hidden lg:block fixed right-0 top-0 w-[30%] h-screen overflow-y-auto pb-8 pt-4 pr-4 z-10"
+          style={{ backgroundColor: "var(--card-bg)", scrollbarWidth: "thin", scrollbarColor: "var(--light-sage) transparent" }}>
+          <div
+            className="space-y-4 pl-4 mt-4"
+            style={{ borderColor: "var(--primary-green)" }}>
+            {/* Basic Info */}
+            <div
+              className="py-4"
+              style={{ backgroundColor: "var(--card-bg)", borderRadius: "8px" }}>
+              <h3
+                className="font-serif italic text-2xl mb-3 truncate"
+                style={{ color: "var(--primary-green)", letterSpacing: "0.02em" }}>
+                Informationen
+              </h3>
+              <div className="space-y-6">
+                {/* Address Section */}
+                <div>
+                  <span
+                    className="font-mono text-xs"
+                    style={{ color: "var(--primary-green)" }}>
+                    ADRESSE:
+                  </span>
+                  <p
+                    className="font-serif italic mt-1 flex items-center gap-2"
+                    style={{ color: "var(--deep-charcoal)", fontWeight: "400" }}>
+                    <MapPin className="w-5 h-5 flex-shrink-0" /> {park.address || "Adresse nicht verfügbar"}
+                  </p>
+                  <p
+                    className="font-serif italic mt-1 flex items-center gap-2"
+                    style={{ color: "var(--deep-charcoal)" }}>
+                    <Building className="w-5 h-5 flex-shrink-0" /> {park.district}. Bezirk
+                  </p>
+                </div>
+
+                {/* Opening Hours Section */}
+                {park.openingHours && (
+                  <div>
+                    <span
+                      className="font-mono text-xs"
+                      style={{ color: "var(--primary-green)" }}>
+                      ÖFFNUNGSZEITEN:
+                    </span>
+                    <p
+                      className="font-serif italic mt-1 flex items-center gap-2"
+                      style={{ color: "var(--deep-charcoal)", fontWeight: "400" }}>
+                      <Clock className="w-5 h-5 flex-shrink-0" /> {park.openingHours}
+                    </p>
+                  </div>
+                )}
+
+                {/* Accessibility Section */}
+                {park.accessibility && (
+                  <div>
+                    <span
+                      className="font-mono text-xs"
+                      style={{ color: "var(--primary-green)" }}>
+                      BARRIEREFREIHEIT:
+                    </span>
+                    <p
+                      className="font-serif italic mt-1 flex items-center gap-2"
+                      style={{ color: "var(--deep-charcoal)", fontWeight: "400" }}>
+                      <Accessibility className="w-5 h-5 flex-shrink-0" /> {park.accessibility}
+                    </p>
+                  </div>
+                )}
+
+                {/* Public Transport Section */}
+                {park.publicTransport && park.publicTransport.length > 0 && (
+                  <div>
+                    <span
+                      className="font-mono text-xs"
+                      style={{ color: "var(--primary-green)" }}>
+                      ÖFFENTLICHE VERKEHRSMITTEL:
+                    </span>
+                    <div className="space-y-3 mt-1">
+                      {park.publicTransport.map((transport: string, index: number) => (
+                        <div
+                          key={index}
+                          className="flex items-start gap-3">
+                          <Train
+                            className="w-5 h-5 mt-1 flex-shrink-0"
+                            stroke="var(--deep-charcoal)"
+                          />
+                          <span
+                            className="font-serif italic"
+                            style={{ color: "var(--deep-charcoal)", fontWeight: "400" }}>
+                            {transport}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Google Maps Directions Link */}
+                    <div
+                      className="mt-4 pt-4 border-t border-opacity-20"
+                      style={{ borderColor: "var(--border-color)" }}>
+                      <a
+                        href={`https://www.google.com/maps/dir/${userLocation ? `${userLocation.lat},${userLocation.lng}` : ""}/${park.coordinates.lat},${park.coordinates.lng}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 font-mono text-xs hover:underline"
+                        style={{ color: "var(--deep-charcoal)" }}>
+                        <Navigation className="w-5 h-5 flex-shrink-0" />
+                        {userLocation ? "Route von meinem Standort" : "Route planen"}
+                      </a>
+                    </div>
+                  </div>
+                )}
+
+                {/* Tips Section */}
+                {park.tips && park.tips.length > 0 && (
+                  <div>
+                    <span
+                      className="font-mono text-xs"
+                      style={{ color: "var(--primary-green)" }}>
+                      INSIDER-TIPPS:
+                    </span>
+                    <div className="space-y-2 mt-1">
+                      {park.tips.map((tip: string, index: number) => (
+                        <p
+                          key={index}
+                          className="font-serif italic"
+                          style={{ color: "var(--deep-charcoal)", fontWeight: "400" }}>
+                          {tip}
+                        </p>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+
+            {/* Links Section - Only shown if links are available */}
+            {park.links && park.links.length > 0 && (
               <div
                 className="py-4"
                 style={{ backgroundColor: "var(--card-bg)", borderRadius: "8px" }}>
                 <h3
                   className="font-serif italic text-2xl mb-3 truncate"
                   style={{ color: "var(--primary-green)", letterSpacing: "0.02em" }}>
-                  Informationen
+                  Links
                 </h3>
-                <div className="space-y-6">
-                  {/* Address Section */}
-                  <div>
-                    <span
-                      className="font-mono text-xs"
-                      style={{ color: "var(--primary-green)" }}>
-                      ADRESSE:
-                    </span>
-                    <p
-                      className="font-serif italic mt-1 flex items-center gap-2"
-                      style={{ color: "var(--deep-charcoal)", fontWeight: "400" }}>
-                      <MapPin className="w-5 h-5 flex-shrink-0" /> {park.address || "Adresse nicht verfügbar"}
-                    </p>
-                    <p
-                      className="font-serif italic mt-1 flex items-center gap-2"
-                      style={{ color: "var(--deep-charcoal)" }}>
-                      <Building className="w-5 h-5 flex-shrink-0" /> {park.district}. Bezirk
-                    </p>
-                  </div>
+                <div className="space-y-2">
+                  <span
+                    className="font-mono text-xs"
+                    style={{ color: "var(--primary-green)" }}>
+                    EXTERNE LINKS:
+                  </span>
+                  <div className="mt-2 space-y-2">
+                    {park.links.map((link: { title: string; url: string; type?: "official" | "wiki" | "info" | "event" }, index: number) => {
+                      // Choose icon based on link type
+                      let icon = <ExternalLink className="w-4 h-4 flex-shrink-0" />;
+                      if (link.type === "wiki") icon = <BookOpen className="w-4 h-4 flex-shrink-0" />;
+                      if (link.type === "official") icon = <FileText className="w-4 h-4 flex-shrink-0" />;
+                      if (link.type === "event") icon = <Calendar className="w-4 h-4 flex-shrink-0" />;
 
-                  {/* Opening Hours Section */}
-                  {park.openingHours && (
-                    <div>
-                      <span
-                        className="font-mono text-xs"
-                        style={{ color: "var(--primary-green)" }}>
-                        ÖFFNUNGSZEITEN:
-                      </span>
-                      <p
-                        className="font-serif italic mt-1 flex items-center gap-2"
-                        style={{ color: "var(--deep-charcoal)", fontWeight: "400" }}>
-                        <Clock className="w-5 h-5 flex-shrink-0" /> {park.openingHours}
-                      </p>
-                    </div>
-                  )}
-
-                  {/* Accessibility Section */}
-                  {park.accessibility && (
-                    <div>
-                      <span
-                        className="font-mono text-xs"
-                        style={{ color: "var(--primary-green)" }}>
-                        BARRIEREFREIHEIT:
-                      </span>
-                      <p
-                        className="font-serif italic mt-1 flex items-center gap-2"
-                        style={{ color: "var(--deep-charcoal)", fontWeight: "400" }}>
-                        <Accessibility className="w-5 h-5 flex-shrink-0" /> {park.accessibility}
-                      </p>
-                    </div>
-                  )}
-
-                  {/* Public Transport Section */}
-                  {park.publicTransport && park.publicTransport.length > 0 && (
-                    <div>
-                      <span
-                        className="font-mono text-xs"
-                        style={{ color: "var(--primary-green)" }}>
-                        ÖFFENTLICHE VERKEHRSMITTEL:
-                      </span>
-                      <div className="space-y-3 mt-1">
-                        {park.publicTransport.map((transport: string, index: number) => (
-                          <div
-                            key={index}
-                            className="flex items-start gap-3">
-                            <Train
-                              className="w-5 h-5 mt-1 flex-shrink-0"
-                              stroke="var(--deep-charcoal)"
-                            />
-                            <span
-                              className="font-serif italic"
-                              style={{ color: "var(--deep-charcoal)", fontWeight: "400" }}>
-                              {transport}
-                            </span>
-                          </div>
-                        ))}
-                      </div>
-
-                      {/* Google Maps Directions Link */}
-                      <div
-                        className="mt-4 pt-4 border-t border-opacity-20"
-                        style={{ borderColor: "var(--border-color)" }}>
+                      return (
                         <a
-                          href={`https://www.google.com/maps/dir/${userLocation ? `${userLocation.lat},${userLocation.lng}` : ""}/${park.coordinates.lat},${park.coordinates.lng}/${encodeURIComponent(`${park.name}, ${park.district}. Bezirk, Wien`)}`}
+                          key={index}
+                          href={link.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center gap-2 font-mono text-xs hover:underline"
-                          style={{ color: "var(--deep-charcoal)" }}>
-                          <Navigation className="w-5 h-5 flex-shrink-0" />
-                          {userLocation ? "Route von meinem Standort" : "Route planen"}
+                          className="flex items-center gap-2 font-serif hover:underline py-1"
+                          style={{ color: "var(--deep-charcoal)", fontWeight: "400" }}>
+                          {icon}
+                          {link.title}
                         </a>
-                      </div>
-                    </div>
-                  )}
-
-                  {/* Tips Section */}
-                  {park.tips && park.tips.length > 0 && (
-                    <div>
-                      <span
-                        className="font-mono text-xs"
-                        style={{ color: "var(--primary-green)" }}>
-                        INSIDER-TIPPS:
-                      </span>
-                      <div className="space-y-2 mt-1">
-                        {park.tips.map((tip: string, index: number) => (
-                          <p
-                            key={index}
-                            className="font-serif italic"
-                            style={{ color: "var(--deep-charcoal)", fontWeight: "400" }}>
-                            {tip}
-                          </p>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                </div>
-              </div>
-
-              {/* Links Section - Only shown if links are available */}
-              {park.links && park.links.length > 0 && (
-                <div
-                  className="py-4"
-                  style={{ backgroundColor: "var(--card-bg)", borderRadius: "8px" }}>
-                  <h3
-                    className="font-serif italic text-2xl mb-3 truncate"
-                    style={{ color: "var(--primary-green)", letterSpacing: "0.02em" }}>
-                    Links
-                  </h3>
-                  <div className="space-y-2">
-                    <span
-                      className="font-mono text-xs"
-                      style={{ color: "var(--primary-green)" }}>
-                      EXTERNE LINKS:
-                    </span>
-                    <div className="mt-2 space-y-2">
-                      {park.links.map((link: { title: string; url: string; type?: "official" | "wiki" | "info" | "event" }, index: number) => {
-                        // Choose icon based on link type
-                        let icon = <ExternalLink className="w-4 h-4 flex-shrink-0" />;
-                        if (link.type === "wiki") icon = <BookOpen className="w-4 h-4 flex-shrink-0" />;
-                        if (link.type === "official") icon = <FileText className="w-4 h-4 flex-shrink-0" />;
-                        if (link.type === "event") icon = <Calendar className="w-4 h-4 flex-shrink-0" />;
-
-                        return (
-                          <a
-                            key={index}
-                            href={link.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex items-center gap-2 font-serif hover:underline py-1"
-                            style={{ color: "var(--deep-charcoal)", fontWeight: "400" }}>
-                            {icon}
-                            {link.title}
-                          </a>
-                        );
-                      })}
-                    </div>
+                      );
+                    })}
                   </div>
                 </div>
-              )}
-
-              {/* Actions */}
-              <div className="space-y-2">
-                <Link
-                  to={`/map/${slugifyParkName(park.name)}`}
-                  className="w-full px-4 py-3 text-center font-mono text-xs block"
-                  style={{
-                    backgroundColor: "var(--primary-green)",
-                    color: "var(--soft-cream)",
-                    borderRadius: "6px",
-                  }}>
-                  Auf Karte anzeigen
-                </Link>
-                <button
-                  onClick={() => {
-                    const newStatus = toggleFavorite(park.id);
-                    setIsFavorited(newStatus);
-                  }}
-                  className="w-full px-4 py-3 font-mono text-xs flex items-center justify-center gap-2"
-                  style={{
-                    backgroundColor: isFavorited ? "var(--accent-gold)" : "var(--card-bg)",
-                    color: isFavorited ? "var(--deep-charcoal)" : "var(--primary-green)",
-                    borderRadius: "6px",
-                  }}>
-                  <Heart
-                    className="w-4 h-4"
-                    fill={isFavorited ? "currentColor" : "none"}
-                  />
-                  {isFavorited ? "Aus Favoriten entfernen" : "Zu Favoriten hinzufügen"}
-                </button>
               </div>
+            )}
+
+            {/* Actions */}
+            <div className="space-y-2">
+              <Link
+                to={`/map/${slugifyParkName(park.name)}`}
+                className="w-full px-4 py-3 text-center font-mono text-xs block"
+                style={{
+                  backgroundColor: "var(--primary-green)",
+                  color: "var(--soft-cream)",
+                  borderRadius: "6px",
+                }}>
+                Auf Karte anzeigen
+              </Link>
+              <button
+                onClick={() => {
+                  const newStatus = toggleFavorite(park.id);
+                  setIsFavorited(newStatus);
+                }}
+                className="w-full px-4 py-3 font-mono text-xs flex items-center justify-center gap-2"
+                style={{
+                  backgroundColor: isFavorited ? "var(--accent-gold)" : "var(--card-bg)",
+                  color: isFavorited ? "var(--deep-charcoal)" : "var(--primary-green)",
+                  borderRadius: "6px",
+                }}>
+                <Heart
+                  className="w-4 h-4"
+                  fill={isFavorited ? "currentColor" : "none"}
+                />
+                {isFavorited ? "Aus Favoriten entfernen" : "Zu Favoriten hinzufügen"}
+              </button>
             </div>
           </div>
+        </div>
 
         {/* Main Content Area */}
         <div className="px-4 py-3 lg:mr-[calc(30%+64px)]">
@@ -606,7 +611,7 @@ const ParkDetailPage: React.FC = () => {
                       className="mt-4 pt-4 border-t border-opacity-20"
                       style={{ borderColor: "var(--border-color)" }}>
                       <a
-                        href={`https://www.google.com/maps/dir/${userLocation ? `${userLocation.lat},${userLocation.lng}` : ""}/${park.coordinates.lat},${park.coordinates.lng}/${encodeURIComponent(`${park.name}, ${park.district}. Bezirk, Wien`)}`}
+                        href={`https://www.google.com/maps/dir/${userLocation ? `${userLocation.lat},${userLocation.lng}` : ""}/${encodeURIComponent(`${park.coordinates.lat},${park.coordinates.lng} (${park.name}, ${park.district}. Bezirk, Wien)`)}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-2 font-mono text-xs hover:underline"
@@ -880,7 +885,6 @@ const ParkDetailPage: React.FC = () => {
                 </div>
               )}
             </div>
-            
           </div>
         </div>
       </div>
@@ -1097,7 +1101,7 @@ const ParkDetailPage: React.FC = () => {
                   className="mt-4 pt-4 border-t border-opacity-20"
                   style={{ borderColor: "var(--border-color)" }}>
                   <a
-                    href={`https://www.google.com/maps/dir/${userLocation ? `${userLocation.lat},${userLocation.lng}` : ""}/${park.coordinates.lat},${park.coordinates.lng}/${encodeURIComponent(`${park.name}, ${park.district}. Bezirk, Wien`)}`}
+                    href={`https://www.google.com/maps/dir/${userLocation ? `${userLocation.lat},${userLocation.lng}` : ""}/${`${park.coordinates.lat},${park.coordinates.lng}`}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 font-mono text-xs hover:underline"

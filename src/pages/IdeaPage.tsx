@@ -53,14 +53,14 @@ const IdeaPage: React.FC = () => {
               className="font-serif space-y-4"
               style={{ color: "var(--deep-charcoal)", fontWeight: "400", lineHeight: "1.6" }}>
               <p>
-                Der <span className="italic">Wiener Grünflächen Index</span> ist eine übersichtliche Website, die alle Parks und Grünflächen in Wien zeigt. Hier findest du schnell und einfach den perfekten Park für deinen nächsten Ausflug, egal ob du einen ruhigen Platz zum Lesen, einen Spielplatz für Kinder oder eine große Wiese für ein Picknick suchst.
+                Der <span className="italic">Wiener Grünflächen Index</span> ist eine übersichtliche Website, die alle Parks und Grünflächen in Wien zeigt.
               </p>
-              <p>Mit unserer Website kannst du:</p>
+              <p>Mit dieser Website kann man:</p>
               <ul className="list-disc pl-6 space-y-2">
                 <li>Parks nach Bezirk, Größe, Name und Ausstattung filtern und sortieren</li>
                 <li>Alle wichtigen Informationen zu jedem Park auf einen Blick sehen</li>
                 <li>Parks auf einer einfachen Karte finden</li>
-                <li>Deine Lieblingsparks speichern, um sie später schnell wiederzufinden</li>
+                <li>Lieblingsparks als Favoriten speichern, um sie später schnell wiederzufinden</li>
                 <li>Eine Route zum Park planen</li>
               </ul>
             </div>
@@ -86,17 +86,17 @@ const IdeaPage: React.FC = () => {
                   style={{ color: "var(--primary-green)" }}>
                   https://data.wien.gv.at
                 </a>
-                ). Wir verwenden den offiziellen Datensatz "Parkanlagen Standorte Wien", der regelmäßig aktualisiert wird.
+                ).
               </p>
               <p>
-                <strong>Wichtig:</strong> Die Parks werden nicht von uns ausgewählt oder kuratiert - wir zeigen alle Parks aus der offiziellen Datenbank der Stadt Wien an.
+                <strong>Wichtig:</strong> Die Parks werden nicht von dieser Website ausgewählt oder kuratiert - sie zeigt alle Parks aus der offiziellen Datenbank der Stadt Wien an.
               </p>
-              <p>Bei wichtigen Parks ergänzen wir manchmal zusätzliche Informationen, wenn:</p>
+              <p>Bei manchen Parks werden zusätzliche Informationen hinzugefügt, wenn:</p>
               <ul className="list-disc pl-6 space-y-2">
                 <li>In den offiziellen Daten Informationen fehlen (z.B. Öffnungszeiten, Ausstattung, ...)</li>
-                <li>Wir nützliche Zusatzinfos haben (z.B. zur Barrierefreiheit)</li>
-                <li>Wir hilfreiche Tipps für Besucher haben (z.B. zu besonderen Veranstaltungen)</li>
-                <li>Wir Fehler in den offiziellen Daten entdecken</li>
+                <li>Nützliche Zusatzinfos (z.B. zur Barrierefreiheit)</li>
+                <li>Hilfreiche Tipps für Besucher (z.B. zu besonderen Veranstaltungen)</li>
+                <li>Fehler in den offiziellen Daten vorhanden sind</li>
               </ul>
               <p>Ziel ist es, alle wichtigen Informationen zu den Wiener Parks auf eine einfache und übersichtliche Weise zu präsentieren.</p>
             </div>
@@ -114,7 +114,7 @@ const IdeaPage: React.FC = () => {
             <div
               className="font-serif space-y-4"
               style={{ color: "var(--deep-charcoal)", fontWeight: "400", lineHeight: "1.6" }}>
-              <p>Der Wiener Grünflächen Index bietet folgende Funktionen:</p>
+              <p>Der <i>Wiener Grünflächen Index</i> bietet folgende Funktionen:</p>
               <div className="space-y-6">
                 <div>
                   <h3
@@ -131,7 +131,7 @@ const IdeaPage: React.FC = () => {
                     style={{ color: "var(--primary-green)" }}>
                     Detaillierte Parkinformationen
                   </h3>
-                  <p>Für jeden Park zeigen wichtige Informationen wie Adresse, Bezirk, Größe, Ausstattung, Öffnungszeiten (falls vorhanden) und Barrierefreiheit.</p>
+                  <p>Für jeden Park zeigt die Website Informationen wie Adresse, Bezirk, Größe, Ausstattung, Öffnungszeiten (falls vorhanden) und Barrierefreiheit.</p>
                 </div>
 
                 <div>
@@ -167,12 +167,32 @@ const IdeaPage: React.FC = () => {
           {/** info about the gov data: districts are missing on most, some data fields get appended mannaully, giv might not be correct or complete */}
 
           <section>
-            <h2 className="font-serif italic text-xl mb-4"
-              style={{ color: "var(--primary-green)", fontWeight: "500" }}>Offizielle Daten
+            <h2
+              className="font-serif italic text-xl mb-4"
+              style={{ color: "var(--primary-green)", fontWeight: "500" }}>
+              Offizielle Daten
             </h2>
-            <p>Die Daten stammen offiziell von der <a className="underline" href="https://www.wien.gv.at/" target="_blank">Wien Open Data</a>.</p>
+            <p>
+              Die Daten stammen offiziell von der{" "}
+              <a
+                className="underline"
+                href="https://www.wien.gv.at/"
+                target="_blank">
+                Wien Open Data
+              </a>
+              .
+            </p>
             <p>Da die Daten für Bezirke, Beschreibungen, Barrierefreiheit, Verkehrsanbindung und Ausstattungen nicht vollständig sind, werden einige Felder mit der Zeit manuell ergänzt.</p>
-            <p>Fehler können hier eingemeldet werden: <a className="underline" href="https://github.com/LucaIsMyName/wgfi" target="_blank">Github</a>.</p>
+            <p>
+              Fehler können hier eingemeldet werden:{" "}
+              <a
+                className="underline"
+                href="https://github.com/LucaIsMyName/wgfi"
+                target="_blank">
+                Github
+              </a>
+              .
+            </p>
           </section>
         </div>
       </div>
