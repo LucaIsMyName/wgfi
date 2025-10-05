@@ -366,7 +366,7 @@ const ParksListPage = () => {
                         }}
                         className="px-2 py-1 text-[10px] font-mono flex items-center gap-1"
                         style={{
-                          backgroundColor: isSelected ? "var(--primary-green)" : "var(--light-sage)",
+                          backgroundColor: isSelected ? "var(--primary-green)" : "var(--soft-cream)",
                           color: isSelected ? "var(--soft-cream)" : "var(--deep-charcoal)",
                           borderRadius: "4px",
                           marginBottom: "0.25rem",

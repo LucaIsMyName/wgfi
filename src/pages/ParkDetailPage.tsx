@@ -481,7 +481,7 @@ const ParkDetailPage: React.FC = () => {
               {/* Actions */}
               <div className="space-y-2">
                 <Link
-                  to="/map"
+                  to={`/map/${slugifyParkName(park.name)}`}
                   className="w-full px-4 py-3 text-center font-mono text-xs block"
                   style={{
                     backgroundColor: "var(--primary-green)",

@@ -1,9 +1,87 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import STYLE from "../utils/config";
+import { getViennaParksForApp } from "../services/viennaApi";
+import { findNearestPark } from "../utils/geoUtils";
+import LocationModal from "../components/LocationModal";
+import { slugifyParkName } from "../data/manualParksData";
 
 const HomePage: React.FC = () => {
+  const [showLocationModal, setShowLocationModal] = useState(false);
+  const [locationError, setLocationError] = useState(false);
+  const [parks, setParks] = useState<any[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate();
+
+  // Load parks data
+  useEffect(() => {
+    const loadParks = async () => {
+      try {
+        const parksData = await getViennaParksForApp();
+        setParks(parksData);
+      } catch (error) {
+        console.error("Error loading parks:", error);
+      }
+    };
+
+    loadParks();
+  }, []);
+
+  const handleFindNearby = () => {
+    setShowLocationModal(true);
+    setLocationError(false);
+  };
+
+  const handleRequestLocation = () => {
+    setIsLoading(true);
+    
+    if (!navigator.geolocation) {
+      setLocationError(true);
+      setIsLoading(false);
+      return;
+    }
+
+    navigator.geolocation.getCurrentPosition(
+      async (position) => {
+        try {
+          const nearestPark = findNearestPark(
+            position.coords.latitude,
+            position.coords.longitude,
+            parks
+          );
+          
+          if (nearestPark) {
+            navigate(`/park/${slugifyParkName(nearestPark.name)}`);
+          } else {
+            setLocationError(true);
+          }
+        } catch (error) {
+          console.error("Error finding nearest park:", error);
+          setLocationError(true);
+        } finally {
+          setIsLoading(false);
+          setShowLocationModal(false);
+        }
+      },
+      (error) => {
+        console.error("Error getting location:", error);
+        setLocationError(true);
+        setIsLoading(false);
+      },
+      {
+        enableHighAccuracy: true,
+        timeout: 10000,
+        maximumAge: 0
+      }
+    );
+  };
+
+  const handleCloseModal = () => {
+    setShowLocationModal(false);
+    setLocationError(false);
+  };
+
   return (
     <div
       className="h-screen max-h-screen overflow-hidden flex items-center"
@@ -55,11 +133,29 @@ const HomePage: React.FC = () => {
               style={{
                 backgroundColor: "var(--card-bg)",
                 color: "var(--primary-green)",
-                borderRadius: "6px",
               }}>
               KARTE
             </Link>
+            <button
+              onClick={handleFindNearby}
+              disabled={isLoading}
+              className="px-8 py-4 border border-[var(--primary-green)] font-mono text-sm inline-flex items-center justify-center disabled:opacity-50"
+              style={{
+                backgroundColor: "var(--card-bg)",
+                color: "var(--primary-green)",
+                borderRadius: "6px",
+              }}>
+              {isLoading ? 'SUCHE...' : 'IN DER NÄHE'}
+            </button>
           </div>
+
+          {/* Location Modal */}
+          <LocationModal
+            isOpen={showLocationModal}
+            onClose={handleCloseModal}
+            onRequestLocation={handleRequestLocation}
+            isError={locationError}
+          />
         </div>
       </div>
     </div>

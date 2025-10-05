@@ -83,11 +83,29 @@ const Navigation = () => {
           </div>
 
           {/* Footer */}
-          <div className="px-4 py-3">
+          <div className="px-4 py-3 space-y-2">
+            <div className="flex flex-wrap gap-4 text-xs">
+              <a
+                href="https://lucamack.at/impressum.txt"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline font-mono text-[9px]"
+                style={{ color: "var(--primary-green)" }}>
+                Impressum
+              </a>
+              <a
+                href="https://lucamack.at/datenschutz.txt"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline font-mono text-[9px]"
+                style={{ color: "var(--primary-green)" }}>
+                Datenschutz
+              </a>
+            </div>
             <p
               className="text-xs italic opacity-50"
               style={{ color: "var(--primary-green)", fontFamily: "EB Garamond, serif" }}>
-              Wiener Beserl-Park <span className="font-mono not-italic text-[0.8em]">index</span>
+              Wiener Grünflächen <span className="font-mono font-semibold not-italic text-[0.8em]">index</span>
             </p>
           </div>
         </div>
@@ -174,6 +192,26 @@ const Navigation = () => {
               <div
                 className="px-4 py-3 border-t"
                 style={{ borderColor: "var(--border-color)" }}>
+                <div className="flex gap-8 my-4">
+                  <a
+                    href="https://lucamack.at/impressum.txt"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[9px] hover:underline font-mono"
+                    style={{ color: "var(--primary-green)" }}
+                    onClick={() => setIsMobileMenuOpen(false)}>
+                    Impressum
+                  </a>
+                  <a
+                    href="https://lucamack.at/datenschutz.txt"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[9px] hover:underline font-mono"
+                    style={{ color: "var(--primary-green)" }}
+                    onClick={() => setIsMobileMenuOpen(false)}>
+                    Datenschutz
+                  </a>
+                </div>
                 <p
                   className="text-xs italic opacity-50"
                   style={{ color: "var(--primary-green)", fontFamily: "EB Garamond, serif" }}>
