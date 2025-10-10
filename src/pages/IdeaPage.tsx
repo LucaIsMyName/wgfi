@@ -79,9 +79,9 @@ const IdeaPage: React.FC = () => {
               className="font-serif space-y-4"
               style={{ color: "var(--deep-charcoal)", fontWeight: "400", lineHeight: "1.6" }}>
               <p>
-                Alle Parkdaten stammen direkt von der Stadt Wien über deren offene Datenplattform (
+                Alle Parkdaten stammen direkt von der Bundesrepublik Österreich über deren offene Datenplattform (
                 <a
-                  href="https://data.wien.gv.at"
+                  href="https://data.gv.at"
                   className="underline"
                   style={{ color: "var(--primary-green)" }}>
                   https://data.wien.gv.at
@@ -89,14 +89,21 @@ const IdeaPage: React.FC = () => {
                 ).
               </p>
               <p>
-                <strong>Wichtig:</strong> Die Parks werden nicht von dieser Website ausgewählt oder kuratiert - sie zeigt alle Parks aus der offiziellen Datenbank der Stadt Wien an.
+                Die Parks werden nicht von dieser Website ausgewählt oder kuratiert - sie zeigt alle Parks aus der offiziellen{" "}
+                <a
+                  href="https://data.gv.at/datasets/22add642-d849-48ff-9913-8c7ba2d99b46?locale=de"
+                  target="_blank"
+                  className="underline"
+                  style={{ color: "var(--primary-green)" }}>
+                  Datenbank der Stadt Wien
+                </a>{" "}
+                an.
               </p>
               <p>Bei manchen Parks werden zusätzliche Informationen hinzugefügt, wenn:</p>
               <ul className="list-disc pl-6 space-y-2">
                 <li>In den offiziellen Daten Informationen fehlen (z.B. Öffnungszeiten, Ausstattung, ...)</li>
-                <li>Nützliche Zusatzinfos (z.B. zur Barrierefreiheit)</li>
-                <li>Hilfreiche Tipps für Besucher (z.B. zu besonderen Veranstaltungen)</li>
-                <li>Fehler in den offiziellen Daten vorhanden sind</li>
+                <li>Nützliche Zusatzinfos (z.B. zur Barrierefreiheit, Events, Tipps, ...)</li>
+                <li>Fehler in den offiziellen Daten gefunden werden</li>
               </ul>
               <p>Ziel ist es, alle wichtigen Informationen zu den Wiener Parks auf eine einfache und übersichtliche Weise zu präsentieren.</p>
             </div>
@@ -109,12 +116,11 @@ const IdeaPage: React.FC = () => {
             <h2
               className="font-serif italic text-xl mb-4"
               style={{ color: "var(--primary-green)", fontWeight: "500" }}>
-              Was kann die Website alles?
+              Was macht diese Website so alles?
             </h2>
             <div
               className="font-serif space-y-4"
               style={{ color: "var(--deep-charcoal)", fontWeight: "400", lineHeight: "1.6" }}>
-              <p>Der <i>Wiener Grünflächen Index</i> bietet folgende Funktionen:</p>
               <div className="space-y-6">
                 <div>
                   <h3
@@ -176,7 +182,7 @@ const IdeaPage: React.FC = () => {
               Die Daten stammen offiziell von der{" "}
               <a
                 className="underline"
-                href="https://www.wien.gv.at/"
+                href="https://www.data.gv.at/datasets/22add642-d849-48ff-9913-8c7ba2d99b46?locale=de"
                 target="_blank">
                 Wien Open Data
               </a>
@@ -184,7 +190,7 @@ const IdeaPage: React.FC = () => {
             </p>
             <p>Da die Daten für Bezirke, Beschreibungen, Barrierefreiheit, Verkehrsanbindung und Ausstattungen nicht vollständig sind, werden einige Felder mit der Zeit manuell ergänzt.</p>
             <p>
-              Fehler können hier eingemeldet werden:{" "}
+              Fehler oder Zusatzinformationen können hier eingemeldet werden:{" "}
               <a
                 className="underline"
                 href="https://github.com/LucaIsMyName/wgfi"

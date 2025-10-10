@@ -1,5 +1,5 @@
 // Vienna Open Data API Service
-// Documentation: https://www.data.gv.at/katalog/dataset/stadt-wien_parkanlageninwien
+// Documentation: https://www.data.gv.at/datasets/22add642-d849-48ff-9913-8c7ba2d99b46?locale=de
 
 import { getManualParkData, slugifyParkName } from '../data/manualParksData';
 
@@ -45,43 +45,43 @@ export const VIENNA_ENDPOINTS = {
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 function parseViennaXML(xmlText: string): ViennaPark[] {
   console.log('Parsing XML response...');
-  console.log('XML sample (first 500 chars):', xmlText.substring(0, 500));
+  // console.log('XML sample (first 500 chars):', xmlText.substring(0, 500));
   
   const parser = new DOMParser();
   const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
   
   // Debug: log root element and its children
-  console.log('Root element:', xmlDoc.documentElement?.tagName);
-  console.log('Root children:', Array.from(xmlDoc.documentElement?.children || []).map(c => c.tagName));
+  // console.log('Root element:', xmlDoc.documentElement?.tagName);
+  // console.log('Root children:', Array.from(xmlDoc.documentElement?.children || []).map(c => c.tagName));
   
   // Try multiple selectors for feature members
   let features = xmlDoc.querySelectorAll('gml\\:featureMember');
-  console.log('gml:featureMember found:', features.length);
+  // console.log('gml:featureMember found:', features.length);
   
   if (features.length === 0) {
     features = xmlDoc.querySelectorAll('featureMember');
-    console.log('featureMember found:', features.length);
+    //console.log('featureMember found:', features.length);
   }
   if (features.length === 0) {
     features = xmlDoc.querySelectorAll('wfs\\:member');
-    console.log('wfs:member found:', features.length);
+    //console.log('wfs:member found:', features.length);
   }
   if (features.length === 0) {
     features = xmlDoc.querySelectorAll('member');
-    console.log('member found:', features.length);
+    //console.log('member found:', features.length);
   }
   
   // Try to find any elements that might contain park data
   if (features.length === 0) {
     const allElements = xmlDoc.querySelectorAll('*');
-    console.log('All XML elements:', Array.from(allElements).slice(0, 10).map(e => e.tagName));
+    //console.log('All XML elements:', Array.from(allElements).slice(0, 10).map(e => e.tagName));
     
     // Look for any elements containing "PARK" in the name
     features = xmlDoc.querySelectorAll('*[*|PARKNAME], *[PARKNAME]');
-    console.log('Elements with PARKNAME:', features.length);
+    //console.log('Elements with PARKNAME:', features.length);
   }
   
-  console.log(`Found ${features.length} features`);
+  //console.log(`Found ${features.length} features`);
   const parks: ViennaPark[] = [];
   
   features.forEach((feature, index) => {
@@ -91,11 +91,11 @@ function parseViennaXML(xmlText: string): ViennaPark[] {
     if (!parkElement) parkElement = feature.children[0]; // Fallback to first child
     
     if (!parkElement) {
-      console.log(`No park element found in feature ${index}`);
+      //console.log(`No park element found in feature ${index}`);
       return;
     }
     
-    console.log(`Processing park element ${index}:`, parkElement.tagName);
+    //console.log(`Processing park element ${index}:`, parkElement.tagName);
     
     // Extract properties with multiple selector attempts
     const getElementText = (selectors: string[]) => {
@@ -148,11 +148,11 @@ function parseViennaXML(xmlText: string): ViennaPark[] {
       }
     };
     
-    console.log(`Created park: ${parkName} in district ${bezirk}`);
+    // console.log(`Created park: ${parkName} in district ${bezirk}`);
     parks.push(park);
   });
   
-  console.log(`Parsed ${parks.length} parks from XML`);
+  // console.log(`Parsed ${parks.length} parks from XML`);
   return parks;
 }
 
@@ -161,16 +161,16 @@ function parseViennaXML(xmlText: string): ViennaPark[] {
  */
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 function parseViennaCSV(csvText: string): ViennaPark[] {
-  console.log('Parsing CSV response...');
+  // console.log('Parsing CSV response...');
   const lines = csvText.trim().split('\n');
   
   if (lines.length < 2) {
-    console.log('CSV has no data rows');
+    // console.log('CSV has no data rows');
     return [];
   }
   
   const headers = lines[0].split(',').map(h => h.trim().replace(/"/g, ''));
-  console.log('CSV headers:', headers);
+  // console.log('CSV headers:', headers);
   
   const parks: ViennaPark[] = [];
   
@@ -220,7 +220,7 @@ function parseViennaCSV(csvText: string): ViennaPark[] {
     parks.push(park);
   }
   
-  console.log(`Parsed ${parks.length} parks from CSV`);
+  // console.log(`Parsed ${parks.length} parks from CSV`);
   return parks;
 }
 
@@ -232,7 +232,7 @@ async function tryMultipleEndpoints(): Promise<ViennaPark[]> {
   const workingEndpoint = `${VIENNA_API_BASE}?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:PARKINFOOGD&srsName=EPSG:4326&outputFormat=json`;
   
   try {
-    console.log(`Fetching Vienna parks from: ${workingEndpoint}`);
+    // console.log(`Fetching Vienna parks from: ${workingEndpoint}`);
     const controller = new AbortController();
     const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 second timeout
     
@@ -248,8 +248,8 @@ async function tryMultipleEndpoints(): Promise<ViennaPark[]> {
     
     const data: ViennaParksResponse = await response.json();
     if (data.features && data.features.length > 0) {
-      console.log(`✅ Success! Found ${data.features.length} parks`);
-      console.log('Available properties:', Object.keys(data.features[0].properties || {}));
+      // console.log(`✅ Success! Found ${data.features.length} parks`);
+      // console.log('Available properties:', Object.keys(data.features[0].properties || {}));
       return data.features;
     }
   } catch (error) {
@@ -257,7 +257,7 @@ async function tryMultipleEndpoints(): Promise<ViennaPark[]> {
   }
   
   // If endpoint fails, return mock data
-  console.log('Using mock data as fallback');
+  // console.log('Using mock data as fallback');
   return generateMockViennaParks();
 }
 
@@ -461,6 +461,7 @@ export function transformViennaPark(viennaPark: ViennaPark) {
 
 /**
  * Get district from coordinates using more accurate boundaries
+ * @todo: find out exact distrioct long/lat corners and map them in a seperate file
  */
 function getDistrictFromCoordinates(coordinates: { lat: number; lng: number }): number {
   const { lat, lng } = coordinates;
@@ -573,13 +574,13 @@ export async function getViennaParksForApp() {
       
       // Check if cache is still valid
       if (now - timestamp < CACHE_EXPIRATION) {
-        console.log('Using cached parks data');
+        // console.log('Using cached parks data');
         return JSON.parse(cachedParks);
       }
     }
     
     // If no cache or expired, fetch from API
-    console.log('Fetching parks data from API');
+    // console.log('Fetching parks data from API');
     const viennaParks = await fetchViennaParks();
     const transformedParks = viennaParks.map(transformViennaPark);
     
@@ -594,7 +595,7 @@ export async function getViennaParksForApp() {
     // If API fetch fails but we have cached data, use it as fallback
     const cachedParks = localStorage.getItem(PARKS_STORAGE_KEY);
     if (cachedParks) {
-      console.log('API fetch failed, using cached data as fallback');
+      // console.log('API fetch failed, using cached data as fallback');
       return JSON.parse(cachedParks);
     }
     
@@ -608,5 +609,5 @@ export async function getViennaParksForApp() {
 export function clearParksCache() {
   localStorage.removeItem(PARKS_STORAGE_KEY);
   localStorage.removeItem(PARKS_TIMESTAMP_KEY);
-  console.log('Parks cache cleared');
+  // console.log('Parks cache cleared');
 }
