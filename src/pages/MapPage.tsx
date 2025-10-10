@@ -7,7 +7,7 @@ import mapboxgl from "mapbox-gl";
 import { slugifyParkName } from "../data/manualParksData";
 
 // Set Mapbox access token
-mapboxgl.accessToken = "pk.eyJ1IjoibHVtYTE5OTIiLCJhIjoiY21mc2c2bWN6MGJhZDJxc2hoNHY3cGp5aSJ9.QifiFiL5kRKQfjDS5dYqJw";
+mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN;
 
 interface Park {
   id: string;

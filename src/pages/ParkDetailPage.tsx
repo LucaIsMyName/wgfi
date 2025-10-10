@@ -25,7 +25,7 @@ function deg2rad(deg: number): number {
 }
 
 // Set Mapbox access token
-mapboxgl.accessToken = "pk.eyJ1IjoibHVtYTE5OTIiLCJhIjoiY21mc2c2bWN6MGJhZDJxc2hoNHY3cGp5aSJ9.QifiFiL5kRKQfjDS5dYqJw";
+mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN;
 
 const ParkDetailPage: React.FC = () => {
   const { idOrSlug } = useParams<{ idOrSlug: string }>();
