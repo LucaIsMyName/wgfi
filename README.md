@@ -111,9 +111,20 @@ The app is configured for static hosting with SPA routing support:
 ### Available Scripts
 
 - `npm run dev` - Start development server
-- `npm run build` - Build for production
+- `npm run build` - Build for production (includes sitemap generation)
+- `npm run generate:sitemap` - Generate sitemap.xml with all park URLs
 - `npm run preview` - Preview production build
 - `npm run lint` - Run ESLint
+
+### Dynamic Sitemap Generation
+
+The project includes automatic sitemap generation that:
+- Fetches all parks from Vienna Open Data API at build time
+- Generates URLs for all park detail pages
+- Creates SEO-optimized sitemap.xml in the public folder
+- Runs automatically before each build
+
+See `scripts/README.md` for more details.
 
 ### Adding New Features
 
@@ -125,3 +136,8 @@ The app is configured for static hosting with SPA routing support:
 ## 📝 License
 
 This project is open source and available under the MIT License.
+
+## To Do's
+
+- Make Map Pins correspond with the Parks Area and make the bigger or smaller based on the area of the park
+- 

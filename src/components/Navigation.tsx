@@ -28,7 +28,7 @@ const Navigation = () => {
 
   const navItems = [
     { path: "/", label: "Home", icon: <Home className="w-5 h-5" /> },
-    { path: "/parks", label: "Index", icon: <Palmtree className="w-5 h-5" /> },
+    { path: "/index", label: "Index", icon: <Palmtree className="w-5 h-5" /> },
     { path: "/map", label: "Karte", icon: <Map className="w-5 h-5" /> },
     { path: "/statistics", label: "Statistiken", icon: <BarChart3 className="w-5 h-5" /> },
     { path: "/favorites", label: "Favoriten", icon: <Heart className="w-5 h-5" /> },
@@ -86,8 +86,8 @@ const Navigation = () => {
           </div>
 
           {/* Footer */}
-          <div className="px-4 py-3 space-y-2">
-            <div className="flex flex-wrap gap-4 text-xs items-center">
+          <div className="px-4 py-4 space-y-2">
+            <div className="flex flex-wrap pb-2 gap-4 text-xs items-center">
               <a
                 href="https://lucamack.at/impressum.txt"
                 target="_blank"

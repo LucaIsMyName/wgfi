@@ -339,7 +339,7 @@ const ParkDetailPage: React.FC = () => {
             {error || "Park nicht gefunden"}
           </p>
           <Link
-            to="/parks"
+            to="/index"
             className="px-4 py-2 mt-4 inline-block font-serif"
             style={{
               backgroundColor: "var(--primary-green)",
@@ -373,7 +373,7 @@ const ParkDetailPage: React.FC = () => {
         {/* Header with park name */}
         <div className="px-4 py-6 lg:mr-[calc(30%+64px)]">
           <Link
-            to="/parks"
+            to="/index"
             className="mb-3 inline-flex items-center font-serif hover:underline"
             style={{ color: "var(--primary-green)" }}>
             <ChevronLeft className="w-4 h-4 inline mr-1" /> Zurück zur Übersicht
@@ -442,8 +442,8 @@ const ParkDetailPage: React.FC = () => {
                       ÖFFNUNGSZEITEN:
                     </span>
                     <p
-                      className="font-serif italic mt-1 flex items-center gap-2"
-                      style={{ color: "var(--deep-charcoal)", fontWeight: "400" }}>
+                      className="font-serif italic mt-1 flex items-start gap-2"
+                      style={{ color: "var(--deep-charcoal)", fontWeight: "400", marginTop: "0.5em"}}>
                       <Clock className="w-5 h-5 flex-shrink-0" /> {park.openingHours}
                     </p>
                   </div>
@@ -908,7 +908,7 @@ const ParkDetailPage: React.FC = () => {
                     {nearbyParks.map((nearbyPark) => (
                       <Link
                         key={nearbyPark.id}
-                        to={`/park/${slugifyParkName(nearbyPark.name)}`}
+                        to={`/index/${slugifyParkName(nearbyPark.name)}`}
                         className="block p-3 mb-2"
                         style={{
                           backgroundColor: "var(--light-sage)",
@@ -991,7 +991,7 @@ const ParkDetailPage: React.FC = () => {
       <div className="px-6 py-6">
         <div className="w-full">
           <Link
-            to="/parks"
+            to="/index"
             className="px-4 py-2 mb-3 inline-block font-serif hover:underline"
             style={{ color: "var(--primary-green)" }}>
             &larr; Zurück zur Übersicht

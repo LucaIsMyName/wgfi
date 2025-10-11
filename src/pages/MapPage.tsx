@@ -317,7 +317,7 @@ const MapPage = () => {
             <div style="padding: 16px;">
               <h3 className="" style="width:100%;font-size:32px;font-style:italic;color: var(--primary-green); font-family: 'EB Garamond', serif;  line-height: 0.9;">${park.name}</h3>
               <p style="margin: 0; font-size: 12px; font-family: 'Geist Mono', monospace;">${park.district}. BEZIRK</p>
-              <a href="/park/${slugifyParkName(park.name)}" style="background-color: var(--primary-green); color: var(--soft-cream); padding: 6px 12px; display: inline-block; margin-top: 16px; text-decoration: none; font-family: 'Geist Mono', sans-serif; font-weight: 500; font-size: 12px">DETAILS</a>
+              <a href="/index/${slugifyParkName(park.name)}" style="background-color: var(--primary-green); color: var(--soft-cream); padding: 6px 12px; display: inline-block; margin-top: 16px; text-decoration: none; font-family: 'Geist Mono', sans-serif; font-weight: 500; font-size: 12px">DETAILS</a>
             </div>
           `);
           

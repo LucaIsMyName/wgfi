@@ -106,11 +106,25 @@ const ParksListPage = () => {
 
   // Reset all filters
   const resetAllFilters = () => {
-    updateSearchTerm("");
-    updateSelectedDistrict("");
-    updateSelectedAmenities([]);
-    // Also reset sort to default
-    updateSortOrder("desc");
+    // Update state
+    setSearchTerm("");
+    setSelectedDistrict("");
+    setSelectedAmenities([]);
+    setSortOrder("desc");
+    
+    // Update localStorage
+    localStorage.setItem(STORAGE_KEY_SEARCH, "");
+    localStorage.setItem(STORAGE_KEY_DISTRICT, "");
+    localStorage.setItem(STORAGE_KEY_AMENITIES, JSON.stringify([]));
+    localStorage.setItem(STORAGE_KEY_SORT, "desc");
+    
+    // Update URL params all at once
+    updateUrlParams({
+      search: null,
+      district: null,
+      amenities: null,
+      sort: null, // Remove sort too since "desc" is default
+    });
   };
 
   // Calculate distance between two coordinates using Haversine formula
@@ -174,21 +188,26 @@ const ParksListPage = () => {
     setParks([...parks]);
   };
 
-  // Sync state with URL params (for browser back/forward navigation)
+  // Sync state with URL params (for browser back/forward navigation only)
+  // This effect ONLY reads from URL and updates state, never the reverse
   useEffect(() => {
     const urlSearch = searchParams.get("search") || "";
     const urlDistrict = searchParams.get("district") || "";
-    const urlSort = searchParams.get("sort") || "desc";
+    const urlSort = (searchParams.get("sort") as typeof sortOrder) || "desc";
     const urlAmenities = searchParams.get("amenities");
     const urlAmenitiesArray = urlAmenities ? urlAmenities.split(",").filter(Boolean) : [];
 
-    // Only update if different from current state
-    if (urlSearch !== searchTerm) setSearchTerm(urlSearch);
-    if (urlDistrict !== selectedDistrict) setSelectedDistrict(urlDistrict);
-    if (urlSort !== sortOrder) setSortOrder(urlSort as typeof sortOrder);
-    if (JSON.stringify(urlAmenitiesArray) !== JSON.stringify(selectedAmenities)) {
-      setSelectedAmenities(urlAmenitiesArray);
-    }
+    // Update state from URL (without triggering URL update)
+    setSearchTerm(urlSearch);
+    setSelectedDistrict(urlDistrict);
+    setSortOrder(urlSort);
+    setSelectedAmenities(urlAmenitiesArray);
+    
+    // Also update localStorage
+    localStorage.setItem(STORAGE_KEY_SEARCH, urlSearch);
+    localStorage.setItem(STORAGE_KEY_DISTRICT, urlDistrict);
+    localStorage.setItem(STORAGE_KEY_SORT, urlSort);
+    localStorage.setItem(STORAGE_KEY_AMENITIES, JSON.stringify(urlAmenitiesArray));
   }, [searchParams]);
 
   // Fetch real Vienna parks data
@@ -522,7 +541,7 @@ const ParksListPage = () => {
               {sortedParks.map((park) => (
                 <Link
                   key={park.id}
-                  to={`/park/${slugifyParkName(park.name)}`}
+                  to={`/index/${slugifyParkName(park.name)}`}
                   className="block p-4 mb-4 park-list-item"
                   style={{
                     backgroundColor: "var(--card-bg)",

@@ -208,7 +208,7 @@ const StatisticsPage = () => {
               </p>
             </div>
             <p
-              className="font-serif text-3xl font-bold"
+              className="font-serif text-4xl"
               style={{ color: "var(--primary-green)" }}>
               {viennaCoverage.toFixed(2)}%
             </p>
@@ -237,7 +237,7 @@ const StatisticsPage = () => {
               </p>
             </div>
             <p
-              className="font-serif text-3xl font-bold"
+              className="font-serif text-4xl"
               style={{ color: "var(--primary-green)" }}>
               {parks.length}
             </p>
@@ -266,7 +266,7 @@ const StatisticsPage = () => {
               </p>
             </div>
             <p
-              className="font-serif text-3xl font-bold"
+              className="font-serif text-4xl"
               style={{ color: "var(--primary-green)" }}>
               {formatArea(parks.reduce((sum, p) => sum + p.area, 0))}
             </p>
@@ -295,7 +295,7 @@ const StatisticsPage = () => {
               </p>
             </div>
             <p
-              className="font-serif text-3xl font-bold"
+              className="font-serif text-4xl"
               style={{ color: "var(--primary-green)" }}>
               {formatArea(parks.reduce((sum, p) => sum + p.area, 0) / parks.length)}
             </p>
@@ -434,7 +434,7 @@ const StatisticsPage = () => {
                     #{index + 1}
                   </span>
                   <Link
-                    to={`/park/${slugifyParkName(park.name)}`}
+                    to={`/index/${slugifyParkName(park.name)}`}
                     className="font-serif text-lg hover:underline"
                     style={{ color: "var(--primary-green)" }}>
                     {park.name}

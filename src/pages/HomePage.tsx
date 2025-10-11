@@ -52,7 +52,7 @@ const HomePage: React.FC = () => {
           );
           
           if (nearestPark) {
-            navigate(`/park/${slugifyParkName(nearestPark.name)}`);
+            navigate(`/index/${slugifyParkName(nearestPark.name)}`);
           } else {
             setLocationError(true);
           }
@@ -119,7 +119,7 @@ const HomePage: React.FC = () => {
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <Link
-              to="/parks"
+              to="/index"
               className="px-8 py-4 font-mono text-sm inline-flex items-center justify-center"
               style={{
                 backgroundColor: "var(--primary-green)",

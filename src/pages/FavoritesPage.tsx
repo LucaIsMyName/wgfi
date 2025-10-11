@@ -148,7 +148,7 @@ const FavoritesPage = () => {
                     Sie haben noch keine Parks zu Ihren Favoriten hinzugefügt. Entdecken Sie Parks in der Übersicht und speichern Sie Ihre Lieblingsparks für schnellen Zugriff.
                   </p>
                   <Link
-                    to="/parks"
+                    to="/index"
                     className="px-4 py-2 inline-block font-mono text-xs"
                     style={{
                       backgroundColor: "var(--primary-green)",
@@ -179,7 +179,7 @@ const FavoritesPage = () => {
                   </button>
 
                   <Link
-                    to={`/park/${slugifyParkName(park.name)}`}
+                    to={`/index/${slugifyParkName(park.name)}`}
                     className="block">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                       <div>
