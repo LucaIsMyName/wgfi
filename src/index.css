@@ -29,8 +29,8 @@
 
   /* Dark Mode */
   .dark {
-    --primary-green: #6fbb95;
-    --secondary-green: #abdebe;
+    --primary-green: #3aad6f;
+    --secondary-green: #29724b;
     --accent-gold: #d4b483;
     --warm-gold: #c9a96e;
     --deep-charcoal: #e5e5e5;
@@ -102,7 +102,7 @@ body {
   background: var(--main-bg);
   color: var(--deep-charcoal);
   line-height: 1.6;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  /* transition: background-color 0.3s ease, color 0.3s ease; */
 }
 
 /* Smooth theme transitions - exclude transform and other animation properties */
@@ -416,4 +416,9 @@ body {
   transform: scale(1.3) !important;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6) !important;
   z-index: 1000 !important;
+}
+
+* {
+  transition: none !important;
+  will-change: background-color, color;
 }

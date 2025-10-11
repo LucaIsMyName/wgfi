@@ -8,6 +8,7 @@ import { getAmenityIcon } from '../utils/amenityIcons';
 import { isFavorite, toggleFavorite } from '../utils/favoritesManager';
 import STYLE from '../utils/config';
 import Loading from '../components/Loading';
+import { useTheme } from '../contexts/ThemeContext';
 
 interface Park {
   id: string;
@@ -32,6 +33,7 @@ const STORAGE_KEY_LOCATION_PERMISSION = "wbi-location-permission";
 
 const ParksListPage = () => {
   const [searchParams, setSearchParams] = useSearchParams();
+  const { isHighContrast } = useTheme();
   
   const [parks, setParks] = useState<Park[]>([]);
   const [loading, setLoading] = useState(true);
@@ -538,26 +540,27 @@ const ParksListPage = () => {
           {/* Parks List */}
           <div className="flex-1">
             <div className="space-y-4 p-4 lg:p-0 lg:pl-6">
-              {sortedParks.map((park) => (
+              {sortedParks.map((park) => {
+                return (
                 <Link
                   key={park.id}
                   to={`/index/${slugifyParkName(park.name)}`}
                   className="block p-4 mb-4 park-list-item"
                   style={{
                     backgroundColor: "var(--card-bg)",
-                    border: "1px solid var(--border-color)",
+                    border: isHighContrast ? "2px solid var(--border-color)" : "1px solid var(--border-color)",
                   }}>
                   <div className="flex flex-col md:flex-row md:items-start md:justify-between">
                     <div className="mb-6 md:mb-0">
                       <h3
                         className="font-serif text-2xl mb-3"
-                        style={{ color: "var(--primary-green)", fontWeight: "400", fontStyle: "italic" }}>
+                        style={{ color: "var(--deep-charcoal)", fontWeight: "400", fontStyle: "italic" }}>
                         {park.name}
                       </h3>
                       <div className="flex flex-wrap gap-6 mb-2">
                         <span
                           className="flex items-center gap-2 font-mono text-xs"
-                          style={{ color: "var(--primary-green)" }}>
+                          style={{ color: "var(--deep-charcoal)" }}>
                           <Building className="w-4 h-4" /> {park.district}. BEZIRK
                         </span>
                         <span
@@ -579,6 +582,7 @@ const ParksListPage = () => {
                                 backgroundColor: "var(--light-sage)",
                                 color: "var(--deep-charcoal)",
                                 borderRadius: "4px",
+                                border: isHighContrast ? "2px solid var(--border-color)" : "none",
                               }}>
                               <AmenityIcon className="w-3 h-3" />
                               {amenity}
@@ -594,6 +598,7 @@ const ParksListPage = () => {
                               backgroundColor: "var(--soft-cream)",
                               color: "var(--deep-charcoal)",
                               borderRadius: "4px",
+                              border: isHighContrast ? "2px solid var(--border-color)" : "none",
                             }}>
                             +{park.amenities.length - 2}
                           </span>
@@ -622,7 +627,8 @@ const ParksListPage = () => {
                     </div>
                   </div>
                 </Link>
-              ))}
+                );
+              })}
             </div>
 
             {filteredParks.length === 0 && (

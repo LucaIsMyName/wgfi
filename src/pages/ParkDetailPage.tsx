@@ -31,7 +31,7 @@ mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN;
 
 const ParkDetailPage: React.FC = () => {
   const { idOrSlug } = useParams<{ idOrSlug: string }>();
-  const { effectiveTheme } = useTheme();
+  const { effectiveTheme, isHighContrast } = useTheme();
   const [park, setPark] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -146,7 +146,7 @@ const ParkDetailPage: React.FC = () => {
         style: STYLE.getMapStyle(isDark),
         center: [park.coordinates.lng, park.coordinates.lat],
         zoom: 15.5,
-        pitch: 71, // Tilt map for 3D view
+        pitch: 60, // Tilt map for 3D view
         bearing: 0,
         antialias: true, // Smooth 3D rendering
         attributionControl: false,
@@ -386,7 +386,7 @@ const ParkDetailPage: React.FC = () => {
           <div className="flex items-center space-x-4 text-body">
             <span
               className="flex items-center gap-2 font-mono text-xs"
-              style={{ color: "var(--primary-green)" }}>
+              style={{ color: "var(--deep-charcoal)" }}>
               <Building className="w-4 h-4" /> {park.district}. BEZIRK
             </span>
             <span
@@ -838,7 +838,7 @@ const ParkDetailPage: React.FC = () => {
                 style={{ backgroundColor: "var(--card-bg)", borderRadius: "8px" }}>
                 <h2
                   className="font-mono text-lg mb-3 truncate"
-                  style={{ color: "var(--primary-green)", letterSpacing: "0.02em" }}>
+                  style={{ color: "var(--deep-charcoal)", letterSpacing: "0.02em" }}>
                   AUSSTATTUNG & EINRICHTUNGEN
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -874,7 +874,7 @@ const ParkDetailPage: React.FC = () => {
                 style={{ backgroundColor: "var(--card-bg)", borderRadius: "8px" }}>
                 <h2
                   className="font-mono text-lg mb-3 truncate"
-                  style={{ color: "var(--primary-green)", letterSpacing: "0.02em" }}>
+                  style={{ color: "var(--deep-charcoal)", letterSpacing: "0.02em" }}>
                   LAGE & KARTE
                 </h2>
                 <div
@@ -889,7 +889,7 @@ const ParkDetailPage: React.FC = () => {
                 />
                 <p
                   className="font-mono text-xs mt-3 mb-8 flex items-center justify-start gap-2"
-                  style={{ color: "var(--primary-green)" }}>
+                  style={{ color: "var(--deep-charcoal)" }}>
                   <MapPin className="w-4 h-4" /> KOORDINATEN: {park.coordinates?.lat.toFixed(6)}, {park.coordinates?.lng.toFixed(6)}
                 </p>
               </div>
@@ -898,10 +898,15 @@ const ParkDetailPage: React.FC = () => {
               {nearbyParks.length > 0 && (
                 <div
                   className=""
-                  style={{ backgroundColor: "var(--card-bg)", borderRadius: "8px" }}>
+                  style={{ 
+                    backgroundColor: "var(--card-bg)", 
+                    borderRadius: "8px",
+                    border: isHighContrast ? "2px solid var(--border-color)" : "none",
+                    padding: isHighContrast ? "16px" : "0"
+                  }}>
                   <h2
                     className="font-mono text-lg mb-4 truncate"
-                    style={{ color: "var(--primary-green)", letterSpacing: "0.02em" }}>
+                    style={{ color: "var(--deep-charcoal)", letterSpacing: "0.02em" }}>
                     ANDERE PARKS IN DER NÄHE
                   </h2>
                   <div className="space-y-4">
@@ -918,7 +923,7 @@ const ParkDetailPage: React.FC = () => {
                         <div className="flex flex-col">
                           <h3
                             className="font-serif text-xl mb-2"
-                            style={{ color: "var(--primary-green)", fontWeight: "400", fontStyle: "italic" }}>
+                            style={{ color: "var(--deep-charcoal)", fontWeight: "400", fontStyle: "italic" }}>
                             {nearbyPark.name}
                           </h3>
                           <div className="flex flex-wrap gap-4 mb-2">
@@ -934,7 +939,7 @@ const ParkDetailPage: React.FC = () => {
                             </span>
                             <span
                               className="flex items-center gap-2 font-mono text-xs"
-                              style={{ color: "var(--accent-gold)" }}>
+                              style={{ color: "var(--deep-charcoal)" }}>
                               <MapPin className="w-4 h-4" /> {nearbyPark.distance.toFixed(2)} km
                             </span>
                           </div>
@@ -942,6 +947,7 @@ const ParkDetailPage: React.FC = () => {
                           <div className="flex flex-wrap gap-2 mt-2">
                             {(nearbyPark.amenities || []).slice(0, 2).map((amenity: string, index: number) => {
                               const AmenityIcon = getAmenityIcon(amenity);
+                              const isAmenityHighContrast = isHighContrast;
                               return (
                                 <span
                                   key={index}
@@ -950,6 +956,7 @@ const ParkDetailPage: React.FC = () => {
                                     backgroundColor: "var(--card-bg)",
                                     color: "var(--deep-charcoal)",
                                     borderRadius: "4px",
+                                    border: isAmenityHighContrast ? "2px solid var(--border-color)" : "none",
                                   }}>
                                   <AmenityIcon className="w-3 h-3" />
                                   {amenity}
@@ -965,6 +972,7 @@ const ParkDetailPage: React.FC = () => {
                                   backgroundColor: "var(--card-bg)",
                                   color: "var(--deep-charcoal)",
                                   borderRadius: "4px",
+                                  border: isHighContrast ? "2px solid var(--border-color)" : "none",
                                 }}>
                                 +{(nearbyPark.amenities || []).length - 2}
                               </span>

@@ -11,7 +11,8 @@ const HomePage: React.FC = () => {
   const [showLocationModal, setShowLocationModal] = useState(false);
   const [locationError, setLocationError] = useState(false);
   const [parks, setParks] = useState<any[]>([]);
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoadingNearby, setIsLoadingNearby] = useState(false);
+  const [isLoadingRandom, setIsLoadingRandom] = useState(false);
   const navigate = useNavigate();
 
   // Load parks data
@@ -34,11 +35,11 @@ const HomePage: React.FC = () => {
   };
 
   const handleRequestLocation = () => {
-    setIsLoading(true);
+    setIsLoadingNearby(true);
     
     if (!navigator.geolocation) {
       setLocationError(true);
-      setIsLoading(false);
+      setIsLoadingNearby(false);
       return;
     }
 
@@ -60,14 +61,14 @@ const HomePage: React.FC = () => {
           console.error("Error finding nearest park:", error);
           setLocationError(true);
         } finally {
-          setIsLoading(false);
+          setIsLoadingNearby(false);
           setShowLocationModal(false);
         }
       },
       (error) => {
         console.error("Error getting location:", error);
         setLocationError(true);
-        setIsLoading(false);
+        setIsLoadingNearby(false);
       },
       {
         enableHighAccuracy: true,
@@ -80,6 +81,30 @@ const HomePage: React.FC = () => {
   const handleCloseModal = () => {
     setShowLocationModal(false);
     setLocationError(false);
+  };
+
+  const handleRandomPark = async () => {
+    setIsLoadingRandom(true);
+    
+    try {
+      // If parks not loaded yet, load them
+      let parksData = parks;
+      if (parks.length === 0) {
+        parksData = await getViennaParksForApp();
+        setParks(parksData);
+      }
+      
+      // Select random park
+      if (parksData.length > 0) {
+        const randomIndex = Math.floor(Math.random() * parksData.length);
+        const randomPark = parksData[randomIndex];
+        navigate(`/index/${slugifyParkName(randomPark.name)}`);
+      }
+    } catch (error) {
+      console.error("Error loading random park:", error);
+    } finally {
+      setIsLoadingRandom(false);
+    }
   };
 
   return (
@@ -103,7 +128,7 @@ const HomePage: React.FC = () => {
               Wiener
               <br /> Grünflächen
               <br />
-              <span className="uppercase font-mono not-italic text-[0.75em] font-[300] bg-[var(--light-gold)] px-3 ">index</span>
+              <span className="uppercase font-mono not-italic text-[0.85em] font-[300] bg-[var(--secondary-green)] text-[var(--soft-cream)] px-3 ">index</span>
             </h1>
           </div>
 
@@ -138,14 +163,25 @@ const HomePage: React.FC = () => {
             </Link>
             <button
               onClick={handleFindNearby}
-              disabled={isLoading}
+              disabled={isLoadingNearby}
               className="px-8 py-4 border border-[var(--primary-green)] font-mono text-sm inline-flex items-center justify-center disabled:opacity-50"
               style={{
                 backgroundColor: "var(--card-bg)",
                 color: "var(--primary-green)",
                 borderRadius: "6px",
               }}>
-              {isLoading ? 'SUCHE...' : 'IN DER NÄHE'}
+              {isLoadingNearby ? 'SUCHE...' : 'IN DER NÄHE'}
+            </button>
+            <button
+              onClick={handleRandomPark}
+              disabled={isLoadingRandom}
+              className="px-8 py-4 border border-[var(--primary-green)] font-mono text-sm inline-flex items-center justify-center disabled:opacity-50"
+              style={{
+                backgroundColor: "var(--card-bg)",
+                color: "var(--primary-green)",
+                borderRadius: "6px",
+              }}>
+              {isLoadingRandom ? 'LADE...' : 'ZUFALLSPARK'}
             </button>
           </div>
 

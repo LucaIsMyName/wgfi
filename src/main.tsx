@@ -5,6 +5,16 @@ import './index.css'
 import App from './App.tsx'
 import { ThemeProvider } from './contexts/ThemeContext'
 
+// Enable React Scan only in development mode
+if (import.meta.env.DEV) {
+  import('react-scan').then(({ scan }) => {
+    scan({
+      enabled: true,
+      log: false, // Disable console logs
+    });
+  });
+}
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ThemeProvider>

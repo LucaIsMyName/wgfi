@@ -7,6 +7,7 @@ import mapboxgl from "mapbox-gl";
 import { slugifyParkName } from "../data/manualParksData";
 import STYLE from "../utils/config";
 import { useTheme } from "../contexts/ThemeContext";
+import { isFavorite } from "../utils/favoritesManager";
 
 // Set Mapbox access token
 mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN;
@@ -292,14 +293,23 @@ const MapPage = () => {
         wrapper.style.width = "0";
         wrapper.style.height = "0";
         
+        // Check if park is favorited
+        const isFavorited = isFavorite(park.id);
+        
+        // Get CSS variable values for theming
+        const rootStyles = getComputedStyle(document.documentElement);
+        const accentGold = rootStyles.getPropertyValue('--accent-gold').trim();
+        const primaryGreen = rootStyles.getPropertyValue('--primary-green').trim();
+        const softCream = rootStyles.getPropertyValue('--soft-cream').trim();
+        
         // Create inner marker element (this handles hover effects)
         const el = document.createElement("div");
         el.className = "park-marker";
         el.style.width = `${markerSize}px`;
         el.style.height = `${markerSize}px`;
         el.style.borderRadius = "50%";
-        el.style.backgroundColor = "#2d4a3e";
-        el.style.border = "3px solid #fcfaf6";
+        el.style.backgroundColor = isFavorited ? accentGold : primaryGreen;
+        el.style.border = `3px solid ${softCream}`;
         el.style.boxShadow = "0 2px 8px rgba(0,0,0,0.4)";
         el.style.cursor = "pointer";
         el.style.position = "absolute";
@@ -307,6 +317,7 @@ const MapPage = () => {
         el.style.top = `${-markerSize / 2}px`;
         el.style.transition = "transform 0.2s ease, box-shadow 0.2s ease";
         el.style.transformOrigin = "center center";
+        el.style.transform = isFavorited ? "rotate(45deg)" : "none";
         
         // Append inner element to wrapper
         wrapper.appendChild(el);
@@ -315,7 +326,7 @@ const MapPage = () => {
         const popup = new mapboxgl.Popup({ offset: 25, closeOnClick: true })
           .setHTML(`
             <div style="padding: 16px;">
-              <h3 className="" style="width:100%;font-size:32px;font-style:italic;color: var(--primary-green); font-family: 'EB Garamond', serif;  line-height: 0.9;">${park.name}</h3>
+              <h3 className="" style="width:100%;font-size:32px;font-style:italic;color: var(--primary-green); font-family: 'EB Garamond', serif;  line-height: 0.9; margin-right:0.75em;">${park.name}</h3>
               <p style="margin: 0; font-size: 12px; font-family: 'Geist Mono', monospace;">${park.district}. BEZIRK</p>
               <a href="/index/${slugifyParkName(park.name)}" style="background-color: var(--primary-green); color: var(--soft-cream); padding: 6px 12px; display: inline-block; margin-top: 16px; text-decoration: none; font-family: 'Geist Mono', sans-serif; font-weight: 500; font-size: 12px">DETAILS</a>
             </div>
@@ -388,13 +399,25 @@ const MapPage = () => {
           .setPopup(popup)
           .addTo(mapInstance.current!);
 
-        // Add hover effect using class instead of inline styles
+        // Add hover effect - maintain rotation for favorites
         el.addEventListener("mouseenter", () => {
-          el.classList.add('park-marker-hover');
+          if (isFavorited) {
+            el.style.transform = "rotate(45deg) scale(1.3)";
+          } else {
+            el.style.transform = "scale(1.3)";
+          }
+          el.style.boxShadow = "0 4px 12px rgba(0, 0, 0, 0.6)";
+          el.style.zIndex = "1000";
         });
 
         el.addEventListener("mouseleave", () => {
-          el.classList.remove('park-marker-hover');
+          if (isFavorited) {
+            el.style.transform = "rotate(45deg)";
+          } else {
+            el.style.transform = "none";
+          }
+          el.style.boxShadow = "0 2px 8px rgba(0,0,0,0.4)";
+          el.style.zIndex = "";
         });
 
         return marker;

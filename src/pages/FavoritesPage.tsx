@@ -185,13 +185,13 @@ const FavoritesPage = () => {
                       <div>
                         <h3
                           className="font-serif text-2xl mb-3"
-                          style={{ color: "var(--primary-green)", fontWeight: "400", fontStyle: "italic" }}>
+                          style={{ color: "var(--deep-charcoal)", fontWeight: "400", fontStyle: "italic" }}>
                           {park.name}
                         </h3>
                         <div className="flex flex-wrap gap-6 text-body">
                           <span
                             className="flex items-center gap-2 font-mono text-xs"
-                            style={{ color: "var(--primary-green)" }}>
+                            style={{ color: "var(--deep-charcoal)" }}>
                             <Building className="w-4 h-4" /> {park.district}. BEZIRK
                           </span>
                           <span

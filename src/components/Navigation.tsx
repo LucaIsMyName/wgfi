@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Home, Palmtree, Map, Menu, X, Heart, Lightbulb, BarChart3 } from "lucide-react";
+import { Home, Palmtree, Map, Menu, X, Heart, BookOpen, BarChart3 } from "lucide-react";
 import Logo from "./Logo";
 import ThemeToggle from "./ThemeToggle";
 
@@ -32,7 +32,7 @@ const Navigation = () => {
     { path: "/map", label: "Karte", icon: <Map className="w-5 h-5" /> },
     { path: "/statistics", label: "Statistiken", icon: <BarChart3 className="w-5 h-5" /> },
     { path: "/favorites", label: "Favoriten", icon: <Heart className="w-5 h-5" /> },
-    { path: "/idea", label: "Idee", icon: <Lightbulb className="w-5 h-5" /> },
+    { path: "/idea", label: "Idee", icon: <BookOpen className="w-5 h-5" /> },
   ];
 
   const NavLink = ({ path, label, icon, onClick }: { path: string; label: string; icon: React.ReactNode; onClick?: () => void }) => (
@@ -159,7 +159,7 @@ const Navigation = () => {
             style={{
               background: "var(--sidebar-bg)",
               boxShadow: "-2px 0 10px rgba(0, 0, 0, 0.05)",
-              borderLeft: "1px solid var(--border-color)",
+              borderLeft: "0px solid var(--border-color)",
             }}>
             <div className="flex flex-col h-full">
               {/* Header */}
