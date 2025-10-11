@@ -5,6 +5,7 @@ import { getViennaParksForApp } from "../services/viennaApi";
 import { MapPin, Filter, Navigation, Map as MapIcon } from "lucide-react";
 import mapboxgl from "mapbox-gl";
 import { slugifyParkName } from "../data/manualParksData";
+import STYLE from "../utils/config";
 
 // Set Mapbox access token
 mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN;
@@ -111,13 +112,30 @@ const MapPage = () => {
 
     const map = new mapboxgl.Map({
       container: mapContainer.current,
-      style: "mapbox://styles/mapbox/light-v11",
+      style: STYLE.mapboxStyle,
       center: [16.3738, 48.2082], // Vienna center
       zoom: 12,
+      pitch: 60, // Tilt map for 3D view
+      bearing: 0,
+      antialias: true // Smooth 3D rendering
     });
 
     map.on("load", () => {
+      console.log('Map loaded event fired');
+      
+      // Add 3D terrain only if it doesn't exist
+      if (!map.getSource('mapbox-dem')) {
+        map.addSource('mapbox-dem', {
+          'type': 'raster-dem',
+          'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
+          'tileSize': 512,
+          'maxzoom': 14
+        });
+        map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
+      }
+      
       setMapLoaded(true);
+      console.log('Map loaded state set to true');
     });
 
     map.addControl(new mapboxgl.NavigationControl(), "top-right");
@@ -203,40 +221,64 @@ const MapPage = () => {
 
   // Add markers when parks or filters change
   useEffect(() => {
-    if (!mapLoaded || loading || !mapInstance.current) return;
+    console.log('Marker effect triggered:', { mapLoaded, loading, hasMap: !!mapInstance.current, parksCount: filteredParks.length });
+    
+    if (!mapLoaded || loading || !mapInstance.current) {
+      console.log('Exiting early:', { mapLoaded, loading, hasMap: !!mapInstance.current });
+      return;
+    }
 
     try {
+      console.log('Creating markers for', filteredParks.length, 'parks');
+      
       // Clear existing markers
       markersRef.current.forEach((marker) => marker.remove());
       markersRef.current = [];
 
+      // Calculate average park area for scaling
+      const parkAreas = filteredParks.map(p => p.area);
+      const avgArea = parkAreas.reduce((a, b) => a + b, 0) / parkAreas.length;
+      
       // Add markers for filtered parks
       const markers = filteredParks.map((park) => {
-        // Create marker wrapper to prevent positioning issues
+        // Calculate marker size based on park area (relative to average)
+        const sizeRatio = Math.sqrt(park.area / avgArea);
+        const baseSize = 24;
+        const minSize = 16;
+        const maxSize = 40;
+        const markerSize = Math.max(minSize, Math.min(maxSize, baseSize * sizeRatio));
+        
+        // Create wrapper for Mapbox (this gets positioned by Mapbox)
         const wrapper = document.createElement("div");
-        wrapper.className = "marker-wrapper";
-
-        // Create marker element
+        wrapper.style.width = "0";
+        wrapper.style.height = "0";
+        
+        // Create inner marker element (this handles hover effects)
         const el = document.createElement("div");
         el.className = "park-marker";
-        el.style.width = "24px";
-        el.style.height = "24px";
+        el.style.width = `${markerSize}px`;
+        el.style.height = `${markerSize}px`;
         el.style.borderRadius = "50%";
-        el.style.backgroundColor = "var(--primary-green)";
-        el.style.border = "2px solid var(--soft-cream)";
-        el.style.boxShadow = "0 2px 6px rgba(0,0,0,0.3)";
+        el.style.backgroundColor = "#2d4a3e";
+        el.style.border = "3px solid #fcfaf6";
+        el.style.boxShadow = "0 2px 8px rgba(0,0,0,0.4)";
         el.style.cursor = "pointer";
-
-        // Add marker element to wrapper
+        el.style.position = "absolute";
+        el.style.left = `${-markerSize / 2}px`;
+        el.style.top = `${-markerSize / 2}px`;
+        el.style.transition = "transform 0.2s ease, box-shadow 0.2s ease";
+        el.style.transformOrigin = "center center";
+        
+        // Append inner element to wrapper
         wrapper.appendChild(el);
 
         // Create popup
         const popup = new mapboxgl.Popup({ offset: 25, closeOnClick: true })
           .setHTML(`
-            <div style="font-family: 'Geist Mono', serif; padding: 10px;">
-              <h3 style="margin: 0 0 5px 0; font-weight: 400; color: var(--primary-green); font-size: 20px;">${park.name}</h3>
+            <div style="padding: 16px;">
+              <h3 className="" style="width:100%;font-size:32px;font-style:italic;color: var(--primary-green); font-family: 'EB Garamond', serif;  line-height: 0.9;">${park.name}</h3>
               <p style="margin: 0; font-size: 12px; font-family: 'Geist Mono', monospace;">${park.district}. BEZIRK</p>
-              <a href="/park/${slugifyParkName(park.name)}" style="color: var(--primary-green); text-decoration: none; font-size: 12px; font-family: 'Geist Mono', monospace; margin-top: 5px; display: block;">DETAILS</a>
+              <a href="/park/${slugifyParkName(park.name)}" style="background-color: var(--primary-green); color: var(--soft-cream); padding: 6px 12px; display: inline-block; margin-top: 16px; text-decoration: none; font-family: 'Geist Mono', sans-serif; font-weight: 500; font-size: 12px">DETAILS</a>
             </div>
           `);
           
@@ -307,18 +349,22 @@ const MapPage = () => {
           .setPopup(popup)
           .addTo(mapInstance.current!);
 
-        // Add hover effect to inner element only
+        console.log('Marker created for:', park.name, 'at', park.coordinates, 'size:', markerSize);
+
+        // Add hover effect using class instead of inline styles
         el.addEventListener("mouseenter", () => {
-          el.style.transform = "scale(1.2)";
+          el.classList.add('park-marker-hover');
         });
 
         el.addEventListener("mouseleave", () => {
-          el.style.transform = "scale(1)";
+          el.classList.remove('park-marker-hover');
         });
 
         return marker;
       });
 
+      console.log('Total markers created:', markers.length);
+      
       // Store markers for later removal
       markersRef.current = markers;
 
@@ -351,20 +397,20 @@ const MapPage = () => {
       <div className="relative flex-1 h-screen" data-lg-margin>
         <div
           ref={mapContainer}
-          className="w-full h-full"
+          className="w-full h-full lg:ml-[clamp(200px,16vw,280px)]"
           style={{
             position: "absolute",
             top: 0,
             left: 0,
             right: 0,
             bottom: 0,
-            zIndex: 1
+            zIndex: 0
           }}
         />
 
         {/* Title Overlay - Top Left - Desktop Only */}
         <div
-          className="absolute top-4 left-4 z-10 max-w-md p-3 hidden lg:block"
+          className="sr-only absolute top-4 left-4 z-10 max-w-md p-3 hidden lg:block"
           style={{ backgroundColor: "rgba(255, 255, 255, 0.9)", borderRadius: "8px" }}>
           <h1
             className="font-serif text-2xl"

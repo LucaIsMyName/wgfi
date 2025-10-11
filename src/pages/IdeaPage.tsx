@@ -197,7 +197,16 @@ const IdeaPage: React.FC = () => {
                 target="_blank">
                 Github
               </a>
-              .
+              .<br/><br/>
+            </p>
+            <p>
+              Die Parks werden Lokal im Browser für 7 Tage gespeichert, um die Ladezeit zu reduzieren und die Performance zu verbessern.<br/>
+              Parks zum letzen mal geladen: <span className="font-mono text-[0.78em]">{new Date(Number(localStorage.getItem("wbi-parks-timestamp"))).toLocaleString()}</span><br/>
+              <button
+                className="px-2 py-1 border border-primary-green rounded mt-4"
+                onClick={() => localStorage.removeItem("wbi-parks-data")}>
+                Alle Park Daten löschen
+              </button>
             </p>
           </section>
         </div>

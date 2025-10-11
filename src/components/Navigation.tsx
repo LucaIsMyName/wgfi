@@ -6,6 +6,7 @@ import Logo from "./Logo";
 const Navigation = () => {
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const isMapPage = location.pathname.startsWith('/map');
 
   const isActive = (path: string) => {
     return location.pathname === path;

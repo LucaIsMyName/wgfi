@@ -174,3 +174,36 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.mapboxgl-popup-close-button {
+  padding-right: 0.5rem;
+  
+}
+.mapboxgl-popup-close-button span {
+  height: 2rem;
+  display: block;
+}
+
+/* Ensure mapbox markers are visible and properly positioned */
+.mapboxgl-marker {
+  z-index: 100 !important;
+  /* Prevent position changes on hover */
+  position: absolute !important;
+}
+
+.mapboxgl-popup {
+  z-index: 200 !important;
+}
+
+.park-marker {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  /* Ensure transform origin is center */
+  transform-origin: center center;
+  /* Don't set position - let Mapbox handle it */
+}
+
+.park-marker-hover {
+  transform: scale(1.3) !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6) !important;
+  z-index: 1000 !important;
+}

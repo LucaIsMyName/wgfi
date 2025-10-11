@@ -1,5 +1,5 @@
 import { Suspense, lazy } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import Navigation from './components/Navigation';
 import ErrorBoundary from './components/ErrorBoundary';
@@ -20,33 +20,45 @@ const LoadingFallback = () => (
   </div>
 );
 
+function AppContent() {
+  const location = useLocation();
+  const isMapPage = location.pathname.startsWith('/map');
+
+  return (
+    <div className="min-h-screen w-full" style={{backgroundColor: 'var(--soft-cream)'}}>
+      <Navigation />
+      
+      {/* Main Content Area */}
+      <main 
+        className={isMapPage ? '' : 'lg:ml-[clamp(200px,16vw,280px)]'} 
+        style={isMapPage ? {minHeight: '100vh'} : {minHeight: 'calc(100vh - 64px)'}}
+      >
+        <div className="w-full h-full">
+          <ErrorBoundary>
+            <Suspense fallback={<LoadingFallback />}>
+              <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/parks" element={<ParksListPage />} />
+                <Route path="/park/:idOrSlug" element={<ParkDetailPage />} />
+                <Route path="/map/:parkId?" element={<MapPage />} />
+                <Route path="/favorites" element={<FavoritesPage />} />
+                <Route path="/idea" element={<IdeaPage />} />
+                {/* 404 Route - no path means it matches when no other routes do */}
+                <Route path="*" element={<NotFoundPage />} />
+              </Routes>
+            </Suspense>
+          </ErrorBoundary>
+        </div>
+      </main>
+    </div>
+  );
+}
+
 function App() {
   return (
     <HelmetProvider>
       <Router>
-        <div className="min-h-screen w-full" style={{backgroundColor: 'var(--soft-cream)'}}>
-          <Navigation />
-          
-          {/* Main Content Area */}
-          <main className="lg:ml-[clamp(200px,16vw,280px)]" style={{minHeight: 'calc(100vh - 64px)'}}>
-            <div className="w-full">
-              <ErrorBoundary>
-                <Suspense fallback={<LoadingFallback />}>
-                  <Routes>
-                    <Route path="/" element={<HomePage />} />
-                    <Route path="/parks" element={<ParksListPage />} />
-                    <Route path="/park/:idOrSlug" element={<ParkDetailPage />} />
-                    <Route path="/map/:parkId?" element={<MapPage />} />
-                    <Route path="/favorites" element={<FavoritesPage />} />
-                    <Route path="/idea" element={<IdeaPage />} />
-                    {/* 404 Route - no path means it matches when no other routes do */}
-                    <Route path="*" element={<NotFoundPage />} />
-                  </Routes>
-                </Suspense>
-              </ErrorBoundary>
-            </div>
-          </main>
-        </div>
+        <AppContent />
       </Router>
     </HelmetProvider>
   )

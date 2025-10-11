@@ -139,10 +139,24 @@ const ParkDetailPage: React.FC = () => {
       // Create map
       const map = new mapboxgl.Map({
         container: mapContainer.current,
-        style: "mapbox://styles/mapbox/light-v11",
+        style: STYLE.mapboxStyle,
         center: [park.coordinates.lng, park.coordinates.lat],
-        zoom: 14,
+        zoom: 15.5,
+        pitch: 71, // Tilt map for 3D view
+        bearing: 0,
+        antialias: true, // Smooth 3D rendering
         attributionControl: false,
+      });
+
+      // Add 3D terrain when map loads
+      map.on('load', () => {
+        map.addSource('mapbox-dem', {
+          'type': 'raster-dem',
+          'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
+          'tileSize': 512,
+          'maxzoom': 14
+        });
+        map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
       });
 
       // Add navigation controls
@@ -276,7 +290,11 @@ const ParkDetailPage: React.FC = () => {
           <title>{`${park.name} | Wiener Grünflächen Index`}</title>
           <meta
             name="description"
-            content={`Entdecken Sie den ${park.name} im ${park.district}. Bezirk mit detaillierten Informationen zu Lage, Ausstattung und Größe.`}
+            content={`${park.name} im ${park.district}. Bezirk mit detaillierten Informationen zu Lage, Ausstattung und Größe.`}
+          />
+          <meta
+            name="keywords"
+            content={`${park.name}, ${park.district}, Wien, Park, Grünfläche, Grünflächen, Grünflächen Index, Wiener Grünflächen Index, Wiener Parks, Wiener Grünflächen`}
           />
         </Helmet>
 
@@ -724,21 +742,23 @@ const ParkDetailPage: React.FC = () => {
           <div className="w-full lg:mr-[30%]  py-3">
             {/* Left Column - Main Content */}
             <div className="space-y-4">
-              {/* Description */}
-              <div
-                className=""
-                style={{ backgroundColor: "var(--card-bg)", borderRadius: "8px" }}>
-                <h2
-                  className="font-mono text-lg mb-3 truncate"
-                  style={{ color: "var(--primary-green)", letterSpacing: "0.02em" }}>
-                  BESCHREIBUNG
-                </h2>
-                <p
-                  className="font-serif italic text-lg leading-relaxed"
-                  style={{ color: "var(--deep-charcoal)", fontWeight: "400" }}>
-                  {park.description || "Keine Beschreibung verfügbar"}
-                </p>
-              </div>
+              {/* Description - Only show if description exists and is not just "Park" */}
+              {park.description && park.description.trim() !== "Park" && (
+                <div
+                  className=""
+                  style={{ backgroundColor: "var(--card-bg)", borderRadius: "8px" }}>
+                  <h2
+                    className="font-mono text-lg mb-3 truncate"
+                    style={{ color: "var(--primary-green)", letterSpacing: "0.02em" }}>
+                    BESCHREIBUNG
+                  </h2>
+                  <p
+                    className="font-serif italic text-lg leading-relaxed"
+                    style={{ color: "var(--deep-charcoal)", fontWeight: "400" }}>
+                    {park.description}
+                  </p>
+                </div>
+              )}
 
               {/* Amenities */}
               <div

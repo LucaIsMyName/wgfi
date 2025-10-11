@@ -16,6 +16,10 @@ export interface ManualParkData {
   publicTransport?: string[];
   accessibility?: string;
   tips?: string[];
+  coordinates?: {
+    lat: number;
+    lng: number;
+  };
   links?: Array<{
     title: string;
     url: string;
@@ -30,7 +34,6 @@ export interface ManualParkData {
 export const manualParksDB: Record<string, ManualParkData> = {
   // By ID
   "donaupark": {
-    amenities: ["Grünfläche", "Sitzgelegenheiten", "Schatten", "Teich"],
     publicTransport: ["U1 VIC/UNO City"],
     description: 'Der Donaupark wurde 1964 im Zuge der "Wiener Internationalen Gartenschau 1964" (WIG 1964) unter der Gesamtplanung des damaligen Stadtgartendirektors Prof. Ing. Alfred Auer (1922 bis 2002) von einer ehemaligen Mülldeponie zu einer Parkanlage umgestaltet.',
     accessibility: "Gut zugänglich, größtenteils ebene Wege",
@@ -48,6 +51,32 @@ export const manualParksDB: Record<string, ManualParkData> = {
     ]
 
   },
+
+  // "donauinsel": {
+  //   name: "Donauinsel",
+  //   district: 22,
+  //   address: "Donauinsel, 1220 Wien",
+  //   amenities: ["Grünfläche", "Sitzgelegenheiten", "Schatten", "Teich"],
+  //   publicTransport: ["U1 VIC/UNO City"],
+  //   description: "Die Donauinsel ist eine Parkanlage im 1. Wiener Gemeindebezirk Währing. Der Park wurde 1888 auf der Türkenschanze eröffnet.",
+  //   accessibility: "Gut zugänglich, größtenteils ebene Wege",
+  //   // coordinates: {
+  //   //   lat: 48.2082,
+  //   //   lng: 16.3738
+  //   // },
+  //   links: [
+  //     {
+  //       title: "Donauinsel auf Wikipedia",
+  //       url: "https://de.wikipedia.org/wiki/Donauinsel",
+  //       type: "wiki"
+  //     },
+  //     {
+  //       title: "Offizielle Seite der Stadt Wien",
+  //       url: "https://www.wien.gv.at/umwelt/parks/anlagen/donauinsel.html",
+  //       type: "official"
+  //     }
+  //   ]
+  // },
   
   "stadtpark": {
     name: "Stadtpark",
@@ -81,25 +110,16 @@ export const manualParksDB: Record<string, ManualParkData> = {
     accessibility: "Größtenteils barrierefrei zugänglich"
   },
   "tuerkenschanzpark": {
-    district: 18,
     address: "Türkenschanzstraße, 1190 Wien",
-    amenities: ["Grünfläche", "Sitzgelegenheiten", "Schatten", "Teich"],
     description: "Der Türkenschanzpark ist eine Parkanlage im 18. Wiener Gemeindebezirk Währing. Der Park wurde 1888 auf der Türkenschanze eröffnet.",
     publicTransport: ["Straßenbahn 9", "S45"]
   },
   "prater-jesuitenwiese": {
-    district: 2,
-    address: "Jesuitenwiese - Prater, 1020 Wien",
-    amenities: ["Grünfläche", "Sitzgelegenheiten", "Schatten"],
     publicTransport: ["U2 Messe-Prater"],
     description: "Die Jesuitenwiese ist eine Parkanlage im Prater.",
-    accessibility: "Flach, jedoch wenig asphaltierte Wege",
     tips: ["Volksstimme-Fest am letzten Wochenende in den Sommerferien"]
   },
   "kurpark-oberlaa": {
-    district: 10,
-    address: "Kurpark Oberlaa, 1100 Wien",
-    amenities: ["Grünfläche", "Sitzgelegenheiten", "Schatten", "Teich"],
     publicTransport: ["U1 Oberlaa"],
     description: "Der Kurpark Oberlaa ist eine Parkanlage im 10. Wiener Gemeindebezirk Favoriten, am Südosthang des Laaer Berges bei Oberlaa. Seine Fläche beträgt rund 608.000 m². Gartenbaudenkmale, Wegsysteme und künstliche Bodenformationen stehen unter Denkmalschutz."
   },
