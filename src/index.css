@@ -29,8 +29,8 @@
 
   /* Dark Mode */
   .dark {
-    --primary-green: #5a8c73;
-    --secondary-green: #6fa081;
+    --primary-green: #6fbb95;
+    --secondary-green: #abdebe;
     --accent-gold: #d4b483;
     --warm-gold: #c9a96e;
     --deep-charcoal: #e5e5e5;
@@ -106,10 +106,113 @@ body {
 }
 
 /* Smooth theme transitions - exclude transform and other animation properties */
-*:not(.park-marker):not(.park-list-item):not(.animate-fade-gradient):not([class*="animate"]) {
+*:not(.park-marker):not(.park-list-item):not(.animate-fade-gradient):not([class*="animate"]):not(.mapboxgl-popup):not(.mapboxgl-popup *) {
   transition-property: background-color, color, border-color, fill, stroke;
   transition-duration: 0.3s;
   transition-timing-function: ease;
+}
+
+/* Force Mapbox popups to stay in light mode */
+.mapboxgl-popup-content {
+  background-color: #fcfaf6 !important;
+  color: #2c2c2c !important;
+  border: 2px solid #2d4a3e !important;
+  padding: 0 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+.mapboxgl-popup-content h3 {
+  color: #2d4a3e !important;
+}
+
+.mapboxgl-popup-content p {
+  color: #2c2c2c !important;
+}
+
+.mapboxgl-popup-content a {
+  background-color: #2d4a3e !important;
+  color: #fcfaf6 !important;
+}
+
+.mapboxgl-popup-close-button {
+  color: #2d4a3e !important;
+  font-size: 24px !important;
+  padding: 4px 8px !important;
+}
+
+.mapboxgl-popup-close-button:hover {
+  background-color: rgba(45, 74, 62, 0.1) !important;
+}
+
+.mapboxgl-popup-tip {
+  border-top-color: #2d4a3e !important;
+  border-bottom-color: #2d4a3e !important;
+  border-left-color: #2d4a3e !important;
+  border-right-color: #2d4a3e !important;
+}
+
+/* Mapbox Navigation Controls - Theme Support */
+.mapboxgl-ctrl-group {
+  background-color: var(--soft-cream) !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1) !important;
+}
+
+.mapboxgl-ctrl-group button {
+  background-color: var(--soft-cream) !important;
+  color: var(--primary-green) !important;
+}
+
+.mapboxgl-ctrl-group button:hover {
+  background-color: var(--light-sage) !important;
+}
+
+.mapboxgl-ctrl-group button + button {
+  border-top: 1px solid var(--border-color) !important;
+}
+
+/* Navigation control icons */
+.mapboxgl-ctrl-icon {
+  filter: none !important;
+}
+
+.dark .mapboxgl-ctrl-icon {
+  filter: invert(1) !important;
+}
+
+.mapboxgl-ctrl button.mapboxgl-ctrl-zoom-in .mapboxgl-ctrl-icon {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='29' height='29' viewBox='0 0 29 29' xmlns='http://www.w3.org/2000/svg' fill='%232d4a3e'%3E%3Cpath d='M14.5 8.5c-.75 0-1.5.75-1.5 1.5v3h-3c-.75 0-1.5.75-1.5 1.5S9.25 16 10 16h3v3c0 .75.75 1.5 1.5 1.5S16 19.75 16 19v-3h3c.75 0 1.5-.75 1.5-1.5S19.75 13 19 13h-3v-3c0-.75-.75-1.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.mapboxgl-ctrl button.mapboxgl-ctrl-zoom-out .mapboxgl-ctrl-icon {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='29' height='29' viewBox='0 0 29 29' xmlns='http://www.w3.org/2000/svg' fill='%232d4a3e'%3E%3Cpath d='M10 13c-.75 0-1.5.75-1.5 1.5S9.25 16 10 16h9c.75 0 1.5-.75 1.5-1.5S19.75 13 19 13h-9z'/%3E%3C/svg%3E") !important;
+}
+
+.mapboxgl-ctrl button.mapboxgl-ctrl-compass .mapboxgl-ctrl-icon {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='29' height='29' viewBox='0 0 29 29' xmlns='http://www.w3.org/2000/svg' fill='%232d4a3e'%3E%3Cpath d='M10.5 14l4-8 4 8h-8z'/%3E%3Cpath d='M10.5 16l4 8 4-8h-8z' fill='%23ccc'/%3E%3C/svg%3E") !important;
+}
+
+/* Dark mode navigation controls */
+.dark .mapboxgl-ctrl button.mapboxgl-ctrl-zoom-in .mapboxgl-ctrl-icon {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='29' height='29' viewBox='0 0 29 29' xmlns='http://www.w3.org/2000/svg' fill='%23ffffff'%3E%3Cpath d='M14.5 8.5c-.75 0-1.5.75-1.5 1.5v3h-3c-.75 0-1.5.75-1.5 1.5S9.25 16 10 16h3v3c0 .75.75 1.5 1.5 1.5S16 19.75 16 19v-3h3c.75 0 1.5-.75 1.5-1.5S19.75 13 19 13h-3v-3c0-.75-.75-1.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.dark .mapboxgl-ctrl button.mapboxgl-ctrl-zoom-out .mapboxgl-ctrl-icon {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='29' height='29' viewBox='0 0 29 29' xmlns='http://www.w3.org/2000/svg' fill='%23ffffff'%3E%3Cpath d='M10 13c-.75 0-1.5.75-1.5 1.5S9.25 16 10 16h9c.75 0 1.5-.75 1.5-1.5S19.75 13 19 13h-9z'/%3E%3C/svg%3E") !important;
+}
+
+.dark .mapboxgl-ctrl button.mapboxgl-ctrl-compass .mapboxgl-ctrl-icon {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='29' height='29' viewBox='0 0 29 29' xmlns='http://www.w3.org/2000/svg' fill='%23ffffff'%3E%3Cpath d='M10.5 14l4-8 4 8h-8z'/%3E%3Cpath d='M10.5 16l4 8 4-8h-8z' fill='%23666'/%3E%3C/svg%3E") !important;
+}
+
+/* High Contrast Mode adjustments */
+.high-contrast .mapboxgl-ctrl-group {
+  border-width: 2px !important;
+  box-shadow: none !important;
+}
+
+.high-contrast .mapboxgl-ctrl-group button + button {
+  border-top-width: 2px !important;
 }
 
 .font-mono {
