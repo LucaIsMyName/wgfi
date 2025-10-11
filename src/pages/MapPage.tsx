@@ -6,6 +6,7 @@ import { MapPin, Filter, Navigation, Map as MapIcon } from "lucide-react";
 import mapboxgl from "mapbox-gl";
 import { slugifyParkName } from "../data/manualParksData";
 import STYLE from "../utils/config";
+import { useTheme } from "../contexts/ThemeContext";
 
 // Set Mapbox access token
 mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN;
@@ -38,6 +39,9 @@ const MapPage = () => {
   // Router hooks
   const { parkId } = useParams<{ parkId?: string }>();
   const navigate = useNavigate();
+  
+  // Theme
+  const { effectiveTheme } = useTheme();
 
   // Get unique districts from parks
   const districts = Array.from(new Set(parks.map((park) => park.district))).sort();
@@ -110,9 +114,10 @@ const MapPage = () => {
   useEffect(() => {
     if (!mapContainer.current) return;
 
+    const isDark = effectiveTheme === 'dark';
     const map = new mapboxgl.Map({
       container: mapContainer.current,
-      style: STYLE.mapboxStyle,
+      style: STYLE.getMapStyle(isDark),
       center: [16.3738, 48.2082], // Vienna center
       zoom: 12,
       pitch: 60, // Tilt map for 3D view
@@ -155,7 +160,20 @@ const MapPage = () => {
       window.removeEventListener('resize', handleResize);
       map.remove();
     };
-  }, []);
+  }, [effectiveTheme]);
+  
+  // Update map style when theme changes
+  useEffect(() => {
+    if (!mapInstance.current || !mapLoaded) return;
+    
+    const isDark = effectiveTheme === 'dark';
+    const newStyle = STYLE.getMapStyle(isDark);
+    
+    // Only update if style is different
+    if (mapInstance.current.getStyle()?.sprite !== newStyle) {
+      mapInstance.current.setStyle(newStyle);
+    }
+  }, [effectiveTheme, mapLoaded]);
 
   // Function to find park by ID or slug
   const findParkByIdOrSlug = useCallback((idOrSlug: string): Park | undefined => {

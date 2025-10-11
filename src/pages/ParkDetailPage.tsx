@@ -8,6 +8,7 @@ import { getAmenityIcon } from "../utils/amenityIcons";
 import { isFavorite, toggleFavorite } from "../utils/favoritesManager";
 import mapboxgl from "mapbox-gl";
 import STYLE from "../utils/config";
+import Loading from "../components/Loading";
 
 // Function to calculate distance between two coordinates in kilometers
 function calculateDistance(lat1: number, lon1: number, lat2: number, lon2: number): number {
@@ -236,14 +237,7 @@ const ParkDetailPage: React.FC = () => {
         <div
           className="p-6 flex items-center justify-center"
           style={{ backgroundColor: "transparent" }}>
-          <TreePine
-            className="w-16 h-16 animate-pulse"
-            stroke="var(--primary-green)"
-            style={{
-              animation: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
-              opacity: 0.7,
-            }}
-          />
+          <Loading />
         </div>
       </div>
     );
@@ -521,7 +515,7 @@ const ParkDetailPage: React.FC = () => {
                 className="w-full px-4 py-3 font-mono text-xs flex items-center justify-center gap-2"
                 style={{
                   backgroundColor: isFavorited ? "var(--accent-gold)" : "var(--card-bg)",
-                  color: isFavorited ? "var(--deep-charcoal)" : "var(--primary-green)",
+                  color: isFavorited ? "var(--soft-cream)" : "var(--primary-green)",
                   borderRadius: "6px",
                 }}>
                 <Heart

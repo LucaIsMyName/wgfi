@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import STYLE from "../utils/config";
 import { clearParksCache } from "../services/viennaApi";
+import { AlertTriangle } from "lucide-react";
 
 const IdeaPage: React.FC = () => {
   const [cacheCleared, setCacheCleared] = useState(false);
@@ -35,6 +36,39 @@ const IdeaPage: React.FC = () => {
           style={{ color: "var(--primary-green)", fontWeight: "400", fontStyle: "italic" }}>
           Die Idee
         </h1>
+      </div>
+
+      {/* Beta Notice */}
+      <div className="max-w-3xl mb-8">
+        <div
+          className="p-4 border-2 flex gap-3"
+          style={{
+            backgroundColor: "var(--card-bg)",
+            borderColor: "var(--accent-gold)",
+          }}>
+          <AlertTriangle
+            className="w-5 h-5 flex-shrink-0 mt-0.5"
+            style={{ color: "var(--accent-gold)" }}
+          />
+          <div className="font-serif space-y-2" style={{ color: "var(--deep-charcoal)" }}>
+            <p className="font-bold" style={{ color: "var(--accent-gold)" }}>
+              BETA Version
+            </p>
+            <p className="text-sm leading-relaxed">
+              Diese Website befindet sich derzeit in der Beta-Phase. Funktionen und Features können sich jederzeit ändern. 
+              Wir bemühen uns, alle Informationen korrekt und aktuell zu halten, können jedoch keine Garantie für die 
+              vollständige Richtigkeit aller Daten übernehmen. Fehler oder Verbesserungsvorschläge können gerne 
+              auf <a 
+                href="https://github.com/LucaIsMyName/wgfi" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="underline"
+                style={{ color: "var(--primary-green)" }}>
+                GitHub
+              </a> gemeldet werden.
+            </p>
+          </div>
+        </div>
       </div>
 
       {/* Main Content */}

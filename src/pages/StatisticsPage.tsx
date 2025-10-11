@@ -313,7 +313,7 @@ const StatisticsPage = () => {
           <div
             className="p-6 border-2"
             style={{
-              backgroundColor: "white",
+              backgroundColor: "var(--card-bg)",
               borderColor: "var(--border-color)",
             }}>
             <h2
@@ -361,7 +361,7 @@ const StatisticsPage = () => {
           <div
             className="p-6 border-2"
             style={{
-              backgroundColor: "white",
+              backgroundColor: "var(--card-bg)",
               borderColor: "var(--border-color)",
             }}>
             <h2
@@ -413,7 +413,7 @@ const StatisticsPage = () => {
         <div
           className="p-6 border-2 mb-12"
           style={{
-            backgroundColor: "white",
+            backgroundColor: "var(--card-bg)",
             borderColor: "var(--border-color)",
           }}>
           <h2
@@ -461,7 +461,7 @@ const StatisticsPage = () => {
           <div
             className="p-6 border-2"
             style={{
-              backgroundColor: "white",
+              backgroundColor: "var(--card-bg)",
               borderColor: "var(--border-color)",
             }}>
             <div className="flex items-center gap-2 mb-6">
@@ -597,7 +597,7 @@ const StatisticsPage = () => {
           <div
             className="p-6 border-2"
             style={{
-              backgroundColor: "white",
+              backgroundColor: "var(--card-bg)",
               borderColor: "var(--border-color)",
             }}>
             <div className="flex items-center gap-2 mb-6">
@@ -703,7 +703,7 @@ const StatisticsPage = () => {
         <div
           className="mt-12 p-6 border-2"
           style={{
-            backgroundColor: "white",
+            backgroundColor: "var(--card-bg)",
             borderColor: "var(--border-color)",
           }}>
           <h2
