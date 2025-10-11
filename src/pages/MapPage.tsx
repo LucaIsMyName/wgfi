@@ -121,8 +121,6 @@ const MapPage = () => {
     });
 
     map.on("load", () => {
-      console.log('Map loaded event fired');
-      
       // Add 3D terrain only if it doesn't exist
       if (!map.getSource('mapbox-dem')) {
         map.addSource('mapbox-dem', {
@@ -135,7 +133,6 @@ const MapPage = () => {
       }
       
       setMapLoaded(true);
-      console.log('Map loaded state set to true');
     });
 
     map.addControl(new mapboxgl.NavigationControl(), "top-right");
@@ -221,15 +218,11 @@ const MapPage = () => {
 
   // Add markers when parks or filters change
   useEffect(() => {
-    console.log('Marker effect triggered:', { mapLoaded, loading, hasMap: !!mapInstance.current, parksCount: filteredParks.length });
-    
     if (!mapLoaded || loading || !mapInstance.current) {
-      console.log('Exiting early:', { mapLoaded, loading, hasMap: !!mapInstance.current });
       return;
     }
 
     try {
-      console.log('Creating markers for', filteredParks.length, 'parks');
       
       // Clear existing markers
       markersRef.current.forEach((marker) => marker.remove());
@@ -349,8 +342,6 @@ const MapPage = () => {
           .setPopup(popup)
           .addTo(mapInstance.current!);
 
-        console.log('Marker created for:', park.name, 'at', park.coordinates, 'size:', markerSize);
-
         // Add hover effect using class instead of inline styles
         el.addEventListener("mouseenter", () => {
           el.classList.add('park-marker-hover');
@@ -363,8 +354,6 @@ const MapPage = () => {
         return marker;
       });
 
-      console.log('Total markers created:', markers.length);
-      
       // Store markers for later removal
       markersRef.current = markers;
 

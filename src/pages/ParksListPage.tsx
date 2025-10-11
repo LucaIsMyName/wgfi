@@ -7,6 +7,7 @@ import { Building, Ruler, AlertTriangle, TreePine, ArrowDownUp, Check, Filter, H
 import { getAmenityIcon } from '../utils/amenityIcons';
 import { isFavorite, toggleFavorite } from '../utils/favoritesManager';
 import STYLE from '../utils/config';
+import Loading from '../components/Loading';
 
 interface Park {
   id: string;
@@ -217,14 +218,7 @@ const ParksListPage = () => {
         <div
           className="p-6 flex items-center justify-center"
           style={{ backgroundColor: "transparent" }}>
-          <TreePine
-            className="w-10 h-10 animate-pulse"
-            stroke="var(--primary-green)"
-            style={{
-              animation: "pulse 2s cubic-bezier(0.2, 0, 0.8, 1) infinite",
-              opacity: 0.7,
-            }}
-          />
+          <Loading />
         </div>
       </div>
     );

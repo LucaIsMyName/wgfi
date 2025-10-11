@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Home, Palmtree, Map, Menu, X, Heart, Lightbulb } from "lucide-react";
+import { Home, Palmtree, Map, Menu, X, Heart, Lightbulb, BarChart3 } from "lucide-react";
 import Logo from "./Logo";
 
 const Navigation = () => {
@@ -29,6 +29,7 @@ const Navigation = () => {
     { path: "/", label: "Home", icon: <Home className="w-5 h-5" /> },
     { path: "/parks", label: "Index", icon: <Palmtree className="w-5 h-5" /> },
     { path: "/map", label: "Karte", icon: <Map className="w-5 h-5" /> },
+    { path: "/statistics", label: "Statistiken", icon: <BarChart3 className="w-5 h-5" /> },
     { path: "/favorites", label: "Favoriten", icon: <Heart className="w-5 h-5" /> },
     { path: "/idea", label: "Idee", icon: <Lightbulb className="w-5 h-5" /> },
   ];

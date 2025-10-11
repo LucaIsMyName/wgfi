@@ -9,6 +9,7 @@ const HomePage = lazy(() => import('./pages/HomePage'));
 const ParksListPage = lazy(() => import('./pages/ParksListPage'));
 const ParkDetailPage = lazy(() => import('./pages/ParkDetailPage'));
 const MapPage = lazy(() => import('./pages/MapPage'));
+const StatisticsPage = lazy(() => import('./pages/StatisticsPage'));
 const FavoritesPage = lazy(() => import('./pages/FavoritesPage'));
 const IdeaPage = lazy(() => import('./pages/IdeaPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
@@ -41,6 +42,7 @@ function AppContent() {
                 <Route path="/parks" element={<ParksListPage />} />
                 <Route path="/park/:idOrSlug" element={<ParkDetailPage />} />
                 <Route path="/map/:parkId?" element={<MapPage />} />
+                <Route path="/statistics" element={<StatisticsPage />} />
                 <Route path="/favorites" element={<FavoritesPage />} />
                 <Route path="/idea" element={<IdeaPage />} />
                 {/* 404 Route - no path means it matches when no other routes do */}
