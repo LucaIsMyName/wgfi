@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    /* Art Nouveau inspired color palette */
+    /* Art Nouveau inspired color palette - Light Mode */
     --primary-green: #2d4a3e;
     --secondary-green: #5a7c65;
     --accent-gold: #c9a96e;
@@ -18,7 +18,7 @@
 
     /* Main background color */
     --main-bg: var(--soft-cream);
-    --card-bg: var(--soft-cream);
+    --card-bg: transparent;
     --sidebar-bg: var(--soft-cream);
 
     /* Typography */
@@ -27,9 +27,73 @@
     --font-sans: "Geist", sans-serif;
   }
 
+  /* Dark Mode */
+  .dark {
+    --primary-green: #5a8c73;
+    --secondary-green: #6fa081;
+    --accent-gold: #d4b483;
+    --warm-gold: #c9a96e;
+    --deep-charcoal: #e5e5e5;
+    --soft-cream: #1a1a1a;
+    --light-sage: #242424;
+    --light-gold: #2a2a2a;
+    --border-color: #3a3a3a;
+    --copper: #c98a52;
+
+    --main-bg: var(--soft-cream);
+    --card-bg: transparent;
+    --sidebar-bg: #1a1a1a;
+  }
+
+  /* High Contrast Mode (Light) */
+  .light.high-contrast {
+    --primary-green: #1a3329;
+    --secondary-green: #1a3329;
+    --accent-gold: #1a3329;
+    --warm-gold: #1a3329;
+    --deep-charcoal: #000000;
+    --soft-cream: #ffffff;
+    --light-sage: #ffffff;
+    --light-gold: #ffffff;
+    --border-color: #000000;
+    --copper: #8a4e1f;
+    --card-bg: #fff;
+  }
+
+  /* High Contrast Mode (Dark) */
+  .dark.high-contrast {
+    --primary-green: #ffffff;
+    --secondary-green: #ffffff;
+    --accent-gold: #ffffff;
+    --warm-gold: #ffffff;
+    --deep-charcoal: #fff;
+    --soft-cream: #000000;
+    --light-sage: #000000;
+    --light-gold: #000000;
+    --border-color: #ffffff;
+    --copper: #ffffff;
+    --card-bg: #000;
+  }
+
   * {
     border-radius: 0 !important;
   }
+
+  /* Park list item styles */
+  .park-list-item {
+    transition: border-color 0.3s ease, border-width 0.15s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .park-list-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .dark .park-list-item:hover {
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+  }
+
+  
 }
 
 body {
@@ -38,6 +102,14 @@ body {
   background: var(--main-bg);
   color: var(--deep-charcoal);
   line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Smooth theme transitions - exclude transform and other animation properties */
+*:not(.park-marker):not(.park-list-item):not(.animate-fade-gradient):not([class*="animate"]) {
+  transition-property: background-color, color, border-color, fill, stroke;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 }
 
 .font-mono {

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Home, Palmtree, Map, Menu, X, Heart, Lightbulb, BarChart3 } from "lucide-react";
 import Logo from "./Logo";
+import ThemeToggle from "./ThemeToggle";
 
 const Navigation = () => {
   const location = useLocation();
@@ -86,7 +87,7 @@ const Navigation = () => {
 
           {/* Footer */}
           <div className="px-4 py-3 space-y-2">
-            <div className="flex flex-wrap gap-4 text-xs">
+            <div className="flex flex-wrap gap-4 text-xs items-center">
               <a
                 href="https://lucamack.at/impressum.txt"
                 target="_blank"
@@ -103,6 +104,7 @@ const Navigation = () => {
                 style={{ color: "var(--primary-green)" }}>
                 Datenschutz
               </a>
+              <ThemeToggle />
             </div>
             <p
               className="text-xs italic opacity-50"
@@ -194,7 +196,7 @@ const Navigation = () => {
               <div
                 className="px-4 py-3 border-t"
                 style={{ borderColor: "var(--border-color)" }}>
-                <div className="flex gap-8 my-4">
+                <div className="flex gap-8 my-4 items-center">
                   <a
                     href="https://lucamack.at/impressum.txt"
                     target="_blank"
@@ -213,6 +215,7 @@ const Navigation = () => {
                     onClick={() => setIsMobileMenuOpen(false)}>
                     Datenschutz
                   </a>
+                  <ThemeToggle />
                 </div>
                 <p
                   className="text-xs italic opacity-50"

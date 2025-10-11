@@ -475,11 +475,10 @@ const ParksListPage = () => {
                 <Link
                   key={park.id}
                   to={`/park/${slugifyParkName(park.name)}`}
-                  className="block lg:px-4 pb-4 mb-4"
+                  className="block p-4 mb-4 park-list-item"
                   style={{
                     backgroundColor: "var(--card-bg)",
-                    borderRadius: "8px",
-                    borderBottom: "1px solid var(--light-sage)",
+                    border: "1px solid var(--border-color)",
                   }}>
                   <div className="flex flex-col md:flex-row md:items-start md:justify-between">
                     <div className="mb-6 md:mb-0">
