@@ -80,7 +80,7 @@
   }
 
   /* Park list item styles */
-  .park-list-item {
+  /* .park-list-item {
     transition: border-color 0.3s ease, border-width 0.15s ease, transform 0.2s ease, box-shadow 0.2s ease;
   }
 
@@ -91,7 +91,7 @@
 
   .dark .park-list-item:hover {
     box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
-  }
+  } */
 
   
 }

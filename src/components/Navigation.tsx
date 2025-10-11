@@ -65,7 +65,7 @@ const Navigation = () => {
     <>
       {/* Desktop Sidebar */}
       <nav
-        className="hidden lg:flex lg:flex-col lg:fixed lg:inset-y-0 lg:z-50"
+        className="hidden lg:flex lg:flex-col lg:fixed lg:inset-y-0 z-[1000]"
         style={{
           width: "clamp(200px, 16vw, 280px)",
           background: "var(--sidebar-bg)",
@@ -107,9 +107,9 @@ const Navigation = () => {
               <ThemeToggle />
             </div>
             <p
-              className="text-xs italic opacity-50"
+              className="text-xs italic opacity-70"
               style={{ color: "var(--primary-green)", fontFamily: "EB Garamond, serif" }}>
-              Wiener Grünflächen <span className="font-mono font-semibold not-italic text-[0.8em]">index</span>
+              Wiener Grünflächen <span className="font-mono font-semibold not-italic text-[0.8em]">INDEX</span>
             </p>
           </div>
         </div>
@@ -117,7 +117,7 @@ const Navigation = () => {
 
       {/* Mobile Header - Fixed on scroll */}
       <header
-        className={`lg:hidden fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "shadow-sm" : ""}`}
+        className={`lg:hidden fixed top-0 left-0 right-0 z-[9999] transition-all duration-300 ${scrolled ? "shadow-sm" : ""}`}
         style={{
           backgroundColor: "var(--sidebar-bg)",
           borderBottom: "1px solid var(--border-color)",
@@ -146,10 +146,10 @@ const Navigation = () => {
 
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden fixed inset-0 z-40">
+        <div className="lg:hidden fixed inset-0 z-[1000]">
           {/* Backdrop */}
           <div
-            className="fixed inset-0 bg-black bg-opacity-50"
+            className="fixed inset-0 bg-black bg-opacity-50 "
             onClick={() => setIsMobileMenuOpen(false)}
           />
 
@@ -220,7 +220,7 @@ const Navigation = () => {
                 <p
                   className="text-xs italic opacity-50"
                   style={{ color: "var(--primary-green)", fontFamily: "EB Garamond, serif" }}>
-                  Wiener Grünflächen <span className="font-mono not-italic text-[0.8em]">index</span>
+                  Wiener Grünflächen <span className="font-mono not-italic text-[0.8em]">INDEX</span>
                 </p>
               </div>
             </div>

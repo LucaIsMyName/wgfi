@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { getViennaParksForApp } from "../services/viennaApi";
 import { slugifyParkName } from "../data/manualParksData";
@@ -31,19 +31,29 @@ const STORAGE_KEY_AMENITIES = "wbi-selected-amenities";
 const STORAGE_KEY_LOCATION_PERMISSION = "wbi-location-permission";
 
 const ParksListPage = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
+  
   const [parks, setParks] = useState<Park[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  
+  // Initialize state from URL params, fallback to localStorage, then default
   const [searchTerm, setSearchTerm] = useState(() => {
-    return localStorage.getItem(STORAGE_KEY_SEARCH) || "";
+    return searchParams.get("search") || localStorage.getItem(STORAGE_KEY_SEARCH) || "";
   });
   const [selectedDistrict, setSelectedDistrict] = useState(() => {
-    return localStorage.getItem(STORAGE_KEY_DISTRICT) || "";
+    return searchParams.get("district") || localStorage.getItem(STORAGE_KEY_DISTRICT) || "";
   });
   const [sortOrder, setSortOrder] = useState<"none" | "asc" | "desc" | "name_asc" | "name_desc" | "district_asc" | "nearest">(() => {
-    return (localStorage.getItem(STORAGE_KEY_SORT) as "none" | "asc" | "desc" | "name_asc" | "name_desc" | "district_asc" | "nearest") || "desc";
+    return (searchParams.get("sort") as "none" | "asc" | "desc" | "name_asc" | "name_desc" | "district_asc" | "nearest") || 
+           (localStorage.getItem(STORAGE_KEY_SORT) as "none" | "asc" | "desc" | "name_asc" | "name_desc" | "district_asc" | "nearest") || 
+           "desc";
   });
   const [selectedAmenities, setSelectedAmenities] = useState<string[]>(() => {
+    const urlAmenities = searchParams.get("amenities");
+    if (urlAmenities) {
+      return urlAmenities.split(",").filter(Boolean);
+    }
     const stored = localStorage.getItem(STORAGE_KEY_AMENITIES);
     return stored ? JSON.parse(stored) : [];
   });
@@ -54,25 +64,44 @@ const ParksListPage = () => {
     return stored ? JSON.parse(stored) : null;
   });
 
-  // Custom setters that update local storage
+  // Helper function to update URL params
+  const updateUrlParams = (updates: Record<string, string | null>) => {
+    setSearchParams((prev) => {
+      const newParams = new URLSearchParams(prev);
+      Object.entries(updates).forEach(([key, value]) => {
+        if (value === null || value === "" || value === "none") {
+          newParams.delete(key);
+        } else {
+          newParams.set(key, value);
+        }
+      });
+      return newParams;
+    }, { replace: true });
+  };
+
+  // Custom setters that update local storage AND URL params
   const updateSearchTerm = (value: string) => {
     setSearchTerm(value);
     localStorage.setItem(STORAGE_KEY_SEARCH, value);
+    updateUrlParams({ search: value });
   };
 
   const updateSelectedDistrict = (value: string) => {
     setSelectedDistrict(value);
     localStorage.setItem(STORAGE_KEY_DISTRICT, value);
+    updateUrlParams({ district: value });
   };
 
   const updateSortOrder = (order: "none" | "asc" | "desc" | "name_asc" | "name_desc" | "district_asc" | "nearest") => {
     setSortOrder(order);
     localStorage.setItem(STORAGE_KEY_SORT, order);
+    updateUrlParams({ sort: order });
   };
 
   const updateSelectedAmenities = (value: string[]) => {
     setSelectedAmenities(value);
     localStorage.setItem(STORAGE_KEY_AMENITIES, JSON.stringify(value));
+    updateUrlParams({ amenities: value.length > 0 ? value.join(",") : null });
   };
 
   // Reset all filters
@@ -80,6 +109,8 @@ const ParksListPage = () => {
     updateSearchTerm("");
     updateSelectedDistrict("");
     updateSelectedAmenities([]);
+    // Also reset sort to default
+    updateSortOrder("desc");
   };
 
   // Calculate distance between two coordinates using Haversine formula
@@ -142,6 +173,23 @@ const ParksListPage = () => {
     // Force a re-render to update the UI
     setParks([...parks]);
   };
+
+  // Sync state with URL params (for browser back/forward navigation)
+  useEffect(() => {
+    const urlSearch = searchParams.get("search") || "";
+    const urlDistrict = searchParams.get("district") || "";
+    const urlSort = searchParams.get("sort") || "desc";
+    const urlAmenities = searchParams.get("amenities");
+    const urlAmenitiesArray = urlAmenities ? urlAmenities.split(",").filter(Boolean) : [];
+
+    // Only update if different from current state
+    if (urlSearch !== searchTerm) setSearchTerm(urlSearch);
+    if (urlDistrict !== selectedDistrict) setSelectedDistrict(urlDistrict);
+    if (urlSort !== sortOrder) setSortOrder(urlSort as typeof sortOrder);
+    if (JSON.stringify(urlAmenitiesArray) !== JSON.stringify(selectedAmenities)) {
+      setSelectedAmenities(urlAmenitiesArray);
+    }
+  }, [searchParams]);
 
   // Fetch real Vienna parks data
   useEffect(() => {
@@ -541,7 +589,7 @@ const ParksListPage = () => {
                           e.preventDefault(); // Prevent navigation when clicking the heart
                           handleToggleFavorite(park.id);
                         }}
-                        className="p-2 transition-transform hover:scale-110"
+                        className="p-2 transition-transform "
                         style={{
                           color: isFavorite(park.id) ? 'var(--accent-gold)' : 'var(--primary-green)',
                         }}

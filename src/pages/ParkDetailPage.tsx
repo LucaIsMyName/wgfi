@@ -9,6 +9,7 @@ import { isFavorite, toggleFavorite } from "../utils/favoritesManager";
 import mapboxgl from "mapbox-gl";
 import STYLE from "../utils/config";
 import Loading from "../components/Loading";
+import { useTheme } from "../contexts/ThemeContext";
 
 // Function to calculate distance between two coordinates in kilometers
 function calculateDistance(lat1: number, lon1: number, lat2: number, lon2: number): number {
@@ -30,6 +31,7 @@ mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN;
 
 const ParkDetailPage: React.FC = () => {
   const { idOrSlug } = useParams<{ idOrSlug: string }>();
+  const { effectiveTheme } = useTheme();
   const [park, setPark] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -137,10 +139,11 @@ const ParkDetailPage: React.FC = () => {
     }
 
     try {
-      // Create map
+      // Create map with theme-aware style
+      const isDark = effectiveTheme === 'dark';
       const map = new mapboxgl.Map({
         container: mapContainer.current,
-        style: STYLE.mapboxStyle,
+        style: STYLE.getMapStyle(isDark),
         center: [park.coordinates.lng, park.coordinates.lat],
         zoom: 15.5,
         pitch: 71, // Tilt map for 3D view
@@ -228,6 +231,81 @@ const ParkDetailPage: React.FC = () => {
       }
     };
   }, [park]);
+
+  // Update map style when theme changes
+  useEffect(() => {
+    if (!mapInstance.current || !park) return;
+    
+    const isDark = effectiveTheme === 'dark';
+    const newStyle = STYLE.getMapStyle(isDark);
+    
+    // Check if style is loaded before updating
+    if (mapInstance.current.isStyleLoaded()) {
+      try {
+        const currentStyle = mapInstance.current.getStyle();
+        // Only update if style URL is different
+        if (currentStyle && !currentStyle.sprite?.includes(newStyle)) {
+          mapInstance.current.setStyle(newStyle);
+          
+          // Re-add marker after style loads
+          mapInstance.current.once('style.load', () => {
+            if (mapMarker.current && mapInstance.current) {
+              // Remove old marker
+              mapMarker.current.remove();
+              
+              // Create new marker
+              const wrapper = document.createElement("div");
+              wrapper.className = "marker-wrapper";
+              wrapper.style.position = "absolute";
+              wrapper.style.transform = "translate(-50%, -50%)";
+
+              const el = document.createElement("div");
+              el.className = "custom-marker";
+              el.style.width = "30px";
+              el.style.height = "30px";
+              el.style.borderRadius = "50%";
+              el.style.backgroundColor = "var(--primary-green)";
+              el.style.display = "flex";
+              el.style.justifyContent = "center";
+              el.style.alignItems = "center";
+              el.style.color = "var(--soft-cream)";
+              el.style.boxShadow = "0 2px 6px rgba(0,0,0,0.3)";
+              el.style.cursor = "pointer";
+              el.style.transition = "all 0.2s";
+              el.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>';
+              
+              wrapper.appendChild(el);
+              
+              const popup = new mapboxgl.Popup({ offset: 25, closeButton: false }).setHTML(`
+                <div style="font-family: 'EB Garamond', serif; padding: 12px; border-radius: 8px;">
+                  <h3 style="font-weight: 600; margin: 0 0 8px 0; color: var(--primary-green); font-size: 16px;">${park.name}</h3>
+                  <p style="margin: 0; font-size: 14px; color: var(--deep-charcoal);">${park.address || "Adresse nicht verfügbar"}</p>
+                </div>
+              `);
+              
+              const marker = new mapboxgl.Marker(wrapper)
+                .setLngLat([park.coordinates.lng, park.coordinates.lat])
+                .setPopup(popup)
+                .addTo(mapInstance.current);
+              
+              el.addEventListener("mouseenter", () => {
+                el.style.transform = "scale(1.1)";
+                el.style.boxShadow = "0 4px 8px rgba(0,0,0,0.4)";
+              });
+              el.addEventListener("mouseleave", () => {
+                el.style.transform = "scale(1)";
+                el.style.boxShadow = "0 2px 6px rgba(0,0,0,0.3)";
+              });
+              
+              mapMarker.current = marker;
+            }
+          });
+        }
+      } catch (error) {
+        console.error("Error updating map style:", error);
+      }
+    }
+  }, [effectiveTheme, park]);
 
   if (loading) {
     return (

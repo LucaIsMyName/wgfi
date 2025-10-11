@@ -38,7 +38,7 @@ const ThemeToggle = () => {
         style={{ color: 'var(--primary-green)' }}
         aria-label="Theme wechseln">
         <Icon className="w-3 h-3" />
-        <span>THEME</span>
+        <span>Theme</span>
       </button>
 
       {isOpen && (

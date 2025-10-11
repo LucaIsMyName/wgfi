@@ -35,6 +35,7 @@ const MapPage = () => {
   const markersRef = useRef<mapboxgl.Marker[]>([]);
   const popupRefs = useRef<{[key: string]: mapboxgl.Popup}>({});
   const [mapLoaded, setMapLoaded] = useState(false);
+  const [styleLoadedCounter, setStyleLoadedCounter] = useState(0);
   
   // Router hooks
   const { parkId } = useParams<{ parkId?: string }>();
@@ -138,6 +139,7 @@ const MapPage = () => {
       }
       
       setMapLoaded(true);
+      setStyleLoadedCounter(prev => prev + 1);
     });
 
     map.addControl(new mapboxgl.NavigationControl(), "top-right");
@@ -169,9 +171,35 @@ const MapPage = () => {
     const isDark = effectiveTheme === 'dark';
     const newStyle = STYLE.getMapStyle(isDark);
     
-    // Only update if style is different
-    if (mapInstance.current.getStyle()?.sprite !== newStyle) {
-      mapInstance.current.setStyle(newStyle);
+    // Check if style is loaded before updating
+    if (mapInstance.current.isStyleLoaded()) {
+      try {
+        const currentStyle = mapInstance.current.getStyle();
+        // Only update if style URL is different
+        if (currentStyle && !currentStyle.sprite?.includes(newStyle)) {
+          mapInstance.current.setStyle(newStyle);
+          // Increment counter after new style loads to trigger marker re-creation
+          mapInstance.current.once('style.load', () => {
+            setStyleLoadedCounter(prev => prev + 1);
+          });
+        }
+      } catch (error) {
+        // If style is not loaded, wait for it
+        mapInstance.current.once('style.load', () => {
+          mapInstance.current?.setStyle(newStyle);
+          mapInstance.current?.once('style.load', () => {
+            setStyleLoadedCounter(prev => prev + 1);
+          });
+        });
+      }
+    } else {
+      // Wait for style to load
+      mapInstance.current.once('style.load', () => {
+        mapInstance.current?.setStyle(newStyle);
+        mapInstance.current?.once('style.load', () => {
+          setStyleLoadedCounter(prev => prev + 1);
+        });
+      });
     }
   }, [effectiveTheme, mapLoaded]);
 
@@ -236,7 +264,7 @@ const MapPage = () => {
 
   // Add markers when parks or filters change
   useEffect(() => {
-    if (!mapLoaded || loading || !mapInstance.current) {
+    if (!mapLoaded || loading || !mapInstance.current || !mapInstance.current.isStyleLoaded()) {
       return;
     }
 
@@ -389,7 +417,7 @@ const MapPage = () => {
     } catch (error) {
       console.error("Error adding markers:", error);
     }
-  }, [filteredParks, loading, mapLoaded]);
+  }, [filteredParks, loading, mapLoaded, styleLoadedCounter]);
 
   return (
     <div className="min-h-screen lg:flex lg:flex-col overflow-hidden">

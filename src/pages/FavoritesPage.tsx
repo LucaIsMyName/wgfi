@@ -7,6 +7,7 @@ import { Building, Ruler, AlertTriangle, TreePine, Heart, Trash2 } from "lucide-
 import { getAmenityIcon } from "../utils/amenityIcons";
 import { getFavorites, removeFavorite } from "../utils/favoritesManager";
 import STYLE from "../utils/config";
+import Loading from "../components/Loading";
 
 interface Park {
   id: string;
@@ -68,15 +69,7 @@ const FavoritesPage = () => {
         <div
           className="p-6"
           style={{ backgroundColor: "var(--card-bg)", borderRadius: "8px" }}>
-          <TreePine
-            className="w-16 h-16 mb-5"
-            stroke="var(--primary-green)"
-          />
-          <p
-            className="font-serif italic text-lg"
-            style={{ color: "var(--deep-charcoal)", fontWeight: "400" }}>
-            Favoriten werden geladen...
-          </p>
+          <Loading />
         </div>
       </div>
     );
