@@ -125,6 +125,21 @@ const StatisticsPage = () => {
   const southernmostPark = parks.reduce((min, park) => (park.coordinates.lat < min.coordinates.lat ? park : min), parks[0]);
   const easternmostPark = parks.reduce((max, park) => (park.coordinates.lng > max.coordinates.lng ? park : max), parks[0]);
   const westernmostPark = parks.reduce((min, park) => (park.coordinates.lng < min.coordinates.lng ? park : min), parks[0]);
+  
+  // Most centered park (closest to geographic center of all parks)
+  const centerLat = parks.reduce((sum, park) => sum + park.coordinates.lat, 0) / parks.length;
+  const centerLng = parks.reduce((sum, park) => sum + park.coordinates.lng, 0) / parks.length;
+  const mostCenteredPark = parks.reduce((closest, park) => {
+    const distToCurrent = Math.sqrt(
+      Math.pow(park.coordinates.lat - centerLat, 2) + 
+      Math.pow(park.coordinates.lng - centerLng, 2)
+    );
+    const distToClosest = Math.sqrt(
+      Math.pow(closest.coordinates.lat - centerLat, 2) + 
+      Math.pow(closest.coordinates.lng - centerLng, 2)
+    );
+    return distToCurrent < distToClosest ? park : closest;
+  }, parks[0]);
 
   // Size extremes
   const smallestPark = parks.reduce((min, park) => (park.area < min.area ? park : min), parks[0]);
@@ -549,6 +564,29 @@ const StatisticsPage = () => {
                     className="font-mono text-xs mt-1"
                     style={{ color: "var(--deep-charcoal)", opacity: 0.6 }}>
                     {westernmostPark.district}. Bezirk · {westernmostPark.coordinates.lng.toFixed(4)}°E
+                  </p>
+                </div>
+              </div>
+
+              <div
+                className="flex justify-between items-center py-3 border-b"
+                style={{ borderColor: "var(--border-color)" }}>
+                <div>
+                  <p
+                    className="font-mono text-xs mb-1"
+                    style={{ color: "var(--accent-gold)" }}>
+                    ZENTRALSTER PARK
+                  </p>
+                  <Link
+                    to={`/park/${slugifyParkName(mostCenteredPark.name)}`}
+                    className="font-serif text-lg hover:underline"
+                    style={{ color: "var(--primary-green)" }}>
+                    {mostCenteredPark.name}
+                  </Link>
+                  <p
+                    className="font-mono text-xs mt-1"
+                    style={{ color: "var(--deep-charcoal)", opacity: 0.6 }}>
+                    {mostCenteredPark.district}. Bezirk · Zentrum aller Parks
                   </p>
                 </div>
               </div>
