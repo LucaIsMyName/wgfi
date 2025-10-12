@@ -128,7 +128,7 @@ const HomePage: React.FC = () => {
               Wiener
               <br /> Grünflächen
               <br />
-              <span className="uppercase font-mono not-italic text-[0.85em] font-[300] bg-[var(--secondary-green)] text-[var(--soft-cream)] px-3 ">index</span>
+              <span className="uppercase font-mono not-italic text-[0.85em] font-[300] bg-[var(--primary-green)] text-[var(--soft-cream)] px-3 ">index</span>
             </h1>
           </div>
 

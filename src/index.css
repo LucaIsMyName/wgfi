@@ -116,7 +116,7 @@ body {
 .mapboxgl-popup-content {
   background-color: #fcfaf6 !important;
   color: #2c2c2c !important;
-  border: 2px solid #2d4a3e !important;
+  border: 1px solid #2d4a3e !important;
   padding: 0 !important;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
 }
@@ -154,7 +154,7 @@ body {
 /* Mapbox Navigation Controls - Theme Support */
 .mapboxgl-ctrl-group {
   background-color: var(--soft-cream) !important;
-  border: 1px solid var(--border-color) !important;
+  border: 0 solid var(--border-color) !important;
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1) !important;
 }
 
@@ -168,16 +168,12 @@ body {
 }
 
 .mapboxgl-ctrl-group button + button {
-  border-top: 1px solid var(--border-color) !important;
+  border-top: 0 solid var(--border-color) !important;
 }
 
 /* Navigation control icons */
 .mapboxgl-ctrl-icon {
   filter: none !important;
-}
-
-.dark .mapboxgl-ctrl-icon {
-  filter: invert(1) !important;
 }
 
 .mapboxgl-ctrl button.mapboxgl-ctrl-zoom-in .mapboxgl-ctrl-icon {
@@ -194,25 +190,25 @@ body {
 
 /* Dark mode navigation controls */
 .dark .mapboxgl-ctrl button.mapboxgl-ctrl-zoom-in .mapboxgl-ctrl-icon {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='29' height='29' viewBox='0 0 29 29' xmlns='http://www.w3.org/2000/svg' fill='%23ffffff'%3E%3Cpath d='M14.5 8.5c-.75 0-1.5.75-1.5 1.5v3h-3c-.75 0-1.5.75-1.5 1.5S9.25 16 10 16h3v3c0 .75.75 1.5 1.5 1.5S16 19.75 16 19v-3h3c.75 0 1.5-.75 1.5-1.5S19.75 13 19 13h-3v-3c0-.75-.75-1.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='29' height='29' viewBox='0 0 29 29' xmlns='http://www.w3.org/2000/svg' fill='%233aad6f'%3E%3Cpath d='M14.5 8.5c-.75 0-1.5.75-1.5 1.5v3h-3c-.75 0-1.5.75-1.5 1.5S9.25 16 10 16h3v3c0 .75.75 1.5 1.5 1.5S16 19.75 16 19v-3h3c.75 0 1.5-.75 1.5-1.5S19.75 13 19 13h-3v-3c0-.75-.75-1.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
 }
 
 .dark .mapboxgl-ctrl button.mapboxgl-ctrl-zoom-out .mapboxgl-ctrl-icon {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='29' height='29' viewBox='0 0 29 29' xmlns='http://www.w3.org/2000/svg' fill='%23ffffff'%3E%3Cpath d='M10 13c-.75 0-1.5.75-1.5 1.5S9.25 16 10 16h9c.75 0 1.5-.75 1.5-1.5S19.75 13 19 13h-9z'/%3E%3C/svg%3E") !important;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='29' height='29' viewBox='0 0 29 29' xmlns='http://www.w3.org/2000/svg' fill='%233aad6f'%3E%3Cpath d='M10 13c-.75 0-1.5.75-1.5 1.5S9.25 16 10 16h9c.75 0 1.5-.75 1.5-1.5S19.75 13 19 13h-9z'/%3E%3C/svg%3E") !important;
 }
 
 .dark .mapboxgl-ctrl button.mapboxgl-ctrl-compass .mapboxgl-ctrl-icon {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='29' height='29' viewBox='0 0 29 29' xmlns='http://www.w3.org/2000/svg' fill='%23ffffff'%3E%3Cpath d='M10.5 14l4-8 4 8h-8z'/%3E%3Cpath d='M10.5 16l4 8 4-8h-8z' fill='%23666'/%3E%3C/svg%3E") !important;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='29' height='29' viewBox='0 0 29 29' xmlns='http://www.w3.org/2000/svg' fill='%233aad6f'%3E%3Cpath d='M10.5 14l4-8 4 8h-8z'/%3E%3Cpath d='M10.5 16l4 8 4-8h-8z' fill='%23666'/%3E%3C/svg%3E") !important;
 }
 
 /* High Contrast Mode adjustments */
 .high-contrast .mapboxgl-ctrl-group {
-  border-width: 2px !important;
+  border-width: 0px !important;
   box-shadow: none !important;
 }
 
 .high-contrast .mapboxgl-ctrl-group button + button {
-  border-top-width: 2px !important;
+  border-top-width: 0px !important;
 }
 
 .font-mono {
@@ -229,17 +225,17 @@ body {
 
 /* Art Nouveau inspired borders and elements */
 .art-border {
-  border: 2px solid var(--primary-green);
+  border: 1px solid var(--primary-green);
   box-shadow: 0 4px 20px rgba(45, 74, 62, 0.1);
 }
 
 .art-border-gold {
-  border: 2px solid var(--accent-gold);
+  border: 1px solid var(--accent-gold);
   box-shadow: 0 4px 20px rgba(201, 169, 110, 0.15);
 }
 
 .art-border-copper {
-  border: 2px solid var(--copper);
+  border: 1px solid var(--copper);
   box-shadow: 0 4px 20px rgba(184, 115, 51, 0.1);
 }
 
@@ -257,8 +253,8 @@ body {
   left: -2px;
   width: 20px;
   height: 20px;
-  border-top: 2px solid var(--accent-gold);
-  border-left: 2px solid var(--accent-gold);
+  border-top: 1px solid var(--accent-gold);
+  border-left: 1px solid var(--accent-gold);
 }
 
 .decorative-corner::after {
@@ -268,8 +264,8 @@ body {
   right: -2px;
   width: 20px;
   height: 20px;
-  border-bottom: 2px solid var(--accent-gold);
-  border-right: 2px solid var(--accent-gold);
+  border-bottom: 1px solid var(--accent-gold);
+  border-right: 1px solid var(--accent-gold);
 }
 
 /* Desktop layout - main content starts at sidebar edge */

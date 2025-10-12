@@ -84,7 +84,19 @@ const ParkDetailPage: React.FC = () => {
 
         if (foundPark) {
           // Merge with manual data if available
-          const manualData = getManualParkData(foundPark.id);
+          let manualData = getManualParkData(foundPark.id);
+
+          // If not found by ID, try by slugified name
+          if (!manualData) {
+            manualData = getManualParkData(slugifyParkName(foundPark.name));
+          }
+
+          console.log("Park ID:", foundPark.id);
+          console.log("Park Name:", foundPark.name);
+          console.log("Park Name Slug:", slugifyParkName(foundPark.name));
+          console.log("Manual data found:", manualData);
+          console.log("Description License:", manualData?.descriptionLicense);
+          console.log("Links:", manualData?.links);
           const currentPark = {
             ...foundPark,
             ...manualData,
@@ -96,11 +108,14 @@ const ParkDetailPage: React.FC = () => {
           if (currentPark.coordinates) {
             const parksWithDistance = parks
               .filter((p: any) => p.id !== currentPark.id) // Exclude current park
-              .map((p: any) => ({
-                ...p,
-                ...getManualParkData(p.id),
-                distance: calculateDistance(currentPark.coordinates.lat, currentPark.coordinates.lng, p.coordinates.lat, p.coordinates.lng),
-              }))
+              .map((p: any) => {
+                const manualData = getManualParkData(p.id) || getManualParkData(slugifyParkName(p.name));
+                return {
+                  ...p,
+                  ...manualData,
+                  distance: calculateDistance(currentPark.coordinates.lat, currentPark.coordinates.lng, p.coordinates.lat, p.coordinates.lng),
+                };
+              })
               .sort((a: any, b: any) => a.distance - b.distance)
               .slice(0, 5); // Get 5 nearest parks
 
@@ -140,7 +155,7 @@ const ParkDetailPage: React.FC = () => {
 
     try {
       // Create map with theme-aware style
-      const isDark = effectiveTheme === 'dark';
+      const isDark = effectiveTheme === "dark";
       const map = new mapboxgl.Map({
         container: mapContainer.current,
         style: STYLE.getMapStyle(isDark),
@@ -153,14 +168,14 @@ const ParkDetailPage: React.FC = () => {
       });
 
       // Add 3D terrain when map loads
-      map.on('load', () => {
-        map.addSource('mapbox-dem', {
-          'type': 'raster-dem',
-          'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
-          'tileSize': 512,
-          'maxzoom': 14
+      map.on("load", () => {
+        map.addSource("mapbox-dem", {
+          type: "raster-dem",
+          url: "mapbox://mapbox.mapbox-terrain-dem-v1",
+          tileSize: 512,
+          maxzoom: 14,
         });
-        map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
+        map.setTerrain({ source: "mapbox-dem", exaggeration: 1.5 });
       });
 
       // Add navigation controls
@@ -193,9 +208,9 @@ const ParkDetailPage: React.FC = () => {
 
       // Create popup with Art Nouveau styling
       const popup = new mapboxgl.Popup({ offset: 25, closeButton: false }).setHTML(`
-          <div style="font-family: 'EB Garamond', serif; padding: 12px; border-radius: 8px;">
-            <h3 style="font-weight: 600; margin: 0 0 8px 0; color: var(--primary-green); font-size: 16px;">${park.name}</h3>
-            <p style="margin: 0; font-size: 14px; color: var(--deep-charcoal);">${park.address || "Adresse nicht verfügbar"}</p>
+          <div style=" padding: 12px; border-radius: 8px; text-align:center">
+            <h3 style="font-family: 'EB Garamond', serif; font-style:italic; font-weight: 600; margin: 0 0 8px 0; color: var(--primary-green); font-size: 24px;">${park.name}</h3>
+            <p style="font-family: 'Geist Mono', monospace; margin: 0; font-size: 14px; color: var(--deep-charcoal);">${park.address || "Adresse nicht verfügbar"}</p>
           </div>
         `);
 
@@ -235,10 +250,10 @@ const ParkDetailPage: React.FC = () => {
   // Update map style when theme changes
   useEffect(() => {
     if (!mapInstance.current || !park) return;
-    
-    const isDark = effectiveTheme === 'dark';
+
+    const isDark = effectiveTheme === "dark";
     const newStyle = STYLE.getMapStyle(isDark);
-    
+
     // Check if style is loaded before updating
     if (mapInstance.current.isStyleLoaded()) {
       try {
@@ -246,13 +261,13 @@ const ParkDetailPage: React.FC = () => {
         // Only update if style URL is different
         if (currentStyle && !currentStyle.sprite?.includes(newStyle)) {
           mapInstance.current.setStyle(newStyle);
-          
+
           // Re-add marker after style loads
-          mapInstance.current.once('style.load', () => {
+          mapInstance.current.once("style.load", () => {
             if (mapMarker.current && mapInstance.current) {
               // Remove old marker
               mapMarker.current.remove();
-              
+
               // Create new marker
               const wrapper = document.createElement("div");
               wrapper.className = "marker-wrapper";
@@ -273,21 +288,18 @@ const ParkDetailPage: React.FC = () => {
               el.style.cursor = "pointer";
               el.style.transition = "all 0.2s";
               el.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>';
-              
+
               wrapper.appendChild(el);
-              
+
               const popup = new mapboxgl.Popup({ offset: 25, closeButton: false }).setHTML(`
                 <div style="font-family: 'EB Garamond', serif; padding: 12px; border-radius: 8px;">
                   <h3 style="font-weight: 600; margin: 0 0 8px 0; color: var(--primary-green); font-size: 16px;">${park.name}</h3>
                   <p style="margin: 0; font-size: 14px; color: var(--deep-charcoal);">${park.address || "Adresse nicht verfügbar"}</p>
                 </div>
               `);
-              
-              const marker = new mapboxgl.Marker(wrapper)
-                .setLngLat([park.coordinates.lng, park.coordinates.lat])
-                .setPopup(popup)
-                .addTo(mapInstance.current);
-              
+
+              const marker = new mapboxgl.Marker(wrapper).setLngLat([park.coordinates.lng, park.coordinates.lat]).setPopup(popup).addTo(mapInstance.current);
+
               el.addEventListener("mouseenter", () => {
                 el.style.transform = "scale(1.1)";
                 el.style.boxShadow = "0 4px 8px rgba(0,0,0,0.4)";
@@ -296,7 +308,7 @@ const ParkDetailPage: React.FC = () => {
                 el.style.transform = "scale(1)";
                 el.style.boxShadow = "0 2px 6px rgba(0,0,0,0.3)";
               });
-              
+
               mapMarker.current = marker;
             }
           });
@@ -328,7 +340,7 @@ const ParkDetailPage: React.FC = () => {
         style={{ background: "var(--main-bg)" }}>
         <div
           className="p-6"
-          style={{ backgroundColor: "var(--card-bg)", borderRadius: "8px" }}>
+          style={{ backgroundColor: "var(--card-bg)" }}>
           <AlertTriangle
             className="w-16 h-16 mb-5"
             stroke="var(--accent-gold)"
@@ -340,7 +352,7 @@ const ParkDetailPage: React.FC = () => {
           </p>
           <Link
             to="/index"
-            className="px-4 py-2 mt-4 inline-block font-serif"
+            className="px-4 py-2 mt-4 inline-block font-mono"
             style={{
               backgroundColor: "var(--primary-green)",
               color: "var(--soft-cream)",
@@ -374,9 +386,9 @@ const ParkDetailPage: React.FC = () => {
         <div className="px-4 py-6 lg:mr-[calc(30%+64px)]">
           <Link
             to="/index"
-            className="mb-3 inline-flex items-center font-serif hover:underline"
-            style={{ color: "var(--primary-green)" }}>
-            <ChevronLeft className="w-4 h-4 inline mr-1" /> Zurück zur Übersicht
+            className="mb-3 inline-flex items-center font-mono text-sm hover:opacity-90"
+            style={{  }}>
+            <ChevronLeft className="w-4 h-4 color-[var(--deep-charcoal)] inline mr-1" /> <span style={{ color: "var(--primary-green)" }}>Zurück zur Übersicht</span>
           </Link>
           <h1
             className={`${STYLE.pageTitle} mb-4`}
@@ -407,7 +419,7 @@ const ParkDetailPage: React.FC = () => {
             {/* Basic Info */}
             <div
               className="py-4"
-              style={{ backgroundColor: "var(--card-bg)", borderRadius: "8px" }}>
+              style={{ backgroundColor: "var(--card-bg)" }}>
               <h3
                 className="font-serif italic text-2xl mb-3 truncate"
                 style={{ color: "var(--primary-green)", letterSpacing: "0.02em" }}>
@@ -443,7 +455,7 @@ const ParkDetailPage: React.FC = () => {
                     </span>
                     <p
                       className="font-serif italic mt-1 flex items-start gap-2"
-                      style={{ color: "var(--deep-charcoal)", fontWeight: "400", marginTop: "0.5em"}}>
+                      style={{ color: "var(--deep-charcoal)", fontWeight: "400", marginTop: "0.5em" }}>
                       <Clock className="w-5 h-5 flex-shrink-0" /> {park.openingHours}
                     </p>
                   </div>
@@ -499,8 +511,12 @@ const ParkDetailPage: React.FC = () => {
                         href={`https://www.google.com/maps/dir/${userLocation ? `${userLocation.lat},${userLocation.lng}` : ""}/${park.coordinates.lat},${park.coordinates.lng}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 font-mono text-xs hover:underline"
-                        style={{ color: "var(--deep-charcoal)" }}>
+                        className="w-full px-4 py-3 text-center font-mono text-xs flex items-center justify-center gap-2"
+                        style={{
+                          backgroundColor: "var(--primary-green)",
+                          color: "var(--soft-cream)",
+                          borderRadius: "6px",
+                        }}>
                         <Navigation className="w-5 h-5 flex-shrink-0" />
                         {userLocation ? "Route von meinem Standort" : "Route planen"}
                       </a>
@@ -534,20 +550,15 @@ const ParkDetailPage: React.FC = () => {
             {/* Links Section - Only shown if links are available */}
             {park.links && park.links.length > 0 && (
               <div
-                className="py-4"
-                style={{ backgroundColor: "var(--card-bg)", borderRadius: "8px" }}>
-                <h3
-                  className="font-serif italic text-2xl mb-3 truncate"
-                  style={{ color: "var(--primary-green)", letterSpacing: "0.02em" }}>
-                  Links
-                </h3>
+                className="pb-4"
+                style={{ backgroundColor: "var(--card-bg)" }}>
                 <div className="space-y-2">
-                  <span
+                  <h3
                     className="font-mono text-xs"
                     style={{ color: "var(--primary-green)" }}>
-                    EXTERNE LINKS:
-                  </span>
-                  <div className="mt-2 space-y-2">
+                    LINKS:
+                  </h3>
+                  <div className="mt-2 flex gap-4 flex-wrap items-center">
                     {park.links.map((link: { title: string; url: string; type?: "official" | "wiki" | "info" | "event" }, index: number) => {
                       // Choose icon based on link type
                       let icon = <ExternalLink className="w-4 h-4 flex-shrink-0" />;
@@ -612,7 +623,7 @@ const ParkDetailPage: React.FC = () => {
             {/* Basic Info */}
             <div
               className="py-4 "
-              style={{ backgroundColor: "var(--card-bg)", borderRadius: "8px" }}>
+              style={{ backgroundColor: "var(--card-bg)" }}>
               <h3
                 className="font-serif italic text-2xl mb-3 truncate"
                 style={{ color: "var(--primary-green)", letterSpacing: "0.02em" }}>
@@ -704,8 +715,12 @@ const ParkDetailPage: React.FC = () => {
                         href={`https://www.google.com/maps/dir/${userLocation ? `${userLocation.lat},${userLocation.lng}` : ""}/${encodeURIComponent(`${park.coordinates.lat},${park.coordinates.lng} (${park.name}, ${park.district}. Bezirk, Wien)`)}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 font-mono text-xs hover:underline"
-                        style={{ color: "var(--deep-charcoal)" }}>
+                        className="w-full px-4 py-3 text-center font-mono text-xs flex items-center justify-center gap-2"
+                        style={{
+                          backgroundColor: "var(--primary-green)",
+                          color: "var(--soft-cream)",
+                          borderRadius: "6px",
+                        }}>
                         <Navigation className="w-5 h-5 flex-shrink-0" />
                         {userLocation ? "Route von meinem Standort" : "Route planen"}
                       </a>
@@ -738,42 +753,33 @@ const ParkDetailPage: React.FC = () => {
 
             {/* Links Section - Only shown if links are available */}
             {park.links && park.links.length > 0 && (
-              <div
-                className="py-4"
-                style={{ backgroundColor: "var(--card-bg)", borderRadius: "8px" }}>
+              <div className="space-y-2">
                 <h3
-                  className="font-serif italic text-2xl mb-3 truncate"
-                  style={{ color: "var(--primary-green)", letterSpacing: "0.02em" }}>
-                  Links
+                  className="font-mono text-xs"
+                  style={{ color: "var(--primary-green)" }}>
+                  LINKS:
                 </h3>
-                <div className="space-y-2">
-                  <span
-                    className="font-mono text-xs"
-                    style={{ color: "var(--primary-green)" }}>
-                    EXTERNE LINKS:
-                  </span>
-                  <div className="mt-2 space-y-2">
-                    {park.links.map((link: { title: string; url: string; type?: "official" | "wiki" | "info" | "event" }, index: number) => {
-                      // Choose icon based on link type
-                      let icon = <ExternalLink className="w-4 h-4 flex-shrink-0" />;
-                      if (link.type === "wiki") icon = <BookOpen className="w-4 h-4 flex-shrink-0" />;
-                      if (link.type === "official") icon = <FileText className="w-4 h-4 flex-shrink-0" />;
-                      if (link.type === "event") icon = <Calendar className="w-4 h-4 flex-shrink-0" />;
+                <div className="mt-2 flex gap-4 flex-wrap items-center">
+                  {park.links.map((link: { title: string; url: string; type?: "official" | "wiki" | "info" | "event" }, index: number) => {
+                    // Choose icon based on link type
+                    let icon = <ExternalLink className="w-4 h-4 flex-shrink-0" />;
+                    if (link.type === "wiki") icon = <BookOpen className="w-4 h-4 flex-shrink-0" />;
+                    if (link.type === "official") icon = <FileText className="w-4 h-4 flex-shrink-0" />;
+                    if (link.type === "event") icon = <Calendar className="w-4 h-4 flex-shrink-0" />;
 
-                      return (
-                        <a
-                          key={index}
-                          href={link.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex items-center gap-2 font-serif hover:underline py-1"
-                          style={{ color: "var(--deep-charcoal)", fontWeight: "400" }}>
-                          {icon}
-                          {link.title}
-                        </a>
-                      );
-                    })}
-                  </div>
+                    return (
+                      <a
+                        key={index}
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 font-serif hover:underline py-1"
+                        style={{ color: "var(--deep-charcoal)", fontWeight: "400" }}>
+                        {icon}
+                        {link.title}
+                      </a>
+                    );
+                  })}
                 </div>
               </div>
             )}
@@ -818,10 +824,10 @@ const ParkDetailPage: React.FC = () => {
               {park.description && park.description.trim() !== "Park" && (
                 <div
                   className=""
-                  style={{ backgroundColor: "var(--card-bg)", borderRadius: "8px" }}>
+                  style={{ backgroundColor: "var(--card-bg)" }}>
                   <h2
                     className="font-mono text-lg mb-3 truncate"
-                    style={{ color: "var(--primary-green)", letterSpacing: "0.02em" }}>
+                    style={{ color: "var(--deep-charcoal)", letterSpacing: "0.02em" }}>
                     BESCHREIBUNG
                   </h2>
                   <p
@@ -829,13 +835,20 @@ const ParkDetailPage: React.FC = () => {
                     style={{ color: "var(--deep-charcoal)", fontWeight: "400" }}>
                     {park.description}
                   </p>
+                  {park.descriptionLicense && (
+                    <p
+                      className="font-serif italic text-sm mt-3"
+                      style={{ color: "var(--deep-charcoal)", opacity: 0.7 }}>
+                      Text von {park.descriptionLicense}
+                    </p>
+                  )}
                 </div>
               )}
 
               {/* Amenities */}
               <div
                 className=""
-                style={{ backgroundColor: "var(--card-bg)", borderRadius: "8px" }}>
+                style={{ backgroundColor: "var(--card-bg)" }}>
                 <h2
                   className="font-mono text-lg mb-3 truncate"
                   style={{ color: "var(--deep-charcoal)", letterSpacing: "0.02em" }}>
@@ -845,24 +858,18 @@ const ParkDetailPage: React.FC = () => {
                   {(park.amenities || []).map((amenity: string, index: number) => {
                     const AmenityIcon = getAmenityIcon(amenity);
                     return (
-                      <div
+                      <Link
+                        to={`/index?amenities=${amenity}`}
                         key={index}
-                        className="flex items-start space-x-2 p-2"
-                        style={{ backgroundColor: "var(--light-sage)", borderRadius: "8px" }}>
+                        className=" flex items-center space-x-2 p-2 bg-[var(--light-sage)]"
+                        style={{ border: isHighContrast ? "1px solid var(--border-color)" : "none" }}>
                         <div
-                          className="flex-shrink-0"
+                          className=" flex-shrink-0"
                           style={{ width: "20px" }}>
-                          <AmenityIcon
-                            className="w-5 h-5"
-                            style={{ color: "var(--primary-green)" }}
-                          />
+                          <AmenityIcon className="w-5 h-5" />
                         </div>
-                        <span
-                          className="font-mono text-xs"
-                          style={{ color: "var(--deep-charcoal)" }}>
-                          {amenity}
-                        </span>
-                      </div>
+                        <span className="font-mono text-xs truncate">{amenity}</span>
+                      </Link>
                     );
                   })}
                 </div>
@@ -871,7 +878,7 @@ const ParkDetailPage: React.FC = () => {
               {/* Interactive Map */}
               <div
                 className=""
-                style={{ backgroundColor: "var(--card-bg)", borderRadius: "8px" }}>
+                style={{ backgroundColor: "var(--card-bg)" }}>
                 <h2
                   className="font-mono text-lg mb-3 truncate"
                   style={{ color: "var(--deep-charcoal)", letterSpacing: "0.02em" }}>
@@ -882,7 +889,6 @@ const ParkDetailPage: React.FC = () => {
                   style={{
                     height: "400px",
                     width: "100%",
-                    borderRadius: "8px",
                     position: "relative",
                     overflow: "hidden",
                   }}
@@ -898,11 +904,8 @@ const ParkDetailPage: React.FC = () => {
               {nearbyParks.length > 0 && (
                 <div
                   className=""
-                  style={{ 
-                    backgroundColor: "var(--card-bg)", 
-                    borderRadius: "8px",
-                    border: isHighContrast ? "2px solid var(--border-color)" : "none",
-                    padding: isHighContrast ? "16px" : "0"
+                  style={{
+                    backgroundColor: "var(--card-bg)",
                   }}>
                   <h2
                     className="font-mono text-lg mb-4 truncate"
@@ -917,8 +920,7 @@ const ParkDetailPage: React.FC = () => {
                         className="block p-3 mb-2"
                         style={{
                           backgroundColor: "var(--light-sage)",
-                          borderRadius: "8px",
-                          borderBottom: "1px solid var(--light-sage)",
+                          border: isHighContrast ? "1px solid var(--border-color)" : "none",
                         }}>
                         <div className="flex flex-col">
                           <h3
@@ -929,7 +931,7 @@ const ParkDetailPage: React.FC = () => {
                           <div className="flex flex-wrap gap-4 mb-2">
                             <span
                               className="flex items-center gap-2 font-mono text-xs"
-                              style={{ color: "var(--primary-green)" }}>
+                              style={{ color: "var(--deep-charcoal)" }}>
                               <Building className="w-4 h-4" /> {nearbyPark.district}. BEZIRK
                             </span>
                             <span
@@ -953,10 +955,9 @@ const ParkDetailPage: React.FC = () => {
                                   key={index}
                                   className="px-2 py-1 text-xs font-mono flex items-center gap-1"
                                   style={{
-                                    backgroundColor: "var(--card-bg)",
+                                    backgroundColor: "var(--soft-cream)",
                                     color: "var(--deep-charcoal)",
-                                    borderRadius: "4px",
-                                    border: isAmenityHighContrast ? "2px solid var(--border-color)" : "none",
+                                    border: isAmenityHighContrast ? "1px solid var(--border-color)" : "none",
                                   }}>
                                   <AmenityIcon className="w-3 h-3" />
                                   {amenity}
@@ -972,7 +973,7 @@ const ParkDetailPage: React.FC = () => {
                                   backgroundColor: "var(--card-bg)",
                                   color: "var(--deep-charcoal)",
                                   borderRadius: "4px",
-                                  border: isHighContrast ? "2px solid var(--border-color)" : "none",
+                                  border: isHighContrast ? "1px solid var(--border-color)" : "none",
                                 }}>
                                 +{(nearbyPark.amenities || []).length - 2}
                               </span>
@@ -1000,7 +1001,7 @@ const ParkDetailPage: React.FC = () => {
         <div className="w-full">
           <Link
             to="/index"
-            className="px-4 py-2 mb-3 inline-block font-serif hover:underline"
+            className="px-4 py-2 mb-3 inline-block font-mono hover:underline"
             style={{ color: "var(--primary-green)" }}>
             &larr; Zurück zur Übersicht
           </Link>
@@ -1032,10 +1033,10 @@ const ParkDetailPage: React.FC = () => {
             {/* Description */}
             <div
               className=""
-              style={{ backgroundColor: "var(--card-bg)", borderRadius: "8px" }}>
+              style={{ backgroundColor: "var(--card-bg)" }}>
               <h2
                 className="font-mono text-lg mb-3 truncate"
-                style={{ color: "var(--primary-green)", letterSpacing: "0.02em" }}>
+                style={{ color: "var(--deep-charcoal)", letterSpacing: "0.02em" }}>
                 BESCHREIBUNG
               </h2>
               <p
@@ -1043,15 +1044,22 @@ const ParkDetailPage: React.FC = () => {
                 style={{ color: "var(--deep-charcoal)", fontWeight: "400" }}>
                 {park.description || "Keine Beschreibung verfügbar"}
               </p>
+              {park.descriptionLicense && (
+                <p
+                  className="font-serif italic text-sm mt-3"
+                  style={{ color: "var(--deep-charcoal)", opacity: 0.7 }}>
+                  Text von {park.descriptionLicense}
+                </p>
+              )}
             </div>
 
             {/* Amenities */}
             <div
               className=""
-              style={{ backgroundColor: "var(--card-bg)", borderRadius: "8px" }}>
+              style={{ backgroundColor: "var(--card-bg)" }}>
               <h2
                 className="font-mono text-lg mb-3 truncate"
-                style={{ color: "var(--primary-green)", letterSpacing: "0.02em" }}>
+                style={{ color: "var(--deep-charcoal)", letterSpacing: "0.02em" }}>
                 AUSSTATTUNG & EINRICHTUNGEN
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -1061,7 +1069,7 @@ const ParkDetailPage: React.FC = () => {
                     <div
                       key={index}
                       className="flex items-start space-x-2 p-2"
-                      style={{ backgroundColor: "var(--light-sage)", borderRadius: "8px" }}>
+                      style={{ backgroundColor: "var(--light-sage)" }}>
                       <div
                         className="flex-shrink-0"
                         style={{ width: "20px" }}>
@@ -1084,10 +1092,10 @@ const ParkDetailPage: React.FC = () => {
             {/* Interactive Map */}
             <div
               className=""
-              style={{ backgroundColor: "var(--card-bg)", borderRadius: "8px" }}>
+              style={{ backgroundColor: "var(--card-bg)" }}>
               <h2
                 className="font-mono text-lg mb-3 truncate"
-                style={{ color: "var(--primary-green)", letterSpacing: "0.02em" }}>
+                style={{ color: "var(--deep-charcoal)", letterSpacing: "0.02em" }}>
                 LAGE & KARTE
               </h2>
               <div
@@ -1113,7 +1121,7 @@ const ParkDetailPage: React.FC = () => {
             {/* Basic Info */}
             <div
               className="p-4"
-              style={{ backgroundColor: "var(--card-bg)", borderRadius: "8px" }}>
+              style={{ backgroundColor: "var(--card-bg)" }}>
               <h3
                 className="font-mono text-lg mb-3 truncate"
                 style={{ color: "var(--primary-green)", letterSpacing: "0.02em" }}>
@@ -1173,7 +1181,7 @@ const ParkDetailPage: React.FC = () => {
             {/* Public Transport */}
             <div
               className=""
-              style={{ backgroundColor: "var(--card-bg)", borderRadius: "8px" }}>
+              style={{ backgroundColor: "var(--card-bg)" }}>
               <h3
                 className="font-mono text-lg mb-3 truncate"
                 style={{ color: "var(--deep-charcoal)", letterSpacing: "0.02em" }}>
@@ -1201,11 +1209,15 @@ const ParkDetailPage: React.FC = () => {
                   className="mt-4 pt-4 border-t border-opacity-20"
                   style={{ borderColor: "var(--border-color)" }}>
                   <a
-                    href={`https://www.google.com/maps/dir/${userLocation ? `${userLocation.lat},${userLocation.lng}` : ""}/${`${park.coordinates.lat},${park.coordinates.lng}`}`}
+                    href={`https://www.google.com/maps/dir/${userLocation ? `${userLocation.lat},${userLocation.lng}` : ""}/${park.coordinates.lat},${park.coordinates.lng}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 font-mono text-xs hover:underline"
-                    style={{ color: "var(--deep-charcoal)" }}>
+                    className="w-full px-4 py-3 text-center font-mono text-xs flex items-center justify-center gap-2"
+                    style={{
+                      backgroundColor: "var(--primary-green)",
+                      color: "var(--soft-cream)",
+                      borderRadius: "6px",
+                    }}>
                     <Navigation className="w-5 h-5 flex-shrink-0" />
                     {userLocation ? "Route von meinem Standort" : "Route planen"}
                   </a>

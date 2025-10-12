@@ -348,8 +348,8 @@ const ParksListPage = () => {
           {/* Sidebar for Search and Filters - Desktop */}
           <div className=" px-4 lg:px-0 w-full lg:w-72 lg:flex-shrink-0">
             <div
-              className="sticky top-6 p-2"
-              style={{ backgroundColor: "var(--light-sage)", borderRadius: "8px" }}>
+              className="sticky top-6 p-4"
+              style={{ backgroundColor: "var(--light-sage)", border: isHighContrast ? "1px solid var(--border-color)" : "1px solid var(--border-color)", }}>
               <h2
                 className="font-mono text-lg mb-5"
                 style={{ color: "var(--primary-green)", letterSpacing: "0.02em" }}>
@@ -548,7 +548,7 @@ const ParksListPage = () => {
                   className="block p-4 mb-4 park-list-item"
                   style={{
                     backgroundColor: "var(--card-bg)",
-                    border: isHighContrast ? "2px solid var(--border-color)" : "1px solid var(--border-color)",
+                    border: isHighContrast ? "1px solid var(--border-color)" : "1px solid var(--border-color)",
                   }}>
                   <div className="flex flex-col md:flex-row md:items-start md:justify-between">
                     <div className="mb-6 md:mb-0">
@@ -582,7 +582,7 @@ const ParksListPage = () => {
                                 backgroundColor: "var(--light-sage)",
                                 color: "var(--deep-charcoal)",
                                 borderRadius: "4px",
-                                border: isHighContrast ? "2px solid var(--border-color)" : "none",
+                                border: isHighContrast ? "1px solid var(--border-color)" : "none",
                               }}>
                               <AmenityIcon className="w-3 h-3" />
                               {amenity}
@@ -598,7 +598,7 @@ const ParksListPage = () => {
                               backgroundColor: "var(--soft-cream)",
                               color: "var(--deep-charcoal)",
                               borderRadius: "4px",
-                              border: isHighContrast ? "2px solid var(--border-color)" : "none",
+                              border: isHighContrast ? "1px solid var(--border-color)" : "none",
                             }}>
                             +{park.amenities.length - 2}
                           </span>

@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Home, Palmtree, Map, Menu, X, Heart, BookOpen, BarChart3 } from "lucide-react";
 import Logo from "./Logo";
 import ThemeToggle from "./ThemeToggle";
+import Wordmark from "./Wordmark";
 
 const Navigation = () => {
   const location = useLocation();
@@ -106,11 +107,7 @@ const Navigation = () => {
               </a>
               <ThemeToggle />
             </div>
-            <p
-              className="text-xs italic opacity-70"
-              style={{ color: "var(--primary-green)", fontFamily: "EB Garamond, serif" }}>
-              Wiener Grünflächen <span className="font-mono font-semibold not-italic text-[0.8em]">INDEX</span>
-            </p>
+            <Wordmark />
           </div>
         </div>
       </nav>
@@ -217,11 +214,7 @@ const Navigation = () => {
                   </a>
                   <ThemeToggle />
                 </div>
-                <p
-                  className="text-xs italic opacity-50"
-                  style={{ color: "var(--primary-green)", fontFamily: "EB Garamond, serif" }}>
-                  Wiener Grünflächen <span className="font-mono not-italic text-[0.8em]">INDEX</span>
-                </p>
+                <Wordmark />
               </div>
             </div>
           </div>

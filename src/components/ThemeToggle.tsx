@@ -1,4 +1,4 @@
-import { Sun, Moon, Monitor, Contrast } from 'lucide-react';
+import { Sun, Moon, Monitor, Contrast, Check, Eclipse } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
 import { useState, useRef, useEffect } from 'react';
 
@@ -20,11 +20,11 @@ const ThemeToggle = () => {
   }, []);
 
   const themes = [
-    { value: 'auto' as const, label: 'Auto (System)', icon: Monitor },
+    { value: 'auto' as const, label: 'System', icon: Eclipse },
     { value: 'light' as const, label: 'Hell', icon: Sun },
+    { value: 'light-hc' as const, label: 'Kontrast Hell', icon: Sun },
     { value: 'dark' as const, label: 'Dunkel', icon: Moon },
-    { value: 'light-hc' as const, label: 'Hell (Hoher Kontrast)', icon: Sun },
-    { value: 'dark-hc' as const, label: 'Dunkel (Hoher Kontrast)', icon: Moon },
+    { value: 'dark-hc' as const, label: 'Kontrast Dunkel', icon: Moon },
   ];
 
   const currentTheme = themes.find(t => t.value === mode) || themes[0];
@@ -37,7 +37,7 @@ const ThemeToggle = () => {
         className="flex items-center gap-1 font-mono text-[9px] transition-opacity duration-200 hover:underline"
         style={{ color: 'var(--primary-green)' }}
         aria-label="Theme wechseln">
-        <Icon className="w-3 h-3" />
+        <Icon className="w-4 h-4" />
         <span>Theme</span>
       </button>
 
@@ -71,16 +71,16 @@ const ThemeToggle = () => {
                     backgroundColor: isActive ? 'var(--light-sage)' : 'transparent',
                     color: 'var(--deep-charcoal)',
                   }}>
-                  <ThemeIcon className="w-3 h-3" />
+                  <ThemeIcon className="w-4 h-4" />
                   {theme.value.includes('hc') && (
-                    <Contrast className="w-2.5 h-2.5" style={{ opacity: 0.6 }} />
+                    <Contrast className="w-4 h-4" style={{ opacity: 1 }} />
                   )}
-                  <span className="font-mono text-[9px] flex-1 text-left">
+                  <span className="font-mono text-[11px] flex-1 text-left truncate">
                     {theme.label}
                   </span>
                   {isActive && (
                     <span className="font-mono text-[9px]" style={{ color: 'var(--primary-green)' }}>
-                      ✓
+                      <Check className='w-4 h-4'/>
                     </span>
                   )}
                 </button>

@@ -191,7 +191,7 @@ const StatisticsPage = () => {
         {/* Key Metrics */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           <div
-            className="p-6 border-2"
+            className="p-6 border"
             style={{
               backgroundColor: "var(--light-sage)",
               borderColor: "var(--border-color)",
@@ -220,7 +220,7 @@ const StatisticsPage = () => {
           </div>
 
           <div
-            className="p-6 border-2"
+            className="p-6 border"
             style={{
               backgroundColor: "var(--light-sage)",
               borderColor: "var(--border-color)",
@@ -249,7 +249,7 @@ const StatisticsPage = () => {
           </div>
 
           <div
-            className="p-6 border-2"
+            className="p-6 border"
             style={{
               backgroundColor: "var(--light-sage)",
               borderColor: "var(--border-color)",
@@ -278,7 +278,7 @@ const StatisticsPage = () => {
           </div>
 
           <div
-            className="p-6 border-2"
+            className="p-6 border"
             style={{
               backgroundColor: "var(--light-sage)",
               borderColor: "var(--border-color)",
@@ -311,7 +311,7 @@ const StatisticsPage = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
           {/* Top Districts by Percentage */}
           <div
-            className="p-6 border-2"
+            className="p-6 border"
             style={{
               backgroundColor: "var(--card-bg)",
               borderColor: "var(--border-color)",
@@ -359,7 +359,7 @@ const StatisticsPage = () => {
 
           {/* Top Districts by Absolute Area */}
           <div
-            className="p-6 border-2"
+            className="p-6 border"
             style={{
               backgroundColor: "var(--card-bg)",
               borderColor: "var(--border-color)",
@@ -411,7 +411,7 @@ const StatisticsPage = () => {
 
         {/* Largest Parks */}
         <div
-          className="p-6 border-2 mb-12"
+          className="p-6 border mb-12"
           style={{
             backgroundColor: "var(--card-bg)",
             borderColor: "var(--border-color)",
@@ -459,7 +459,7 @@ const StatisticsPage = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
           {/* Geographical Extremes */}
           <div
-            className="p-6 border-2"
+            className="p-6 border"
             style={{
               backgroundColor: "var(--card-bg)",
               borderColor: "var(--border-color)",
@@ -486,7 +486,7 @@ const StatisticsPage = () => {
                     NÖRDLICHSTER PARK
                   </p>
                   <Link
-                    to={`/park/${slugifyParkName(northernmostPark.name)}`}
+                    to={`/index/${slugifyParkName(northernmostPark.name)}`}
                     className="font-serif text-lg hover:underline"
                     style={{ color: "var(--primary-green)" }}>
                     {northernmostPark.name}
@@ -509,7 +509,7 @@ const StatisticsPage = () => {
                     SÜDLICHSTER PARK
                   </p>
                   <Link
-                    to={`/park/${slugifyParkName(southernmostPark.name)}`}
+                    to={`/index/${slugifyParkName(southernmostPark.name)}`}
                     className="font-serif text-lg hover:underline"
                     style={{ color: "var(--primary-green)" }}>
                     {southernmostPark.name}
@@ -532,7 +532,7 @@ const StatisticsPage = () => {
                     ÖSTLICHSTER PARK
                   </p>
                   <Link
-                    to={`/park/${slugifyParkName(easternmostPark.name)}`}
+                    to={`/index/${slugifyParkName(easternmostPark.name)}`}
                     className="font-serif text-lg hover:underline"
                     style={{ color: "var(--primary-green)" }}>
                     {easternmostPark.name}
@@ -555,7 +555,7 @@ const StatisticsPage = () => {
                     WESTLICHSTER PARK
                   </p>
                   <Link
-                    to={`/park/${slugifyParkName(westernmostPark.name)}`}
+                    to={`/index/${slugifyParkName(westernmostPark.name)}`}
                     className="font-serif text-lg hover:underline"
                     style={{ color: "var(--primary-green)" }}>
                     {westernmostPark.name}
@@ -578,7 +578,7 @@ const StatisticsPage = () => {
                     ZENTRALSTER PARK
                   </p>
                   <Link
-                    to={`/park/${slugifyParkName(mostCenteredPark.name)}`}
+                    to={`/index/${slugifyParkName(mostCenteredPark.name)}`}
                     className="font-serif text-lg hover:underline"
                     style={{ color: "var(--primary-green)" }}>
                     {mostCenteredPark.name}
@@ -595,7 +595,7 @@ const StatisticsPage = () => {
 
           {/* Size Extremes */}
           <div
-            className="p-6 border-2"
+            className="p-6 border"
             style={{
               backgroundColor: "var(--card-bg)",
               borderColor: "var(--border-color)",
@@ -622,7 +622,7 @@ const StatisticsPage = () => {
                     GRÖẞTER PARK
                   </p>
                   <Link
-                    to={`/park/${slugifyParkName(largestPark.name)}`}
+                    to={`/index/${slugifyParkName(largestPark.name)}`}
                     className="font-serif text-lg hover:underline"
                     style={{ color: "var(--primary-green)" }}>
                     {largestPark.name}
@@ -650,7 +650,7 @@ const StatisticsPage = () => {
                     MEDIAN PARK
                   </p>
                   <Link
-                    to={`/park/${slugifyParkName(medianPark.name)}`}
+                    to={`/index/${slugifyParkName(medianPark.name)}`}
                     className="font-serif text-lg hover:underline"
                     style={{ color: "var(--primary-green)" }}>
                     {medianPark.name}
@@ -678,7 +678,7 @@ const StatisticsPage = () => {
                     KLEINSTER PARK
                   </p>
                   <Link
-                    to={`/park/${slugifyParkName(smallestPark.name)}`}
+                    to={`/index/${slugifyParkName(smallestPark.name)}`}
                     className="font-serif text-lg hover:underline"
                     style={{ color: "var(--primary-green)" }}>
                     {smallestPark.name}
@@ -701,7 +701,7 @@ const StatisticsPage = () => {
 
         {/* All Districts Table */}
         <div
-          className="mt-12 p-6 border-2"
+          className="mt-12 p-6 border"
           style={{
             backgroundColor: "var(--card-bg)",
             borderColor: "var(--border-color)",
