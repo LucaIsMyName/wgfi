@@ -1,4 +1,4 @@
-import { Suspense, lazy } from 'react';
+import { Suspense, lazy, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import Navigation from './components/Navigation';
@@ -24,6 +24,11 @@ const LoadingFallback = () => (
 function AppContent() {
   const location = useLocation();
   const isMapPage = location.pathname.startsWith('/map');
+
+  // Scroll to top on route change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   return (
     <div className="min-h-screen w-full" style={{backgroundColor: 'var(--soft-cream)'}}>

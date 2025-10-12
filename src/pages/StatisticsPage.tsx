@@ -52,13 +52,12 @@ const DISTRICT_AREAS: Record<number, number> = {
   23: 32.0e6,
 };
 
-const VIENNA_TOTAL_AREA = () => {
+const VIENNA_TOTAL_AREA = (): number => {
   let area = 0;
   for (let i = 1; i <= 23; i++) {
     area += DISTRICT_AREAS[i];
-    console.log("Vienna Area: ", area);
-    return area.toFixed(2);
   }
+  return area;
 }; // Vienna total area in square meters
 
 const StatisticsPage = () => {
@@ -86,7 +85,7 @@ const StatisticsPage = () => {
   const calculateStats = (parkData: Park[]) => {
     // Calculate total park area in Vienna
     const totalParkArea = parkData.reduce((sum, park) => sum + park.area, 0);
-    const coverage = (totalParkArea / Number(VIENNA_TOTAL_AREA()));
+    const coverage = (totalParkArea / VIENNA_TOTAL_AREA()) * 100;
     setViennaCoverage(coverage);
 
     // Calculate stats per district
@@ -145,7 +144,9 @@ const StatisticsPage = () => {
   const smallestPark = parks.reduce((min, park) => (park.area < min.area ? park : min), parks[0]);
   const largestPark = parks.reduce((max, park) => (park.area > max.area ? park : max), parks[0]);
   const sortedByArea = [...parks].sort((a, b) => a.area - b.area);
-  const medianPark = sortedByArea[Math.floor(sortedByArea.length / 2)];
+  const medianPark = sortedByArea.length % 2 === 0
+    ? sortedByArea[Math.floor(sortedByArea.length / 2) - 1]
+    : sortedByArea[Math.floor(sortedByArea.length / 2)];
 
   const formatArea = (area: number) => {
     if (area >= 1e6) return `${(area / 1e6).toFixed(2)} km²`;

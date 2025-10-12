@@ -3,7 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { getViennaParksForApp } from "../services/viennaApi";
 import { getManualParkData, slugifyParkName } from "../data/manualParksData";
-import { MapPin, Building, Ruler, AlertTriangle, ChevronLeft, TreePine, Heart } from "lucide-react";
+import { MapPin,Map, Building, Ruler, AlertTriangle, ChevronLeft, TreePine, Heart } from "lucide-react";
 import { getAmenityIcon } from "../utils/amenityIcons";
 import { isFavorite, toggleFavorite } from "../utils/favoritesManager";
 import ParkInfo from "../components/ParkInfo";
@@ -422,23 +422,24 @@ const ParkDetailPage: React.FC = () => {
             </div>
 
             {/* Actions */}
-            <div className="space-y-2">
+            <div className="flex gap-2">
               <Link
                 to={`/map/${slugifyParkName(park.name)}`}
-                className="w-full px-4 py-3 text-center font-mono text-xs block"
+                className="flex-1 px-4 py-3 font-mono text-xs flex items-center justify-center gap-2"
                 style={{
                   backgroundColor: "var(--primary-green)",
                   color: "var(--soft-cream)",
                   borderRadius: "6px",
                 }}>
-                Auf Karte anzeigen
+                  <Map className="w-4 h-4" />
+                Karte
               </Link>
               <button
                 onClick={() => {
                   const newStatus = toggleFavorite(park.id);
                   setIsFavorited(newStatus);
                 }}
-                className="w-full px-4 py-3 font-mono text-xs flex items-center justify-center gap-2"
+                className="flex-1 px-4 py-3 font-mono text-xs flex items-center justify-center gap-2"
                 style={{
                   backgroundColor: isFavorited ? "var(--accent-gold)" : "var(--card-bg)",
                   color: isFavorited ? "var(--soft-cream)" : "var(--primary-green)",
@@ -448,7 +449,7 @@ const ParkDetailPage: React.FC = () => {
                   className="w-4 h-4"
                   fill={isFavorited ? "currentColor" : "none"}
                 />
-                {isFavorited ? "Aus Favoriten entfernen" : "Zu Favoriten hinzufügen"}
+                {isFavorited ? "Favorit" : "Favorit"}
               </button>
             </div>
           </div>
@@ -458,23 +459,24 @@ const ParkDetailPage: React.FC = () => {
         <div className="px-4 py-3 lg:mr-[calc(30%+64px)]">
           <div className="space-y-6 block lg:hidden">
             {/* Actions for Mobile */}
-            <div className="space-y-2">
+            <div className="flex gap-2">
               <Link
                 to="/map"
-                className="w-full px-4 py-3 text-center font-mono text-xs block"
+                className="flex-1 px-4 py-3 font-mono text-xs flex items-center justify-center gap-2"
                 style={{
                   backgroundColor: "var(--primary-green)",
                   color: "var(--soft-cream)",
                   borderRadius: "6px",
                 }}>
-                Auf Karte anzeigen
+                  <Map className="w-4 h-4" />
+                Karte
               </Link>
               <button
                 onClick={() => {
                   const newStatus = toggleFavorite(park.id);
                   setIsFavorited(newStatus);
                 }}
-                className="w-full px-4 py-3 font-mono text-xs flex items-center justify-center gap-2"
+                className="flex-1 px-4 py-3 font-mono text-xs flex items-center justify-center gap-2"
                 style={{
                   backgroundColor: isFavorited ? "var(--accent-gold)" : "var(--card-bg)",
                   color: isFavorited ? "var(--deep-charcoal)" : "var(--primary-green)",
@@ -484,7 +486,7 @@ const ParkDetailPage: React.FC = () => {
                   className="w-4 h-4"
                   fill={isFavorited ? "currentColor" : "none"}
                 />
-                {isFavorited ? "Aus Favoriten entfernen" : "Zu Favoriten hinzufügen"}
+                {isFavorited ? "Favorit" : "Favorit"}
               </button>
             </div>
           </div>
@@ -527,7 +529,7 @@ const ParkDetailPage: React.FC = () => {
                   style={{ color: "var(--deep-charcoal)", letterSpacing: "0.02em" }}>
                   AUSSTATTUNG & EINRICHTUNGEN
                 </h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3">
                   {(park.amenities || []).map((amenity: string, index: number) => {
                     const AmenityIcon = getAmenityIcon(amenity);
                     return (
@@ -740,7 +742,7 @@ const ParkDetailPage: React.FC = () => {
                 style={{ color: "var(--deep-charcoal)", letterSpacing: "0.02em" }}>
                 AUSSTATTUNG & EINRICHTUNGEN
               </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+              <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3">
                 {(park.amenities || []).map((amenity: string, index: number) => {
                   const AmenityIcon = getAmenityIcon(amenity);
                   return (
@@ -801,23 +803,23 @@ const ParkDetailPage: React.FC = () => {
             </div>
 
             {/* Actions */}
-            <div className="space-y-2">
+            <div className="flex gap-2">
               <Link
                 to="/map"
-                className="w-full px-4 py-3 text-center font-mono text-xs block"
+                className="flex-1 px-4 py-3 text-center font-mono text-xs block"
                 style={{
                   backgroundColor: "var(--primary-green)",
                   color: "var(--soft-cream)",
                   borderRadius: "6px",
                 }}>
-                Auf Karte anzeigen
+                Karte
               </Link>
               <button
                 onClick={() => {
                   const newStatus = toggleFavorite(park.id);
                   setIsFavorited(newStatus);
                 }}
-                className="w-full px-4 py-3 font-mono text-xs flex items-center justify-center gap-2"
+                className="flex-1 px-4 py-3 font-mono text-xs flex items-center justify-center gap-2"
                 style={{
                   backgroundColor: isFavorited ? "var(--accent-gold)" : "var(--card-bg)",
                   color: isFavorited ? "var(--deep-charcoal)" : "var(--primary-green)",
@@ -827,7 +829,7 @@ const ParkDetailPage: React.FC = () => {
                   className="w-4 h-4"
                   fill={isFavorited ? "currentColor" : "none"}
                 />
-                {isFavorited ? "Aus Favoriten entfernen" : "Zu Favoriten hinzufügen"}
+                {isFavorited ? "Favorit" : "Favorit"}
               </button>
             </div>
           </div>

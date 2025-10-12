@@ -1,4 +1,4 @@
-import { MapPin, Building, Clock, Train, Accessibility, Navigation, ExternalLink, BookOpen, FileText, Calendar } from "lucide-react";
+import { MapPin, Map, Building, Clock, Train, Accessibility, Navigation, ExternalLink, BookOpen, FileText, Calendar } from "lucide-react";
 
 interface ParkInfoProps {
   park: {
@@ -18,7 +18,7 @@ const ParkInfo = ({ park, userLocation }: ParkInfoProps) => {
   return (
     <>
       {/* Basic Info */}
-      <div className="py-4">
+      <div className="pb-4">
         <h3
           className="font-serif italic text-2xl mb-3 truncate"
           style={{ color: "var(--primary-green)", letterSpacing: "0.02em" }}>
@@ -82,43 +82,41 @@ const ParkInfo = ({ park, userLocation }: ParkInfoProps) => {
               <span
                 className="font-mono text-xs"
                 style={{ color: "var(--primary-green)" }}>
-                ÖFFENTLICHE VERKEHRSMITTEL:
+                ÖFFENTLICHER VERKEHRSMITTEL:
               </span>
-              <div className="space-y-3 mt-1">
-                {park.publicTransport.map((transport: string, index: number) => (
-                  <div
-                    key={index}
-                    className="flex items-start gap-3">
-                    <Train
-                      className="w-5 h-5 mt-1 flex-shrink-0"
-                      stroke="var(--deep-charcoal)"
-                    />
-                    <span
-                      className="font-serif italic"
-                      style={{ color: "var(--deep-charcoal)", fontWeight: "400" }}>
-                      {transport}
-                    </span>
-                  </div>
-                ))}
-              </div>
-
-              {/* Google Maps Directions Link */}
-              <div
-                className="mt-4 pt-4 border-t border-opacity-20"
-                style={{ borderColor: "var(--border-color)" }}>
-                <a
-                  href={`https://www.google.com/maps/dir/${userLocation ? `${userLocation.lat},${userLocation.lng}` : ""}/${park.coordinates.lat},${park.coordinates.lng}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full px-4 py-3 text-center font-mono text-xs flex items-center justify-center gap-2"
-                  style={{
-                    backgroundColor: "var(--primary-green)",
-                    color: "var(--soft-cream)",
-                    borderRadius: "6px",
-                  }}>
-                  <Navigation className="w-5 h-5 flex-shrink-0" />
-                  {userLocation ? "Route von meinem Standort" : "Route planen"}
-                </a>
+              <div className="md:flex items-start justify-between gap-3 mt-1">
+                <div className="space-y-3 flex-1">
+                  {park.publicTransport.map((transport: string, index: number) => (
+                    <div
+                      key={index}
+                      className="flex items-start gap-3">
+                      <Train
+                        className="w-5 h-5 mt-1 flex-shrink-0"
+                        stroke="var(--deep-charcoal)"
+                      />
+                      <span
+                        className="font-serif italic"
+                        style={{ color: "var(--deep-charcoal)", fontWeight: "400" }}>
+                        {transport}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+                {park.coordinates && (
+                  <a
+                    href={`https://www.google.com/maps/dir/${userLocation ? `${userLocation.lat},${userLocation.lng}` : ""}/${park.coordinates.lat},${park.coordinates.lng}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-3 py-2 mt-4 md:mt-0 text-center font-mono text-xs flex items-center justify-center gap-2 whitespace-nowrap flex-shrink-0 self-start"
+                    style={{
+                      backgroundColor: "var(--primary-green)",
+                      color: "var(--soft-cream)",
+                      borderRadius: "6px",
+                    }}>
+                    <Navigation className="w-4 h-4 flex-shrink-0" />
+                    {userLocation ? "Route" : "Planen"}
+                  </a>
+                )}
               </div>
             </div>
           )}
