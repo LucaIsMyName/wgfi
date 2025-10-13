@@ -384,7 +384,7 @@ const ParkDetailPage: React.FC = () => {
         </Helmet>
 
         {/* Header with park name */}
-        <div className="px-4 py-6 lg:mr-[calc(30%+64px)]">
+        <div className="px-4 py-6 lg:mr-[calc(30%+96px)]">
           <Link
             to="/index"
             className="mb-3 inline-flex items-center font-mono text-sm hover:opacity-90"
@@ -456,7 +456,7 @@ const ParkDetailPage: React.FC = () => {
         </div>
 
         {/* Main Content Area */}
-        <div className="px-4 py-3 lg:mr-[calc(30%+64px)]">
+        <div className="px-4 py-3 lg:mr-[calc(30%+96px)]">
           <div className="space-y-6 block lg:hidden">
             {/* Actions for Mobile */}
             <div className="flex gap-2">

@@ -24,16 +24,16 @@ const LocationModal: React.FC<LocationModalProps> = ({
         <div
           className="p-6 rounded-lg max-w-md w-full border-2"
           style={{
-            backgroundColor: 'var(--card-bg)',
+            backgroundColor: 'var(--soft-cream)',
             borderColor: 'var(--border-color)',
           }}>
           <h3
-            className="text-lg font-serif font-medium mb-4"
+            className="text-lg font-mono font-medium mb-4"
             style={{ color: 'var(--primary-green)' }}>
             Standort nicht verfügbar
           </h3>
           <p
-            className="mb-6 font-serif"
+            className="mb-6 font-serif  italic"
             style={{ color: 'var(--deep-charcoal)' }}>
             Wir konnten Ihren Standort nicht ermitteln. Bitte überprüfen Sie Ihre Browsereinstellungen und stellen Sie sicher, dass Sie den Standortzugriff erlaubt haben.
           </p>
@@ -41,7 +41,6 @@ const LocationModal: React.FC<LocationModalProps> = ({
             <button
               onClick={() => {
                 onClose();
-                navigate('/');
               }}
               className="px-4 py-2 font-mono text-sm border-2 transition-colors"
               style={{
@@ -50,7 +49,7 @@ const LocationModal: React.FC<LocationModalProps> = ({
                 borderColor: 'var(--primary-green)',
               }}
             >
-              Zur Startseite
+              Schließen
             </button>
           </div>
         </div>
@@ -63,16 +62,16 @@ const LocationModal: React.FC<LocationModalProps> = ({
       <div
         className="p-6 rounded-lg max-w-md w-full border-2"
         style={{
-          backgroundColor: 'var(--card-bg)',
+          backgroundColor: 'var(--soft-cream)',
           borderColor: 'var(--border-color)',
         }}>
         <h3
-          className="text-lg font-serif font-medium mb-4"
+          className="text-lg font-mono font-medium mb-4"
           style={{ color: 'var(--primary-green)' }}>
           Standortzugriff erforderlich
         </h3>
         <p
-          className="mb-6 font-serif"
+          className="mb-6 font-serif italic"
           style={{ color: 'var(--deep-charcoal)' }}>
           Um die nächstgelegenen Parks zu finden, benötigen wir Zugriff auf Ihren Standort.
         </p>
