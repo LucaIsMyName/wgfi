@@ -1,6 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { useVirtualizer } from '@tanstack/react-virtual';
 import { getViennaParksForApp } from "../services/viennaApi";
 import { slugifyParkName } from "../data/manualParksData";
 import { Building, Ruler, AlertTriangle, TreePine, ArrowDownUp, Check, Filter, Heart } from 'lucide-react';
@@ -34,6 +35,7 @@ const STORAGE_KEY_LOCATION_PERMISSION = "wbi-location-permission";
 const ParksListPage = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const { isHighContrast } = useTheme();
+  const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
   
   const [parks, setParks] = useState<Park[]>([]);
   const [loading, setLoading] = useState(true);
@@ -279,6 +281,16 @@ const ParksListPage = () => {
   // Get unique districts
   const districts = Array.from(new Set(parks.map((park) => park.district))).sort();
 
+  // Virtualization setup
+  const parentRef = useRef<HTMLDivElement>(null);
+
+  const rowVirtualizer = useVirtualizer({
+    count: sortedParks.length,
+    getScrollElement: () => parentRef.current,
+    estimateSize: () => 180, // Estimate ~180px per park item
+    overscan: 8, // Render 8 extra items above/below viewport for smooth scrolling
+  });
+
   if (loading) {
     return (
       <div
@@ -317,8 +329,8 @@ const ParksListPage = () => {
 
   return (
     <div
-      className="min-h-screen lg:px-6"
-      style={{ background: "var(--main-bg)" }}>
+      className="lg:px-6"
+      style={{ background: "var(--main-bg)", height: '100vh', display: 'flex', flexDirection: 'column' }}>
       <Helmet>
         <title>Wiener Grünflächen Index | Alle Parks</title>
         <meta
@@ -326,30 +338,21 @@ const ParksListPage = () => {
           content={`Entdecken Sie ${filteredParks.length} Parks in Wien mit detaillierten Informationen zu Lage, Ausstattung und Größe.`}
         />
       </Helmet>
-      {/* Header */}
-      <div className="px-4 lg:px-0 pt-6">
-        <div className="w-full">
-          <h1
-            className={`${STYLE.pageTitle} mb-4`}
-            style={{ color: "var(--primary-green)" }}>
-            Index
-          </h1>
-          <p
-            className="sr-only font-serif italic text-lg"
-            style={{ color: "var(--deep-charcoal)", fontWeight: "400" }}>
-            Entdecken Sie {filteredParks.length} Parks in Wien
-          </p>
-        </div>
-      </div>
+      {/* Screen reader only H1 for both mobile and desktop */}
+      <h1 className="sr-only">Index - Wiener Grünflächen</h1>
 
       {/* Main Content with Sidebar Layout */}
-      <div className="px-0 lg:px-0 py-3">
-        <div className="flex flex-col lg:flex-row gap-4">
-          {/* Sidebar for Search and Filters - Desktop */}
-          <div className=" px-4 lg:px-0 w-full lg:w-72 lg:flex-shrink-0">
+      <div className="px-0 lg:px-0 flex-1 overflow-hidden" style={{ height: '100%' }}>
+        <div className="flex flex-col lg:flex-row gap-4 h-full">
+          {/* Sidebar for Search and Filters - Fixed at bottom on mobile, sticky sidebar on desktop */}
+          <div className="hidden lg:block lg:w-72 lg:flex-shrink-0 mt-6">
             <div
-              className="sticky top-6 p-4"
-              style={{ backgroundColor: "var(--light-sage)", border: isHighContrast ? "1px solid var(--border-color)" : "1px solid var(--border-color)", }}>
+              className="sticky top-6 p-4 overflow-y-auto"
+              style={{ 
+                backgroundColor: "var(--light-sage)", 
+                border: isHighContrast ? "1px solid var(--border-color)" : "1px solid var(--border-color)",
+                maxHeight: 'calc(100vh - 48px)'
+              }}>
               <h2
                 className="font-mono text-lg mb-5"
                 style={{ color: "var(--primary-green)", letterSpacing: "0.02em" }}>
@@ -537,101 +540,9 @@ const ParksListPage = () => {
             </div>
           </div>
 
-          {/* Parks List */}
-          <div className="flex-1">
-            <div className="space-y-4 p-4 lg:p-0 lg:pl-6">
-              {sortedParks.map((park) => {
-                return (
-                <Link
-                  key={park.id}
-                  to={`/index/${slugifyParkName(park.name)}`}
-                  className="block p-4 mb-4 park-list-item"
-                  style={{
-                    backgroundColor: "var(--card-bg)",
-                    border: isHighContrast ? "1px solid var(--border-color)" : "1px solid var(--border-color)",
-                  }}>
-                  <div className="flex flex-col md:flex-row md:items-start md:justify-between">
-                    <div className="mb-6 md:mb-0">
-                      <h3
-                        className="font-serif text-2xl mb-3"
-                        style={{ color: "var(--deep-charcoal)", fontWeight: "400", fontStyle: "italic" }}>
-                        {park.name}
-                      </h3>
-                      <div className="flex flex-wrap gap-6 mb-2">
-                        <span
-                          className="flex items-center gap-2 font-mono text-xs"
-                          style={{ color: "var(--deep-charcoal)" }}>
-                          <Building className="w-4 h-4" /> {park.district}. BEZIRK
-                        </span>
-                        <span
-                          className="flex items-center gap-2 font-mono text-xs"
-                          style={{ color: "var(--deep-charcoal)" }}>
-                          <Ruler className="w-4 h-4" /> {park.area.toLocaleString()} M²
-                        </span>
-                      </div>
-
-                      {/* Amenities moved below district and area */}
-                      <div className="flex flex-wrap gap-2 mt-2">
-                        {park.amenities.slice(0, 2).map((amenity: string, index: number) => {
-                          const AmenityIcon = getAmenityIcon(amenity);
-                          return (
-                            <span
-                              key={index}
-                              className="px-2 py-1 text-xs font-mono flex items-center gap-1"
-                              style={{
-                                backgroundColor: "var(--light-sage)",
-                                color: "var(--deep-charcoal)",
-                                borderRadius: "4px",
-                                border: isHighContrast ? "1px solid var(--border-color)" : "none",
-                              }}>
-                              <AmenityIcon className="w-3 h-3" />
-                              {amenity}
-                            </span>
-                          );
-                        })}
-
-                        {/* Show count of additional amenities if more than 2 */}
-                        {park.amenities.length > 2 && (
-                          <span
-                            className="px-2 py-1 text-xs font-mono flex items-center"
-                            style={{
-                              backgroundColor: "var(--soft-cream)",
-                              color: "var(--deep-charcoal)",
-                              borderRadius: "4px",
-                              border: isHighContrast ? "1px solid var(--border-color)" : "none",
-                            }}>
-                            +{park.amenities.length - 2}
-                          </span>
-                        )}
-                      </div>
-                    </div>
-
-                    {/* Favorite button in place of amenities */}
-                    <div>
-                      <button
-                        onClick={(e) => {
-                          e.preventDefault(); // Prevent navigation when clicking the heart
-                          handleToggleFavorite(park.id);
-                        }}
-                        className="p-2 transition-transform "
-                        style={{
-                          color: isFavorite(park.id) ? 'var(--accent-gold)' : 'var(--primary-green)',
-                        }}
-                        aria-label={isFavorite(park.id) ? 'Aus Favoriten entfernen' : 'Zu Favoriten hinzufügen'}
-                      >
-                        <Heart
-                          className="w-6 h-6"
-                          fill={isFavorite(park.id) ? 'var(--accent-gold)' : 'transparent'}
-                        />
-                      </button>
-                    </div>
-                  </div>
-                </Link>
-                );
-              })}
-            </div>
-
-            {filteredParks.length === 0 && (
+          {/* Parks List - Virtualized */}
+          <div className="flex-1 overflow-hidden" style={{ height: '100%' }}>
+            {filteredParks.length === 0 ? (
               <div className="py-16 text-center">
                 <p
                   className="font-serif italic text-xl"
@@ -639,8 +550,352 @@ const ParksListPage = () => {
                   Keine Parks gefunden, die Ihren Kriterien entsprechen.
                 </p>
               </div>
+            ) : (
+              <div
+                ref={parentRef}
+                className="p-4 lg:p-0 lg:pt-6 h-full"
+                style={{
+                  overflow: 'auto',
+                  scrollbarWidth: 'none', /* Firefox */
+                  msOverflowStyle: 'none', /* IE and Edge */
+                }}>
+                {/* Hide scrollbar for WebKit browsers */}
+                <style>{`
+                  div[class*="p-4"]::-webkit-scrollbar,
+                  div[class*="lg:p-0"]::-webkit-scrollbar {
+                    display: none;
+                  }
+                `}</style>
+                <div
+                  style={{
+                    height: `${rowVirtualizer.getTotalSize()}px`,
+                    width: '100%',
+                    position: 'relative',
+                  }}>
+                  {rowVirtualizer.getVirtualItems().map((virtualRow) => {
+                    const park = sortedParks[virtualRow.index];
+                    return (
+                      <div
+                        key={park.id}
+                        data-index={virtualRow.index}
+                        ref={rowVirtualizer.measureElement}
+                        style={{
+                          position: 'absolute',
+                          top: 0,
+                          left: 0,
+                          width: '100%',
+                          transform: `translateY(${virtualRow.start}px)`,
+                        }}>
+                        <Link
+                          to={`/index/${slugifyParkName(park.name)}`}
+                          className="block p-4 mb-4 park-list-item"
+                          style={{
+                            backgroundColor: "var(--card-bg)",
+                            border: isHighContrast ? "1px solid var(--border-color)" : "1px solid var(--border-color)",
+                          }}>
+                          <div className="flex flex-col md:flex-row md:items-start md:justify-between">
+                            <div className="mb-6 md:mb-0">
+                              <h3
+                                className="font-serif text-2xl mb-3"
+                                style={{ color: "var(--deep-charcoal)", fontWeight: "400", fontStyle: "italic" }}>
+                                {park.name}
+                              </h3>
+                              <div className="flex flex-wrap gap-6 mb-2">
+                                <span
+                                  className="flex items-center gap-2 font-mono text-xs"
+                                  style={{ color: "var(--deep-charcoal)" }}>
+                                  <Building className="w-4 h-4" /> {park.district}. BEZIRK
+                                </span>
+                                <span
+                                  className="flex items-center gap-2 font-mono text-xs"
+                                  style={{ color: "var(--deep-charcoal)" }}>
+                                  <Ruler className="w-4 h-4" /> {park.area.toLocaleString()} M²
+                                </span>
+                              </div>
+
+                              {/* Amenities moved below district and area */}
+                              <div className="flex flex-wrap gap-2 mt-2">
+                                {park.amenities.slice(0, 2).map((amenity: string, index: number) => {
+                                  const AmenityIcon = getAmenityIcon(amenity);
+                                  return (
+                                    <span
+                                      key={index}
+                                      className="px-2 py-1 text-xs font-mono flex items-center gap-1"
+                                      style={{
+                                        backgroundColor: "var(--light-sage)",
+                                        color: "var(--deep-charcoal)",
+                                        borderRadius: "4px",
+                                        border: isHighContrast ? "1px solid var(--border-color)" : "none",
+                                      }}>
+                                      <AmenityIcon className="w-3 h-3" />
+                                      {amenity}
+                                    </span>
+                                  );
+                                })}
+
+                                {/* Show count of additional amenities if more than 2 */}
+                                {park.amenities.length > 2 && (
+                                  <span
+                                    className="px-2 py-1 text-xs font-mono flex items-center"
+                                    style={{
+                                      backgroundColor: "var(--soft-cream)",
+                                      color: "var(--deep-charcoal)",
+                                      borderRadius: "4px",
+                                      border: isHighContrast ? "1px solid var(--border-color)" : "none",
+                                    }}>
+                                    +{park.amenities.length - 2}
+                                  </span>
+                                )}
+                              </div>
+                            </div>
+
+                            {/* Favorite button in place of amenities */}
+                            <div>
+                              <button
+                                onClick={(e) => {
+                                  e.preventDefault(); // Prevent navigation when clicking the heart
+                                  handleToggleFavorite(park.id);
+                                }}
+                                className="p-2 transition-transform "
+                                style={{
+                                  color: isFavorite(park.id) ? 'var(--accent-gold)' : 'var(--primary-green)',
+                                }}
+                                aria-label={isFavorite(park.id) ? 'Aus Favoriten entfernen' : 'Zu Favoriten hinzufügen'}
+                              >
+                                <Heart
+                                  className="w-6 h-6"
+                                  fill={isFavorite(park.id) ? 'var(--accent-gold)' : 'transparent'}
+                                />
+                              </button>
+                            </div>
+                          </div>
+                        </Link>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
             )}
           </div>
+        </div>
+      </div>
+
+      {/* Mobile Filter Panel - Accordion at Bottom */}
+      <div className="lg:hidden fixed bottom-0 left-0 right-0 z-50">
+        {/* Accordion Header/Toggle */}
+        <button
+          onClick={() => setMobileFiltersOpen(!mobileFiltersOpen)}
+          className="w-full p-4 flex items-center justify-between"
+          style={{ 
+            backgroundColor: "var(--light-sage)", 
+            border: isHighContrast ? "1px solid var(--border-color)" : "1px solid var(--border-color)",
+            borderTopLeftRadius: '16px',
+            borderTopRightRadius: '16px',
+          }}>
+          <h2
+            className="font-mono text-lg"
+            style={{ color: "var(--primary-green)", letterSpacing: "0.02em" }}>
+            SUCHE & FILTER
+          </h2>
+          <span
+            className="font-mono text-xl"
+            style={{ color: "var(--primary-green)" }}>
+            {mobileFiltersOpen ? '−' : '+'}
+          </span>
+        </button>
+
+        {/* Accordion Content */}
+        <div 
+          className="overflow-y-auto transition-all duration-300"
+          style={{ 
+            backgroundColor: "var(--light-sage)", 
+            border: isHighContrast ? "1px solid var(--border-color)" : "1px solid var(--border-color)",
+            borderTop: 'none',
+            height: mobileFiltersOpen ? '50vh' : '0',
+            opacity: mobileFiltersOpen ? 1 : 0,
+          }}>
+          {mobileFiltersOpen && (
+            <div className="p-4">
+              {/* Search Input */}
+              <div className="mb-6">
+                <label
+                  className="block font-mono text-xs mb-2"
+                  style={{ color: "var(--primary-green)" }}>
+                  PARKNAME ODER ADRESSE
+                </label>
+                <input
+                  type="text"
+                  value={searchTerm}
+                  onChange={(e) => updateSearchTerm(e.target.value)}
+                  placeholder="Park suchen..."
+                  className="w-full p-2 font-serif italic"
+                  style={{
+                    backgroundColor: "var(--soft-cream)",
+                    color: "var(--deep-charcoal)",
+                    borderRadius: "4px",
+                    fontWeight: "400",
+                  }}
+                />
+              </div>
+
+              {/* District Filter */}
+              <div className="mb-6">
+                <label
+                  className="block font-mono text-xs mb-2"
+                  style={{ color: "var(--primary-green)" }}>
+                  BEZIRK
+                </label>
+                <select
+                  value={selectedDistrict}
+                  onChange={(e) => updateSelectedDistrict(e.target.value)}
+                  className="w-full p-2 font-serif italic"
+                  style={{
+                    backgroundColor: "var(--soft-cream)",
+                    color: "var(--deep-charcoal)",
+                    borderRadius: "4px",
+                    fontWeight: "400",
+                  }}>
+                  <option value="">Alle Bezirke</option>
+                  {districts.map((district) => (
+                    <option
+                      key={district}
+                      value={district}>
+                      {district}. Bezirk
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              {/* Amenities Filter */}
+              <div className="mb-8">
+                <label
+                  className="block font-mono text-[10px] mb-1"
+                  style={{ color: "var(--primary-green)", opacity: 0.8 }}>
+                  <Filter className="w-3 h-3 inline mr-1" /> AUSSTATTUNG
+                </label>
+                <div className="flex flex-wrap gap-1">
+                  {availableAmenities.map((amenity: string) => {
+                    const AmenityIcon = getAmenityIcon(amenity);
+                    const isSelected = selectedAmenities.includes(amenity);
+                    return (
+                      <button
+                        key={amenity}
+                        onClick={() => {
+                          if (isSelected) {
+                            updateSelectedAmenities(selectedAmenities.filter((a) => a !== amenity));
+                          } else {
+                            updateSelectedAmenities([...selectedAmenities, amenity]);
+                          }
+                        }}
+                        className="px-2 py-1 text-[10px] font-mono flex items-center gap-1"
+                        style={{
+                          backgroundColor: isSelected ? "var(--primary-green)" : "var(--soft-cream)",
+                          color: isSelected ? "var(--soft-cream)" : "var(--deep-charcoal)",
+                          borderRadius: "4px",
+                          marginBottom: "0.25rem",
+                        }}>
+                        <AmenityIcon className="w-2 h-2 flex-shrink-0" />
+                        <span>{amenity}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {/* Sorting */}
+              <div>
+                <label
+                  className="block font-mono text-[10px] mb-1"
+                  style={{ color: "var(--primary-green)", opacity: 0.8 }}>
+                  <ArrowDownUp className="w-3 h-3 inline mr-1" /> SORTIERUNG
+                </label>
+                <div className="flex flex-col gap-1">
+                  <button
+                    onClick={() => updateSortOrder("desc")}
+                    className={`w-full px-2 py-1 text-[10px] font-mono flex items-center gap-1 justify-center ${sortOrder === "desc" ? "opacity-100" : "opacity-80"}`}
+                    style={{
+                      backgroundColor: sortOrder === "desc" ? "var(--primary-green)" : "var(--light-sage)",
+                      color: sortOrder === "desc" ? "var(--soft-cream)" : "var(--deep-charcoal)",
+                      borderRadius: "4px",
+                    }}>
+                    {sortOrder === "desc" && <Check className="w-2 h-2 flex-shrink-0" />}
+                    <span>GRÖSSTE</span>
+                  </button>
+                  <button
+                    onClick={() => updateSortOrder("asc")}
+                    className={`w-full px-2 py-1 text-[10px] font-mono flex items-center gap-1 justify-center ${sortOrder === "asc" ? "opacity-100" : "opacity-80"}`}
+                    style={{
+                      backgroundColor: sortOrder === "asc" ? "var(--primary-green)" : "var(--light-sage)",
+                      color: sortOrder === "asc" ? "var(--soft-cream)" : "var(--deep-charcoal)",
+                      borderRadius: "4px",
+                    }}>
+                    {sortOrder === "asc" && <Check className="w-2 h-2 flex-shrink-0" />}
+                    <span>KLEINSTE</span>
+                  </button>
+                  <button
+                    onClick={() => updateSortOrder("district_asc")}
+                    className={`w-full px-2 py-1 text-[10px] font-mono flex items-center gap-1 justify-center ${sortOrder === "district_asc" ? "opacity-100" : "opacity-80"}`}
+                    style={{
+                      backgroundColor: sortOrder === "district_asc" ? "var(--primary-green)" : "var(--light-sage)",
+                      color: sortOrder === "district_asc" ? "var(--soft-cream)" : "var(--deep-charcoal)",
+                      borderRadius: "4px",
+                    }}>
+                    {sortOrder === "district_asc" && <Check className="w-2 h-2 flex-shrink-0" />}
+                    <span>BEZIRK</span>
+                  </button>
+                  <button
+                    onClick={() => updateSortOrder("name_asc")}
+                    className={`w-full px-2 py-1 text-[10px] font-mono flex items-center gap-1 justify-center ${sortOrder === "name_asc" ? "opacity-100" : "opacity-80"}`}
+                    style={{
+                      backgroundColor: sortOrder === "name_asc" ? "var(--primary-green)" : "var(--light-sage)",
+                      color: sortOrder === "name_asc" ? "var(--soft-cream)" : "var(--deep-charcoal)",
+                      borderRadius: "4px",
+                    }}>
+                    {sortOrder === "name_asc" && <Check className="w-2 h-2 flex-shrink-0" />}
+                    <span>A-Z</span>
+                  </button>
+                  <button
+                    onClick={() => updateSortOrder("name_desc")}
+                    className={`w-full px-2 py-1 text-[10px] font-mono flex items-center gap-1 justify-center ${sortOrder === "name_desc" ? "opacity-100" : "opacity-80"}`}
+                    style={{
+                      backgroundColor: sortOrder === "name_desc" ? "var(--primary-green)" : "var(--light-sage)",
+                      color: sortOrder === "name_desc" ? "var(--soft-cream)" : "var(--deep-charcoal)",
+                      borderRadius: "4px",
+                    }}>
+                    {sortOrder === "name_desc" && <Check className="w-2 h-2 flex-shrink-0" />}
+                    <span>Z-A</span>
+                  </button>
+                  <button
+                    onClick={handleNearestSort}
+                    disabled={locationPermission === false}
+                    className={`w-full px-2 py-1 text-[10px] font-mono flex items-center gap-1 justify-center ${sortOrder === "nearest" ? "opacity-100" : locationPermission === false ? "opacity-40" : "opacity-80"}`}
+                    style={{
+                      backgroundColor: sortOrder === "nearest" ? "var(--primary-green)" : "var(--light-sage)",
+                      color: sortOrder === "nearest" ? "var(--soft-cream)" : "var(--deep-charcoal)",
+                      borderRadius: "4px",
+                      cursor: locationPermission === false ? "not-allowed" : "pointer",
+                    }}>
+                    {sortOrder === "nearest" && <Check className="w-2 h-2 flex-shrink-0" />}
+                    <span>AM NÄHESTEN</span>
+                  </button>
+                </div>
+              </div>
+
+              {/* Reset All Filters Button */}
+              {(searchTerm || selectedDistrict || selectedAmenities.length > 0) && (
+                <button
+                  onClick={resetAllFilters}
+                  className="px-3 py-2 text-[10px] font-mono w-full mt-4"
+                  style={{
+                    backgroundColor: "var(--soft-cream)",
+                    color: "var(--deep-charcoal)",
+                    borderRadius: "4px",
+                  }}>
+                  FILTER ZURÜCKSETZEN
+                </button>
+              )}
+            </div>
+          )}
         </div>
       </div>
     </div>

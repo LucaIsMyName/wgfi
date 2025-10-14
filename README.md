@@ -82,7 +82,5 @@ This project is published and available under the MIT License.
 
 ## To Do's
 
-- [ ] Ajax Load Parks on `/index` route so the filter, sort and fave actions are faster (about 1-2s delay because 1000 elements are in the list on-load currently). Maybe think of virtualization later on...
-- [ ] Add loading skeleton for parks list on `/index` route (low prio)
-- [ ] Add loading skeleton for park detail page (low prio)
 - [ ] check if sluggify() function in genearte-sitem.mjs and sluggify in react are the same output when given same input (accents in french and other languages are not properly deleted)
+- [ ] Make "/statistiken" route prettier in frontend on mobile with all the tables
