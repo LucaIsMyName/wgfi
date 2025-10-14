@@ -123,13 +123,13 @@ const ParkInfo = ({ park, userLocation }: ParkInfoProps) => {
 
           {/* Tips Section */}
           {park.tips && park.tips.length > 0 && (
-            <div>
+            <div className="pb-2">
               <span
                 className="font-mono text-xs"
                 style={{ color: "var(--primary-green)" }}>
                 INSIDER-TIPPS:
               </span>
-              <div className="space-y-2 mt-1">
+              <div className="space-y-1 mt-1">
                 {park.tips.map((tip: string, index: number) => (
                   <p
                     key={index}
@@ -153,7 +153,7 @@ const ParkInfo = ({ park, userLocation }: ParkInfoProps) => {
               style={{ color: "var(--primary-green)" }}>
               LINKS:
             </h3>
-            <div className="mt-2 flex gap-4 flex-wrap items-center">
+            <div className="mt-2 flex gap-2 flex-wrap items-center">
               {park.links.map((link, index: number) => {
                 // Choose icon based on link type
                 let icon = <ExternalLink className="w-4 h-4 flex-shrink-0" />;
@@ -167,7 +167,7 @@ const ParkInfo = ({ park, userLocation }: ParkInfoProps) => {
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 font-serif hover:underline py-1"
+                    className="flex truncate mr-2 items-center gap-2 font-serif hover:underline py-1"
                     style={{ color: "var(--deep-charcoal)", fontWeight: "400" }}>
                     {icon}
                     {link.title}

@@ -297,7 +297,7 @@ export const manualParksDB: Record<string, ManualParkData> = {
     links: [
       {
         title: "Wikipedia",
-        url: "https://de.wikipedia.org/wiki/Teich_Hirschstetten",
+        url: "https://de.wikipedia.org/wiki/Badeteich_Hirschstetten",
         type: "wiki",
       },
       {
@@ -336,7 +336,7 @@ export const manualParksDB: Record<string, ManualParkData> = {
         title: "Stadt Wien",
         url: "https://www.wien.gv.at/umwelt/parks/anlagen/poezleinsdorfer-schlosspark.html",
         type: "official",
-      }
+      },
     ],
   },
   "pa-loewygrube": {
@@ -357,21 +357,108 @@ export const manualParksDB: Record<string, ManualParkData> = {
   },
   "laaer-berg": {
     description: "Der Laaer Berg bildet mit dem westlich gelegenen Wienerberg (244 m ü. A.) und dem dazwischenliegenden Boschberg den weitesten Vorsprung des Wienerwalds in das Wiener Becken und gehört zur Terrassenlandschaft am Beckenrand. Der Hügelzug liegt zwischen dem Tal der Wien (zum Donaukanal) und der Donau im Norden und der Niederung der Liesing (zur Schwechat) im Süden. Er bildet den östlichsten Ausläufer der Nordalpen im Raum Wien und den Sporn zwischen dem Donautal und dem Talungstrichter des südlichen Wiener Beckens und des Steinfelds.",
+    descriptionLicense: "Wikipedia",
   },
   wasserpark: {
     description: "Der Floridsdorfer Wasserpark ist ein kleiner, als Parkanlage gestalteter Teil der Alten Donau im 21. Wiener Gemeindebezirk, Floridsdorf. Der Park wurde von 1928 bis 1929 angelegt und hat eine Fläche von 143.000 m², rund ein Drittel davon wird von Wasserflächen eingenommen.",
+    descriptionLicense: "Wikipedia",
   },
   "pa-roter-berg": {
     description: "Der Rote Berg liegt im Süden des Bezirksteils Ober-St.-Veit an der Grenze zum Bezirksteil Lainz. Der nur am Rand verbaute, wenig bewaldete Hügel bildet mit den nordwestlich anschließenden, unwesentlich höheren Hügeln Girzenberg und Trazerberg einen nicht von Straßen durchquerten Grünraum. Unter den drei Bergen verläuft von Nordwest nach Südost der in den 2000er Jahren gebaute Lainzer Tunnel, der von den ÖBB Ende 2012 in Betrieb genommen wurde (Sicherheitsausstieg gegenüber Veitingergasse 59). In der Senke östlich des Roten Bergs verlaufen in Nord-Süd-Richtung die Verbindungsbahn zwischen West- und Südbahn sowie der verrohrte Lainzerbach, dann steigt das Gelände nach Osten zum Küniglberg an.",
+    descriptionLicense: "Wikipedia",
   },
   draschepark: {
     description: "Der Draschepark ist eine 13 Hektar große Parkanlage in Inzersdorf im 23. Wiener Gemeindebezirk Liesing. Er ging aus dem Park rund um die beiden als Schloss Inzersdorf bezeichneten Schlösser hervor. Der Name des Parks verweist auf die Familie Drasche von Wartinberg, die ab 1857 die beiden Schlösser auf dem Gelände besaß.",
+    links: [
+      {
+        title: "Wikipedia",
+        url: "https://de.wikipedia.org/wiki/Draschepark",
+        type: "wiki",
+      },
+      {
+        title: "Stadt Wien",
+        url: "https://www.wien.gv.at/umwelt/parks/anlagen/draschepark.html",
+        type: "official",
+      },
+    ],
   },
   schweizergarten: {
     description: "Der Schweizergarten ist eine Parkanlage im 3. Wiener Gemeindebezirk, Landstraße, zwischen dem Park des Belvederes bzw. dem Landstraßer Gürtel im Norden, dem Quartier Belvedere (dem Areal des früheren Südbahnhofs) bzw. der Arsenalstraße im Westen und dem Arsenal bzw. der Ghegastraße im Südosten.",
+    links: [
+      {
+        title: "Wikipedia",
+        url: "https://de.wikipedia.org/wiki/Schweizergarten",
+        type: "wiki",
+      },
+      {
+        title: "Stadt Wien",
+        url: "https://www.wien.gv.at/umwelt/parks/anlagen/schweizergarten.html",
+        type: "official",
+      },
+    ],
   },
   "auer-welsbach-park": {
     description: "Der Auer-Welsbach-Park ist eine Parkanlage im 15. Wiener Gemeindebezirk Rudolfsheim-Fünfhaus und wird von Linker Wienzeile, Schönbrunner Schlossallee, Mariahilfer Straße und Winckelmannstraße begrenzt. Mit einer Fläche von rund 110.000 m² ist er der größte Park des 15. Bezirks. Benannt ist er nach dem österreichischen Chemiker Carl Auer von Welsbach.",
+    links: [
+      {
+        title: "Wikipedia",
+        url: "https://de.wikipedia.org/wiki/Auer-Welsbach-Park",
+        type: "wiki",
+      },
+      {
+        title: "Stadt Wien",
+        url: "https://www.wien.gv.at/umwelt/parks/anlagen/auer-welsbach-park.html",
+        type: "official",
+      },
+    ],
+  },
+  "blumengaerten-hirschstetten": {
+    description: "Auf einer Fläche von 60.000 Quadratmetern geben unterschiedliche Themengärten, der Zoo Hirschstetten, ein historischer Bauernhof oder das Palmenhaus einen Einblick in die vielfältige Blumen- und Pflanzenwelt unserer Erde.",
+    descriptionLicense: "Stadt Wien",
+    links: [
+      {
+        title: "Wikipedia",
+        url: "https://de.wikipedia.org/wiki/Blumengärten_Hirschstetten",
+        type: "wiki",
+      },
+      {
+        title: "Stadt Wien",
+        url: "https://www.wien.gv.at/freizeit/blumengaerten-hirschstetten",
+        type: "official",
+      },
+    ],
+  },
+  rathauspark: {
+    description: "Der Rathauspark ist eine symmetrisch angeordnete Anlage mit dem Nordpark zur Universität und dem Südpark zum Parlament hin. Die beiden Parkhälften sind durch den Rathausplatz getrennt, auf dem ganzjährig Kultur- und Sportveranstaltungen abgehalten werden, wie zum Beispiel der Christkindlmarkt und der Wiener Eistraum im Winter oder das Filmfestival im Sommer.",
+    descriptionLicense: "Stadt Wien",
+    accessibility: "Großteils Flach mit betonierten Wegen.",
+    links: [
+      {
+        title: "Wikipedia",
+        url: "https://de.wikipedia.org/wiki/Rathauspark_(Wien)",
+        type: "wiki",
+      },
+      {
+        title: "Stadt Wien",
+        url: "https://www.wien.gv.at/freizeit/rathauspark",
+        type: "official",
+      },
+      {
+        title: "Historie",
+        url: "https://www.geschichtewiki.wien.gv.at/Rathauspark",
+        type: "official",
+      },
+      {
+        title: "Filmfestival",
+        url: "https://filmfestival-rathausplatz.at/",
+        type: "event",
+      },
+    ],
+    tips: ["Winter: Christkindlmarkt & Eistraum", "Sommer: Filmfestival"],
+    amenities: ["Toiletten"],
+  },
+  reithofferpark: {
+    // amenities: ["Tischtennis", "Toiletten"],
   },
 };
 
