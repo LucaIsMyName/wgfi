@@ -436,6 +436,11 @@ export function transformViennaPark(viennaPark: ViennaPark) {
   
   const amenities = amenitiesList.length > 0 ? amenitiesList : ['Grünfläche'];
 
+  // Merge API amenities with manual amenities (combine instead of replace)
+  const mergedAmenities = manualData?.amenities 
+    ? [...new Set([...amenities, ...manualData.amenities])] // Combine and deduplicate
+    : amenities;
+
   // Merge API data with manual data if available
   const result = {
     id: parkId || Math.random().toString(),
@@ -444,7 +449,7 @@ export function transformViennaPark(viennaPark: ViennaPark) {
     district,
     area: Math.round(area) || 0,
     coordinates,
-    amenities: manualData?.amenities || amenities,
+    amenities: mergedAmenities,
     category,
     description: manualData?.description || category || 'Öffentliche Grünfläche in Wien',
     openingHours: formatOpeningHours(propsAny.OEFF_ZEITEN) || 'Täglich geöffnet',

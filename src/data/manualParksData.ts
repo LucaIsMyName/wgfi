@@ -11,6 +11,11 @@ export interface ManualParkData {
   name?: string;
   district?: number;
   address?: string;
+  /**
+   * Amenities are ADDED to API amenities, not replaced.
+   * Use this to supplement the Vienna API data with additional amenities
+   * like "Toiletten" or "Tischtennis" that you know exist in the park.
+   */
   amenities?: string[];
   description?: string;
   descriptionLicense?: string;
@@ -28,11 +33,11 @@ export interface ManualParkData {
   }>;
 }
 
-const praterDescription = "Der Wiener Prater liegt im südöstlichen Teil der Flussinsel, die seit der 1875 beendeten Donauregulierung von Donau und Donaukanal gebildet wird. Eine offiziell definierte Begrenzung des Pratergebiets existiert nicht. Durch Verbauung hat sich im Lauf der Zeit die als „Prater“ bezeichnete Fläche deutlich verringert; so wird heute das verbaute Stuwerviertel (früher Schwimmschulmais, Feuerwerksmais) nicht mehr als Teil des Praters bezeichnet, ebenso der ganz im Südosten der Insel gelegene Hafen Freudenau, der auch als Winterhafen bezeichnet wird.";
+const praterDescription = "Der Wiener Prater ist ein weitläufiges, etwa 6 km² umfassendes, großteils öffentliches Areal im 2. Wiener Gemeindebezirk, Leopoldstadt, das noch heute zu großen Teilen aus ursprünglich von der Donau geprägten Aulandschaften besteht. ";
 const praterLinks = [
   {
     title: "Wikipedia",
-    url: "https://de.wikipedia.org/wiki/Prater",
+    url: "https://de.wikipedia.org/wiki/Wiener_Prater",
     type: "wiki",
   },
   {
@@ -85,6 +90,7 @@ export const manualParksDB: Record<string, ManualParkData> = {
         type: "official",
       },
     ],
+    amenities: ["Toiletten", "Tischtennis"],
   },
   /** Augarten */
   augarten: {
@@ -106,6 +112,7 @@ export const manualParksDB: Record<string, ManualParkData> = {
         type: "official",
       },
     ],
+    amenities: ["Toiletten"],
   },
   /** Türkenschanzpark */
   tuerkenschanzpark: {
@@ -125,6 +132,7 @@ export const manualParksDB: Record<string, ManualParkData> = {
         type: "official",
       },
     ],
+    amenities: ["Toiletten"],
   },
   /** Prater */
   "prater-jesuitenwiese": {
@@ -411,6 +419,7 @@ export const manualParksDB: Record<string, ManualParkData> = {
         type: "official",
       },
     ],
+    amenities: ["Toiletten", "Tischtennis"],
   },
   "blumengaerten-hirschstetten": {
     description: "Auf einer Fläche von 60.000 Quadratmetern geben unterschiedliche Themengärten, der Zoo Hirschstetten, ein historischer Bauernhof oder das Palmenhaus einen Einblick in die vielfältige Blumen- und Pflanzenwelt unserer Erde.",
@@ -427,6 +436,7 @@ export const manualParksDB: Record<string, ManualParkData> = {
         type: "official",
       },
     ],
+    // amenities: ["Toiletten"],
   },
   rathauspark: {
     description: "Der Rathauspark ist eine symmetrisch angeordnete Anlage mit dem Nordpark zur Universität und dem Südpark zum Parlament hin. Die beiden Parkhälften sind durch den Rathausplatz getrennt, auf dem ganzjährig Kultur- und Sportveranstaltungen abgehalten werden, wie zum Beispiel der Christkindlmarkt und der Wiener Eistraum im Winter oder das Filmfestival im Sommer.",
@@ -458,7 +468,32 @@ export const manualParksDB: Record<string, ManualParkData> = {
     amenities: ["Toiletten"],
   },
   reithofferpark: {
-    // amenities: ["Tischtennis", "Toiletten"],
+    amenities: ["Tischtennis", "Toiletten"],
+    description: "Reithofferpark (15, Reithofferplatz), benannt (13. Februar 1991 Gemeinderatsausschuss für Kultur) nach Johann Nepomuk Reithoffer.",
+    descriptionLicense: "Stadt Wien",
+    links: [
+      {
+        title: "Wiener Kultursommer",
+        url: "https://www.kultursommer.wien/buehnen/reithofferpark",
+        type: "event",
+      },
+    ],
+  },
+  "waehringer-park": {
+    description: "Der Waehringer Park ist eine Parkanlage im 18. Wiener Gemeindebezirk.",
+    // descriptionLicense: "Stadt Wien",
+    // accessibility: "Großteils Flach mit betonierten Wegen.",
+    links: [
+      {
+        title: "Wiener Kultursommer",
+        url: "https://www.kultursommer.wien/buehnen/waehringer_park",
+        type: "event",
+      },
+    ],
+    amenities: ["Toiletten"],
+  },
+  "venediger-au-park": {
+    amenities: ["Tischtennis"],
   },
 };
 

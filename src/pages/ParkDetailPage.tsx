@@ -98,9 +98,16 @@ const ParkDetailPage: React.FC = () => {
           console.log("Manual data found:", manualData);
           console.log("Description License:", manualData?.descriptionLicense);
           console.log("Links:", manualData?.links);
+          
+          // Merge amenities: combine API amenities with manual amenities
+          const mergedAmenities = manualData?.amenities
+            ? [...new Set([...(foundPark.amenities || []), ...manualData.amenities])]
+            : foundPark.amenities;
+          
           const currentPark = {
             ...foundPark,
             ...manualData,
+            amenities: mergedAmenities,
           };
           setPark(currentPark);
           setError(null);
@@ -111,9 +118,14 @@ const ParkDetailPage: React.FC = () => {
               .filter((p: any) => p.id !== currentPark.id) // Exclude current park
               .map((p: any) => {
                 const manualData = getManualParkData(p.id) || getManualParkData(slugifyParkName(p.name));
+                // Merge amenities for nearby parks too
+                const nearbyMergedAmenities = manualData?.amenities
+                  ? [...new Set([...(p.amenities || []), ...manualData.amenities])]
+                  : p.amenities;
                 return {
                   ...p,
                   ...manualData,
+                  amenities: nearbyMergedAmenities,
                   distance: calculateDistance(currentPark.coordinates.lat, currentPark.coordinates.lng, p.coordinates.lat, p.coordinates.lng),
                 };
               })
