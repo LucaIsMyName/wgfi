@@ -1,7 +1,7 @@
 // Vienna Open Data API Service
 // Documentation: https://www.data.gv.at/datasets/22add642-d849-48ff-9913-8c7ba2d99b46?locale=de
 
-import { getManualParkData, slugifyParkName } from '../data/manualParksData';
+import { getManualParkData, slugifyParkName, getManualOnlyParks, type ManualParkData } from '../data/manualParksData';
 
 export interface ViennaPark {
   type: 'Feature';
@@ -556,6 +556,40 @@ function formatOpeningHours(hours: string): string {
   return hours;
 }
 
+/**
+ * Transform a manual park definition into app format
+ * Used for parks that don't exist in the Vienna API
+ */
+function transformManualPark(key: string, manualPark: ManualParkData) {
+  // Validate required fields for full parks
+  if (!manualPark.name || !manualPark.district || !manualPark.coordinates || !manualPark.area) {
+    console.warn(`Manual park "${key}" is marked as isFullPark but missing required fields. Skipping.`);
+    return null;
+  }
+
+  // Generate a unique ID using the key with prefix to avoid conflicts with API parks
+  const parkId = `manual-${key}`;
+  
+  return {
+    id: parkId,
+    name: manualPark.name,
+    address: manualPark.address || `${manualPark.name}, ${manualPark.district}. Bezirk, Wien`,
+    district: manualPark.district,
+    area: Math.round(manualPark.area),
+    coordinates: manualPark.coordinates,
+    amenities: manualPark.amenities || ['Grünfläche'],
+    category: manualPark.category || 'Park',
+    description: manualPark.description || `${manualPark.name} im ${manualPark.district}. Bezirk`,
+    openingHours: manualPark.openingHours || 'Täglich geöffnet',
+    website: manualPark.website || '',
+    phone: manualPark.phone || '',
+    accessibility: manualPark.accessibility || 'Barrierefreiheit nicht spezifiziert',
+    publicTransport: manualPark.publicTransport || ['Öffentliche Verkehrsmittel in der Nähe verfügbar'],
+    tips: manualPark.tips || [],
+    links: manualPark.links
+  };
+}
+
 // Local storage keys
 const PARKS_STORAGE_KEY = 'wbi-parks-data';
 const PARKS_TIMESTAMP_KEY = 'wbi-parks-timestamp';
@@ -589,11 +623,22 @@ export async function getViennaParksForApp() {
     const viennaParks = await fetchViennaParks();
     const transformedParks = viennaParks.map(transformViennaPark);
     
+    // Add manual-only parks (parks not in the Vienna API)
+    const manualOnlyParks = getManualOnlyParks();
+    const transformedManualParks = manualOnlyParks
+      .map(({ key, data }) => transformManualPark(key, data))
+      .filter(park => park !== null); // Remove any parks that failed validation
+    
+    // Combine API parks with manual parks
+    const allParks = [...transformedParks, ...transformedManualParks];
+    
+    console.log(`Total parks: ${allParks.length} (${transformedParks.length} from API + ${transformedManualParks.length} manual)`);
+    
     // Save to local storage
-    localStorage.setItem(PARKS_STORAGE_KEY, JSON.stringify(transformedParks));
+    localStorage.setItem(PARKS_STORAGE_KEY, JSON.stringify(allParks));
     localStorage.setItem(PARKS_TIMESTAMP_KEY, Date.now().toString());
     
-    return transformedParks;
+    return allParks;
   } catch (error) {
     console.error('Error fetching Vienna parks:', error);
     

@@ -76,6 +76,10 @@ The project includes automatic sitemap generation that:
 
 See `scripts/README.md` for more details.
 
+### Adding Manual Parks
+
+You can add completely new parks that don't exist in the Vienna API or enrich existing parks with additional data. See `MANUAL_PARKS_GUIDE.md` for detailed instructions.
+
 ## 📝 License
 
 This project is published and available under the MIT License.
@@ -84,3 +88,5 @@ This project is published and available under the MIT License.
 
 - [ ] check if sluggify() function in genearte-sitem.mjs and sluggify in react are the same output when given same input (accents in french and other languages are not properly deleted)
 - [ ] integrate more icons for anemities globally (Toilets, Tischtennis, ...)
+- [x] Add functionality to manually add complete parks to the database (not just enrichment) 
+- [ ] add fucntionaliyt to NOT display parks from the api by setting a isDisplayed: false (default is true) -> for eg. can undisay the private "Gerda-Matejka-Felden-Park"

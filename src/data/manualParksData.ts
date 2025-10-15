@@ -31,6 +31,32 @@ export interface ManualParkData {
     url: string;
     type?: "official" | "wiki" | "info" | "event";
   }>;
+  /**
+   * Set to true if this is a complete park definition not found in the Vienna API.
+   * When true, this park will be added to the dataset as a standalone entry.
+   * Requires: name, district, address, area, coordinates
+   */
+  isFullPark?: boolean;
+  /**
+   * Area in square meters (required if isFullPark is true)
+   */
+  area?: number;
+  /**
+   * Park category (e.g., "Park", "Schlosspark", "Bundesgarten")
+   */
+  category?: string;
+  /**
+   * Opening hours (optional)
+   */
+  openingHours?: string;
+  /**
+   * Website URL (optional)
+   */
+  website?: string;
+  /**
+   * Phone number (optional)
+   */
+  phone?: string;
 }
 
 const praterDescription = "Der Wiener Prater ist ein weitläufiges, etwa 6 km² umfassendes, großteils öffentliches Areal im 2. Wiener Gemeindebezirk, Leopoldstadt, das noch heute zu großen Teilen aus ursprünglich von der Donau geprägten Aulandschaften besteht. ";
@@ -49,6 +75,12 @@ const praterLinks = [
 /**
  * Manual database of park information
  * Keys can be either park IDs or slugs
+ *
+ * Two modes of operation:
+ * 1. Enrichment Mode (default): Adds/supplements data for existing API parks
+ * 2. Full Park Mode (isFullPark: true): Adds completely new parks not in the Vienna API
+ *
+ * For detailed instructions on adding full parks, see MANUAL_PARKS_GUIDE.md
  */
 export const manualParksDB: Record<string, ManualParkData> = {
   /** Donaupark */
@@ -495,6 +527,83 @@ export const manualParksDB: Record<string, ManualParkData> = {
   "venediger-au-park": {
     amenities: ["Tischtennis"],
   },
+
+  /**
+   * EXAMPLE: How to add a completely new park not in the Vienna API
+   * Uncomment and modify this template to add your own park
+   * See MANUAL_PARKS_GUIDE.md for detailed instructions
+   */
+
+  burggarten: {
+    isFullPark: true,
+    name: "Burggarten",
+    district: 1, // District number (1-23)
+    address: "Burgring, 1010 Wien",
+    area: 40000, // Area in square meters
+    // website: "https://www.bundesgaerten.at/hofburggaerten/Burggarten.html",
+    coordinates: {
+      lat: 48.2044454288165,
+      lng: 16.365833598010685, // Longitude
+    },
+    // category: "Park", // e.g., "Park", "Schlosspark", "Bundesgarten"
+    amenities: ["Grünfläche", "Sitzgelegenheiten"], // Array of amenities
+    description: "Der ehemalige Hof- oder Kaisergarten wurde um 1818/1819 von Hofgärtner Franz Antoine d. Ä. für den botanisch interessierten Kaiser Franz I. als Privatgarten angelegt. Ab 1847 wurde der Garten von Franz Antiune d. J. unter Kaiser Ferdinand I. vergrößert und landschaftlich umgestaltet. Im Zuge der Schleifung der Wallanlagen erfolgte unter Kaiser Franz Joseph I. ab 1863 eine erneute Erweiterung und Umgestaltung.",
+    descriptionLicense: "Österreichische Bundesgärten", // Optional: source of description
+    openingHours: "1. März - 31. März: 8:00 - 19:00; 1. April - 31. Oktober: 6:00 - 22:00; 1. November - 28. Februar: 7:00 - 17:30", // Optional
+    accessibility: "Parkanlage hat Gehwege, jedoch hügelig", // Optional
+    publicTransport: ["U3 Volkstheater"], // Optional
+    links: [
+      {
+        title: "Österreichische Bundesgärten",
+        url: "https://www.bundesgaerten.at/hofburggaerten/Burggarten.html",
+        type: "official",
+      },
+    ],
+  },
+  volksgarten: {
+    isFullPark: true,
+    name: "Volksgarten",
+    district: 1,
+    area: 50000,
+    coordinates: {
+      lat: 48.20813887445002, 
+      lng: 16.36139692102694
+    },
+    openingHours: "1. März - 31. März: 8:00 - 19:00; 1. April - 31. Oktober: 6:00 - 22:00; 1. November - 28. Februar: 7:00 - 17:30", // Optional
+    address: "Burgring, 1010 Wien",
+    description: "Im Auftrag von Kaiser Franz I. entstand der Volksgarten, der 1823 eröffnet wurde. Er war die erste Gartenanlage in Österreich, die vom Kaiserhaus explizit für die Öffentlichkeit errichtet wurde.",
+    descriptionLicense: "Österreichische Bundesgärten",
+    accessibility: "Parkanlage hat Gehwege",
+    publicTransport: ["U3 Volkstheater"],
+    links: [
+      {
+        title: "Österreichische Bundesgärten",
+        url: "https://www.bundesgaerten.at/hofburggaerten/Volksgarten.html",
+        type: "official",
+      },
+    ],
+  },
+  "lainzer-tiergarten": {
+    isFullPark: true,
+    name: "Lainzer Tiergarten",
+    district: 13,
+    area: 2.45e+7,
+    coordinates: {
+      lat: 48.16983242265272,
+      lng: 16.22053632684539
+    },
+    description: "Der Lainzer Tiergarten ist ein öffentlich zugängliches Naturschutzgebiet in Wien und zum Teil auch in Niederösterreich, das von der Magistratsabteilung 49 – Forstamt und Landwirtschaftsbetrieb der Stadt Wien verwaltet und betreut wird. Er ist ein Tiergarten im Sinne eines weitläufigen Waldgebietes mit reichem, innerhalb des Gartens frei lebendem Wildbestand. Als dieses Schutzgebiet ist es auch Bestandteil des Biosphärenparks Wienerwald. Der Lainzer Tiergarten liegt größtenteils im Westen Wiens, ein kleiner Teil liegt in der niederösterreichischen Gemeinde Laab im Walde.",
+    descriptionLicense: "Österreichische Bundesgärten",
+    accessibility: "Parkanlage hat Gehwege",
+    publicTransport: ["56B Lainzer Tor"],
+    links: [
+      {
+        title: "Lainzer Tiergarten",
+        url: "https://www.lainzer-tiergarten.at/",
+        type: "official",
+      },
+    ],
+  }
 };
 
 /**
@@ -527,4 +636,20 @@ export function getManualParkData(idOrSlug: string): ManualParkData | undefined 
   // If not found and could be a slug, try to normalize it
   const normalizedSlug = slugifyParkName(idOrSlug);
   return manualParksDB[normalizedSlug];
+}
+
+/**
+ * Get all manual parks marked as full park definitions
+ * @returns Array of manual park data entries that are complete parks
+ */
+export function getManualOnlyParks(): Array<{ key: string; data: ManualParkData }> {
+  const manualParks: Array<{ key: string; data: ManualParkData }> = [];
+
+  for (const [key, data] of Object.entries(manualParksDB)) {
+    if (data.isFullPark === true) {
+      manualParks.push({ key, data });
+    }
+  }
+
+  return manualParks;
 }

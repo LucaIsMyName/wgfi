@@ -50,22 +50,25 @@ const IdeaPage: React.FC = () => {
             className="w-5 h-5 flex-shrink-0 mt-0.5"
             style={{ color: "var(--accent-gold)" }}
           />
-          <div className="font-serif space-y-2" style={{ color: "var(--deep-charcoal)" }}>
-            <p className="font-bold" style={{ color: "var(--accent-gold)" }}>
+          <div
+            className="font-serif space-y-2"
+            style={{ color: "var(--deep-charcoal)" }}>
+            <p
+              className="font-bold"
+              style={{ color: "var(--accent-gold)" }}>
               BETA Version
             </p>
             <p className="text-sm leading-relaxed">
-              Diese Website befindet sich derzeit in der Beta-Phase. Funktionen und Features können sich jederzeit ändern. 
-              Wir bemühen uns, alle Informationen korrekt und aktuell zu halten, können jedoch keine Garantie für die 
-              vollständige Richtigkeit aller Daten übernehmen. Fehler oder Verbesserungsvorschläge können gerne 
-              auf <a 
-                href="https://github.com/LucaIsMyName/wgfi" 
-                target="_blank" 
+              Diese Website befindet sich in der Beta-Phase. Funktionen und Features können sich jederzeit ändern. Nicht immer sind alle Informationen korrekt und aktuell. Fehler oder Verbesserungsvorschläge können gerne auf{" "}
+              <a
+                href="https://github.com/LucaIsMyName/wgfi"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="underline"
                 style={{ color: "var(--primary-green)" }}>
                 GitHub
-              </a> gemeldet werden.
+              </a>{" "}
+              gemeldet werden.
             </p>
           </div>
         </div>
@@ -231,11 +234,14 @@ const IdeaPage: React.FC = () => {
                 target="_blank">
                 Github
               </a>
-              .<br/><br/>
+              .<br />
+              <br />
             </p>
             <p>
-              Die Parks werden Lokal im Browser für 7 Tage gespeichert, um die Ladezeit zu reduzieren und die Performance zu verbessern.<br/>
-              Parks zum letzen mal geladen: <span className="font-mono text-[0.78em]">{new Date(Number(localStorage.getItem("wbi-parks-timestamp"))).toLocaleString()}</span><br/>
+              Die Parks werden Lokal im Browser für 7 Tage gespeichert, um die Ladezeit zu reduzieren und die Performance zu verbessern.
+              <br />
+              Parks zum letzen mal geladen: <span className="font-mono text-[0.78em]">{new Date(Number(localStorage.getItem("wbi-parks-timestamp"))).toLocaleString()}</span>
+              <br />
               <button
                 className="px-2 py-1 border border-primary-green rounded mt-4"
                 onClick={() => localStorage.removeItem("wbi-parks-data")}>
