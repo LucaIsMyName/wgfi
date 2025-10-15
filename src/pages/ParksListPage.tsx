@@ -553,7 +553,7 @@ const ParksListPage = () => {
             ) : (
               <div
                 ref={parentRef}
-                className="p-4 lg:p-0 lg:pt-6 h-full"
+                className="p-4 pt-6 lg:pt-6 h-full"
                 style={{
                   overflow: 'auto',
                   scrollbarWidth: 'none', /* Firefox */
