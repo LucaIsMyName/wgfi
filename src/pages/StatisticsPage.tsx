@@ -143,6 +143,12 @@ const StatisticsPage = () => {
   // Size extremes
   const smallestPark = parks.reduce((min, park) => (park.area < min.area ? park : min), parks[0]);
   const largestPark = parks.reduce((max, park) => (park.area > max.area ? park : max), parks[0]);
+  const averageParkSize = parks.reduce((sum, p) => sum + p.area, 0) / parks.length;
+  const closestToAveragePark = parks.reduce((closest, park) => {
+    const distToCurrent = Math.abs(park.area - averageParkSize);
+    const distToClosest = Math.abs(closest.area - averageParkSize);
+    return distToCurrent < distToClosest ? park : closest;
+  }, parks[0]);
   const sortedByArea = [...parks].sort((a, b) => a.area - b.area);
   const medianPark = sortedByArea.length % 2 === 0
     ? sortedByArea[Math.floor(sortedByArea.length / 2) - 1]
@@ -426,7 +432,7 @@ const StatisticsPage = () => {
             {largestParks.map((park, index) => (
               <div
                 key={park.id}
-                className="flex justify-between items-center py-3 border-b"
+                className="flex flex-col md:flex-row md:justify-between md:items-center py-3 border-b gap-2"
                 style={{ borderColor: "var(--border-color)" }}>
                 <div>
                   <span
@@ -447,7 +453,7 @@ const StatisticsPage = () => {
                   </span>
                 </div>
                 <span
-                  className="font-serif text-xl font-bold"
+                  className="font-serif text-xl font-bold md:text-right"
                   style={{ color: "var(--primary-green)" }}>
                   {formatArea(park.area)}
                 </span>
@@ -614,7 +620,7 @@ const StatisticsPage = () => {
             </div>
             <div className="space-y-4">
               <div
-                className="flex justify-between items-center py-3 border-b"
+                className="flex flex-col md:flex-row md:justify-between md:items-center py-3 border-b gap-2"
                 style={{ borderColor: "var(--border-color)" }}>
                 <div className="flex-1">
                   <p
@@ -635,14 +641,42 @@ const StatisticsPage = () => {
                   </p>
                 </div>
                 <span
-                  className="font-serif text-lg font-bold ml-4"
+                  className="font-serif text-lg font-bold md:ml-4"
                   style={{ color: "var(--primary-green)" }}>
                   {formatArea(largestPark.area)}
                 </span>
               </div>
 
               <div
-                className="flex justify-between items-center py-3 border-b"
+                className="flex flex-col md:flex-row md:justify-between md:items-center py-3 border-b gap-2"
+                style={{ borderColor: "var(--border-color)" }}>
+                <div className="flex-1">
+                  <p
+                    className="font-mono text-xs mb-1"
+                    style={{ color: "var(--accent-gold)" }}>
+                    DURCHSCHNITTSPARK
+                  </p>
+                  <Link
+                    to={`/index/${slugifyParkName(closestToAveragePark.name)}`}
+                    className="font-serif text-lg hover:underline"
+                    style={{ color: "var(--primary-green)" }}>
+                    {closestToAveragePark.name}
+                  </Link>
+                  <p
+                    className="font-mono text-xs mt-1"
+                    style={{ color: "var(--deep-charcoal)", opacity: 0.6 }}>
+                    {closestToAveragePark.district}. Bezirk · Ø {formatArea(averageParkSize)}
+                  </p>
+                </div>
+                <span
+                  className="font-serif text-lg font-bold md:ml-4"
+                  style={{ color: "var(--primary-green)" }}>
+                  {formatArea(closestToAveragePark.area)}
+                </span>
+              </div>
+
+              <div
+                className="flex flex-col md:flex-row md:justify-between md:items-center py-3 border-b gap-2"
                 style={{ borderColor: "var(--border-color)" }}>
                 <div className="flex-1">
                   <p
@@ -663,14 +697,14 @@ const StatisticsPage = () => {
                   </p>
                 </div>
                 <span
-                  className="font-serif text-lg font-bold ml-4"
+                  className="font-serif text-lg font-bold md:ml-4"
                   style={{ color: "var(--primary-green)" }}>
                   {formatArea(medianPark.area)}
                 </span>
               </div>
 
               <div
-                className="flex justify-between items-center py-3 border-b"
+                className="flex flex-col md:flex-row md:justify-between md:items-center py-3 border-b gap-2"
                 style={{ borderColor: "var(--border-color)" }}>
                 <div className="flex-1">
                   <p
@@ -691,7 +725,7 @@ const StatisticsPage = () => {
                   </p>
                 </div>
                 <span
-                  className="font-serif text-lg font-bold ml-4"
+                  className="font-serif text-lg font-bold md:ml-4"
                   style={{ color: "var(--primary-green)" }}>
                   {formatArea(smallestPark.area)}
                 </span>
@@ -712,7 +746,9 @@ const StatisticsPage = () => {
             style={{ color: "var(--primary-green)", fontStyle: "italic" }}>
             Alle Bezirke im Überblick
           </h2>
-          <div className="overflow-x-auto">
+          
+          {/* Desktop Table View */}
+          <div className="hidden md:block overflow-x-auto">
             <table className="w-full">
               <thead>
                 <tr
@@ -782,6 +818,83 @@ const StatisticsPage = () => {
                   ))}
               </tbody>
             </table>
+          </div>
+
+          {/* Mobile Card View */}
+          <div className="block md:hidden space-y-4">
+            {[...districtStats]
+              .sort((a, b) => a.district - b.district)
+              .map((stat) => (
+                <div
+                  key={stat.district}
+                  className="p-4 border"
+                  style={{
+                    backgroundColor: "var(--light-sage)",
+                    borderColor: "var(--border-color)",
+                  }}>
+                  <div className="mb-3">
+                    <p
+                      className="font-serif text-xl"
+                      style={{ color: "var(--primary-green)" }}>
+                      {stat.district}. Bezirk
+                    </p>
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <div className="flex justify-between items-center">
+                      <span
+                        className="font-mono text-xs"
+                        style={{ color: "var(--primary-green)" }}>
+                        PARKS
+                      </span>
+                      <span
+                        className="font-mono text-sm"
+                        style={{ color: "var(--deep-charcoal)" }}>
+                        {stat.parkCount}
+                      </span>
+                    </div>
+                    
+                    <div className="flex justify-between items-center">
+                      <span
+                        className="font-mono text-xs"
+                        style={{ color: "var(--primary-green)" }}>
+                        FLÄCHE
+                      </span>
+                      <span
+                        className="font-mono text-sm"
+                        style={{ color: "var(--deep-charcoal)" }}>
+                        {formatArea(stat.totalArea)}
+                      </span>
+                    </div>
+                    
+                    <div className="flex justify-between items-center">
+                      <span
+                        className="font-mono text-xs"
+                        style={{ color: "var(--primary-green)" }}>
+                        ANTEIL
+                      </span>
+                      <span
+                        className="font-mono text-sm font-bold"
+                        style={{ color: "var(--primary-green)" }}>
+                        {stat.percentage.toFixed(2)}%
+                      </span>
+                    </div>
+                    
+                    <div className="flex justify-between items-center">
+                      <span
+                        className="font-mono text-xs"
+                        style={{ color: "var(--primary-green)" }}>
+                        Ø GRÖẞE
+                      </span>
+                      <span
+                        className="font-mono text-sm"
+                        style={{ color: "var(--deep-charcoal)", opacity: 0.7 }}>
+                        {formatArea(stat.avgParkSize)}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              ))}
           </div>
         </div>
       </main>

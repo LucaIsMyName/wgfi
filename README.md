@@ -83,4 +83,4 @@ This project is published and available under the MIT License.
 ## To Do's
 
 - [ ] check if sluggify() function in genearte-sitem.mjs and sluggify in react are the same output when given same input (accents in french and other languages are not properly deleted)
-- [ ] Make "/statistiken" route prettier in frontend on mobile with all the tables
+- [ ] integrate more icons for anemities globally (Toilets, Tischtennis, ...)
