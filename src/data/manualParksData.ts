@@ -603,6 +603,46 @@ export const manualParksDB: Record<string, ManualParkData> = {
         type: "official",
       },
     ],
+  },
+  "erholungsgebiet-wienerberg": {
+    isFullPark: true,
+    name: "Erholungsgebiet Wienerberg",
+    district: 10,
+    area: 117000,
+    coordinates: {
+      lat: 48.160970817931954, 
+      lng: 16.35186664440599
+    },
+    description: "Das Erholungsgebiet Wienerberg in Wien ist eine große Grünfläche auf ehemaligem Ziegeleigelände am südlichen Abhang des Wienerbergs. Es liegt im Süden der Stadt, im 10. Bezirk (Favoriten), zwischen Triester Straße im Westen, Raxstraße im Norden, Neilreichgasse im Osten sowie Otto-Probst-Straße und Friedrich-Adler-Weg im Süden.",
+    descriptionLicense: "Wikipedia",
+    links: [
+      {
+        title: "Stadt Wien",
+        url: "https://www.wien.gv.at/freizeit/naherholungsgebiet-wienerberg",
+        type: "official",
+      },
+    ],
+    amenities: ["Hundebereich", "Toiletten"]
+  },
+  "schlosspark-schoenbrunn": {
+    isFullPark: true,
+    name: "Schlosspark Schönbrunn",
+    district: 13,
+    area: 1862800 ,
+    coordinates: {
+      lat: 48.180726503524376, 
+      lng: 16.309724404545165
+    },
+    description: "Das Schloss Schönbrunn ist die ehemalige Sommerresidenz der Habsburger in der österreichischen Hauptstadt Wien. Die barocke Dreiflügelanlage wurde ab 1695 durch Leopold I. von Johann Bernhard Fischer von Erlach begonnen und ab 1743 durch Maria Theresia von Nikolaus von Pacassi vollendet. Hervorzuheben sind die Berglzimmer, die Große Galerie, das Vieux-Laque-Zimmer, die Schlosskapelle und das Schlosstheater. Zum Ensemble des „österreichischen Versailles“ gehört auch der Park mit dem Neptunbrunnen, der Gloriette und dem namensgebenden Schönen Brunnen. Als „außergewöhnliches Beispiel eines Gesamtkunstwerks“ wurden das Schloss und die Gärten von Schönbrunn 1996 ins UNESCO-Welterbe aufgenommen.",
+    descriptionLicense: "Wikipedia",
+    links: [
+      {
+        title: "Bundesgärten",
+        url: "https://www.bundesgaerten.at/schlosspark-schoenbrunn.html",
+        type: "official",
+      },
+    ],
+    amenities: ["Hundebereich", "Toiletten"]
   }
 };
 

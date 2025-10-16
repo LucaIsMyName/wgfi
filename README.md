@@ -86,7 +86,7 @@ This project is published and available under the MIT License.
 
 ## To Do's
 
-- [ ] check if sluggify() function in genearte-sitem.mjs and sluggify in react are the same output when given same input (accents in french and other languages are not properly deleted)
+- [ ] check if sluggify() function in generate-sitemap.mjs and sluggify in react are the same output when given same input (accents in french and other languages are not properly deleted)
 - [ ] integrate more icons for anemities globally (Toilets, Tischtennis, ...)
 - [x] Add functionality to manually add complete parks to the database (not just enrichment) 
-- [ ] add fucntionaliyt to NOT display parks from the api by setting a isDisplayed: false (default is true) -> for eg. can undisay the private "Gerda-Matejka-Felden-Park"
+- [ ] add fucntionality to NOT display parks from the api by setting a isDisplayed: false (default is true) -> for eg. can undisplay the private "Gerda-Matejka-Felden-Park" 
