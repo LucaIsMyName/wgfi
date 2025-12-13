@@ -12,40 +12,40 @@ async function testViennaAPI() {
 
   for (const endpoint of endpoints) {
     try {
-      console.log(`\n=== Testing endpoint: ${endpoint} ===`);
+      // console.log(`\n=== Testing endpoint: ${endpoint} ===`);
       const response = await fetch(endpoint);
       
       if (!response.ok) {
-        console.log(`Failed with status: ${response.status}`);
+        // console.log(`Failed with status: ${response.status}`);
         continue;
       }
       
       const data = await response.json();
       
       if (data.features && data.features.length > 0) {
-        console.log(`✅ Success! Found ${data.features.length} features`);
-        console.log('\n📋 Available properties in first feature:');
-        console.log(Object.keys(data.features[0].properties));
+        // console.log(`✅ Success! Found ${data.features.length} features`);
+        // console.log('\n📋 Available properties in first feature:');
+        // console.log(Object.keys(data.features[0].properties));
         
-        console.log('\n📄 Sample feature data:');
-        console.log(JSON.stringify(data.features[0], null, 2));
+        // console.log('\n📄 Sample feature data:');
+        // console.log(JSON.stringify(data.features[0], null, 2));
         
-        console.log('\n🔍 Properties of first 3 features:');
+        // console.log('\n🔍 Properties of first 3 features:');
         data.features.slice(0, 3).forEach((feature, index) => {
-          console.log(`\nFeature ${index + 1}:`);
+          // console.log(`\nFeature ${index + 1}:`);
           Object.entries(feature.properties).forEach(([key, value]) => {
-            console.log(`  ${key}: ${value}`);
+            // console.log(`  ${key}: ${value}`);
           });
         });
         
         return; // Stop after first successful endpoint
       }
     } catch (error) {
-      console.log(`❌ Error:`, error.message);
+      // console.log(`❌ Error:`, error.message);
     }
   }
   
-  console.log('❌ All endpoints failed');
+  // console.log('❌ All endpoints failed');
 }
 
 // Run the test

@@ -58,7 +58,7 @@ const Navigation = () => {
         }
       }}>
       <span style={{ color: isActive(path) ? "var(--primary-green)" : "var(--deep-charcoal)" }}>{icon}</span>
-      <span className="font-regular font-mono text-xs">{label}</span>
+      <span className="font-regular font-mono text-lg lg:text-sm">{label}</span>
     </Link>
   );
 

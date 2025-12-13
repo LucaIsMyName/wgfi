@@ -1,0 +1,17 @@
+# Wiener Grünflächen Index
+
+Alle Parks und Grünflächen der Stadt Wien als Liste und Karte. Daten werden von der offiziellen Open Government API der Republick Österreich bereitgestellt und manuell erweitert.
+
+## Seiten
+
+- (Home)[https://wgfi.lucamack.at/]
+- (Index)[https://wgfi.lucamack.at/index]
+- (Map)[https://wgfi.lucamack.at/karte]
+- (Statistiken)[https://wgfi.lucamack.at/statistics]
+- (Favoriten)[https://wgfi.lucamack.at/favorites]
+- (Idee)[https://wgfi.lucamack.at/idea]
+
+## Parkseiten XML
+
+- (Sitemap)[https://wgfi.lucamack.at/sitemap.xml]
+

@@ -30,7 +30,7 @@ function getManualParks() {
     const dbMatch = fileContent.match(/export const manualParksDB[^=]*=\s*\{([\s\S]*?)\n\};/);
     
     if (!dbMatch) {
-      console.log('⚠️  Could not parse manual parks database');
+      // console.log('⚠️  Could not parse manual parks database');
       return [];
     }
     
@@ -93,15 +93,15 @@ async function fetchParks() {
 
 // Generate sitemap XML
 async function generateSitemap() {
-  console.log('🌳 Fetching parks data...');
+  // console.log('🌳 Fetching parks data...');
   const parks = await fetchParks();
   
-  console.log(`✅ Found ${parks.length} API parks`);
+  // console.log(`✅ Found ${parks.length} API parks`);
   
   // Get manual parks
-  console.log('🔍 Checking for manual parks...');
+  // console.log('🔍 Checking for manual parks...');
   const manualParks = getManualParks();
-  console.log(`✅ Found ${manualParks.length} manual parks`);
+  // console.log(`✅ Found ${manualParks.length} manual parks`);
   
   const baseUrl = 'https://wgfi.lucamack.at';
   const currentDate = new Date().toISOString();
@@ -139,7 +139,7 @@ async function generateSitemap() {
   // Combine all park URLs
   const allParkUrls = [...parkUrls, ...manualParkUrls];
   
-  console.log(`📝 Generating sitemap with ${allParkUrls.length} park URLs (${parkUrls.length} API + ${manualParkUrls.length} manual)...`);
+  // console.log(`📝 Generating sitemap with ${allParkUrls.length} park URLs (${parkUrls.length} API + ${manualParkUrls.length} manual)...`);
   
   // Generate XML
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
@@ -167,11 +167,11 @@ ${allParkUrls.map(park => `  <url>
   
   fs.writeFileSync(sitemapPath, xml, 'utf-8');
   
-  console.log(`✅ Sitemap generated successfully!`);
-  console.log(`📍 Location: ${sitemapPath}`);
-  console.log(`📊 Total URLs: ${staticPages.length + allParkUrls.length}`);
-  console.log(`   - Static pages: ${staticPages.length}`);
-  console.log(`   - Park pages: ${allParkUrls.length} (${parkUrls.length} API + ${manualParkUrls.length} manual)`);
+  // console.log(`✅ Sitemap generated successfully!`);
+  // console.log(`📍 Location: ${sitemapPath}`);
+  // console.log(`📊 Total URLs: ${staticPages.length + allParkUrls.length}`);
+  // console.log(`   - Static pages: ${staticPages.length}`);
+  // console.log(`   - Park pages: ${allParkUrls.length} (${parkUrls.length} API + ${manualParkUrls.length} manual)`);
 }
 
 // Run the script

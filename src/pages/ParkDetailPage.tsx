@@ -63,7 +63,7 @@ const ParkDetailPage: React.FC = () => {
           });
         },
         (error) => {
-          console.log("Error getting user location:", error);
+          // console.log("Error getting user location:", error);
         }
       );
     }
@@ -92,12 +92,12 @@ const ParkDetailPage: React.FC = () => {
             manualData = getManualParkData(slugifyParkName(foundPark.name));
           }
 
-          console.log("Park ID:", foundPark.id);
-          console.log("Park Name:", foundPark.name);
-          console.log("Park Name Slug:", slugifyParkName(foundPark.name));
-          console.log("Manual data found:", manualData);
-          console.log("Description License:", manualData?.descriptionLicense);
-          console.log("Links:", manualData?.links);
+          // console.log("Park ID:", foundPark.id);
+          // console.log("Park Name:", foundPark.name);
+          // console.log("Park Name Slug:", slugifyParkName(foundPark.name));
+          // console.log("Manual data found:", manualData);
+          // console.log("Description License:", manualData?.descriptionLicense);
+          // console.log("Links:", manualData?.links);
           
           // Merge amenities: combine API amenities with manual amenities
           const mergedAmenities = manualData?.amenities
