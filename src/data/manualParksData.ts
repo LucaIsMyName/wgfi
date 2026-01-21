@@ -141,7 +141,7 @@ export const manualParksDB: Record<string, ManualParkData> = {
     name: "Augarten",
     district: 2,
     address: "Obere Augartenstraße, 1020 Wien",
-    description: "Der Augarten ist der älteste Barockgarten Wiens und wurde 1712 für die Öffentlichkeit zugänglich gemacht. Neben der historischen Porzellanmanufaktur beherbergt der Park auch die markanten Flaktürme aus dem Zweiten Weltkrieg.",
+    description: "Auf dem Gelände des heutigen Augartens wurde bereits 1614 ein Jagdschloss für Kaiser Maximilian errichtet. In den folgenden Jahrzehnten wurde das Gelände regelmäßig vergrößert. Es ist die älteste erhaltene barocke Anlage Wiens, die heute wertvollen Grünraum mitten in Wien bietet.",
     publicTransport: ["U2 Taborstraße", "Straßenbahn 5, 31"],
     accessibility: "Größtenteils barrierefrei zugänglich",
     links: [
@@ -151,12 +151,18 @@ export const manualParksDB: Record<string, ManualParkData> = {
         type: "wiki",
       },
       {
-        title: "Stadt Wien",
-        url: "https://www.wien.gv.at/umwelt/parks/anlagen/augarten.html",
+        title: "Bundesgärten",
+        url: "https://www.bundesgaerten.at/augarten/Augarten-.html",
         type: "official",
       },
     ],
-    amenities: ["Toiletten"],
+    amenities: ["Grünfläche", "Toiletten"],
+    isFullPark: true,
+    area: 522000,
+    coordinates: {
+      lat: 48.226121792463, 
+      lng: 16.376688355191
+    },
   },
   /** Türkenschanzpark */
   tuerkenschanzpark: {
@@ -883,7 +889,7 @@ export const manualParksDB: Record<string, ManualParkData> = {
     "isFullPark": true,
     "amenities": ["Grünfläche", "Toiletten", "Spielplatz", "Grillen", "Tischtennis", "Hundebereich"]
   },
-
+  
 };
 
 /**

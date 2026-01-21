@@ -20,7 +20,9 @@ export default function ParksList({ parks, onToggleFavorite, isHighContrast }: P
   const rowVirtualizer = useVirtualizer({
     count: parks.length,
     getScrollElement: () => parentRef.current,
-    estimateSize: () => 180, // Estimate ~180px per park item
+    estimateSize: () => {
+      return 180;
+    }, // Estimate ~180px per park item
     overscan: 8, // Render 8 extra items above/below viewport for smooth scrolling
   });
 
