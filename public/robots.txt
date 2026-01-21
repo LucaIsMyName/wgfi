@@ -1,0 +1,10 @@
+# Robots.txt for Wiener Grünflächen Index
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://wgfi.lucamack.at/sitemap.xml
+
+# Crawl-delay (optional, adjust as needed)
+Crawl-delay: 1

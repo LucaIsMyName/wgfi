@@ -1,0 +1,424 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Art Nouveau inspired color palette - Light Mode */
+    --primary-green: #2d4a3e;
+    --secondary-green: #5a7c65;
+    --accent-gold: #c9a96e;
+    --warm-gold: #b8941f;
+    --deep-charcoal: #2c2c2c;
+    --soft-cream: #fcfaf6;
+    --light-sage: #f2f5ee;
+    --light-gold: #f5f1e6;
+    --border-color: #e0e0d5;
+    --copper: #b87333;
+
+    /* Main background color */
+    --main-bg: var(--soft-cream);
+    --card-bg: transparent;
+    --sidebar-bg: var(--soft-cream);
+
+    /* Typography */
+    --font-serif: "Instrument Serif", serif;
+    --font-mono: "Geist Mono", monospace;
+    --font-sans: "TASA Orbiter", sans-serif;
+  }
+
+  /* Dark Mode */
+  .dark {
+    --primary-green: #3aad6f;
+    --secondary-green: #29724b;
+    --accent-gold: #d4b483;
+    --warm-gold: #c9a96e;
+    --deep-charcoal: #e5e5e5;
+    --soft-cream: #1a1a1a;
+    --light-sage: #242424;
+    --light-gold: #2a2a2a;
+    --border-color: #3a3a3a;
+    --copper: #c98a52;
+
+    --main-bg: var(--soft-cream);
+    --card-bg: transparent;
+    --sidebar-bg: #1a1a1a;
+  }
+
+  /* High Contrast Mode (Light) */
+  .light.high-contrast {
+    --primary-green: #1a3329;
+    --secondary-green: #1a3329;
+    --accent-gold: #1a3329;
+    --warm-gold: #1a3329;
+    --deep-charcoal: #000;
+    --soft-cream: #ffffff;
+    --light-sage: #ffffff;
+    --light-gold: #ffffff;
+    --border-color: #000000;
+    --copper: #8a4e1f;
+    --card-bg: #fff;
+  }
+
+  /* High Contrast Mode (Dark) */
+  .dark.high-contrast {
+    --primary-green: #ffffff;
+    --secondary-green: #ffffff;
+    --accent-gold: #ffffff;
+    --warm-gold: #ffffff;
+    --deep-charcoal: #fff;
+    --soft-cream: #000000;
+    --light-sage: #000000;
+    --light-gold: #000000;
+    --border-color: #ffffff;
+    --copper: #ffffff;
+    --card-bg: #000;
+  }
+
+  * {
+    border-radius: 0 !important;
+  }
+
+  /* Park list item styles */
+  /* .park-list-item {
+    transition: border-color 0.3s ease, border-width 0.15s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .park-list-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .dark .park-list-item:hover {
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+  } */
+
+  
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-serif, " Instrument Serif", serif);
+  background: var(--main-bg);
+  color: var(--deep-charcoal);
+  line-height: 1.6;
+  /* transition: background-color 0.3s ease, color 0.3s ease; */
+}
+
+/* Smooth theme transitions - exclude transform and other animation properties */
+*:not(.park-marker):not(.park-list-item):not(.animate-fade-gradient):not([class*="animate"]):not(.mapboxgl-popup):not(.mapboxgl-popup *) {
+  transition-property: background-color, color, border-color, fill, stroke;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+/* Force Mapbox popups to stay in light mode */
+.mapboxgl-popup-content {
+  background-color: #fcfaf6 !important;
+  color: #2c2c2c !important;
+  border: 1px solid #2d4a3e !important;
+  padding: 0 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+.mapboxgl-popup-content h3 {
+  color: #2d4a3e !important;
+}
+
+.mapboxgl-popup-content p {
+  color: #2c2c2c !important;
+}
+
+.mapboxgl-popup-content a {
+  background-color: #2d4a3e !important;
+  color: #fcfaf6 !important;
+}
+
+.mapboxgl-popup-close-button {
+  color: #2d4a3e !important;
+  font-size: 24px !important;
+  padding: 4px 8px !important;
+}
+
+.mapboxgl-popup-close-button:hover {
+  background-color: rgba(45, 74, 62, 0.1) !important;
+}
+
+.mapboxgl-popup-tip {
+  border-top-color: #2d4a3e !important;
+  border-bottom-color: #2d4a3e !important;
+  border-left-color: #2d4a3e !important;
+  border-right-color: #2d4a3e !important;
+}
+
+/* Mapbox Navigation Controls - Theme Support */
+.mapboxgl-ctrl-group {
+  background-color: var(--soft-cream) !important;
+  border: 0 solid var(--border-color) !important;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1) !important;
+}
+
+.mapboxgl-ctrl-group button {
+  background-color: var(--soft-cream) !important;
+  color: var(--primary-green) !important;
+}
+
+.mapboxgl-ctrl-group button:hover {
+  background-color: var(--light-sage) !important;
+}
+
+.mapboxgl-ctrl-group button + button {
+  border-top: 0 solid var(--border-color) !important;
+}
+
+/* Navigation control icons */
+.mapboxgl-ctrl-icon {
+  filter: none !important;
+}
+
+.mapboxgl-ctrl button.mapboxgl-ctrl-zoom-in .mapboxgl-ctrl-icon {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='29' height='29' viewBox='0 0 29 29' xmlns='http://www.w3.org/2000/svg' fill='%232d4a3e'%3E%3Cpath d='M14.5 8.5c-.75 0-1.5.75-1.5 1.5v3h-3c-.75 0-1.5.75-1.5 1.5S9.25 16 10 16h3v3c0 .75.75 1.5 1.5 1.5S16 19.75 16 19v-3h3c.75 0 1.5-.75 1.5-1.5S19.75 13 19 13h-3v-3c0-.75-.75-1.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.mapboxgl-ctrl button.mapboxgl-ctrl-zoom-out .mapboxgl-ctrl-icon {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='29' height='29' viewBox='0 0 29 29' xmlns='http://www.w3.org/2000/svg' fill='%232d4a3e'%3E%3Cpath d='M10 13c-.75 0-1.5.75-1.5 1.5S9.25 16 10 16h9c.75 0 1.5-.75 1.5-1.5S19.75 13 19 13h-9z'/%3E%3C/svg%3E") !important;
+}
+
+.mapboxgl-ctrl button.mapboxgl-ctrl-compass .mapboxgl-ctrl-icon {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='29' height='29' viewBox='0 0 29 29' xmlns='http://www.w3.org/2000/svg' fill='%232d4a3e'%3E%3Cpath d='M10.5 14l4-8 4 8h-8z'/%3E%3Cpath d='M10.5 16l4 8 4-8h-8z' fill='%23ccc'/%3E%3C/svg%3E") !important;
+}
+
+/* Dark mode navigation controls */
+.dark .mapboxgl-ctrl button.mapboxgl-ctrl-zoom-in .mapboxgl-ctrl-icon {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='29' height='29' viewBox='0 0 29 29' xmlns='http://www.w3.org/2000/svg' fill='%233aad6f'%3E%3Cpath d='M14.5 8.5c-.75 0-1.5.75-1.5 1.5v3h-3c-.75 0-1.5.75-1.5 1.5S9.25 16 10 16h3v3c0 .75.75 1.5 1.5 1.5S16 19.75 16 19v-3h3c.75 0 1.5-.75 1.5-1.5S19.75 13 19 13h-3v-3c0-.75-.75-1.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.dark .mapboxgl-ctrl button.mapboxgl-ctrl-zoom-out .mapboxgl-ctrl-icon {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='29' height='29' viewBox='0 0 29 29' xmlns='http://www.w3.org/2000/svg' fill='%233aad6f'%3E%3Cpath d='M10 13c-.75 0-1.5.75-1.5 1.5S9.25 16 10 16h9c.75 0 1.5-.75 1.5-1.5S19.75 13 19 13h-9z'/%3E%3C/svg%3E") !important;
+}
+
+.dark .mapboxgl-ctrl button.mapboxgl-ctrl-compass .mapboxgl-ctrl-icon {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='29' height='29' viewBox='0 0 29 29' xmlns='http://www.w3.org/2000/svg' fill='%233aad6f'%3E%3Cpath d='M10.5 14l4-8 4 8h-8z'/%3E%3Cpath d='M10.5 16l4 8 4-8h-8z' fill='%23666'/%3E%3C/svg%3E") !important;
+}
+
+/* High Contrast Mode adjustments */
+.high-contrast .mapboxgl-ctrl-group {
+  border-width: 0px !important;
+  box-shadow: none !important;
+}
+
+.high-contrast .mapboxgl-ctrl-group button + button {
+  border-top-width: 0px !important;
+}
+
+.font-mono {
+  font-family: var(--font-mono, "Geist Mono", monospace);
+}
+
+.font-serif {
+  font-family: var(--font-serif, " Instrument Serif", serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans, "TASA Orbiter", sans-serif);
+}
+
+:where(p, li, p a, span, h1, h2, h3, h4, h5, h6) {
+  letter-spacing: 0.01em;
+}
+
+/* Art Nouveau inspired borders and elements */
+.art-border {
+  border: 1px solid var(--primary-green);
+  box-shadow: 0 4px 20px rgba(45, 74, 62, 0.1);
+}
+
+.art-border-gold {
+  border: 1px solid var(--accent-gold);
+  box-shadow: 0 4px 20px rgba(201, 169, 110, 0.15);
+}
+
+.art-border-copper {
+  border: 1px solid var(--copper);
+  box-shadow: 0 4px 20px rgba(184, 115, 51, 0.1);
+}
+
+/* Elegant hover effects */
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(45, 74, 62, 0.15);
+}
+
+/* Art Nouveau decorative elements */
+.decorative-corner::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 20px;
+  height: 20px;
+  border-top: 1px solid var(--accent-gold);
+  border-left: 1px solid var(--accent-gold);
+}
+
+.decorative-corner::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 20px;
+  height: 20px;
+  border-bottom: 1px solid var(--accent-gold);
+  border-right: 1px solid var(--accent-gold);
+}
+
+/* Desktop layout - main content starts at sidebar edge */
+@media (min-width: 1024px) {
+  main[data-lg-margin] {
+    margin-left: clamp(240px, 20vw, 360px) !important;
+    margin-right: 0 !important;
+    width: auto !important;
+    max-width: none !important;
+  }
+
+  main[data-lg-margin] > div {
+    max-width: none !important;
+    margin: 0 !important;
+    padding-right: 2rem;
+  }
+}
+
+/* Typography hierarchy */
+.heading-primary {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.heading-secondary {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+}
+
+.text-body {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.text-small {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.text-ui {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  letter-spacing: 0.025em;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light-sage);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-green);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-green);
+}
+
+/* Hide scrollbar for filter container */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.animate-fade-gradient {
+  animation: fadeInLeft 2s linear infinite;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  25% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  75% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.mapboxgl-popup-close-button {
+  padding-right: 0.5rem;
+}
+.mapboxgl-popup-close-button span {
+  height: 2rem;
+  display: block;
+}
+
+/* Ensure mapbox markers are visible and properly positioned */
+.mapboxgl-marker {
+  z-index: 100 !important;
+  /* Prevent position changes on hover */
+  position: absolute !important;
+}
+
+.mapboxgl-popup {
+  z-index: 200 !important;
+}
+
+.park-marker {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  /* Ensure transform origin is center */
+  transform-origin: center center;
+  /* Don't set position - let Mapbox handle it */
+}
+
+.park-marker-hover {
+  transform: scale(1.3) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6) !important;
+  z-index: 1000 !important;
+}
+
+* {
+  transition: none !important;
+  will-change: background-color, color;
+}

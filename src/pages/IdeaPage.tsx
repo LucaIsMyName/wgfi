@@ -1,0 +1,356 @@
+import React, { useState } from "react";
+import { Helmet } from "react-helmet-async";
+import STYLE from "../utils/config";
+import { clearParksCache } from "../services/viennaApi";
+import { AlertTriangle } from "lucide-react";
+
+const IdeaPage: React.FC = () => {
+  const [cacheCleared, setCacheCleared] = useState(false);
+
+  const handleClearCache = () => {
+    clearParksCache();
+    setCacheCleared(true);
+
+    // Reset notification after 3 seconds
+    setTimeout(() => {
+      setCacheCleared(false);
+    }, 3000);
+  };
+
+  return (
+    <div
+      className="min-h-screen px-4 lg:px-6 py-6"
+      style={{ background: "var(--main-bg)" }}
+    >
+      <Helmet>
+        <title>Wiener Grünflächen Index | Über das Projekt</title>
+        <meta
+          name="description"
+          content="Informationen über den Wiener Grünflächen Index, seine Funktionen und Datenquellen."
+        />
+      </Helmet>
+
+      {/* Header */}
+      <div className="w-full">
+        <h1
+          className={`${STYLE.pageTitle(false)} mb-4`}
+          style={{
+            color: "var(--primary-green)",
+            fontWeight: "400",
+            fontStyle: "italic",
+          }}
+        >
+          Die Idee
+        </h1>
+      </div>
+
+      {/* Beta Notice */}
+      <div className="max-w-3xl mb-8">
+        <div
+          className="p-4 border-2 flex gap-3"
+          style={{
+            backgroundColor: "var(--card-bg)",
+            borderColor: "var(--accent-gold)",
+          }}
+        >
+          <AlertTriangle
+            className="w-5 h-5 flex-shrink-0 mt-0.5"
+            style={{ color: "var(--accent-gold)" }}
+          />
+          <div
+            className="font-serif space-y-2"
+            style={{ color: "var(--deep-charcoal)" }}
+          >
+            <p className="font-bold" style={{ color: "var(--accent-gold)" }}>
+              BETA Version
+            </p>
+            <p className="text-sm leading-relaxed">
+              Diese Website befindet sich in der Beta-Phase. Funktionen und
+              Features können sich jederzeit ändern. Nicht immer sind alle
+              Informationen korrekt und aktuell. Fehler oder
+              Verbesserungsvorschläge können gerne auf{" "}
+              <a
+                href="https://github.com/LucaIsMyName/wgfi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline"
+                style={{ color: "var(--primary-green)" }}
+              >
+                GitHub
+              </a>{" "}
+              gemeldet werden.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Content */}
+      <div className="max-w-3xl">
+        <div className="space-y-8">
+          {/* Project Description */}
+          <section
+            className=""
+            style={{ backgroundColor: "var(--card-bg)", borderRadius: "8px" }}
+          >
+            <h2
+              className="font-serif italic text-xl mb-4"
+              style={{ color: "var(--primary-green)", fontWeight: "500" }}
+            >
+              Was ist der Wiener Grünflächen Index?
+            </h2>
+            <div
+              className="font-serif space-y-4"
+              style={{
+                color: "var(--deep-charcoal)",
+                fontWeight: "400",
+                lineHeight: "1.6",
+              }}
+            >
+              <p>
+                Der <span className="italic">Wiener Grünflächen Index</span> ist
+                eine übersichtliche Website, die alle Parks und Grünflächen in
+                Wien zeigt.
+              </p>
+              <p>Mit dieser Website kann man:</p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>
+                  Parks nach Bezirk, Größe, Name und Ausstattung filtern und
+                  sortieren
+                </li>
+                <li>
+                  Alle wichtigen Informationen zu jedem Park auf einen Blick
+                  sehen
+                </li>
+                <li>Parks auf einer einfachen Karte finden</li>
+                <li>
+                  Lieblingsparks als Favoriten speichern, um sie später schnell
+                  wiederzufinden
+                </li>
+                <li>Eine Route zum Park planen</li>
+              </ul>
+            </div>
+          </section>
+
+          {/* Data Sources */}
+          <section
+            className=""
+            style={{ backgroundColor: "var(--card-bg)", borderRadius: "8px" }}
+          >
+            <h2
+              className="font-serif italic text-xl mb-4"
+              style={{ color: "var(--primary-green)", fontWeight: "500" }}
+            >
+              Woher kommen die Daten?
+            </h2>
+            <div
+              className="font-serif space-y-4"
+              style={{
+                color: "var(--deep-charcoal)",
+                fontWeight: "400",
+                lineHeight: "1.6",
+              }}
+            >
+              <p>
+                Alle Parkdaten stammen direkt von der Bundesrepublik Österreich
+                über deren offene Datenplattform (
+                <a
+                  href="https://data.gv.at"
+                  className="underline"
+                  style={{ color: "var(--primary-green)" }}
+                >
+                  https://data.wien.gv.at
+                </a>
+                ).
+              </p>
+              <p>
+                Die Parks werden nicht von dieser Website ausgewählt oder
+                kuratiert - sie zeigt alle Parks aus der offiziellen{" "}
+                <a
+                  href="https://data.gv.at/datasets/22add642-d849-48ff-9913-8c7ba2d99b46?locale=de"
+                  target="_blank"
+                  className="underline"
+                  style={{ color: "var(--primary-green)" }}
+                >
+                  Datenbank der Stadt Wien
+                </a>{" "}
+                an.
+              </p>
+              <p>
+                Bei manchen Parks werden zusätzliche Informationen hinzugefügt,
+                wenn:
+              </p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>
+                  In den offiziellen Daten Informationen fehlen (z.B.
+                  Öffnungszeiten, Ausstattung, ...)
+                </li>
+                <li>
+                  Nützliche Zusatzinfos (z.B. zur Barrierefreiheit, Events,
+                  Tipps, ...)
+                </li>
+                <li>Fehler in den offiziellen Daten gefunden werden</li>
+              </ul>
+              <p>
+                Ziel ist es, alle wichtigen Informationen zu den Wiener Parks
+                auf eine einfache und übersichtliche Weise zu präsentieren.
+              </p>
+            </div>
+          </section>
+
+          {/* Features in Detail */}
+          <section
+            className=""
+            style={{ backgroundColor: "var(--card-bg)", borderRadius: "8px" }}
+          >
+            <h2
+              className="font-serif italic text-xl mb-4"
+              style={{ color: "var(--primary-green)", fontWeight: "500" }}
+            >
+              Was macht diese Website so alles?
+            </h2>
+            <div
+              className="font-serif space-y-4"
+              style={{
+                color: "var(--deep-charcoal)",
+                fontWeight: "400",
+                lineHeight: "1.6",
+              }}
+            >
+              <div className="space-y-6">
+                <div>
+                  <h3
+                    className="font-serif text-lg mb-2"
+                    style={{ color: "var(--primary-green)" }}
+                  >
+                    Parksuche und Filter
+                  </h3>
+                  <p>
+                    Parks nach Namen suchen oder nach verschiedenen Kriterien
+                    filtern: nach Bezirk, nach Ausstattung (z.B. Spielplatz,
+                    Hundezone, Wasserspiele, ...) oder nach Größe sortieren.
+                  </p>
+                </div>
+
+                <div>
+                  <h3
+                    className="font-serif text-lg italic mb-2"
+                    style={{ color: "var(--primary-green)" }}
+                  >
+                    Detaillierte Parkinformationen
+                  </h3>
+                  <p>
+                    Für jeden Park zeigt die Website Informationen wie Adresse,
+                    Bezirk, Größe, Ausstattung, Öffnungszeiten (falls vorhanden)
+                    und Barrierefreiheit.
+                  </p>
+                </div>
+
+                <div>
+                  <h3
+                    className="font-serif text-lg italic mb-2"
+                    style={{ color: "var(--primary-green)" }}
+                  >
+                    Interaktive Karte
+                  </h3>
+                  <p>
+                    Auf der Karte siehst man alle Parks in Wien auf einen Blick.
+                    Man kann nach Bezirken filtern oder deinen Standort anzeigen
+                    lassen, um Parks in deiner Nähe zu finden.
+                  </p>
+                </div>
+
+                <div>
+                  <h3
+                    className="font-serif text-lg italic mb-2"
+                    style={{ color: "var(--primary-green)" }}
+                  >
+                    Favoriten speichern
+                  </h3>
+                  <p>
+                    Lieblingsparks kann man mit einem Klick speichern und später
+                    schnell wiederfinden. Die Favoriten werden lokal auf deinem
+                    Gerät gespeichert - die Website sammelt keine persönlichen
+                    Daten.
+                  </p>
+                </div>
+
+                <div>
+                  <h3
+                    className="font-serif text-lg italic mb-2"
+                    style={{ color: "var(--primary-green)" }}
+                  >
+                    Routenplanung
+                  </h3>
+                  <p>
+                    Mit einem Klick kannst du eine Route zu jedem Park planen -
+                    entweder von deinem aktuellen Standort oder von einer
+                    beliebigen Adresse aus.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/** info about the gov data: districts are missing on most, some data fields get appended mannaully, giv might not be correct or complete */}
+
+          <section className="font-serif">
+            <h2
+              className="font-serif italic text-xl mb-4"
+              style={{ color: "var(--primary-green)", fontWeight: "500" }}
+            >
+              Offizielle Daten
+            </h2>
+            <p>
+              Die Daten stammen offiziell von der{" "}
+              <a
+                className="underline"
+                href="https://www.data.gv.at/datasets/22add642-d849-48ff-9913-8c7ba2d99b46?locale=de"
+                target="_blank"
+              >
+                Wien Open Data
+              </a>
+              .
+            </p>
+            <p>
+              Da die Daten für Bezirke, Beschreibungen, Barrierefreiheit,
+              Verkehrsanbindung und Ausstattungen nicht vollständig sind, werden
+              einige Felder mit der Zeit manuell ergänzt.
+            </p>
+            <p>
+              Fehler oder Zusatzinformationen können hier eingemeldet werden:{" "}
+              <a
+                className="underline"
+                href="https://github.com/LucaIsMyName/wgfi"
+                target="_blank"
+              >
+                Github
+              </a>
+              .<br />
+              <br />
+            </p>
+            <p>
+              Die Parks werden Lokal im Browser für 7 Tage gespeichert, um die
+              Ladezeit zu reduzieren und die Performance zu verbessern.
+              <br />
+              Parks zum letzen mal geladen:{" "}
+              <span className="font-mono text-[0.78em]">
+                {new Date(
+                  Number(localStorage.getItem("wgfi:parks-timestamp"))
+                ).toLocaleString()}
+              </span>
+              <br />
+              <button
+                className="px-2 py-1 border border-primary-green rounded mt-4"
+                onClick={() => localStorage.removeItem("wbi-parks-data")}
+              >
+                Alle Park Daten löschen
+              </button>
+            </p>
+          </section>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default IdeaPage;
