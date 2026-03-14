@@ -4,6 +4,7 @@ import { Command } from 'cmdk';
 import { useParksData } from '../hooks/useParksData';
 import { useTheme } from '../contexts/ThemeContext';
 import { getRecentVisitsSync } from '../hooks/useVisitHistory';
+import { getRecentlyViewedIds } from '../utils/recentlyViewedManager';
 import { searchParks, getTopParksByArea } from '../utils/searchUtils';
 import { slugifyParkName } from '../data/manualParksData';
 import type { Park } from '../types/park';
@@ -22,6 +23,7 @@ import {
   Moon,
   MapPin,
   List,
+  GitCompare,
 } from 'lucide-react';
 
 export function CommandPalette() {
@@ -63,7 +65,14 @@ export function CommandPalette() {
       .filter((p): p is Park => p !== undefined);
   }, [recentVisitIds, parks]);
 
-  const topParks = useMemo(() => getTopParksByArea(parks, 3), [parks]);
+  const recentlyViewedIds = useMemo(() => getRecentlyViewedIds().slice(0, 5), [open]);
+  const recentlyViewedParks = useMemo(() => {
+    return recentlyViewedIds
+      .map(id => parks.find(p => p.id === id))
+      .filter((p): p is Park => p !== undefined);
+  }, [recentlyViewedIds, parks]);
+
+  const topParks = useMemo(() => getTopParksByArea(parks, 10), [parks]);
 
   const handleSelectPark = (park: Park) => {
     navigate(`/index/${slugifyParkName(park.name)}`);
@@ -187,7 +196,43 @@ export function CommandPalette() {
 
             {search.trim() === '' && (
               <>
-                {recentParks.length > 0 && (
+                {recentlyViewedParks.length > 0 && (
+                  <Command.Group
+                    heading="Kürzlich angesehen"
+                    style={{
+                      marginBottom: '16px',
+                    }}
+                  >
+                    {recentlyViewedParks.map((park) => (
+                      <Command.Item
+                        key={park.id}
+                        value={`viewed-${park.id}`}
+                        onSelect={() => handleSelectPark(park)}
+                        style={{
+                          display: 'flex',
+                          alignItems: 'flex-start',
+                          gap: '12px',
+                          padding: '10px 12px',
+                          cursor: 'pointer',
+                          fontFamily: 'var(--font-serif)',
+                          color: 'var(--deep-charcoal)',
+                          transition: 'background-color 0.15s',
+                        }}
+                        className="command-item"
+                      >
+                        <Clock className="w-4 h-4 mt-1" style={{ color: 'var(--accent-gold)', flexShrink: 0 }} />
+                        <div style={{ flex: 1 }}>
+                          <div style={{ fontStyle: 'italic', fontSize: '16px' }}>{park.name}</div>
+                          <div style={{ fontFamily: 'var(--font-mono)', fontSize: '11px', opacity: 0.7, marginTop: '2px' }}>
+                            {park.district}. BEZIRK • {park.area.toLocaleString()} M²
+                          </div>
+                        </div>
+                      </Command.Item>
+                    ))}
+                  </Command.Group>
+                )}
+
+                {/* {recentParks.length > 0 && (
                   <Command.Group
                     heading="Zuletzt besucht"
                     style={{
@@ -221,7 +266,7 @@ export function CommandPalette() {
                       </Command.Item>
                     ))}
                   </Command.Group>
-                )}
+                )} */}
 
                 <Command.Group
                   heading="Größte Parks"
@@ -236,9 +281,10 @@ export function CommandPalette() {
                       onSelect={() => handleSelectPark(park)}
                       style={{
                         display: 'flex',
-                        alignItems: 'center',
+                        alignItems: 'flex-start',
                         gap: '12px',
                         padding: '10px 12px',
+                        
                         cursor: 'pointer',
                         fontFamily: 'var(--font-serif)',
                         color: 'var(--deep-charcoal)',
@@ -246,7 +292,7 @@ export function CommandPalette() {
                       }}
                       className="command-item"
                     >
-                      <Trophy className="w-4 h-4" style={{ color: 'var(--primary-green)', flexShrink: 0 }} />
+                      <Trophy className="w-4 h-4 mt-1" style={{ color: 'var(--primary-green)', flexShrink: 0 }} />
                       <div style={{ flex: 1 }}>
                         <div style={{ fontStyle: 'italic', fontSize: '16px' }}>{park.name}</div>
                         <div style={{ fontFamily: 'var(--font-mono)', fontSize: '11px', opacity: 0.7, marginTop: '2px' }}>
@@ -279,7 +325,7 @@ export function CommandPalette() {
                     }}
                     className="command-item"
                   >
-                    <MapPin className="w-4 h-4" style={{ color: 'var(--primary-green)', flexShrink: 0 }} />
+                    <MapPin  className="w-4 h-4 mt-1" style={{ color: 'var(--primary-green)', flexShrink: 0 }} />
                     Zur Karte
                   </Command.Item>
                   <Command.Item
@@ -300,6 +346,25 @@ export function CommandPalette() {
                   >
                     <List className="w-4 h-4" style={{ color: 'var(--primary-green)', flexShrink: 0 }} />
                     Zum Index
+                  </Command.Item>
+                  <Command.Item
+                    value="action-compare"
+                    onSelect={() => handleSelectPage('/compare')}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '12px',
+                      padding: '10px 12px',
+                      cursor: 'pointer',
+                      fontFamily: 'var(--font-mono)',
+                      fontSize: '13px',
+                      color: 'var(--deep-charcoal)',
+                      transition: 'background-color 0.15s',
+                    }}
+                    className="command-item"
+                  >
+                    <GitCompare className="w-4 h-4" style={{ color: 'var(--primary-green)', flexShrink: 0 }} />
+                    Parkvergleich
                   </Command.Item>
                   <Command.Item
                     value="action-random"
@@ -473,7 +538,7 @@ export function CommandPalette() {
                     onSelect={() => handleSelectPark(park)}
                     style={{
                       display: 'flex',
-                      alignItems: 'center',
+                      alignItems: 'flex-start',
                       gap: '12px',
                       padding: '10px 12px',
                       cursor: 'pointer',
@@ -483,7 +548,7 @@ export function CommandPalette() {
                     }}
                     className="command-item"
                   >
-                    <Palmtree className="w-4 h-4" style={{ color: 'var(--primary-green)', flexShrink: 0 }} />
+                    <Palmtree className="w-4 h-4 mt-1" style={{ color: 'var(--primary-green)', flexShrink: 0 }} />
                     <div style={{ flex: 1 }}>
                       <div style={{ fontStyle: 'italic', fontSize: '16px' }}>{park.name}</div>
                       <div style={{ fontFamily: 'var(--font-mono)', fontSize: '11px', opacity: 0.7, marginTop: '2px' }}>

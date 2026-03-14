@@ -12,6 +12,7 @@ const ParkDetailPage = lazy(() => import("./pages/ParkDetailPage"));
 const MapPage = lazy(() => import("./pages/MapPage"));
 const StatisticsPage = lazy(() => import("./pages/StatisticsPage"));
 const FavoritesPage = lazy(() => import("./pages/FavoritesPage"));
+const ComparePage = lazy(() => import("./pages/ComparePage"));
 const IdeaPage = lazy(() => import("./pages/IdeaPage"));
 const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
 
@@ -75,6 +76,10 @@ function AppContent() {
                 <Route
                   path="/favorites"
                   element={<FavoritesPage />}
+                />
+                <Route
+                  path="/compare"
+                  element={<ComparePage />}
                 />
                 <Route
                   path="/idea"

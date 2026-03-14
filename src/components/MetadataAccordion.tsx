@@ -295,9 +295,7 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
       <Accordion.Root type="multiple" value={value} onValueChange={setValue}>
         <Accordion.Item value="rawData">
           <Accordion.Header>
-            <Accordion.Trigger
-              className="w-full flex items-center justify-between font-mono text-xs group text-primary-green"
-            >
+            <Accordion.Trigger className="w-full flex items-center justify-between font-mono text-xs group text-primary-green">
               <span className="flex items-center gap-2">
                 <Database className="w-3.5 h-3.5" />
                 Rohdaten
@@ -373,9 +371,7 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
                           rel="noopener noreferrer"
                           className="underline"
                         >
-                          Stadt Wien
-                          <br />
-                          Open Data Portal
+                          Stadt Wien - Open Data Portal
                         </a>
                       </td>
                     </tr>
@@ -402,7 +398,11 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
                     {allFields.map(({ key, value }, index) => (
                       <tr
                         key={key}
-                        className={index < allFields.length - 1 ? "border-b border-border-color" : ""}
+                        className={
+                          index < allFields.length - 1
+                            ? "border-b border-border-color"
+                            : ""
+                        }
                       >
                         <td className="font-mono text-xs py-2 px-2 text-deep-charcoal opacity-70 align-top w-[30%]">
                           {key}

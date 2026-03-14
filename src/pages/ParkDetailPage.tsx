@@ -12,10 +12,15 @@ import {
   ChevronLeft,
   TreePine,
   Heart,
+  GitCompare,
+  Share2,
 } from "lucide-react";
 import { getAmenityIcon } from "../utils/amenityIcons";
 import { isFavorite, toggleFavorite } from "../utils/favoritesManager";
+import { isInComparison, toggleComparison, getComparisonCount } from "../utils/comparisonManager";
+import { sharePark } from "../utils/shareUtils";
 import { addVisitSync } from "../hooks/useVisitHistory";
+import { addRecentlyViewed } from "../utils/recentlyViewedManager";
 import ParkInfo from "../components/ParkInfo";
 import MetadataAccordion from "../components/MetadataAccordion";
 import mapboxgl from "mapbox-gl";
@@ -40,6 +45,7 @@ const ParkDetailPage: React.FC = () => {
     lng: number;
   } | null>(null);
   const [isFavorited, setIsFavorited] = useState(false);
+  const [isInCompare, setIsInCompare] = useState(false);
   const [nearbyParks, setNearbyParks] = useState<ParkWithDistance[]>([]);
 
   // Map references
@@ -47,10 +53,11 @@ const ParkDetailPage: React.FC = () => {
   const mapInstance = useRef<mapboxgl.Map | null>(null);
   const mapMarker = useRef<mapboxgl.Marker | null>(null);
 
-  // Check if park is in favorites when it loads
+  // Check if park is in favorites and comparison when it loads
   useEffect(() => {
     if (park?.id) {
       setIsFavorited(isFavorite(park.id));
+      setIsInCompare(isInComparison(park.id));
     }
   }, [park]);
 
@@ -122,6 +129,7 @@ const ParkDetailPage: React.FC = () => {
         setError(null);
         
         addVisitSync(foundPark.id);
+        addRecentlyViewed(foundPark.id);
       } else {
         setPark(null);
         setError("Park nicht gefunden");
@@ -419,17 +427,24 @@ const ParkDetailPage: React.FC = () => {
 
       {/* Header with park name */}
       <div className="px-4 py-6 lg:mr-[calc(30%+96px)]">
-        <Button
-          onClick={() => history.back()}
-          variant="ghost"
-          size="sm"
-          icon={ChevronLeft}
-          iconPosition="left"
-          className="mb-3"
-          style={{ color: "var(--primary-green)" }}
-        >
-          Zurück zur Übersicht
-        </Button>
+        <div className="flex items-center justify-between mb-4">
+          <Button
+            to="/index"
+            variant="ghost"
+            size="sm"
+            icon={ChevronLeft}
+          >
+            Zurück
+          </Button>
+          <button
+            onClick={() => sharePark(parkData)}
+            className="p-2 hover:bg-light-sage transition-colors"
+            style={{ color: "var(--primary-green)" }}
+            aria-label="Park teilen"
+          >
+            <Share2 className="w-5 h-5" />
+          </button>
+        </div>
         <h1
           className={`${STYLE.pageTitle(true)} mb-4`}
           style={{
@@ -509,6 +524,27 @@ const ParkDetailPage: React.FC = () => {
               />
               {isFavorited ? "Favorit" : "Favorit"}
             </button>
+            <button
+              onClick={() => {
+                const success = toggleComparison(parkData.id);
+                if (success || !isInCompare) {
+                  setIsInCompare(!isInCompare);
+                }
+              }}
+              className="flex-1 px-4 py-3 font-mono text-xs flex items-center justify-center gap-2"
+              style={{
+                backgroundColor: isInCompare
+                  ? "var(--primary-green)"
+                  : "var(--card-bg)",
+                color: isInCompare
+                  ? "var(--soft-cream)"
+                  : "var(--primary-green)",
+                borderRadius: "6px",
+              }}
+            >
+              <GitCompare className="w-4 h-4" />
+              {isInCompare ? "Im Vergleich" : "Vergleichen"}
+            </button>
           </div>
 
           {/* Metadata Accordion */}
@@ -556,6 +592,27 @@ const ParkDetailPage: React.FC = () => {
                 fill={isFavorited ? "currentColor" : "none"}
               />
               {isFavorited ? "Favorit" : "Favorit"}
+            </button>
+            <button
+              onClick={() => {
+                const success = toggleComparison(parkData.id);
+                if (success || !isInCompare) {
+                  setIsInCompare(!isInCompare);
+                }
+              }}
+              className="flex-1 px-4 py-3 font-mono text-xs flex items-center justify-center gap-2"
+              style={{
+                backgroundColor: isInCompare
+                  ? "var(--primary-green)"
+                  : "var(--card-bg)",
+                color: isInCompare
+                  ? "var(--soft-cream)"
+                  : "var(--primary-green)",
+                borderRadius: "6px",
+              }}
+            >
+              <GitCompare className="w-4 h-4" />
+              {isInCompare ? "Im Vergleich" : "Vergleichen"}
             </button>
           </div>
         </div>

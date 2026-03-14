@@ -29,7 +29,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     },
     ref,
   ) => {
-    const baseClasses = "inline-flex items-center justify-center gap-2 font-serif font-medium transition-opacity duration-200";
+    const baseClasses = "inline-flex truncate items-center justify-center gap-2 font-serif font-medium transition-opacity duration-200";
     
     const variantClasses = {
       primary: "bg-primary-green text-soft-cream border border-primary-green",
