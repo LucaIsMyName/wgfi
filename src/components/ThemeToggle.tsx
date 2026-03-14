@@ -49,21 +49,9 @@ const ThemeToggle = ({ className }: { className?: string }) => {
       </Button>
 
       {isOpen && (
-        <div
-          className="fixed lg:absolute bottom-16 lg:bottom-full mb-0 lg:mb-2 left-4 lg:left-0 right-4 lg:right-auto w-auto lg:w-64 border-2 shadow-lg z-50"
-          style={{
-            backgroundColor: "var(--soft-cream)",
-            borderColor: "var(--border-color)",
-          }}
-        >
+        <div className="fixed lg:absolute bottom-16 lg:bottom-full mb-0 lg:mb-2 left-4 lg:left-0 right-4 lg:right-auto w-auto lg:w-64 border-2 shadow-lg z-50 bg-soft-cream border-border-color">
           <div className="p-2">
-            <p
-              className="font-serif italic text-[12px] mb-3 pb-2 border-b"
-              style={{
-                color: "var(--deep-charcoal)",
-                borderColor: "var(--border-color)",
-              }}
-            >
+            <p className="font-serif italic text-[12px] mb-3 pb-2 border-b text-deep-charcoal border-border-color">
               Farbschema
             </p>
             {themes.map((theme) => {
@@ -77,12 +65,9 @@ const ThemeToggle = ({ className }: { className?: string }) => {
                     setMode(theme.value);
                     setIsOpen(false);
                   }}
-                  className="w-full flex items-center justify-between gap-2 px-2 py-1.5 mb-1 transition-opacity duration-200 hover:opacity-70"
+                  className="w-full flex items-center justify-between gap-2 px-2 py-1.5 mb-1 transition-opacity duration-200 hover:opacity-70 text-deep-charcoal"
                   style={{
-                    backgroundColor: isActive
-                      ? "var(--light-sage)"
-                      : "transparent",
-                    color: "var(--deep-charcoal)",
+                    backgroundColor: isActive ? "var(--light-sage)" : "transparent",
                   }}
                 >
                   <div className="flex items-center gap-2">
@@ -93,18 +78,12 @@ const ThemeToggle = ({ className }: { className?: string }) => {
                         {theme.label}
                       </span>
                       {theme.value.includes("hc") && (
-                        <Contrast
-                          className="w-4 h-4 opacity-30"
-                          style={{ opacity: 0.3 }}
-                        />
+                        <Contrast className="w-4 h-4 opacity-30" />
                       )}
                     </div>
                   </div>
                   {isActive && (
-                    <span
-                      className="font-mono text-[9px]"
-                      style={{ color: "var(--primary-green)" }}
-                    >
+                    <span className="font-mono text-[9px] text-primary-green">
                       <Check className="w-4 h-4" />
                     </span>
                   )}

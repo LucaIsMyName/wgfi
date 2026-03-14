@@ -22,20 +22,11 @@ const LocationModal: React.FC<LocationModalProps> = ({
   if (isError) {
     return (
       <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[10000] p-4">
-        <div
-          className="p-6 rounded-lg max-w-md w-full border-2"
-          style={{
-            backgroundColor: 'var(--soft-cream)',
-            borderColor: 'var(--border-color)',
-          }}>
-          <h3
-            className="text-lg font-mono mb-4"
-            style={{ color: 'var(--primary-green)' }}>
+        <div className="p-6 rounded-lg max-w-md w-full border-2 bg-soft-cream border-border-color">
+          <h3 className="text-lg font-mono mb-4 text-primary-green">
             Standort nicht verfügbar
           </h3>
-          <p
-            className="mb-6 font-serif  italic"
-            style={{ color: 'var(--deep-charcoal)' }}>
+          <p className="mb-6 font-serif italic text-deep-charcoal">
             Wir konnten Ihren Standort nicht ermitteln. Bitte überprüfen Sie Ihre Browsereinstellungen und stellen Sie sicher, dass Sie den Standortzugriff erlaubt haben.
           </p>
           <div className="flex justify-end space-x-3">
@@ -54,20 +45,11 @@ const LocationModal: React.FC<LocationModalProps> = ({
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[10000] p-4">
-      <div
-        className="p-6 rounded-lg max-w-md w-full border-2"
-        style={{
-          backgroundColor: 'var(--soft-cream)',
-          borderColor: 'var(--border-color)',
-        }}>
-        <h3
-          className="text-lg font-mono mb-4"
-          style={{ color: 'var(--primary-green)' }}>
+      <div className="p-6 rounded-lg max-w-md w-full border-2 bg-soft-cream border-border-color">
+        <h3 className="text-lg font-mono mb-4 text-primary-green">
           Standortzugriff erforderlich
         </h3>
-        <p
-          className="mb-6 font-serif italic"
-          style={{ color: 'var(--deep-charcoal)' }}>
+        <p className="mb-6 font-serif italic text-deep-charcoal">
           Um die nächstgelegenen Parks zu finden, benötigen wir Zugriff auf Ihren Standort.
         </p>
         <div className="flex justify-end space-x-3">

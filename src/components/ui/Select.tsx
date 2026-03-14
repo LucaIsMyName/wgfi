@@ -53,6 +53,7 @@ export const Select = React.forwardRef<HTMLButtonElement, SelectProps>(
       border: '1px solid var(--border-color)',
       boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
       zIndex: 1000,
+      maxHeight: 'var(--radix-select-content-available-height)',
     };
 
     const itemStyles: React.CSSProperties = {
@@ -83,8 +84,13 @@ export const Select = React.forwardRef<HTMLButtonElement, SelectProps>(
           </SelectPrimitive.Trigger>
 
           <SelectPrimitive.Portal>
-            <SelectPrimitive.Content position="popper" style={contentStyles}>
-              <SelectPrimitive.Viewport>
+            <SelectPrimitive.Content 
+              position="popper" 
+              style={contentStyles}
+              sideOffset={4}
+              collisionPadding={16}
+            >
+              <SelectPrimitive.Viewport style={{ width: 'var(--radix-select-trigger-width)' }}>
                 {options.map((option) => (
                   <SelectPrimitive.Item key={option.value} value={option.value} style={itemStyles}>
                     <SelectPrimitive.ItemText>{option.label}</SelectPrimitive.ItemText>

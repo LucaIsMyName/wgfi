@@ -45,15 +45,11 @@ export default function ParksFilterSidebar({
   return (
     <div className="hidden lg:block lg:w-72 lg:flex-shrink-0 mt-6">
       <div
-        className="sticky top-6 p-4 overflow-y-auto"
+        className="sticky top-6 p-4 overflow-y-auto bg-light-sage border border-border-color"
         style={{ 
-          backgroundColor: "var(--light-sage)", 
-          border: isHighContrast ? "1px solid var(--border-color)" : "1px solid var(--border-color)",
           maxHeight: 'calc(100vh - 48px)'
         }}>
-        <h2
-          className="font-mono text-lg mb-5"
-          style={{ color: "var(--primary-green)", letterSpacing: "0.02em" }}>
+        <h2 className="font-mono text-lg mb-5 text-primary-green tracking-wide">
           SUCHE & FILTER
         </h2>
 
@@ -76,7 +72,7 @@ export default function ParksFilterSidebar({
             onValueChange={(value) => onDistrictChange(value === 'all' ? '' : value)}
             options={[
               { value: 'all', label: 'Alle Bezirke' },
-              ...districts.map((district) => ({
+              ...districts.sort((a, b) => a - b).map((district) => ({
                 value: String(district),
                 label: `${district}. Bezirk`,
               })),
@@ -89,9 +85,7 @@ export default function ParksFilterSidebar({
 
         {/* Amenities Filter */}
         <div className="mb-8">
-          <label
-            className="block font-mono text-[10px] mb-1"
-            style={{ color: "var(--primary-green)", opacity: 0.8 }}>
+          <label className="block font-mono text-[10px] mb-1 text-primary-green opacity-80">
             <Filter className="w-3 h-3 inline mr-1" /> AUSSTATTUNG
           </label>
           <div className="flex flex-wrap gap-1">
@@ -108,13 +102,9 @@ export default function ParksFilterSidebar({
                       onAmenitiesChange([...selectedAmenities, amenity]);
                     }
                   }}
-                  className="px-2 py-1 text-[10px] font-mono flex items-center gap-1"
-                  style={{
-                    backgroundColor: isSelected ? "var(--primary-green)" : "var(--soft-cream)",
-                    color: isSelected ? "var(--soft-cream)" : "var(--deep-charcoal)",
-                    borderRadius: "4px",
-                    marginBottom: "0.25rem",
-                  }}>
+                  className={`px-2 py-1 text-[10px] font-mono flex items-center gap-1 rounded mb-1 ${
+                    isSelected ? "bg-primary-green text-soft-cream" : "bg-soft-cream text-deep-charcoal"
+                  }`}>
                   <AmenityIcon className="w-2 h-2 flex-shrink-0" />
                   <span>{amenity}</span>
                 </button>
@@ -125,77 +115,56 @@ export default function ParksFilterSidebar({
 
         {/* Sorting */}
         <div>
-          <label
-            className="block font-mono text-[10px] mb-1"
-            style={{ color: "var(--primary-green)", opacity: 0.8 }}>
+          <label className="block font-mono text-[10px] mb-1 text-primary-green opacity-80">
             <ArrowDownUp className="w-3 h-3 inline mr-1" /> SORTIERUNG
           </label>
           <div className="flex flex-col gap-1">
             <button
               onClick={() => onSortChange("desc")}
-              className={`w-full px-2 py-1 text-[10px] font-mono flex items-center gap-1 justify-center ${sortOrder === "desc" ? "opacity-100" : "opacity-80"}`}
-              style={{
-                backgroundColor: sortOrder === "desc" ? "var(--primary-green)" : "var(--light-sage)",
-                color: sortOrder === "desc" ? "var(--soft-cream)" : "var(--deep-charcoal)",
-                borderRadius: "4px",
-              }}>
+              className={`w-full px-2 py-1 text-[10px] font-mono flex items-center gap-1 justify-center rounded ${
+                sortOrder === "desc" ? "opacity-100 bg-primary-green text-soft-cream" : "opacity-80 bg-light-sage text-deep-charcoal"
+              }`}>
               {sortOrder === "desc" && <Check className="w-2 h-2 flex-shrink-0" />}
               <span>GRÖSSTE</span>
             </button>
             <button
               onClick={() => onSortChange("asc")}
-              className={`w-full px-2 py-1 text-[10px] font-mono flex items-center gap-1 justify-center ${sortOrder === "asc" ? "opacity-100" : "opacity-80"}`}
-              style={{
-                backgroundColor: sortOrder === "asc" ? "var(--primary-green)" : "var(--light-sage)",
-                color: sortOrder === "asc" ? "var(--soft-cream)" : "var(--deep-charcoal)",
-                borderRadius: "4px",
-              }}>
+              className={`w-full px-2 py-1 text-[10px] font-mono flex items-center gap-1 justify-center rounded ${
+                sortOrder === "asc" ? "opacity-100 bg-primary-green text-soft-cream" : "opacity-80 bg-light-sage text-deep-charcoal"
+              }`}>
               {sortOrder === "asc" && <Check className="w-2 h-2 flex-shrink-0" />}
               <span>KLEINSTE</span>
             </button>
             <button
               onClick={() => onSortChange("district_asc")}
-              className={`w-full px-2 py-1 text-[10px] font-mono flex items-center gap-1 justify-center ${sortOrder === "district_asc" ? "opacity-100" : "opacity-80"}`}
-              style={{
-                backgroundColor: sortOrder === "district_asc" ? "var(--primary-green)" : "var(--light-sage)",
-                color: sortOrder === "district_asc" ? "var(--soft-cream)" : "var(--deep-charcoal)",
-                borderRadius: "4px",
-              }}>
+              className={`w-full px-2 py-1 text-[10px] font-mono flex items-center gap-1 justify-center rounded ${
+                sortOrder === "district_asc" ? "opacity-100 bg-primary-green text-soft-cream" : "opacity-80 bg-light-sage text-deep-charcoal"
+              }`}>
               {sortOrder === "district_asc" && <Check className="w-2 h-2 flex-shrink-0" />}
               <span>BEZIRK</span>
             </button>
             <button
               onClick={() => onSortChange("name_asc")}
-              className={`w-full px-2 py-1 text-[10px] font-mono flex items-center gap-1 justify-center ${sortOrder === "name_asc" ? "opacity-100" : "opacity-80"}`}
-              style={{
-                backgroundColor: sortOrder === "name_asc" ? "var(--primary-green)" : "var(--light-sage)",
-                color: sortOrder === "name_asc" ? "var(--soft-cream)" : "var(--deep-charcoal)",
-                borderRadius: "4px",
-              }}>
+              className={`w-full px-2 py-1 text-[10px] font-mono flex items-center gap-1 justify-center rounded ${
+                sortOrder === "name_asc" ? "opacity-100 bg-primary-green text-soft-cream" : "opacity-80 bg-light-sage text-deep-charcoal"
+              }`}>
               {sortOrder === "name_asc" && <Check className="w-2 h-2 flex-shrink-0" />}
               <span>A-Z</span>
             </button>
             <button
               onClick={() => onSortChange("name_desc")}
-              className={`w-full px-2 py-1 text-[10px] font-mono flex items-center gap-1 justify-center ${sortOrder === "name_desc" ? "opacity-100" : "opacity-80"}`}
-              style={{
-                backgroundColor: sortOrder === "name_desc" ? "var(--primary-green)" : "var(--light-sage)",
-                color: sortOrder === "name_desc" ? "var(--soft-cream)" : "var(--deep-charcoal)",
-                borderRadius: "4px",
-              }}>
+              className={`w-full px-2 py-1 text-[10px] font-mono flex items-center gap-1 justify-center rounded ${
+                sortOrder === "name_desc" ? "opacity-100 bg-primary-green text-soft-cream" : "opacity-80 bg-light-sage text-deep-charcoal"
+              }`}>
               {sortOrder === "name_desc" && <Check className="w-2 h-2 flex-shrink-0" />}
               <span>Z-A</span>
             </button>
             <button
               onClick={onNearestSort}
               disabled={locationPermission === false}
-              className={`w-full px-2 py-1 text-[10px] font-mono flex items-center gap-1 justify-center ${sortOrder === "nearest" ? "opacity-100" : locationPermission === false ? "opacity-40" : "opacity-80"}`}
-              style={{
-                backgroundColor: sortOrder === "nearest" ? "var(--primary-green)" : "var(--light-sage)",
-                color: sortOrder === "nearest" ? "var(--soft-cream)" : "var(--deep-charcoal)",
-                borderRadius: "4px",
-                cursor: locationPermission === false ? "not-allowed" : "pointer",
-              }}>
+              className={`w-full px-2 py-1 text-[10px] font-mono flex items-center gap-1 justify-center rounded ${
+                sortOrder === "nearest" ? "opacity-100 bg-primary-green text-soft-cream" : locationPermission === false ? "opacity-40 bg-light-sage text-deep-charcoal cursor-not-allowed" : "opacity-80 bg-light-sage text-deep-charcoal"
+              }`}>
               {sortOrder === "nearest" && <Check className="w-2 h-2 flex-shrink-0" />}
               <span>AM NÄHESTEN</span>
             </button>

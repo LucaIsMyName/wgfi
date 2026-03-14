@@ -29,9 +29,7 @@ export default function ParksList({ parks, onToggleFavorite, isHighContrast }: P
   if (parks.length === 0) {
     return (
       <div className="py-16 text-center">
-        <p
-          className="font-serif italic text-xl"
-          style={{ color: "var(--deep-charcoal)", fontWeight: "400" }}>
+        <p className="font-serif italic text-xl text-deep-charcoal font-normal">
           Keine Parks gefunden, die Ihren Kriterien entsprechen.
         </p>
       </div>

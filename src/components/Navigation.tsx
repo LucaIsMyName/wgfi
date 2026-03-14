@@ -107,11 +107,9 @@ const Navigation = () => {
     <>
       {/* Desktop Sidebar */}
       <nav
-        className="hidden lg:flex lg:flex-col lg:fixed lg:inset-y-0 z-[1000]"
+        className="hidden lg:flex lg:flex-col lg:fixed lg:inset-y-0 z-[1000] bg-sidebar-bg border-r border-border-color"
         style={{
           width: "clamp(200px, 16vw, 280px)",
-          background: "var(--sidebar-bg)",
-          borderRight: "1px solid var(--border-color)",
         }}
       >
         <div className="flex flex-col h-full">
@@ -133,8 +131,7 @@ const Navigation = () => {
                   href="https://lucamack.at/impressum.txt"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:underline font-serif italic text-[12px]"
-                  style={{ color: "var(--primary-green)" }}
+                  className="hover:underline font-serif italic text-[12px] text-primary-green"
                 >
                   Impressum
                 </a>
@@ -142,8 +139,7 @@ const Navigation = () => {
                   href="https://lucamack.at/datenschutz.txt"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:underline font-serif italic text-[12px]"
-                  style={{ color: "var(--primary-green)" }}
+                  className="hover:underline font-serif italic text-[12px] text-primary-green"
                 >
                   Datenschutz
                 </a>
@@ -157,13 +153,9 @@ const Navigation = () => {
 
       {/* Mobile Header - Fixed on scroll */}
       <header
-        className={`lg:hidden fixed top-0 left-0 right-0 z-[9999] transition-all duration-300 ${
+        className={`lg:hidden fixed top-0 left-0 right-0 z-[9999] transition-all duration-300 bg-sidebar-bg border-b border-border-color ${
           scrolled ? "shadow-sm" : ""
         }`}
-        style={{
-          backgroundColor: "var(--sidebar-bg)",
-          borderBottom: "1px solid var(--border-color)",
-        }}
       >
         <div className="flex items-center justify-between py-2 pr-4 transition-all duration-300">
           <Logo />
@@ -192,23 +184,17 @@ const Navigation = () => {
 
           {/* Menu Panel */}
           <div
-            className="fixed top-0 right-0 h-full w-full transform transition-transform duration-300 ease-in-out"
+            className="fixed top-0 right-0 h-full w-full transform transition-transform duration-300 ease-in-out bg-sidebar-bg"
             style={{
-              background: "var(--sidebar-bg)",
               boxShadow: "-2px 0 10px rgba(0, 0, 0, 0.05)",
-              borderLeft: "0px solid var(--border-color)",
             }}
           >
             <div className="flex flex-col h-full">
               {/* Header */}
               <div
-                className="flex items-center justify-between px-4 py-6 border-b"
-                style={{ borderColor: "var(--border-color)" }}
+                className="flex items-center justify-between px-4 py-6 border-b border-border-color"
               >
-                <span
-                  className="font-sans text-xl font-bold"
-                  style={{ color: "var(--primary-green)" }}
-                >
+                <span className="font-sans text-xl font-bold text-primary-green">
                   Menü
                 </span>
                 <Button
@@ -232,18 +218,14 @@ const Navigation = () => {
               </div>
 
               {/* Footer */}
-              <div
-                className="px-4 pt-3 pb-8 border-t"
-                style={{ borderColor: "var(--border-color)" }}
-              >
+              <div className="px-4 pt-3 pb-8 border-t border-border-color">
                 <div className="flex gap-8 my-4 items-center justify-between">
                   <div className="flex items-center gap-2">
                     <a
                       href="https://lucamack.at/impressum.txt"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[12px] hover:underline font-serif italic"
-                      style={{ color: "var(--primary-green)" }}
+                      className="text-[12px] hover:underline font-serif italic text-primary-green"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       Impressum
@@ -252,8 +234,7 @@ const Navigation = () => {
                       href="https://lucamack.at/datenschutz.txt"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[12px] hover:underline font-serif italic"
-                      style={{ color: "var(--primary-green)" }}
+                      className="text-[12px] hover:underline font-serif italic text-primary-green"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       Datenschutz

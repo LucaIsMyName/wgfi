@@ -1,7 +1,7 @@
-import { useState } from "react";
-import { Filter, Navigation, Map as MapIcon } from "lucide-react";
+import { Navigation, Map as MapIcon } from "lucide-react";
 import type { Park } from "../../types/park";
 import { Button } from "../ui/Button";
+import { Select } from "../ui/Select";
 
 interface MapControlsProps {
   selectedDistrict: number | null;
@@ -23,8 +23,6 @@ export default function MapControls({
   onDistrictFilter,
   onGetUserLocation,
 }: MapControlsProps) {
-  const [showDistrictSelector, setShowDistrictSelector] = useState(false);
-
   return (
     <div className="absolute top-4 right-4 z-10 hidden lg:block">
       <div className="bg-white shadow-lg p-3 rounded-lg">
@@ -35,47 +33,23 @@ export default function MapControls({
             size="sm"
             icon={MapIcon}
             fullWidth
-            style={{ fontSize: '0.75rem' }}>
+            className="text-xs">
             ALLE PARKS
           </Button>
 
-          <div className="relative w-full">
-            <Button
-              onClick={() => setShowDistrictSelector(!showDistrictSelector)}
-              variant="secondary"
-              size="sm"
-              icon={Filter}
-              fullWidth
-              style={{
-                backgroundColor: selectedDistrict !== null ? "var(--accent-gold)" : "var(--light-sage)",
-                fontSize: '0.75rem'
-              }}>
-              {selectedDistrict ? `${selectedDistrict}. BEZIRK` : "BEZIRK WÄHLEN"}
-            </Button>
-
-            {/* District Selector Dropdown */}
-            {showDistrictSelector && (
-              <div className="absolute z-20 top-full left-0 right-0 mt-1 bg-white shadow-lg rounded-md overflow-hidden max-h-60 overflow-y-auto">
-                <div className="p-1">
-                  {districts.map((district) => (
-                    <button
-                      key={district}
-                      onClick={() => {
-                        onDistrictFilter(district);
-                        setShowDistrictSelector(false);
-                      }}
-                      className="w-full text-left px-3 py-2 hover:bg-opacity-80 transition-colors duration-200 font-mono text-xs"
-                      style={{
-                        backgroundColor: selectedDistrict === district ? "var(--primary-green)" : "transparent",
-                        color: selectedDistrict === district ? "var(--soft-cream)" : "var(--deep-charcoal)",
-                      }}>
-                      {district}. BEZIRK
-                    </button>
-                  ))}
-                </div>
-              </div>
-            )}
-          </div>
+          <Select
+            value={selectedDistrict ? String(selectedDistrict) : 'all'}
+            onValueChange={(value) => onDistrictFilter(value === 'all' ? null : Number(value))}
+            options={[
+              { value: 'all', label: 'Alle Bezirke' },
+              ...districts.sort((a, b) => a - b).map((district) => ({
+                value: String(district),
+                label: `${district}. Bezirk`,
+              })),
+            ]}
+            placeholder="Bezirk wählen"
+            fullWidth
+          />
 
           <Button
             onClick={onGetUserLocation}
@@ -83,9 +57,9 @@ export default function MapControls({
             size="sm"
             icon={Navigation}
             fullWidth
+            className="text-xs"
             style={{
               backgroundColor: userLocation ? "var(--accent-gold)" : "var(--light-sage)",
-              fontSize: '0.75rem'
             }}>
             MEIN STANDORT
           </Button>

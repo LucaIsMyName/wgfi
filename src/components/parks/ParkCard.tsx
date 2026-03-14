@@ -22,27 +22,17 @@ export default function ParkCard({ park, onToggleFavorite, isHighContrast }: Par
   return (
     <Link
       to={`/index/${slugifyParkName(park.name)}`}
-      className="block p-4 mb-4 park-list-item"
-      style={{
-        backgroundColor: "var(--card-bg)",
-        border: isHighContrast ? "1px solid var(--border-color)" : "1px solid var(--border-color)",
-      }}>
+      className="block p-4 mb-4 park-list-item bg-card-bg border border-border-color">
       <div className="flex flex-col md:flex-row md:items-start md:justify-between">
         <div className="mb-6 md:mb-0">
-          <h3
-            className="font-serif text-2xl mb-3"
-            style={{ color: "var(--deep-charcoal)", fontWeight: "400", fontStyle: "italic" }}>
+          <h3 className="font-serif text-2xl mb-3 text-deep-charcoal font-normal italic">
             {park.name}
           </h3>
           <div className="flex flex-wrap gap-6 mb-4">
-            <span
-              className="flex items-center gap-2 font-mono text-xs truncate"
-              style={{ color: "var(--deep-charcoal)" }}>
+            <span className="flex items-center gap-2 font-mono text-xs truncate text-deep-charcoal">
               <Building className="w-4 h-4" /> <span className="truncate">{districtsDisplay}</span>
             </span>
-            <span
-              className="flex items-center gap-2 font-mono text-xs"
-              style={{ color: "var(--deep-charcoal)" }}>
+            <span className="flex items-center gap-2 font-mono text-xs text-deep-charcoal">
               <Ruler className="w-4 h-4" /> {park.area.toLocaleString()} M²
             </span>
           </div>
@@ -54,13 +44,7 @@ export default function ParkCard({ park, onToggleFavorite, isHighContrast }: Par
               return (
                 <span
                   key={index}
-                  className="px-2 py-1 text-xs font-mono flex items-center gap-1"
-                  style={{
-                    backgroundColor: "var(--light-sage)",
-                    color: "var(--deep-charcoal)",
-                    borderRadius: "4px",
-                    border: isHighContrast ? "1px solid var(--border-color)" : "none",
-                  }}>
+                  className={`px-2 py-1 text-xs font-mono flex items-center gap-1 bg-light-sage text-deep-charcoal rounded ${isHighContrast ? 'border border-border-color' : ''}`}>
                   <AmenityIcon className="w-3 h-3" />
                   {amenity}
                 </span>
@@ -70,13 +54,7 @@ export default function ParkCard({ park, onToggleFavorite, isHighContrast }: Par
             {/* Show count of additional amenities if more than 2 */}
             {park.amenities.length > 2 && (
               <span
-                className="px-2 py-1 text-xs font-mono flex items-center"
-                style={{
-                  backgroundColor: "var(--soft-cream)",
-                  color: "var(--deep-charcoal)",
-                  borderRadius: "4px",
-                  border: isHighContrast ? "1px solid var(--border-color)" : "none",
-                }}>
+                className={`px-2 py-1 text-xs font-mono flex items-center bg-soft-cream text-deep-charcoal rounded ${isHighContrast ? 'border border-border-color' : ''}`}>
                 +{park.amenities.length - 2}
               </span>
             )}
@@ -90,7 +68,7 @@ export default function ParkCard({ park, onToggleFavorite, isHighContrast }: Par
               e.preventDefault(); // Prevent navigation when clicking the heart
               onToggleFavorite(park.id);
             }}
-            className="p-2 transition-transform "
+            className="p-2 transition-transform"
             style={{
               color: isFavorite(park.id) ? 'var(--accent-gold)' : 'var(--primary-green)',
             }}

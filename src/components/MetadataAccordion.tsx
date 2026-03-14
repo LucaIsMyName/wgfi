@@ -1,5 +1,11 @@
 import * as Accordion from "@radix-ui/react-accordion";
-import { ChevronDown, Database, FileDown, FileJson, FileCode } from "lucide-react";
+import {
+  ChevronDown,
+  Database,
+  FileDown,
+  FileJson,
+  FileCode,
+} from "lucide-react";
 import { useAccordionState } from "../hooks/useAccordionState";
 import type { Park } from "../types/park";
 import { Link } from "react-router-dom";
@@ -20,7 +26,7 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
     }
     if (Array.isArray(value)) {
       // Check if array contains objects
-      if (value.length > 0 && typeof value[0] === 'object') {
+      if (value.length > 0 && typeof value[0] === "object") {
         return JSON.stringify(value, null, 2);
       }
       // Simple array of primitives
@@ -35,14 +41,14 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
   // Flatten park object for table display
   const getAllFields = () => {
     const fields: Array<{ key: string; value: any }> = [];
-    const excludeKeys = ['isFavorite'];
-    
+    const excludeKeys = ["isFavorite"];
+
     Object.entries(park).forEach(([key, value]) => {
       if (!excludeKeys.includes(key)) {
         fields.push({ key, value });
       }
     });
-    
+
     return fields;
   };
 
@@ -52,16 +58,20 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
   const sanitizeFilename = (name: string): string => {
     return name
       .toLowerCase()
-      .replace(/[^a-z0-9]/g, '-')
-      .replace(/-+/g, '-')
-      .replace(/^-|-$/g, '');
+      .replace(/[^a-z0-9]/g, "-")
+      .replace(/-+/g, "-")
+      .replace(/^-|-$/g, "");
   };
 
   // Download helper
-  const downloadFile = (content: string, filename: string, mimeType: string) => {
+  const downloadFile = (
+    content: string,
+    filename: string,
+    mimeType: string,
+  ) => {
     const blob = new Blob([content], { type: mimeType });
     const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
+    const a = document.createElement("a");
     a.href = url;
     a.download = filename;
     a.click();
@@ -71,14 +81,14 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
   // Export as CSV
   const exportAsCSV = (e: React.MouseEvent) => {
     e.stopPropagation();
-    const csvRows = ['Feld,Wert'];
+    const csvRows = ["Feld,Wert"];
     allFields.forEach(({ key, value }) => {
       const formattedValue = formatValue(value).replace(/"/g, '""');
       csvRows.push(`"${key}","${formattedValue}"`);
     });
-    const csv = csvRows.join('\n');
+    const csv = csvRows.join("\n");
     const filename = `${sanitizeFilename(park.name)}.csv`;
-    downloadFile(csv, filename, 'text/csv;charset=utf-8;');
+    downloadFile(csv, filename, "text/csv;charset=utf-8;");
   };
 
   // Export as JSON
@@ -86,15 +96,15 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
     e.stopPropagation();
     const json = JSON.stringify(park, null, 2);
     const filename = `${sanitizeFilename(park.name)}.json`;
-    downloadFile(json, filename, 'application/json');
+    downloadFile(json, filename, "application/json");
   };
 
   // Export as standalone HTML
   const exportAsHTML = (e: React.MouseEvent) => {
     e.stopPropagation();
-    
+
     const staticMapUrl = `https://staticmap.openstreetmap.de/staticmap.php?center=${park.coordinates.lat},${park.coordinates.lng}&zoom=15&size=800x400&markers=${park.coordinates.lat},${park.coordinates.lng},red`;
-    
+
     const html = `<!DOCTYPE html>
 <html lang="de">
 <head>
@@ -177,23 +187,27 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
         </div>
         <div>
           <p class="text-sm font-semibold text-gray-600">Kategorie</p>
-          <p class="text-lg">${park.category || '—'}</p>
+          <p class="text-lg">${park.category || "—"}</p>
         </div>
         <div>
           <p class="text-sm font-semibold text-gray-600">Öffnungszeiten</p>
-          <p class="text-lg">${park.openingHours || '—'}</p>
+          <p class="text-lg">${park.openingHours || "—"}</p>
         </div>
         <div>
           <p class="text-sm font-semibold text-gray-600">Barrierefreiheit</p>
-          <p class="text-lg">${park.accessibility || '—'}</p>
+          <p class="text-lg">${park.accessibility || "—"}</p>
         </div>
       </div>
-      ${park.description ? `
+      ${
+        park.description
+          ? `
       <div class="mt-3 sm:mt-4">
         <p class="text-sm font-semibold text-gray-600">Beschreibung</p>
         <p class="text-sm sm:text-base leading-relaxed">${park.description}</p>
       </div>
-      ` : ''}
+      `
+          : ""
+      }
     </section>
 
     <!-- Map -->
@@ -206,24 +220,32 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
     </section>
 
     <!-- Amenities -->
-    ${park.amenities && park.amenities.length > 0 ? `
+    ${
+      park.amenities && park.amenities.length > 0
+        ? `
     <section class="mb-6 sm:mb-8">
       <h2 class="text-xl sm:text-2xl font-bold text-green-700 mb-3 sm:mb-4">Ausstattung</h2>
       <div class="flex flex-wrap gap-2">
-        ${park.amenities.map(amenity => `<span class="px-2 sm:px-3 py-1 bg-green-100 text-green-800 text-xs sm:text-sm rounded">${amenity}</span>`).join('')}
+        ${park.amenities.map((amenity) => `<span class="px-2 sm:px-3 py-1 bg-green-100 text-green-800 text-xs sm:text-sm rounded">${amenity}</span>`).join("")}
       </div>
     </section>
-    ` : ''}
+    `
+        : ""
+    }
 
     <!-- Public Transport -->
-    ${park.publicTransport && park.publicTransport.length > 0 ? `
+    ${
+      park.publicTransport && park.publicTransport.length > 0
+        ? `
     <section class="mb-6 sm:mb-8">
       <h2 class="text-xl sm:text-2xl font-bold text-green-700 mb-3 sm:mb-4">Öffentliche Verkehrsmittel</h2>
       <ul class="list-disc list-inside text-sm sm:text-base">
-        ${park.publicTransport.map(transport => `<li class="mb-1">${transport}</li>`).join('')}
+        ${park.publicTransport.map((transport) => `<li class="mb-1">${transport}</li>`).join("")}
       </ul>
     </section>
-    ` : ''}
+    `
+        : ""
+    }
 
     <!-- Complete Data Table -->
     <section class="mb-6 sm:mb-8 print-break-before">
@@ -237,12 +259,16 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
             </tr>
           </thead>
           <tbody>
-            ${allFields.map(({ key, value }) => `
+            ${allFields
+              .map(
+                ({ key, value }) => `
             <tr>
               <td class="border border-gray-300 px-2 sm:px-4 py-2 text-xs sm:text-sm font-mono align-top">${key}</td>
-              <td class="border border-gray-300 px-2 sm:px-4 py-2 text-xs sm:text-sm break-words align-top">${formatValue(value).replace(/</g, '&lt;').replace(/>/g, '&gt;')}</td>
+              <td class="border border-gray-300 px-2 sm:px-4 py-2 text-xs sm:text-sm break-words align-top">${formatValue(value).replace(/</g, "&lt;").replace(/>/g, "&gt;")}</td>
             </tr>
-            `).join('')}
+            `,
+              )
+              .join("")}
           </tbody>
         </table>
       </div>
@@ -253,15 +279,15 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
       <p class="mb-1"><strong>Quelle:</strong> Stadt Wien - Open Data Portal</p>
       <p class="mb-1"><strong>Dataset:</strong> ogdwien:PARKINFOOGD</p>
       <p class="mb-1"><strong>Lizenz:</strong> Creative Commons Namensnennung 4.0 International (CC BY 4.0)</p>
-      <p class="mb-1"><strong>Generiert:</strong> ${new Date().toLocaleString('de-AT')}</p>
+      <p class="mb-1"><strong>Generiert:</strong> ${new Date().toLocaleString("de-AT")}</p>
       <p class="mt-2 sm:mt-3"><strong>Wiener Grünflächen Index</strong> - Eine Übersicht aller Parks & Grünflächen der Stadt Wien</p>
     </footer>
   </div>
 </body>
 </html>`;
-    
+
     const filename = `${sanitizeFilename(park.name)}.html`;
-    downloadFile(html, filename, 'text/html');
+    downloadFile(html, filename, "text/html");
   };
 
   return (
@@ -283,7 +309,7 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
                   icon={FileJson}
                   title="Als JSON exportieren"
                   className="ml-2 hover:opacity-70"
-                  style={{ padding: '0', minWidth: 'auto' }}
+                  style={{ padding: "0", minWidth: "auto" }}
                 />
                 <Button
                   onClick={exportAsCSV}
@@ -292,7 +318,7 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
                   icon={FileDown}
                   title="Als CSV exportieren"
                   className="hover:opacity-70"
-                  style={{ padding: '0', minWidth: 'auto' }}
+                  style={{ padding: "0", minWidth: "auto" }}
                 />
                 <Button
                   onClick={exportAsHTML}
@@ -301,7 +327,7 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
                   icon={FileCode}
                   title="Als HTML exportieren"
                   className="hover:opacity-70"
-                  style={{ padding: '0', minWidth: 'auto' }}
+                  style={{ padding: "0", minWidth: "auto" }}
                 />
               </span>
               <ChevronDown
@@ -313,26 +339,6 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
           <Accordion.Content className="overflow-hidden data-[state=open]:animate-accordion-down data-[state=closed]:animate-accordion-up">
             <div className="pt-2">
               {/* Data Source Info */}
-              <div
-                className="mb-3 pb-3"
-                style={{ borderBottom: "1px solid var(--border-color)" }}
-              >
-                <p
-                  className="font-mono text-xs mb-1"
-                  style={{ color: "var(--deep-charcoal)", opacity: 0.7 }}
-                >
-                  Dataset: ogdwien:PARKINFOOGD
-                </p>
-                <a
-                  href="https://www.data.gv.at/katalog/dataset/22add642-d849-48ff-9913-8c7ba2d99b46"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-mono text-xs hover:underline"
-                  style={{ color: "var(--primary-green)" }}
-                >
-                  Stadt Wien - Open Data Portal ↗
-                </a>
-              </div>
 
               {/* Complete Park Data Table */}
               <div className="overflow-x-auto max-h-80 overflow-y-auto">
@@ -354,7 +360,7 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
                           zIndex: 1,
                         }}
                       >
-                        FELD
+                        Feld
                       </th>
                       <th
                         className="font-mono text-xs py-2 px-2 text-left"
@@ -366,11 +372,60 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
                           zIndex: 1,
                         }}
                       >
-                        WERT
+                        Wert
                       </th>
                     </tr>
                   </thead>
                   <tbody>
+                    <tr
+                      style={{
+                        borderBottom: "1px solid var(--border-color)",
+                      }}
+                    >
+                      <td
+                        style={{
+                          color: "var(--deep-charcoal)",
+                          opacity: 0.7,
+                          verticalAlign: "top",
+                          width: "30%",
+                        }}
+                        className="font-mono text-xs py-2 px-2"
+                      >
+                        API:
+                      </td>
+                      <td className="font-mono text-xs py-2 px-2">
+                        <a
+                          href="https://www.data.gv.at/katalog/dataset/22add642-d849-48ff-9913-8c7ba2d99b46"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="underline"
+                        >
+                          Stadt Wien
+                          <br />
+                          Open Data Portal
+                        </a>
+                      </td>
+                    </tr>
+                    <tr
+                      style={{
+                        borderBottom: "1px solid var(--border-color)",
+                      }}
+                    >
+                      <td
+                        style={{
+                          color: "var(--deep-charcoal)",
+                          opacity: 0.7,
+                          verticalAlign: "top",
+                          width: "30%",
+                        }}
+                        className="font-mono text-xs py-2 px-2"
+                      >
+                        Dataset:
+                      </td>
+                      <td className="font-mono text-xs py-2 px-2">
+                        ogdwien:PARKINFOOGD
+                      </td>
+                    </tr>
                     {allFields.map(({ key, value }, index) => (
                       <tr
                         key={key}
@@ -387,7 +442,7 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
                             color: "var(--deep-charcoal)",
                             opacity: 0.7,
                             verticalAlign: "top",
-                            width: "40%",
+                            width: "30%",
                           }}
                         >
                           {key}
