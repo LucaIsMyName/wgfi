@@ -31,6 +31,8 @@ const ParkDetailPage: React.FC = () => {
   const { idOrSlug } = useParams<{ idOrSlug: string }>();
   const { effectiveTheme, isHighContrast } = useTheme();
   const { parks } = useParksData();
+  const [park, setPark] = useState<Park | null>(null);
+  const [error, setError] = useState<string | null>(null);
   const [userLocation, setUserLocation] = useState<{
     lat: number;
     lng: number;
@@ -38,10 +40,41 @@ const ParkDetailPage: React.FC = () => {
   const [isFavorited, setIsFavorited] = useState(false);
   const [nearbyParks, setNearbyParks] = useState<ParkWithDistance[]>([]);
 
-  // Find and merge park data immediately using useMemo to avoid flash
-  const { park, error } = useMemo(() => {
+  // Map references
+  const mapContainer = useRef<HTMLDivElement>(null);
+  const mapInstance = useRef<mapboxgl.Map | null>(null);
+  const mapMarker = useRef<mapboxgl.Marker | null>(null);
+
+  // Check if park is in favorites when it loads
+  useEffect(() => {
+    if (park?.id) {
+      setIsFavorited(isFavorite(park.id));
+    }
+  }, [park]);
+
+  // Get user location
+  useEffect(() => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          setUserLocation({
+            lat: position.coords.latitude,
+            lng: position.coords.longitude,
+          });
+        },
+        (error) => {
+          // console.log("Error getting user location:", error);
+        }
+      );
+    }
+  }, []);
+
+  // Find and set park data
+  useEffect(() => {
     if (!idOrSlug || parks.length === 0) {
-      return { park: null, error: null };
+      setPark(null);
+      setError(null);
+      return;
     }
 
     try {
@@ -83,44 +116,18 @@ const ParkDetailPage: React.FC = () => {
           amenities: mergedAmenities,
         };
 
-        return { park: currentPark, error: null };
+        setPark(currentPark);
+        setError(null);
       } else {
-        return { park: null, error: "Park nicht gefunden" };
+        setPark(null);
+        setError("Park nicht gefunden");
       }
     } catch (err) {
       console.error("Error loading park:", err);
-      return { park: null, error: "Fehler beim Laden des Parks" };
+      setPark(null);
+      setError("Fehler beim Laden des Parks");
     }
   }, [idOrSlug, parks]);
-
-  // Map references
-  const mapContainer = useRef<HTMLDivElement>(null);
-  const mapInstance = useRef<mapboxgl.Map | null>(null);
-  const mapMarker = useRef<mapboxgl.Marker | null>(null);
-
-  // Check if park is in favorites when it loads
-  useEffect(() => {
-    if (park?.id) {
-      setIsFavorited(isFavorite(park.id));
-    }
-  }, [park]);
-
-  // Get user location
-  useEffect(() => {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          setUserLocation({
-            lat: position.coords.latitude,
-            lng: position.coords.longitude,
-          });
-        },
-        (error) => {
-          // console.log("Error getting user location:", error);
-        }
-      );
-    }
-  }, []);
 
   // Calculate nearby parks when park changes
   useEffect(() => {
