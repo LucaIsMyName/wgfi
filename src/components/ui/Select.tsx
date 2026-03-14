@@ -57,11 +57,11 @@ export const Select = React.forwardRef<HTMLButtonElement, SelectProps>(
           <SelectPrimitive.Portal>
             <SelectPrimitive.Content 
               position="popper" 
-              className="bg-soft-cream border border-border-color shadow-lg z-[1000]"
+              className="bg-soft-cream border border-border-color shadow-lg z-[1000] overflow-hidden"
               sideOffset={4}
               collisionPadding={16}
             >
-              <SelectPrimitive.Viewport className="w-[var(--radix-select-trigger-width)]">
+              <SelectPrimitive.Viewport className="w-[var(--radix-select-trigger-width)] max-h-[300px] overflow-y-auto">
                 {options.map((option) => (
                   <SelectPrimitive.Item 
                     key={option.value} 
