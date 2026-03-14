@@ -42,8 +42,8 @@ const ThemeToggle = ({ className }: { className?: string }) => {
         size="sm"
         icon={Icon}
         aria-label="Theme wechseln"
-        className="hover:underline font-serif italic"
-        style={{ fontSize: '0.75rem', padding: '0.25rem 0.5rem' }}
+        className="hover:underline font-serif italic !p-0"
+        style={{ fontSize: '0.75rem' }}
       >
         Theme
       </Button>
@@ -65,7 +65,7 @@ const ThemeToggle = ({ className }: { className?: string }) => {
                     setMode(theme.value);
                     setIsOpen(false);
                   }}
-                  className="w-full flex items-center justify-between gap-2 px-2 py-1.5 mb-1 transition-opacity duration-200 hover:opacity-70 text-deep-charcoal"
+                  className="w-full flex items-center justify-between gap-2 p-1.5 mb-1 transition-opacity duration-200 hover:opacity-70 text-deep-charcoal"
                   style={{
                     backgroundColor: isActive ? "var(--light-sage)" : "transparent",
                   }}

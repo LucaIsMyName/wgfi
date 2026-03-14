@@ -20,7 +20,7 @@ export const ImpressumPage: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen p-4 md:p-8" style={{ backgroundColor: "var(--main-bg)" }}>
+    <div className="min-h-screen p-4 md:p-8 bg-main-bg">
       <Helmet>
         <title>Impressum | Wiener Grünflächen Index</title>
         <meta
@@ -29,13 +29,10 @@ export const ImpressumPage: React.FC = () => {
         />
       </Helmet>
       <div className="max-w-4xl mx-auto">
-        <h1 className="font-serif text-3xl mb-6" style={{ color: "var(--primary-green)" }}>
+        <h1 className="font-serif text-3xl mb-6 text-primary-green">
           Impressum
         </h1>
-        <div 
-          className="prose max-w-none font-serif whitespace-pre-line"
-          style={{ color: "var(--deep-charcoal)" }}
-        >
+        <div className="prose max-w-none font-serif whitespace-pre-line text-deep-charcoal">
           {content}
         </div>
       </div>

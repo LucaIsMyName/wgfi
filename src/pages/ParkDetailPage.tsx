@@ -368,19 +368,13 @@ const ParkDetailPage: React.FC = () => {
   // Only show error after parks are loaded to prevent flash
   if (parks.length > 0 && (error || !park)) {
     return (
-      <div
-        className="min-h-screen flex items-center justify-center"
-        style={{ background: "var(--main-bg)" }}
-      >
-        <div className="p-6" style={{ backgroundColor: "var(--card-bg)" }}>
+      <div className="min-h-screen flex items-center justify-center bg-main-bg">
+        <div className="p-6 bg-card-bg">
           <AlertTriangle
             className="w-16 h-16 mb-5"
             stroke="var(--accent-gold)"
           />
-          <p
-            className="font-serif italic text-lg"
-            style={{ color: "var(--deep-charcoal)", fontWeight: "400" }}
-          >
+          <p className="font-serif italic text-lg text-deep-charcoal font-normal">
             {error || "Park nicht gefunden"}
           </p>
           <Button
@@ -407,7 +401,7 @@ const ParkDetailPage: React.FC = () => {
   const districtsDisplay = formatDistricts(allDistricts, 'full').toUpperCase();
 
   return (
-    <div className="min-h-screen" style={{ background: "var(--main-bg)" }}>
+    <div className="min-h-screen bg-main-bg">
       <Helmet>
         <title>{`${parkData.name} | Wiener Grünflächen Index`}</title>
         <meta

@@ -163,9 +163,7 @@ const StatisticsPage = () => {
   }
 
   return (
-    <div
-      className="min-h-screen"
-      style={{ backgroundColor: "var(--soft-cream)" }}>
+    <div className="min-h-screen bg-soft-cream">
       <Helmet>
         <title>Wiener Grünflächen Index | Statistiken</title>
         <meta
@@ -177,132 +175,72 @@ const StatisticsPage = () => {
       <main className="px-4 lg:px-6 pb-8 lg:pb-12 pt-6">
         {/* Header */}
         <div className="mb-12">
-          <h1
-            className={`${STYLE.pageTitle(false)} mb-4`}
-            style={{ color: "var(--primary-green)", fontStyle: "italic" }}>
+          <h1 className={`${STYLE.pageTitle(false)} mb-4 text-primary-green italic`}>
             Statistiken
           </h1>
-          <p
-            className="font-serif text-lg max-w-[65ch]"
-            style={{ color: "var(--deep-charcoal)" }}>
+          <p className="font-serif text-lg max-w-[65ch] text-deep-charcoal">
             Beachten Sie dass die Daten der Stadt Wien nicht alle Grünflächen ausweisen und eine vollständige Statistik nicht möglich ist. Bundesforste und Bundesgärten werden manuell nach Möglichkeit hinzugefügt. Flächen von Grünflächen können derzeit nur einem Bezirk zugerechnet werden, was nicht immer korrekt ist.
           </p>
         </div>
 
         {/* Key Metrics */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          <div
-            className="p-6 border"
-            style={{
-              backgroundColor: "var(--light-sage)",
-              borderColor: "var(--border-color)",
-            }}>
+          <div className="p-6 border bg-light-sage border-border-color">
             <div className="flex items-center gap-3 mb-2">
-              <Sprout
-                className="w-6 h-6"
-                style={{ color: "var(--primary-green)" }}
-              />
-              <p
-                className="font-mono text-xs"
-                style={{ color: "var(--primary-green)" }}>
+              <Sprout className="w-6 h-6 text-primary-green" />
+              <p className="font-mono text-xs text-primary-green">
                 Gesamtabdeckung
               </p>
             </div>
-            <p
-              className="font-serif text-4xl italic"
-              style={{ color: "var(--primary-green)" }}>
+            <p className="font-serif text-4xl italic text-primary-green">
               {viennaCoverage.toFixed(2)}%
             </p>
-            <p
-              className="font-serif italic text-base mt-1"
-              style={{ color: "var(--deep-charcoal)", opacity: 0.7 }}>
+            <p className="font-serif italic text-base mt-1 text-deep-charcoal opacity-70">
               von Wien sind Parks
             </p>
           </div>
 
-          <div
-            className="p-6 border"
-            style={{
-              backgroundColor: "var(--light-sage)",
-              borderColor: "var(--border-color)",
-            }}>
+          <div className="p-6 border bg-light-sage border-border-color">
             <div className="flex items-center gap-3 mb-2">
-              <MapPin
-                className="w-6 h-6"
-                style={{ color: "var(--primary-green)" }}
-              />
-              <p
-                className="font-mono text-xs"
-                style={{ color: "var(--primary-green)" }}>
+              <MapPin className="w-6 h-6 text-primary-green" />
+              <p className="font-mono text-xs text-primary-green">
                 Anzahl der Parks
               </p>
             </div>
-            <p
-              className="font-serif text-4xl italic"
-              style={{ color: "var(--primary-green)" }}>
+            <p className="font-serif text-4xl italic text-primary-green">
               {parks.length}
             </p>
-            <p
-              className="font-serif italic text-base mt-1"
-              style={{ color: "var(--deep-charcoal)", opacity: 0.7 }}>
+            <p className="font-serif italic text-base mt-1 text-deep-charcoal opacity-70">
               Parks in ganz Wien
             </p>
           </div>
 
-          <div
-            className="p-6 border"
-            style={{
-              backgroundColor: "var(--light-sage)",
-              borderColor: "var(--border-color)",
-            }}>
+          <div className="p-6 border bg-light-sage border-border-color">
             <div className="flex items-center gap-3 mb-2">
-              <TrendingUp
-                className="w-6 h-6"
-                style={{ color: "var(--primary-green)" }}
-              />
-              <p
-                className="font-mono text-xs"
-                style={{ color: "var(--primary-green)" }}>
+              <TrendingUp className="w-6 h-6 text-primary-green" />
+              <p className="font-mono text-xs text-primary-green">
                 Gesamtfläche
               </p>
             </div>
-            <p
-              className="font-serif text-4xl italic"
-              style={{ color: "var(--primary-green)" }}>
+            <p className="font-serif text-4xl italic text-primary-green">
               {formatArea(parks.reduce((sum, p) => sum + p.area, 0))}
             </p>
-            <p
-              className="font-serif italic text-base mt-1"
-              style={{ color: "var(--deep-charcoal)", opacity: 0.7 }}>
+            <p className="font-serif italic text-base mt-1 text-deep-charcoal opacity-70">
               Grünfläche gesamt
             </p>
           </div>
 
-          <div
-            className="p-6 border"
-            style={{
-              backgroundColor: "var(--light-sage)",
-              borderColor: "var(--border-color)",
-            }}>
+          <div className="p-6 border bg-light-sage border-border-color">
             <div className="flex items-center gap-3 mb-2">
-              <BarChart3
-                className="w-6 h-6"
-                style={{ color: "var(--primary-green)" }}
-              />
-              <p
-                className="font-mono text-xs"
-                style={{ color: "var(--primary-green)" }}>
+              <BarChart3 className="w-6 h-6 text-primary-green" />
+              <p className="font-mono text-xs text-primary-green">
                 Ø Größe
               </p>
             </div>
-            <p
-              className="font-serif text-4xl italic"
-              style={{ color: "var(--primary-green)" }}>
+            <p className="font-serif text-4xl italic text-primary-green">
               {formatArea(parks.reduce((sum, p) => sum + p.area, 0) / parks.length)}
             </p>
-            <p
-              className="font-serif italic text-base mt-1"
-              style={{ color: "var(--deep-charcoal)", opacity: 0.7 }}>
+            <p className="font-serif italic text-base mt-1 text-deep-charcoal opacity-70">
               Durchschnittliche Parkgröße
             </p>
           </div>
@@ -310,34 +248,22 @@ const StatisticsPage = () => {
 
         {/* Charts Section */}
         <div className="mb-12">
-          <h2
-            className="font-serif text-3xl mb-8"
-            style={{ color: "var(--primary-green)", fontStyle: "italic" }}>
+          <h2 className="font-serif text-3xl mb-8 text-primary-green italic">
             Visualisierungen
           </h2>
 
           {/* Amenities Distribution and Park Size Histogram */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
             {/* Amenities Distribution Chart */}
-            <div
-              className="p-6 border"
-              style={{
-                backgroundColor: "var(--card-bg)",
-                borderColor: "var(--border-color)",
-              }}>
+            <div className="p-6 border bg-card-bg border-border-color">
               <div className="flex items-center gap-2 mb-6">
-                <BarChart3
-                  className="w-6 h-6"
-                  style={{ color: "var(--primary-green)" }}
-                />
-                <h3
-                  className="font-serif text-2xl"
-                  style={{ color: "var(--primary-green)", fontStyle: "italic" }}>
+                <BarChart3 className="w-6 h-6 text-primary-green" />
+                <h3 className="font-serif text-2xl text-primary-green italic">
                   Ausstattung Verteilung
                 </h3>
               </div>
-              <div style={{ width: "100%", height: "400px" }}>
-                <ResponsiveContainer style={{ width: "100%", height: "100%" }}>
+              <div className="w-full h-[400px]">
+                <ResponsiveContainer className="w-full h-full">
                   {({ width, height }) => (
                     <AmenitiesChart
                       parks={parks}
@@ -350,25 +276,15 @@ const StatisticsPage = () => {
             </div>
 
             {/* Park Size Histogram */}
-            <div
-              className="p-6 border"
-              style={{
-                backgroundColor: "var(--card-bg)",
-                borderColor: "var(--border-color)",
-              }}>
+            <div className="p-6 border bg-card-bg border-border-color">
               <div className="flex items-center gap-2 mb-6">
-                <Ruler
-                  className="w-6 h-6"
-                  style={{ color: "var(--primary-green)" }}
-                />
-                <h3
-                  className="font-serif text-2xl"
-                  style={{ color: "var(--primary-green)", fontStyle: "italic" }}>
+                <Ruler className="w-6 h-6 text-primary-green" />
+                <h3 className="font-serif text-2xl text-primary-green italic">
                   Parkgrößen Verteilung
                 </h3>
               </div>
-              <div style={{ width: "100%", height: "400px" }}>
-                <ResponsiveContainer style={{ width: "100%", height: "100%" }}>
+              <div className="w-full h-[400px]">
+                <ResponsiveContainer className="w-full h-full">
                   {({ width, height }) => (
                     <ParkSizeHistogram
                       parks={parks}
@@ -382,20 +298,10 @@ const StatisticsPage = () => {
           </div>
 
           {/* District Comparison Chart */}
-          <div
-            className="p-6 border mb-12"
-            style={{
-              backgroundColor: "var(--card-bg)",
-              borderColor: "var(--border-color)",
-            }}>
+          <div className="p-6 border mb-12 bg-card-bg border-border-color">
             <div className="flex items-center gap-2 mb-6">
-              <MapPin
-                className="w-6 h-6"
-                style={{ color: "var(--primary-green)" }}
-              />
-              <h3
-                className="font-serif text-2xl"
-                style={{ color: "var(--primary-green)", fontStyle: "italic" }}>
+              <MapPin className="w-6 h-6 text-primary-green" />
+              <h3 className="font-serif text-2xl text-primary-green italic">
                 Bezirksvergleich
               </h3>
             </div>
@@ -403,62 +309,29 @@ const StatisticsPage = () => {
               <div className="flex flex-wrap gap-2">
                 <button
                   onClick={() => setDistrictMetric("parkCount")}
-                  className={`px-3 py-1 font-mono text-xs ${
-                    districtMetric === "parkCount" ? "opacity-100" : "opacity-60"
-                  }`}
-                  style={{
-                    backgroundColor:
-                      districtMetric === "parkCount"
-                        ? "var(--primary-green)"
-                        : "var(--light-sage)",
-                    color:
-                      districtMetric === "parkCount"
-                        ? "var(--soft-cream)"
-                        : "var(--deep-charcoal)",
-                    borderRadius: "4px",
-                  }}>
+                  className={`px-3 py-1 font-mono text-xs rounded ${
+                    districtMetric === "parkCount" ? "opacity-100 bg-primary-green text-soft-cream" : "opacity-60 bg-light-sage text-deep-charcoal"
+                  }`}>
                   ANZAHL PARKS
                 </button>
                 <button
                   onClick={() => setDistrictMetric("totalArea")}
-                  className={`px-3 py-1 font-mono text-xs ${
-                    districtMetric === "totalArea" ? "opacity-100" : "opacity-60"
-                  }`}
-                  style={{
-                    backgroundColor:
-                      districtMetric === "totalArea"
-                        ? "var(--primary-green)"
-                        : "var(--light-sage)",
-                    color:
-                      districtMetric === "totalArea"
-                        ? "var(--soft-cream)"
-                        : "var(--deep-charcoal)",
-                    borderRadius: "4px",
-                  }}>
+                  className={`px-3 py-1 font-mono text-xs rounded ${
+                    districtMetric === "totalArea" ? "opacity-100 bg-primary-green text-soft-cream" : "opacity-60 bg-light-sage text-deep-charcoal"
+                  }`}>
                   GESAMTFLÄCHE
                 </button>
                 <button
                   onClick={() => setDistrictMetric("coveragePercentage")}
-                  className={`px-3 py-1 font-mono text-xs ${
-                    districtMetric === "coveragePercentage" ? "opacity-100" : "opacity-60"
-                  }`}
-                  style={{
-                    backgroundColor:
-                      districtMetric === "coveragePercentage"
-                        ? "var(--primary-green)"
-                        : "var(--light-sage)",
-                    color:
-                      districtMetric === "coveragePercentage"
-                        ? "var(--soft-cream)"
-                        : "var(--deep-charcoal)",
-                    borderRadius: "4px",
-                  }}>
+                  className={`px-3 py-1 font-mono text-xs rounded ${
+                    districtMetric === "coveragePercentage" ? "opacity-100 bg-primary-green text-soft-cream" : "opacity-60 bg-light-sage text-deep-charcoal"
+                  }`}>
                   ABDECKUNG %
                 </button>
               </div>
             </div>
-            <div style={{ width: "100%", height: "600px" }}>
-              <ResponsiveContainer style={{ width: "100%", height: "100%" }}>
+            <div className="w-full h-[600px]">
+              <ResponsiveContainer className="w-full h-full">
                 {({ width, height }) => (
                   <DistrictComparisonChart
                     parks={parks}
@@ -473,26 +346,14 @@ const StatisticsPage = () => {
           </div>
 
           {/* Amenities Correlation Table */}
-          <div
-            className="p-6 border mb-12"
-            style={{
-              backgroundColor: "var(--card-bg)",
-              borderColor: "var(--border-color)",
-            }}>
+          <div className="p-6 border mb-12 bg-card-bg border-border-color">
             <div className="flex items-center gap-2 mb-6">
-              <PieChart
-                className="w-6 h-6"
-                style={{ color: "var(--primary-green)" }}
-              />
-              <h3
-                className="font-serif text-2xl"
-                style={{ color: "var(--primary-green)", fontStyle: "italic" }}>
+              <PieChart className="w-6 h-6 text-primary-green" />
+              <h3 className="font-serif text-2xl text-primary-green italic">
                 Ausstattung Korrelationen
               </h3>
             </div>
-            <p
-              className="font-serif italic text-sm mb-4"
-              style={{ color: "var(--deep-charcoal)", opacity: 0.7 }}>
+            <p className="font-serif italic text-sm mb-4 text-deep-charcoal opacity-70">
               Welche Ausstattungen kommen häufig zusammen vor?
             </p>
             <AmenitiesCorrelationTable parks={parks} />
@@ -501,25 +362,15 @@ const StatisticsPage = () => {
           {/* Additional Charts Section - 2x2 Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
             {/* Category Distribution Chart */}
-            <div
-              className="p-6 border"
-              style={{
-                backgroundColor: "var(--card-bg)",
-                borderColor: "var(--border-color)",
-              }}>
+            <div className="p-6 border bg-card-bg border-border-color">
               <div className="flex items-center gap-2 mb-6">
-                <PieChart
-                  className="w-6 h-6"
-                  style={{ color: "var(--primary-green)" }}
-                />
-                <h3
-                  className="font-serif text-2xl"
-                  style={{ color: "var(--primary-green)", fontStyle: "italic" }}>
+                <PieChart className="w-6 h-6 text-primary-green" />
+                <h3 className="font-serif text-2xl text-primary-green italic">
                   Grünfläche nach Bezirk
                 </h3>
               </div>
-              <div style={{ width: "100%", height: "400px" }}>
-                <ResponsiveContainer style={{ width: "100%", height: "100%" }}>
+              <div className="w-full h-[400px]">
+                <ResponsiveContainer className="w-full h-full">
                   {({ width, height }) => (
                     <CategoryDistributionChart
                       parks={parks}
@@ -532,25 +383,15 @@ const StatisticsPage = () => {
             </div>
 
             {/* Top 10 Largest Parks Chart */}
-            <div
-              className="p-6 border"
-              style={{
-                backgroundColor: "var(--card-bg)",
-                borderColor: "var(--border-color)",
-              }}>
+            <div className="p-6 border bg-card-bg border-border-color">
               <div className="flex items-center gap-2 mb-6">
-                <Trophy
-                  className="w-6 h-6"
-                  style={{ color: "var(--primary-green)" }}
-                />
-                <h3
-                  className="font-serif text-2xl"
-                  style={{ color: "var(--primary-green)", fontStyle: "italic" }}>
+                <Trophy className="w-6 h-6 text-primary-green" />
+                <h3 className="font-serif text-2xl text-primary-green italic">
                   Top 10 Größte Parks
                 </h3>
               </div>
-              <div style={{ width: "100%", height: "400px" }}>
-                <ResponsiveContainer style={{ width: "100%", height: "100%" }}>
+              <div className="w-full h-[400px]">
+                <ResponsiveContainer className="w-full h-full">
                   {({ width, height }) => (
                     <TopParksChart
                       parks={parks}
@@ -563,25 +404,15 @@ const StatisticsPage = () => {
             </div>
 
             {/* Amenities per Park Chart */}
-            <div
-              className="p-6 border"
-              style={{
-                backgroundColor: "var(--card-bg)",
-                borderColor: "var(--border-color)",
-              }}>
+            <div className="p-6 border bg-card-bg border-border-color">
               <div className="flex items-center gap-2 mb-6">
-                <BarChart
-                  className="w-6 h-6"
-                  style={{ color: "var(--primary-green)" }}
-                />
-                <h3
-                  className="font-serif text-2xl"
-                  style={{ color: "var(--primary-green)", fontStyle: "italic" }}>
+                <BarChart className="w-6 h-6 text-primary-green" />
+                <h3 className="font-serif text-2xl text-primary-green italic">
                   Ausstattungen pro Park
                 </h3>
               </div>
-              <div style={{ width: "100%", height: "400px" }}>
-                <ResponsiveContainer style={{ width: "100%", height: "100%" }}>
+              <div className="w-full h-[400px]">
+                <ResponsiveContainer className="w-full h-full">
                   {({ width, height }) => (
                     <AmenitiesPerParkChart
                       parks={parks}
@@ -594,25 +425,15 @@ const StatisticsPage = () => {
             </div>
 
             {/* Average Park Size by District Chart */}
-            <div
-              className="p-6 border"
-              style={{
-                backgroundColor: "var(--card-bg)",
-                borderColor: "var(--border-color)",
-              }}>
+            <div className="p-6 border bg-card-bg border-border-color">
               <div className="flex items-center gap-2 mb-6">
-                <TrendingUp
-                  className="w-6 h-6"
-                  style={{ color: "var(--primary-green)" }}
-                />
-                <h3
-                  className="font-serif text-2xl"
-                  style={{ color: "var(--primary-green)", fontStyle: "italic" }}>
+                <TrendingUp className="w-6 h-6 text-primary-green" />
+                <h3 className="font-serif text-2xl text-primary-green italic">
                   Durchschnittliche Parkgröße pro Bezirk
                 </h3>
               </div>
-              <div style={{ width: "100%", height: "400px" }}>
-                <ResponsiveContainer style={{ width: "100%", height: "100%" }}>
+              <div className="w-full h-[400px]">
+                <ResponsiveContainer className="w-full h-full">
                   {({ width, height }) => (
                     <AverageParkSizeByDistrictChart
                       parks={parks}
@@ -629,46 +450,30 @@ const StatisticsPage = () => {
         {/* District Rankings */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
           {/* Top Districts by Percentage */}
-          <div
-            className="p-6 border"
-            style={{
-              backgroundColor: "var(--card-bg)",
-              borderColor: "var(--border-color)",
-            }}>
-            <h2
-              className="font-serif text-2xl mb-6"
-              style={{ color: "var(--primary-green)", fontStyle: "italic" }}>
+          <div className="p-6 border bg-card-bg border-border-color">
+            <h2 className="font-serif text-2xl mb-6 text-primary-green italic">
               Top Bezirke (Relativer Anteil)
             </h2>
             <div className="space-y-4">
               {topDistrictsByPercentage.map((stat, index) => (
                 <div key={stat.district}>
                   <div className="flex justify-between items-center mb-2">
-                    <span
-                      className="font-mono text-xs"
-                      style={{ color: "var(--deep-charcoal)" }}>
+                    <span className="font-mono text-xs text-deep-charcoal">
                       #{index + 1} · {stat.district}. BEZIRK
                     </span>
-                    <span
-                      className="font-serif text-lg italic"
-                      style={{ color: "var(--primary-green)" }}>
+                    <span className="font-serif text-lg italic text-primary-green">
                       {stat.percentage.toFixed(2)}%
                     </span>
                   </div>
-                  <div
-                    className="h-2 w-full"
-                    style={{ backgroundColor: "var(--light-sage)" }}>
+                  <div className="h-2 w-full bg-light-sage">
                     <div
-                      className="h-full"
+                      className="h-full bg-primary-green"
                       style={{
                         width: `${Math.min(100, stat.percentage)}%`,
-                        backgroundColor: "var(--primary-green)",
                       }}
                     />
                   </div>
-                  <p
-                    className="font-mono text-xs mt-1"
-                    style={{ color: "var(--deep-charcoal)", opacity: 0.6 }}>
+                  <p className="font-mono text-xs mt-1 text-deep-charcoal opacity-60">
                     {stat.parkCount} Parks · {formatArea(stat.totalArea)}
                   </p>
                 </div>
@@ -677,15 +482,8 @@ const StatisticsPage = () => {
           </div>
 
           {/* Top Districts by Absolute Area */}
-          <div
-            className="p-6 border"
-            style={{
-              backgroundColor: "var(--card-bg)",
-              borderColor: "var(--border-color)",
-            }}>
-            <h2
-              className="font-serif text-2xl mb-6"
-              style={{ color: "var(--primary-green)", fontStyle: "italic" }}>
+          <div className="p-6 border bg-card-bg border-border-color">
+            <h2 className="font-serif text-2xl mb-6 text-primary-green italic">
               Top Bezirke (Absolute Fläche)
             </h2>
             <div className="space-y-4">
@@ -694,31 +492,22 @@ const StatisticsPage = () => {
                 return (
                   <div key={stat.district}>
                     <div className="flex justify-between items-center mb-2">
-                      <span
-                        className="font-mono text-xs"
-                        style={{ color: "var(--deep-charcoal)" }}>
+                      <span className="font-mono text-xs text-deep-charcoal">
                         #{index + 1} · {stat.district}. BEZIRK
                       </span>
-                      <span
-                        className="font-serif text-lg italic"
-                        style={{ color: "var(--accent-gold)" }}>
+                      <span className="font-serif text-lg italic text-accent-gold">
                         {formatArea(stat.totalArea)}
                       </span>
                     </div>
-                    <div
-                      className="h-2 w-full"
-                      style={{ backgroundColor: "var(--light-sage)" }}>
+                    <div className="h-2 w-full bg-light-sage">
                       <div
-                        className="h-full"
+                        className="h-full bg-accent-gold"
                         style={{
                           width: `${(stat.totalArea / maxArea) * 100}%`,
-                          backgroundColor: "var(--accent-gold)",
                         }}
                       />
                     </div>
-                    <p
-                      className="font-mono text-xs mt-1"
-                      style={{ color: "var(--deep-charcoal)", opacity: 0.6 }}>
+                    <p className="font-mono text-xs mt-1 text-deep-charcoal opacity-60">
                       {stat.parkCount} Parks · Ø {formatArea(stat.avgParkSize)}
                     </p>
                   </div>
@@ -729,44 +518,29 @@ const StatisticsPage = () => {
         </div>
 
         {/* Largest Parks */}
-        <div
-          className="p-6 border mb-12"
-          style={{
-            backgroundColor: "var(--card-bg)",
-            borderColor: "var(--border-color)",
-          }}>
-          <h2
-            className="font-serif text-2xl mb-6"
-            style={{ color: "var(--primary-green)", fontStyle: "italic" }}>
+        <div className="p-6 border mb-12 bg-card-bg border-border-color">
+          <h2 className="font-serif text-2xl mb-6 text-primary-green italic">
             Die größten Parks in Wien
           </h2>
           <div className="space-y-4">
             {largestParks.map((park, index) => (
               <div
                 key={park.id}
-                className="flex flex-col md:flex-row md:justify-between md:items-center py-3 border-b gap-2"
-                style={{ borderColor: "var(--border-color)" }}>
+                className="flex flex-col md:flex-row md:justify-between md:items-center py-3 border-b gap-2 border-border-color">
                 <div>
-                  <span
-                    className="font-mono text-xs mr-3"
-                    style={{ color: "var(--accent-gold)" }}>
+                  <span className="font-mono text-xs mr-3 text-accent-gold">
                     #{index + 1}
                   </span>
                   <Link
                     to={`/index/${slugifyParkName(park.name)}`}
-                    className="font-serif text-lg hover:underline"
-                    style={{ color: "var(--primary-green)" }}>
+                    className="font-serif text-lg hover:underline text-primary-green">
                     {park.name}
                   </Link>
-                  <span
-                    className="font-mono text-xs ml-3"
-                    style={{ color: "var(--deep-charcoal)", opacity: 0.6 }}>
+                  <span className="font-mono text-xs ml-3 text-deep-charcoal opacity-60">
                     {park.district}. Bezirk
                   </span>
                 </div>
-                <span
-                  className="font-serif text-xl italic md:text-right"
-                  style={{ color: "var(--primary-green)" }}>
+                <span className="font-serif text-xl italic md:text-right text-primary-green">
                   {formatArea(park.area)}
                 </span>
               </div>
@@ -776,135 +550,88 @@ const StatisticsPage = () => {
 
         {/* Geographical & Size Extremes */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          {/* Geographical Extremes */}
-          <div
-            className="p-6 border"
-            style={{
-              backgroundColor: "var(--card-bg)",
-              borderColor: "var(--border-color)",
-            }}>
-            <div className="flex items-center gap-2 mb-6">
-              <Compass
-                className="w-6 h-6"
-                style={{ color: "var(--primary-green)" }}
-              />
-              <h2
-                className="font-serif text-2xl"
-                style={{ color: "var(--primary-green)", fontStyle: "italic" }}>
-                Geografie
-              </h2>
-            </div>
-            <div className="space-y-4">
-              <div
-                className="flex justify-between items-center py-3 border-b"
-                style={{ borderColor: "var(--border-color)" }}>
+          {/* Geography Section */}
+          <div className="mb-12">
+            <div className="p-6 border bg-card-bg border-border-color">
+              <div className="flex items-center gap-2 mb-6">
+                <Compass className="w-6 h-6 text-primary-green" />
+                <h2 className="font-serif text-2xl text-primary-green italic">
+                  Geografie
+                </h2>
                 <div>
-                  <p
-                    className="font-mono text-xs mb-1"
-                    style={{ color: "var(--accent-gold)" }}>
+                  <p className="font-mono text-xs mb-1 text-accent-gold">
                     NÖRDLICHSTER PARK
                   </p>
                   <Link
                     to={`/index/${slugifyParkName(northernmostPark.name)}`}
-                    className="font-serif text-lg hover:underline"
-                    style={{ color: "var(--primary-green)" }}>
+                    className="font-serif text-lg hover:underline text-primary-green">
                     {northernmostPark.name}
                   </Link>
-                  <p
-                    className="font-mono text-xs mt-1"
-                    style={{ color: "var(--deep-charcoal)", opacity: 0.6 }}>
+                  <p className="font-mono text-xs mt-1 text-deep-charcoal opacity-60">
                     {northernmostPark.district}. Bezirk · {northernmostPark.coordinates.lat.toFixed(4)}°N
                   </p>
                 </div>
               </div>
 
-              <div
-                className="flex justify-between items-center py-3 border-b"
-                style={{ borderColor: "var(--border-color)" }}>
+              <div className="flex justify-between items-center py-3 border-b border-border-color">
                 <div>
-                  <p
-                    className="font-mono text-xs mb-1"
-                    style={{ color: "var(--accent-gold)" }}>
+                  <p className="font-mono text-xs mb-1 text-accent-gold">
                     SÜDLICHSTER PARK
                   </p>
                   <Link
                     to={`/index/${slugifyParkName(southernmostPark.name)}`}
-                    className="font-serif text-lg hover:underline"
-                    style={{ color: "var(--primary-green)" }}>
+                    className="font-serif text-lg hover:underline text-primary-green">
                     {southernmostPark.name}
                   </Link>
-                  <p
-                    className="font-mono text-xs mt-1"
-                    style={{ color: "var(--deep-charcoal)", opacity: 0.6 }}>
+                  <p className="font-mono text-xs mt-1 text-deep-charcoal opacity-60">
                     {southernmostPark.district}. Bezirk · {southernmostPark.coordinates.lat.toFixed(4)}°N
                   </p>
                 </div>
               </div>
 
-              <div
-                className="flex justify-between items-center py-3 border-b"
-                style={{ borderColor: "var(--border-color)" }}>
+              <div className="flex justify-between items-center py-3 border-b border-border-color">
                 <div>
-                  <p
-                    className="font-mono text-xs mb-1"
-                    style={{ color: "var(--accent-gold)" }}>
+                  <p className="font-mono text-xs mb-1 text-accent-gold">
                     ÖSTLICHSTER PARK
                   </p>
                   <Link
                     to={`/index/${slugifyParkName(easternmostPark.name)}`}
-                    className="font-serif text-lg hover:underline"
-                    style={{ color: "var(--primary-green)" }}>
+                    className="font-serif text-lg hover:underline text-primary-green">
                     {easternmostPark.name}
                   </Link>
-                  <p
-                    className="font-mono text-xs mt-1"
-                    style={{ color: "var(--deep-charcoal)", opacity: 0.6 }}>
+                  <p className="font-mono text-xs mt-1 text-deep-charcoal opacity-60">
                     {easternmostPark.district}. Bezirk · {easternmostPark.coordinates.lng.toFixed(4)}°E
                   </p>
                 </div>
               </div>
 
-              <div
-                className="flex justify-between items-center py-3 border-b"
-                style={{ borderColor: "var(--border-color)" }}>
+              <div className="flex justify-between items-center py-3 border-b border-border-color">
                 <div>
-                  <p
-                    className="font-mono text-xs mb-1"
-                    style={{ color: "var(--accent-gold)" }}>
+                  <p className="font-mono text-xs mb-1 text-accent-gold">
                     WESTLICHSTER PARK
                   </p>
                   <Link
                     to={`/index/${slugifyParkName(westernmostPark.name)}`}
-                    className="font-serif text-lg hover:underline"
-                    style={{ color: "var(--primary-green)" }}>
+                    className="font-serif text-lg hover:underline text-primary-green">
                     {westernmostPark.name}
                   </Link>
-                  <p
-                    className="font-mono text-xs mt-1"
-                    style={{ color: "var(--deep-charcoal)", opacity: 0.6 }}>
+                  <p className="font-mono text-xs mt-1 text-deep-charcoal opacity-60">
                     {westernmostPark.district}. Bezirk · {westernmostPark.coordinates.lng.toFixed(4)}°E
                   </p>
                 </div>
               </div>
 
-              <div
-                className="flex justify-between items-center py-3 border-b"
-                style={{ borderColor: "var(--border-color)" }}>
+              <div className="flex justify-between items-center py-3 border-b border-border-color">
                 <div>
-                  <p
-                    className="font-mono text-xs mb-1"
-                    style={{ color: "var(--accent-gold)" }}>
+                  <p className="font-mono text-xs mb-1 text-accent-gold">
                     ZENTRALSTER PARK
                   </p>
                   <Link
                     to={`/index/${slugifyParkName(mostCenteredPark.name)}`}
-                    className="font-serif text-lg hover:underline"
-                    style={{ color: "var(--primary-green)" }}>
+                    className="font-serif text-lg hover:underline text-primary-green">
                     {mostCenteredPark.name}
                   </Link>
-                  <p
-                    className="font-mono text-xs mt-1"
-                    style={{ color: "var(--deep-charcoal)", opacity: 0.6 }}>
+                  <p className="font-mono text-xs mt-1 text-deep-charcoal opacity-60">
                     {mostCenteredPark.district}. Bezirk · Zentrum aller Parks
                   </p>
                 </div>
@@ -913,132 +640,86 @@ const StatisticsPage = () => {
           </div>
 
           {/* Size Extremes */}
-          <div
-            className="p-6 border"
-            style={{
-              backgroundColor: "var(--card-bg)",
-              borderColor: "var(--border-color)",
-            }}>
+          <div className="p-6 border bg-card-bg border-border-color">
             <div className="flex items-center gap-2 mb-6">
-              <Ruler
-                className="w-6 h-6"
-                style={{ color: "var(--primary-green)" }}
-              />
-              <h2
-                className="font-serif text-2xl"
-                style={{ color: "var(--primary-green)", fontStyle: "italic" }}>
+              <Ruler className="w-6 h-6 text-primary-green" />
+              <h2 className="font-serif text-2xl text-primary-green italic">
                 Größe
               </h2>
             </div>
             <div className="space-y-4">
-              <div
-                className="flex flex-col md:flex-row md:justify-between md:items-center py-3 border-b gap-2"
-                style={{ borderColor: "var(--border-color)" }}>
+              <div className="flex flex-col md:flex-row md:justify-between md:items-center py-3 border-b gap-2 border-border-color">
                 <div className="flex-1">
-                  <p
-                    className="font-mono text-xs mb-1"
-                    style={{ color: "var(--accent-gold)" }}>
-                    GRÖẞTER PARK
+                  <p className="font-mono text-xs mb-1 text-accent-gold">
+                    GRÖßTER PARK
                   </p>
                   <Link
                     to={`/index/${slugifyParkName(largestPark.name)}`}
-                    className="font-serif text-lg hover:underline"
-                    style={{ color: "var(--primary-green)" }}>
+                    className="font-serif text-lg hover:underline text-primary-green">
                     {largestPark.name}
                   </Link>
-                  <p
-                    className="font-mono text-xs mt-1"
-                    style={{ color: "var(--deep-charcoal)", opacity: 0.6 }}>
+                  <p className="font-mono text-xs mt-1 text-deep-charcoal opacity-60">
                     {largestPark.district}. Bezirk
                   </p>
                 </div>
-                <span
-                  className="font-serif text-lg italic md:ml-4"
-                  style={{ color: "var(--primary-green)" }}>
+                <span className="font-serif text-lg italic md:ml-4 text-primary-green">
                   {formatArea(largestPark.area)}
                 </span>
               </div>
 
-              <div
-                className="flex flex-col md:flex-row md:justify-between md:items-center py-3 border-b gap-2"
-                style={{ borderColor: "var(--border-color)" }}>
+              <div className="flex flex-col md:flex-row md:justify-between md:items-center py-3 border-b gap-2 border-border-color">
                 <div className="flex-1">
-                  <p
-                    className="font-mono text-xs mb-1"
-                    style={{ color: "var(--accent-gold)" }}>
+                  <p className="font-mono text-xs mb-1 text-accent-gold">
                     DURCHSCHNITTSPARK
                   </p>
                   <Link
                     to={`/index/${slugifyParkName(closestToAveragePark.name)}`}
-                    className="font-serif text-lg hover:underline"
-                    style={{ color: "var(--primary-green)" }}>
+                    className="font-serif text-lg hover:underline text-primary-green">
                     {closestToAveragePark.name}
                   </Link>
-                  <p
-                    className="font-mono text-xs mt-1"
-                    style={{ color: "var(--deep-charcoal)", opacity: 0.6 }}>
+                  <p className="font-mono text-xs mt-1 text-deep-charcoal opacity-60">
                     {closestToAveragePark.district}. Bezirk · Ø {formatArea(averageParkSize)}
                   </p>
                 </div>
-                <span
-                  className="font-serif text-lg italic md:ml-4"
-                  style={{ color: "var(--primary-green)" }}>
+                <span className="font-serif text-lg italic md:ml-4 text-primary-green">
                   {formatArea(closestToAveragePark.area)}
                 </span>
               </div>
 
-              <div
-                className="flex flex-col md:flex-row md:justify-between md:items-center py-3 border-b gap-2"
-                style={{ borderColor: "var(--border-color)" }}>
+              <div className="flex flex-col md:flex-row md:justify-between md:items-center py-3 border-b gap-2 border-border-color">
                 <div className="flex-1">
-                  <p
-                    className="font-mono text-xs mb-1"
-                    style={{ color: "var(--accent-gold)" }}>
+                  <p className="font-mono text-xs mb-1 text-accent-gold">
                     MEDIAN PARK
                   </p>
                   <Link
                     to={`/index/${slugifyParkName(medianPark.name)}`}
-                    className="font-serif text-lg hover:underline"
-                    style={{ color: "var(--primary-green)" }}>
+                    className="font-serif text-lg hover:underline text-primary-green">
                     {medianPark.name}
                   </Link>
-                  <p
-                    className="font-mono text-xs mt-1"
-                    style={{ color: "var(--deep-charcoal)", opacity: 0.6 }}>
+                  <p className="font-mono text-xs mt-1 text-deep-charcoal opacity-60">
                     {medianPark.district}. Bezirk
                   </p>
                 </div>
-                <span
-                  className="font-serif text-lg italic md:ml-4"
-                  style={{ color: "var(--primary-green)" }}>
+                <span className="font-serif text-lg italic md:ml-4 text-primary-green">
                   {formatArea(medianPark.area)}
                 </span>
               </div>
 
-              <div
-                className="flex flex-col md:flex-row md:justify-between md:items-center py-3 border-b gap-2"
-                style={{ borderColor: "var(--border-color)" }}>
+              <div className="flex flex-col md:flex-row md:justify-between md:items-center py-3 border-b gap-2 border-border-color">
                 <div className="flex-1">
-                  <p
-                    className="font-mono text-xs mb-1"
-                    style={{ color: "var(--accent-gold)" }}>
+                  <p className="font-mono text-xs mb-1 text-accent-gold">
                     KLEINSTER PARK
                   </p>
                   <Link
                     to={`/index/${slugifyParkName(smallestPark.name)}`}
-                    className="font-serif text-lg hover:underline"
-                    style={{ color: "var(--primary-green)" }}>
+                    className="font-serif text-lg hover:underline text-primary-green">
                     {smallestPark.name}
                   </Link>
-                  <p
-                    className="font-mono text-xs mt-1"
-                    style={{ color: "var(--deep-charcoal)", opacity: 0.6 }}>
+                  <p className="font-mono text-xs mt-1 text-deep-charcoal opacity-60">
                     {smallestPark.district}. Bezirk
                   </p>
                 </div>
-                <span
-                  className="font-serif text-lg italic md:ml-4"
-                  style={{ color: "var(--primary-green)" }}>
+                <span className="font-serif text-lg italic md:ml-4 text-primary-green">
                   {formatArea(smallestPark.area)}
                 </span>
               </div>
@@ -1047,15 +728,8 @@ const StatisticsPage = () => {
         </div>
 
         {/* All Districts Table */}
-        <div
-          className="mt-12 p-6 border"
-          style={{
-            backgroundColor: "var(--card-bg)",
-            borderColor: "var(--border-color)",
-          }}>
-          <h2
-            className="font-serif text-2xl mb-6"
-            style={{ color: "var(--primary-green)", fontStyle: "italic" }}>
+        <div className="mt-12 p-6 border bg-card-bg border-border-color">
+          <h2 className="font-serif text-2xl mb-6 text-primary-green italic">
             Alle Bezirke im Überblick
           </h2>
           
@@ -1063,33 +737,21 @@ const StatisticsPage = () => {
           <div className="hidden md:block overflow-x-auto">
             <table className="w-full">
               <thead>
-                <tr
-                  className="border-b-2"
-                  style={{ borderColor: "var(--primary-green)" }}>
-                  <th
-                    className="text-left py-3 px-2 font-mono text-xs"
-                    style={{ color: "var(--primary-green)" }}>
+                <tr className="border-b-2 border-primary-green">
+                  <th className="text-left py-3 px-2 font-mono text-xs text-primary-green">
                     BEZIRK
                   </th>
-                  <th
-                    className="text-right py-3 px-2 font-mono text-xs"
-                    style={{ color: "var(--primary-green)" }}>
+                  <th className="text-right py-3 px-2 font-mono text-xs text-primary-green">
                     PARKS
                   </th>
-                  <th
-                    className="text-right py-3 px-2 font-mono text-xs"
-                    style={{ color: "var(--primary-green)" }}>
+                  <th className="text-right py-3 px-2 font-mono text-xs text-primary-green">
                     FLÄCHE
                   </th>
-                  <th
-                    className="text-right py-3 px-2 font-mono text-xs"
-                    style={{ color: "var(--primary-green)" }}>
+                  <th className="text-right py-3 px-2 font-mono text-xs text-primary-green">
                     ANTEIL
                   </th>
-                  <th
-                    className="text-right py-3 px-2 font-mono text-xs"
-                    style={{ color: "var(--primary-green)" }}>
-                    Ø GRÖẞE
+                  <th className="text-right py-3 px-2 font-mono text-xs text-primary-green">
+                    Ø GRÖßE
                   </th>
                 </tr>
               </thead>
@@ -1099,31 +761,20 @@ const StatisticsPage = () => {
                   .map((stat) => (
                     <tr
                       key={stat.district}
-                      className="border-b hover:bg-opacity-50"
-                      style={{ borderColor: "var(--border-color)" }}>
-                      <td
-                        className="py-3 px-2 font-serif"
-                        style={{ color: "var(--primary-green)" }}>
+                      className="border-b hover:bg-opacity-50 border-border-color">
+                      <td className="py-3 px-2 font-serif text-primary-green">
                         {stat.district}. Bezirk
                       </td>
-                      <td
-                        className="text-right py-3 px-2 font-mono text-sm"
-                        style={{ color: "var(--deep-charcoal)" }}>
+                      <td className="text-right py-3 px-2 font-mono text-sm text-deep-charcoal">
                         {stat.parkCount}
                       </td>
-                      <td
-                        className="text-right py-3 px-2 font-mono text-sm"
-                        style={{ color: "var(--deep-charcoal)" }}>
+                      <td className="text-right py-3 px-2 font-mono text-sm text-deep-charcoal">
                         {formatArea(stat.totalArea)}
                       </td>
-                      <td
-                        className="text-right py-3 px-2 font-mono text-sm italic"
-                        style={{ color: "var(--primary-green)" }}>
+                      <td className="text-right py-3 px-2 font-mono text-sm italic text-primary-green">
                         {stat.percentage.toFixed(2)}%
                       </td>
-                      <td
-                        className="text-right py-3 px-2 font-mono text-sm"
-                        style={{ color: "var(--deep-charcoal)", opacity: 0.7 }}>
+                      <td className="text-right py-3 px-2 font-mono text-sm text-deep-charcoal opacity-70">
                         {formatArea(stat.avgParkSize)}
                       </td>
                     </tr>
@@ -1139,68 +790,46 @@ const StatisticsPage = () => {
               .map((stat) => (
                 <div
                   key={stat.district}
-                  className="p-4 border"
-                  style={{
-                    backgroundColor: "var(--light-sage)",
-                    borderColor: "var(--border-color)",
-                  }}>
+                  className="p-4 border bg-light-sage border-border-color">
                   <div className="mb-3">
-                    <p
-                      className="font-serif text-xl"
-                      style={{ color: "var(--primary-green)" }}>
+                    <p className="font-serif text-xl text-primary-green">
                       {stat.district}. Bezirk
                     </p>
                   </div>
                   
                   <div className="space-y-2">
                     <div className="flex justify-between items-center">
-                      <span
-                        className="font-mono text-xs"
-                        style={{ color: "var(--primary-green)" }}>
+                      <span className="font-mono text-xs text-primary-green">
                         PARKS
                       </span>
-                      <span
-                        className="font-mono text-sm"
-                        style={{ color: "var(--deep-charcoal)" }}>
+                      <span className="font-mono text-sm text-deep-charcoal">
                         {stat.parkCount}
                       </span>
                     </div>
                     
                     <div className="flex justify-between items-center">
-                      <span
-                        className="font-mono text-xs"
-                        style={{ color: "var(--primary-green)" }}>
+                      <span className="font-mono text-xs text-primary-green">
                         FLÄCHE
                       </span>
-                      <span
-                        className="font-mono text-sm"
-                        style={{ color: "var(--deep-charcoal)" }}>
+                      <span className="font-mono text-sm text-deep-charcoal">
                         {formatArea(stat.totalArea)}
                       </span>
                     </div>
                     
                     <div className="flex justify-between items-center">
-                      <span
-                        className="font-mono text-xs"
-                        style={{ color: "var(--primary-green)" }}>
+                      <span className="font-mono text-xs text-primary-green">
                         ANTEIL
                       </span>
-                      <span
-                        className="font-mono text-sm italic"
-                        style={{ color: "var(--primary-green)" }}>
+                      <span className="font-mono text-sm italic text-primary-green">
                         {stat.percentage.toFixed(2)}%
                       </span>
                     </div>
                     
                     <div className="flex justify-between items-center">
-                      <span
-                        className="font-mono text-xs"
-                        style={{ color: "var(--primary-green)" }}>
-                        Ø GRÖẞE
+                      <span className="font-mono text-xs text-primary-green">
+                        Ø GRÖßE
                       </span>
-                      <span
-                        className="font-mono text-sm"
-                        style={{ color: "var(--deep-charcoal)", opacity: 0.7 }}>
+                      <span className="font-mono text-sm text-deep-charcoal opacity-70">
                         {formatArea(stat.avgParkSize)}
                       </span>
                     </div>

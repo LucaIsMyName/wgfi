@@ -18,10 +18,7 @@ const IdeaPage: React.FC = () => {
   };
 
   return (
-    <div
-      className="min-h-screen px-4 lg:px-6 py-6"
-      style={{ background: "var(--main-bg)" }}
-    >
+    <div className="min-h-screen px-4 lg:px-6 py-6 bg-main-bg">
       <Helmet>
         <title>Wiener Grünflächen Index | Über das Projekt</title>
         <meta
@@ -32,36 +29,17 @@ const IdeaPage: React.FC = () => {
 
       {/* Header */}
       <div className="w-full">
-        <h1
-          className={`${STYLE.pageTitle(false)} mb-4`}
-          style={{
-            color: "var(--primary-green)",
-            fontWeight: "400",
-            fontStyle: "italic",
-          }}
-        >
+        <h1 className={`${STYLE.pageTitle(false)} mb-4 text-primary-green font-normal italic`}>
           Die Idee
         </h1>
       </div>
 
       {/* Beta Notice */}
       <div className="max-w-3xl mb-8">
-        <div
-          className="p-4 border-2 flex gap-3"
-          style={{
-            backgroundColor: "var(--card-bg)",
-            borderColor: "var(--accent-gold)",
-          }}
-        >
-          <AlertTriangle
-            className="w-5 h-5 flex-shrink-0 mt-0.5"
-            style={{ color: "var(--accent-gold)" }}
-          />
-          <div
-            className="font-serif space-y-2"
-            style={{ color: "var(--deep-charcoal)" }}
-          >
-            <p className="font-bold" style={{ color: "var(--accent-gold)" }}>
+        <div className="p-4 border-2 flex gap-3 bg-card-bg border-accent-gold">
+          <AlertTriangle className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent-gold" />
+          <div className="font-serif space-y-2 text-deep-charcoal">
+            <p className="font-bold text-accent-gold">
               BETA Version
             </p>
             <p className="text-sm leading-relaxed">
@@ -73,8 +51,7 @@ const IdeaPage: React.FC = () => {
                 href="https://github.com/LucaIsMyName/wgfi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline"
-                style={{ color: "var(--primary-green)" }}
+                className="underline text-primary-green"
               >
                 GitHub
               </a>{" "}
@@ -132,31 +109,17 @@ const IdeaPage: React.FC = () => {
           </section>
 
           {/* Data Sources */}
-          <section
-            className=""
-            style={{ backgroundColor: "var(--card-bg)", borderRadius: "8px" }}
-          >
-            <h2
-              className="font-serif italic text-xl mb-4"
-              style={{ color: "var(--primary-green)", fontWeight: "500" }}
-            >
+          <section className="bg-card-bg rounded-lg">
+            <h2 className="font-serif italic text-xl mb-4 text-primary-green font-medium">
               Woher kommen die Daten?
             </h2>
-            <div
-              className="font-serif space-y-4"
-              style={{
-                color: "var(--deep-charcoal)",
-                fontWeight: "400",
-                lineHeight: "1.6",
-              }}
-            >
+            <div className="font-serif space-y-4 text-deep-charcoal font-normal leading-relaxed">
               <p>
                 Alle Parkdaten stammen direkt von der Bundesrepublik Österreich
                 über deren offene Datenplattform (
                 <a
                   href="https://data.gv.at"
-                  className="underline"
-                  style={{ color: "var(--primary-green)" }}
+                  className="underline text-primary-green"
                 >
                   https://data.wien.gv.at
                 </a>
@@ -168,8 +131,7 @@ const IdeaPage: React.FC = () => {
                 <a
                   href="https://data.gv.at/datasets/22add642-d849-48ff-9913-8c7ba2d99b46?locale=de"
                   target="_blank"
-                  className="underline"
-                  style={{ color: "var(--primary-green)" }}
+                  className="underline text-primary-green"
                 >
                   Datenbank der Stadt Wien
                 </a>{" "}
@@ -198,30 +160,14 @@ const IdeaPage: React.FC = () => {
           </section>
 
           {/* Features in Detail */}
-          <section
-            className=""
-            style={{ backgroundColor: "var(--card-bg)", borderRadius: "8px" }}
-          >
-            <h2
-              className="font-serif italic text-xl mb-4"
-              style={{ color: "var(--primary-green)", fontWeight: "500" }}
-            >
+          <section className="bg-card-bg rounded-lg">
+            <h2 className="font-serif italic text-xl mb-4 text-primary-green font-medium">
               Was macht diese Website so alles?
             </h2>
-            <div
-              className="font-serif space-y-4"
-              style={{
-                color: "var(--deep-charcoal)",
-                fontWeight: "400",
-                lineHeight: "1.6",
-              }}
-            >
+            <div className="font-serif space-y-4 text-deep-charcoal font-normal leading-relaxed">
               <div className="space-y-6">
                 <div>
-                  <h3
-                    className="font-serif text-lg mb-2"
-                    style={{ color: "var(--primary-green)" }}
-                  >
+                  <h3 className="font-serif text-lg mb-2 text-primary-green">
                     Parksuche und Filter
                   </h3>
                   <p>
@@ -232,10 +178,7 @@ const IdeaPage: React.FC = () => {
                 </div>
 
                 <div>
-                  <h3
-                    className="font-serif text-lg italic mb-2"
-                    style={{ color: "var(--primary-green)" }}
-                  >
+                  <h3 className="font-serif text-lg italic mb-2 text-primary-green">
                     Detaillierte Parkinformationen
                   </h3>
                   <p>
@@ -246,10 +189,7 @@ const IdeaPage: React.FC = () => {
                 </div>
 
                 <div>
-                  <h3
-                    className="font-serif text-lg italic mb-2"
-                    style={{ color: "var(--primary-green)" }}
-                  >
+                  <h3 className="font-serif text-lg italic mb-2 text-primary-green">
                     Interaktive Karte
                   </h3>
                   <p>
@@ -260,10 +200,7 @@ const IdeaPage: React.FC = () => {
                 </div>
 
                 <div>
-                  <h3
-                    className="font-serif text-lg italic mb-2"
-                    style={{ color: "var(--primary-green)" }}
-                  >
+                  <h3 className="font-serif text-lg italic mb-2 text-primary-green">
                     Favoriten speichern
                   </h3>
                   <p>
@@ -275,10 +212,7 @@ const IdeaPage: React.FC = () => {
                 </div>
 
                 <div>
-                  <h3
-                    className="font-serif text-lg italic mb-2"
-                    style={{ color: "var(--primary-green)" }}
-                  >
+                  <h3 className="font-serif text-lg italic mb-2 text-primary-green">
                     Routenplanung
                   </h3>
                   <p>

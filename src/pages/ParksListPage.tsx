@@ -64,7 +64,7 @@ const ParksListPage = () => {
       <h1 className="sr-only">Index - Wiener Grünflächen</h1>
 
       {/* Main Content with Sidebar Layout */}
-      <div className="px-0 lg:px-0 flex-1 overflow-hidden" style={{ height: '100%' }}>
+      <div className="px-0 lg:px-0 flex-1 overflow-hidden h-full">
         <div className="flex flex-col lg:flex-row gap-4 h-full">
           {/* Desktop Sidebar for Search and Filters */}
           <ParksFilterSidebar
@@ -86,7 +86,7 @@ const ParksListPage = () => {
           />
 
           {/* Parks List - Virtualized */}
-          <div className="flex-1 overflow-hidden" style={{ height: '100%' }}>
+          <div className="flex-1 overflow-hidden h-full">
             <ParksList
               parks={filteredAndSortedParks}
               onToggleFavorite={handleToggleFavorite}
