@@ -120,7 +120,7 @@ const HomePage: React.FC = () => {
           <div className="max-w-2xl">
             <p
               className="font-serif italic text-lg sm:text-3xl leading-tight text-balance"
-              style={{ color: "var(--deep-charcoal)", fontWeight: "400" }}
+              style={{ color: "var(--primary-green)", fontWeight: "400" }}
             >
               Eine Liste aller Parks & Grünflächen der Stadt Wien als Liste oder
               Karte.

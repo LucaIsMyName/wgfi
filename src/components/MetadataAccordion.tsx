@@ -2,6 +2,7 @@ import * as Accordion from "@radix-ui/react-accordion";
 import { ChevronDown, Database } from "lucide-react";
 import { useAccordionState } from "../hooks/useAccordionState";
 import type { Park } from "../types/park";
+import { Link } from "react-router-dom";
 
 interface MetadataAccordionProps {
   park: Park;
@@ -14,15 +15,15 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
     return (
       <div style={{ outline: "1px solid var(--border-color)" }} className="p-3">
         <Accordion.Root type="multiple" value={value} onValueChange={setValue}>
-          <Accordion.Item value="details">
+          <Accordion.Item value="rawData">
             <Accordion.Header>
               <Accordion.Trigger
                 className="w-full flex items-center justify-between font-mono text-xs group"
                 style={{ color: "var(--primary-green)" }}
               >
                 <span className="flex items-center gap-2">
-                  <Database className="w-4 h-4" />
-                  DETAILS
+                  <Database className="w-3.5 h-3.5" />
+                  Rohdaten
                 </span>
                 <ChevronDown
                   className="w-4 h-4 transition-transform duration-200 group-data-[state=open]:rotate-180"
@@ -37,7 +38,7 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
                   style={{ color: "var(--deep-charcoal)", opacity: 0.7 }}
                 >
                   Keine Rohdaten verfügbar. Dieser Park wurde manuell
-                  hinzugefügt.
+                  hinzugefügt. <Link className="underline" to="/idea">Mehr Informationen</Link>
                 </p>
               </div>
             </Accordion.Content>
@@ -68,15 +69,15 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
   return (
     <div style={{ outline: "1px solid var(--border-color)" }} className="p-3">
       <Accordion.Root type="multiple" value={value} onValueChange={setValue}>
-        <Accordion.Item value="details">
+        <Accordion.Item value="rawData">
           <Accordion.Header>
             <Accordion.Trigger
               className="w-full flex items-center justify-between font-mono text-xs group"
               style={{ color: "var(--primary-green)" }}
             >
               <span className="flex items-center gap-2">
-                <Database className="w-4 h-4" />
-                DETAILS
+                <Database className="w-3.5 h-3.5" />
+                Rohdaten
               </span>
               <ChevronDown
                 className="w-4 h-4 transition-transform duration-200 group-data-[state=open]:rotate-180"
