@@ -123,23 +123,47 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
       }
     }
     body {
-      font-family: 'Georgia', serif;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    }
+    /* Mobile optimizations */
+    @media (max-width: 640px) {
+      body {
+        padding: 1rem !important;
+      }
+      .container {
+        padding: 1rem !important;
+      }
+      h1 {
+        font-size: 1.875rem !important;
+      }
+      h2 {
+        font-size: 1.5rem !important;
+      }
+      .grid-cols-2 {
+        grid-template-columns: 1fr !important;
+      }
+      table {
+        font-size: 0.75rem !important;
+      }
+      th, td {
+        padding: 0.5rem !important;
+      }
     }
   </style>
 </head>
-<body class="bg-gray-50 p-8">
-  <div class="max-w-4xl mx-auto bg-white shadow-lg p-8">
+<body class="bg-gray-50 p-4 sm:p-8">
+  <div class="max-w-4xl mx-auto bg-white shadow-lg p-4 sm:p-8">
     <!-- Header -->
-    <header class="mb-8 pb-6 border-b-2 border-gray-300">
-      <h1 class="text-4xl font-bold text-green-800 mb-2">${park.name}</h1>
-      <p class="text-lg text-gray-700">${park.address}</p>
+    <header class="mb-6 sm:mb-8 pb-4 sm:pb-6 border-b-2 border-gray-300">
+      <h1 class="text-2xl sm:text-4xl font-bold text-green-800 mb-2">${park.name}</h1>
+      <p class="text-base sm:text-lg text-gray-700">${park.address}</p>
       <p class="text-sm text-gray-600">${park.district}. Bezirk, Wien</p>
     </header>
 
     <!-- Park Information -->
-    <section class="mb-8">
-      <h2 class="text-2xl font-bold text-green-700 mb-4">Informationen</h2>
-      <div class="grid grid-cols-2 gap-4">
+    <section class="mb-6 sm:mb-8">
+      <h2 class="text-xl sm:text-2xl font-bold text-green-700 mb-3 sm:mb-4">Informationen</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
         <div>
           <p class="text-sm font-semibold text-gray-600">Fläche</p>
           <p class="text-lg">${park.area.toLocaleString()} m²</p>
@@ -158,58 +182,58 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
         </div>
       </div>
       ${park.description ? `
-      <div class="mt-4">
+      <div class="mt-3 sm:mt-4">
         <p class="text-sm font-semibold text-gray-600">Beschreibung</p>
-        <p class="text-base leading-relaxed">${park.description}</p>
+        <p class="text-sm sm:text-base leading-relaxed">${park.description}</p>
       </div>
       ` : ''}
     </section>
 
     <!-- Map -->
-    <section class="mb-8">
-      <h2 class="text-2xl font-bold text-green-700 mb-4">Lage & Karte</h2>
-      <img src="${staticMapUrl}" alt="Karte von ${park.name}" class="w-full border border-gray-300" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-      <div style="display:none;" class="p-4 bg-gray-100 border border-gray-300">
-        <p class="text-sm">Koordinaten: ${park.coordinates.lat.toFixed(6)}, ${park.coordinates.lng.toFixed(6)}</p>
+    <section class="mb-6 sm:mb-8">
+      <h2 class="text-xl sm:text-2xl font-bold text-green-700 mb-3 sm:mb-4">Lage & Karte</h2>
+      <img src="${staticMapUrl}" alt="Karte von ${park.name}" class="w-full border border-gray-300 rounded" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+      <div style="display:none;" class="p-3 sm:p-4 bg-gray-100 border border-gray-300 rounded">
+        <p class="text-xs sm:text-sm">Koordinaten: ${park.coordinates.lat.toFixed(6)}, ${park.coordinates.lng.toFixed(6)}</p>
       </div>
     </section>
 
     <!-- Amenities -->
     ${park.amenities && park.amenities.length > 0 ? `
-    <section class="mb-8">
-      <h2 class="text-2xl font-bold text-green-700 mb-4">Ausstattung</h2>
+    <section class="mb-6 sm:mb-8">
+      <h2 class="text-xl sm:text-2xl font-bold text-green-700 mb-3 sm:mb-4">Ausstattung</h2>
       <div class="flex flex-wrap gap-2">
-        ${park.amenities.map(amenity => `<span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded">${amenity}</span>`).join('')}
+        ${park.amenities.map(amenity => `<span class="px-2 sm:px-3 py-1 bg-green-100 text-green-800 text-xs sm:text-sm rounded">${amenity}</span>`).join('')}
       </div>
     </section>
     ` : ''}
 
     <!-- Public Transport -->
     ${park.publicTransport && park.publicTransport.length > 0 ? `
-    <section class="mb-8">
-      <h2 class="text-2xl font-bold text-green-700 mb-4">Öffentliche Verkehrsmittel</h2>
-      <ul class="list-disc list-inside">
-        ${park.publicTransport.map(transport => `<li>${transport}</li>`).join('')}
+    <section class="mb-6 sm:mb-8">
+      <h2 class="text-xl sm:text-2xl font-bold text-green-700 mb-3 sm:mb-4">Öffentliche Verkehrsmittel</h2>
+      <ul class="list-disc list-inside text-sm sm:text-base">
+        ${park.publicTransport.map(transport => `<li class="mb-1">${transport}</li>`).join('')}
       </ul>
     </section>
     ` : ''}
 
     <!-- Complete Data Table -->
-    <section class="mb-8 print-break-before">
-      <h2 class="text-2xl font-bold text-green-700 mb-4">Vollständige Daten</h2>
-      <div class="overflow-x-auto">
+    <section class="mb-6 sm:mb-8 print-break-before">
+      <h2 class="text-xl sm:text-2xl font-bold text-green-700 mb-3 sm:mb-4">Vollständige Daten</h2>
+      <div class="overflow-x-auto -mx-4 sm:mx-0">
         <table class="w-full border-collapse border border-gray-300">
           <thead>
             <tr class="bg-green-100">
-              <th class="border border-gray-300 px-4 py-2 text-left text-sm font-semibold">Feld</th>
-              <th class="border border-gray-300 px-4 py-2 text-left text-sm font-semibold">Wert</th>
+              <th class="border border-gray-300 px-2 sm:px-4 py-2 text-left text-xs sm:text-sm font-semibold">Feld</th>
+              <th class="border border-gray-300 px-2 sm:px-4 py-2 text-left text-xs sm:text-sm font-semibold">Wert</th>
             </tr>
           </thead>
           <tbody>
             ${allFields.map(({ key, value }) => `
             <tr>
-              <td class="border border-gray-300 px-4 py-2 text-sm font-mono align-top">${key}</td>
-              <td class="border border-gray-300 px-4 py-2 text-sm break-words align-top">${formatValue(value).replace(/</g, '&lt;').replace(/>/g, '&gt;')}</td>
+              <td class="border border-gray-300 px-2 sm:px-4 py-2 text-xs sm:text-sm font-mono align-top">${key}</td>
+              <td class="border border-gray-300 px-2 sm:px-4 py-2 text-xs sm:text-sm break-words align-top">${formatValue(value).replace(/</g, '&lt;').replace(/>/g, '&gt;')}</td>
             </tr>
             `).join('')}
           </tbody>
@@ -218,12 +242,12 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
     </section>
 
     <!-- Footer -->
-    <footer class="mt-8 pt-6 border-t-2 border-gray-300 text-sm text-gray-600">
-      <p><strong>Quelle:</strong> Stadt Wien - Open Data Portal</p>
-      <p><strong>Dataset:</strong> ogdwien:PARKINFOOGD</p>
-      <p><strong>Lizenz:</strong> Creative Commons Namensnennung 4.0 International (CC BY 4.0)</p>
-      <p><strong>Generiert:</strong> ${new Date().toLocaleString('de-AT')}</p>
-      <p class="mt-2"><strong>Wiener Grünflächen Index</strong> - Eine Übersicht aller Parks & Grünflächen der Stadt Wien</p>
+    <footer class="mt-6 sm:mt-8 pt-4 sm:pt-6 border-t-2 border-gray-300 text-xs sm:text-sm text-gray-600">
+      <p class="mb-1"><strong>Quelle:</strong> Stadt Wien - Open Data Portal</p>
+      <p class="mb-1"><strong>Dataset:</strong> ogdwien:PARKINFOOGD</p>
+      <p class="mb-1"><strong>Lizenz:</strong> Creative Commons Namensnennung 4.0 International (CC BY 4.0)</p>
+      <p class="mb-1"><strong>Generiert:</strong> ${new Date().toLocaleString('de-AT')}</p>
+      <p class="mt-2 sm:mt-3"><strong>Wiener Grünflächen Index</strong> - Eine Übersicht aller Parks & Grünflächen der Stadt Wien</p>
     </footer>
   </div>
 </body>
