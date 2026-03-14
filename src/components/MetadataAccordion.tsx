@@ -17,6 +17,11 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
       return "—";
     }
     if (Array.isArray(value)) {
+      // Check if array contains objects
+      if (value.length > 0 && typeof value[0] === 'object') {
+        return JSON.stringify(value, null, 2);
+      }
+      // Simple array of primitives
       return value.join(", ");
     }
     if (typeof value === "object") {
@@ -256,64 +261,6 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
     const filename = `${sanitizeFilename(park.name)}.html`;
     downloadFile(html, filename, 'text/html');
   };
-
-  if (!park.rawMetadata) {
-    return (
-      <div style={{ outline: "1px solid var(--border-color)" }} className="p-3">
-        <Accordion.Root type="multiple" value={value} onValueChange={setValue}>
-          <Accordion.Item value="rawData">
-            <Accordion.Header>
-              <Accordion.Trigger
-                className="w-full flex items-center justify-between font-mono text-xs group"
-                style={{ color: "var(--primary-green)" }}
-              >
-                <span className="flex items-center gap-2">
-                  <Database className="w-3.5 h-3.5" />
-                  Rohdaten
-                  <button
-                    onClick={exportAsJSON}
-                    className="ml-2 hover:opacity-70"
-                    title="Als JSON exportieren"
-                  >
-                    <FileJson className="w-3.5 h-3.5" />
-                  </button>
-                  <button
-                    onClick={exportAsCSV}
-                    className="hover:opacity-70"
-                    title="Als CSV exportieren"
-                  >
-                    <FileDown className="w-3.5 h-3.5" />
-                  </button>
-                  <button
-                    onClick={exportAsHTML}
-                    className="hover:opacity-70"
-                    title="Als HTML exportieren"
-                  >
-                    <FileCode className="w-3.5 h-3.5" />
-                  </button>
-                </span>
-                <ChevronDown
-                  className="w-4 h-4 transition-transform duration-200 group-data-[state=open]:rotate-180"
-                  aria-hidden
-                />
-              </Accordion.Trigger>
-            </Accordion.Header>
-            <Accordion.Content className="overflow-hidden data-[state=open]:animate-accordion-down data-[state=closed]:animate-accordion-up">
-              <div className="pt-2">
-                <p
-                  className="font-serif italic text-sm"
-                  style={{ color: "var(--deep-charcoal)", opacity: 0.7 }}
-                >
-                  Keine Rohdaten verfügbar. Dieser Park wurde manuell
-                  hinzugefügt. <Link className="underline" to="/idea">Mehr Informationen</Link>
-                </p>
-              </div>
-            </Accordion.Content>
-          </Accordion.Item>
-        </Accordion.Root>
-      </div>
-    );
-  }
 
   return (
     <div style={{ outline: "1px solid var(--border-color)" }} className="p-3">
