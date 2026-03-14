@@ -219,7 +219,9 @@ function transformViennaPark(viennaPark, manualParksData) {
     phone: props.TELEFON || '',
     accessibility: manualData?.accessibility || 'Barrierefreiheit nicht spezifiziert',
     publicTransport: mergedPublicTransport,
-    tips: mergedTips
+    tips: mergedTips,
+    // Preserve all raw API metadata for transparency
+    rawMetadata: props
   };
   
   if (manualData?.districtAreaSplit) {

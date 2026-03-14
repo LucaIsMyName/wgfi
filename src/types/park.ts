@@ -43,6 +43,12 @@ export interface Park {
    * Example: { 13: 10, 14: 35, 16: 5 } means 10% in district 13, 35% in district 14, etc.
    */
   districtAreaSplit?: Record<number, number>;
+  /**
+   * Raw metadata from Vienna Open Data API.
+   * Contains all original API fields for transparency and data quality verification.
+   * Only available for parks fetched from the API (not manual-only parks).
+   */
+  rawMetadata?: Record<string, any>;
 }
 
 /**

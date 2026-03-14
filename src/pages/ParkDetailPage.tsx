@@ -16,6 +16,7 @@ import {
 import { getAmenityIcon } from "../utils/amenityIcons";
 import { isFavorite, toggleFavorite } from "../utils/favoritesManager";
 import ParkInfo from "../components/ParkInfo";
+import MetadataAccordion from "../components/MetadataAccordion";
 import mapboxgl from "mapbox-gl";
 import STYLE from "../utils/config";
 import { useTheme } from "../contexts/ThemeContext";
@@ -508,6 +509,11 @@ const ParkDetailPage: React.FC = () => {
               {isFavorited ? "Favorit" : "Favorit"}
             </button>
           </div>
+
+          {/* Metadata Accordion */}
+          <div style={{ backgroundColor: "var(--card-bg)" }}>
+            <MetadataAccordion park={park} />
+          </div>
         </div>
       </div>
 
@@ -664,6 +670,14 @@ const ParkDetailPage: React.FC = () => {
               style={{ backgroundColor: "var(--light-sage)" }}
             >
               <ParkInfo park={park} userLocation={userLocation} />
+            </div>
+
+            {/* Metadata Accordion - Mobile Only */}
+            <div
+              className="block lg:hidden"
+              style={{ backgroundColor: "var(--card-bg)" }}
+            >
+              <MetadataAccordion park={park} />
             </div>
 
             {/* Nearby Parks Section */}

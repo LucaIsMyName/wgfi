@@ -1,6 +1,6 @@
 /**
  * Auto-generated parks data - DO NOT EDIT MANUALLY
- * Generated at: 2026-03-14T05:26:31.031Z
+ * Generated at: 2026-03-14T05:47:47.134Z
  * Source: Vienna Open Data API
  * 
  * This file is generated during build time by scripts/generate-parks-data.js
@@ -33,7 +33,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524069,
+      "ANL_NAME": "PA Rädda-Barnen-Platz",
+      "BEZIRK": 10,
+      "FLAECHE": "908 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524070",
@@ -58,7 +71,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524070,
+      "ANL_NAME": "PA Endlichergasse",
+      "BEZIRK": 10,
+      "FLAECHE": "22.087 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524071",
@@ -84,7 +110,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524071,
+      "ANL_NAME": "PA Rudolfshügelgasse",
+      "BEZIRK": 10,
+      "FLAECHE": "3.301 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig+Spielplatz: 6:00-21:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524072",
@@ -111,7 +150,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524072,
+      "ANL_NAME": "Puchsbaumpark",
+      "BEZIRK": 10,
+      "FLAECHE": "5.704 m²",
+      "OEFF_ZEITEN": "Ballspielplatz 6:00-21:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524073",
@@ -137,7 +189,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524073,
+      "ANL_NAME": "PA Migerkastraße",
+      "BEZIRK": 10,
+      "FLAECHE": "554 m²",
+      "OEFF_ZEITEN": "06:00-21:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524074",
@@ -164,7 +229,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524074,
+      "ANL_NAME": "Martin-Luther-King-Park",
+      "BEZIRK": 10,
+      "FLAECHE": "14.552 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524075",
@@ -191,6 +269,19 @@ export const PARKS_DATA: Park[] = [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524075,
+      "ANL_NAME": "PA Löwygrube",
+      "BEZIRK": 10,
+      "FLAECHE": "228.478 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Wikipedia"
   },
   {
@@ -217,7 +308,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524076,
+      "ANL_NAME": "PA Haebergasse",
+      "BEZIRK": 12,
+      "FLAECHE": "2.172 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524077",
@@ -244,7 +348,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524077,
+      "ANL_NAME": "Anton-Krutisch-Park",
+      "BEZIRK": 12,
+      "FLAECHE": "2.560 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524078",
@@ -268,7 +385,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524078,
+      "ANL_NAME": "PA Andersengasse",
+      "BEZIRK": 12,
+      "FLAECHE": "901 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524079",
@@ -294,7 +424,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524079,
+      "ANL_NAME": "PA An den Eisteichen",
+      "BEZIRK": 12,
+      "FLAECHE": "8.807 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig:Okt-März:06:00-21:00, Apr-Sep:06:00-21:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524080",
@@ -318,7 +461,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524080,
+      "ANL_NAME": "PA Am Schöpfwerk",
+      "BEZIRK": 12,
+      "FLAECHE": "844 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524081",
@@ -342,7 +498,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524081,
+      "ANL_NAME": "PA Altmannsdorfer Anger",
+      "BEZIRK": 12,
+      "FLAECHE": "1.776 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524082",
@@ -367,7 +536,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524082,
+      "ANL_NAME": "PA Zehngrafweg",
+      "BEZIRK": 11,
+      "FLAECHE": "3.887 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524083",
@@ -394,7 +576,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524083,
+      "ANL_NAME": "Carsonypark",
+      "BEZIRK": 11,
+      "FLAECHE": "4.965 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524084",
@@ -418,7 +613,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524084,
+      "ANL_NAME": "PA Paul-Heyse-Gasse",
+      "BEZIRK": 11,
+      "FLAECHE": "3.236 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524085",
@@ -444,7 +652,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524085,
+      "ANL_NAME": "PA Simoningplatz",
+      "BEZIRK": 11,
+      "FLAECHE": "878 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524086",
@@ -469,7 +690,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524086,
+      "ANL_NAME": "PA Seeschlachtweg",
+      "BEZIRK": 11,
+      "FLAECHE": "3.256 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524087",
@@ -493,7 +727,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524087,
+      "ANL_NAME": "PA Herretweg",
+      "BEZIRK": 11,
+      "FLAECHE": "2.598 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524088",
@@ -519,7 +766,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524088,
+      "ANL_NAME": "PA Muhrhoferweg",
+      "BEZIRK": 11,
+      "FLAECHE": "7.157 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524089",
@@ -545,7 +805,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524089,
+      "ANL_NAME": "PA Mautner-Markhof-Gasse",
+      "BEZIRK": 11,
+      "FLAECHE": "12.248 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524090",
@@ -571,7 +844,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524090,
+      "ANL_NAME": "Hofgartel",
+      "BEZIRK": 11,
+      "FLAECHE": "19.604 m²",
+      "OEFF_ZEITEN": "6:00-20:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524091",
@@ -597,7 +883,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524091,
+      "ANL_NAME": "PA Krötzlergasse",
+      "BEZIRK": 11,
+      "FLAECHE": "924 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524092",
@@ -625,7 +924,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524092,
+      "ANL_NAME": "Hyblerpark",
+      "BEZIRK": 11,
+      "FLAECHE": "27.361 m²",
+      "OEFF_ZEITEN": "Hundezone:06:00-20:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524093",
@@ -649,7 +961,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524093,
+      "ANL_NAME": "PA Kobelgasse (Historischer Friedhof)",
+      "BEZIRK": 11,
+      "FLAECHE": "1.057 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524094",
@@ -676,7 +1001,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524094,
+      "ANL_NAME": "PA Haugerstraße",
+      "BEZIRK": 11,
+      "FLAECHE": "4.751 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig:06:00-20:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524095",
@@ -703,7 +1041,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524095,
+      "ANL_NAME": "Hans-Paulas-Park",
+      "BEZIRK": 11,
+      "FLAECHE": "10.199 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524096",
@@ -729,7 +1080,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524096,
+      "ANL_NAME": "PA Küniglberg",
+      "BEZIRK": 13,
+      "FLAECHE": "104.139 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524097",
@@ -754,7 +1118,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524097,
+      "ANL_NAME": "Dingelstedtpark",
+      "BEZIRK": 15,
+      "FLAECHE": "456 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524098",
@@ -779,7 +1156,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524098,
+      "ANL_NAME": "GA Eipeldauer Straße",
+      "BEZIRK": 22,
+      "FLAECHE": "1.066 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524099",
@@ -803,7 +1193,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524099,
+      "ANL_NAME": "GA Lili-Grün-Platz",
+      "BEZIRK": 2,
+      "FLAECHE": "603 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524100",
@@ -830,7 +1233,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524100,
+      "ANL_NAME": "Else-Feldmann-Park",
+      "BEZIRK": 2,
+      "FLAECHE": "3.438 m²",
+      "OEFF_ZEITEN": "6:00-21:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524101",
@@ -854,7 +1270,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524101,
+      "ANL_NAME": "PA Starkfriedgasse",
+      "BEZIRK": 19,
+      "FLAECHE": "2.206 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524102",
@@ -878,7 +1307,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524102,
+      "ANL_NAME": "GA Breitenleer Straße",
+      "BEZIRK": 22,
+      "FLAECHE": "1.736 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524103",
@@ -905,7 +1347,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524103,
+      "ANL_NAME": "Leon-Zelman-Park",
+      "BEZIRK": 3,
+      "FLAECHE": "12.207 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524104",
@@ -931,7 +1386,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524104,
+      "ANL_NAME": "PA Dreihausgasse",
+      "BEZIRK": 15,
+      "FLAECHE": "1.346 m²",
+      "OEFF_ZEITEN": "6:30-21:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524105",
@@ -959,7 +1427,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524105,
+      "ANL_NAME": "Dadlerpark",
+      "BEZIRK": 15,
+      "FLAECHE": "9.708 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig+Hundezone: 6:00-22:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524106",
@@ -986,7 +1467,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524106,
+      "ANL_NAME": "Braunhirschenpark",
+      "BEZIRK": 15,
+      "FLAECHE": "4.558 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig: Nov-März: 7:00-19:00, Apr-Okt: 7:00-21:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524107",
@@ -1012,7 +1506,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524107,
+      "ANL_NAME": "PA Ortliebgasse",
+      "BEZIRK": 17,
+      "FLAECHE": "4.485 m²",
+      "OEFF_ZEITEN": "7:00-19:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524108",
@@ -1038,7 +1545,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524108,
+      "ANL_NAME": "Moriz-Mayer-Park",
+      "BEZIRK": 17,
+      "FLAECHE": "2.661 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524109",
@@ -1065,7 +1585,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524109,
+      "ANL_NAME": "Lorenz-Bayer-Park",
+      "BEZIRK": 17,
+      "FLAECHE": "7.360 m²",
+      "OEFF_ZEITEN": "6:00-22:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524110",
@@ -1092,7 +1625,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524110,
+      "ANL_NAME": "Josef-Kaderka-Park",
+      "BEZIRK": 17,
+      "FLAECHE": "5.335 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524111",
@@ -1118,7 +1664,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524111,
+      "ANL_NAME": "PA Dr.-Josef-Resch-Platz",
+      "BEZIRK": 17,
+      "FLAECHE": "1.127 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524112",
@@ -1144,7 +1703,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524112,
+      "ANL_NAME": "Clemens-Krauss-Park",
+      "BEZIRK": 17,
+      "FLAECHE": "4.695 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524113",
@@ -1170,7 +1742,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524113,
+      "ANL_NAME": "PA Clemens-Hofbauer-Platz",
+      "BEZIRK": 17,
+      "FLAECHE": "4.994 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524114",
@@ -1196,7 +1781,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524114,
+      "ANL_NAME": "PA Altes AKH",
+      "BEZIRK": 9,
+      "FLAECHE": "11.887 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524115",
@@ -1224,7 +1822,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524115,
+      "ANL_NAME": "Ölzeltpark",
+      "BEZIRK": 23,
+      "FLAECHE": "10.789 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524116",
@@ -1249,7 +1860,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524116,
+      "ANL_NAME": "PA Wilhelm-Erben-Gasse",
+      "BEZIRK": 23,
+      "FLAECHE": "24.759 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524117",
@@ -1274,6 +1898,19 @@ export const PARKS_DATA: Park[] = [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524117,
+      "ANL_NAME": "Prater - Forstwiesen-Süd",
+      "BEZIRK": 2,
+      "FLAECHE": "38.846 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Wikipedia"
   },
   {
@@ -1300,7 +1937,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524118,
+      "ANL_NAME": "PA Tullnertalgasse",
+      "BEZIRK": 23,
+      "FLAECHE": "10.360 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524119",
@@ -1326,7 +1976,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524119,
+      "ANL_NAME": "PA Theophil-Hansen-Gasse",
+      "BEZIRK": 23,
+      "FLAECHE": "7.440 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524120",
@@ -1352,7 +2015,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524120,
+      "ANL_NAME": "PA Steinergasse",
+      "BEZIRK": 23,
+      "FLAECHE": "7.495 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524121",
@@ -1377,7 +2053,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524121,
+      "ANL_NAME": "Maurer Schubertpark",
+      "BEZIRK": 23,
+      "FLAECHE": "440 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524122",
@@ -1404,7 +2093,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524122,
+      "ANL_NAME": "Inzersdorfer Schubertpark",
+      "BEZIRK": 23,
+      "FLAECHE": "3.596 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524123",
@@ -1428,7 +2130,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524123,
+      "ANL_NAME": "PA Meisgeyergasse",
+      "BEZIRK": 23,
+      "FLAECHE": "3.006 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524124",
@@ -1455,7 +2170,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524124,
+      "ANL_NAME": "Hedy-Wunsch-Park",
+      "BEZIRK": 23,
+      "FLAECHE": "9.127 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524125",
@@ -1479,7 +2207,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524125,
+      "ANL_NAME": "PA Panoramaweg",
+      "BEZIRK": 11,
+      "FLAECHE": "5.099 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524126",
@@ -1503,7 +2244,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524126,
+      "ANL_NAME": "PA Rodauner Kirchenplatz",
+      "BEZIRK": 23,
+      "FLAECHE": "2.623 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524127",
@@ -1527,7 +2281,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524127,
+      "ANL_NAME": "PA Papiergasse",
+      "BEZIRK": 23,
+      "FLAECHE": "662 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524128",
@@ -1552,7 +2319,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524128,
+      "ANL_NAME": "PA Neilreichgasse",
+      "BEZIRK": 23,
+      "FLAECHE": "1.051 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524129",
@@ -1577,7 +2357,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524129,
+      "ANL_NAME": "PA Mühlbreiten",
+      "BEZIRK": 23,
+      "FLAECHE": "19.516 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524130",
@@ -1604,7 +2397,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524130,
+      "ANL_NAME": "Michael-Bausback-Park",
+      "BEZIRK": 23,
+      "FLAECHE": "4.822 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524131",
@@ -1628,7 +2434,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524131,
+      "ANL_NAME": "PA Geßlgasse",
+      "BEZIRK": 23,
+      "FLAECHE": "547 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524132",
@@ -1652,7 +2471,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524132,
+      "ANL_NAME": "PA Ludwig-Kirschner-Gasse",
+      "BEZIRK": 23,
+      "FLAECHE": "1.233 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524133",
@@ -1676,7 +2508,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524133,
+      "ANL_NAME": "PA Kalksburg",
+      "BEZIRK": 23,
+      "FLAECHE": "2.253 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524134",
@@ -1702,7 +2547,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524134,
+      "ANL_NAME": "GA Bennoplatz",
+      "BEZIRK": 8,
+      "FLAECHE": "1.418 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig+Spielplatz: Okt-März:08:00-19:30, Apr-Sep:08:00-20:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524170",
@@ -1727,7 +2585,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524170,
+      "ANL_NAME": "PA Rupertusplatz",
+      "BEZIRK": 17,
+      "FLAECHE": "1.716 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524171",
@@ -1753,7 +2624,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524171,
+      "ANL_NAME": "PA Schluckergasse",
+      "BEZIRK": 13,
+      "FLAECHE": "12.235 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524172",
@@ -1780,7 +2664,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524172,
+      "ANL_NAME": "Friedrich-Gulda-Park",
+      "BEZIRK": 3,
+      "FLAECHE": "1.074 m²",
+      "OEFF_ZEITEN": "6:00-21:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524173",
@@ -1807,7 +2704,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524173,
+      "ANL_NAME": "Jakob-Rosenfeld-Park",
+      "BEZIRK": 22,
+      "FLAECHE": "1.891 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524174",
@@ -1831,7 +2741,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524174,
+      "ANL_NAME": "PA Altmannsdorfer Straße",
+      "BEZIRK": 12,
+      "FLAECHE": "2.186 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524175",
@@ -1857,7 +2780,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524175,
+      "ANL_NAME": "PA Am Leberberg",
+      "BEZIRK": 11,
+      "FLAECHE": "26.980 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524176",
@@ -1883,7 +2819,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524176,
+      "ANL_NAME": "PA Fuchsröhrenstraße",
+      "BEZIRK": 11,
+      "FLAECHE": "928 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524177",
@@ -1910,7 +2859,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524177,
+      "ANL_NAME": "PA Blériotgasse",
+      "BEZIRK": 11,
+      "FLAECHE": "17.172 m²",
+      "OEFF_ZEITEN": "Hundezone:06:00-20:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524178",
@@ -1937,7 +2899,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524178,
+      "ANL_NAME": "Piratenspielplatz",
+      "BEZIRK": 10,
+      "FLAECHE": "3.931 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524179",
@@ -1961,7 +2936,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524179,
+      "ANL_NAME": "PA Olaus-Petri-Gasse",
+      "BEZIRK": 10,
+      "FLAECHE": "6.212 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524180",
@@ -1985,7 +2973,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524180,
+      "ANL_NAME": "PA Ober-Laaer Platz",
+      "BEZIRK": 10,
+      "FLAECHE": "2.476 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524181",
@@ -2011,7 +3012,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524181,
+      "ANL_NAME": "PA Kurt-Tichy-Gasse",
+      "BEZIRK": 10,
+      "FLAECHE": "3.540 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524182",
@@ -2035,7 +3049,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524182,
+      "ANL_NAME": "PA Untere Kaistraße",
+      "BEZIRK": 10,
+      "FLAECHE": "693 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524183",
@@ -2062,7 +3089,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524183,
+      "ANL_NAME": "Barankapark-Hellerwiese",
+      "BEZIRK": 10,
+      "FLAECHE": "5.130 m²",
+      "OEFF_ZEITEN": "06:00-21:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524184",
@@ -2086,7 +3126,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524184,
+      "ANL_NAME": "PA Alma-Rose-Gasse",
+      "BEZIRK": 10,
+      "FLAECHE": "1.499 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524185",
@@ -2113,7 +3166,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524185,
+      "ANL_NAME": "Viktor-Frankl-Park",
+      "BEZIRK": 9,
+      "FLAECHE": "3.428 m²",
+      "OEFF_ZEITEN": "7:00-21:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524186",
@@ -2139,7 +3205,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524186,
+      "ANL_NAME": "PA Hochsatzengasse",
+      "BEZIRK": 14,
+      "FLAECHE": "3.673 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524187",
@@ -2164,7 +3243,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524187,
+      "ANL_NAME": "PA Antaeusgasse",
+      "BEZIRK": 14,
+      "FLAECHE": "846 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524188",
@@ -2189,7 +3281,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524188,
+      "ANL_NAME": "PA Sommerergasse",
+      "BEZIRK": 13,
+      "FLAECHE": "1.122 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524189",
@@ -2214,7 +3319,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524189,
+      "ANL_NAME": "Katharina-Schratt-Park",
+      "BEZIRK": 13,
+      "FLAECHE": "1.765 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524190",
@@ -2238,7 +3356,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524190,
+      "ANL_NAME": "PA Jenbachgasse",
+      "BEZIRK": 13,
+      "FLAECHE": "1.024 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524191",
@@ -2263,7 +3394,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524191,
+      "ANL_NAME": "Helene-Druskowitz-Park",
+      "BEZIRK": 13,
+      "FLAECHE": "1.042 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524192",
@@ -2288,7 +3432,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524192,
+      "ANL_NAME": "Franz-Schmidt-Park",
+      "BEZIRK": 13,
+      "FLAECHE": "3.191 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524193",
@@ -2313,6 +3470,19 @@ export const PARKS_DATA: Park[] = [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524193,
+      "ANL_NAME": "Prater - Forstwiesen-Nord",
+      "BEZIRK": 2,
+      "FLAECHE": "43.241 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Wikipedia"
   },
   {
@@ -2340,6 +3510,19 @@ export const PARKS_DATA: Park[] = [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524194,
+      "ANL_NAME": "Prater - Wasserwiese",
+      "BEZIRK": 2,
+      "FLAECHE": "94.692 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Wikipedia"
   },
   {
@@ -2366,6 +3549,19 @@ export const PARKS_DATA: Park[] = [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524195,
+      "ANL_NAME": "Prater - Golfwiese",
+      "BEZIRK": 2,
+      "FLAECHE": "82.121 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Wikipedia"
   },
   {
@@ -2393,7 +3589,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524196,
+      "ANL_NAME": "Baumgartner-Casino-Park",
+      "BEZIRK": 14,
+      "FLAECHE": "19.004 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524197",
@@ -2419,6 +3628,19 @@ export const PARKS_DATA: Park[] = [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524197,
+      "ANL_NAME": "Prater - Grafenwiese",
+      "BEZIRK": 2,
+      "FLAECHE": "171.720 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Wikipedia"
   },
   {
@@ -2444,6 +3666,19 @@ export const PARKS_DATA: Park[] = [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524198,
+      "ANL_NAME": "Prater - Rennbahnstraßenwiese",
+      "BEZIRK": 2,
+      "FLAECHE": "5.128 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Wikipedia"
   },
   {
@@ -2470,7 +3705,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524199,
+      "ANL_NAME": "PA Feuerhalle Simmering",
+      "BEZIRK": 11,
+      "FLAECHE": "4.149 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524200",
@@ -2494,7 +3742,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524200,
+      "ANL_NAME": "PA Kobingergasse",
+      "BEZIRK": 12,
+      "FLAECHE": "532 m²",
+      "OEFF_ZEITEN": "00:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524201",
@@ -2518,7 +3779,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524201,
+      "ANL_NAME": "Arkadenhof Rathaus",
+      "BEZIRK": 1,
+      "FLAECHE": "260 m²",
+      "OEFF_ZEITEN": "00:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524169",
@@ -2542,7 +3816,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524169,
+      "ANL_NAME": "PA Lorettoplatz",
+      "BEZIRK": 21,
+      "FLAECHE": "417 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524202",
@@ -2571,6 +3858,19 @@ export const PARKS_DATA: Park[] = [
     "tips": [
       "Volksstimme-Fest am letzten Wochenende in den Sommerferien"
     ],
+    "rawMetadata": {
+      "OBJECTID": 3524202,
+      "ANL_NAME": "Prater - Jesuitenwiese",
+      "BEZIRK": 2,
+      "FLAECHE": "214.030 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Wikipedia"
   },
   {
@@ -2595,7 +3895,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524203,
+      "ANL_NAME": "Margit-Czernetz-Promenade",
+      "BEZIRK": 2,
+      "FLAECHE": "6.616 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524204",
@@ -2621,6 +3934,19 @@ export const PARKS_DATA: Park[] = [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524204,
+      "ANL_NAME": "Prater - Zirkuswiese",
+      "BEZIRK": 2,
+      "FLAECHE": "30.337 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Wikipedia"
   },
   {
@@ -2646,7 +3972,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524205,
+      "ANL_NAME": "Wehlistraße/Ostbahn",
+      "BEZIRK": 2,
+      "FLAECHE": "4.447 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524206",
@@ -2672,6 +4011,19 @@ export const PARKS_DATA: Park[] = [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524206,
+      "ANL_NAME": "Prater - Avenue",
+      "BEZIRK": 2,
+      "FLAECHE": "83.323 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Wikipedia"
   },
   {
@@ -2699,6 +4051,19 @@ export const PARKS_DATA: Park[] = [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524207,
+      "ANL_NAME": "Prater - Meiereiwiese",
+      "BEZIRK": 2,
+      "FLAECHE": "14.016 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Wikipedia"
   },
   {
@@ -2726,7 +4091,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524208,
+      "ANL_NAME": "PA Flammweg",
+      "BEZIRK": 11,
+      "FLAECHE": "7.179 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524209",
@@ -2753,7 +4131,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524209,
+      "ANL_NAME": "Trpinpark",
+      "BEZIRK": 11,
+      "FLAECHE": "3.447 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524210",
@@ -2780,7 +4171,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524210,
+      "ANL_NAME": "Franz-Schimon-Park",
+      "BEZIRK": 13,
+      "FLAECHE": "13.363 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524211",
@@ -2804,7 +4208,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524211,
+      "ANL_NAME": "PA Erzbischofgasse",
+      "BEZIRK": 13,
+      "FLAECHE": "491 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524212",
@@ -2829,7 +4246,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524212,
+      "ANL_NAME": "Coudenhove-Park",
+      "BEZIRK": 13,
+      "FLAECHE": "7.730 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524213",
@@ -2854,7 +4284,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524213,
+      "ANL_NAME": "Kinderspielplatz Fasangarten",
+      "BEZIRK": 13,
+      "FLAECHE": "1.984 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524214",
@@ -2878,7 +4321,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524214,
+      "ANL_NAME": "PA Lichtensterngasse",
+      "BEZIRK": 12,
+      "FLAECHE": "11.490 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524215",
@@ -2905,7 +4361,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524215,
+      "ANL_NAME": "Theresienbadpark",
+      "BEZIRK": 12,
+      "FLAECHE": "5.804 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524216",
@@ -2930,7 +4399,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524216,
+      "ANL_NAME": "PA Steinweisweg",
+      "BEZIRK": 12,
+      "FLAECHE": "5.612 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524217",
@@ -2956,7 +4438,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524217,
+      "ANL_NAME": "PA Steinhagegasse",
+      "BEZIRK": 12,
+      "FLAECHE": "3.846 m²",
+      "OEFF_ZEITEN": "Okt-März:06:00-21:00, Apr-Sep:06:00-21:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524218",
@@ -2984,7 +4479,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524218,
+      "ANL_NAME": "Steinbauerpark",
+      "BEZIRK": 12,
+      "FLAECHE": "11.336 m²",
+      "OEFF_ZEITEN": "HuZo: Wint6:00-21:30|Somm6:00-22:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524219",
@@ -3011,7 +4519,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524219,
+      "ANL_NAME": "Grete-Salzer-Park",
+      "BEZIRK": 12,
+      "FLAECHE": "2.984 m²",
+      "OEFF_ZEITEN": "Okt-März:06:00-21:00, Apr-Sep:06:00-21:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524220",
@@ -3035,7 +4556,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524220,
+      "ANL_NAME": "PA Strohberggasse",
+      "BEZIRK": 12,
+      "FLAECHE": "2.333 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524221",
@@ -3062,7 +4596,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524221,
+      "ANL_NAME": "Franz-Nekula-Park",
+      "BEZIRK": 12,
+      "FLAECHE": "6.787 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524222",
@@ -3086,7 +4633,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524222,
+      "ANL_NAME": "PA Rotenmühlgasse",
+      "BEZIRK": 12,
+      "FLAECHE": "541 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524223",
@@ -3110,7 +4670,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524223,
+      "ANL_NAME": "PA Münchenstraße",
+      "BEZIRK": 12,
+      "FLAECHE": "963 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524224",
@@ -3134,7 +4707,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524224,
+      "ANL_NAME": "PA Helene-Potetz-Weg",
+      "BEZIRK": 12,
+      "FLAECHE": "451 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524225",
@@ -3159,7 +4745,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524225,
+      "ANL_NAME": "PA Hedy-Lamarr-Weg",
+      "BEZIRK": 12,
+      "FLAECHE": "1.017 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524226",
@@ -3186,7 +4785,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524226,
+      "ANL_NAME": "Hermann-Leopoldi-Park",
+      "BEZIRK": 12,
+      "FLAECHE": "6.067 m²",
+      "OEFF_ZEITEN": "Okt-März:06:00-21:00, Apr-Sep:06:00-21:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524227",
@@ -3212,7 +4824,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524227,
+      "ANL_NAME": "PA Adolf-Lorenz-Gasse",
+      "BEZIRK": 13,
+      "FLAECHE": "1.527 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524228",
@@ -3239,7 +4864,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524228,
+      "ANL_NAME": "Linsepark",
+      "BEZIRK": 12,
+      "FLAECHE": "5.574 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524229",
@@ -3266,7 +4904,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524229,
+      "ANL_NAME": "Streckerpark",
+      "BEZIRK": 13,
+      "FLAECHE": "5.572 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524230",
@@ -3290,7 +4941,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524230,
+      "ANL_NAME": "PA Sillerplatz",
+      "BEZIRK": 13,
+      "FLAECHE": "2.709 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524231",
@@ -3317,6 +4981,19 @@ export const PARKS_DATA: Park[] = [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524231,
+      "ANL_NAME": "PA Roter Berg",
+      "BEZIRK": 13,
+      "FLAECHE": "134.338 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Wikipedia"
   },
   {
@@ -3343,7 +5020,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524232,
+      "ANL_NAME": "Hugo-Pepper-Park",
+      "BEZIRK": 13,
+      "FLAECHE": "5.484 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524233",
@@ -3367,7 +5057,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524233,
+      "ANL_NAME": "PA Gemeindeberggasse",
+      "BEZIRK": 13,
+      "FLAECHE": "5.142 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524234",
@@ -3393,7 +5096,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524234,
+      "ANL_NAME": "Napoleonwald",
+      "BEZIRK": 13,
+      "FLAECHE": "31.793 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524235",
@@ -3420,7 +5136,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524235,
+      "ANL_NAME": "Maxingpark",
+      "BEZIRK": 13,
+      "FLAECHE": "26.072 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524236",
@@ -3445,7 +5174,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524236,
+      "ANL_NAME": "Max-Mell-Park",
+      "BEZIRK": 13,
+      "FLAECHE": "1.454 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524237",
@@ -3471,7 +5213,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524237,
+      "ANL_NAME": "PA Fred-Liewehr-Gasse",
+      "BEZIRK": 13,
+      "FLAECHE": "2.138 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524238",
@@ -3496,7 +5251,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524238,
+      "ANL_NAME": "Lainzerbachwiese",
+      "BEZIRK": 13,
+      "FLAECHE": "20.269 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524239",
@@ -3521,7 +5289,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524239,
+      "ANL_NAME": "PA Lainzerbachstraße",
+      "BEZIRK": 13,
+      "FLAECHE": "4.486 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524240",
@@ -3545,7 +5326,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524240,
+      "ANL_NAME": "PA Josef-Kraft-Weg",
+      "BEZIRK": 13,
+      "FLAECHE": "6.097 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524241",
@@ -3571,7 +5365,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524241,
+      "ANL_NAME": "PA Hofjägerstraße",
+      "BEZIRK": 13,
+      "FLAECHE": "2.875 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524242",
@@ -3595,7 +5402,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524242,
+      "ANL_NAME": "PA Hochmaisgasse",
+      "BEZIRK": 13,
+      "FLAECHE": "1.736 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524243",
@@ -3620,7 +5440,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524243,
+      "ANL_NAME": "PA Himmelbaurgasse",
+      "BEZIRK": 13,
+      "FLAECHE": "5.050 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524244",
@@ -3644,7 +5477,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524244,
+      "ANL_NAME": "PA Hermesstraße",
+      "BEZIRK": 13,
+      "FLAECHE": "12.515 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524245",
@@ -3670,7 +5516,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524245,
+      "ANL_NAME": "Hans-Moser-Park",
+      "BEZIRK": 13,
+      "FLAECHE": "1.142 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524246",
@@ -3695,7 +5554,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524246,
+      "ANL_NAME": "Gustav-Zelibor-Park",
+      "BEZIRK": 13,
+      "FLAECHE": "1.527 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524247",
@@ -3719,7 +5591,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524247,
+      "ANL_NAME": "PA Grünbergstraße",
+      "BEZIRK": 13,
+      "FLAECHE": "5.685 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524248",
@@ -3746,7 +5631,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524248,
+      "ANL_NAME": "Anna-Freud-Park",
+      "BEZIRK": 13,
+      "FLAECHE": "10.395 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524249",
@@ -3772,7 +5670,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524249,
+      "ANL_NAME": "PA Furtwänglerplatz",
+      "BEZIRK": 13,
+      "FLAECHE": "6.169 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524250",
@@ -3801,7 +5712,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524250,
+      "ANL_NAME": "Auer-Welsbach-Park",
+      "BEZIRK": 15,
+      "FLAECHE": "110.517 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524251",
@@ -3826,7 +5750,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524251,
+      "ANL_NAME": "PA Schöffelplatz",
+      "BEZIRK": 14,
+      "FLAECHE": "3.760 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524252",
@@ -3853,7 +5790,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524252,
+      "ANL_NAME": "Reinlpark",
+      "BEZIRK": 14,
+      "FLAECHE": "3.144 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524253",
@@ -3880,7 +5830,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524253,
+      "ANL_NAME": "Ordeltpark",
+      "BEZIRK": 14,
+      "FLAECHE": "5.042 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524254",
@@ -3904,7 +5867,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524254,
+      "ANL_NAME": "PA Molischgasse",
+      "BEZIRK": 14,
+      "FLAECHE": "1.685 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524255",
@@ -3931,7 +5907,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524255,
+      "ANL_NAME": "Ludwig-Zatzka-Park",
+      "BEZIRK": 14,
+      "FLAECHE": "5.422 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524256",
@@ -3955,7 +5944,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524256,
+      "ANL_NAME": "PA Linzer Straße",
+      "BEZIRK": 14,
+      "FLAECHE": "3.240 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524257",
@@ -3982,7 +5984,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524257,
+      "ANL_NAME": "PA Wolfersberg",
+      "BEZIRK": 14,
+      "FLAECHE": "62.551 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524258",
@@ -4008,7 +6023,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524258,
+      "ANL_NAME": "Karl-Terkal-Park",
+      "BEZIRK": 14,
+      "FLAECHE": "989 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524259",
@@ -4032,7 +6060,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524259,
+      "ANL_NAME": "PA Karl-Bekehrty-Straße",
+      "BEZIRK": 14,
+      "FLAECHE": "5.643 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524260",
@@ -4056,7 +6097,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524260,
+      "ANL_NAME": "PA Josef-Palme-Platz",
+      "BEZIRK": 14,
+      "FLAECHE": "708 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524261",
@@ -4083,7 +6137,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524261,
+      "ANL_NAME": "Hadikpark",
+      "BEZIRK": 14,
+      "FLAECHE": "20.463 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524262",
@@ -4109,7 +6176,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524262,
+      "ANL_NAME": "PA Friedrichsplatz",
+      "BEZIRK": 15,
+      "FLAECHE": "987 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524263",
@@ -4136,7 +6216,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524263,
+      "ANL_NAME": "Forschneritschpark",
+      "BEZIRK": 15,
+      "FLAECHE": "4.899 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524264",
@@ -4163,7 +6256,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524264,
+      "ANL_NAME": "Ernestine-Diwisch-Park",
+      "BEZIRK": 15,
+      "FLAECHE": "1.623 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524265",
@@ -4190,7 +6296,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524265,
+      "ANL_NAME": "Forsthauspark",
+      "BEZIRK": 20,
+      "FLAECHE": "12.891 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524266",
@@ -4216,7 +6335,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524266,
+      "ANL_NAME": "PA Durchlaufstraße",
+      "BEZIRK": 20,
+      "FLAECHE": "844 m²",
+      "OEFF_ZEITEN": "6:30-20:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524267",
@@ -4240,7 +6372,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524267,
+      "ANL_NAME": "PA Kürschnergasse",
+      "BEZIRK": 21,
+      "FLAECHE": "4.530 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524268",
@@ -4267,7 +6412,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524268,
+      "ANL_NAME": "Waldpark Koloniestraße",
+      "BEZIRK": 21,
+      "FLAECHE": "11.238 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524269",
@@ -4293,7 +6451,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524269,
+      "ANL_NAME": "Karl-Brunner-Park",
+      "BEZIRK": 21,
+      "FLAECHE": "1.605 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524270",
@@ -4320,7 +6491,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524270,
+      "ANL_NAME": "Joseph-Samuel-Bloch-Park",
+      "BEZIRK": 21,
+      "FLAECHE": "2.819 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524271",
@@ -4344,7 +6528,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524271,
+      "ANL_NAME": "PA Walter-Schwarzacher-Gasse",
+      "BEZIRK": 21,
+      "FLAECHE": "2.754 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524272",
@@ -4368,7 +6565,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524272,
+      "ANL_NAME": "PA Jerusalemgasse",
+      "BEZIRK": 21,
+      "FLAECHE": "4.094 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524273",
@@ -4395,7 +6605,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524273,
+      "ANL_NAME": "Hans-Hirsch-Park",
+      "BEZIRK": 21,
+      "FLAECHE": "11.367 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524274",
@@ -4419,7 +6642,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524274,
+      "ANL_NAME": "PA Haberditzlgasse",
+      "BEZIRK": 21,
+      "FLAECHE": "1.348 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524275",
@@ -4446,7 +6682,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524275,
+      "ANL_NAME": "Grete-und-Otto-Ascher-Park",
+      "BEZIRK": 21,
+      "FLAECHE": "1.472 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524276",
@@ -4472,7 +6721,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524276,
+      "ANL_NAME": "PA Gerlosplatz",
+      "BEZIRK": 21,
+      "FLAECHE": "6.372 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524277",
@@ -4499,7 +6761,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524277,
+      "ANL_NAME": "Franz-Polly-Park",
+      "BEZIRK": 21,
+      "FLAECHE": "4.855 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524278",
@@ -4526,7 +6801,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524278,
+      "ANL_NAME": "Floridsdorfer Aupark",
+      "BEZIRK": 21,
+      "FLAECHE": "51.679 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524279",
@@ -4550,7 +6838,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524279,
+      "ANL_NAME": "PA Edisonstraße",
+      "BEZIRK": 21,
+      "FLAECHE": "2.411 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524280",
@@ -4575,7 +6876,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524280,
+      "ANL_NAME": "PA Breitenleer Straße",
+      "BEZIRK": 22,
+      "FLAECHE": "1.740 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524281",
@@ -4602,7 +6916,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524281,
+      "ANL_NAME": "Bill-Grah-Park",
+      "BEZIRK": 22,
+      "FLAECHE": "3.616 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524282",
@@ -4628,7 +6955,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524282,
+      "ANL_NAME": "PA Bernoullistraße",
+      "BEZIRK": 22,
+      "FLAECHE": "3.048 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524283",
@@ -4655,6 +6995,19 @@ export const PARKS_DATA: Park[] = [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524283,
+      "ANL_NAME": "Teich Hirschstetten",
+      "BEZIRK": 22,
+      "FLAECHE": "215.206 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Wikipedia"
   },
   {
@@ -4682,7 +7035,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524284,
+      "ANL_NAME": "Astrid-Lindgren-Park",
+      "BEZIRK": 22,
+      "FLAECHE": "6.386 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524285",
@@ -4708,7 +7074,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524285,
+      "ANL_NAME": "PA An den alten Schanzen",
+      "BEZIRK": 22,
+      "FLAECHE": "5.297 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524286",
@@ -4734,7 +7113,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524286,
+      "ANL_NAME": "PA Am Müllnermais",
+      "BEZIRK": 22,
+      "FLAECHE": "3.502 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524287",
@@ -4760,7 +7152,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524287,
+      "ANL_NAME": "Stadlauer Bahnhofspark",
+      "BEZIRK": 22,
+      "FLAECHE": "2.594 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524288",
@@ -4786,7 +7191,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524288,
+      "ANL_NAME": "PA Seyringer Straße",
+      "BEZIRK": 21,
+      "FLAECHE": "4.737 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524289",
@@ -4810,7 +7228,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524289,
+      "ANL_NAME": "PA Trillergasse",
+      "BEZIRK": 21,
+      "FLAECHE": "10.845 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524290",
@@ -4836,7 +7267,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524290,
+      "ANL_NAME": "Tora-San-Park",
+      "BEZIRK": 21,
+      "FLAECHE": "5.785 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524291",
@@ -4861,7 +7305,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524291,
+      "ANL_NAME": "Fritz-Jöchlinger-Park",
+      "BEZIRK": 21,
+      "FLAECHE": "872 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524292",
@@ -4888,7 +7345,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524292,
+      "ANL_NAME": "Paul-Hock-Park",
+      "BEZIRK": 21,
+      "FLAECHE": "5.264 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524293",
@@ -4914,7 +7384,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524293,
+      "ANL_NAME": "PA Else-Feldmann-Promenade",
+      "BEZIRK": 21,
+      "FLAECHE": "4.817 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524294",
@@ -4938,7 +7421,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524294,
+      "ANL_NAME": "PA Wassermanngasse",
+      "BEZIRK": 21,
+      "FLAECHE": "2.115 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524295",
@@ -4964,7 +7460,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524295,
+      "ANL_NAME": "PA Dopschstraße",
+      "BEZIRK": 21,
+      "FLAECHE": "4.836 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524296",
@@ -4988,7 +7497,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524296,
+      "ANL_NAME": "PA Möllplatz",
+      "BEZIRK": 21,
+      "FLAECHE": "8.346 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524297",
@@ -5012,7 +7534,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524297,
+      "ANL_NAME": "PA Max-Jellinek-Gasse",
+      "BEZIRK": 21,
+      "FLAECHE": "2.436 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524298",
@@ -5036,7 +7571,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524298,
+      "ANL_NAME": "PA Schickgasse",
+      "BEZIRK": 22,
+      "FLAECHE": "1.451 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524299",
@@ -5062,7 +7610,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524299,
+      "ANL_NAME": "PA Rosenbergstraße",
+      "BEZIRK": 22,
+      "FLAECHE": "2.433 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524300",
@@ -5086,7 +7647,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524300,
+      "ANL_NAME": "PA Reclamgasse",
+      "BEZIRK": 22,
+      "FLAECHE": "1.273 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524301",
@@ -5110,7 +7684,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524301,
+      "ANL_NAME": "PA Friedhof Hirschstetten",
+      "BEZIRK": 22,
+      "FLAECHE": "6.546 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524135",
@@ -5136,7 +7723,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524135,
+      "ANL_NAME": "GA Albertplatz",
+      "BEZIRK": 8,
+      "FLAECHE": "845 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524136",
@@ -5162,7 +7762,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524136,
+      "ANL_NAME": "GA Brahmsplatz",
+      "BEZIRK": 4,
+      "FLAECHE": "1.049 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524137",
@@ -5186,7 +7799,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524137,
+      "ANL_NAME": "GA Rudolf-von-Alt-Platz",
+      "BEZIRK": 3,
+      "FLAECHE": "571 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524138",
@@ -5210,7 +7836,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524138,
+      "ANL_NAME": "GA Ludwig-Koeßler-Platz",
+      "BEZIRK": 3,
+      "FLAECHE": "410 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524139",
@@ -5237,7 +7876,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524139,
+      "ANL_NAME": "PA Feuerwehrspielplatz",
+      "BEZIRK": 22,
+      "FLAECHE": "9.333 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524140",
@@ -5262,7 +7914,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524140,
+      "ANL_NAME": "Esperantopark",
+      "BEZIRK": 1,
+      "FLAECHE": "945 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524141",
@@ -5286,7 +7951,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524141,
+      "ANL_NAME": "GA Dr.-Karl-Lueger-Platz",
+      "BEZIRK": 1,
+      "FLAECHE": "1.044 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524142",
@@ -5313,7 +7991,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524142,
+      "ANL_NAME": "Dorothea-Neff-Park",
+      "BEZIRK": 7,
+      "FLAECHE": "769 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524143",
@@ -5340,7 +8031,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524143,
+      "ANL_NAME": "Schütte-Lihotzky-Park",
+      "BEZIRK": 5,
+      "FLAECHE": "3.440 m²",
+      "OEFF_ZEITEN": "6:15-21:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524144",
@@ -5365,7 +8069,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524144,
+      "ANL_NAME": "Florianipark",
+      "BEZIRK": 8,
+      "FLAECHE": "743 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524145",
@@ -5389,7 +8106,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524145,
+      "ANL_NAME": "GA Kugelmannplatz",
+      "BEZIRK": 23,
+      "FLAECHE": "615 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524146",
@@ -5413,7 +8143,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524146,
+      "ANL_NAME": "PA Dr.-Pirnitzer-Platz",
+      "BEZIRK": 23,
+      "FLAECHE": "1.050 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524147",
@@ -5437,7 +8180,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524147,
+      "ANL_NAME": "GA Mergenthalerplatz",
+      "BEZIRK": 22,
+      "FLAECHE": "464 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524148",
@@ -5461,7 +8217,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524148,
+      "ANL_NAME": "GA Anton-Anderer-Platz",
+      "BEZIRK": 21,
+      "FLAECHE": "549 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524149",
@@ -5487,7 +8256,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524149,
+      "ANL_NAME": "GA Bernreiterplatz",
+      "BEZIRK": 21,
+      "FLAECHE": "1.221 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524150",
@@ -5514,7 +8296,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524150,
+      "ANL_NAME": "Anna-Ehm-Park",
+      "BEZIRK": 19,
+      "FLAECHE": "4.734 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524151",
@@ -5538,7 +8333,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524151,
+      "ANL_NAME": "GA Leopold-Kunschak-Platz",
+      "BEZIRK": 17,
+      "FLAECHE": "2.462 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524152",
@@ -5562,7 +8370,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524152,
+      "ANL_NAME": "GA Lotte-Lenya-Platz",
+      "BEZIRK": 14,
+      "FLAECHE": "706 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524153",
@@ -5587,7 +8408,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524153,
+      "ANL_NAME": "Erich-Auer-Park",
+      "BEZIRK": 14,
+      "FLAECHE": "1.458 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524154",
@@ -5612,7 +8446,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524154,
+      "ANL_NAME": "GA Marschallplatz",
+      "BEZIRK": 12,
+      "FLAECHE": "1.283 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524155",
@@ -5637,7 +8484,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524155,
+      "ANL_NAME": "GA Reumannplatz",
+      "BEZIRK": 10,
+      "FLAECHE": "1.655 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524156",
@@ -5661,7 +8521,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524156,
+      "ANL_NAME": "GA Otto-Probst-Platz",
+      "BEZIRK": 10,
+      "FLAECHE": "3.161 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524157",
@@ -5686,7 +8559,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524157,
+      "ANL_NAME": "GA Spittelauer Platz",
+      "BEZIRK": 9,
+      "FLAECHE": "609 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524158",
@@ -5710,7 +8596,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524158,
+      "ANL_NAME": "GA Ari-Rath-Platz",
+      "BEZIRK": 9,
+      "FLAECHE": "909 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524159",
@@ -5734,7 +8633,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524159,
+      "ANL_NAME": "GA Wickenburggasse",
+      "BEZIRK": 8,
+      "FLAECHE": "95 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524160",
@@ -5761,7 +8673,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524160,
+      "ANL_NAME": "Erika-Morini-Park",
+      "BEZIRK": 2,
+      "FLAECHE": "5.655 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524161",
@@ -5788,7 +8713,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524161,
+      "ANL_NAME": "Planquadrat Park",
+      "BEZIRK": 4,
+      "FLAECHE": "5.286 m²",
+      "OEFF_ZEITEN": "keine Angabe",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524162",
@@ -5815,7 +8753,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524162,
+      "ANL_NAME": "Wolfgang-Kössner-Park",
+      "BEZIRK": 2,
+      "FLAECHE": "5.987 m²",
+      "OEFF_ZEITEN": "6:30-20:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524163",
@@ -5840,7 +8791,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524163,
+      "ANL_NAME": "PA Schmerlingplatz",
+      "BEZIRK": 1,
+      "FLAECHE": "3.391 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524164",
@@ -5865,7 +8829,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524164,
+      "ANL_NAME": "PA Ernst-Jandl-Weg",
+      "BEZIRK": 22,
+      "FLAECHE": "4.097 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524165",
@@ -5889,7 +8866,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524165,
+      "ANL_NAME": "PA Rautenweg",
+      "BEZIRK": 22,
+      "FLAECHE": "1.018 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524166",
@@ -5915,7 +8905,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524166,
+      "ANL_NAME": "PA Angeliwiese",
+      "BEZIRK": 21,
+      "FLAECHE": "14.106 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524167",
@@ -5941,7 +8944,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524167,
+      "ANL_NAME": "Adelheid-Popp-Park",
+      "BEZIRK": 17,
+      "FLAECHE": "1.367 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524168",
@@ -5968,7 +8984,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524168,
+      "ANL_NAME": "Herbert-Mayr-Park",
+      "BEZIRK": 23,
+      "FLAECHE": "6.993 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517717",
@@ -5992,7 +9021,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517717,
+      "ANL_NAME": "Henriette-Fahrbach-Promenade",
+      "BEZIRK": 2,
+      "FLAECHE": "7.307 m²",
+      "OEFF_ZEITEN": "Ballspielplatz: 6:30-20:30",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517718",
@@ -6017,7 +9059,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517718,
+      "ANL_NAME": "Park",
+      "BEZIRK": 22,
+      "FLAECHE": "1.099 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517719",
@@ -6042,7 +9097,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517719,
+      "ANL_NAME": "Sigmund-Freud-Park",
+      "BEZIRK": 9,
+      "FLAECHE": "14.464 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517720",
@@ -6066,7 +9134,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517720,
+      "ANL_NAME": "Jüdischer Friedhof Seegasse",
+      "BEZIRK": 9,
+      "FLAECHE": "5.843 m²",
+      "OEFF_ZEITEN": "Mo-Fr 7:00-15:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517721",
@@ -6091,7 +9172,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517721,
+      "ANL_NAME": "Gerda-Matejka-Felden-Park (privat)",
+      "BEZIRK": 9,
+      "FLAECHE": "0 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517722",
@@ -6115,7 +9209,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517722,
+      "ANL_NAME": "Heldenplatz (Bundesgärten)",
+      "BEZIRK": 1,
+      "FLAECHE": "904 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517723",
@@ -6141,7 +9248,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517723,
+      "ANL_NAME": "Marianne-Fritz-Park",
+      "BEZIRK": 7,
+      "FLAECHE": "360 m²",
+      "OEFF_ZEITEN": "Okt: 6:45-19:15, Nov-März: 6:45-18:15, Apr-Sep: 6:45-21:15",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517724",
@@ -6166,7 +9286,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517724,
+      "ANL_NAME": "PA Am Krautgarten",
+      "BEZIRK": 22,
+      "FLAECHE": "1.954 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517725",
@@ -6193,7 +9326,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517725,
+      "ANL_NAME": "Heisspark",
+      "BEZIRK": 21,
+      "FLAECHE": "5.288 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517726",
@@ -6218,7 +9364,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517726,
+      "ANL_NAME": "PA Großfeldstraße",
+      "BEZIRK": 21,
+      "FLAECHE": "3.387 m²",
+      "OEFF_ZEITEN": "Ballspielplatz 20:30-09:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517727",
@@ -6244,7 +9403,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517727,
+      "ANL_NAME": "PA Am Mühlwasser",
+      "BEZIRK": 22,
+      "FLAECHE": "21.477 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517728",
@@ -6270,7 +9442,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517728,
+      "ANL_NAME": "PA Colerusgasse",
+      "BEZIRK": 22,
+      "FLAECHE": "4.276 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517729",
@@ -6295,7 +9480,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517729,
+      "ANL_NAME": "PA Fasangartengasse",
+      "BEZIRK": 12,
+      "FLAECHE": "6.261 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517730",
@@ -6320,7 +9518,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517730,
+      "ANL_NAME": "GA Obere Donaustraße",
+      "BEZIRK": 2,
+      "FLAECHE": "1.576 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517731",
@@ -6347,7 +9558,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517731,
+      "ANL_NAME": "Freie Mitte",
+      "BEZIRK": 2,
+      "FLAECHE": "75.937 m²",
+      "OEFF_ZEITEN": "00:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517732",
@@ -6374,7 +9598,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517732,
+      "ANL_NAME": "H.-C.-Artmann-Park",
+      "BEZIRK": 14,
+      "FLAECHE": "2.353 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517733",
@@ -6398,7 +9635,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517733,
+      "ANL_NAME": "PA Gusterergasse",
+      "BEZIRK": 14,
+      "FLAECHE": "563 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517734",
@@ -6426,7 +9676,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517734,
+      "ANL_NAME": "Gustav-Klimt-Park",
+      "BEZIRK": 14,
+      "FLAECHE": "6.459 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517735",
@@ -6453,7 +9716,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517735,
+      "ANL_NAME": "Franz-Sauer-Park",
+      "BEZIRK": 14,
+      "FLAECHE": "2.015 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517736",
@@ -6480,7 +9756,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517736,
+      "ANL_NAME": "Manes-Sperber-Park",
+      "BEZIRK": 2,
+      "FLAECHE": "3.084 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig: 6:30-20:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517737",
@@ -6505,7 +9794,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517737,
+      "ANL_NAME": "PA Große Mohrengasse",
+      "BEZIRK": 2,
+      "FLAECHE": "258 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517738",
@@ -6531,7 +9833,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517738,
+      "ANL_NAME": "Elisabeth-Ben David-Hindler-Park",
+      "BEZIRK": 2,
+      "FLAECHE": "5.975 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517739",
@@ -6555,7 +9870,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517739,
+      "ANL_NAME": "PA Secession",
+      "BEZIRK": 1,
+      "FLAECHE": "4.789 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517740",
@@ -6580,7 +9908,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517740,
+      "ANL_NAME": "Schillerpark",
+      "BEZIRK": 1,
+      "FLAECHE": "6.839 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517741",
@@ -6612,6 +9953,19 @@ export const PARKS_DATA: Park[] = [
       "Winter: Christkindlmarkt & Eistraum",
       "Sommer: Filmfestival"
     ],
+    "rawMetadata": {
+      "OBJECTID": 3517741,
+      "ANL_NAME": "Rathauspark",
+      "BEZIRK": 1,
+      "FLAECHE": "38.509 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Stadt Wien"
   },
   {
@@ -6637,7 +9991,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517742,
+      "ANL_NAME": "PA Beethovenplatz",
+      "BEZIRK": 1,
+      "FLAECHE": "4.003 m²",
+      "OEFF_ZEITEN": "Ballspielplatz: 6:00-21:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517743",
@@ -6663,7 +10030,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517743,
+      "ANL_NAME": "Johannes-Diodato-Park",
+      "BEZIRK": 4,
+      "FLAECHE": "331 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517744",
@@ -6690,7 +10070,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517744,
+      "ANL_NAME": "Ernst-Jandl-Park",
+      "BEZIRK": 4,
+      "FLAECHE": "529 m²",
+      "OEFF_ZEITEN": "Okt-März: 7:30-20:00, Apr-Sep: 6:15-21:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517745",
@@ -6717,7 +10110,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517745,
+      "ANL_NAME": "Alois-Drasche-Park",
+      "BEZIRK": 4,
+      "FLAECHE": "15.875 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig: Okt-März: 7:45-21:00, Apr-Sep: 6:45-22:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517746",
@@ -6742,7 +10148,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517746,
+      "ANL_NAME": "Ilija-Jovanovic-Park",
+      "BEZIRK": 3,
+      "FLAECHE": "1.763 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517747",
@@ -6769,7 +10188,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517747,
+      "ANL_NAME": "Waisenhauspark",
+      "BEZIRK": 3,
+      "FLAECHE": "5.270 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig: Okt-März: 7:30-19:30, Apr-Sep: 7:30-20:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517748",
@@ -6793,7 +10225,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517748,
+      "ANL_NAME": "PA Ungargasse",
+      "BEZIRK": 3,
+      "FLAECHE": "906 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517749",
@@ -6819,7 +10264,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517749,
+      "ANL_NAME": "Haubenstock-Ramati-Park",
+      "BEZIRK": 3,
+      "FLAECHE": "2.070 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517750",
@@ -6846,7 +10304,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517750,
+      "ANL_NAME": "Schweizergarten",
+      "BEZIRK": 3,
+      "FLAECHE": "115.249 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517751",
@@ -6871,7 +10342,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517751,
+      "ANL_NAME": "PA Schwarzenbergplatz",
+      "BEZIRK": 3,
+      "FLAECHE": "14.396 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517752",
@@ -6898,7 +10382,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517752,
+      "ANL_NAME": "Rochuspark",
+      "BEZIRK": 3,
+      "FLAECHE": "3.665 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517753",
@@ -6925,7 +10422,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517753,
+      "ANL_NAME": "Josef-Pfeifer-Park",
+      "BEZIRK": 3,
+      "FLAECHE": "625 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517754",
@@ -6952,7 +10462,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517754,
+      "ANL_NAME": "Joe-Zawinul-Park",
+      "BEZIRK": 3,
+      "FLAECHE": "2.111 m²",
+      "OEFF_ZEITEN": "Okt-März: 7:15-20:00, Apr-Sep: 7:15-20:15",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517755",
@@ -6980,7 +10503,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517755,
+      "ANL_NAME": "Bock-Park",
+      "BEZIRK": 3,
+      "FLAECHE": "4.701 m²",
+      "OEFF_ZEITEN": "Hundezone: 6:00-20:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517756",
@@ -7006,7 +10542,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517756,
+      "ANL_NAME": "PA Baumgasse",
+      "BEZIRK": 3,
+      "FLAECHE": "21.450 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517757",
@@ -7033,7 +10582,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517757,
+      "ANL_NAME": "Arenbergpark",
+      "BEZIRK": 3,
+      "FLAECHE": "30.200 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig: Okt-März: 6:45-20:15, Apr-Sep: 6:45-20:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517758",
@@ -7059,7 +10621,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517758,
+      "ANL_NAME": "Alma-Mahler-Werfel-Park",
+      "BEZIRK": 3,
+      "FLAECHE": "1.169 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517759",
@@ -7086,7 +10661,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517759,
+      "ANL_NAME": "Hubert-Marischka-Park",
+      "BEZIRK": 6,
+      "FLAECHE": "4.412 m²",
+      "OEFF_ZEITEN": "Okt-März:6:30-21:00, Apr-Sep:6:30-21:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517760",
@@ -7113,7 +10701,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517760,
+      "ANL_NAME": "Fritz-Imhoff-Park",
+      "BEZIRK": 6,
+      "FLAECHE": "4.329 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517761",
@@ -7140,7 +10741,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517761,
+      "ANL_NAME": "Esterházypark",
+      "BEZIRK": 6,
+      "FLAECHE": "11.248 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig: Okt-März: 8:00-21:30, Apr-Sep: 8:00-21:45",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517762",
@@ -7167,7 +10781,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517762,
+      "ANL_NAME": "Eduard-Gurk-Park",
+      "BEZIRK": 14,
+      "FLAECHE": "2.342 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517763",
@@ -7191,7 +10818,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517763,
+      "ANL_NAME": "PA Dostgasse",
+      "BEZIRK": 14,
+      "FLAECHE": "1.608 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517764",
@@ -7217,7 +10857,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517764,
+      "ANL_NAME": "PA Cossmanngasse",
+      "BEZIRK": 14,
+      "FLAECHE": "12.988 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517765",
@@ -7242,7 +10895,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517765,
+      "ANL_NAME": "PA Joachimsthalerplatz",
+      "BEZIRK": 16,
+      "FLAECHE": "1.127 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517766",
@@ -7269,7 +10935,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517766,
+      "ANL_NAME": "Huberpark",
+      "BEZIRK": 16,
+      "FLAECHE": "4.586 m²",
+      "OEFF_ZEITEN": "März-Nov: 06:00-22:00, Dez-Feb: keine Sperre",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517767",
@@ -7295,7 +10974,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517767,
+      "ANL_NAME": "PA Hofferplatz",
+      "BEZIRK": 16,
+      "FLAECHE": "2.453 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig: März-Nov: 08:00-20:30, Dez-Feb: keine Sperre",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517768",
@@ -7321,7 +11013,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517768,
+      "ANL_NAME": "PA Hettenkofergasse",
+      "BEZIRK": 16,
+      "FLAECHE": "2.016 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig: März-Nov: 07:00-20:00, Dez-Feb: keine Sperre",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517769",
@@ -7348,7 +11053,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517769,
+      "ANL_NAME": "Else-Federn-Park",
+      "BEZIRK": 16,
+      "FLAECHE": "4.665 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517770",
@@ -7375,7 +11093,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517770,
+      "ANL_NAME": "Leon-Askin-Park",
+      "BEZIRK": 16,
+      "FLAECHE": "1.439 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517771",
@@ -7401,7 +11132,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517771,
+      "ANL_NAME": "PA Familienplatz",
+      "BEZIRK": 16,
+      "FLAECHE": "3.611 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517772",
@@ -7425,7 +11169,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517772,
+      "ANL_NAME": "PA Baumeistergasse",
+      "BEZIRK": 16,
+      "FLAECHE": "2.489 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517773",
@@ -7452,7 +11209,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517773,
+      "ANL_NAME": "Regine-Landeis-Park",
+      "BEZIRK": 15,
+      "FLAECHE": "2.556 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517774",
@@ -7476,7 +11246,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517774,
+      "ANL_NAME": "PA Tannhäuserplatz",
+      "BEZIRK": 15,
+      "FLAECHE": "370 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517775",
@@ -7504,7 +11287,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517775,
+      "ANL_NAME": "Rohrauerpark",
+      "BEZIRK": 15,
+      "FLAECHE": "9.731 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig+Hundezone: Nov-März: 06:00-21:00, Apr-Okt: 06:00-22:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517776",
@@ -7531,7 +11327,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517776,
+      "ANL_NAME": "Märzpark",
+      "BEZIRK": 15,
+      "FLAECHE": "14.499 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517777",
@@ -7557,7 +11366,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517777,
+      "ANL_NAME": "PA Mareschplatz",
+      "BEZIRK": 15,
+      "FLAECHE": "757 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517778",
@@ -7581,7 +11403,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517778,
+      "ANL_NAME": "PA Linke Wienzeile",
+      "BEZIRK": 15,
+      "FLAECHE": "7.145 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517779",
@@ -7608,7 +11443,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517779,
+      "ANL_NAME": "Herklotzpark",
+      "BEZIRK": 15,
+      "FLAECHE": "879 m²",
+      "OEFF_ZEITEN": "Nov-März: 8:00-19:00, Apr-Okt: 08:00-20:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517780",
@@ -7635,7 +11483,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517780,
+      "ANL_NAME": "Schrammelpark",
+      "BEZIRK": 17,
+      "FLAECHE": "1.837 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517781",
@@ -7660,7 +11521,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517781,
+      "ANL_NAME": "Alexander-Lernet-Holenia-Park",
+      "BEZIRK": 17,
+      "FLAECHE": "911 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517782",
@@ -7686,7 +11560,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517782,
+      "ANL_NAME": "PA Stöberplatz",
+      "BEZIRK": 16,
+      "FLAECHE": "3.771 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig: März-Nov: 07:00-21:00, Dez-Feb: keine Sperre",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517783",
@@ -7712,7 +11599,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517783,
+      "ANL_NAME": "PA Schuhmeierplatz",
+      "BEZIRK": 16,
+      "FLAECHE": "2.500 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig: März-Nov: 07:00-21:00, Dez-Feb: keine Sperre",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517784",
@@ -7737,7 +11637,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517784,
+      "ANL_NAME": "PA Spinozagasse",
+      "BEZIRK": 16,
+      "FLAECHE": "3.535 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517785",
@@ -7764,7 +11677,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517785,
+      "ANL_NAME": "Richard-Wagner-Park",
+      "BEZIRK": 16,
+      "FLAECHE": "4.337 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig: März-Nov: 07:00-21:00, Dez-Feb: keine Sperre",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517786",
@@ -7794,6 +11720,19 @@ export const PARKS_DATA: Park[] = [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517786,
+      "ANL_NAME": "Reithofferpark",
+      "BEZIRK": 15,
+      "FLAECHE": "10.653 m²",
+      "OEFF_ZEITEN": "Hundezone: 6:00-22:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Stadt Wien"
   },
   {
@@ -7819,7 +11758,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517787,
+      "ANL_NAME": "PA Nietzscheplatz",
+      "BEZIRK": 16,
+      "FLAECHE": "1.887 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517788",
@@ -7845,7 +11797,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517788,
+      "ANL_NAME": "PA Musilplatz",
+      "BEZIRK": 16,
+      "FLAECHE": "3.334 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517789",
@@ -7872,7 +11837,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517789,
+      "ANL_NAME": "Arik-Brauer-Park",
+      "BEZIRK": 16,
+      "FLAECHE": "3.507 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig: März-Nov: 07:00-21:30, Dez-Feb: keine Sperre",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517790",
@@ -7897,7 +11875,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517790,
+      "ANL_NAME": "Edelsinnstraße Hundezone",
+      "BEZIRK": 12,
+      "FLAECHE": "1.785 m²",
+      "OEFF_ZEITEN": "0-24:00 Uhr",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517791",
@@ -7925,7 +11916,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517791,
+      "ANL_NAME": "Franziska-Löw-Park",
+      "BEZIRK": 2,
+      "FLAECHE": "6.644 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517792",
@@ -7950,7 +11954,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517792,
+      "ANL_NAME": "Ohrfandlpark",
+      "BEZIRK": 7,
+      "FLAECHE": "1.227 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517793",
@@ -7976,6 +11993,19 @@ export const PARKS_DATA: Park[] = [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517793,
+      "ANL_NAME": "Prater - Rosenbachl",
+      "BEZIRK": 2,
+      "FLAECHE": "157.886 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Wikipedia"
   },
   {
@@ -8001,7 +12031,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517794,
+      "ANL_NAME": "Schulbrüderpark",
+      "BEZIRK": 21,
+      "FLAECHE": "972 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517795",
@@ -8026,7 +12069,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517795,
+      "ANL_NAME": "Zeßner-Spitzenberg-Park",
+      "BEZIRK": 19,
+      "FLAECHE": "1.269 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517796",
@@ -8050,7 +12106,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517796,
+      "ANL_NAME": "PA Gartensteg",
+      "BEZIRK": 10,
+      "FLAECHE": "3.422 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517797",
@@ -8075,7 +12144,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517797,
+      "ANL_NAME": "GA Mariahilfer Gürtel",
+      "BEZIRK": 15,
+      "FLAECHE": "320 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517798",
@@ -8099,7 +12181,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517798,
+      "ANL_NAME": "PA Tillmanngasse",
+      "BEZIRK": 22,
+      "FLAECHE": "3.887 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517799",
@@ -8123,7 +12218,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517799,
+      "ANL_NAME": "PA Rodauner Straße",
+      "BEZIRK": 23,
+      "FLAECHE": "4.341 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517800",
@@ -8147,7 +12255,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517800,
+      "ANL_NAME": "PA Ortskern Grinzing",
+      "BEZIRK": 19,
+      "FLAECHE": "1.375 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517801",
@@ -8171,7 +12292,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517801,
+      "ANL_NAME": "PA Leopold-Steiner-Gasse",
+      "BEZIRK": 19,
+      "FLAECHE": "545 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517802",
@@ -8195,7 +12329,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517802,
+      "ANL_NAME": "PA Ketzergasse",
+      "BEZIRK": 23,
+      "FLAECHE": "945 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517803",
@@ -8219,7 +12366,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517803,
+      "ANL_NAME": "PA Kästenbaumgasse",
+      "BEZIRK": 10,
+      "FLAECHE": "1.450 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517804",
@@ -8243,7 +12403,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517804,
+      "ANL_NAME": "PA Hofjagdstraße",
+      "BEZIRK": 13,
+      "FLAECHE": "6.356 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517805",
@@ -8267,7 +12440,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517805,
+      "ANL_NAME": "PA Filmteichstraße",
+      "BEZIRK": 10,
+      "FLAECHE": "5.006 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517806",
@@ -8291,7 +12477,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517806,
+      "ANL_NAME": "PA Erbpostgasse",
+      "BEZIRK": 21,
+      "FLAECHE": "1.089 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517807",
@@ -8315,7 +12514,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517807,
+      "ANL_NAME": "PA Donauturmstraße",
+      "BEZIRK": 21,
+      "FLAECHE": "718 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517808",
@@ -8339,7 +12551,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517808,
+      "ANL_NAME": "PA Czernetzplatz",
+      "BEZIRK": 22,
+      "FLAECHE": "2.655 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517809",
@@ -8363,7 +12588,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517809,
+      "ANL_NAME": "PA Bujattigasse",
+      "BEZIRK": 14,
+      "FLAECHE": "3.630 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517810",
@@ -8387,7 +12625,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517810,
+      "ANL_NAME": "PA Bahnstraße",
+      "BEZIRK": 14,
+      "FLAECHE": "2.461 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517811",
@@ -8414,7 +12665,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517811,
+      "ANL_NAME": "Ladinigpark",
+      "BEZIRK": 22,
+      "FLAECHE": "7.669 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517812",
@@ -8438,7 +12702,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517812,
+      "ANL_NAME": "GA Schrödingerplatz",
+      "BEZIRK": 22,
+      "FLAECHE": "743 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517813",
@@ -8462,7 +12739,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517813,
+      "ANL_NAME": "GA Margaretenplatz",
+      "BEZIRK": 5,
+      "FLAECHE": "173 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517814",
@@ -8486,7 +12776,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517814,
+      "ANL_NAME": "GA In der goldenen Erden",
+      "BEZIRK": 21,
+      "FLAECHE": "2.189 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517815",
@@ -8513,7 +12816,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517815,
+      "ANL_NAME": "Andreaspark",
+      "BEZIRK": 7,
+      "FLAECHE": "3.009 m²",
+      "OEFF_ZEITEN": "Okt: 6:40-19:15, Nov-März: 6:40-18:15, Apr-Sep: 6:40-21:15",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517816",
@@ -8538,7 +12854,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517816,
+      "ANL_NAME": "GA Sonnenallee",
+      "BEZIRK": 22,
+      "FLAECHE": "2.555 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517817",
@@ -8564,7 +12893,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517817,
+      "ANL_NAME": "PA Hallergasse",
+      "BEZIRK": 11,
+      "FLAECHE": "2.947 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517818",
@@ -8588,7 +12930,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517818,
+      "ANL_NAME": "PA Sieveringer Straße",
+      "BEZIRK": 19,
+      "FLAECHE": "23 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517819",
@@ -8615,7 +12970,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517819,
+      "ANL_NAME": "Ulmenpark",
+      "BEZIRK": 14,
+      "FLAECHE": "6.771 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517820",
@@ -8640,7 +13008,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517820,
+      "ANL_NAME": "GA Koppstraße",
+      "BEZIRK": 16,
+      "FLAECHE": "282 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517821",
@@ -8664,7 +13045,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517821,
+      "ANL_NAME": "PA Asperner Heldenplatz",
+      "BEZIRK": 22,
+      "FLAECHE": "2.194 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517822",
@@ -8689,7 +13083,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517822,
+      "ANL_NAME": "Jugendaktivzone",
+      "BEZIRK": 15,
+      "FLAECHE": "2.862 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517823",
@@ -8716,7 +13123,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517823,
+      "ANL_NAME": "Motorikpark",
+      "BEZIRK": 22,
+      "FLAECHE": "21.757 m²",
+      "OEFF_ZEITEN": "http://www.motorikpark-wien.at/",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3517824",
@@ -8742,7 +13162,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3517824,
+      "ANL_NAME": "GA Auf der Schmelz",
+      "BEZIRK": 15,
+      "FLAECHE": "4.889 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3523985",
@@ -8767,7 +13200,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3523985,
+      "ANL_NAME": "GA Südtiroler Platz",
+      "BEZIRK": 4,
+      "FLAECHE": "1.011 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3523986",
@@ -8792,7 +13238,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3523986,
+      "ANL_NAME": "Girardipark",
+      "BEZIRK": 1,
+      "FLAECHE": "1.799 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3523987",
@@ -8818,7 +13277,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3523987,
+      "ANL_NAME": "PA Fröhlichgasse",
+      "BEZIRK": 23,
+      "FLAECHE": "3.547 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3523988",
@@ -8842,7 +13314,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3523988,
+      "ANL_NAME": "GA Malfattigasse",
+      "BEZIRK": 12,
+      "FLAECHE": "760 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3523989",
@@ -8867,7 +13352,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3523989,
+      "ANL_NAME": "GA Franklinstraße",
+      "BEZIRK": 21,
+      "FLAECHE": "5.956 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3523990",
@@ -8891,7 +13389,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3523990,
+      "ANL_NAME": "Adele-Jellinek-Promenade",
+      "BEZIRK": 2,
+      "FLAECHE": "5.367 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3523991",
@@ -8916,7 +13427,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3523991,
+      "ANL_NAME": "GA Lorenz-Mandl-Gasse",
+      "BEZIRK": 16,
+      "FLAECHE": "658 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3523992",
@@ -8942,7 +13466,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3523992,
+      "ANL_NAME": "GA Am-Ostrom-Park",
+      "BEZIRK": 22,
+      "FLAECHE": "725 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3523993",
@@ -8966,7 +13503,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3523993,
+      "ANL_NAME": "PA Max-Patat-Weg",
+      "BEZIRK": 19,
+      "FLAECHE": "2.427 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3523994",
@@ -8994,7 +13544,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3523994,
+      "ANL_NAME": "Luise-Montag-Park",
+      "BEZIRK": 11,
+      "FLAECHE": "13.660 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3523995",
@@ -9019,7 +13582,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3523995,
+      "ANL_NAME": "PA Am Kanal",
+      "BEZIRK": 11,
+      "FLAECHE": "7.163 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3523996",
@@ -9043,7 +13619,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3523996,
+      "ANL_NAME": "PA Van-der-Nüll-Gasse",
+      "BEZIRK": 10,
+      "FLAECHE": "391 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3523997",
@@ -9070,7 +13659,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3523997,
+      "ANL_NAME": "Seeschlachtpark",
+      "BEZIRK": 11,
+      "FLAECHE": "3.891 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3523998",
@@ -9094,7 +13696,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3523998,
+      "ANL_NAME": "PA Hasenleitengasse",
+      "BEZIRK": 11,
+      "FLAECHE": "10.010 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3523999",
@@ -9120,7 +13735,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3523999,
+      "ANL_NAME": "Olga-Misař-Promenade",
+      "BEZIRK": 9,
+      "FLAECHE": "9.879 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524000",
@@ -9147,7 +13775,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524000,
+      "ANL_NAME": "Hans-Pemmer-Park",
+      "BEZIRK": 3,
+      "FLAECHE": "7.596 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524001",
@@ -9173,7 +13814,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524001,
+      "ANL_NAME": "PA Maria vom Siege",
+      "BEZIRK": 15,
+      "FLAECHE": "3.370 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524002",
@@ -9201,7 +13855,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524002,
+      "ANL_NAME": "Olympiapark",
+      "BEZIRK": 19,
+      "FLAECHE": "13.458 m²",
+      "OEFF_ZEITEN": "Ballspielplatz: Okt-Mär: 7:00-19:00, Apr-Sep: 7:00-22:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524003",
@@ -9225,7 +13892,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524003,
+      "ANL_NAME": "PA Am Bruckhaufen",
+      "BEZIRK": 21,
+      "FLAECHE": "2.609 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524004",
@@ -9255,6 +13935,19 @@ export const PARKS_DATA: Park[] = [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524004,
+      "ANL_NAME": "Währinger Park",
+      "BEZIRK": 18,
+      "FLAECHE": "48.190 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Stadt Wien"
   },
   {
@@ -9283,7 +13976,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524005,
+      "ANL_NAME": "Kongreßpark",
+      "BEZIRK": 16,
+      "FLAECHE": "51.908 m²",
+      "OEFF_ZEITEN": "Ballspiel:März-Nov v. Mo-Fr:07:00-20:00,Sa+So:09:00-20:30,Hundezone:06:00-22:00,Dez-Feb:keine Sperre",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524006",
@@ -9310,7 +14016,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524006,
+      "ANL_NAME": "Karl-Kantner-Park",
+      "BEZIRK": 16,
+      "FLAECHE": "5.765 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524007",
@@ -9334,7 +14053,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524007,
+      "ANL_NAME": "PA Hammerschmidtgasse",
+      "BEZIRK": 19,
+      "FLAECHE": "1.469 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524008",
@@ -9360,7 +14092,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524008,
+      "ANL_NAME": "PA Am Neustiftblick",
+      "BEZIRK": 19,
+      "FLAECHE": "2.928 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524009",
@@ -9386,7 +14131,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524009,
+      "ANL_NAME": "PA Börnergasse",
+      "BEZIRK": 19,
+      "FLAECHE": "7.769 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig: Okt-Mär: 7:00-19:00, Apr-Sep: 7:00-22:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524010",
@@ -9414,7 +14172,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524010,
+      "ANL_NAME": "Beethovenpark",
+      "BEZIRK": 19,
+      "FLAECHE": "15.304 m²",
+      "OEFF_ZEITEN": "0:00-24:00, Ballspielkäfig: 06:00-21:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524011",
@@ -9439,7 +14210,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524011,
+      "ANL_NAME": "PA 12. Februar-Platz",
+      "BEZIRK": 19,
+      "FLAECHE": "10.417 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524012",
@@ -9463,7 +14247,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524012,
+      "ANL_NAME": "PA Französische Botschaft",
+      "BEZIRK": 4,
+      "FLAECHE": "972 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524013",
@@ -9490,7 +14287,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524013,
+      "ANL_NAME": "Vilma-Degischer-Park",
+      "BEZIRK": 18,
+      "FLAECHE": "1.225 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524014",
@@ -9515,7 +14325,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524014,
+      "ANL_NAME": "PA Ladenburghöhe",
+      "BEZIRK": 18,
+      "FLAECHE": "5.934 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524015",
@@ -9541,7 +14364,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524015,
+      "ANL_NAME": "Robert-Hochner-Park",
+      "BEZIRK": 3,
+      "FLAECHE": "3.317 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524016",
@@ -9567,7 +14403,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524016,
+      "ANL_NAME": "Badeteich Süßenbrunn",
+      "BEZIRK": 22,
+      "FLAECHE": "90.051 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524017",
@@ -9592,7 +14441,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524017,
+      "ANL_NAME": "PA Eisenhutgasse",
+      "BEZIRK": 22,
+      "FLAECHE": "1.865 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524018",
@@ -9616,7 +14478,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524018,
+      "ANL_NAME": "GA Gaudenzdorfer Knoten",
+      "BEZIRK": 12,
+      "FLAECHE": "10.849 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524019",
@@ -9640,7 +14515,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524019,
+      "ANL_NAME": "PA Moselgasse",
+      "BEZIRK": 10,
+      "FLAECHE": "2.377 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524020",
@@ -9665,7 +14553,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524020,
+      "ANL_NAME": "PA Pichelmayergasse",
+      "BEZIRK": 10,
+      "FLAECHE": "26.170 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524021",
@@ -9689,7 +14590,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524021,
+      "ANL_NAME": "PA Bertha-von-Suttner-Hof",
+      "BEZIRK": 4,
+      "FLAECHE": "295 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524022",
@@ -9716,7 +14630,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524022,
+      "ANL_NAME": "Wettsteinpark",
+      "BEZIRK": 2,
+      "FLAECHE": "15.971 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524023",
@@ -9742,6 +14669,19 @@ export const PARKS_DATA: Park[] = [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524023,
+      "ANL_NAME": "Prater - Sonnenscheinwiese",
+      "BEZIRK": 2,
+      "FLAECHE": "141.396 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Wikipedia"
   },
   {
@@ -9767,7 +14707,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524024,
+      "ANL_NAME": "Mignon-Langnas-Park",
+      "BEZIRK": 2,
+      "FLAECHE": "4.184 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524025",
@@ -9793,7 +14746,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524025,
+      "ANL_NAME": "PA Zentaplatz",
+      "BEZIRK": 5,
+      "FLAECHE": "1.417 m²",
+      "OEFF_ZEITEN": "6:45-21:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524026",
@@ -9819,7 +14785,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524026,
+      "ANL_NAME": "PA Josef-Österreicher-Gasse",
+      "BEZIRK": 23,
+      "FLAECHE": "1.843 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig: Mai-Okt. 8:00-20:00, Nov-Apr: keine Sperre",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524027",
@@ -9846,7 +14825,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524027,
+      "ANL_NAME": "Veza-Canetti-Park",
+      "BEZIRK": 2,
+      "FLAECHE": "681 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524028",
@@ -9870,7 +14862,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524028,
+      "ANL_NAME": "PA Holubstraße",
+      "BEZIRK": 2,
+      "FLAECHE": "7.134 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524029",
@@ -9897,7 +14902,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524029,
+      "ANL_NAME": "Therese-Ammon-Park",
+      "BEZIRK": 2,
+      "FLAECHE": "6.037 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524030",
@@ -9925,7 +14943,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524030,
+      "ANL_NAME": "Rudolf-Bednar-Park",
+      "BEZIRK": 2,
+      "FLAECHE": "31.319 m²",
+      "OEFF_ZEITEN": "Skateranlage: 6:30-20:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524031",
@@ -9951,7 +14982,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524031,
+      "ANL_NAME": "Irma-Schwager-Park",
+      "BEZIRK": 2,
+      "FLAECHE": "9.383 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524032",
@@ -9978,7 +15022,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524032,
+      "ANL_NAME": "Max-Winter-Park",
+      "BEZIRK": 2,
+      "FLAECHE": "9.852 m²",
+      "OEFF_ZEITEN": "Apr.-Sept.:06:30-21:30(20:30 an Sa,So,FT),Okt.-März:05:30-21:30(20:30 an Sa,So,FT)",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524033",
@@ -10002,7 +15059,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524033,
+      "ANL_NAME": "PA Siebenbrunnengasse",
+      "BEZIRK": 5,
+      "FLAECHE": "1.699 m²",
+      "OEFF_ZEITEN": "6:15-21:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524034",
@@ -10029,7 +15099,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524034,
+      "ANL_NAME": "Scheupark",
+      "BEZIRK": 5,
+      "FLAECHE": "3.132 m²",
+      "OEFF_ZEITEN": "6:15-21:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524035",
@@ -10057,7 +15140,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524035,
+      "ANL_NAME": "Rudolf-Sallinger-Park",
+      "BEZIRK": 5,
+      "FLAECHE": "4.919 m²",
+      "OEFF_ZEITEN": "Ballspielplatz+Hundezone: 6:45-21:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524036",
@@ -10083,7 +15179,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524036,
+      "ANL_NAME": "PA Leopold-Rister-Gasse",
+      "BEZIRK": 5,
+      "FLAECHE": "4.748 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig+Hundezone:6:45-22:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524037",
@@ -10110,7 +15219,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524037,
+      "ANL_NAME": "Ernst-Lichtblau-Park",
+      "BEZIRK": 5,
+      "FLAECHE": "2.438 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig: 6:45-21:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524038",
@@ -10135,7 +15257,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524038,
+      "ANL_NAME": "Ernst-Arnold-Park",
+      "BEZIRK": 5,
+      "FLAECHE": "3.788 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524039",
@@ -10162,7 +15297,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524039,
+      "ANL_NAME": "Einsiedlerpark",
+      "BEZIRK": 5,
+      "FLAECHE": "6.359 m²",
+      "OEFF_ZEITEN": "Hundezone: 6:15-21:45",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524040",
@@ -10189,7 +15337,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524040,
+      "ANL_NAME": "Bacherpark",
+      "BEZIRK": 5,
+      "FLAECHE": "6.120 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig: 6:15-22:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524041",
@@ -10215,7 +15376,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524041,
+      "ANL_NAME": "PA Am Hundsturm",
+      "BEZIRK": 5,
+      "FLAECHE": "4.077 m²",
+      "OEFF_ZEITEN": "Hundezone:6:45-21:45",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524042",
@@ -10242,7 +15416,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524042,
+      "ANL_NAME": "Rubenspark",
+      "BEZIRK": 4,
+      "FLAECHE": "2.871 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524043",
@@ -10269,7 +15456,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524043,
+      "ANL_NAME": "Alfred-Böhm-Park",
+      "BEZIRK": 10,
+      "FLAECHE": "33.768 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig+Hundezone+Skateranlage:06:00-21:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524044",
@@ -10294,7 +15494,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524044,
+      "ANL_NAME": "PA Latschkagasse",
+      "BEZIRK": 9,
+      "FLAECHE": "395 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524045",
@@ -10321,7 +15534,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524045,
+      "ANL_NAME": "Tigerpark",
+      "BEZIRK": 8,
+      "FLAECHE": "2.004 m²",
+      "OEFF_ZEITEN": "Okt-März: 07:00-22:00, Apr-Sep:06:30-21:15",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524046",
@@ -10348,7 +15574,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524046,
+      "ANL_NAME": "Schönbornpark",
+      "BEZIRK": 8,
+      "FLAECHE": "9.650 m²",
+      "OEFF_ZEITEN": "Okt-März: 06:20-19:45, Apr-Sep:6:50-21:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524047",
@@ -10374,7 +15613,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524047,
+      "ANL_NAME": "Elisa-Springer-Park",
+      "BEZIRK": 8,
+      "FLAECHE": "126 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524048",
@@ -10401,7 +15653,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524048,
+      "ANL_NAME": "Hamerlingpark",
+      "BEZIRK": 8,
+      "FLAECHE": "6.069 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524049",
@@ -10426,7 +15691,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524049,
+      "ANL_NAME": "Therese-Sip-Park",
+      "BEZIRK": 6,
+      "FLAECHE": "369 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524050",
@@ -10452,7 +15730,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524050,
+      "ANL_NAME": "Richard-Waldemar-Park",
+      "BEZIRK": 6,
+      "FLAECHE": "1.838 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig: Okt-März: 7:00-20:30, Apr-Sep: 7:00-22:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524051",
@@ -10479,7 +15770,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524051,
+      "ANL_NAME": "Schmalzhoftempelpark",
+      "BEZIRK": 6,
+      "FLAECHE": "5.132 m²",
+      "OEFF_ZEITEN": "Okt-März: 7:45-20:45, Apr-Sep: 7:45-21:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524052",
@@ -10505,7 +15809,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524052,
+      "ANL_NAME": "PA Keplerplatz",
+      "BEZIRK": 10,
+      "FLAECHE": "5.658 m²",
+      "OEFF_ZEITEN": "Hundezone:06:00-21:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524053",
@@ -10533,7 +15850,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524053,
+      "ANL_NAME": "Johann-Benda-Park",
+      "BEZIRK": 10,
+      "FLAECHE": "52.838 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524054",
@@ -10557,7 +15887,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524054,
+      "ANL_NAME": "PA Holeyplatz",
+      "BEZIRK": 10,
+      "FLAECHE": "2.073 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524055",
@@ -10581,7 +15924,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524055,
+      "ANL_NAME": "PA Saligergasse",
+      "BEZIRK": 10,
+      "FLAECHE": "32.352 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524056",
@@ -10607,7 +15963,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524056,
+      "ANL_NAME": "PA Fingergasse",
+      "BEZIRK": 10,
+      "FLAECHE": "7.428 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524057",
@@ -10633,7 +16002,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524057,
+      "ANL_NAME": "PA Erlachplatz",
+      "BEZIRK": 10,
+      "FLAECHE": "4.467 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524058",
@@ -10659,7 +16041,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524058,
+      "ANL_NAME": "PA Eisteichstraße",
+      "BEZIRK": 11,
+      "FLAECHE": "3.855 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524059",
@@ -10683,7 +16078,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524059,
+      "ANL_NAME": "PA Drischützgasse",
+      "BEZIRK": 11,
+      "FLAECHE": "771 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524060",
@@ -10709,7 +16117,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524060,
+      "ANL_NAME": "Brehmpark",
+      "BEZIRK": 11,
+      "FLAECHE": "799 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524061",
@@ -10736,7 +16157,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524061,
+      "ANL_NAME": "Braunhuberpark",
+      "BEZIRK": 11,
+      "FLAECHE": "4.862 m²",
+      "OEFF_ZEITEN": "Hundezone:06:00-20:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524062",
@@ -10763,7 +16197,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524062,
+      "ANL_NAME": "PA Pretschgasse",
+      "BEZIRK": 11,
+      "FLAECHE": "6.311 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524063",
@@ -10788,7 +16235,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524063,
+      "ANL_NAME": "PA Albin-Hirsch-Platz",
+      "BEZIRK": 11,
+      "FLAECHE": "3.229 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524064",
@@ -10814,7 +16274,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524064,
+      "ANL_NAME": "PA Mannswörther Straße",
+      "BEZIRK": 11,
+      "FLAECHE": "1.936 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524065",
@@ -10839,7 +16312,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524065,
+      "ANL_NAME": "PA Wieselburger Gasse",
+      "BEZIRK": 10,
+      "FLAECHE": "2.801 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524066",
@@ -10864,7 +16350,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524066,
+      "ANL_NAME": "PA Wienerfeldsiedlung",
+      "BEZIRK": 10,
+      "FLAECHE": "16.179 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524067",
@@ -10890,7 +16389,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524067,
+      "ANL_NAME": "PA Wielandplatz",
+      "BEZIRK": 10,
+      "FLAECHE": "4.413 m²",
+      "OEFF_ZEITEN": "6:00-21:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524068",
@@ -10914,7 +16426,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524068,
+      "ANL_NAME": "PA Sonnwendgasse",
+      "BEZIRK": 10,
+      "FLAECHE": "847 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524435",
@@ -10940,7 +16465,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524435,
+      "ANL_NAME": "Ottingerwiese",
+      "BEZIRK": 19,
+      "FLAECHE": "17.297 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524436",
@@ -10965,7 +16503,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524436,
+      "ANL_NAME": "Setagayapark",
+      "BEZIRK": 19,
+      "FLAECHE": "4.817 m²",
+      "OEFF_ZEITEN": "März: 7:00-18:00, Apr+Sep: 7:00-20:00,Mai-Aug: 7:00-21:00, Okt: 7:00-19:00, Nov-Feb: geschlossen",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524437",
@@ -10990,7 +16541,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524437,
+      "ANL_NAME": "Rudolf-Grünwald-Park",
+      "BEZIRK": 19,
+      "FLAECHE": "4.822 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524438",
@@ -11016,7 +16580,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524438,
+      "ANL_NAME": "Pfarrer-Mitschke-Park",
+      "BEZIRK": 19,
+      "FLAECHE": "775 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524439",
@@ -11040,7 +16617,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524439,
+      "ANL_NAME": "PA Nottebohmstraße",
+      "BEZIRK": 19,
+      "FLAECHE": "1.720 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524440",
@@ -11064,7 +16654,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524440,
+      "ANL_NAME": "PA Emil-Reich-Hof",
+      "BEZIRK": 19,
+      "FLAECHE": "3.668 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524441",
@@ -11088,7 +16691,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524441,
+      "ANL_NAME": "PA Mannagettasteig",
+      "BEZIRK": 19,
+      "FLAECHE": "1.268 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524442",
@@ -11112,7 +16728,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524442,
+      "ANL_NAME": "PA Linnéplatz",
+      "BEZIRK": 19,
+      "FLAECHE": "5.870 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524443",
@@ -11137,7 +16766,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524443,
+      "ANL_NAME": "Franz-Mayer-Park",
+      "BEZIRK": 19,
+      "FLAECHE": "4.548 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524444",
@@ -11162,7 +16804,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524444,
+      "ANL_NAME": "PA Kuchelau",
+      "BEZIRK": 19,
+      "FLAECHE": "5.883 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524445",
@@ -11187,7 +16842,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524445,
+      "ANL_NAME": "PA Kranlweg",
+      "BEZIRK": 19,
+      "FLAECHE": "450 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524446",
@@ -11212,7 +16880,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524446,
+      "ANL_NAME": "PA Klabundgasse",
+      "BEZIRK": 19,
+      "FLAECHE": "2.880 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524447",
@@ -11238,7 +16919,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524447,
+      "ANL_NAME": "PA In der Krim",
+      "BEZIRK": 19,
+      "FLAECHE": "3.614 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig: Okt-Mär: 7:00-19:00, Apr-Sep: 7:00-22:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524448",
@@ -11264,7 +16958,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524448,
+      "ANL_NAME": "PA Dominik-Wölfel-Gasse",
+      "BEZIRK": 21,
+      "FLAECHE": "7.323 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524449",
@@ -11288,7 +16995,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524449,
+      "ANL_NAME": "PA Doderergasse",
+      "BEZIRK": 21,
+      "FLAECHE": "6.437 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524450",
@@ -11314,7 +17034,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524450,
+      "ANL_NAME": "PA Carabelligasse",
+      "BEZIRK": 21,
+      "FLAECHE": "4.355 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524451",
@@ -11339,7 +17072,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524451,
+      "ANL_NAME": "Kleingartenjubiläumspark",
+      "BEZIRK": 21,
+      "FLAECHE": "2.330 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524452",
@@ -11365,7 +17111,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524452,
+      "ANL_NAME": "PA An der oberen Alten Donau",
+      "BEZIRK": 21,
+      "FLAECHE": "2.578 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524453",
@@ -11389,7 +17148,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524453,
+      "ANL_NAME": "PA Fultonstraße",
+      "BEZIRK": 21,
+      "FLAECHE": "2.147 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524454",
@@ -11415,7 +17187,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524454,
+      "ANL_NAME": "PA Stromstraße",
+      "BEZIRK": 20,
+      "FLAECHE": "1.468 m²",
+      "OEFF_ZEITEN": "Ballspiel: 6:30-20:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524455",
@@ -11442,7 +17227,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524455,
+      "ANL_NAME": "Sachsenpark",
+      "BEZIRK": 20,
+      "FLAECHE": "5.876 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig:Okt-März:07:00-20:00, Apr-Sep:07:00-21:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524456",
@@ -11468,7 +17266,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524456,
+      "ANL_NAME": "PA Leithastraße",
+      "BEZIRK": 20,
+      "FLAECHE": "1.477 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524457",
@@ -11493,7 +17304,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524457,
+      "ANL_NAME": "PA Luntzgasse",
+      "BEZIRK": 20,
+      "FLAECHE": "261 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524458",
@@ -11519,7 +17343,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524458,
+      "ANL_NAME": "PA Spielmanngasse",
+      "BEZIRK": 20,
+      "FLAECHE": "2.085 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524459",
@@ -11545,7 +17382,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524459,
+      "ANL_NAME": "PA Kapaunplatz",
+      "BEZIRK": 20,
+      "FLAECHE": "6.064 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig:06:30-20:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524460",
@@ -11571,7 +17421,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524460,
+      "ANL_NAME": "PA Gaußplatz",
+      "BEZIRK": 20,
+      "FLAECHE": "4.204 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig:Okt-März:07:30-20:30, Apr-Sep:07:30-21:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524461",
@@ -11595,7 +17458,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524461,
+      "ANL_NAME": "Prater - Blumenwiese",
+      "BEZIRK": 2,
+      "FLAECHE": "18.907 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524462",
@@ -11619,7 +17495,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524462,
+      "ANL_NAME": "PA Eisenhutgasse/Oberleuthnergrund",
+      "BEZIRK": 22,
+      "FLAECHE": "4.191 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524463",
@@ -11644,7 +17533,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524463,
+      "ANL_NAME": "Franz-Mittasch-Park",
+      "BEZIRK": 21,
+      "FLAECHE": "2.834 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524464",
@@ -11668,7 +17570,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524464,
+      "ANL_NAME": "PA Genossenschaftsstraße",
+      "BEZIRK": 14,
+      "FLAECHE": "4.305 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524465",
@@ -11695,7 +17610,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524465,
+      "ANL_NAME": "Alfred-Grünwald-Park",
+      "BEZIRK": 6,
+      "FLAECHE": "9.230 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524466",
@@ -11721,7 +17649,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524466,
+      "ANL_NAME": "PA Wiesberggasse",
+      "BEZIRK": 16,
+      "FLAECHE": "2.559 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig: März-Nov: 07:00-21:00, Dez-Feb: keine Sperre",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524467",
@@ -11745,7 +17686,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524467,
+      "ANL_NAME": "PA Gersthofer Straße",
+      "BEZIRK": 18,
+      "FLAECHE": "2.148 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524631",
@@ -11772,7 +17726,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524631,
+      "ANL_NAME": "Mundypark",
+      "BEZIRK": 10,
+      "FLAECHE": "2.896 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig: 6:00-21:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524632",
@@ -11796,7 +17763,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524632,
+      "ANL_NAME": "PA Otto-Probst-Straße",
+      "BEZIRK": 10,
+      "FLAECHE": "11.659 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524633",
@@ -11822,7 +17802,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524633,
+      "ANL_NAME": "PA Suchenwirtplatz",
+      "BEZIRK": 10,
+      "FLAECHE": "2.404 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig: 6:00-21:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524634",
@@ -11849,7 +17842,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524634,
+      "ANL_NAME": "Waldmüllerpark",
+      "BEZIRK": 10,
+      "FLAECHE": "39.190 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524635",
@@ -11874,7 +17880,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524635,
+      "ANL_NAME": "PA Neusserplatz",
+      "BEZIRK": 15,
+      "FLAECHE": "593 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524636",
@@ -11900,7 +17919,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524636,
+      "ANL_NAME": "PA Lorenz-Reiter-Straße",
+      "BEZIRK": 11,
+      "FLAECHE": "6.853 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524637",
@@ -11926,7 +17958,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524637,
+      "ANL_NAME": "PA Hutterergasse",
+      "BEZIRK": 11,
+      "FLAECHE": "7.506 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524638",
@@ -11953,7 +17998,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524638,
+      "ANL_NAME": "Rosa-Barach-Park",
+      "BEZIRK": 15,
+      "FLAECHE": "828 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524639",
@@ -11977,7 +18035,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524639,
+      "ANL_NAME": "PA Amstergasse",
+      "BEZIRK": 23,
+      "FLAECHE": "1.560 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524640",
@@ -12002,7 +18073,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524640,
+      "ANL_NAME": "GA Wilhelm-Svetelsky-Platz",
+      "BEZIRK": 11,
+      "FLAECHE": "1.534 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524641",
@@ -12026,7 +18110,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524641,
+      "ANL_NAME": "PA Faistauergasse",
+      "BEZIRK": 13,
+      "FLAECHE": "538 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524642",
@@ -12053,7 +18150,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524642,
+      "ANL_NAME": "Walter-Kuhn-Park",
+      "BEZIRK": 10,
+      "FLAECHE": "9.004 m²",
+      "OEFF_ZEITEN": "00:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524643",
@@ -12078,7 +18188,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524643,
+      "ANL_NAME": "Artillerieplatz Hundezone",
+      "BEZIRK": 11,
+      "FLAECHE": "597 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524644",
@@ -12105,7 +18228,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524644,
+      "ANL_NAME": "Stadtpark Atzgersdorf",
+      "BEZIRK": 23,
+      "FLAECHE": "29.172 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524645",
@@ -12130,7 +18266,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524645,
+      "ANL_NAME": "Millenbergeweg Hundezone",
+      "BEZIRK": 23,
+      "FLAECHE": "350 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524646",
@@ -12155,7 +18304,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524646,
+      "ANL_NAME": "GA Goldschlagstraße",
+      "BEZIRK": 15,
+      "FLAECHE": "262 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524647",
@@ -12179,7 +18341,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524647,
+      "ANL_NAME": "GA Felberstraße",
+      "BEZIRK": 15,
+      "FLAECHE": "165 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524648",
@@ -12204,7 +18379,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524648,
+      "ANL_NAME": "PA Kranzgasse",
+      "BEZIRK": 15,
+      "FLAECHE": "690 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524649",
@@ -12228,7 +18416,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524649,
+      "ANL_NAME": "GA Pelzgasse",
+      "BEZIRK": 15,
+      "FLAECHE": "63 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524650",
@@ -12252,7 +18453,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524650,
+      "ANL_NAME": "GA Maria vom Siege Brücke",
+      "BEZIRK": 15,
+      "FLAECHE": "22 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524651",
@@ -12276,7 +18490,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524651,
+      "ANL_NAME": "GA Pfenninggeldgasse",
+      "BEZIRK": 16,
+      "FLAECHE": "28 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524652",
@@ -12300,7 +18527,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524652,
+      "ANL_NAME": "PA Kopalgasse",
+      "BEZIRK": 11,
+      "FLAECHE": "2.845 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524653",
@@ -12324,7 +18564,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524653,
+      "ANL_NAME": "PA Danilovatzgasse",
+      "BEZIRK": 12,
+      "FLAECHE": "897 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524654",
@@ -12350,7 +18603,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524654,
+      "ANL_NAME": "Marillenalm",
+      "BEZIRK": 12,
+      "FLAECHE": "10.079 m²",
+      "OEFF_ZEITEN": "Wint: 6:00-21:30|Somm: 6:00-22:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524655",
@@ -12376,7 +18642,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524655,
+      "ANL_NAME": "PA Schlöglgasse",
+      "BEZIRK": 12,
+      "FLAECHE": "10.930 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524656",
@@ -12401,7 +18680,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524656,
+      "ANL_NAME": "Hundezone Himmelbaurgasse",
+      "BEZIRK": 13,
+      "FLAECHE": "993 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524657",
@@ -12425,7 +18717,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524657,
+      "ANL_NAME": "PA Anzbachgasse",
+      "BEZIRK": 14,
+      "FLAECHE": "1.700 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524658",
@@ -12452,7 +18757,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524658,
+      "ANL_NAME": "Heinz-Conrads-Park",
+      "BEZIRK": 14,
+      "FLAECHE": "5.964 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524659",
@@ -12476,7 +18794,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524659,
+      "ANL_NAME": "PA Moshe-Jahoda-Platz",
+      "BEZIRK": 15,
+      "FLAECHE": "534 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524660",
@@ -12503,7 +18834,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524660,
+      "ANL_NAME": "Ignaz-Kuranda-Park",
+      "BEZIRK": 15,
+      "FLAECHE": "2.429 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524661",
@@ -12527,7 +18871,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524661,
+      "ANL_NAME": "PA Kriemhildplatz",
+      "BEZIRK": 15,
+      "FLAECHE": "1.086 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524662",
@@ -12553,7 +18910,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524662,
+      "ANL_NAME": "PA Winckelmannstraße",
+      "BEZIRK": 15,
+      "FLAECHE": "1.859 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524663",
@@ -12577,7 +18947,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524663,
+      "ANL_NAME": "PA Hansl-Schmid-Weg",
+      "BEZIRK": 16,
+      "FLAECHE": "899 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524698",
@@ -12605,6 +18988,19 @@ export const PARKS_DATA: Park[] = [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524698,
+      "ANL_NAME": "Blumengärten Hirschstetten",
+      "BEZIRK": 22,
+      "FLAECHE": "83.495 m²",
+      "OEFF_ZEITEN": "Sommer Di-So 9-18",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Stadt Wien"
   },
   {
@@ -12633,7 +19029,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524699,
+      "ANL_NAME": "Elinor-Ostrom-Park",
+      "BEZIRK": 22,
+      "FLAECHE": "29.157 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524700",
@@ -12660,7 +19069,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524700,
+      "ANL_NAME": "Rathauspark (Mauer)",
+      "BEZIRK": 23,
+      "FLAECHE": "13.986 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524701",
@@ -12686,7 +19108,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524701,
+      "ANL_NAME": "PA Alma-Seidler-Weg",
+      "BEZIRK": 23,
+      "FLAECHE": "9.462 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524702",
@@ -12713,7 +19148,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524702,
+      "ANL_NAME": "Mexikopark – Rosenpark",
+      "BEZIRK": 2,
+      "FLAECHE": "15.192 m²",
+      "OEFF_ZEITEN": "Spielplatz: 6:30-20:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524703",
@@ -12741,6 +19189,19 @@ export const PARKS_DATA: Park[] = [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524703,
+      "ANL_NAME": "Pötzleinsdorfer Schloßpark",
+      "BEZIRK": 18,
+      "FLAECHE": "348.672 m²",
+      "OEFF_ZEITEN": "Okt-Mär: 8:00-18:00, Apr-Sep: 7:00-21:00 (Sperrzeiten witterungsabhängig)",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Wikipedia"
   },
   {
@@ -12768,7 +19229,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524704,
+      "ANL_NAME": "Anton-Schmid-Promenade/WP",
+      "BEZIRK": 20,
+      "FLAECHE": "42.300 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524705",
@@ -12793,7 +19267,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524705,
+      "ANL_NAME": "Anton-Schmid-Promenade/AP",
+      "BEZIRK": 20,
+      "FLAECHE": "32.015 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524706",
@@ -12817,7 +19304,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524706,
+      "ANL_NAME": "Donaukanalpromenade",
+      "BEZIRK": 19,
+      "FLAECHE": "15.186 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524707",
@@ -12841,7 +19341,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524707,
+      "ANL_NAME": "Friedl-Dicker-Brandeis-Promenade",
+      "BEZIRK": 2,
+      "FLAECHE": "1.431 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524708",
@@ -12865,7 +19378,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524708,
+      "ANL_NAME": "PA Lazargasse",
+      "BEZIRK": 17,
+      "FLAECHE": "1.217 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524709",
@@ -12892,7 +19418,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524709,
+      "ANL_NAME": "Franz-Schwarz-Park",
+      "BEZIRK": 6,
+      "FLAECHE": "875 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524710",
@@ -12918,7 +19457,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524710,
+      "ANL_NAME": "Hetzendorfer Schloßpark",
+      "BEZIRK": 12,
+      "FLAECHE": "8.181 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524711",
@@ -12944,7 +19496,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524711,
+      "ANL_NAME": "PA Paltramplatz",
+      "BEZIRK": 10,
+      "FLAECHE": "3.127 m²",
+      "OEFF_ZEITEN": "6:00-21:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524712",
@@ -12970,7 +19535,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524712,
+      "ANL_NAME": "PA Dürrnbacherstraße",
+      "BEZIRK": 11,
+      "FLAECHE": "29.198 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524713",
@@ -12997,7 +19575,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524713,
+      "ANL_NAME": "Czapkapark",
+      "BEZIRK": 3,
+      "FLAECHE": "2.962 m²",
+      "OEFF_ZEITEN": "Okt-März: 6:00-19:00, Apr-Sep: 6:00-20:45",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524714",
@@ -13023,7 +19614,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524714,
+      "ANL_NAME": "Friederike-Stoiber-Park",
+      "BEZIRK": 12,
+      "FLAECHE": "1.911 m²",
+      "OEFF_ZEITEN": "Okt-März:06:00-21:00, Apr-Sep:06:00-21:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524715",
@@ -13047,7 +19651,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524715,
+      "ANL_NAME": "GA Apostelgasse",
+      "BEZIRK": 3,
+      "FLAECHE": "501 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524716",
@@ -13073,7 +19690,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524716,
+      "ANL_NAME": "Grete-Jost-Park",
+      "BEZIRK": 3,
+      "FLAECHE": "1.776 m²",
+      "OEFF_ZEITEN": "Okt-März: 6:15-19:15, Apr-Sep: 6:15-21:25",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524717",
@@ -13101,7 +19731,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524717,
+      "ANL_NAME": "Modenapark",
+      "BEZIRK": 3,
+      "FLAECHE": "7.776 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524718",
@@ -13127,7 +19770,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524718,
+      "ANL_NAME": "PA Reklewskigasse",
+      "BEZIRK": 23,
+      "FLAECHE": "10.366 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524719",
@@ -13153,7 +19809,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524719,
+      "ANL_NAME": "PA Yppenplatz",
+      "BEZIRK": 16,
+      "FLAECHE": "4.196 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524720",
@@ -13178,7 +19847,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524720,
+      "ANL_NAME": "PA Mühlstraße",
+      "BEZIRK": 10,
+      "FLAECHE": "269 m²",
+      "OEFF_ZEITEN": "00:00 - 24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524721",
@@ -13203,7 +19885,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524721,
+      "ANL_NAME": "An den alten Schanzen Hundezone",
+      "BEZIRK": 22,
+      "FLAECHE": "573 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524722",
@@ -13227,7 +19922,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524722,
+      "ANL_NAME": "PA Türkenschanzplatz",
+      "BEZIRK": 18,
+      "FLAECHE": "1.949 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524723",
@@ -13253,7 +19961,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524723,
+      "ANL_NAME": "GA Alszeile",
+      "BEZIRK": 17,
+      "FLAECHE": "4.209 m²",
+      "OEFF_ZEITEN": "Hundezone: 06:00-22:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524724",
@@ -13277,7 +19998,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524724,
+      "ANL_NAME": "GA Lambertgasse",
+      "BEZIRK": 16,
+      "FLAECHE": "26 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524725",
@@ -13301,7 +20035,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524725,
+      "ANL_NAME": "GA Lerchenfelder Gürtel",
+      "BEZIRK": 16,
+      "FLAECHE": "51 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524726",
@@ -13325,7 +20072,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524726,
+      "ANL_NAME": "GA Grubergasse",
+      "BEZIRK": 16,
+      "FLAECHE": "104 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524727",
@@ -13350,7 +20110,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524727,
+      "ANL_NAME": "Elfi-Dassanowsky-Park",
+      "BEZIRK": 17,
+      "FLAECHE": "220 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524728",
@@ -13375,7 +20148,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524728,
+      "ANL_NAME": "Hilde-Sochor-Park",
+      "BEZIRK": 14,
+      "FLAECHE": "87 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524729",
@@ -13400,7 +20186,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524729,
+      "ANL_NAME": "Dora-Schimanko-Park",
+      "BEZIRK": 2,
+      "FLAECHE": "1.428 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524730",
@@ -13424,7 +20223,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524730,
+      "ANL_NAME": "PA Kinzerplatz",
+      "BEZIRK": 21,
+      "FLAECHE": "9.801 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524731",
@@ -13451,7 +20263,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524731,
+      "ANL_NAME": "Eva-und-Otto-Benesch-Park",
+      "BEZIRK": 10,
+      "FLAECHE": "15.838 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524732",
@@ -13476,7 +20301,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524732,
+      "ANL_NAME": "GA Stefan-Fadinger-Platz",
+      "BEZIRK": 10,
+      "FLAECHE": "4.254 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524733",
@@ -13502,7 +20340,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524733,
+      "ANL_NAME": "Hans-Bock-Park",
+      "BEZIRK": 17,
+      "FLAECHE": "9.740 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524734",
@@ -13530,7 +20381,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524734,
+      "ANL_NAME": "Ernst-Paul-Zimper-Park",
+      "BEZIRK": 22,
+      "FLAECHE": "13.739 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524735",
@@ -13557,7 +20421,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524735,
+      "ANL_NAME": "Vally-Wieselthier-Park",
+      "BEZIRK": 7,
+      "FLAECHE": "598 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524736",
@@ -13582,7 +20459,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524736,
+      "ANL_NAME": "PA Knöllgasse",
+      "BEZIRK": 10,
+      "FLAECHE": "2.548 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524737",
@@ -13609,7 +20499,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524737,
+      "ANL_NAME": "Hannah-Arendt-Park",
+      "BEZIRK": 22,
+      "FLAECHE": "14.641 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524738",
@@ -13637,7 +20540,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524738,
+      "ANL_NAME": "Votivpark",
+      "BEZIRK": 9,
+      "FLAECHE": "16.795 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524739",
@@ -13663,7 +20579,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524739,
+      "ANL_NAME": "Karl-Fellinger-Park",
+      "BEZIRK": 19,
+      "FLAECHE": "22.500 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524740",
@@ -13690,7 +20619,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524740,
+      "ANL_NAME": "Lichtentalerpark",
+      "BEZIRK": 9,
+      "FLAECHE": "5.007 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig: 7:00-21:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524741",
@@ -13716,7 +20658,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524741,
+      "ANL_NAME": "Lerchenfelder Gürtel Hundezone",
+      "BEZIRK": 7,
+      "FLAECHE": "10.004 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524742",
@@ -13744,7 +20699,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524742,
+      "ANL_NAME": "Resselpark",
+      "BEZIRK": 4,
+      "FLAECHE": "41.532 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524743",
@@ -13771,7 +20739,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524743,
+      "ANL_NAME": "Christine-Busta-Park",
+      "BEZIRK": 12,
+      "FLAECHE": "5.756 m²",
+      "OEFF_ZEITEN": "Okt-März:06:00-21:00, Apr-Sep:06:00-21:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524744",
@@ -13799,7 +20780,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524744,
+      "ANL_NAME": "Otto-Affenzeller-Park",
+      "BEZIRK": 22,
+      "FLAECHE": "9.239 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524745",
@@ -13823,7 +20817,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524745,
+      "ANL_NAME": "PA Pötzleinsdorfer Straße",
+      "BEZIRK": 18,
+      "FLAECHE": "791 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524746",
@@ -13848,7 +20855,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524746,
+      "ANL_NAME": "PA Don Bosco Wiese",
+      "BEZIRK": 13,
+      "FLAECHE": "2.960 m²",
+      "OEFF_ZEITEN": null,
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524747",
@@ -13877,7 +20897,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524747,
+      "ANL_NAME": "Venediger-Au-Park",
+      "BEZIRK": 2,
+      "FLAECHE": "33.244 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524748",
@@ -13903,7 +20936,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524748,
+      "ANL_NAME": "PA Quellenstraße",
+      "BEZIRK": 10,
+      "FLAECHE": "5.081 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524749",
@@ -13930,7 +20976,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524749,
+      "ANL_NAME": "Claudia-Heill-Park",
+      "BEZIRK": 22,
+      "FLAECHE": "8.891 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524750",
@@ -13957,7 +21016,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524750,
+      "ANL_NAME": "Hermann-Gmeiner-Park",
+      "BEZIRK": 1,
+      "FLAECHE": "4.228 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig: 6:15-21:45",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524751",
@@ -13985,6 +21057,19 @@ export const PARKS_DATA: Park[] = [
       "U1 Oberlaa"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524751,
+      "ANL_NAME": "Kurpark Oberlaa",
+      "BEZIRK": 10,
+      "FLAECHE": "606.188 m²",
+      "OEFF_ZEITEN": "Nov.-Jan.6:00-18:00, Feb.6:00-19:00, Mar.&Okt.6:00-20:00, Apr.&Sept.6:00-21:00, Mai-Aug.6:00-22:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Wikipedia"
   },
   {
@@ -14010,7 +21095,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524752,
+      "ANL_NAME": "PA Harthausergasse",
+      "BEZIRK": 12,
+      "FLAECHE": "892 m²",
+      "OEFF_ZEITEN": "00:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524753",
@@ -14034,7 +21132,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524753,
+      "ANL_NAME": "PA Blauer Teich",
+      "BEZIRK": 10,
+      "FLAECHE": "3.416 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524754",
@@ -14058,7 +21169,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524754,
+      "ANL_NAME": "PA Kudlichgasse",
+      "BEZIRK": 10,
+      "FLAECHE": "943 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524755",
@@ -14085,7 +21209,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524755,
+      "ANL_NAME": "Matzner-Park",
+      "BEZIRK": 14,
+      "FLAECHE": "29.245 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524756",
@@ -14110,7 +21247,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524756,
+      "ANL_NAME": "PA Kornauthgasse",
+      "BEZIRK": 10,
+      "FLAECHE": "3.089 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524757",
@@ -14137,7 +21287,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524757,
+      "ANL_NAME": "Maria-Rekker-Park",
+      "BEZIRK": 10,
+      "FLAECHE": "2.183 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524758",
@@ -14161,7 +21324,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524758,
+      "ANL_NAME": "GA Franz-Jachym-Platz",
+      "BEZIRK": 10,
+      "FLAECHE": "1.229 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524759",
@@ -14186,7 +21362,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524759,
+      "ANL_NAME": "PA Johann-Pölzer-Gasse",
+      "BEZIRK": 10,
+      "FLAECHE": "3.598 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524760",
@@ -14213,7 +21402,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524760,
+      "ANL_NAME": "Mexikopark – Kirche",
+      "BEZIRK": 2,
+      "FLAECHE": "11.728 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524761",
@@ -14240,7 +21442,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524761,
+      "ANL_NAME": "Saarpark",
+      "BEZIRK": 19,
+      "FLAECHE": "8.020 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524794",
@@ -14267,7 +21482,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524794,
+      "ANL_NAME": "Herweghpark",
+      "BEZIRK": 5,
+      "FLAECHE": "5.663 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524795",
@@ -14293,7 +21521,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524795,
+      "ANL_NAME": "Jutta-Steier-Park",
+      "BEZIRK": 14,
+      "FLAECHE": "5.066 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524796",
@@ -14320,7 +21561,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524796,
+      "ANL_NAME": "Josef-Strauß-Park",
+      "BEZIRK": 7,
+      "FLAECHE": "7.969 m²",
+      "OEFF_ZEITEN": "Okt-März: 7:10-19:15, Apr-Sep: 7:10-21:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524797",
@@ -14344,7 +21598,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524797,
+      "ANL_NAME": "PA Eichbachgasse",
+      "BEZIRK": 14,
+      "FLAECHE": "7.734 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524798",
@@ -14368,7 +21635,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524798,
+      "ANL_NAME": "GA Gaullachergasse",
+      "BEZIRK": 16,
+      "FLAECHE": "328 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524799",
@@ -14395,7 +21675,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524799,
+      "ANL_NAME": "Adele-Jellinek-Park",
+      "BEZIRK": 16,
+      "FLAECHE": "3.128 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524800",
@@ -14421,7 +21714,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524800,
+      "ANL_NAME": "PA Franz-Koci-Straße",
+      "BEZIRK": 10,
+      "FLAECHE": "8.161 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524801",
@@ -14447,7 +21753,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524801,
+      "ANL_NAME": "PA Ada-Christen-Gasse",
+      "BEZIRK": 10,
+      "FLAECHE": "22.365 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524802",
@@ -14473,7 +21792,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524802,
+      "ANL_NAME": "PA Holzknechtstraße",
+      "BEZIRK": 10,
+      "FLAECHE": "2.127 m²",
+      "OEFF_ZEITEN": "06:00-21:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524803",
@@ -14498,7 +21830,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524803,
+      "ANL_NAME": "PA Laxenburger Straße",
+      "BEZIRK": 10,
+      "FLAECHE": "35.781 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524804",
@@ -14524,7 +21869,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524804,
+      "ANL_NAME": "PA Forstnergasse",
+      "BEZIRK": 22,
+      "FLAECHE": "3.479 m²",
+      "OEFF_ZEITEN": "00:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524805",
@@ -14551,7 +21909,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524805,
+      "ANL_NAME": "Diana-Budisavljevic-Park",
+      "BEZIRK": 9,
+      "FLAECHE": "18.373 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524806",
@@ -14578,7 +21949,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524806,
+      "ANL_NAME": "Hubert-Blamauer-Park",
+      "BEZIRK": 10,
+      "FLAECHE": "7.940 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig:06:00-21:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524807",
@@ -14602,7 +21986,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524807,
+      "ANL_NAME": "PA Tichyweg",
+      "BEZIRK": 18,
+      "FLAECHE": "8.055 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524808",
@@ -14629,7 +22026,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524808,
+      "ANL_NAME": "Fuchupark",
+      "BEZIRK": 17,
+      "FLAECHE": "5.392 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524809",
@@ -14654,7 +22064,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524809,
+      "ANL_NAME": "PA Haidmannsgasse",
+      "BEZIRK": 15,
+      "FLAECHE": "839 m²",
+      "OEFF_ZEITEN": "Nov-März: 08:00-19:00, Apr-Okt: 08:00-20:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524810",
@@ -14680,7 +22103,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524810,
+      "ANL_NAME": "PA Röntgengasse",
+      "BEZIRK": 17,
+      "FLAECHE": "2.176 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524811",
@@ -14706,7 +22142,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524811,
+      "ANL_NAME": "PA Wichtelgasse",
+      "BEZIRK": 16,
+      "FLAECHE": "3.755 m²",
+      "OEFF_ZEITEN": "März-Nov: 06:00-19:30, Dez-Feb: keine Sperre",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524812",
@@ -14733,7 +22182,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524812,
+      "ANL_NAME": "Erwin-Ringel-Park",
+      "BEZIRK": 9,
+      "FLAECHE": "4.082 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524813",
@@ -14760,7 +22222,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524813,
+      "ANL_NAME": "Karl-Farkas-Park",
+      "BEZIRK": 7,
+      "FLAECHE": "1.667 m²",
+      "OEFF_ZEITEN": "Okt: 6:50-19:30, Nov-März: 6:50-18:30, Apr-Sep: 6:50-21:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524814",
@@ -14786,7 +22261,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524814,
+      "ANL_NAME": "PA Vierthalergasse",
+      "BEZIRK": 12,
+      "FLAECHE": "2.842 m²",
+      "OEFF_ZEITEN": "Okt-März:06:00-21:00, Apr-Sep:06:00-21:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524815",
@@ -14812,7 +22300,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524815,
+      "ANL_NAME": "Hernalser Gürtel Hundezone",
+      "BEZIRK": 8,
+      "FLAECHE": "675 m²",
+      "OEFF_ZEITEN": "Okt-März:6:00-19:15, Apr-Sep:06:30-20:30",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524816",
@@ -14839,7 +22340,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524816,
+      "ANL_NAME": "Alois-Greb-Park",
+      "BEZIRK": 10,
+      "FLAECHE": "4.958 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524817",
@@ -14866,7 +22380,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524817,
+      "ANL_NAME": "Hebbelpark",
+      "BEZIRK": 10,
+      "FLAECHE": "4.018 m²",
+      "OEFF_ZEITEN": "Hundezone+Spielplatz:06:00-21:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524818",
@@ -14893,7 +22420,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524818,
+      "ANL_NAME": "Lina-Proksch-Park",
+      "BEZIRK": 15,
+      "FLAECHE": "2.224 m²",
+      "OEFF_ZEITEN": null,
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524819",
@@ -14918,7 +22458,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524819,
+      "ANL_NAME": "PA Per-Albin-Hansson-Straße",
+      "BEZIRK": 10,
+      "FLAECHE": "113.485 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524820",
@@ -14944,7 +22497,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524820,
+      "ANL_NAME": "PA Bergtaidingweg",
+      "BEZIRK": 10,
+      "FLAECHE": "16.630 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524821",
@@ -14970,6 +22536,19 @@ export const PARKS_DATA: Park[] = [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524821,
+      "ANL_NAME": "Prater - Kaiserwiese",
+      "BEZIRK": 2,
+      "FLAECHE": "16.452 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Wikipedia"
   },
   {
@@ -14998,7 +22577,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524822,
+      "ANL_NAME": "Heiligenstädter Park",
+      "BEZIRK": 19,
+      "FLAECHE": "51.815 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524823",
@@ -15024,7 +22616,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524823,
+      "ANL_NAME": "Rothschildgarten",
+      "BEZIRK": 19,
+      "FLAECHE": "28.414 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524824",
@@ -15052,7 +22657,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524824,
+      "ANL_NAME": "Hugo-Wolf-Park",
+      "BEZIRK": 19,
+      "FLAECHE": "57.193 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524834",
@@ -15078,7 +22696,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524834,
+      "ANL_NAME": "PA Schelleingasse",
+      "BEZIRK": 4,
+      "FLAECHE": "5.091 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig: Okt-März: 7:15-20:15, Apr-Sep: 6:30-21:15",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524835",
@@ -15103,7 +22734,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524835,
+      "ANL_NAME": "PA Dolfi-Gruber-Weg",
+      "BEZIRK": 22,
+      "FLAECHE": "2.092 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524836",
@@ -15130,7 +22774,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524836,
+      "ANL_NAME": "Raimund-Zoder-Park",
+      "BEZIRK": 19,
+      "FLAECHE": "10.118 m²",
+      "OEFF_ZEITEN": "Okt-März: 07:00-19:00, Apr-Sep: 07:00-22:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524837",
@@ -15156,7 +22813,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524837,
+      "ANL_NAME": "PA Illgasse",
+      "BEZIRK": 21,
+      "FLAECHE": "6.151 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524838",
@@ -15182,7 +22852,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524838,
+      "ANL_NAME": "PA Lüssenpromenade",
+      "BEZIRK": 21,
+      "FLAECHE": "7.605 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524839",
@@ -15206,7 +22889,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524839,
+      "ANL_NAME": "PA Strebersdorfer Straße",
+      "BEZIRK": 21,
+      "FLAECHE": "1.003 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524840",
@@ -15234,6 +22930,19 @@ export const PARKS_DATA: Park[] = [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524840,
+      "ANL_NAME": "Wasserpark",
+      "BEZIRK": 21,
+      "FLAECHE": "144.498 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Wikipedia"
   },
   {
@@ -15259,7 +22968,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524841,
+      "ANL_NAME": "PA Grellgasse",
+      "BEZIRK": 21,
+      "FLAECHE": "1.509 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524842",
@@ -15286,7 +23008,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524842,
+      "ANL_NAME": "Alma-Rosé-Park",
+      "BEZIRK": 21,
+      "FLAECHE": "3.433 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524843",
@@ -15313,7 +23048,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524843,
+      "ANL_NAME": "PA Ruthnergasse",
+      "BEZIRK": 21,
+      "FLAECHE": "21.844 m²",
+      "OEFF_ZEITEN": "00:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524844",
@@ -15340,7 +23088,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524844,
+      "ANL_NAME": "Gaswerkpark",
+      "BEZIRK": 21,
+      "FLAECHE": "8.745 m²",
+      "OEFF_ZEITEN": "00:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524845",
@@ -15368,7 +23129,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524845,
+      "ANL_NAME": "Draschepark",
+      "BEZIRK": 23,
+      "FLAECHE": "124.081 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524846",
@@ -15395,7 +23169,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524846,
+      "ANL_NAME": "Hans-Dunkl-Park",
+      "BEZIRK": 23,
+      "FLAECHE": "8.126 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524847",
@@ -15422,7 +23209,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "U1 VIC/UNO City"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524847,
+      "ANL_NAME": "Donaupark",
+      "BEZIRK": 22,
+      "FLAECHE": "634.043 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524848",
@@ -15452,7 +23252,20 @@ export const PARKS_DATA: Park[] = [
       "Straßenbahn 9",
       "S45"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524848,
+      "ANL_NAME": "Türkenschanzpark",
+      "BEZIRK": 18,
+      "FLAECHE": "151.547 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524849",
@@ -15477,7 +23290,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524849,
+      "ANL_NAME": "GA Herrenholzgasse",
+      "BEZIRK": 21,
+      "FLAECHE": "672 m²",
+      "OEFF_ZEITEN": "00:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524850",
@@ -15502,7 +23328,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524850,
+      "ANL_NAME": "Engelbert-Schliemann-Park",
+      "BEZIRK": 23,
+      "FLAECHE": "2.220 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524851",
@@ -15528,7 +23367,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524851,
+      "ANL_NAME": "Am Rosenhügel Hundeauslauf",
+      "BEZIRK": 13,
+      "FLAECHE": "749 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524852",
@@ -15553,7 +23405,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524852,
+      "ANL_NAME": "PA Augasse",
+      "BEZIRK": 9,
+      "FLAECHE": "965 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524853",
@@ -15577,7 +23442,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524853,
+      "ANL_NAME": "PA Bertha-Löwi-Weg",
+      "BEZIRK": 9,
+      "FLAECHE": "1.012 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524854",
@@ -15602,7 +23480,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524854,
+      "ANL_NAME": "Wolkersbergenstraße Hundezone",
+      "BEZIRK": 13,
+      "FLAECHE": "1.228 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524855",
@@ -15628,7 +23519,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524855,
+      "ANL_NAME": "PA Basler Gasse",
+      "BEZIRK": 23,
+      "FLAECHE": "3.074 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig:Mai-Okt: 08:00-20:00, Nov-Apr: keine Sperre",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524856",
@@ -15656,7 +23560,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524856,
+      "ANL_NAME": "Ferdinand-Wolf-Park",
+      "BEZIRK": 14,
+      "FLAECHE": "23.677 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524825",
@@ -15680,7 +23597,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524825,
+      "ANL_NAME": "PA Silvaraweg",
+      "BEZIRK": 19,
+      "FLAECHE": "1.393 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524826",
@@ -15707,7 +23637,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524826,
+      "ANL_NAME": "Rudolfspark",
+      "BEZIRK": 1,
+      "FLAECHE": "4.304 m²",
+      "OEFF_ZEITEN": "6:20-22:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524827",
@@ -15732,7 +23675,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524827,
+      "ANL_NAME": "GA Linke Bahngasse",
+      "BEZIRK": 3,
+      "FLAECHE": "2.625 m²",
+      "OEFF_ZEITEN": "Hundezone: 6:00-23:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524828",
@@ -15759,7 +23715,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524828,
+      "ANL_NAME": "Frederic-Morton-Park",
+      "BEZIRK": 17,
+      "FLAECHE": "2.141 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524829",
@@ -15786,7 +23755,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524829,
+      "ANL_NAME": "PA Riegermühle",
+      "BEZIRK": 23,
+      "FLAECHE": "9.759 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524830",
@@ -15811,7 +23793,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524830,
+      "ANL_NAME": "PA Pollakgasse",
+      "BEZIRK": 23,
+      "FLAECHE": "9.435 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524831",
@@ -15836,7 +23831,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524831,
+      "ANL_NAME": "PA Schreinerweg",
+      "BEZIRK": 22,
+      "FLAECHE": "7.099 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524832",
@@ -15861,7 +23869,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524832,
+      "ANL_NAME": "Rosa-Mayreder-Park",
+      "BEZIRK": 4,
+      "FLAECHE": "5.226 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524833",
@@ -15885,7 +23906,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524833,
+      "ANL_NAME": "PA Eschenallee",
+      "BEZIRK": 10,
+      "FLAECHE": "3.020 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524857",
@@ -15909,7 +23943,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524857,
+      "ANL_NAME": "GA Esteplatz",
+      "BEZIRK": 3,
+      "FLAECHE": "645 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524858",
@@ -15936,7 +23983,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524858,
+      "ANL_NAME": "Friessneggpark",
+      "BEZIRK": 21,
+      "FLAECHE": "5.812 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524859",
@@ -15961,7 +24021,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524859,
+      "ANL_NAME": "PA Auer-Welsbach-Straße",
+      "BEZIRK": 23,
+      "FLAECHE": "13.828 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524860",
@@ -15986,7 +24059,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524860,
+      "ANL_NAME": "GA Feuerhalle Simmering",
+      "BEZIRK": 11,
+      "FLAECHE": "26.027 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524861",
@@ -16012,7 +24098,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524861,
+      "ANL_NAME": "PA Schüttauplatz",
+      "BEZIRK": 22,
+      "FLAECHE": "8.926 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524862",
@@ -16038,7 +24137,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524862,
+      "ANL_NAME": "GA Naschpark/6.Bezirk",
+      "BEZIRK": 6,
+      "FLAECHE": "3.828 m²",
+      "OEFF_ZEITEN": null,
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524863",
@@ -16065,7 +24177,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524863,
+      "ANL_NAME": "Helene-Deutsch-Park",
+      "BEZIRK": 9,
+      "FLAECHE": "3.352 m²",
+      "OEFF_ZEITEN": "6:50-20:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524864",
@@ -16091,7 +24216,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524864,
+      "ANL_NAME": "PA Münnichplatz",
+      "BEZIRK": 11,
+      "FLAECHE": "6.314 m²",
+      "OEFF_ZEITEN": "06:00-20:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524865",
@@ -16117,7 +24255,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524865,
+      "ANL_NAME": "PA Endemanngasse",
+      "BEZIRK": 23,
+      "FLAECHE": "751 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524866",
@@ -16143,7 +24294,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524866,
+      "ANL_NAME": "PA Berresgasse EPK4",
+      "BEZIRK": 22,
+      "FLAECHE": "5.026 m²",
+      "OEFF_ZEITEN": "00:00 - 24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524867",
@@ -16170,7 +24334,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524867,
+      "ANL_NAME": "Wanda-Lanzer-Park",
+      "BEZIRK": 4,
+      "FLAECHE": "1.072 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524868",
@@ -16197,7 +24374,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524868,
+      "ANL_NAME": "Stadtpark - Kinderpark",
+      "BEZIRK": 3,
+      "FLAECHE": "35.826 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524869",
@@ -16223,7 +24413,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524869,
+      "ANL_NAME": "PA Csokorgasse",
+      "BEZIRK": 11,
+      "FLAECHE": "6.106 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524870",
@@ -16249,7 +24452,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524870,
+      "ANL_NAME": "Wohnparkstraße Hundezone",
+      "BEZIRK": 23,
+      "FLAECHE": "1.327 m²",
+      "OEFF_ZEITEN": null,
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524871",
@@ -16282,6 +24498,19 @@ export const PARKS_DATA: Park[] = [
     "tips": [
       "Johann-Strauss-Denkmal"
     ],
+    "rawMetadata": {
+      "OBJECTID": 3524871,
+      "ANL_NAME": "Stadtpark",
+      "BEZIRK": 1,
+      "FLAECHE": "58.822 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Wikipedia"
   },
   {
@@ -16308,6 +24537,19 @@ export const PARKS_DATA: Park[] = [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524872,
+      "ANL_NAME": "Friedhof St. Marx",
+      "BEZIRK": 3,
+      "FLAECHE": "57.561 m²",
+      "OEFF_ZEITEN": "Okt-März: 6:30-18:30, Apr-Sep: 6:30-20:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Wikipedia"
   },
   {
@@ -16332,7 +24574,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524873,
+      "ANL_NAME": "GA Mozartplatz",
+      "BEZIRK": 4,
+      "FLAECHE": "247 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524874",
@@ -16356,7 +24611,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524874,
+      "ANL_NAME": "PA Ausjagdweg",
+      "BEZIRK": 14,
+      "FLAECHE": "1.308 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524875",
@@ -16380,7 +24648,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524875,
+      "ANL_NAME": "GA Ottakringer Straße",
+      "BEZIRK": 16,
+      "FLAECHE": "59 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524876",
@@ -16405,7 +24686,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524876,
+      "ANL_NAME": "GA Basler Gasse",
+      "BEZIRK": 23,
+      "FLAECHE": "383 m²",
+      "OEFF_ZEITEN": "00:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524877",
@@ -16430,7 +24724,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524877,
+      "ANL_NAME": "GA Ilgplatz",
+      "BEZIRK": 2,
+      "FLAECHE": "309 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524878",
@@ -16454,7 +24761,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524878,
+      "ANL_NAME": "GA Adele-Perlmutter-Platz",
+      "BEZIRK": 2,
+      "FLAECHE": "359 m²",
+      "OEFF_ZEITEN": "00:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524879",
@@ -16478,7 +24798,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524879,
+      "ANL_NAME": "GA Lancplatz",
+      "BEZIRK": 2,
+      "FLAECHE": "290 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524880",
@@ -16503,7 +24836,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524880,
+      "ANL_NAME": "Felix-Steinwandtner-Park",
+      "BEZIRK": 13,
+      "FLAECHE": "386 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524881",
@@ -16527,7 +24873,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524881,
+      "ANL_NAME": "GA Radetzkyplatz",
+      "BEZIRK": 3,
+      "FLAECHE": "266 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524882",
@@ -16551,7 +24910,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524882,
+      "ANL_NAME": "GA Leopold-Ungar-Platz",
+      "BEZIRK": 19,
+      "FLAECHE": "762 m²",
+      "OEFF_ZEITEN": "00:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524883",
@@ -16577,7 +24949,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524883,
+      "ANL_NAME": "GA Liesinger Platz",
+      "BEZIRK": 23,
+      "FLAECHE": "2.302 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524884",
@@ -16601,7 +24986,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524884,
+      "ANL_NAME": "GA Wientalterrasse",
+      "BEZIRK": 5,
+      "FLAECHE": "667 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524885",
@@ -16626,7 +25024,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524885,
+      "ANL_NAME": "GA Ludwig-Hirsch-Platz",
+      "BEZIRK": 2,
+      "FLAECHE": "178 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524886",
@@ -16650,7 +25061,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524886,
+      "ANL_NAME": "GA Atzgersdorfer Platz",
+      "BEZIRK": 23,
+      "FLAECHE": "87 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524887",
@@ -16675,7 +25099,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524887,
+      "ANL_NAME": "GA Jenny-Steiner-Weg",
+      "BEZIRK": 7,
+      "FLAECHE": "146 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524888",
@@ -16699,7 +25136,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524888,
+      "ANL_NAME": "GA Zentaplatz",
+      "BEZIRK": 5,
+      "FLAECHE": "631 m²",
+      "OEFF_ZEITEN": "6:30-22:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524889",
@@ -16723,7 +25173,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524889,
+      "ANL_NAME": "GA Akkonplatz",
+      "BEZIRK": 15,
+      "FLAECHE": "434 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524890",
@@ -16747,7 +25210,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524890,
+      "ANL_NAME": "GA Rennbahnweg",
+      "BEZIRK": 22,
+      "FLAECHE": "818 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524891",
@@ -16772,7 +25248,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524891,
+      "ANL_NAME": "GA Kühnplatz",
+      "BEZIRK": 4,
+      "FLAECHE": "663 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524892",
@@ -16796,7 +25285,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524892,
+      "ANL_NAME": "GA Hugo-Wiener-Platz",
+      "BEZIRK": 4,
+      "FLAECHE": "50 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524893",
@@ -16820,7 +25322,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524893,
+      "ANL_NAME": "GA Maurer Hauptplatz",
+      "BEZIRK": 23,
+      "FLAECHE": "616 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524894",
@@ -16844,7 +25359,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524894,
+      "ANL_NAME": "GA St.-Wendelin-Platz",
+      "BEZIRK": 22,
+      "FLAECHE": "649 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524895",
@@ -16869,7 +25397,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524895,
+      "ANL_NAME": "GA Wallensteinplatz",
+      "BEZIRK": 20,
+      "FLAECHE": "253 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524896",
@@ -16894,7 +25435,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524896,
+      "ANL_NAME": "GA Kardinal-Rauscher-Platz",
+      "BEZIRK": 15,
+      "FLAECHE": "1.466 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524897",
@@ -16920,7 +25474,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524897,
+      "ANL_NAME": "Gabriele-Possanner-Park",
+      "BEZIRK": 9,
+      "FLAECHE": "907 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524898",
@@ -16944,7 +25511,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524898,
+      "ANL_NAME": "GA Höfergasse",
+      "BEZIRK": 9,
+      "FLAECHE": "163 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524899",
@@ -16970,7 +25550,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524899,
+      "ANL_NAME": "Gumpendorfer Gürtel Hundezone",
+      "BEZIRK": 6,
+      "FLAECHE": "187 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524900",
@@ -16995,7 +25588,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524900,
+      "ANL_NAME": "GA Volkertplatz",
+      "BEZIRK": 2,
+      "FLAECHE": "405 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524901",
@@ -17019,7 +25625,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524901,
+      "ANL_NAME": "GA Augustinplatz",
+      "BEZIRK": 7,
+      "FLAECHE": "105 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524902",
@@ -17043,7 +25662,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524902,
+      "ANL_NAME": "GA Schlesingerplatz",
+      "BEZIRK": 8,
+      "FLAECHE": "524 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524903",
@@ -17067,7 +25699,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524903,
+      "ANL_NAME": "GA Alexander-Poch-Platz",
+      "BEZIRK": 2,
+      "FLAECHE": "772 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524904",
@@ -17092,7 +25737,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524904,
+      "ANL_NAME": "GA Rabbiner-Friedmann-Platz",
+      "BEZIRK": 2,
+      "FLAECHE": "594 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524905",
@@ -17117,7 +25775,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524905,
+      "ANL_NAME": "Therese-Krones-Park",
+      "BEZIRK": 2,
+      "FLAECHE": "518 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524906",
@@ -17141,7 +25812,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524906,
+      "ANL_NAME": "Henriette-Willardt-Promenade",
+      "BEZIRK": 2,
+      "FLAECHE": "23.409 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524907",
@@ -17166,7 +25850,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524907,
+      "ANL_NAME": "Maria-Lassnig-Park",
+      "BEZIRK": 5,
+      "FLAECHE": "226 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524908",
@@ -17190,7 +25887,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524908,
+      "ANL_NAME": "KGV Auf der Schmelz",
+      "BEZIRK": 15,
+      "FLAECHE": "2.705 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524909",
@@ -17214,7 +25924,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524909,
+      "ANL_NAME": "GA Siebenbrunnenplatz",
+      "BEZIRK": 5,
+      "FLAECHE": "82 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524910",
@@ -17239,7 +25962,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524910,
+      "ANL_NAME": "GA Dornerplatz",
+      "BEZIRK": 17,
+      "FLAECHE": "350 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524911",
@@ -17263,7 +25999,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524911,
+      "ANL_NAME": "GA Leipziger Platz",
+      "BEZIRK": 20,
+      "FLAECHE": "1.075 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524912",
@@ -17289,7 +26038,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524912,
+      "ANL_NAME": "Ida-Bohatta-Park",
+      "BEZIRK": 3,
+      "FLAECHE": "1.696 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig: Okt-März: 6:30-20:30, Apr-Sep: 6:30-21:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524913",
@@ -17313,7 +26075,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524913,
+      "ANL_NAME": "GA Schwedenplatz",
+      "BEZIRK": 1,
+      "FLAECHE": "609 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524914",
@@ -17337,7 +26112,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524914,
+      "ANL_NAME": "PA Rosmaringasse",
+      "BEZIRK": 22,
+      "FLAECHE": "3.194 m²",
+      "OEFF_ZEITEN": "Ballspielplatz: Okt-April: 9:00-19:00, Mai-Sep: 9:00-21:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524915",
@@ -17362,7 +26150,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524915,
+      "ANL_NAME": "GA St.-Elisabeth-Platz",
+      "BEZIRK": 4,
+      "FLAECHE": "1.492 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524762",
@@ -17386,7 +26187,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524762,
+      "ANL_NAME": "PA Wigandgasse",
+      "BEZIRK": 19,
+      "FLAECHE": "1.412 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524763",
@@ -17413,7 +26227,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524763,
+      "ANL_NAME": "Mortarapark",
+      "BEZIRK": 20,
+      "FLAECHE": "11.944 m²",
+      "OEFF_ZEITEN": "6:30-22:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524764",
@@ -17437,7 +26264,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524764,
+      "ANL_NAME": "PA Ungerbau",
+      "BEZIRK": 20,
+      "FLAECHE": "2.152 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524765",
@@ -17461,7 +26301,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524765,
+      "ANL_NAME": "PA Vorgartenstraße",
+      "BEZIRK": 20,
+      "FLAECHE": "6.133 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524766",
@@ -17488,7 +26341,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524766,
+      "ANL_NAME": "Hugo-Gottschlich-Park",
+      "BEZIRK": 20,
+      "FLAECHE": "18.228 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig:07:00-20:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524767",
@@ -17515,7 +26381,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524767,
+      "ANL_NAME": "Jakob-Winter-Park",
+      "BEZIRK": 20,
+      "FLAECHE": "2.255 m²",
+      "OEFF_ZEITEN": "6:30-20:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524768",
@@ -17540,7 +26419,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524768,
+      "ANL_NAME": "PA Leipziger Platz",
+      "BEZIRK": 20,
+      "FLAECHE": "529 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig:Okt-März:07:00-20:00, Apr-Sep:07:00-21:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524769",
@@ -17566,7 +26458,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524769,
+      "ANL_NAME": "PA Mühlweg",
+      "BEZIRK": 21,
+      "FLAECHE": "5.848 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524770",
@@ -17592,7 +26497,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524770,
+      "ANL_NAME": "PA Schwaigergasse",
+      "BEZIRK": 21,
+      "FLAECHE": "10.531 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524771",
@@ -17617,7 +26535,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524771,
+      "ANL_NAME": "PA Bahnhofplatz",
+      "BEZIRK": 21,
+      "FLAECHE": "1.216 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524772",
@@ -17643,7 +26574,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524772,
+      "ANL_NAME": "PA Haspingerplatz",
+      "BEZIRK": 21,
+      "FLAECHE": "9.646 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524773",
@@ -17669,7 +26613,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524773,
+      "ANL_NAME": "PA Klederinger Straße",
+      "BEZIRK": 10,
+      "FLAECHE": "8.973 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524774",
@@ -17696,7 +26653,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524774,
+      "ANL_NAME": "PA Mittelzone",
+      "BEZIRK": 5,
+      "FLAECHE": "14.275 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524775",
@@ -17720,7 +26690,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524775,
+      "ANL_NAME": "PA Unter-Laaer Straße",
+      "BEZIRK": 10,
+      "FLAECHE": "2.997 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524776",
@@ -17744,7 +26727,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524776,
+      "ANL_NAME": "PA Schütte-Lihotzky-Weg",
+      "BEZIRK": 11,
+      "FLAECHE": "1.073 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524777",
@@ -17770,7 +26766,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524777,
+      "ANL_NAME": "PA Ludwig-Kralik-Weg",
+      "BEZIRK": 11,
+      "FLAECHE": "8.391 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524778",
@@ -17794,7 +26803,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524778,
+      "ANL_NAME": "PA Edelsinnstraße",
+      "BEZIRK": 12,
+      "FLAECHE": "1.081 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524779",
@@ -17818,7 +26840,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524779,
+      "ANL_NAME": "PA Hetzendorfer Straße",
+      "BEZIRK": 12,
+      "FLAECHE": "546 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524780",
@@ -17844,7 +26879,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524780,
+      "ANL_NAME": "GA Defreggerstraße",
+      "BEZIRK": 12,
+      "FLAECHE": "4.358 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524781",
@@ -17869,7 +26917,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524781,
+      "ANL_NAME": "PA Rosasgasse",
+      "BEZIRK": 12,
+      "FLAECHE": "273 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524782",
@@ -17897,7 +26958,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524782,
+      "ANL_NAME": "Volkspark Laaerberg",
+      "BEZIRK": 10,
+      "FLAECHE": "199.919 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524783",
@@ -17924,7 +26998,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524783,
+      "ANL_NAME": "Paula-von-Mirtow-Park",
+      "BEZIRK": 12,
+      "FLAECHE": "6.655 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524784",
@@ -17952,7 +27039,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524784,
+      "ANL_NAME": "Stefan-Weber-Park",
+      "BEZIRK": 5,
+      "FLAECHE": "15.385 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524785",
@@ -17978,7 +27078,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524785,
+      "ANL_NAME": "Hundertwasser-Promenade",
+      "BEZIRK": 3,
+      "FLAECHE": "25.130 m²",
+      "OEFF_ZEITEN": "Hundezone: 07:00-21:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524786",
@@ -18004,7 +27117,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524786,
+      "ANL_NAME": "Treppelweg - Erdberger Lände",
+      "BEZIRK": 3,
+      "FLAECHE": "73.764 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524787",
@@ -18032,7 +27158,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524787,
+      "ANL_NAME": "Bil-Spira-Park",
+      "BEZIRK": 12,
+      "FLAECHE": "13.681 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524788",
@@ -18059,7 +27198,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524788,
+      "ANL_NAME": "Vogelweidpark",
+      "BEZIRK": 15,
+      "FLAECHE": "19.150 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524789",
@@ -18085,7 +27237,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524789,
+      "ANL_NAME": "PA Elisenstraße",
+      "BEZIRK": 23,
+      "FLAECHE": "1.055 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524790",
@@ -18110,7 +27275,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524790,
+      "ANL_NAME": "Barbara-Prammer-Park",
+      "BEZIRK": 5,
+      "FLAECHE": "448 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524791",
@@ -18134,7 +27312,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524791,
+      "ANL_NAME": "GA Deutschmeisterplatz",
+      "BEZIRK": 1,
+      "FLAECHE": "651 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524792",
@@ -18159,7 +27350,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524792,
+      "ANL_NAME": "PA Litfaßstraße",
+      "BEZIRK": 3,
+      "FLAECHE": "2.483 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524793",
@@ -18183,7 +27387,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524793,
+      "ANL_NAME": "GA Morzinplatz",
+      "BEZIRK": 1,
+      "FLAECHE": "3.293 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524664",
@@ -18209,7 +27426,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524664,
+      "ANL_NAME": "PA Stillfriedplatz",
+      "BEZIRK": 16,
+      "FLAECHE": "4.054 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524665",
@@ -18236,7 +27466,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524665,
+      "ANL_NAME": "Christine-Nöstlinger-Park",
+      "BEZIRK": 17,
+      "FLAECHE": "15.991 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524666",
@@ -18260,7 +27503,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524666,
+      "ANL_NAME": "GA Staudgasse",
+      "BEZIRK": 18,
+      "FLAECHE": "207 m²",
+      "OEFF_ZEITEN": "00:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524667",
@@ -18286,7 +27542,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524667,
+      "ANL_NAME": "Park",
+      "BEZIRK": 19,
+      "FLAECHE": "1.041 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524668",
@@ -18311,7 +27580,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524668,
+      "ANL_NAME": "PA Gustav-Pick-Gasse",
+      "BEZIRK": 19,
+      "FLAECHE": "1.352 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524669",
@@ -18338,7 +27620,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524669,
+      "ANL_NAME": "Friedl-Hofbauer-Park",
+      "BEZIRK": 19,
+      "FLAECHE": "5.640 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524670",
@@ -18363,7 +27658,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524670,
+      "ANL_NAME": "Richard-Eybner-Park",
+      "BEZIRK": 19,
+      "FLAECHE": "1.933 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524671",
@@ -18388,7 +27696,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524671,
+      "ANL_NAME": "PA Weilgasse",
+      "BEZIRK": 19,
+      "FLAECHE": "1.906 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524672",
@@ -18415,7 +27736,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524672,
+      "ANL_NAME": "Denglerpark",
+      "BEZIRK": 21,
+      "FLAECHE": "19.853 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524673",
@@ -18442,7 +27776,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524673,
+      "ANL_NAME": "Hans-Smital-Park",
+      "BEZIRK": 21,
+      "FLAECHE": "5.355 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524674",
@@ -18468,7 +27815,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524674,
+      "ANL_NAME": "Karl-Seidl-Park",
+      "BEZIRK": 21,
+      "FLAECHE": "5.796 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524675",
@@ -18493,7 +27853,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524675,
+      "ANL_NAME": "PA Mayerweckstraße",
+      "BEZIRK": 21,
+      "FLAECHE": "2.463 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524676",
@@ -18517,7 +27890,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524676,
+      "ANL_NAME": "PA Adolf-Loos-Gasse",
+      "BEZIRK": 21,
+      "FLAECHE": "5.077 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524677",
@@ -18543,7 +27929,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524677,
+      "ANL_NAME": "PA Kurze Zwerchäcker",
+      "BEZIRK": 21,
+      "FLAECHE": "7.176 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524678",
@@ -18569,7 +27968,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524678,
+      "ANL_NAME": "PA Avedikstraße",
+      "BEZIRK": 15,
+      "FLAECHE": "1.778 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524679",
@@ -18593,7 +28005,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524679,
+      "ANL_NAME": "PA Ferdinand-Käs-Gasse",
+      "BEZIRK": 21,
+      "FLAECHE": "2.036 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524680",
@@ -18618,7 +28043,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524680,
+      "ANL_NAME": "Donauschwabenpark",
+      "BEZIRK": 21,
+      "FLAECHE": "2.451 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524681",
@@ -18645,7 +28083,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524681,
+      "ANL_NAME": "Josef-Grössing-Park",
+      "BEZIRK": 21,
+      "FLAECHE": "10.599 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524682",
@@ -18669,7 +28120,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524682,
+      "ANL_NAME": "PA Kummergasse",
+      "BEZIRK": 21,
+      "FLAECHE": "4.044 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524683",
@@ -18696,7 +28160,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524683,
+      "ANL_NAME": "Hedwig-und-Johann-Schneider-Park",
+      "BEZIRK": 21,
+      "FLAECHE": "15.945 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524684",
@@ -18720,7 +28197,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524684,
+      "ANL_NAME": "PA Cottagestraße",
+      "BEZIRK": 14,
+      "FLAECHE": "988 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524685",
@@ -18745,7 +28235,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524685,
+      "ANL_NAME": "PA Karl-Seitz-Platz",
+      "BEZIRK": 21,
+      "FLAECHE": "4.989 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524686",
@@ -18771,7 +28274,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524686,
+      "ANL_NAME": "PA Dragonerhäufel",
+      "BEZIRK": 21,
+      "FLAECHE": "36.302 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524687",
@@ -18795,7 +28311,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524687,
+      "ANL_NAME": "PA Fischhofgasse",
+      "BEZIRK": 10,
+      "FLAECHE": "7.408 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524688",
@@ -18819,7 +28348,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524688,
+      "ANL_NAME": "PA Schnitterweg",
+      "BEZIRK": 22,
+      "FLAECHE": "3.552 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524689",
@@ -18843,7 +28385,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524689,
+      "ANL_NAME": "Emilie-Turecek-Promenade",
+      "BEZIRK": 2,
+      "FLAECHE": "16.449 m²",
+      "OEFF_ZEITEN": "00:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524690",
@@ -18869,7 +28424,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524690,
+      "ANL_NAME": "PA Kartouschgasse",
+      "BEZIRK": 22,
+      "FLAECHE": "24.919 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524691",
@@ -18894,7 +28462,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524691,
+      "ANL_NAME": "PA Hyazinthengasse",
+      "BEZIRK": 22,
+      "FLAECHE": "4.965 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524692",
@@ -18918,7 +28499,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524692,
+      "ANL_NAME": "PA Erzherzog-Karl-Straße",
+      "BEZIRK": 22,
+      "FLAECHE": "14.844 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524693",
@@ -18942,7 +28536,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524693,
+      "ANL_NAME": "Schulgarten - Schauanlagen",
+      "BEZIRK": 22,
+      "FLAECHE": "17.619 m²",
+      "OEFF_ZEITEN": "Apr-Okt: jeden 1. Donnerstag im Monat 10:00-18:00, Jul-Aug: Mo-Mi 10:00-18:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524694",
@@ -18969,7 +28576,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524694,
+      "ANL_NAME": "Seepark",
+      "BEZIRK": 22,
+      "FLAECHE": "39.431 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524695",
@@ -18994,6 +28614,19 @@ export const PARKS_DATA: Park[] = [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524695,
+      "ANL_NAME": "Prater - Seitenhafenwiese",
+      "BEZIRK": 2,
+      "FLAECHE": "37.031 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Wikipedia"
   },
   {
@@ -19021,7 +28654,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524696,
+      "ANL_NAME": "Freiligrathpark",
+      "BEZIRK": 21,
+      "FLAECHE": "11.591 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524697",
@@ -19045,7 +28691,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524697,
+      "ANL_NAME": "PA Fontanastraße",
+      "BEZIRK": 10,
+      "FLAECHE": "10.747 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524468",
@@ -19069,7 +28728,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524468,
+      "ANL_NAME": "PA Eichelhofstraße",
+      "BEZIRK": 19,
+      "FLAECHE": "439 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524469",
@@ -19096,7 +28768,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524469,
+      "ANL_NAME": "Wasserspielplatz Wasserturm",
+      "BEZIRK": 10,
+      "FLAECHE": "16.925 m²",
+      "OEFF_ZEITEN": "9:00-21:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524470",
@@ -19122,7 +28807,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524470,
+      "ANL_NAME": "PA Weissauweg",
+      "BEZIRK": 22,
+      "FLAECHE": "8.279 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524471",
@@ -19149,7 +28847,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524471,
+      "ANL_NAME": "PA Siedlung Wienerflur",
+      "BEZIRK": 23,
+      "FLAECHE": "28.845 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig:Juni-Okt. 8:00-22:00, Nov-Mai: keine Sperre",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524472",
@@ -19174,7 +28885,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524472,
+      "ANL_NAME": "Alfred-Auer-Park",
+      "BEZIRK": 19,
+      "FLAECHE": "3.173 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524473",
@@ -19201,7 +28925,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524473,
+      "ANL_NAME": "Emil-Maurer-Park",
+      "BEZIRK": 7,
+      "FLAECHE": "6.495 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524474",
@@ -19226,7 +28963,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524474,
+      "ANL_NAME": "GA Wonkaplatz",
+      "BEZIRK": 22,
+      "FLAECHE": "3.102 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524475",
@@ -19253,7 +29003,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524475,
+      "ANL_NAME": "Waidhausenpark",
+      "BEZIRK": 14,
+      "FLAECHE": "3.873 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524476",
@@ -19277,7 +29040,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524476,
+      "ANL_NAME": "PA Stammersdorfer Straße",
+      "BEZIRK": 21,
+      "FLAECHE": "1.289 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524477",
@@ -19301,7 +29077,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524477,
+      "ANL_NAME": "PA Hanreitergasse",
+      "BEZIRK": 21,
+      "FLAECHE": "15.890 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524478",
@@ -19327,7 +29116,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524478,
+      "ANL_NAME": "PA Lautenschlägergasse",
+      "BEZIRK": 11,
+      "FLAECHE": "1.639 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524479",
@@ -19354,7 +29156,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524479,
+      "ANL_NAME": "Leopold-Rosenmayr-Park",
+      "BEZIRK": 18,
+      "FLAECHE": "3.985 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524480",
@@ -19381,7 +29196,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524480,
+      "ANL_NAME": "Anton-Baumann-Park",
+      "BEZIRK": 18,
+      "FLAECHE": "3.181 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig: Okt-Mär: 7:00-19:00, Apr-Sep: 7:00-22:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524481",
@@ -19407,7 +29235,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524481,
+      "ANL_NAME": "Hayekpark",
+      "BEZIRK": 19,
+      "FLAECHE": "3.828 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524482",
@@ -19433,7 +29274,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524482,
+      "ANL_NAME": "PA Bodenstedtgasse",
+      "BEZIRK": 21,
+      "FLAECHE": "15.560 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524483",
@@ -19460,7 +29314,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524483,
+      "ANL_NAME": "Madame-d'Ora-Park",
+      "BEZIRK": 22,
+      "FLAECHE": "4.697 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524484",
@@ -19484,7 +29351,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524484,
+      "ANL_NAME": "PA Guldengasse",
+      "BEZIRK": 14,
+      "FLAECHE": "1.174 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524485",
@@ -19508,7 +29388,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524485,
+      "ANL_NAME": "PA Ziehrerplatz",
+      "BEZIRK": 3,
+      "FLAECHE": "1.980 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524486",
@@ -19535,7 +29428,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524486,
+      "ANL_NAME": "Helene-Heppe-Park",
+      "BEZIRK": 6,
+      "FLAECHE": "500 m²",
+      "OEFF_ZEITEN": "Okt-März: 7:00-19:30, Apr-Sep: 7:00-20:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524487",
@@ -19559,7 +29465,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524487,
+      "ANL_NAME": "PA Bierhäuselberggasse",
+      "BEZIRK": 14,
+      "FLAECHE": "5.356 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524488",
@@ -19586,7 +29505,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524488,
+      "ANL_NAME": "Sechshauser Park",
+      "BEZIRK": 15,
+      "FLAECHE": "3.709 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig+Spielplatz: Okt-März: 06:30-21:00, Apr-Sep: 06:30-22:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524489",
@@ -19610,7 +29542,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524489,
+      "ANL_NAME": "PA Heiderichstraße",
+      "BEZIRK": 16,
+      "FLAECHE": "2.323 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524490",
@@ -19634,7 +29579,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524490,
+      "ANL_NAME": "PA Zahnradbahnstraße",
+      "BEZIRK": 19,
+      "FLAECHE": "543 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524491",
@@ -19658,7 +29616,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524491,
+      "ANL_NAME": "PA Karl-Borromäus-Platz",
+      "BEZIRK": 3,
+      "FLAECHE": "293 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524492",
@@ -19682,7 +29653,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524492,
+      "ANL_NAME": "GA Laurentiusplatz",
+      "BEZIRK": 14,
+      "FLAECHE": "843 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524493",
@@ -19707,7 +29691,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524493,
+      "ANL_NAME": "Ruth-Maier-Park",
+      "BEZIRK": 2,
+      "FLAECHE": "2.488 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524494",
@@ -19732,7 +29729,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524494,
+      "ANL_NAME": "Heinz-Heger-Park",
+      "BEZIRK": 9,
+      "FLAECHE": "317 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524495",
@@ -19759,7 +29769,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524495,
+      "ANL_NAME": "Dr.-Meißner-Park",
+      "BEZIRK": 19,
+      "FLAECHE": "7.044 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524496",
@@ -19785,7 +29808,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524496,
+      "ANL_NAME": "PA Kaspargasse",
+      "BEZIRK": 22,
+      "FLAECHE": "3.163 m²",
+      "OEFF_ZEITEN": "0:00-21:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524497",
@@ -19812,7 +29848,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524497,
+      "ANL_NAME": "Karoline-Tintner-Promenade",
+      "BEZIRK": 9,
+      "FLAECHE": "10.286 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524498",
@@ -19839,7 +29888,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524498,
+      "ANL_NAME": "Bruno-Kreisky-Park",
+      "BEZIRK": 5,
+      "FLAECHE": "10.700 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524499",
@@ -19866,7 +29928,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524499,
+      "ANL_NAME": "Laubepark",
+      "BEZIRK": 10,
+      "FLAECHE": "7.550 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig+Spielplatz:06:00-21:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524500",
@@ -19891,7 +29966,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524500,
+      "ANL_NAME": "PA Schleiergasse",
+      "BEZIRK": 10,
+      "FLAECHE": "11.267 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524501",
@@ -19916,7 +30004,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524501,
+      "ANL_NAME": "PA Breitenfurter Straße",
+      "BEZIRK": 12,
+      "FLAECHE": "8.183 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524502",
@@ -19940,7 +30041,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524502,
+      "ANL_NAME": "PA Oriongasse",
+      "BEZIRK": 11,
+      "FLAECHE": "4.557 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524503",
@@ -19967,7 +30081,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524503,
+      "ANL_NAME": "Herderpark",
+      "BEZIRK": 11,
+      "FLAECHE": "40.492 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524504",
@@ -19994,7 +30121,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524504,
+      "ANL_NAME": "PA Pölleritzergasse",
+      "BEZIRK": 23,
+      "FLAECHE": "8.179 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524505",
@@ -20019,7 +30159,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524505,
+      "ANL_NAME": "GA Süßenbrunner Platz",
+      "BEZIRK": 22,
+      "FLAECHE": "1.327 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524506",
@@ -20045,7 +30198,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524506,
+      "ANL_NAME": "PA Bruno-Pittermann-Platz",
+      "BEZIRK": 12,
+      "FLAECHE": "5.115 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524507",
@@ -20072,7 +30238,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524507,
+      "ANL_NAME": "Vinzenz-von-Paul-Park",
+      "BEZIRK": 6,
+      "FLAECHE": "824 m²",
+      "OEFF_ZEITEN": "08:00-19:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524508",
@@ -20097,7 +30276,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524508,
+      "ANL_NAME": "Mayer-von-Rosenau-Park",
+      "BEZIRK": 23,
+      "FLAECHE": "1.446 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524509",
@@ -20121,7 +30313,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524509,
+      "ANL_NAME": "PA Florian-Hedorfer-Straße",
+      "BEZIRK": 11,
+      "FLAECHE": "1.456 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524510",
@@ -20145,7 +30350,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524510,
+      "ANL_NAME": "PA Wienerbergstraße",
+      "BEZIRK": 10,
+      "FLAECHE": "429 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524511",
@@ -20171,7 +30389,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524511,
+      "ANL_NAME": "PA Aktivspielplatz",
+      "BEZIRK": 22,
+      "FLAECHE": "10.145 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524512",
@@ -20196,6 +30427,19 @@ export const PARKS_DATA: Park[] = [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524512,
+      "ANL_NAME": "Prater - Fasangarten",
+      "BEZIRK": 2,
+      "FLAECHE": "327.507 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Wikipedia"
   },
   {
@@ -20223,7 +30467,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524513,
+      "ANL_NAME": "Wilhelmsdorfer Park",
+      "BEZIRK": 12,
+      "FLAECHE": "13.891 m²",
+      "OEFF_ZEITEN": "Wint: 6:00-21:30|Somm: 6:00-22:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524514",
@@ -20249,7 +30506,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524514,
+      "ANL_NAME": "PA Karl-Kraus-Gasse",
+      "BEZIRK": 12,
+      "FLAECHE": "4.095 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524515",
@@ -20275,7 +30545,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524515,
+      "ANL_NAME": "Klara-Weingarten-Park",
+      "BEZIRK": 14,
+      "FLAECHE": "1.191 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524516",
@@ -20302,7 +30585,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524516,
+      "ANL_NAME": "Oscar-Straus-Park",
+      "BEZIRK": 13,
+      "FLAECHE": "4.713 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524517",
@@ -20329,7 +30625,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524517,
+      "ANL_NAME": "Hügelpark",
+      "BEZIRK": 13,
+      "FLAECHE": "8.055 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524518",
@@ -20354,7 +30663,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524518,
+      "ANL_NAME": "PA Viktor-Kutschera-Platz",
+      "BEZIRK": 14,
+      "FLAECHE": "6.797 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524519",
@@ -20379,7 +30701,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524519,
+      "ANL_NAME": "PA Langfeldgasse",
+      "BEZIRK": 21,
+      "FLAECHE": "8.966 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524520",
@@ -20403,7 +30738,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524520,
+      "ANL_NAME": "PA Koschakergasse",
+      "BEZIRK": 21,
+      "FLAECHE": "4.278 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524521",
@@ -20427,7 +30775,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524521,
+      "ANL_NAME": "PA Freiheitsplatz",
+      "BEZIRK": 21,
+      "FLAECHE": "342 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524522",
@@ -20454,7 +30815,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524522,
+      "ANL_NAME": "PA Thomagasse",
+      "BEZIRK": 21,
+      "FLAECHE": "9.852 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524523",
@@ -20478,7 +30852,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524523,
+      "ANL_NAME": "PA Moritz-Dreger-Gasse",
+      "BEZIRK": 21,
+      "FLAECHE": "2.913 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524524",
@@ -20504,7 +30891,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524524,
+      "ANL_NAME": "PA Pilotengasse",
+      "BEZIRK": 22,
+      "FLAECHE": "6.116 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524525",
@@ -20531,7 +30931,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524525,
+      "ANL_NAME": "Ingeborg-Bachmann-Park",
+      "BEZIRK": 22,
+      "FLAECHE": "12.193 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524526",
@@ -20555,7 +30968,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524526,
+      "ANL_NAME": "PA Friedhof Inzersdorf",
+      "BEZIRK": 23,
+      "FLAECHE": "5.712 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524527",
@@ -20580,7 +31006,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524527,
+      "ANL_NAME": "Druk-Yul-Park",
+      "BEZIRK": 23,
+      "FLAECHE": "2.471 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524528",
@@ -20606,7 +31045,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524528,
+      "ANL_NAME": "PA Henriettenplatz",
+      "BEZIRK": 15,
+      "FLAECHE": "1.528 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig: Nov-März: 7:00-19:00, Apr-Okt: 7:00-21:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524529",
@@ -20632,7 +31084,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524529,
+      "ANL_NAME": "PA Carminweg",
+      "BEZIRK": 21,
+      "FLAECHE": "586 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524530",
@@ -20658,7 +31123,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524530,
+      "ANL_NAME": "Franz-Hengl-Park",
+      "BEZIRK": 19,
+      "FLAECHE": "306 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524531",
@@ -20682,7 +31160,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524531,
+      "ANL_NAME": "PA Edmund-Weber-Weg",
+      "BEZIRK": 22,
+      "FLAECHE": "1.043 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524532",
@@ -20706,7 +31197,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524532,
+      "ANL_NAME": "PA Miklosichgasse",
+      "BEZIRK": 21,
+      "FLAECHE": "1.183 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524533",
@@ -20731,7 +31235,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524533,
+      "ANL_NAME": "GA Frödenplatz",
+      "BEZIRK": 10,
+      "FLAECHE": "11.216 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524534",
@@ -20756,7 +31273,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524534,
+      "ANL_NAME": "PA Naaffgasse",
+      "BEZIRK": 18,
+      "FLAECHE": "926 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524535",
@@ -20783,7 +31313,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524535,
+      "ANL_NAME": "Hilde-Spiel-Park",
+      "BEZIRK": 19,
+      "FLAECHE": "4.370 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig: Okt-Mär: 7:00-19:00, Apr-Sep: 7:00-22:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524536",
@@ -20810,7 +31353,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524536,
+      "ANL_NAME": "Alois-Heidel-Park",
+      "BEZIRK": 21,
+      "FLAECHE": "1.858 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524537",
@@ -20836,7 +31392,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524537,
+      "ANL_NAME": "PA Friedrich-Engels-Platz",
+      "BEZIRK": 20,
+      "FLAECHE": "17.557 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524538",
@@ -20863,7 +31432,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524538,
+      "ANL_NAME": "Schmetterlingspark",
+      "BEZIRK": 20,
+      "FLAECHE": "5.897 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524539",
@@ -20887,7 +31469,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524539,
+      "ANL_NAME": "PA Wallensteinstraße ",
+      "BEZIRK": 20,
+      "FLAECHE": "1.572 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524540",
@@ -20912,7 +31507,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524540,
+      "ANL_NAME": "PA Traisengasse",
+      "BEZIRK": 20,
+      "FLAECHE": "293 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524541",
@@ -20938,7 +31546,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524541,
+      "ANL_NAME": "Jonny-Moser-Park",
+      "BEZIRK": 1,
+      "FLAECHE": "410 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524542",
@@ -20962,7 +31583,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524542,
+      "ANL_NAME": "PA Laaer-Berg-Straße",
+      "BEZIRK": 10,
+      "FLAECHE": "568 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524543",
@@ -20986,7 +31620,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524543,
+      "ANL_NAME": "PA Tomaschekstraße",
+      "BEZIRK": 21,
+      "FLAECHE": "1.366 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524544",
@@ -21010,7 +31657,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524544,
+      "ANL_NAME": "PA Mölker Bastei",
+      "BEZIRK": 1,
+      "FLAECHE": "108 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524545",
@@ -21034,7 +31694,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524545,
+      "ANL_NAME": "PA Landaugasse",
+      "BEZIRK": 22,
+      "FLAECHE": "246 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524546",
@@ -21060,7 +31733,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524546,
+      "ANL_NAME": "PA Kramreiterweg",
+      "BEZIRK": 21,
+      "FLAECHE": "882 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524547",
@@ -21084,7 +31770,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524547,
+      "ANL_NAME": "PA Friedstraße",
+      "BEZIRK": 21,
+      "FLAECHE": "1.854 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524548",
@@ -21108,7 +31807,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524548,
+      "ANL_NAME": "GA Minoritenplatz",
+      "BEZIRK": 1,
+      "FLAECHE": "780 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524549",
@@ -21133,7 +31845,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524549,
+      "ANL_NAME": "Hermine-Weinreb-Park",
+      "BEZIRK": 17,
+      "FLAECHE": "739 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524550",
@@ -21159,7 +31884,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524550,
+      "ANL_NAME": "PA Lorettowiese",
+      "BEZIRK": 21,
+      "FLAECHE": "31.288 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524551",
@@ -21183,7 +31921,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524551,
+      "ANL_NAME": "GA Neustiftgasse/102",
+      "BEZIRK": 7,
+      "FLAECHE": "41 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524552",
@@ -21207,7 +31958,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524552,
+      "ANL_NAME": "GA Wattgasse",
+      "BEZIRK": 16,
+      "FLAECHE": "1.328 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524553",
@@ -21233,7 +31997,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524553,
+      "ANL_NAME": "PA Berzeliusgasse",
+      "BEZIRK": 21,
+      "FLAECHE": "7.224 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524554",
@@ -21257,7 +32034,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524554,
+      "ANL_NAME": "PA Enkplatz",
+      "BEZIRK": 11,
+      "FLAECHE": "2.467 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524555",
@@ -21285,7 +32075,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524555,
+      "ANL_NAME": "Helmut-Zilk-Park",
+      "BEZIRK": 10,
+      "FLAECHE": "65.030 m²",
+      "OEFF_ZEITEN": "Hundezone+Spielplatz:06:00-21:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524556",
@@ -21309,7 +32112,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524556,
+      "ANL_NAME": "GA Kurbadstraße",
+      "BEZIRK": 10,
+      "FLAECHE": "2.434 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524557",
@@ -21333,7 +32149,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524557,
+      "ANL_NAME": "PA Friedrich-Schmidt-Platz",
+      "BEZIRK": 1,
+      "FLAECHE": "5.752 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524558",
@@ -21358,7 +32187,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524558,
+      "ANL_NAME": "Grete-Rehor-Park",
+      "BEZIRK": 1,
+      "FLAECHE": "7.006 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524559",
@@ -21382,7 +32224,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524559,
+      "ANL_NAME": "GA Helmut-Zilk-Platz",
+      "BEZIRK": 1,
+      "FLAECHE": "966 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524560",
@@ -21408,7 +32263,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524560,
+      "ANL_NAME": "PA Franz-Josefs-Kai",
+      "BEZIRK": 1,
+      "FLAECHE": "2.647 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524561",
@@ -21432,7 +32300,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524561,
+      "ANL_NAME": "Rockgarten",
+      "BEZIRK": 1,
+      "FLAECHE": "119 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524562",
@@ -21458,6 +32339,19 @@ export const PARKS_DATA: Park[] = [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524562,
+      "ANL_NAME": "Prater - Ameiswiese",
+      "BEZIRK": 2,
+      "FLAECHE": "43.450 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Wikipedia"
   },
   {
@@ -21483,6 +32377,19 @@ export const PARKS_DATA: Park[] = [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524563,
+      "ANL_NAME": "Prater - Feuerwehrwiese",
+      "BEZIRK": 2,
+      "FLAECHE": "116.634 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Wikipedia"
   },
   {
@@ -21508,6 +32415,19 @@ export const PARKS_DATA: Park[] = [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524564,
+      "ANL_NAME": "Prater - Sulzwiese",
+      "BEZIRK": 2,
+      "FLAECHE": "475.754 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Wikipedia"
   },
   {
@@ -21535,7 +32455,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524565,
+      "ANL_NAME": "Willi-Frank-Park",
+      "BEZIRK": 5,
+      "FLAECHE": "3.379 m²",
+      "OEFF_ZEITEN": "6:30-21:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524566",
@@ -21562,7 +32495,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524566,
+      "ANL_NAME": "Klieberpark",
+      "BEZIRK": 5,
+      "FLAECHE": "3.305 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524567",
@@ -21588,7 +32534,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524567,
+      "ANL_NAME": "Hanna-Gärtner-Park",
+      "BEZIRK": 5,
+      "FLAECHE": "2.067 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524568",
@@ -21615,7 +32574,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524568,
+      "ANL_NAME": "Minna-Lachs-Park",
+      "BEZIRK": 6,
+      "FLAECHE": "2.917 m²",
+      "OEFF_ZEITEN": "Okt-März: 6:15-20:00, Apr-Sep: 6:15-21:15",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524569",
@@ -21642,7 +32614,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524569,
+      "ANL_NAME": "Humboldtpark",
+      "BEZIRK": 10,
+      "FLAECHE": "2.970 m²",
+      "OEFF_ZEITEN": "06:00-21:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524570",
@@ -21668,7 +32653,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524570,
+      "ANL_NAME": "PA Reumannplatz",
+      "BEZIRK": 10,
+      "FLAECHE": "10.577 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524571",
@@ -21694,7 +32692,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524571,
+      "ANL_NAME": "Helga-Pollak-Kinsky-Park",
+      "BEZIRK": 15,
+      "FLAECHE": "1.514 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524572",
@@ -21718,7 +32729,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524572,
+      "ANL_NAME": "PA Ruzickagasse",
+      "BEZIRK": 23,
+      "FLAECHE": "3.841 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524573",
@@ -21744,7 +32768,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524573,
+      "ANL_NAME": "PA Trepetschniggasse",
+      "BEZIRK": 23,
+      "FLAECHE": "7.034 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524574",
@@ -21771,7 +32808,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524574,
+      "ANL_NAME": "Yella-Hertzka-Park",
+      "BEZIRK": 22,
+      "FLAECHE": "21.705 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524575",
@@ -21798,7 +32848,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524575,
+      "ANL_NAME": "Liechtensteinpark",
+      "BEZIRK": 9,
+      "FLAECHE": "18.986 m²",
+      "OEFF_ZEITEN": "06:40-20:45",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524576",
@@ -21822,7 +32885,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524576,
+      "ANL_NAME": "PA Hintere Liesingbachstraße",
+      "BEZIRK": 10,
+      "FLAECHE": "581 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524577",
@@ -21847,7 +32923,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524577,
+      "ANL_NAME": "PA Bischofplatz",
+      "BEZIRK": 10,
+      "FLAECHE": "743 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524578",
@@ -21874,7 +32963,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524578,
+      "ANL_NAME": "Anton-Stummer-Park",
+      "BEZIRK": 22,
+      "FLAECHE": "2.688 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524579",
@@ -21901,7 +33003,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524579,
+      "ANL_NAME": "Haydnpark",
+      "BEZIRK": 12,
+      "FLAECHE": "13.156 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524580",
@@ -21925,7 +33040,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524580,
+      "ANL_NAME": "PA Wlassakstraße",
+      "BEZIRK": 13,
+      "FLAECHE": "10.576 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524581",
@@ -21952,7 +33080,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524581,
+      "ANL_NAME": "Hackinger-Schloß-Park",
+      "BEZIRK": 13,
+      "FLAECHE": "15.883 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524582",
@@ -21978,7 +33119,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524582,
+      "ANL_NAME": "Friedrich-Julius-Bieber-Anlage",
+      "BEZIRK": 13,
+      "FLAECHE": "7.907 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524583",
@@ -22003,7 +33157,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524583,
+      "ANL_NAME": "Raimund-Pokorny-Park",
+      "BEZIRK": 14,
+      "FLAECHE": "1.597 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524584",
@@ -22027,7 +33194,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524584,
+      "ANL_NAME": "PA Leon-Askin-Platz",
+      "BEZIRK": 14,
+      "FLAECHE": "1.517 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524585",
@@ -22054,7 +33234,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524585,
+      "ANL_NAME": "Helma-Pavlis-Park",
+      "BEZIRK": 21,
+      "FLAECHE": "1.766 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524586",
@@ -22078,7 +33271,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524586,
+      "ANL_NAME": "PA Großschopfplatz",
+      "BEZIRK": 21,
+      "FLAECHE": "3.497 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524587",
@@ -22104,7 +33310,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524587,
+      "ANL_NAME": "Schloss Neugebäude - Unterer Garten",
+      "BEZIRK": 11,
+      "FLAECHE": "17.219 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524588",
@@ -22131,7 +33350,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524588,
+      "ANL_NAME": "Marie-Schuller-Park",
+      "BEZIRK": 21,
+      "FLAECHE": "6.503 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524589",
@@ -22157,7 +33389,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524589,
+      "ANL_NAME": "PA Falcogasse",
+      "BEZIRK": 22,
+      "FLAECHE": "10.809 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524590",
@@ -22181,7 +33426,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524590,
+      "ANL_NAME": "PA Pirquetgasse",
+      "BEZIRK": 22,
+      "FLAECHE": "3.159 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524591",
@@ -22208,7 +33466,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524591,
+      "ANL_NAME": "Kirschblütenpark",
+      "BEZIRK": 22,
+      "FLAECHE": "34.840 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524592",
@@ -22232,7 +33503,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524592,
+      "ANL_NAME": "PA Dirmhirngasse",
+      "BEZIRK": 23,
+      "FLAECHE": "7.935 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524593",
@@ -22258,7 +33542,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524593,
+      "ANL_NAME": "PA Anton-Heger-Platz",
+      "BEZIRK": 23,
+      "FLAECHE": "1.179 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524594",
@@ -22285,7 +33582,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524594,
+      "ANL_NAME": "Franz-Hübel-Park",
+      "BEZIRK": 12,
+      "FLAECHE": "10.112 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524595",
@@ -22313,7 +33623,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524595,
+      "ANL_NAME": "Miep-Gies-Park",
+      "BEZIRK": 12,
+      "FLAECHE": "12.603 m²",
+      "OEFF_ZEITEN": "Hundezone:Okt-März:06:00-21:00, Apr-Sep:06:00-21:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524596",
@@ -22339,7 +33662,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524596,
+      "ANL_NAME": "Park der Freiheit",
+      "BEZIRK": 17,
+      "FLAECHE": "1.267 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524597",
@@ -22365,7 +33701,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524597,
+      "ANL_NAME": "PA Töllergasse",
+      "BEZIRK": 21,
+      "FLAECHE": "2.627 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524598",
@@ -22389,7 +33738,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524598,
+      "ANL_NAME": "PA Dresdner Straße",
+      "BEZIRK": 20,
+      "FLAECHE": "1.299 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524599",
@@ -22414,6 +33776,19 @@ export const PARKS_DATA: Park[] = [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524599,
+      "ANL_NAME": "Prater - Spenadlwiese",
+      "BEZIRK": 2,
+      "FLAECHE": "27.206 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Wikipedia"
   },
   {
@@ -22441,7 +33816,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524600,
+      "ANL_NAME": "Prater - Laufbergerwiese",
+      "BEZIRK": 2,
+      "FLAECHE": "34.761 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524601",
@@ -22467,6 +33855,19 @@ export const PARKS_DATA: Park[] = [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524601,
+      "ANL_NAME": "Prater - Pelzmais",
+      "BEZIRK": 2,
+      "FLAECHE": "161.703 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Wikipedia"
   },
   {
@@ -22494,7 +33895,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524602,
+      "ANL_NAME": "Odeonpark",
+      "BEZIRK": 2,
+      "FLAECHE": "2.551 m²",
+      "OEFF_ZEITEN": "6:30.20:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524603",
@@ -22522,7 +33936,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524603,
+      "ANL_NAME": "Fritzi-Massary-Park",
+      "BEZIRK": 2,
+      "FLAECHE": "4.747 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524604",
@@ -22549,7 +33976,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524604,
+      "ANL_NAME": "Vilma-Neuwirth-Park ",
+      "BEZIRK": 2,
+      "FLAECHE": "1.184 m²",
+      "OEFF_ZEITEN": "6:30-20:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524605",
@@ -22576,7 +34016,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524605,
+      "ANL_NAME": "Rosa-Jochmann-Park",
+      "BEZIRK": 2,
+      "FLAECHE": "1.536 m²",
+      "OEFF_ZEITEN": "6:30-20:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524606",
@@ -22603,6 +34056,19 @@ export const PARKS_DATA: Park[] = [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524606,
+      "ANL_NAME": "Prater - Groß-Enzersdorfer Wiese",
+      "BEZIRK": 2,
+      "FLAECHE": "436.814 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Wikipedia"
   },
   {
@@ -22629,7 +34095,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524607,
+      "ANL_NAME": "Prater - Untere Heustadelwiese",
+      "BEZIRK": 2,
+      "FLAECHE": "25.794 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524608",
@@ -22654,6 +34133,19 @@ export const PARKS_DATA: Park[] = [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524608,
+      "ANL_NAME": "Prater - Epplwiese",
+      "BEZIRK": 2,
+      "FLAECHE": "68.003 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Wikipedia"
   },
   {
@@ -22679,6 +34171,19 @@ export const PARKS_DATA: Park[] = [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524609,
+      "ANL_NAME": "Prater - Lusthauswiese",
+      "BEZIRK": 2,
+      "FLAECHE": "13.313 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Wikipedia"
   },
   {
@@ -22703,7 +34208,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524610,
+      "ANL_NAME": "Lucie-Goldner-Promenade",
+      "BEZIRK": 2,
+      "FLAECHE": "27.734 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524611",
@@ -22730,7 +34248,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524611,
+      "ANL_NAME": "Kardinal-Nagl-Park",
+      "BEZIRK": 3,
+      "FLAECHE": "7.763 m²",
+      "OEFF_ZEITEN": "Ballspielplatz+Hundezone: 6:15-21:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524612",
@@ -22756,7 +34287,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524612,
+      "ANL_NAME": "Rosa-Janku-Park",
+      "BEZIRK": 5,
+      "FLAECHE": "1.201 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524613",
@@ -22783,7 +34327,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524613,
+      "ANL_NAME": "Wilhelm-Kienzl-Park",
+      "BEZIRK": 2,
+      "FLAECHE": "7.381 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524614",
@@ -22810,7 +34367,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524614,
+      "ANL_NAME": "Gutenbergpark",
+      "BEZIRK": 7,
+      "FLAECHE": "359 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524615",
@@ -22834,7 +34404,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524615,
+      "ANL_NAME": "PA Kirchengasse",
+      "BEZIRK": 7,
+      "FLAECHE": "298 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524616",
@@ -22859,7 +34442,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524616,
+      "ANL_NAME": "PA Ceija-Stojka-Platz",
+      "BEZIRK": 7,
+      "FLAECHE": "1.132 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524617",
@@ -22886,7 +34482,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524617,
+      "ANL_NAME": "Siebensternpark",
+      "BEZIRK": 7,
+      "FLAECHE": "1.145 m²",
+      "OEFF_ZEITEN": "Okt: 7:00-19:45, Nov-März: 7:00-18:45, Apr-Sep: 7:00-21:45",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524618",
@@ -22913,7 +34522,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524618,
+      "ANL_NAME": "Mizzi-Langer-Kauba-Park",
+      "BEZIRK": 7,
+      "FLAECHE": "3.643 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524619",
@@ -22940,7 +34562,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524619,
+      "ANL_NAME": "Weghuberpark",
+      "BEZIRK": 7,
+      "FLAECHE": "8.986 m²",
+      "OEFF_ZEITEN": "Ballspielplatz: Okt: 7:10-20:00, Nov-März: 7:10-19:00, Apr-Sep: 7:10-22:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524620",
@@ -22964,7 +34599,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524620,
+      "ANL_NAME": "GA Uhlplatz",
+      "BEZIRK": 8,
+      "FLAECHE": "358 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524621",
@@ -22988,7 +34636,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524621,
+      "ANL_NAME": "GA Lisette-Model-Platz",
+      "BEZIRK": 8,
+      "FLAECHE": "773 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524622",
@@ -23015,7 +34676,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524622,
+      "ANL_NAME": "Arne-Karlsson-Park",
+      "BEZIRK": 9,
+      "FLAECHE": "11.727 m²",
+      "OEFF_ZEITEN": "Skaterpark:07:00-20:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524623",
@@ -23040,7 +34714,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524623,
+      "ANL_NAME": "Josef-Ludwig-Wolf-Park",
+      "BEZIRK": 9,
+      "FLAECHE": "1.108 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524624",
@@ -23065,7 +34752,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524624,
+      "ANL_NAME": "Ostarrichi-Park",
+      "BEZIRK": 9,
+      "FLAECHE": "7.517 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524625",
@@ -23089,7 +34789,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524625,
+      "ANL_NAME": "Treppelweg - Spittelauer Lände",
+      "BEZIRK": 9,
+      "FLAECHE": "9.418 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524626",
@@ -23116,7 +34829,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524626,
+      "ANL_NAME": "Antonspark",
+      "BEZIRK": 10,
+      "FLAECHE": "11.523 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig:06:00-21:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524627",
@@ -23142,7 +34868,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524627,
+      "ANL_NAME": "PA Heuberggstätten",
+      "BEZIRK": 10,
+      "FLAECHE": "225.426 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524628",
@@ -23167,7 +34906,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524628,
+      "ANL_NAME": "PA Favoritenstraße",
+      "BEZIRK": 10,
+      "FLAECHE": "7.207 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524629",
@@ -23194,7 +34946,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524629,
+      "ANL_NAME": "Arthaberpark",
+      "BEZIRK": 10,
+      "FLAECHE": "10.569 m²",
+      "OEFF_ZEITEN": "Hundezone:06:00-21:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524630",
@@ -23221,7 +34986,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524630,
+      "ANL_NAME": "Fortunapark",
+      "BEZIRK": 10,
+      "FLAECHE": "11.084 m²",
+      "OEFF_ZEITEN": "06:00-21:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524402",
@@ -23247,7 +35025,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524402,
+      "ANL_NAME": "PA Pfendlergasse",
+      "BEZIRK": 21,
+      "FLAECHE": "12.140 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524403",
@@ -23272,7 +35063,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524403,
+      "ANL_NAME": "GA Zschokkegasse",
+      "BEZIRK": 22,
+      "FLAECHE": "605 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524404",
@@ -23298,7 +35102,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524404,
+      "ANL_NAME": "GA Aspernstraße",
+      "BEZIRK": 22,
+      "FLAECHE": "545 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524405",
@@ -23323,7 +35140,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524405,
+      "ANL_NAME": "GA Rottstraße",
+      "BEZIRK": 14,
+      "FLAECHE": "389 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524406",
@@ -23348,7 +35178,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524406,
+      "ANL_NAME": "Dechant-Kinzl-Park",
+      "BEZIRK": 13,
+      "FLAECHE": "1.521 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524407",
@@ -23372,7 +35215,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524407,
+      "ANL_NAME": "GA Sobieskiplatz",
+      "BEZIRK": 9,
+      "FLAECHE": "461 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524408",
@@ -23396,7 +35252,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524408,
+      "ANL_NAME": "GA Liechtensteinstraße",
+      "BEZIRK": 9,
+      "FLAECHE": "767 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524409",
@@ -23420,7 +35289,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524409,
+      "ANL_NAME": "GA Viktor-Christ-Gasse",
+      "BEZIRK": 5,
+      "FLAECHE": "419 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524410",
@@ -23447,7 +35329,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524410,
+      "ANL_NAME": "Pauluspark",
+      "BEZIRK": 3,
+      "FLAECHE": "1.780 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524411",
@@ -23471,7 +35366,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524411,
+      "ANL_NAME": "GA Grünangergasse",
+      "BEZIRK": 1,
+      "FLAECHE": "171 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524412",
@@ -23497,7 +35405,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524412,
+      "ANL_NAME": "PA Am Kaiserwasser",
+      "BEZIRK": 22,
+      "FLAECHE": "47.391 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524413",
@@ -23524,7 +35445,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524413,
+      "ANL_NAME": "Jakob-Bindel-Park",
+      "BEZIRK": 22,
+      "FLAECHE": "6.599 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524414",
@@ -23549,7 +35483,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524414,
+      "ANL_NAME": "Bertha-Neumann-Park",
+      "BEZIRK": 23,
+      "FLAECHE": "846 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524415",
@@ -23574,7 +35521,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524415,
+      "ANL_NAME": "PA Robinsonweg",
+      "BEZIRK": 23,
+      "FLAECHE": "7.432 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524416",
@@ -23599,7 +35559,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524416,
+      "ANL_NAME": "PA Gaulgasse",
+      "BEZIRK": 23,
+      "FLAECHE": "7.405 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524417",
@@ -23623,7 +35596,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524417,
+      "ANL_NAME": "PA Kolbegasse",
+      "BEZIRK": 23,
+      "FLAECHE": "3.549 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524418",
@@ -23647,7 +35633,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524418,
+      "ANL_NAME": "PA Friedenszeile",
+      "BEZIRK": 13,
+      "FLAECHE": "824 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524419",
@@ -23675,7 +35674,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524419,
+      "ANL_NAME": "Schubertpark",
+      "BEZIRK": 18,
+      "FLAECHE": "13.358 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig: Okt-März: 07:00-19:00, Apr-Sep: 07:00-22:00, Hundezone: 06:00-22:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524420",
@@ -23699,7 +35711,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524420,
+      "ANL_NAME": "PA Pötzleinsdorfer Höhe",
+      "BEZIRK": 18,
+      "FLAECHE": "4.588 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524421",
@@ -23725,7 +35750,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524421,
+      "ANL_NAME": "Norbert-Liebermann-Park",
+      "BEZIRK": 18,
+      "FLAECHE": "2.787 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524422",
@@ -23749,7 +35787,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524422,
+      "ANL_NAME": "PA Leopoldsplateau",
+      "BEZIRK": 18,
+      "FLAECHE": "1.786 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524423",
@@ -23774,7 +35825,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524423,
+      "ANL_NAME": "Joseph-Kainz-Park",
+      "BEZIRK": 18,
+      "FLAECHE": "4.787 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524424",
@@ -23800,7 +35864,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524424,
+      "ANL_NAME": "PA Johann-Nepomuk-Vogl-Platz",
+      "BEZIRK": 18,
+      "FLAECHE": "887 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524425",
@@ -23827,7 +35904,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524425,
+      "ANL_NAME": "Gerda-Lerner-Park",
+      "BEZIRK": 18,
+      "FLAECHE": "1.253 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524426",
@@ -23854,7 +35944,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524426,
+      "ANL_NAME": "Ebner-Eschenbach-Park",
+      "BEZIRK": 18,
+      "FLAECHE": "4.881 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig: Okt-Mär: 7:00-19:00, Apr-Sep: 7:00-22:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524427",
@@ -23881,7 +35984,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524427,
+      "ANL_NAME": "Albert-Dub-Park",
+      "BEZIRK": 18,
+      "FLAECHE": "6.266 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524428",
@@ -23905,7 +36021,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524428,
+      "ANL_NAME": "PA Rudolf-Kirchschläger-Platz",
+      "BEZIRK": 17,
+      "FLAECHE": "523 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524429",
@@ -23930,7 +36059,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524429,
+      "ANL_NAME": "Brigittapark",
+      "BEZIRK": 20,
+      "FLAECHE": "8.279 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524430",
@@ -23957,7 +36099,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524430,
+      "ANL_NAME": "Anton-Kummerer-Park",
+      "BEZIRK": 20,
+      "FLAECHE": "7.847 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig:06:30-20:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524431",
@@ -23984,7 +36139,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524431,
+      "ANL_NAME": "Allerheiligenpark",
+      "BEZIRK": 20,
+      "FLAECHE": "20.230 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524432",
@@ -24011,7 +36179,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524432,
+      "ANL_NAME": "Wertheimsteinpark",
+      "BEZIRK": 19,
+      "FLAECHE": "62.020 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524433",
@@ -24038,7 +36219,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524433,
+      "ANL_NAME": "Strauß-Lanner-Park",
+      "BEZIRK": 19,
+      "FLAECHE": "8.547 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524434",
@@ -24064,7 +36258,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524434,
+      "ANL_NAME": "PA Steinbüchlweg",
+      "BEZIRK": 19,
+      "FLAECHE": "3.419 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524302",
@@ -24090,7 +36297,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524302,
+      "ANL_NAME": "PA Polgarstraße",
+      "BEZIRK": 22,
+      "FLAECHE": "21.510 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524303",
@@ -24116,7 +36336,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524303,
+      "ANL_NAME": "PA Kirschenallee",
+      "BEZIRK": 22,
+      "FLAECHE": "14.714 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524304",
@@ -24142,7 +36375,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524304,
+      "ANL_NAME": "PA Benjowskigasse",
+      "BEZIRK": 22,
+      "FLAECHE": "6.222 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524305",
@@ -24168,7 +36414,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524305,
+      "ANL_NAME": "PA Kaschauerplatz",
+      "BEZIRK": 22,
+      "FLAECHE": "10.294 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524306",
@@ -24194,7 +36453,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524306,
+      "ANL_NAME": "PA Kagraner Platz",
+      "BEZIRK": 22,
+      "FLAECHE": "4.395 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524307",
@@ -24221,7 +36493,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524307,
+      "ANL_NAME": "Jazzpark Essling",
+      "BEZIRK": 22,
+      "FLAECHE": "4.689 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524308",
@@ -24248,7 +36533,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524308,
+      "ANL_NAME": "Hirschstettner Aupark",
+      "BEZIRK": 22,
+      "FLAECHE": "34.047 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524309",
@@ -24275,7 +36573,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524309,
+      "ANL_NAME": "Lumbyepark",
+      "BEZIRK": 22,
+      "FLAECHE": "4.523 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524310",
@@ -24301,7 +36612,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524310,
+      "ANL_NAME": "PA Ferdinand-Stransky-Weg",
+      "BEZIRK": 22,
+      "FLAECHE": "5.287 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524311",
@@ -24325,7 +36649,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524311,
+      "ANL_NAME": "PA Eßlinger Hauptstraße",
+      "BEZIRK": 22,
+      "FLAECHE": "1.387 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524312",
@@ -24351,7 +36688,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524312,
+      "ANL_NAME": "PA Raphael-Donner-Allee",
+      "BEZIRK": 22,
+      "FLAECHE": "8.749 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524313",
@@ -24377,7 +36727,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524313,
+      "ANL_NAME": "PA Eibengasse",
+      "BEZIRK": 22,
+      "FLAECHE": "6.634 m²",
+      "OEFF_ZEITEN": "Ballspielplatz: Mo-Fr: 8:00-22:00 Sa-So: 10:00-22:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524314",
@@ -24403,7 +36766,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524314,
+      "ANL_NAME": "PA Düsseldorfstraße",
+      "BEZIRK": 22,
+      "FLAECHE": "4.526 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524315",
@@ -24427,7 +36803,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524315,
+      "ANL_NAME": "PA Reulingweg",
+      "BEZIRK": 23,
+      "FLAECHE": "1.453 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524316",
@@ -24452,7 +36841,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524316,
+      "ANL_NAME": "Josef-Schoiswohl-Park",
+      "BEZIRK": 23,
+      "FLAECHE": "841 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524317",
@@ -24476,7 +36878,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524317,
+      "ANL_NAME": "PA Inzersdorf Kirchenplatz",
+      "BEZIRK": 23,
+      "FLAECHE": "993 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524318",
@@ -24500,7 +36915,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524318,
+      "ANL_NAME": "PA Hadersbergensteig",
+      "BEZIRK": 23,
+      "FLAECHE": "4.265 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524319",
@@ -24524,7 +36952,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524319,
+      "ANL_NAME": "PA Gregorygasse",
+      "BEZIRK": 23,
+      "FLAECHE": "17.656 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524320",
@@ -24551,7 +36992,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524320,
+      "ANL_NAME": "Margarete-Ottillinger-Park",
+      "BEZIRK": 23,
+      "FLAECHE": "12.148 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524321",
@@ -24575,7 +37029,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524321,
+      "ANL_NAME": "Friedrich-Khek-Anlage",
+      "BEZIRK": 23,
+      "FLAECHE": "1.403 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524322",
@@ -24603,7 +37070,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524322,
+      "ANL_NAME": "Fridtjof-Nansen-Park",
+      "BEZIRK": 23,
+      "FLAECHE": "56.607 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524323",
@@ -24627,7 +37107,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524323,
+      "ANL_NAME": "PA Friedhof Erlaa",
+      "BEZIRK": 23,
+      "FLAECHE": "2.529 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524324",
@@ -24652,7 +37145,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524324,
+      "ANL_NAME": "Dr.-Rudolf-Hatschek-Park",
+      "BEZIRK": 23,
+      "FLAECHE": "1.546 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524325",
@@ -24676,7 +37182,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524325,
+      "ANL_NAME": "PA Chromygasse",
+      "BEZIRK": 23,
+      "FLAECHE": "3.029 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524326",
@@ -24703,7 +37222,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524326,
+      "ANL_NAME": "PaN-Park",
+      "BEZIRK": 23,
+      "FLAECHE": "14.528 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524327",
@@ -24729,7 +37261,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524327,
+      "ANL_NAME": "PA Ziegelhofstraße",
+      "BEZIRK": 22,
+      "FLAECHE": "4.449 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524328",
@@ -24755,7 +37300,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524328,
+      "ANL_NAME": "PA Strakaweg",
+      "BEZIRK": 22,
+      "FLAECHE": "13.493 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524329",
@@ -24781,7 +37339,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524329,
+      "ANL_NAME": "PA Rudolf-Köppl-Gasse",
+      "BEZIRK": 22,
+      "FLAECHE": "4.462 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524330",
@@ -24807,7 +37378,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524330,
+      "ANL_NAME": "PA Illnerstraße",
+      "BEZIRK": 22,
+      "FLAECHE": "3.247 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524331",
@@ -24831,7 +37415,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524331,
+      "ANL_NAME": "PA Anfanggasse",
+      "BEZIRK": 22,
+      "FLAECHE": "19.489 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524332",
@@ -24856,7 +37453,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524332,
+      "ANL_NAME": "Cholewkapark",
+      "BEZIRK": 22,
+      "FLAECHE": "5.474 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524333",
@@ -24883,7 +37493,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524333,
+      "ANL_NAME": "Hans-Hass-Park",
+      "BEZIRK": 22,
+      "FLAECHE": "3.373 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524334",
@@ -24909,7 +37532,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524334,
+      "ANL_NAME": "Ferdinand-Kaufmann-Platz",
+      "BEZIRK": 21,
+      "FLAECHE": "22.158 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524335",
@@ -24935,7 +37571,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524335,
+      "ANL_NAME": "PA Edi-Finger-Straße",
+      "BEZIRK": 21,
+      "FLAECHE": "1.311 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524336",
@@ -24961,6 +37610,19 @@ export const PARKS_DATA: Park[] = [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524336,
+      "ANL_NAME": "Prater - Schulverkehrsgartenwiese",
+      "BEZIRK": 2,
+      "FLAECHE": "5.173 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Wikipedia"
   },
   {
@@ -24985,7 +37647,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524337,
+      "ANL_NAME": "PA Neue-Welt-Gasse",
+      "BEZIRK": 13,
+      "FLAECHE": "245 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524338",
@@ -25010,7 +37685,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524338,
+      "ANL_NAME": "Erna-Reitmeyer-Park",
+      "BEZIRK": 13,
+      "FLAECHE": "1.175 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524339",
@@ -25034,7 +37722,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524339,
+      "ANL_NAME": "PA Clarplatz",
+      "BEZIRK": 13,
+      "FLAECHE": "830 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524340",
@@ -25062,7 +37763,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524340,
+      "ANL_NAME": "Andreas-Rett-Park",
+      "BEZIRK": 13,
+      "FLAECHE": "5.276 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524341",
@@ -25088,7 +37802,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524341,
+      "ANL_NAME": "PA Zanaschkagasse",
+      "BEZIRK": 12,
+      "FLAECHE": "5.228 m²",
+      "OEFF_ZEITEN": "Okt-März:06:00-21:00, Apr-Sep:06:00-21:30",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524342",
@@ -25114,7 +37841,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524342,
+      "ANL_NAME": "Vivenotpark",
+      "BEZIRK": 12,
+      "FLAECHE": "2.377 m²",
+      "OEFF_ZEITEN": "Okt-März:06:00-21:00, Apr-Sep:06:00-21:30",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524343",
@@ -25141,7 +37881,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524343,
+      "ANL_NAME": "Theodor-Körner-Park",
+      "BEZIRK": 12,
+      "FLAECHE": "6.504 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524344",
@@ -25165,7 +37918,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524344,
+      "ANL_NAME": "PA Wienerbergbrücke",
+      "BEZIRK": 12,
+      "FLAECHE": "1.390 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524345",
@@ -25191,7 +37957,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524345,
+      "ANL_NAME": "PA Schöpfwerk",
+      "BEZIRK": 12,
+      "FLAECHE": "9.446 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524346",
@@ -25216,6 +37995,19 @@ export const PARKS_DATA: Park[] = [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524346,
+      "ANL_NAME": "Prater - Konstantinhügel",
+      "BEZIRK": 2,
+      "FLAECHE": "16.175 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Wikipedia"
   },
   {
@@ -25241,7 +38033,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524347,
+      "ANL_NAME": "Karl-Voitl-Park",
+      "BEZIRK": 12,
+      "FLAECHE": "1.019 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524348",
@@ -25267,7 +38072,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524348,
+      "ANL_NAME": "PA Hervicusgasse",
+      "BEZIRK": 12,
+      "FLAECHE": "4.706 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524349",
@@ -25291,7 +38109,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524349,
+      "ANL_NAME": "PA Canalettogasse",
+      "BEZIRK": 12,
+      "FLAECHE": "310 m²",
+      "OEFF_ZEITEN": "Okt-März:06:00-21:00, Apr-Sep:06:00-21:30",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524350",
@@ -25316,6 +38147,19 @@ export const PARKS_DATA: Park[] = [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524350,
+      "ANL_NAME": "Prater - Rotundenwiese",
+      "BEZIRK": 2,
+      "FLAECHE": "2.993 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Wikipedia"
   },
   {
@@ -25340,7 +38184,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524351,
+      "ANL_NAME": "PA Glanzinggasse",
+      "BEZIRK": 19,
+      "FLAECHE": "1.262 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524352",
@@ -25365,7 +38222,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524352,
+      "ANL_NAME": "PA Kutschkergasse",
+      "BEZIRK": 18,
+      "FLAECHE": "237 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524353",
@@ -25389,7 +38259,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524353,
+      "ANL_NAME": "PA Franz-Glaser-Gasse",
+      "BEZIRK": 17,
+      "FLAECHE": "3.567 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524354",
@@ -25414,7 +38297,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524354,
+      "ANL_NAME": "PA Dornbacher Straße",
+      "BEZIRK": 17,
+      "FLAECHE": "490 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524355",
@@ -25441,7 +38337,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524355,
+      "ANL_NAME": "Diepoldpark",
+      "BEZIRK": 17,
+      "FLAECHE": "3.721 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524356",
@@ -25466,7 +38375,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524356,
+      "ANL_NAME": "Karl-Hodina-Park",
+      "BEZIRK": 16,
+      "FLAECHE": "900 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524357",
@@ -25492,7 +38414,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524357,
+      "ANL_NAME": "PA Mildeplatz",
+      "BEZIRK": 16,
+      "FLAECHE": "2.924 m²",
+      "OEFF_ZEITEN": "Ballspielkäfig: März-Nov: 07:00-21:00, Dez-Feb: keine Sperre",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524358",
@@ -25517,7 +38452,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524358,
+      "ANL_NAME": "PA Lambertgasse",
+      "BEZIRK": 16,
+      "FLAECHE": "258 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524359",
@@ -25542,6 +38490,19 @@ export const PARKS_DATA: Park[] = [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524359,
+      "ANL_NAME": "Prater - Arenawiese",
+      "BEZIRK": 2,
+      "FLAECHE": "58.590 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Wikipedia"
   },
   {
@@ -25567,7 +38528,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524360,
+      "ANL_NAME": "Katharinenruhe",
+      "BEZIRK": 16,
+      "FLAECHE": "657 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524361",
@@ -25593,7 +38567,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524361,
+      "ANL_NAME": "PA Sechshauser Gürtel",
+      "BEZIRK": 15,
+      "FLAECHE": "1.188 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524362",
@@ -25618,7 +38605,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524362,
+      "ANL_NAME": "PA Rosinagasse",
+      "BEZIRK": 15,
+      "FLAECHE": "689 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524363",
@@ -25644,7 +38644,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524363,
+      "ANL_NAME": "Hans-Rott-Park",
+      "BEZIRK": 15,
+      "FLAECHE": "667 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524364",
@@ -25668,7 +38681,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524364,
+      "ANL_NAME": "PA Grimmgasse",
+      "BEZIRK": 15,
+      "FLAECHE": "379 m²",
+      "OEFF_ZEITEN": "Nov-März: 7:00-20:00, Apr-Okt: 7:00-21:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524365",
@@ -25695,7 +38721,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524365,
+      "ANL_NAME": "Elfriede-Stumpf-Park",
+      "BEZIRK": 14,
+      "FLAECHE": "54.192 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524366",
@@ -25719,7 +38758,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524366,
+      "ANL_NAME": "PA Flötzersteig",
+      "BEZIRK": 14,
+      "FLAECHE": "1.128 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524367",
@@ -25743,7 +38795,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524367,
+      "ANL_NAME": "PA Ochsenkopfweg",
+      "BEZIRK": 14,
+      "FLAECHE": "3.678 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524368",
@@ -25768,7 +38833,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524368,
+      "ANL_NAME": "PA Mühlbergstraße",
+      "BEZIRK": 14,
+      "FLAECHE": "1.079 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524369",
@@ -25792,7 +38870,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524369,
+      "ANL_NAME": "PA Siebenhirtenstraße",
+      "BEZIRK": 23,
+      "FLAECHE": "4.762 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524370",
@@ -25817,7 +38908,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524370,
+      "ANL_NAME": "PA Hüttelbergstraße",
+      "BEZIRK": 14,
+      "FLAECHE": "2.048 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524371",
@@ -25843,7 +38947,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524371,
+      "ANL_NAME": "PA Luckenschwemmgasse",
+      "BEZIRK": 21,
+      "FLAECHE": "1.898 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524372",
@@ -25867,7 +38984,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524372,
+      "ANL_NAME": "PA Julius-Ficker-Straße",
+      "BEZIRK": 21,
+      "FLAECHE": "1.254 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524373",
@@ -25893,7 +39023,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524373,
+      "ANL_NAME": "PA Gitlbauergasse",
+      "BEZIRK": 21,
+      "FLAECHE": "20.260 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524374",
@@ -25917,7 +39060,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524374,
+      "ANL_NAME": "PA Josef-Flandorfer-Straße",
+      "BEZIRK": 21,
+      "FLAECHE": "801 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524375",
@@ -25944,6 +39100,19 @@ export const PARKS_DATA: Park[] = [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
     "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524375,
+      "ANL_NAME": "Prater - Rustenschacher",
+      "BEZIRK": 2,
+      "FLAECHE": "189.820 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    },
     "descriptionLicense": "Wikipedia"
   },
   {
@@ -25969,7 +39138,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524376,
+      "ANL_NAME": "PA Bubergasse",
+      "BEZIRK": 21,
+      "FLAECHE": "3.534 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524377",
@@ -25995,7 +39177,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524377,
+      "ANL_NAME": "PA Donaufelder Straße",
+      "BEZIRK": 21,
+      "FLAECHE": "2.516 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524378",
@@ -26019,7 +39214,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524378,
+      "ANL_NAME": "PA Winarskystraße",
+      "BEZIRK": 20,
+      "FLAECHE": "649 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524379",
@@ -26043,7 +39251,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524379,
+      "ANL_NAME": "PA Meldemannstraße",
+      "BEZIRK": 20,
+      "FLAECHE": "1.026 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524380",
@@ -26070,7 +39291,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524380,
+      "ANL_NAME": "Wilfanpark",
+      "BEZIRK": 19,
+      "FLAECHE": "3.673 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524381",
@@ -26095,7 +39329,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524381,
+      "ANL_NAME": "Puchweinpark",
+      "BEZIRK": 19,
+      "FLAECHE": "3.125 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524382",
@@ -26119,7 +39366,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524382,
+      "ANL_NAME": "PA Felix-Dahn-Straße",
+      "BEZIRK": 19,
+      "FLAECHE": "421 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524383",
@@ -26145,7 +39405,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524383,
+      "ANL_NAME": "PA Kliergasse",
+      "BEZIRK": 19,
+      "FLAECHE": "8.206 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524384",
@@ -26169,7 +39442,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524384,
+      "ANL_NAME": "PA Am Kahlenberg",
+      "BEZIRK": 19,
+      "FLAECHE": "1.243 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524385",
@@ -26194,7 +39480,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524385,
+      "ANL_NAME": "Pisecpark",
+      "BEZIRK": 19,
+      "FLAECHE": "1.807 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524386",
@@ -26220,7 +39519,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524386,
+      "ANL_NAME": "PA Asperner Wies'n",
+      "BEZIRK": 22,
+      "FLAECHE": "10.470 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524387",
@@ -26246,7 +39558,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524387,
+      "ANL_NAME": "Gusti-Wolf-Park",
+      "BEZIRK": 22,
+      "FLAECHE": "4.024 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524388",
@@ -26273,7 +39598,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524388,
+      "ANL_NAME": "Trygve-Lie-Park",
+      "BEZIRK": 22,
+      "FLAECHE": "3.882 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524389",
@@ -26297,7 +39635,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524389,
+      "ANL_NAME": "PA Steigenteschgasse",
+      "BEZIRK": 22,
+      "FLAECHE": "3.727 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524390",
@@ -26321,7 +39672,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524390,
+      "ANL_NAME": "PA Godlewskigasse",
+      "BEZIRK": 22,
+      "FLAECHE": "4.900 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524391",
@@ -26347,7 +39711,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524391,
+      "ANL_NAME": "Lagerwiese Rehlacke",
+      "BEZIRK": 22,
+      "FLAECHE": "41.305 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524392",
@@ -26372,7 +39749,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524392,
+      "ANL_NAME": "PA Quadenstraße",
+      "BEZIRK": 22,
+      "FLAECHE": "2.214 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524393",
@@ -26396,7 +39786,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524393,
+      "ANL_NAME": "PA Friedhof Aspern",
+      "BEZIRK": 22,
+      "FLAECHE": "3.645 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524394",
@@ -26422,7 +39825,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524394,
+      "ANL_NAME": "PA Meißnergasse",
+      "BEZIRK": 22,
+      "FLAECHE": "6.903 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524395",
@@ -26447,7 +39863,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524395,
+      "ANL_NAME": "PA Donaustadtstraße",
+      "BEZIRK": 22,
+      "FLAECHE": "1.798 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524396",
@@ -26473,7 +39902,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524396,
+      "ANL_NAME": "PA Wankläckergasse",
+      "BEZIRK": 21,
+      "FLAECHE": "5.180 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524397",
@@ -26498,7 +39940,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524397,
+      "ANL_NAME": "Schweiglpark",
+      "BEZIRK": 21,
+      "FLAECHE": "1.677 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Nein",
+      "WASSER_IM_PARK": "Nein",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524398",
@@ -26524,7 +39979,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524398,
+      "ANL_NAME": "PA Tetmajergasse",
+      "BEZIRK": 21,
+      "FLAECHE": "12.233 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524399",
@@ -26551,7 +40019,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524399,
+      "ANL_NAME": "Bruno-Morpurgo-Park",
+      "BEZIRK": 23,
+      "FLAECHE": "8.041 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524400",
@@ -26579,7 +40060,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524400,
+      "ANL_NAME": "Vilma-Webenau-Park",
+      "BEZIRK": 21,
+      "FLAECHE": "38.927 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Ja",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "3524401",
@@ -26605,7 +40099,20 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "rawMetadata": {
+      "OBJECTID": 3524401,
+      "ANL_NAME": "PA Ernst-Kein-Gasse",
+      "BEZIRK": 21,
+      "FLAECHE": "19.595 m²",
+      "OEFF_ZEITEN": "0:00-24:00",
+      "SPIELEN_IM_PARK": "Ja",
+      "WASSER_IM_PARK": "Ja",
+      "HUNDE_IM_PARK": "Nein",
+      "TELEFON": "01 4000 8042",
+      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+      "SE_ANNO_CAD_DATA": null
+    }
   },
   {
     "id": "manual-augarten",
@@ -26951,7 +40458,7 @@ export const PARKS_DATA: Park[] = [
 ];
 
 export const PARKS_METADATA = {
-  generatedAt: '2026-03-14T05:26:31.031Z',
+  generatedAt: '2026-03-14T05:47:47.134Z',
   totalParks: 1052,
   source: 'Vienna Open Data API',
   apiEndpoint: 'ogdwien:PARKINFOOGD'
