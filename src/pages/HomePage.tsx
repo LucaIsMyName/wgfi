@@ -101,7 +101,9 @@ const HomePage: React.FC = () => {
         <div className="flex flex-col space-y-8">
           {/* Headline */}
           <div>
-            <h1 className={`${STYLE.pageTitle(true)} not-italic leading-tight text-primary-green`}>
+            <h1
+              className={`${STYLE.pageTitle(true)} italic leading-tight text-primary-green`}
+            >
               Wiener
               <br /> Grünflächen
               <br />
@@ -113,37 +115,52 @@ const HomePage: React.FC = () => {
 
           {/* Subtitle */}
           <div className="max-w-2xl">
-            <p className="font-serif italic text-lg sm:text-3xl leading-tight text-balance text-primary-green font-normal">
-              Eine Liste aller Parks & Grünflächen der Stadt Wien als Liste oder
-              Karte.
+            <p className="font-serif text-lg sm:text-2xl leading-tight text-balance text-primary-green font-normal">
+              Eine Index aller Parks & Grünflächen der Stadt Wien als{" "}
+              <Link to="/index" className="underline italic">
+                Liste
+              </Link>{" "}
+              oder{" "}
+              <Link to="/map" className="underline italic">
+                Karte
+              </Link>
+              . Speichere Parks als{" "}
+              <Link to="/favorites" className="underline italic">
+                Favoriten
+              </Link>{" "}
+              oder schau dir die{" "}
+              <Link to="statistics" className="underline italic">
+                Zahlen
+              </Link>{" "}
+              an.
             </p>
           </div>
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <Button variant="primary" size="md" loading={isLoadingNearby}>
-              <Link to="/map">Index</Link>
+            <Button variant="primary" size="sm" loading={isLoadingNearby}>
+              <Link to="/index">Index</Link>
             </Button>
-            <Button variant="primary" size="md" loading={isLoadingNearby}>
-              <Link to="/map">Karte</Link>
+            <Button to="/map" variant="primary" size="sm" loading={isLoadingNearby}>
+              Karte
             </Button>
             <Button
               onClick={handleFindNearby}
               disabled={isLoadingNearby}
-              variant="outline"
-              size="md"
+              variant="secondary"
+              size="sm"
               loading={isLoadingNearby}
-              className="bg-card-bg text-primary-green"
+              className="bg-card-bg text-primary-green italic"
             >
               {isLoadingNearby ? "Suche..." : "In der nähe"}
             </Button>
             <Button
               onClick={handleRandomPark}
               disabled={isLoadingRandom}
-              variant="outline"
-              size="md"
+              variant="secondary"
+              size="sm"
               loading={isLoadingRandom}
-              className="bg-card-bg text-primary-green"
+              className="bg-card-bg text-primary-green italic"
             >
               {isLoadingRandom ? "Lade..." : "Zufallspark"}
             </Button>

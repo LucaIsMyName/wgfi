@@ -32,7 +32,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         cursor: disabled || loading ? "not-allowed" : "pointer",
         opacity: disabled || loading ? 0.6 : 1,
         transition: "opacity 0.2s ease",
-        border: "1px solid transparent"
+        border: "1px solid var(--deep-charcoal)",
       };
 
       switch (variant) {
@@ -48,7 +48,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
             ...baseStyles,
             backgroundColor: "var(--light-sage)",
             color: "var(--deep-charcoal)",
-            border: "1px solid var(--light-sage)",
+            border: "1px solid var(--primary-green)",
           };
         case "ghost":
           return {
@@ -62,7 +62,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
             ...baseStyles,
             backgroundColor: "transparent",
             color: "var(--primary-green)",
-            border: "1px solid var(--primary-green)",
+            border: "1px solid var(--primary-green) !important",
           };
         default:
           return baseStyles;
@@ -73,13 +73,13 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       switch (size) {
         case "sm":
           return {
-            padding: "0.25rem 0.5rem",
-            fontSize: "0.75rem",
+            padding: "0.33rem 0.8725rem",
+            fontSize: "0.85rem",
           };
         case "md":
           return {
             padding: "0.5rem 1rem",
-            fontSize: "0.875rem",
+            fontSize: "0.925rem",
           };
         case "lg":
           return {
@@ -99,7 +99,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       alignItems: "center",
       justifyContent: "center",
       gap: "0.5rem",
-      fontFamily: "var(--font-mono)",
+      fontFamily: "var(--font-serif)",
       fontWeight: 500,
       border: "none",
       ...style,

@@ -1,5 +1,5 @@
 const STYLE = {
-  pageTitle: (i  = false) => `font-serif ${i ? "italic" : ""} text-4xl lg:text-6xl xl:text-7xl`,
+  pageTitle: (i  = false) => `font-serif ${i ? "italic" : ""} text-5xl lg:text-7xl`,
   
   // Mapbox style URLs - custom styles from Mapbox Studio
   // Format: "mapbox://styles/YOUR_USERNAME/YOUR_STYLE_ID"
