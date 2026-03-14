@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { useParksData } from "../hooks/useParksData";
@@ -31,14 +31,67 @@ const ParkDetailPage: React.FC = () => {
   const { idOrSlug } = useParams<{ idOrSlug: string }>();
   const { effectiveTheme, isHighContrast } = useTheme();
   const { parks } = useParksData();
-  const [park, setPark] = useState<Park | null>(null);
-  const [error, setError] = useState<string | null>(null);
   const [userLocation, setUserLocation] = useState<{
     lat: number;
     lng: number;
   } | null>(null);
   const [isFavorited, setIsFavorited] = useState(false);
   const [nearbyParks, setNearbyParks] = useState<ParkWithDistance[]>([]);
+
+  // Find and merge park data immediately using useMemo to avoid flash
+  const { park, error } = useMemo(() => {
+    if (!idOrSlug || parks.length === 0) {
+      return { park: null, error: null };
+    }
+
+    try {
+      // Try to find park by ID first
+      let foundPark = parks.find(
+        (p: { id: string; name: string }) => p.id === idOrSlug
+      );
+
+      // If not found by ID, try to find by slug
+      if (!foundPark) {
+        foundPark = parks.find(
+          (p: { id: string; name: string }) =>
+            slugifyParkName(p.name) === idOrSlug
+        );
+      }
+
+      if (foundPark) {
+        // Merge with manual data if available
+        let manualData = getManualParkData(foundPark.id);
+
+        // If not found by ID, try by slugified name
+        if (!manualData) {
+          manualData = getManualParkData(slugifyParkName(foundPark.name));
+        }
+
+        // Merge amenities: combine API amenities with manual amenities
+        const mergedAmenities = manualData?.amenities
+          ? [
+              ...new Set([
+                ...(foundPark.amenities || []),
+                ...manualData.amenities,
+              ]),
+            ]
+          : foundPark.amenities;
+
+        const currentPark = {
+          ...foundPark,
+          ...manualData,
+          amenities: mergedAmenities,
+        };
+
+        return { park: currentPark, error: null };
+      } else {
+        return { park: null, error: "Park nicht gefunden" };
+      }
+    } catch (err) {
+      console.error("Error loading park:", err);
+      return { park: null, error: "Fehler beim Laden des Parks" };
+    }
+  }, [idOrSlug, parks]);
 
   // Map references
   const mapContainer = useRef<HTMLDivElement>(null);
@@ -69,99 +122,42 @@ const ParkDetailPage: React.FC = () => {
     }
   }, []);
 
+  // Calculate nearby parks when park changes
   useEffect(() => {
-    if (!idOrSlug || parks.length === 0) return;
+    if (!park || !park.coordinates) return;
 
-    try {
-      // Try to find park by ID first
-      let foundPark = parks.find(
-        (p: { id: string; name: string }) => p.id === idOrSlug
-      );
+    const parksWithDistance: ParkWithDistance[] = parks
+      .filter((p: Park) => p.id !== park.id) // Exclude current park
+      .map((p: Park): ParkWithDistance => {
+        const manualData =
+          getManualParkData(p.id) ||
+          getManualParkData(slugifyParkName(p.name));
+        // Merge amenities for nearby parks too
+        const nearbyMergedAmenities = manualData?.amenities
+          ? [
+            ...new Set([
+              ...(p.amenities || []),
+              ...manualData.amenities,
+            ]),
+          ]
+          : p.amenities;
+        return {
+          ...p,
+          ...manualData,
+          amenities: nearbyMergedAmenities,
+          distance: calculateDistance(
+            park.coordinates.lat,
+            park.coordinates.lng,
+            p.coordinates.lat,
+            p.coordinates.lng
+          ),
+        };
+      })
+      .sort((a: ParkWithDistance, b: ParkWithDistance) => a.distance - b.distance)
+      .slice(0, 5); // Get 5 nearest parks
 
-      // If not found by ID, try to find by slug
-      if (!foundPark) {
-        foundPark = parks.find(
-          (p: { id: string; name: string }) =>
-            slugifyParkName(p.name) === idOrSlug
-        );
-      }
-
-      if (foundPark) {
-          // Merge with manual data if available
-          let manualData = getManualParkData(foundPark.id);
-
-          // If not found by ID, try by slugified name
-          if (!manualData) {
-            manualData = getManualParkData(slugifyParkName(foundPark.name));
-          }
-
-          // console.log("Park ID:", foundPark.id);
-          // console.log("Park Name:", foundPark.name);
-          // console.log("Park Name Slug:", slugifyParkName(foundPark.name));
-          // console.log("Manual data found:", manualData);
-          // console.log("Description License:", manualData?.descriptionLicense);
-          // console.log("Links:", manualData?.links);
-
-          // Merge amenities: combine API amenities with manual amenities
-          const mergedAmenities = manualData?.amenities
-            ? [
-              ...new Set([
-                ...(foundPark.amenities || []),
-                ...manualData.amenities,
-              ]),
-            ]
-            : foundPark.amenities;
-
-          const currentPark = {
-            ...foundPark,
-            ...manualData,
-            amenities: mergedAmenities,
-          };
-          setPark(currentPark);
-          setError(null);
-
-          // Find nearby parks
-          if (currentPark.coordinates) {
-            const parksWithDistance: ParkWithDistance[] = parks
-              .filter((p: Park) => p.id !== currentPark.id) // Exclude current park
-              .map((p: Park): ParkWithDistance => {
-                const manualData =
-                  getManualParkData(p.id) ||
-                  getManualParkData(slugifyParkName(p.name));
-                // Merge amenities for nearby parks too
-                const nearbyMergedAmenities = manualData?.amenities
-                  ? [
-                    ...new Set([
-                      ...(p.amenities || []),
-                      ...manualData.amenities,
-                    ]),
-                  ]
-                  : p.amenities;
-                return {
-                  ...p,
-                  ...manualData,
-                  amenities: nearbyMergedAmenities,
-                  distance: calculateDistance(
-                    currentPark.coordinates.lat,
-                    currentPark.coordinates.lng,
-                    p.coordinates.lat,
-                    p.coordinates.lng
-                  ),
-                };
-              })
-              .sort((a: ParkWithDistance, b: ParkWithDistance) => a.distance - b.distance)
-              .slice(0, 5); // Get 5 nearest parks
-
-            setNearbyParks(parksWithDistance);
-          }
-      } else {
-        setError("Park nicht gefunden");
-      }
-    } catch (err) {
-      setError("Fehler beim Laden des Parks");
-      console.error("Error loading park:", err);
-    }
-  }, [idOrSlug, parks]);
+    setNearbyParks(parksWithDistance);
+  }, [park, parks]);
 
   // Initialize map when park data is loaded
   useEffect(() => {
@@ -361,7 +357,8 @@ const ParkDetailPage: React.FC = () => {
     }
   }, [effectiveTheme, park]);
 
-  if (error || !park) {
+  // Only show error after parks are loaded to prevent flash
+  if (parks.length > 0 && (error || !park)) {
     return (
       <div
         className="min-h-screen flex items-center justify-center"
@@ -394,6 +391,11 @@ const ParkDetailPage: React.FC = () => {
         </div>
       </div>
     );
+  }
+
+  // Show nothing while parks are loading
+  if (!park) {
+    return null;
   }
 
   // TypeScript now knows park is non-null after the early return
