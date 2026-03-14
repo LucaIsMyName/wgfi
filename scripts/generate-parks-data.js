@@ -183,10 +183,20 @@ function transformViennaPark(viennaPark, manualParksData) {
   
   const amenities = amenitiesList.length > 0 ? amenitiesList : ['Grünfläche'];
   
-  // Merge with manual amenities
+  // Merge with manual amenities - APPEND mode for arrays
   const mergedAmenities = manualData?.amenities 
     ? [...new Set([...amenities, ...manualData.amenities])]
     : amenities;
+
+  // publicTransport - OVERWRITE mode (manual data replaces API data)
+  const mergedPublicTransport = manualData?.publicTransport
+    ? manualData.publicTransport
+    : ['Öffentliche Verkehrsmittel in der Nähe verfügbar'];
+
+  // tips - OVERWRITE mode (manual data replaces API data)
+  const mergedTips = manualData?.tips
+    ? manualData.tips
+    : [];
 
   const openingHours = props.OEFF_ZEITEN || 'Täglich geöffnet';
 
@@ -195,20 +205,21 @@ function transformViennaPark(viennaPark, manualParksData) {
   
   const result = {
     id: parkId || Math.random().toString(),
+    // OVERWRITE mode for primitives (strings, numbers)
     name: manualData?.name || name,
-    address,
-    district,
+    address: manualData?.address || address,
+    district: manualData?.district || district,
     area: finalArea,
     coordinates,
     amenities: mergedAmenities,
     category,
     description: manualData?.description || category || 'Öffentliche Grünfläche in Wien',
-    openingHours: openingHours === '0:00-24:00' ? 'Täglich 24h geöffnet' : openingHours,
+    openingHours: manualData?.openingHours || (openingHours === '0:00-24:00' ? 'Täglich 24h geöffnet' : openingHours),
     website: props.WEBLINK1 || props.WEBLINK || '',
     phone: props.TELEFON || '',
     accessibility: manualData?.accessibility || 'Barrierefreiheit nicht spezifiziert',
-    publicTransport: manualData?.publicTransport || ['Öffentliche Verkehrsmittel in der Nähe verfügbar'],
-    tips: manualData?.tips || []
+    publicTransport: mergedPublicTransport,
+    tips: mergedTips
   };
   
   if (manualData?.districtAreaSplit) {
@@ -285,6 +296,7 @@ async function loadManualParksData() {
     console.log('✓ Manual parks data file found, extracting full parks...');
     
     const fullParks = [];
+    const enrichmentDataMap = {};
     
     // Find manualParksDB object
     const dbStart = content.indexOf('export const manualParksDB');
@@ -307,7 +319,9 @@ async function loadManualParksData() {
       if (!parkObject) continue;
       
       // Check if it's a full park (check both quoted and unquoted versions)
-      if (/["']?isFullPark["']?\s*:\s*true/.test(parkObject)) {
+      const isFullPark = /["']?isFullPark["']?\s*:\s*true/.test(parkObject);
+      
+      if (isFullPark) {
         // Extract required fields
         const nameMatch = parkObject.match(/["']?name["']?\s*:\s*["']([^"']+)["']/);
         const districtMatch = parkObject.match(/["']?district["']?\s*:\s*(\d+)/);
@@ -386,12 +400,71 @@ async function loadManualParksData() {
           
           fullParks.push(parkData);
         }
+      } else {
+        // This is an enrichment park (not isFullPark)
+        // Extract all available fields for merging with API data
+        const enrichmentData = {};
+        
+        // Extract simple fields
+        const nameMatch = parkObject.match(/["']?name["']?\s*:\s*["']([^"']+)["']/);
+        if (nameMatch) enrichmentData.name = nameMatch[1];
+        
+        const descriptionMatch = parkObject.match(/["']?description["']?\s*:\s*["']([^"']+)["']/);
+        if (descriptionMatch) enrichmentData.description = descriptionMatch[1];
+        
+        const descLicenseMatch = parkObject.match(/["']?descriptionLicense["']?\s*:\s*["']([^"']+)["']/);
+        if (descLicenseMatch) enrichmentData.descriptionLicense = descLicenseMatch[1];
+        
+        const addressMatch = parkObject.match(/["']?address["']?\s*:\s*["']([^"']+)["']/);
+        if (addressMatch) enrichmentData.address = addressMatch[1];
+        
+        const accessibilityMatch = parkObject.match(/["']?accessibility["']?\s*:\s*["']([^"']+)["']/);
+        if (accessibilityMatch) enrichmentData.accessibility = accessibilityMatch[1];
+        
+        const openingHoursMatch = parkObject.match(/["']?openingHours["']?\s*:\s*["']([^"']+)["']/);
+        if (openingHoursMatch) enrichmentData.openingHours = openingHoursMatch[1];
+        
+        // Extract arrays (publicTransport, amenities, tips)
+        const publicTransportMatch = parkObject.match(/["']?publicTransport["']?\s*:\s*\[([^\]]+)\]/);
+        if (publicTransportMatch) {
+          enrichmentData.publicTransport = publicTransportMatch[1]
+            .split(',')
+            .map(a => a.trim().replace(/^["']|["']$/g, ''))
+            .filter(a => a.length > 0);
+        }
+        
+        const amenitiesMatch = parkObject.match(/["']?amenities["']?\s*:\s*\[([^\]]+)\]/);
+        if (amenitiesMatch) {
+          enrichmentData.amenities = amenitiesMatch[1]
+            .split(',')
+            .map(a => a.trim().replace(/^["']|["']$/g, ''))
+            .filter(a => a.length > 0);
+        }
+        
+        const tipsMatch = parkObject.match(/["']?tips["']?\s*:\s*\[([^\]]+)\]/);
+        if (tipsMatch) {
+          enrichmentData.tips = tipsMatch[1]
+            .split(',')
+            .map(a => a.trim().replace(/^["']|["']$/g, ''))
+            .filter(a => a.length > 0);
+        }
+        
+        // Extract links array (more complex structure)
+        const linksMatch = parkObject.match(/["']?links["']?\s*:\s*\[([^\]]+(?:\{[^}]*\}[^\]]*)*)\]/s);
+        if (linksMatch) {
+          // Store raw links for now - will be parsed if needed
+          enrichmentData.hasLinks = true;
+        }
+        
+        // Store enrichment data by key
+        enrichmentDataMap[key] = enrichmentData;
       }
     }
     
     console.log(`✓ Found ${fullParks.length} full parks in manual data`);
+    console.log(`✓ Found ${Object.keys(enrichmentDataMap).length} enrichment entries`);
     
-    return { enrichmentData: {}, fullParks };
+    return { enrichmentData: enrichmentDataMap, fullParks };
     
   } catch (error) {
     console.log('⚠ Could not load manual parks data:', error.message);

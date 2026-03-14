@@ -1,6 +1,6 @@
 /**
  * Auto-generated parks data - DO NOT EDIT MANUALLY
- * Generated at: 2026-03-14T05:15:50.327Z
+ * Generated at: 2026-03-14T05:26:31.031Z
  * Source: Vienna Open Data API
  * 
  * This file is generated during build time by scripts/generate-parks-data.js
@@ -182,7 +182,7 @@ export const PARKS_DATA: Park[] = [
       "Grünfläche"
     ],
     "category": "Park",
-    "description": "Park",
+    "description": "Die Parkanlage Löwygrube ist eine ca. 164.000 m² naturnahe Parkanlage im Bezirksteil Oberlaa. Die Parkanlage liegt zwischen Bitterlichstraße, An der Ostbahn, Donabaumgasse und Löwyweg. Sie wird extensiv gepflegt und ist fast vollständig als Hundezone gewidmet. Neben weitläufigen Wiesenflächen und einem alten Baumbestand verfügt sie über einen Kinderspielplatz, Fußballplatz, öffentliche Toilette, Sitzmöglichkeiten und einen Trinkbrunnen. Die Löwygrube gehört mit dem Kurpark Oberlaa, dem Volkspark Laaerberg, dem Böhmischen Prater und dem Laaerwald zum Großerholungsraum Laaerberg.",
     "openingHours": "Täglich 24h geöffnet",
     "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
     "phone": "01 4000 8042",
@@ -190,7 +190,8 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Wikipedia"
   },
   {
     "id": "3524076",
@@ -1272,7 +1273,8 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Wikipedia"
   },
   {
     "id": "3524118",
@@ -2310,7 +2312,8 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Wikipedia"
   },
   {
     "id": "3524194",
@@ -2336,7 +2339,8 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Wikipedia"
   },
   {
     "id": "3524195",
@@ -2361,7 +2365,8 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Wikipedia"
   },
   {
     "id": "3524196",
@@ -2413,7 +2418,8 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Wikipedia"
   },
   {
     "id": "3524198",
@@ -2437,7 +2443,8 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Wikipedia"
   },
   {
     "id": "3524199",
@@ -2559,9 +2566,12 @@ export const PARKS_DATA: Park[] = [
     "phone": "01 4000 8042",
     "accessibility": "Barrierefreiheit nicht spezifiziert",
     "publicTransport": [
-      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+      "U2 Messe-Prater"
     ],
-    "tips": []
+    "tips": [
+      "Volksstimme-Fest am letzten Wochenende in den Sommerferien"
+    ],
+    "descriptionLicense": "Wikipedia"
   },
   {
     "id": "3524203",
@@ -2610,7 +2620,8 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Wikipedia"
   },
   {
     "id": "3524205",
@@ -2660,7 +2671,8 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Wikipedia"
   },
   {
     "id": "3524207",
@@ -2686,7 +2698,8 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Wikipedia"
   },
   {
     "id": "3524208",
@@ -3295,7 +3308,7 @@ export const PARKS_DATA: Park[] = [
       "Grünfläche"
     ],
     "category": "Park",
-    "description": "Park",
+    "description": "Der Rote Berg liegt im Süden des Bezirksteils Ober-St.-Veit an der Grenze zum Bezirksteil Lainz. Der nur am Rand verbaute, wenig bewaldete Hügel bildet mit den nordwestlich anschließenden, unwesentlich höheren Hügeln Girzenberg und Trazerberg einen nicht von Straßen durchquerten Grünraum. Unter den drei Bergen verläuft von Nordwest nach Südost der in den 2000er Jahren gebaute Lainzer Tunnel, der von den ÖBB Ende 2012 in Betrieb genommen wurde (Sicherheitsausstieg gegenüber Veitingergasse 59). In der Senke östlich des Roten Bergs verlaufen in Nord-Süd-Richtung die Verbindungsbahn zwischen West- und Südbahn sowie der verrohrte Lainzerbach, dann steigt das Gelände nach Osten zum Küniglberg an.",
     "openingHours": "Täglich 24h geöffnet",
     "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
     "phone": "01 4000 8042",
@@ -3303,7 +3316,8 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Wikipedia"
   },
   {
     "id": "3524232",
@@ -3774,10 +3788,12 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Toiletten",
+      "Tischtennis"
     ],
     "category": "Park",
-    "description": "Park",
+    "description": "Der Auer-Welsbach-Park ist eine Parkanlage im 15. Wiener Gemeindebezirk Rudolfsheim-Fünfhaus und wird von Linker Wienzeile, Schönbrunner Schlossallee, Mariahilfer Straße und Winckelmannstraße begrenzt. Mit einer Fläche von rund 110.000 m² ist er der größte Park des 15. Bezirks. Benannt ist er nach dem österreichischen Chemiker Carl Auer von Welsbach.",
     "openingHours": "Täglich 24h geöffnet",
     "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
     "phone": "01 4000 8042",
@@ -4630,7 +4646,7 @@ export const PARKS_DATA: Park[] = [
       "Grünfläche"
     ],
     "category": "Park",
-    "description": "Park",
+    "description": "Der Badeteich Hirschstetten (auch Ziegelhofteich genannt) ist einer von vielen Naturbadeplätzen im 22. Wiener Gemeindebezirk Donaustadt. Er befindet sich in der Nähe der Blumengärten Hirschstetten. Die Wasserfläche beträgt ca. 127.500 m² bei einer Breite von ca. 280 m und einer Länge von 540 m. Die maximale Tiefe wurde bereits Mitte der 1970er Jahre mit etwa 10 Meter beziffert[2], wobei exakte Angaben dazu bisher fehlen, zumal der Grundwasserspiegel später durch eine längere Regenperiode ansteigen sollte, was zumindest zu einer vorübergehenden Erhöhung der Wassertiefe geführt haben dürfte.",
     "openingHours": "Täglich 24h geöffnet",
     "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
     "phone": "01 4000 8042",
@@ -4638,7 +4654,8 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Wikipedia"
   },
   {
     "id": "3524284",
@@ -6579,18 +6596,23 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Toiletten"
     ],
     "category": "Park",
-    "description": "Park",
+    "description": "Der Rathauspark ist eine symmetrisch angeordnete Anlage mit dem Nordpark zur Universität und dem Südpark zum Parlament hin. Die beiden Parkhälften sind durch den Rathausplatz getrennt, auf dem ganzjährig Kultur- und Sportveranstaltungen abgehalten werden, wie zum Beispiel der Christkindlmarkt und der Wiener Eistraum im Winter oder das Filmfestival im Sommer.",
     "openingHours": "Täglich 24h geöffnet",
     "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
     "phone": "01 4000 8042",
-    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "accessibility": "Großteils Flach mit betonierten Wegen.",
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [
+      "Winter: Christkindlmarkt & Eistraum",
+      "Sommer: Filmfestival"
+    ],
+    "descriptionLicense": "Stadt Wien"
   },
   {
     "id": "3517742",
@@ -6816,7 +6838,7 @@ export const PARKS_DATA: Park[] = [
       "Grünfläche"
     ],
     "category": "Park",
-    "description": "Park",
+    "description": "Der Schweizergarten ist eine Parkanlage im 3. Wiener Gemeindebezirk, Landstraße, zwischen dem Park des Belvederes bzw. dem Landstraßer Gürtel im Norden, dem Quartier Belvedere (dem Areal des früheren Südbahnhofs) bzw. der Arsenalstraße im Westen und dem Arsenal bzw. der Ghegastraße im Südosten.",
     "openingHours": "Täglich 24h geöffnet",
     "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
     "phone": "01 4000 8042",
@@ -7758,10 +7780,12 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis",
+      "Toiletten"
     ],
     "category": "Park",
-    "description": "Park",
+    "description": "Reithofferpark (15, Reithofferplatz), benannt (13. Februar 1991 Gemeinderatsausschuss für Kultur) nach Johann Nepomuk Reithoffer.",
     "openingHours": "Hundezone: 6:00-22:00",
     "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
     "phone": "01 4000 8042",
@@ -7769,7 +7793,8 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Stadt Wien"
   },
   {
     "id": "3517787",
@@ -7950,7 +7975,8 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Wikipedia"
   },
   {
     "id": "3517794",
@@ -9216,18 +9242,20 @@ export const PARKS_DATA: Park[] = [
       "Wasserspiele",
       "Hundebereich",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Toiletten"
     ],
     "category": "Park",
-    "description": "Park",
+    "description": "Der Waehringer Park ist eine Parkanlage im 18. Wiener Gemeindebezirk.",
     "openingHours": "Täglich 24h geöffnet",
     "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
     "phone": "01 4000 8042",
-    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "accessibility": "Großteils Flach mit betonierten Wegen.",
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Stadt Wien"
   },
   {
     "id": "3524005",
@@ -9713,7 +9741,8 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Wikipedia"
   },
   {
     "id": "3524024",
@@ -12563,10 +12592,11 @@ export const PARKS_DATA: Park[] = [
     "amenities": [
       "Spielplatz",
       "Wasserspiele",
-      "Grünfläche"
+      "Grünfläche",
+      "Toiletten"
     ],
     "category": "Park",
-    "description": "Park",
+    "description": "Auf einer Fläche von 60.000 Quadratmetern geben unterschiedliche Themengärten, der Zoo Hirschstetten, ein historischer Bauernhof oder das Palmenhaus einen Einblick in die vielfältige Blumen- und Pflanzenwelt unserer Erde.",
     "openingHours": "Sommer Di-So 9-18",
     "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
     "phone": "01 4000 8042",
@@ -12574,7 +12604,8 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Stadt Wien"
   },
   {
     "id": "3524699",
@@ -12701,7 +12732,7 @@ export const PARKS_DATA: Park[] = [
       "Sitzgelegenheiten"
     ],
     "category": "Park",
-    "description": "Park",
+    "description": "Der Park liegt im Währinger Bezirksteil Pötzleinsdorf und dehnt sich entlang des Nordhanges des Schafbergs ellipsenförmig zwischen Pötzleinsdorfer Straße und Geymüllergasse im Norden sowie Ladenburghöhe und Schafberggasse im Osten und Süden aus. Im Westen wird er durch einen nicht benannten Weg, der vom Westende der Ladenburghöhe zum Westende der Pötzleinsdorfer Straße führt, begrenzt.",
     "openingHours": "Okt-Mär: 8:00-18:00, Apr-Sep: 7:00-21:00 (Sperrzeiten witterungsabhängig)",
     "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
     "phone": "01 4000 8042",
@@ -12709,7 +12740,8 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Wikipedia"
   },
   {
     "id": "3524704",
@@ -13833,7 +13865,8 @@ export const PARKS_DATA: Park[] = [
       "Wasserspiele",
       "Hundebereich",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -13943,15 +13976,16 @@ export const PARKS_DATA: Park[] = [
       "Sitzgelegenheiten"
     ],
     "category": "Park",
-    "description": "Park",
+    "description": "Der Kurpark Oberlaa ist eine Parkanlage im 10. Wiener Gemeindebezirk Favoriten, am Südosthang des Laaer Berges bei Oberlaa. Seine Fläche beträgt rund 608.000 m². Gartenbaudenkmale, Wegsysteme und künstliche Bodenformationen stehen unter Denkmalschutz.",
     "openingHours": "Nov.-Jan.6:00-18:00, Feb.6:00-19:00, Mar.&Okt.6:00-20:00, Apr.&Sept.6:00-21:00, Mai-Aug.6:00-22:00",
     "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
     "phone": "01 4000 8042",
     "accessibility": "Barrierefreiheit nicht spezifiziert",
     "publicTransport": [
-      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+      "U1 Oberlaa"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Wikipedia"
   },
   {
     "id": "3524752",
@@ -14935,7 +14969,8 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Wikipedia"
   },
   {
     "id": "3524822",
@@ -15190,7 +15225,7 @@ export const PARKS_DATA: Park[] = [
       "Sitzgelegenheiten"
     ],
     "category": "Park",
-    "description": "Park",
+    "description": "Der Floridsdorfer Wasserpark ist ein kleiner, als Parkanlage gestalteter Teil der Alten Donau im 21. Wiener Gemeindebezirk, Floridsdorf. Der Park wurde von 1928 bis 1929 angelegt und hat eine Fläche von 143.000 m², rund ein Drittel davon wird von Wasserflächen eingenommen.",
     "openingHours": "Täglich 24h geöffnet",
     "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
     "phone": "01 4000 8042",
@@ -15198,7 +15233,8 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Wikipedia"
   },
   {
     "id": "3524841",
@@ -15324,7 +15360,7 @@ export const PARKS_DATA: Park[] = [
       "Sitzgelegenheiten"
     ],
     "category": "Park",
-    "description": "Park",
+    "description": "Der Draschepark ist eine 13 Hektar große Parkanlage in Inzersdorf im 23. Wiener Gemeindebezirk Liesing. Er ging aus dem Park rund um die beiden als Schloss Inzersdorf bezeichneten Schlösser hervor. Der Name des Parks verweist auf die Familie Drasche von Wartinberg, die ab 1857 die beiden Schlösser auf dem Gelände besaß.",
     "openingHours": "Täglich 24h geöffnet",
     "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
     "phone": "01 4000 8042",
@@ -15378,20 +15414,20 @@ export const PARKS_DATA: Park[] = [
       "Sitzgelegenheiten"
     ],
     "category": "Park",
-    "description": "Park",
+    "description": "Der Donaupark wurde 1964 im Zuge der ",
     "openingHours": "Täglich 24h geöffnet",
     "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
     "phone": "01 4000 8042",
-    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "accessibility": "Gut zugänglich, größtenteils ebene Wege",
     "publicTransport": [
-      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+      "U1 VIC/UNO City"
     ],
     "tips": []
   },
   {
     "id": "3524848",
     "name": "Türkenschanzpark",
-    "address": "Türkenschanzpark, 18. Bezirk, Wien",
+    "address": "Türkenschanzstraße, 1190 Wien",
     "district": 18,
     "area": 151547,
     "coordinates": {
@@ -15403,16 +15439,18 @@ export const PARKS_DATA: Park[] = [
       "Wasserspiele",
       "Hundebereich",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Toiletten"
     ],
     "category": "Park",
-    "description": "Park",
+    "description": "Der Türkenschanzpark ist eine Parkanlage im 18. Wiener Gemeindebezirk Währing. Der Park wurde 1888 auf der Türkenschanze eröffnet.",
     "openingHours": "Täglich 24h geöffnet",
     "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
     "phone": "01 4000 8042",
-    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "accessibility": "Hügelig jedoch mit betonierten Wege",
     "publicTransport": [
-      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+      "Straßenbahn 9",
+      "S45"
     ],
     "tips": []
   },
@@ -16226,18 +16264,25 @@ export const PARKS_DATA: Park[] = [
     "amenities": [
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Toiletten",
+      "Tischtennis"
     ],
     "category": "Park",
-    "description": "Park",
+    "description": "Der Wiener Stadtpark erstreckt sich vom Parkring im 1. Wiener Gemeindebezirk bis zum Heumarkt im 3. Wiener Gemeindebezirk.",
     "openingHours": "Täglich 24h geöffnet",
     "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
     "phone": "01 4000 8042",
-    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "accessibility": "Gut zugänglich, größtenteils ebene Wege",
     "publicTransport": [
-      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+      "U4 Stadtpark",
+      "Straßenbahn D",
+      "71"
     ],
-    "tips": []
+    "tips": [
+      "Johann-Strauss-Denkmal"
+    ],
+    "descriptionLicense": "Wikipedia"
   },
   {
     "id": "3524872",
@@ -16254,7 +16299,7 @@ export const PARKS_DATA: Park[] = [
       "Grünfläche"
     ],
     "category": "Park",
-    "description": "Park",
+    "description": "Der Sankt Marxer Friedhof im 3. Wiener Gemeindebezirk Landstraße wurde 1874 geschlossen und steht heute unter Denkmalschutz. Die wohl bekannteste Grabstätte auf diesem Friedhof ist jene des Komponisten Wolfgang Amadeus Mozart. Die Stadt Wien führt den Sankt Marxer Friedhof als öffentlich zugängliche Parkanlage.",
     "openingHours": "Okt-März: 6:30-18:30, Apr-Sep: 6:30-20:00",
     "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
     "phone": "01 4000 8042",
@@ -16262,7 +16307,8 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Wikipedia"
   },
   {
     "id": "3524873",
@@ -18947,7 +18993,8 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Wikipedia"
   },
   {
     "id": "3524696",
@@ -20148,7 +20195,8 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Wikipedia"
   },
   {
     "id": "3524513",
@@ -21409,7 +21457,8 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Wikipedia"
   },
   {
     "id": "3524563",
@@ -21433,7 +21482,8 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Wikipedia"
   },
   {
     "id": "3524564",
@@ -21457,7 +21507,8 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Wikipedia"
   },
   {
     "id": "3524565",
@@ -22362,7 +22413,8 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Wikipedia"
   },
   {
     "id": "3524600",
@@ -22414,7 +22466,8 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Wikipedia"
   },
   {
     "id": "3524602",
@@ -22549,7 +22602,8 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Wikipedia"
   },
   {
     "id": "3524607",
@@ -22599,7 +22653,8 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Wikipedia"
   },
   {
     "id": "3524609",
@@ -22623,7 +22678,8 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Wikipedia"
   },
   {
     "id": "3524610",
@@ -24904,7 +24960,8 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Wikipedia"
   },
   {
     "id": "3524337",
@@ -25158,7 +25215,8 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Wikipedia"
   },
   {
     "id": "3524347",
@@ -25257,7 +25315,8 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Wikipedia"
   },
   {
     "id": "3524351",
@@ -25482,7 +25541,8 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Wikipedia"
   },
   {
     "id": "3524360",
@@ -25883,7 +25943,8 @@ export const PARKS_DATA: Park[] = [
     "publicTransport": [
       "Öffentliche Verkehrsmittel in der Nähe verfügbar"
     ],
-    "tips": []
+    "tips": [],
+    "descriptionLicense": "Wikipedia"
   },
   {
     "id": "3524376",
@@ -26890,7 +26951,7 @@ export const PARKS_DATA: Park[] = [
 ];
 
 export const PARKS_METADATA = {
-  generatedAt: '2026-03-14T05:15:50.327Z',
+  generatedAt: '2026-03-14T05:26:31.031Z',
   totalParks: 1052,
   source: 'Vienna Open Data API',
   apiEndpoint: 'ogdwien:PARKINFOOGD'
