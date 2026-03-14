@@ -35,7 +35,7 @@ const ThemeToggle = ({ className }: { className?: string }) => {
   const Icon = currentTheme.icon;
 
   return (
-    <div className={`relative ${className}`} ref={dropdownRef}>
+    <div className={`flex items-center ${className}`} ref={dropdownRef}>
       <Button
         onClick={() => setIsOpen(!isOpen)}
         variant="outline"
@@ -43,7 +43,7 @@ const ThemeToggle = ({ className }: { className?: string }) => {
         icon={Icon}
         aria-label="Theme wechseln"
         className="hover:underline font-serif italic !p-0"
-        style={{ fontSize: '0.75rem' }}
+        
       >
         Theme
       </Button>

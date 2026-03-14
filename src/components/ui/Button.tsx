@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import type { LucideIcon } from "lucide-react";
 
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -8,6 +9,7 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   iconPosition?: "left" | "right";
   loading?: boolean;
   fullWidth?: boolean;
+  to?: string;
 }
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
@@ -22,97 +24,33 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       fullWidth = false,
       className = "",
       disabled,
-      style,
+      to,
       ...props
     },
     ref,
   ) => {
-    const getVariantStyles = (): React.CSSProperties => {
-      const baseStyles: React.CSSProperties = {
-        cursor: disabled || loading ? "not-allowed" : "pointer",
-        opacity: disabled || loading ? 0.6 : 1,
-        transition: "opacity 0.2s ease",
-        border: "1px solid var(--deep-charcoal)",
-      };
-
-      switch (variant) {
-        case "primary":
-          return {
-            ...baseStyles,
-            backgroundColor: "var(--primary-green)",
-            color: "var(--soft-cream)",
-            border: "1px solid var(--primary-green)",
-          };
-        case "secondary":
-          return {
-            ...baseStyles,
-            backgroundColor: "var(--light-sage)",
-            color: "var(--deep-charcoal)",
-            border: "1px solid var(--primary-green)",
-          };
-        case "ghost":
-          return {
-            ...baseStyles,
-            backgroundColor: "transparent",
-            color: "var(--primary-green)",
-            border: "1px solid transparent",
-          };
-        case "outline":
-          return {
-            ...baseStyles,
-            backgroundColor: "transparent",
-            color: "var(--primary-green)",
-            border: "1px solid var(--primary-green) !important",
-          };
-        default:
-          return baseStyles;
-      }
+    const baseClasses = "inline-flex items-center justify-center gap-2 font-serif font-medium transition-opacity duration-200";
+    
+    const variantClasses = {
+      primary: "bg-primary-green text-soft-cream border border-primary-green",
+      secondary: "bg-light-sage text-deep-charcoal border border-primary-green",
+      ghost: "bg-transparent text-primary-green border border-transparent",
+      outline: "bg-transparent text-primary-green border border-primary-green",
     };
 
-    const getSizeStyles = (): React.CSSProperties => {
-      switch (size) {
-        case "sm":
-          return {
-            padding: "0.33rem 0.8725rem",
-            fontSize: "0.85rem",
-          };
-        case "md":
-          return {
-            padding: "0.5rem 1rem",
-            fontSize: "0.925rem",
-          };
-        case "lg":
-          return {
-            padding: "0.75rem 1.5rem",
-            fontSize: "1rem",
-          };
-        default:
-          return {};
-      }
+    const sizeClasses = {
+      sm: "px-3.5 py-1.5 text-[0.85rem]",
+      md: "px-4 py-2 text-[0.925rem]",
+      lg: "px-6 py-3 text-base",
     };
 
-    const buttonStyles: React.CSSProperties = {
-      ...getVariantStyles(),
-      ...getSizeStyles(),
-      width: fullWidth ? "100%" : "auto",
-      display: "inline-flex",
-      alignItems: "center",
-      justifyContent: "center",
-      gap: "0.5rem",
-      fontFamily: "var(--font-serif)",
-      fontWeight: 500,
-      border: "none",
-      ...style,
-    };
+    const disabledClasses = disabled || loading ? "cursor-not-allowed opacity-60" : "cursor-pointer";
+    const widthClass = fullWidth ? "w-full" : "w-auto";
 
-    return (
-      <button
-        ref={ref}
-        className={className}
-        style={buttonStyles}
-        disabled={disabled || loading}
-        {...props}
-      >
+    const combinedClasses = `${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]} ${disabledClasses} ${widthClass} ${className}`;
+
+    const content = (
+      <>
         {Icon && iconPosition === "left" && (
           <Icon className="w-4 h-4 flex-shrink-0" />
         )}
@@ -120,6 +58,28 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         {Icon && iconPosition === "right" && (
           <Icon className="w-4 h-4 flex-shrink-0" />
         )}
+      </>
+    );
+
+    if (to) {
+      return (
+        <Link
+          to={to}
+          className={`${combinedClasses} no-underline ${disabled || loading ? "pointer-events-none" : ""}`}
+        >
+          {content}
+        </Link>
+      );
+    }
+
+    return (
+      <button
+        ref={ref}
+        className={combinedClasses}
+        disabled={disabled || loading}
+        {...props}
+      >
+        {content}
       </button>
     );
   },

@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import { getAmenityIcon } from "../utils/amenityIcons";
 import { isFavorite, toggleFavorite } from "../utils/favoritesManager";
+import { addVisitSync } from "../hooks/useVisitHistory";
 import ParkInfo from "../components/ParkInfo";
 import MetadataAccordion from "../components/MetadataAccordion";
 import mapboxgl from "mapbox-gl";
@@ -119,6 +120,8 @@ const ParkDetailPage: React.FC = () => {
 
         setPark(currentPark);
         setError(null);
+        
+        addVisitSync(foundPark.id);
       } else {
         setPark(null);
         setError("Park nicht gefunden");

@@ -9,6 +9,7 @@ import {
   Heart,
   BookOpen,
   BarChart3,
+  Search,
 } from "lucide-react";
 import Logo from "./Logo";
 import ThemeToggle from "./ThemeToggle";
@@ -18,7 +19,17 @@ import { Button } from "./ui/Button";
 const Navigation = () => {
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [commandPaletteOpen, setCommandPaletteOpen] = useState(false);
   const isMapPage = location.pathname.startsWith("/map");
+
+  const openCommandPalette = () => {
+    const event = new KeyboardEvent("keydown", {
+      key: "k",
+      metaKey: true,
+      bubbles: true,
+    });
+    document.dispatchEvent(event);
+  };
 
   const isActive = (path: string) => {
     return location.pathname === path;
@@ -69,15 +80,17 @@ const Navigation = () => {
       to={path}
       onClick={onClick}
       className={`flex items-center space-x-3 py-2 font-serif relative transition-opacity duration-200 px-4 ${
-        isActive(path) ? "active-nav-item italic text-primary-green opacity-100" : "text-deep-charcoal opacity-80"
+        isActive(path)
+          ? "active-nav-item italic text-primary-green opacity-100"
+          : "text-deep-charcoal opacity-80"
       }`}
     >
-      <div className={isActive(path) ? "text-primary-green" : "text-deep-charcoal"}>
+      <div
+        className={isActive(path) ? "text-primary-green" : "text-deep-charcoal"}
+      >
         {icon}
       </div>
-      <div className="font-serif text-2xl sm:text-xl ">
-        {label}
-      </div>
+      <div className="font-serif text-2xl sm:text-xl ">{label}</div>
     </Link>
   );
 
@@ -102,27 +115,38 @@ const Navigation = () => {
           </div>
 
           {/* Footer */}
-          <div className="px-4 py-4 space-y-2">
-            <div className="flex flex-wrap pb-2 gap-4 text-xs items-center justify-between">
-              <div className="flex items-center gap-2">
-                <a
-                  href="https://lucamack.at/impressum.txt"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:underline font-serif italic text-[12px] text-primary-green"
-                >
-                  Impressum
-                </a>
-                <a
-                  href="https://lucamack.at/datenschutz.txt"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:underline font-serif italic text-[12px] text-primary-green"
-                >
-                  Datenschutz
-                </a>
-              </div>
+          <div className="px-4 py-4 space-y-3">
+            {/* Row 1: Imprint & Privacy */}
+            <div className="flex items-center gap-3">
+              <a
+                href="https://lucamack.at/impressum.txt"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline font-serif italic text-[12px] text-primary-green"
+              >
+                Impressum
+              </a>
+              <a
+                href="https://lucamack.at/datenschutz.txt"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline font-serif italic text-[12px] text-primary-green"
+              >
+                Datenschutz
+              </a>
+            </div>
+            {/* Row 2: Theme Toggle & Search */}
+            <div className="flex items-center gap-2">
               <ThemeToggle />
+              <Button
+                onClick={openCommandPalette}
+                variant="ghost"
+                size="sm"
+                icon={Search}
+                className="!p-0 italic"
+              >
+                Suche
+              </Button>
             </div>
             <Wordmark />
           </div>
@@ -169,9 +193,7 @@ const Navigation = () => {
           >
             <div className="flex flex-col h-full">
               {/* Header */}
-              <div
-                className="flex items-center justify-between px-4 py-6 border-b border-border-color"
-              >
+              <div className="flex items-center justify-between px-4 py-6 border-b border-border-color">
                 <span className="font-sans text-xl font-bold text-primary-green">
                   Menü
                 </span>
@@ -196,29 +218,43 @@ const Navigation = () => {
               </div>
 
               {/* Footer */}
-              <div className="px-4 pt-3 pb-8 border-t border-border-color">
-                <div className="flex gap-8 my-4 items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <a
-                      href="https://lucamack.at/impressum.txt"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[12px] hover:underline font-serif italic text-primary-green"
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                      Impressum
-                    </a>
-                    <a
-                      href="https://lucamack.at/datenschutz.txt"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[12px] hover:underline font-serif italic text-primary-green"
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                      Datenschutz
-                    </a>
-                  </div>
+              <div className="px-4 pt-3 pb-8 border-t border-border-color space-y-3">
+                {/* Row 1: Imprint & Privacy */}
+                <div className="flex items-center gap-3">
+                  <a
+                    href="https://lucamack.at/impressum.txt"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[12px] hover:underline font-serif italic text-primary-green"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Impressum
+                  </a>
+                  <a
+                    href="https://lucamack.at/datenschutz.txt"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[12px] hover:underline font-serif italic text-primary-green"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Datenschutz
+                  </a>
+                </div>
+                {/* Row 2: Theme Toggle & Search */}
+                <div className="flex items-center gap-2">
                   <ThemeToggle />
+                  <Button
+                    onClick={() => {
+                      setIsMobileMenuOpen(false);
+                      setTimeout(openCommandPalette, 100);
+                    }}
+                    variant="ghost"
+                    size="sm"
+                    icon={Search}
+                    style={{ padding: "0.25rem 0.5rem" }}
+                  >
+                    Suche
+                  </Button>
                 </div>
                 <Wordmark />
               </div>

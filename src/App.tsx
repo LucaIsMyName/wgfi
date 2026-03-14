@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from "r
 import { HelmetProvider } from "react-helmet-async";
 import Navigation from "./components/Navigation";
 import ErrorBoundary from "./components/ErrorBoundary";
+import { CommandPalette } from "./components/CommandPalette";
 
 // Lazy load page components
 const HomePage = lazy(() => import("./pages/HomePage"));
@@ -41,6 +42,7 @@ function AppContent() {
       className="min-h-screen w-full"
       style={{ backgroundColor: "var(--soft-cream)" }}>
       <Navigation />
+      <CommandPalette />
 
       {/* Main Content Area */}
       <main
