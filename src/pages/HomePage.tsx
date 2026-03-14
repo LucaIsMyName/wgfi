@@ -6,6 +6,7 @@ import { useParksData } from "../hooks/useParksData";
 import { findNearestPark } from "../utils/geoUtils";
 import LocationModal from "../components/LocationModal";
 import { slugifyParkName } from "../data/manualParksData";
+import { Button } from "../components/ui/Button";
 
 const HomePage: React.FC = () => {
   const [showLocationModal, setShowLocationModal] = useState(false);
@@ -13,7 +14,7 @@ const HomePage: React.FC = () => {
   const [isLoadingNearby, setIsLoadingNearby] = useState(false);
   const [isLoadingRandom, setIsLoadingRandom] = useState(false);
   const navigate = useNavigate();
-  
+
   const { parks } = useParksData();
 
   const handleFindNearby = () => {
@@ -36,7 +37,7 @@ const HomePage: React.FC = () => {
           const nearestPark = findNearestPark(
             position.coords.latitude,
             position.coords.longitude,
-            parks
+            parks,
           );
 
           if (nearestPark) {
@@ -61,7 +62,7 @@ const HomePage: React.FC = () => {
         enableHighAccuracy: true,
         timeout: 10000,
         maximumAge: 0,
-      }
+      },
     );
   };
 
@@ -129,50 +130,38 @@ const HomePage: React.FC = () => {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <Link
-              to="/index"
-              className="px-8 py-4 font-mono text-sm inline-flex items-center justify-center"
-              style={{
-                backgroundColor: "var(--primary-green)",
-                color: "var(--soft-cream)",
-              }}
-            >
-              INDEX
-            </Link>
-            <Link
-              to="/map"
-              className="px-8 py-4 border border-[var(--primary-green)] font-mono text-sm inline-flex items-center justify-center"
-              style={{
-                backgroundColor: "var(--card-bg)",
-                color: "var(--primary-green)",
-              }}
-            >
-              KARTE
-            </Link>
-            <button
+            <Button variant="primary" size="md" loading={isLoadingNearby}>
+              <Link to="/map">Index</Link>
+            </Button>
+            <Button variant="primary" size="md" loading={isLoadingNearby}>
+              <Link to="/map">Karte</Link>
+            </Button>
+            <Button
               onClick={handleFindNearby}
               disabled={isLoadingNearby}
-              className="px-8 py-4 border border-[var(--primary-green)] font-mono text-sm inline-flex items-center justify-center disabled:opacity-50"
+              variant="outline"
+              size="md"
+              loading={isLoadingNearby}
               style={{
                 backgroundColor: "var(--card-bg)",
                 color: "var(--primary-green)",
-                borderRadius: "6px",
               }}
             >
-              {isLoadingNearby ? "SUCHE..." : "IN DER NÄHE"}
-            </button>
-            <button
+              {isLoadingNearby ? "Suche..." : "In der nähe"}
+            </Button>
+            <Button
               onClick={handleRandomPark}
               disabled={isLoadingRandom}
-              className="px-8 py-4 border border-[var(--primary-green)] font-mono text-sm inline-flex items-center justify-center disabled:opacity-50"
+              variant="outline"
+              size="md"
+              loading={isLoadingRandom}
               style={{
                 backgroundColor: "var(--card-bg)",
                 color: "var(--primary-green)",
-                borderRadius: "6px",
               }}
             >
-              {isLoadingRandom ? "LADE..." : "ZUFALLSPARK"}
-            </button>
+              {isLoadingRandom ? "Lade..." : "Zufallspark"}
+            </Button>
           </div>
 
           {/* Location Modal */}

@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Filter, Navigation, Map as MapIcon } from "lucide-react";
+import { Filter, Navigation, Map as MapIcon, X } from "lucide-react";
+import { Button } from "../ui/Button";
 
 interface MobileMapControlsProps {
   selectedDistrict: number | null;
@@ -31,40 +32,40 @@ export default function MobileMapControls({
           style={{ color: "var(--primary-green)" }}>
           {filteredParksCount} PARKS {selectedDistrict && <span>IM {selectedDistrict}. BEZIRK</span>}
         </h3>
-        <button
+        <Button
           onClick={onGetUserLocation}
-          className="px-3 py-1 font-mono text-xs flex items-center justify-center gap-1"
+          variant="secondary"
+          size="sm"
+          icon={Navigation}
           style={{
             backgroundColor: userLocation ? "var(--accent-gold)" : "var(--light-sage)",
-            color: "var(--deep-charcoal)",
-            borderRadius: "4px",
+            fontSize: '0.75rem'
           }}>
-          <Navigation className="w-3 h-3" /> STANDORT
-        </button>
+          STANDORT
+        </Button>
       </div>
 
       <div className="grid grid-cols-2 gap-2">
-        <button
+        <Button
           onClick={() => onDistrictFilter(null)}
-          className="px-3 py-2 font-mono text-xs flex items-center justify-center gap-1"
-          style={{
-            backgroundColor: selectedDistrict === null ? "var(--primary-green)" : "var(--light-sage)",
-            color: selectedDistrict === null ? "var(--soft-cream)" : "var(--primary-green)",
-            borderRadius: "4px",
-          }}>
-          <MapIcon className="w-3 h-3" /> ALLE PARKS
-        </button>
+          variant={selectedDistrict === null ? "primary" : "secondary"}
+          size="sm"
+          icon={MapIcon}
+          style={{ fontSize: '0.75rem' }}>
+          ALLE PARKS
+        </Button>
 
-        <button
+        <Button
           onClick={() => setShowDistrictSelector(!showDistrictSelector)}
-          className="px-3 py-2 font-mono text-xs flex items-center justify-center gap-1"
+          variant="secondary"
+          size="sm"
+          icon={Filter}
           style={{
             backgroundColor: selectedDistrict !== null ? "var(--accent-gold)" : "var(--light-sage)",
-            color: "var(--deep-charcoal)",
-            borderRadius: "4px",
+            fontSize: '0.75rem'
           }}>
-          <Filter className="w-3 h-3" /> {selectedDistrict ? `${selectedDistrict}. BEZIRK` : "BEZIRK"}
-        </button>
+          {selectedDistrict ? `${selectedDistrict}. BEZIRK` : "BEZIRK"}
+        </Button>
 
         {/* Mobile District Selector */}
         {showDistrictSelector && (
@@ -76,11 +77,12 @@ export default function MobileMapControls({
                   style={{ color: "var(--primary-green)" }}>
                   BEZIRK WÄHLEN
                 </h3>
-                <button
+                <Button
                   onClick={() => setShowDistrictSelector(false)}
-                  className="p-1">
-                  ✕
-                </button>
+                  variant="ghost"
+                  size="sm"
+                  icon={X}
+                />
               </div>
               <div className="grid grid-cols-2 gap-2">
                 {districts.map((district) => (

@@ -3,6 +3,8 @@ import { ChevronDown, Database, FileDown, FileJson, FileCode } from "lucide-reac
 import { useAccordionState } from "../hooks/useAccordionState";
 import type { Park } from "../types/park";
 import { Link } from "react-router-dom";
+import { Button } from "./ui/Button";
+import { Table } from "./ui/Table";
 
 interface MetadataAccordionProps {
   park: Park;
@@ -274,27 +276,33 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
               <span className="flex items-center gap-2">
                 <Database className="w-3.5 h-3.5" />
                 Rohdaten
-                <button
+                <Button
                   onClick={exportAsJSON}
-                  className="ml-2 hover:opacity-70"
+                  variant="ghost"
+                  size="sm"
+                  icon={FileJson}
                   title="Als JSON exportieren"
-                >
-                  <FileJson className="w-3.5 h-3.5" />
-                </button>
-                <button
+                  className="ml-2 hover:opacity-70"
+                  style={{ padding: '0', minWidth: 'auto' }}
+                />
+                <Button
                   onClick={exportAsCSV}
-                  className="hover:opacity-70"
+                  variant="ghost"
+                  size="sm"
+                  icon={FileDown}
                   title="Als CSV exportieren"
-                >
-                  <FileDown className="w-3.5 h-3.5" />
-                </button>
-                <button
-                  onClick={exportAsHTML}
                   className="hover:opacity-70"
+                  style={{ padding: '0', minWidth: 'auto' }}
+                />
+                <Button
+                  onClick={exportAsHTML}
+                  variant="ghost"
+                  size="sm"
+                  icon={FileCode}
                   title="Als HTML exportieren"
-                >
-                  <FileCode className="w-3.5 h-3.5" />
-                </button>
+                  className="hover:opacity-70"
+                  style={{ padding: '0', minWidth: 'auto' }}
+                />
               </span>
               <ChevronDown
                 className="w-4 h-4 transition-transform duration-200 group-data-[state=open]:rotate-180"

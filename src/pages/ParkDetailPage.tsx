@@ -23,6 +23,7 @@ import { useTheme } from "../contexts/ThemeContext";
 import { getAllDistrictsForPark, formatDistricts } from "../utils/parkUtils";
 import type { Park, ParkWithDistance } from "../types/park";
 import { calculateDistance } from "../utils/geoUtils";
+import { Button } from "../components/ui/Button";
 
 // Set Mapbox access token
 mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN;
@@ -382,19 +383,14 @@ const ParkDetailPage: React.FC = () => {
           >
             {error || "Park nicht gefunden"}
           </p>
-          <button
-            onClick={() => {
-              history.back();
-            }}
-            className="px-4 py-2 mt-4 inline-block font-mono"
-            style={{
-              backgroundColor: "var(--primary-green)",
-              color: "var(--soft-cream)",
-              borderRadius: "6px",
-            }}
+          <Button
+            onClick={() => history.back()}
+            variant="primary"
+            size="md"
+            className="mt-4"
           >
             Zurück zur Übersicht
-          </button>
+          </Button>
         </div>
       </div>
     );
@@ -426,18 +422,17 @@ const ParkDetailPage: React.FC = () => {
 
       {/* Header with park name */}
       <div className="px-4 py-6 lg:mr-[calc(30%+96px)]">
-        <button
-          onClick={() => {
-            history.back();
-          }}
-          className="mb-3 inline-flex items-center font-mono text-sm hover:opacity-90"
-          style={{}}
+        <Button
+          onClick={() => history.back()}
+          variant="ghost"
+          size="sm"
+          icon={ChevronLeft}
+          iconPosition="left"
+          className="mb-3"
+          style={{ color: "var(--primary-green)" }}
         >
-          <ChevronLeft className="w-4 h-4 color-[var(--deep-charcoal)] inline mr-1" />{" "}
-          <span style={{ color: "var(--primary-green)" }}>
-            Zurück zur Übersicht
-          </span>
-        </button>
+          Zurück zur Übersicht
+        </Button>
         <h1
           className={`${STYLE.pageTitle(true)} mb-4`}
           style={{

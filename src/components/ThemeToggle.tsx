@@ -1,6 +1,7 @@
 import { Sun, Moon, Monitor, Contrast, Check, Eclipse } from "lucide-react";
 import { useTheme } from "../contexts/ThemeContext";
 import { useState, useRef, useEffect } from "react";
+import { Button } from "./ui/Button";
 
 const ThemeToggle = ({ className }: { className?: string }) => {
   const { mode, setMode } = useTheme();
@@ -35,15 +36,17 @@ const ThemeToggle = ({ className }: { className?: string }) => {
 
   return (
     <div className={`relative ${className}`} ref={dropdownRef}>
-      <button
+      <Button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-1 font-serif text-[12px] transition-opacity duration-200 hover:underline"
-        style={{ color: "var(--primary-green)" }}
+        variant="outline"
+        size="sm"
+        icon={Icon}
         aria-label="Theme wechseln"
+        className="hover:underline font-serif italic"
+        style={{ fontSize: '0.75rem', padding: '0.25rem 0.5rem' }}
       >
-        <Icon className="w-4 h-4 opacity-90" />
-        <span className="">Theme</span>
-      </button>
+        Theme
+      </Button>
 
       {isOpen && (
         <div

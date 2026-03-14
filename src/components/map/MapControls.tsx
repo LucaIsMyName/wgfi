@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Filter, Navigation, Map as MapIcon } from "lucide-react";
 import type { Park } from "../../types/park";
+import { Button } from "../ui/Button";
 
 interface MapControlsProps {
   selectedDistrict: number | null;
@@ -28,28 +29,29 @@ export default function MapControls({
     <div className="absolute top-4 right-4 z-10 hidden lg:block">
       <div className="bg-white shadow-lg p-3 rounded-lg">
         <div className="flex flex-col gap-2">
-          <button
+          <Button
             onClick={() => onDistrictFilter(null)}
-            className="px-4 py-2 font-mono text-xs flex items-center justify-center gap-2 w-full"
-            style={{
-              backgroundColor: selectedDistrict === null ? "var(--primary-green)" : "var(--light-sage)",
-              color: selectedDistrict === null ? "var(--soft-cream)" : "var(--primary-green)",
-              borderRadius: "4px",
-            }}>
-            <MapIcon className="w-3 h-3" /> ALLE PARKS
-          </button>
+            variant={selectedDistrict === null ? "primary" : "secondary"}
+            size="sm"
+            icon={MapIcon}
+            fullWidth
+            style={{ fontSize: '0.75rem' }}>
+            ALLE PARKS
+          </Button>
 
           <div className="relative w-full">
-            <button
+            <Button
               onClick={() => setShowDistrictSelector(!showDistrictSelector)}
-              className="w-full px-4 py-2 font-mono text-xs flex items-center justify-center gap-2"
+              variant="secondary"
+              size="sm"
+              icon={Filter}
+              fullWidth
               style={{
                 backgroundColor: selectedDistrict !== null ? "var(--accent-gold)" : "var(--light-sage)",
-                color: "var(--deep-charcoal)",
-                borderRadius: "4px",
+                fontSize: '0.75rem'
               }}>
-              <Filter className="w-3 h-3" /> {selectedDistrict ? `${selectedDistrict}. BEZIRK` : "BEZIRK WÄHLEN"}
-            </button>
+              {selectedDistrict ? `${selectedDistrict}. BEZIRK` : "BEZIRK WÄHLEN"}
+            </Button>
 
             {/* District Selector Dropdown */}
             {showDistrictSelector && (
@@ -75,16 +77,18 @@ export default function MapControls({
             )}
           </div>
 
-          <button
+          <Button
             onClick={onGetUserLocation}
-            className="px-4 py-2 font-mono text-xs flex items-center justify-center gap-2 w-full"
+            variant="secondary"
+            size="sm"
+            icon={Navigation}
+            fullWidth
             style={{
               backgroundColor: userLocation ? "var(--accent-gold)" : "var(--light-sage)",
-              color: "var(--deep-charcoal)",
-              borderRadius: "4px",
+              fontSize: '0.75rem'
             }}>
-            <Navigation className="w-3 h-3" /> MEIN STANDORT
-          </button>
+            MEIN STANDORT
+          </Button>
         </div>
       </div>
     </div>

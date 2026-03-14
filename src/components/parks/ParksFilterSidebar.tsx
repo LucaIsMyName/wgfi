@@ -1,6 +1,9 @@
 import { ArrowDownUp, Check, Filter } from 'lucide-react';
 import { getAmenityIcon } from '../../utils/amenityIcons';
 import type { SortOrder } from '../../hooks/useParksFilters';
+import { Button } from '../ui/Button';
+import { Input } from '../ui/Input';
+import { Select } from '../ui/Select';
 
 interface ParksFilterSidebarProps {
   searchTerm: string;
@@ -56,52 +59,32 @@ export default function ParksFilterSidebar({
 
         {/* Search Input */}
         <div className="mb-6">
-          <label
-            className="block font-mono text-xs mb-2"
-            style={{ color: "var(--primary-green)" }}>
-            PARKNAME ODER ADRESSE
-          </label>
-          <input
+          <Input
             type="text"
             value={searchTerm}
             onChange={(e) => onSearchChange(e.target.value)}
             placeholder="Park suchen..."
-            className="w-full p-2 font-serif italic"
-            style={{
-              backgroundColor: "var(--soft-cream)",
-              color: "var(--deep-charcoal)",
-              borderRadius: "4px",
-              fontWeight: "400",
-            }}
+            label="PARKNAME ODER ADRESSE"
+            fullWidth
           />
         </div>
 
         {/* District Filter */}
         <div className="mb-6">
-          <label
-            className="block font-mono text-xs mb-2"
-            style={{ color: "var(--primary-green)" }}>
-            BEZIRK
-          </label>
-          <select
-            value={selectedDistrict}
-            onChange={(e) => onDistrictChange(e.target.value)}
-            className="w-full p-2 font-serif italic"
-            style={{
-              backgroundColor: "var(--soft-cream)",
-              color: "var(--deep-charcoal)",
-              borderRadius: "4px",
-              fontWeight: "400",
-            }}>
-            <option value="">Alle Bezirke</option>
-            {districts.map((district) => (
-              <option
-                key={district}
-                value={district}>
-                {district}. Bezirk
-              </option>
-            ))}
-          </select>
+          <Select
+            value={selectedDistrict || 'all'}
+            onValueChange={(value) => onDistrictChange(value === 'all' ? '' : value)}
+            options={[
+              { value: 'all', label: 'Alle Bezirke' },
+              ...districts.map((district) => ({
+                value: String(district),
+                label: `${district}. Bezirk`,
+              })),
+            ]}
+            label="BEZIRK"
+            placeholder="Alle Bezirke"
+            fullWidth
+          />
         </div>
 
         {/* Amenities Filter */}
@@ -221,16 +204,15 @@ export default function ParksFilterSidebar({
 
         {/* Reset All Filters Button */}
         {(searchTerm || selectedDistrict || selectedAmenities.length > 0) && (
-          <button
+          <Button
             onClick={onResetFilters}
-            className="px-3 py-2 text-[10px] font-mono w-full mt-4"
-            style={{
-              backgroundColor: "var(--soft-cream)",
-              color: "var(--deep-charcoal)",
-              borderRadius: "4px",
-            }}>
+            variant="secondary"
+            size="sm"
+            fullWidth
+            className="mt-4"
+            style={{ fontSize: '0.625rem' }}>
             FILTER ZURÜCKSETZEN
-          </button>
+          </Button>
         )}
       </div>
     </div>

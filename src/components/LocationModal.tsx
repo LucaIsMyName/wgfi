@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Button } from './ui/Button';
 
 interface LocationModalProps {
   isOpen: boolean;
@@ -38,19 +39,13 @@ const LocationModal: React.FC<LocationModalProps> = ({
             Wir konnten Ihren Standort nicht ermitteln. Bitte überprüfen Sie Ihre Browsereinstellungen und stellen Sie sicher, dass Sie den Standortzugriff erlaubt haben.
           </p>
           <div className="flex justify-end space-x-3">
-            <button
-              onClick={() => {
-                onClose();
-              }}
-              className="px-4 py-2 font-mono text-sm border-2 transition-colors"
-              style={{
-                backgroundColor: 'var(--primary-green)',
-                color: 'var(--soft-cream)',
-                borderColor: 'var(--primary-green)',
-              }}
+            <Button
+              onClick={onClose}
+              variant="primary"
+              size="md"
             >
               Schließen
-            </button>
+            </Button>
           </div>
         </div>
       </div>
@@ -76,28 +71,20 @@ const LocationModal: React.FC<LocationModalProps> = ({
           Um die nächstgelegenen Parks zu finden, benötigen wir Zugriff auf Ihren Standort.
         </p>
         <div className="flex justify-end space-x-3">
-          <button
+          <Button
             onClick={onClose}
-            className="px-4 py-2 font-mono text-sm border-2 transition-colors"
-            style={{
-              borderColor: 'var(--border-color)',
-              color: 'var(--deep-charcoal)',
-              backgroundColor: 'transparent',
-            }}
+            variant="outline"
+            size="md"
           >
             Abbrechen
-          </button>
-          <button
+          </Button>
+          <Button
             onClick={onRequestLocation}
-            className="px-4 py-2 font-mono text-sm border-2 transition-colors"
-            style={{
-              backgroundColor: 'var(--primary-green)',
-              color: 'var(--soft-cream)',
-              borderColor: 'var(--primary-green)',
-            }}
+            variant="primary"
+            size="md"
           >
             Standort teilen
-          </button>
+          </Button>
         </div>
       </div>
     </div>

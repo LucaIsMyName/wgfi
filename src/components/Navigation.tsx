@@ -13,6 +13,7 @@ import {
 import Logo from "./Logo";
 import ThemeToggle from "./ThemeToggle";
 import Wordmark from "./Wordmark";
+import { Button } from "./ui/Button";
 
 const Navigation = () => {
   const location = useLocation();
@@ -167,24 +168,13 @@ const Navigation = () => {
         <div className="flex items-center justify-between py-2 pr-4 transition-all duration-300">
           <Logo />
 
-          <button
+          <Button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="p-2 transition-opacity duration-200"
-            style={{
-              backgroundColor: "var(--light-sage)",
-              color: "var(--primary-green)",
-              borderRadius: "4px",
-              opacity: 0.9,
-            }}
-            onMouseEnter={(e) => (e.currentTarget.style.opacity = "1")}
-            onMouseLeave={(e) => (e.currentTarget.style.opacity = "0.9")}
-          >
-            {isMobileMenuOpen ? (
-              <X className="w-5 h-5" />
-            ) : (
-              <Menu className="w-5 h-5" />
-            )}
-          </button>
+            variant="secondary"
+            size="sm"
+            icon={isMobileMenuOpen ? X : Menu}
+            style={{ opacity: 0.9 }}
+          />
         </div>
       </header>
 
@@ -221,15 +211,13 @@ const Navigation = () => {
                 >
                   Menü
                 </span>
-                <button
+                <Button
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="p-2 transition-opacity duration-200"
-                  style={{ color: "var(--primary-green)", opacity: 0.8 }}
-                  onMouseEnter={(e) => (e.currentTarget.style.opacity = "1")}
-                  onMouseLeave={(e) => (e.currentTarget.style.opacity = "0.8")}
-                >
-                  <X className="w-5 h-5" />
-                </button>
+                  variant="ghost"
+                  size="sm"
+                  icon={X}
+                  style={{ opacity: 0.8 }}
+                />
               </div>
 
               {/* Navigation Items */}
