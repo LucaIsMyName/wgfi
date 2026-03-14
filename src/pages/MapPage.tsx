@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet-async";
 import { useParams, useNavigate } from "react-router-dom";
 import { useParksData } from "../hooks/useParksData";
 import { slugifyParkName } from "../data/manualParksData";
-import mapboxgl from "mapbox-gl";
 import { useTheme } from "../contexts/ThemeContext";
 import { useMapboxMap } from "../hooks/useMapboxMap";
 import { useMapMarkers } from "../hooks/useMapMarkers";
@@ -11,9 +10,6 @@ import MapContainer from "../components/map/MapContainer";
 import MapControls from "../components/map/MapControls";
 import MobileMapControls from "../components/map/MobileMapControls";
 import type { Park } from "../types/park";
-
-// Set Mapbox access token
-mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN;
 
 const MapPage = () => {
   const { parks } = useParksData();
@@ -62,25 +58,26 @@ const MapPage = () => {
   };
 
   // Get user location
-  const getUserLocation = () => {
+  const handleUserLocation = async () => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
-        (position) => {
+        async (position) => {
           const userPos = {
             lat: position.coords.latitude,
             lng: position.coords.longitude,
           };
-
           setUserLocation(userPos);
 
-          // If map is loaded, fly to user location and add a marker
-          if (mapInstance.current && mapLoaded) {
+          // Fly to user location
+          if (mapInstance.current) {
             mapInstance.current.flyTo({
               center: [userPos.lng, userPos.lat],
               zoom: 14,
             });
 
             // Add user location marker
+            const { loadMapbox } = await import("../utils/mapboxLoader");
+            const mapboxgl = await loadMapbox();
             new mapboxgl.Marker({
               color: "#FF0000",
             })
@@ -181,7 +178,7 @@ const MapPage = () => {
           userLocation={userLocation}
           filteredParksCount={filteredParks.length}
           onDistrictFilter={filterParksByDistrict}
-          onGetUserLocation={getUserLocation}
+          onGetUserLocation={handleUserLocation}
         />
 
         {/* Mobile Bottom Controls - Sticky */}
@@ -191,7 +188,7 @@ const MapPage = () => {
           userLocation={userLocation}
           filteredParksCount={filteredParks.length}
           onDistrictFilter={filterParksByDistrict}
-          onGetUserLocation={getUserLocation}
+          onGetUserLocation={handleUserLocation}
         />
       </div>
     </div>

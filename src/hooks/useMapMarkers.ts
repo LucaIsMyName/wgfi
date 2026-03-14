@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import mapboxgl from "mapbox-gl";
+import type mapboxgl from "mapbox-gl";
+import { loadMapbox } from "../utils/mapboxLoader";
 import { slugifyParkName } from "../data/manualParksData";
 import { isFavorite } from "../utils/favoritesManager";
 import type { Park } from "../types/park";
@@ -16,6 +17,7 @@ interface UseMapMarkersProps {
 /**
  * Custom hook for managing map markers
  * Handles marker creation, updates, popups, and URL synchronization
+ * Uses dynamic mapbox loading
  */
 export function useMapMarkers({
   parks,
@@ -33,18 +35,22 @@ export function useMapMarkers({
       return;
     }
 
-    try {
-      // Clear existing markers
-      markersRef.current.forEach((marker) => marker.remove());
-      markersRef.current = [];
-      popupRefs.current = {};
+    const initMarkers = async () => {
+      // Dynamically load mapbox
+      const mapboxgl = await loadMapbox();
 
-      // Calculate average park area for scaling
-      const parkAreas = parks.map(p => p.area);
-      const avgArea = parkAreas.reduce((a, b) => a + b, 0) / parkAreas.length;
-      
-      // Add markers for parks
-      const markers = parks.map((park) => {
+      try {
+        // Clear existing markers
+        markersRef.current.forEach((marker) => marker.remove());
+        markersRef.current = [];
+        popupRefs.current = {};
+
+        // Calculate average park area for scaling
+        const parkAreas = parks.map(p => p.area);
+        const avgArea = parkAreas.reduce((a, b) => a + b, 0) / parkAreas.length;
+        
+        // Add markers for parks
+        const markers = parks.map((park) => {
         // Calculate marker size based on park area (relative to average)
         const sizeRatio = Math.sqrt(park.area / avgArea);
         const baseSize = 24;
@@ -187,23 +193,26 @@ export function useMapMarkers({
         return marker;
       });
 
-      // Store markers for later removal
-      markersRef.current = markers;
+        // Store markers for later removal
+        markersRef.current = markers;
 
-      // Fit map to markers if we have any
-      if (markers.length > 0 && mapInstance.current) {
-        const bounds = new mapboxgl.LngLatBounds();
+        // Fit map to markers if we have any
+        if (markers.length > 0 && mapInstance.current) {
+          const bounds = new mapboxgl.LngLatBounds();
 
-        parks.forEach((park) => {
-          bounds.extend([park.coordinates.lng, park.coordinates.lat]);
-        });
-        if (mapInstance.current) {
-          mapInstance.current.fitBounds(bounds, { padding: 50, maxZoom: 14 });
+          parks.forEach((park) => {
+            bounds.extend([park.coordinates.lng, park.coordinates.lat]);
+          });
+          if (mapInstance.current) {
+            mapInstance.current.fitBounds(bounds, { padding: 50, maxZoom: 14 });
+          }
         }
+      } catch (error) {
+        console.error("Error adding markers:", error);
       }
-    } catch (error) {
-      console.error("Error adding markers:", error);
-    }
+    };
+
+    initMarkers();
   }, [parks, loading, mapLoaded, styleLoadedCounter, mapInstance, navigate]);
 
   return {

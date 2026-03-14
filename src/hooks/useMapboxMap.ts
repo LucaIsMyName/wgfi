@@ -1,9 +1,7 @@
 import { useState, useEffect, useRef } from "react";
-import mapboxgl from "mapbox-gl";
+import type mapboxgl from "mapbox-gl";
+import { loadMapbox } from "../utils/mapboxLoader";
 import STYLE from "../utils/config";
-
-// Set Mapbox access token
-mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN;
 
 interface UseMapboxMapReturn {
   mapContainerRef: React.RefObject<HTMLDivElement | null>;
@@ -15,6 +13,7 @@ interface UseMapboxMapReturn {
 /**
  * Custom hook for initializing and managing Mapbox map instance
  * Handles map creation, style loading, theme changes, and cleanup
+ * Dynamically loads mapbox-gl to reduce initial bundle size
  */
 export function useMapboxMap(effectiveTheme: 'light' | 'dark'): UseMapboxMapReturn {
   const mapContainerRef = useRef<HTMLDivElement>(null);
@@ -26,8 +25,16 @@ export function useMapboxMap(effectiveTheme: 'light' | 'dark'): UseMapboxMapRetu
   useEffect(() => {
     if (!mapContainerRef.current) return;
 
-    const isDark = effectiveTheme === 'dark';
-    const map = new mapboxgl.Map({
+    let map: mapboxgl.Map | null = null;
+
+    const initMap = async () => {
+      if (!mapContainerRef.current) return;
+
+      // Dynamically load mapbox
+      const mapboxgl = await loadMapbox();
+
+      const isDark = effectiveTheme === 'dark';
+      map = new mapboxgl.Map({
       container: mapContainerRef.current,
       style: STYLE.getMapStyle(isDark),
       center: [16.3738, 48.2082], // Vienna center
@@ -37,41 +44,50 @@ export function useMapboxMap(effectiveTheme: 'light' | 'dark'): UseMapboxMapRetu
       antialias: true // Smooth 3D rendering
     });
 
-    map.on("load", () => {
-      // Add 3D terrain only if it doesn't exist
-      if (!map.getSource('mapbox-dem')) {
-        map.addSource('mapbox-dem', {
-          'type': 'raster-dem',
-          'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
-          'tileSize': 512,
-          'maxzoom': 14
-        });
-        map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
-      }
+      map.on("load", () => {
+        // Add 3D terrain only if it doesn't exist
+        if (map && !map.getSource('mapbox-dem')) {
+          map.addSource('mapbox-dem', {
+            'type': 'raster-dem',
+            'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
+            'tileSize': 512,
+            'maxzoom': 14
+          });
+          map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
+        }
+        
+        setMapLoaded(true);
+        setStyleLoadedCounter(prev => prev + 1);
+      });
+
+      map.addControl(new mapboxgl.NavigationControl(), "top-right");
+
+      // Handle resize events to ensure map fills available space
+      const handleResize = () => {
+        map?.resize();
+      };
+
+      window.addEventListener('resize', handleResize);
       
-      setMapLoaded(true);
-      setStyleLoadedCounter(prev => prev + 1);
-    });
+      // Initial resize to ensure correct sizing with sidebar
+      setTimeout(() => {
+        map?.resize();
+      }, 200);
 
-    map.addControl(new mapboxgl.NavigationControl(), "top-right");
+      mapInstance.current = map;
 
-    // Handle resize events to ensure map fills available space
-    const handleResize = () => {
-      map.resize();
+      return () => {
+        window.removeEventListener('resize', handleResize);
+        map?.remove();
+      };
     };
 
-    window.addEventListener('resize', handleResize);
-    
-    // Initial resize to ensure correct sizing with sidebar
-    setTimeout(() => {
-      map.resize();
-    }, 200);
-
-    mapInstance.current = map;
+    initMap();
 
     return () => {
-      window.removeEventListener('resize', handleResize);
-      map.remove();
+      if (map) {
+        map.remove();
+      }
     };
   }, [effectiveTheme]);
   

@@ -23,16 +23,14 @@ import { addVisitSync } from "../hooks/useVisitHistory";
 import { addRecentlyViewed } from "../utils/recentlyViewedManager";
 import ParkInfo from "../components/ParkInfo";
 import MetadataAccordion from "../components/MetadataAccordion";
-import mapboxgl from "mapbox-gl";
+import type mapboxgl from "mapbox-gl";
+import { loadMapbox } from "../utils/mapboxLoader";
 import STYLE from "../utils/config";
 import { useTheme } from "../contexts/ThemeContext";
 import { getAllDistrictsForPark, formatDistricts } from "../utils/parkUtils";
 import type { Park, ParkWithDistance } from "../types/park";
 import { calculateDistance } from "../utils/geoUtils";
 import { Button } from "../components/ui/Button";
-
-// Set Mapbox access token
-mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN;
 
 const ParkDetailPage: React.FC = () => {
   const { idOrSlug } = useParams<{ idOrSlug: string }>();
@@ -194,34 +192,38 @@ const ParkDetailPage: React.FC = () => {
       mapMarker.current = null;
     }
 
-    try {
-      // Create map with theme-aware style
-      const isDark = effectiveTheme === "dark";
-      const map = new mapboxgl.Map({
-        container: mapContainer.current,
-        style: STYLE.getMapStyle(isDark),
-        center: [park.coordinates.lng, park.coordinates.lat],
-        zoom: 15.5,
-        pitch: 60, // Tilt map for 3D view
-        bearing: 0,
-        antialias: true, // Smooth 3D rendering
-        attributionControl: false,
-      });
+    const initMap = async () => {
+      try {
+        // Dynamically load mapbox
+        const mapboxgl = await loadMapbox();
 
-      // Add 3D terrain when map loads
-      map.on("load", () => {
-        map.addSource("mapbox-dem", {
-          type: "raster-dem",
-          url: "mapbox://mapbox.mapbox-terrain-dem-v1",
-          tileSize: 512,
-          maxzoom: 14,
+        // Create map with theme-aware style
+        const isDark = effectiveTheme === "dark";
+        const map = new mapboxgl.Map({
+          container: mapContainer.current!,
+          style: STYLE.getMapStyle(isDark),
+          center: [park.coordinates.lng, park.coordinates.lat],
+          zoom: 15.5,
+          pitch: 60, // Tilt map for 3D view
+          bearing: 0,
+          antialias: true, // Smooth 3D rendering
+          attributionControl: false,
         });
-        map.setTerrain({ source: "mapbox-dem", exaggeration: 1.5 });
-      });
 
-      // Add navigation controls
-      map.addControl(new mapboxgl.NavigationControl(), "top-right");
-      map.addControl(new mapboxgl.AttributionControl({ compact: true }));
+        // Add 3D terrain when map loads
+        map.on("load", () => {
+          map.addSource("mapbox-dem", {
+            type: "raster-dem",
+            url: "mapbox://mapbox.mapbox-terrain-dem-v1",
+            tileSize: 512,
+            maxzoom: 14,
+          });
+          map.setTerrain({ source: "mapbox-dem", exaggeration: 1.5 });
+        });
+
+        // Add navigation controls
+        map.addControl(new mapboxgl.NavigationControl(), "top-right");
+        map.addControl(new mapboxgl.AttributionControl({ compact: true }));
 
       // Create marker wrapper and inner element to fix hover positioning issues
       const wrapper = document.createElement("div");
@@ -275,12 +277,15 @@ const ParkDetailPage: React.FC = () => {
         el.style.boxShadow = "0 2px 6px rgba(0,0,0,0.3)";
       });
 
-      // Store references
-      mapInstance.current = map;
-      mapMarker.current = marker;
-    } catch (error) {
-      console.error("Error initializing map:", error);
-    }
+        // Store references
+        mapInstance.current = map;
+        mapMarker.current = marker;
+      } catch (error) {
+        console.error("Error initializing map:", error);
+      }
+    };
+
+    initMap();
 
     // Cleanup function
     return () => {
@@ -293,7 +298,7 @@ const ParkDetailPage: React.FC = () => {
         mapInstance.current = null;
       }
     };
-  }, [park]);
+  }, [park, effectiveTheme]);
 
   // Update map style when theme changes
   useEffect(() => {
@@ -311,10 +316,13 @@ const ParkDetailPage: React.FC = () => {
           mapInstance.current.setStyle(newStyle);
 
           // Re-add marker after style loads
-          mapInstance.current.once("style.load", () => {
+          mapInstance.current.once("style.load", async () => {
             if (mapMarker.current && mapInstance.current) {
               // Remove old marker
               mapMarker.current.remove();
+
+              // Load mapbox dynamically
+              const mapboxgl = await loadMapbox();
 
               // Create new marker
               const wrapper = document.createElement("div");
