@@ -15,68 +15,39 @@ export interface SelectProps {
   placeholder?: string;
   label?: string;
   fullWidth?: boolean;
+  size?: 'sm' | 'md' | 'lg';
   className?: string;
-  style?: React.CSSProperties;
 }
 
 export const Select = React.forwardRef<HTMLButtonElement, SelectProps>(
-  ({ value, onValueChange, options, placeholder, label, fullWidth = false, className = '', style }, ref) => {
+  ({ value, onValueChange, options, placeholder, label, fullWidth = false, size = 'md', className = '' }, ref) => {
     const selectId = `select-${Math.random().toString(36).substr(2, 9)}`;
 
-    const labelStyles: React.CSSProperties = {
-      display: 'block',
-      fontFamily: 'var(--font-mono)',
-      fontSize: '0.75rem',
-      color: 'var(--primary-green)',
-      marginBottom: '0.5rem',
+    const sizeClasses = {
+      sm: 'px-3.5 py-1.5 text-[0.85rem]',
+      md: 'px-4 py-2 text-[0.925rem]',
+      lg: 'px-6 py-3 text-base',
     };
 
-    const triggerStyles: React.CSSProperties = {
-      width: fullWidth ? '100%' : 'auto',
-      padding: '0.5rem',
-      backgroundColor: 'var(--soft-cream)',
-      color: 'var(--deep-charcoal)',
-      border: '1px solid var(--border-color)',
-      fontFamily: 'var(--font-serif)',
-      fontStyle: 'italic',
-      fontWeight: 400,
-      display: 'inline-flex',
-      alignItems: 'center',
-      justifyContent: 'space-between',
-      gap: '0.5rem',
-      cursor: 'pointer',
-      ...style,
-    };
-
-    const contentStyles: React.CSSProperties = {
-      backgroundColor: 'var(--soft-cream)',
-      border: '1px solid var(--border-color)',
-      boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
-      zIndex: 1000,
-      maxHeight: 'var(--radix-select-content-available-height)',
-    };
-
-    const itemStyles: React.CSSProperties = {
-      padding: '0.5rem 1rem',
-      fontFamily: 'var(--font-serif)',
-      fontStyle: 'italic',
-      color: 'var(--deep-charcoal)',
-      cursor: 'pointer',
-      outline: 'none',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'space-between',
-    };
+    const triggerClasses = `
+      inline-flex items-center justify-between gap-2 bg-soft-cream text-deep-charcoal 
+      border border-border-color font-serif italic font-normal cursor-pointer
+      ${fullWidth ? 'w-full' : 'w-auto'}
+      ${sizeClasses[size]}
+    `.trim().replace(/\s+/g, ' ');
 
     return (
-      <div className={className} style={{ width: fullWidth ? '100%' : 'auto' }}>
+      <div className={`${fullWidth ? 'w-full' : 'w-auto'} ${className}`}>
         {label && (
-          <Label.Root htmlFor={selectId} style={labelStyles}>
+          <Label.Root 
+            htmlFor={selectId} 
+            className="block font-mono text-xs text-primary-green mb-2"
+          >
             {label}
           </Label.Root>
         )}
         <SelectPrimitive.Root value={value} onValueChange={onValueChange}>
-          <SelectPrimitive.Trigger ref={ref} id={selectId} style={triggerStyles}>
+          <SelectPrimitive.Trigger ref={ref} id={selectId} className={triggerClasses}>
             <SelectPrimitive.Value placeholder={placeholder} />
             <SelectPrimitive.Icon>
               <ChevronDown className="w-4 h-4" />
@@ -86,16 +57,20 @@ export const Select = React.forwardRef<HTMLButtonElement, SelectProps>(
           <SelectPrimitive.Portal>
             <SelectPrimitive.Content 
               position="popper" 
-              style={contentStyles}
+              className="bg-soft-cream border border-border-color shadow-lg z-[1000]"
               sideOffset={4}
               collisionPadding={16}
             >
-              <SelectPrimitive.Viewport style={{ width: 'var(--radix-select-trigger-width)' }}>
+              <SelectPrimitive.Viewport className="w-[var(--radix-select-trigger-width)]">
                 {options.map((option) => (
-                  <SelectPrimitive.Item key={option.value} value={option.value} style={itemStyles}>
+                  <SelectPrimitive.Item 
+                    key={option.value} 
+                    value={option.value} 
+                    className="px-4 py-2 font-serif italic text-deep-charcoal cursor-pointer outline-none flex items-center justify-between hover:bg-light-sage data-[highlighted]:bg-light-sage"
+                  >
                     <SelectPrimitive.ItemText>{option.label}</SelectPrimitive.ItemText>
                     <SelectPrimitive.ItemIndicator>
-                      <Check className="w-4 h-4" style={{ color: 'var(--primary-green)' }} />
+                      <Check className="w-4 h-4 text-primary-green" />
                     </SelectPrimitive.ItemIndicator>
                   </SelectPrimitive.Item>
                 ))}

@@ -16,11 +16,10 @@ export interface AccordionProps {
   value?: string | string[];
   onValueChange?: (value: string | string[]) => void;
   className?: string;
-  style?: React.CSSProperties;
 }
 
 export const Accordion = React.forwardRef<HTMLDivElement, AccordionProps>(
-  ({ items, type = 'single', defaultValue, value, onValueChange, className = '', style }, ref) => {
+  ({ items, type = 'single', defaultValue, value, onValueChange, className = '' }, ref) => {
     const rootProps = type === 'single' 
       ? {
           type: 'single' as const,
@@ -36,36 +35,17 @@ export const Accordion = React.forwardRef<HTMLDivElement, AccordionProps>(
           onValueChange: onValueChange as ((value: string[]) => void) | undefined,
         };
 
-    const triggerStyles: React.CSSProperties = {
-      width: '100%',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'space-between',
-      fontFamily: 'var(--font-mono)',
-      fontSize: '0.75rem',
-      color: 'var(--primary-green)',
-      backgroundColor: 'transparent',
-      border: 'none',
-      cursor: 'pointer',
-      padding: '0.5rem 0',
-    };
-
-    const contentStyles: React.CSSProperties = {
-      overflow: 'hidden',
-    };
-
     return (
       <AccordionPrimitive.Root
         ref={ref}
         className={className}
-        style={style}
         {...rootProps}
       >
         {items.map((item) => (
           <AccordionPrimitive.Item key={item.value} value={item.value}>
             <AccordionPrimitive.Header>
-              <AccordionPrimitive.Trigger className="group" style={triggerStyles}>
-                <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <AccordionPrimitive.Trigger className="group w-full flex items-center justify-between font-mono text-xs text-primary-green bg-transparent border-none cursor-pointer py-2">
+                <span className="flex items-center gap-2">
                   {item.icon}
                   {item.trigger}
                 </span>
@@ -76,10 +56,9 @@ export const Accordion = React.forwardRef<HTMLDivElement, AccordionProps>(
               </AccordionPrimitive.Trigger>
             </AccordionPrimitive.Header>
             <AccordionPrimitive.Content
-              className="data-[state=open]:animate-accordion-down data-[state=closed]:animate-accordion-up"
-              style={contentStyles}
+              className="overflow-hidden data-[state=open]:animate-accordion-down data-[state=closed]:animate-accordion-up"
             >
-              <div style={{ paddingTop: '0.5rem' }}>{item.content}</div>
+              <div className="pt-2">{item.content}</div>
             </AccordionPrimitive.Content>
           </AccordionPrimitive.Item>
         ))}

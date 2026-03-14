@@ -136,8 +136,9 @@ const Navigation = () => {
               </a>
             </div>
             {/* Row 2: Theme Toggle & Search */}
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-4">
               <ThemeToggle />
+              {/* <div className="w-1 h-full !bg-border-color" /> */}
               <Button
                 onClick={openCommandPalette}
                 variant="ghost"

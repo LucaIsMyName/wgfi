@@ -35,10 +35,10 @@ const ThemeToggle = ({ className }: { className?: string }) => {
   const Icon = currentTheme.icon;
 
   return (
-    <div className={`flex items-center ${className}`} ref={dropdownRef}>
+    <div className={`relative flex items-center ${className}`} ref={dropdownRef}>
       <Button
         onClick={() => setIsOpen(!isOpen)}
-        variant="outline"
+        variant="ghost"
         size="sm"
         icon={Icon}
         aria-label="Theme wechseln"

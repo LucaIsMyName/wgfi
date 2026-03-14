@@ -187,60 +187,60 @@ const StatisticsPage = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           <div className="p-6 border bg-light-sage border-border-color">
             <div className="flex items-center gap-3 mb-2">
-              <Sprout className="w-6 h-6 text-primary-green" />
-              <p className="font-mono text-xs text-primary-green">
+              <Sprout className="xl:min-w-6 min-w-4 min-h-4 max-w-4 max-h-4 xl:min-h-6 text-primary-green" />
+              <p className="font-mono text-xs truncate text-primary-green">
                 Gesamtabdeckung
               </p>
             </div>
-            <p className="font-serif text-4xl italic text-primary-green">
+            <p className="font-serif text-2xl xl:text-4xl italic text-primary-green">
               {viennaCoverage.toFixed(2)}%
             </p>
-            <p className="font-serif italic text-base mt-1 text-deep-charcoal opacity-70">
+            <p className="font-serif italic text-xs xl:text-base mt-1 text-deep-charcoal opacity-70">
               von Wien sind Parks
             </p>
           </div>
 
           <div className="p-6 border bg-light-sage border-border-color">
             <div className="flex items-center gap-3 mb-2">
-              <MapPin className="w-6 h-6 text-primary-green" />
-              <p className="font-mono text-xs text-primary-green">
+              <MapPin className="xl:min-w-6 min-w-4 min-h-4 max-w-4 max-h-4 xl:min-h-6 text-primary-green" />
+              <p className="font-mono text-xs truncate text-primary-green">
                 Anzahl der Parks
               </p>
             </div>
-            <p className="font-serif text-4xl italic text-primary-green">
+            <p className="font-serif text-2xl xl:text-4xl italic text-primary-green">
               {parks.length}
             </p>
-            <p className="font-serif italic text-base mt-1 text-deep-charcoal opacity-70">
+            <p className="font-serif italic text-xs xl:text-base mt-1 text-deep-charcoal opacity-70">
               Parks in ganz Wien
             </p>
           </div>
 
           <div className="p-6 border bg-light-sage border-border-color">
             <div className="flex items-center gap-3 mb-2">
-              <TrendingUp className="w-6 h-6 text-primary-green" />
-              <p className="font-mono text-xs text-primary-green">
+              <TrendingUp className="xl:min-w-6 min-w-4 min-h-4 max-w-4 max-h-4 xl:min-h-6 text-primary-green" />
+              <p className="font-mono text-xs truncate text-primary-green">
                 Gesamtfläche
               </p>
             </div>
-            <p className="font-serif text-4xl italic text-primary-green">
+            <p className="font-serif text-2xl xl:text-4xl italic text-primary-green">
               {formatArea(parks.reduce((sum, p) => sum + p.area, 0))}
             </p>
-            <p className="font-serif italic text-base mt-1 text-deep-charcoal opacity-70">
+            <p className="font-serif italic text-xs xl:text-base mt-1 text-deep-charcoal opacity-70">
               Grünfläche gesamt
             </p>
           </div>
 
           <div className="p-6 border bg-light-sage border-border-color">
             <div className="flex items-center gap-3 mb-2">
-              <BarChart3 className="w-6 h-6 text-primary-green" />
-              <p className="font-mono text-xs text-primary-green">
+              <BarChart3 className="xl:min-w-6 min-w-4 min-h-4 max-w-4 max-h-4 xl:min-h-6 text-primary-green" />
+              <p className="font-mono text-xs truncate text-primary-green">
                 Ø Größe
               </p>
             </div>
-            <p className="font-serif text-4xl italic text-primary-green">
+            <p className="font-serif text-2xl xl:text-4xl italic text-primary-green">
               {formatArea(parks.reduce((sum, p) => sum + p.area, 0) / parks.length)}
             </p>
-            <p className="font-serif italic text-base mt-1 text-deep-charcoal opacity-70">
+            <p className="font-serif italic text-xs xl:text-base mt-1 text-deep-charcoal opacity-70">
               Durchschnittliche Parkgröße
             </p>
           </div>

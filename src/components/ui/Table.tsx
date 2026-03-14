@@ -19,7 +19,6 @@ export interface TableProps<T> {
   responsive?: boolean;
   mobileCardView?: boolean;
   className?: string;
-  style?: React.CSSProperties;
 }
 
 type SortConfig<T> = {
@@ -37,7 +36,6 @@ export function Table<T>({
   responsive = true,
   mobileCardView = true,
   className = '',
-  style,
 }: TableProps<T>) {
   const [sortConfig, setSortConfig] = useState<SortConfig<T>>(null);
 
@@ -77,39 +75,6 @@ export function Table<T>({
     return sorted;
   }, [data, sortConfig, columns]);
 
-  const tableStyles: React.CSSProperties = {
-    width: '100%',
-    borderCollapse: 'collapse',
-    ...style,
-  };
-
-  const headerCellStyles = (align?: 'left' | 'center' | 'right'): React.CSSProperties => ({
-    fontFamily: 'var(--font-mono)',
-    fontSize: '0.75rem',
-    color: 'var(--primary-green)',
-    backgroundColor: 'var(--light-sage)',
-    padding: '0.75rem 0.5rem',
-    textAlign: align || 'left',
-    borderBottom: '2px solid var(--primary-green)',
-    position: stickyHeader ? 'sticky' : 'relative',
-    top: stickyHeader ? 0 : 'auto',
-    zIndex: stickyHeader ? 1 : 'auto',
-  });
-
-  const bodyCellStyles = (align?: 'left' | 'center' | 'right'): React.CSSProperties => ({
-    fontFamily: 'var(--font-mono)',
-    fontSize: '0.875rem',
-    color: 'var(--deep-charcoal)',
-    padding: '0.75rem 0.5rem',
-    textAlign: align || 'left',
-    borderBottom: '1px solid var(--border-color)',
-    verticalAlign: 'top',
-  });
-
-  const rowStyles = (index: number): React.CSSProperties => ({
-    backgroundColor: striped && index % 2 === 0 ? 'transparent' : 'var(--light-sage)',
-  });
-
   const getSortIcon = (columnKey: string) => {
     if (sortConfig?.key !== columnKey) {
       return <ArrowUpDown className="w-3 h-3 opacity-50" />;
@@ -121,41 +86,35 @@ export function Table<T>({
     );
   };
 
-  const containerStyles: React.CSSProperties = {
-    overflowX: responsive ? 'auto' : 'visible',
-  };
-
-  const mobileCardStyles: React.CSSProperties = {
-    padding: '1rem',
-    border: '1px solid var(--border-color)',
-    backgroundColor: 'var(--light-sage)',
-    marginBottom: '1rem',
+  const getAlignClass = (align?: 'left' | 'center' | 'right') => {
+    switch (align) {
+      case 'center': return 'text-center';
+      case 'right': return 'text-right';
+      default: return 'text-left';
+    }
   };
 
   return (
     <>
       {/* Desktop Table View */}
-      <div className={`${mobileCardView ? 'hidden md:block' : ''} ${className}`} style={containerStyles}>
-        <table style={tableStyles}>
+      <div className={`${mobileCardView ? 'hidden md:block' : ''} ${responsive ? 'overflow-x-auto' : ''} ${className}`}>
+        <table className="w-full border-collapse">
           <thead>
             <tr>
               {columns.map((column) => (
-                <th key={column.key} style={headerCellStyles(column.align)}>
+                <th 
+                  key={column.key} 
+                  className={`
+                    font-mono text-xs text-primary-green bg-light-sage px-2 py-3 
+                    border-b-2 border-primary-green
+                    ${stickyHeader ? 'sticky top-0 z-10' : 'relative'}
+                    ${getAlignClass(column.align)}
+                  `}
+                >
                   {column.sortable ? (
                     <button
                       onClick={() => handleSort(column.key)}
-                      style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: '0.25rem',
-                        background: 'none',
-                        border: 'none',
-                        cursor: 'pointer',
-                        color: 'inherit',
-                        fontFamily: 'inherit',
-                        fontSize: 'inherit',
-                        padding: 0,
-                      }}
+                      className="flex items-center gap-1 bg-transparent border-none cursor-pointer p-0 font-mono text-xs text-primary-green"
                     >
                       {column.header}
                       {getSortIcon(column.key)}
@@ -171,11 +130,20 @@ export function Table<T>({
             {sortedData.map((row, index) => (
               <tr
                 key={keyExtractor(row, index)}
-                style={rowStyles(index)}
-                className={hoverable ? 'hover:bg-opacity-50' : ''}
+                className={`
+                  ${striped && index % 2 !== 0 ? 'bg-light-sage' : 'bg-transparent'}
+                  ${hoverable ? 'hover:bg-light-sage hover:bg-opacity-50' : ''}
+                `}
               >
                 {columns.map((column) => (
-                  <td key={column.key} style={bodyCellStyles(column.align)}>
+                  <td 
+                    key={column.key} 
+                    className={`
+                      font-mono text-sm text-deep-charcoal px-2 py-3 
+                      border-b border-border-color align-top
+                      ${getAlignClass(column.align)}
+                    `}
+                  >
                     {column.accessor(row)}
                   </td>
                 ))}
@@ -189,26 +157,16 @@ export function Table<T>({
       {mobileCardView && (
         <div className="block md:hidden">
           {sortedData.map((row, index) => (
-            <div key={keyExtractor(row, index)} style={mobileCardStyles}>
+            <div 
+              key={keyExtractor(row, index)} 
+              className="p-4 border border-border-color bg-light-sage mb-4"
+            >
               {columns.map((column) => (
-                <div key={column.key} style={{ marginBottom: '0.5rem' }}>
-                  <p
-                    style={{
-                      fontFamily: 'var(--font-mono)',
-                      fontSize: '0.75rem',
-                      color: 'var(--primary-green)',
-                      marginBottom: '0.25rem',
-                    }}
-                  >
+                <div key={column.key} className="mb-2">
+                  <p className="font-mono text-xs text-primary-green mb-1">
                     {column.header}
                   </p>
-                  <p
-                    style={{
-                      fontFamily: 'var(--font-mono)',
-                      fontSize: '0.875rem',
-                      color: 'var(--deep-charcoal)',
-                    }}
-                  >
+                  <p className="font-mono text-sm text-deep-charcoal">
                     {column.accessor(row)}
                   </p>
                 </div>
