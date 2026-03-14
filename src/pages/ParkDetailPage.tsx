@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { getViennaParksForApp } from "../services/viennaApi";
+import { useParksData } from "../hooks/useParksData";
 import { getManualParkData, slugifyParkName } from "../data/manualParksData";
 import {
   MapPin,
@@ -18,7 +18,6 @@ import { isFavorite, toggleFavorite } from "../utils/favoritesManager";
 import ParkInfo from "../components/ParkInfo";
 import mapboxgl from "mapbox-gl";
 import STYLE from "../utils/config";
-import Loading from "../components/Loading";
 import { useTheme } from "../contexts/ThemeContext";
 import { getAllDistrictsForPark, formatDistricts } from "../utils/parkUtils";
 import type { Park, ParkWithDistance } from "../types/park";
@@ -30,8 +29,8 @@ mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN;
 const ParkDetailPage: React.FC = () => {
   const { idOrSlug } = useParams<{ idOrSlug: string }>();
   const { effectiveTheme, isHighContrast } = useTheme();
+  const { parks } = useParksData();
   const [park, setPark] = useState<Park | null>(null);
-  const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [userLocation, setUserLocation] = useState<{
     lat: number;
@@ -70,25 +69,23 @@ const ParkDetailPage: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    const fetchPark = async () => {
-      try {
-        setLoading(true);
-        const parks = await getViennaParksForApp();
+    if (!idOrSlug || parks.length === 0) return;
 
-        // Try to find park by ID first
-        let foundPark = parks.find(
-          (p: { id: string; name: string }) => p.id === idOrSlug
+    try {
+      // Try to find park by ID first
+      let foundPark = parks.find(
+        (p: { id: string; name: string }) => p.id === idOrSlug
+      );
+
+      // If not found by ID, try to find by slug
+      if (!foundPark) {
+        foundPark = parks.find(
+          (p: { id: string; name: string }) =>
+            slugifyParkName(p.name) === idOrSlug
         );
+      }
 
-        // If not found by ID, try to find by slug
-        if (!foundPark) {
-          foundPark = parks.find(
-            (p: { id: string; name: string }) =>
-              slugifyParkName(p.name) === idOrSlug
-          );
-        }
-
-        if (foundPark) {
+      if (foundPark) {
           // Merge with manual data if available
           let manualData = getManualParkData(foundPark.id);
 
@@ -156,21 +153,14 @@ const ParkDetailPage: React.FC = () => {
 
             setNearbyParks(parksWithDistance);
           }
-        } else {
-          setError("Park nicht gefunden");
-        }
-      } catch (err) {
-        setError("Fehler beim Laden des Parks");
-        console.error("Error fetching park:", err);
-      } finally {
-        setLoading(false);
+      } else {
+        setError("Park nicht gefunden");
       }
-    };
-
-    if (idOrSlug) {
-      fetchPark();
+    } catch (err) {
+      setError("Fehler beim Laden des Parks");
+      console.error("Error loading park:", err);
     }
-  }, [idOrSlug]);
+  }, [idOrSlug, parks]);
 
   // Initialize map when park data is loaded
   useEffect(() => {
@@ -369,22 +359,6 @@ const ParkDetailPage: React.FC = () => {
       }
     }
   }, [effectiveTheme, park]);
-
-  if (loading) {
-    return (
-      <div
-        className="min-h-screen flex items-center justify-center"
-        style={{ background: "var(--main-bg)" }}
-      >
-        <div
-          className="p-6 flex items-center justify-center"
-          style={{ backgroundColor: "transparent" }}
-        >
-          <Loading />
-        </div>
-      </div>
-    );
-  }
 
   if (error || !park) {
     return (

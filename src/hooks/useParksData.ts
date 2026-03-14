@@ -1,52 +1,36 @@
-import { useState, useEffect } from "react";
-import { getViennaParksForApp } from "../services/viennaApi";
+import { useMemo } from "react";
+import { PARKS_DATA } from "../data/generatedParks";
 import type { Park } from "../types/park";
 
 /**
- * Custom hook for fetching and managing parks data
- * Returns parks, loading state, error state, available amenities, and unique districts
+ * Custom hook for managing parks data
+ * Returns parks, available amenities, and unique districts
+ * 
+ * Note: Parks data is now statically generated at build time,
+ * so there's no loading state or async fetching required.
  */
 export function useParksData() {
-  const [parks, setParks] = useState<Park[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-  const [availableAmenities, setAvailableAmenities] = useState<string[]>([]);
-  const [districts, setDistricts] = useState<number[]>([]);
+  // Parks data is available immediately from static import
+  const parks = PARKS_DATA;
 
-  useEffect(() => {
-    const fetchParks = async () => {
-      try {
-        setLoading(true);
-        const viennaParks: Park[] = await getViennaParksForApp();
-        setParks(viennaParks);
+  // Extract all unique amenities from parks
+  const availableAmenities = useMemo(() => {
+    const allAmenities = new Set<string>();
+    parks.forEach((park: Park) => {
+      park.amenities.forEach((amenity: string) => allAmenities.add(amenity));
+    });
+    return Array.from(allAmenities).sort();
+  }, [parks]);
 
-        // Extract all unique amenities from parks
-        const allAmenities = new Set<string>();
-        viennaParks.forEach((park: Park) => {
-          park.amenities.forEach((amenity: string) => allAmenities.add(amenity));
-        });
-        setAvailableAmenities(Array.from(allAmenities).sort());
-
-        // Extract unique districts
-        const uniqueDistricts = Array.from(new Set(viennaParks.map((park: Park) => park.district))).sort() as number[];
-        setDistricts(uniqueDistricts);
-
-        setError(null);
-      } catch (err) {
-        setError("Fehler beim Laden der Parks");
-        console.error("Error fetching parks:", err);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchParks();
-  }, []);
+  // Extract unique districts
+  const districts = useMemo(() => {
+    return Array.from(new Set(parks.map((park: Park) => park.district))).sort() as number[];
+  }, [parks]);
 
   return {
     parks,
-    loading,
-    error,
+    loading: false, // No loading needed - data is static
+    error: null, // No errors - data is guaranteed to exist
     availableAmenities,
     districts,
   };

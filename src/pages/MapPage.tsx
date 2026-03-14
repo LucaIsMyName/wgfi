@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { Helmet } from "react-helmet-async";
 import { useParams, useNavigate } from "react-router-dom";
-import { getViennaParksForApp } from "../services/viennaApi";
+import { useParksData } from "../hooks/useParksData";
 import { slugifyParkName } from "../data/manualParksData";
 import mapboxgl from "mapbox-gl";
 import { useTheme } from "../contexts/ThemeContext";
@@ -16,9 +16,8 @@ import type { Park } from "../types/park";
 mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN;
 
 const MapPage = () => {
-  const [parks, setParks] = useState<Park[]>([]);
-  const [filteredParks, setFilteredParks] = useState<Park[]>([]);
-  const [loading, setLoading] = useState(true);
+  const { parks } = useParksData();
+  const [filteredParks, setFilteredParks] = useState<Park[]>(parks);
   const [selectedDistrict, setSelectedDistrict] = useState<number | null>(null);
   const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
 
@@ -38,11 +37,18 @@ const MapPage = () => {
     mapInstance,
     mapLoaded,
     styleLoadedCounter,
-    loading,
+    loading: false,
   });
 
   // Get unique districts from parks
   const districts = Array.from(new Set(parks.map((park) => park.district))).sort();
+
+  // Initialize filtered parks when parks data is available
+  useEffect(() => {
+    if (parks.length > 0 && filteredParks.length === 0) {
+      setFilteredParks(parks);
+    }
+  }, [parks, filteredParks.length]);
 
   // Filter parks by district
   const filterParksByDistrict = (district: number | null) => {
@@ -90,23 +96,6 @@ const MapPage = () => {
       console.error("Geolocation is not supported by this browser.");
     }
   };
-
-  // Fetch parks data
-  useEffect(() => {
-    const fetchParks = async () => {
-      try {
-        const data = await getViennaParksForApp();
-        setParks(data);
-        setFilteredParks(data);
-        setLoading(false);
-      } catch (error) {
-        console.error("Error fetching parks:", error);
-        setLoading(false);
-      }
-    };
-
-    fetchParks();
-  }, []);
 
   // Function to find park by ID or slug
   const findParkByIdOrSlug = useCallback((idOrSlug: string): Park | undefined => {

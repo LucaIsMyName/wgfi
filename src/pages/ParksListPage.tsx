@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
-import { AlertTriangle } from 'lucide-react';
-import Loading from '../components/Loading';
 import { useTheme } from '../contexts/ThemeContext';
 import { useParksData } from '../hooks/useParksData';
 import { useParksFilters } from '../hooks/useParksFilters';
@@ -50,42 +48,6 @@ const ParksListPage = () => {
   useEffect(() => {
     sessionStorage.removeItem('wgfi:parks-list-scroll');
   }, [searchTerm, selectedDistrict, sortOrder, selectedAmenities]);
-
-  if (loading) {
-    return (
-      <div
-        className="min-h-screen flex items-center justify-center"
-        style={{ background: "var(--main-bg)" }}>
-        <div
-          className="p-6 flex items-center justify-center"
-          style={{ backgroundColor: "transparent" }}>
-          <Loading />
-        </div>
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div
-        className="min-h-screen flex items-center justify-center"
-        style={{ background: "var(--main-bg)" }}>
-        <div
-          className="p-6"
-          style={{ backgroundColor: "var(--card-bg)", borderRadius: "8px" }}>
-          <AlertTriangle
-            className="w-16 h-16 mb-5"
-            stroke="var(--accent-gold)"
-          />
-          <p
-            className="font-serif italic text-lg"
-            style={{ color: "var(--deep-charcoal)", fontWeight: "400" }}>
-            {error}
-          </p>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div

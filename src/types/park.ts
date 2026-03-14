@@ -37,6 +37,12 @@ export interface Park {
   tips?: string[];
   links?: ParkLink[];
   isFavorite?: boolean;
+  /**
+   * Optional district area split for parks spanning multiple districts.
+   * Key is district number, value is percentage of park area in that district.
+   * Example: { 13: 10, 14: 35, 16: 5 } means 10% in district 13, 35% in district 14, etc.
+   */
+  districtAreaSplit?: Record<number, number>;
 }
 
 /**

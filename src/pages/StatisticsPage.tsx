@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { getViennaParksForApp } from "../services/viennaApi";
+import { useParksData } from "../hooks/useParksData";
 import { slugifyParkName } from "../data/manualParksData";
 import { BarChart3, TrendingUp, MapPin, Sprout, Compass, Ruler, PieChart, Trophy, BarChart } from "lucide-react";
 import ResponsiveContainer from "../components/statistics/ResponsiveContainer";
-import Loading from "../components/Loading";
 import STYLE from "../utils/config";
 import AmenitiesChart from "../components/statistics/AmenitiesChart";
 import ParkSizeHistogram from "../components/statistics/ParkSizeHistogram";
@@ -62,27 +61,16 @@ const VIENNA_TOTAL_AREA = (): number => {
 }; // Vienna total area in square meters
 
 const StatisticsPage = () => {
-  const [parks, setParks] = useState<Park[]>([]);
-  const [loading, setLoading] = useState(true);
+  const { parks } = useParksData();
   const [districtStats, setDistrictStats] = useState<DistrictStats[]>([]);
   const [viennaCoverage, setViennaCoverage] = useState(0);
   const [districtMetric, setDistrictMetric] = useState<"parkCount" | "totalArea" | "coveragePercentage">("parkCount");
 
   useEffect(() => {
-    const fetchParks = async () => {
-      try {
-        const data = await getViennaParksForApp();
-        setParks(data);
-        calculateStats(data);
-        setLoading(false);
-      } catch (error) {
-        console.error("Error fetching parks:", error);
-        setLoading(false);
-      }
-    };
-
-    fetchParks();
-  }, []);
+    if (parks.length > 0) {
+      calculateStats(parks);
+    }
+  }, [parks]);
 
   const calculateStats = (parkData: Park[]) => {
     // Calculate total park area in Vienna
@@ -166,10 +154,10 @@ const StatisticsPage = () => {
     return `${area.toFixed(0)} m²`;
   };
 
-  if (loading) {
+  if (parks.length === 0) {
     return (
       <div className="flex items-center justify-center min-h-screen">
-        <Loading />
+        <div className="p-6">Lade Statistiken...</div>
       </div>
     );
   }

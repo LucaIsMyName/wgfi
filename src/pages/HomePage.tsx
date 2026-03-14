@@ -1,34 +1,20 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import STYLE from "../utils/config";
-import { getViennaParksForApp } from "../services/viennaApi";
+import { useParksData } from "../hooks/useParksData";
 import { findNearestPark } from "../utils/geoUtils";
 import LocationModal from "../components/LocationModal";
 import { slugifyParkName } from "../data/manualParksData";
-import type { Park } from "../types/park";
 
 const HomePage: React.FC = () => {
   const [showLocationModal, setShowLocationModal] = useState(false);
   const [locationError, setLocationError] = useState(false);
-  const [parks, setParks] = useState<Park[]>([]);
   const [isLoadingNearby, setIsLoadingNearby] = useState(false);
   const [isLoadingRandom, setIsLoadingRandom] = useState(false);
   const navigate = useNavigate();
-
-  // Load parks data
-  useEffect(() => {
-    const loadParks = async () => {
-      try {
-        const parksData = await getViennaParksForApp();
-        setParks(parksData);
-      } catch (error) {
-        console.error("Error loading parks:", error);
-      }
-    };
-
-    loadParks();
-  }, []);
+  
+  const { parks } = useParksData();
 
   const handleFindNearby = () => {
     setShowLocationModal(true);
@@ -84,25 +70,18 @@ const HomePage: React.FC = () => {
     setLocationError(false);
   };
 
-  const handleRandomPark = async () => {
+  const handleRandomPark = () => {
     setIsLoadingRandom(true);
 
     try {
-      // If parks not loaded yet, load them
-      let parksData = parks;
-      if (parks.length === 0) {
-        parksData = await getViennaParksForApp();
-        setParks(parksData);
-      }
-
       // Select random park
-      if (parksData.length > 0) {
-        const randomIndex = Math.floor(Math.random() * parksData.length);
-        const randomPark = parksData[randomIndex];
+      if (parks.length > 0) {
+        const randomIndex = Math.floor(Math.random() * parks.length);
+        const randomPark = parks[randomIndex];
         navigate(`/index/${slugifyParkName(randomPark.name)}`);
       }
     } catch (error) {
-      console.error("Error loading random park:", error);
+      console.error("Error selecting random park:", error);
     } finally {
       setIsLoadingRandom(false);
     }

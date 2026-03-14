@@ -1,0 +1,26897 @@
+/**
+ * Auto-generated parks data - DO NOT EDIT MANUALLY
+ * Generated at: 2026-03-14T05:15:50.327Z
+ * Source: Vienna Open Data API
+ * 
+ * This file is generated during build time by scripts/generate-parks-data.js
+ * To regenerate, run: npm run generate:parks
+ */
+
+import type { Park } from '../types/park';
+
+export const PARKS_DATA: Park[] = [
+  {
+    "id": "3524069",
+    "name": "PA Rädda-Barnen-Platz",
+    "address": "PA Rädda-Barnen-Platz, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 908,
+    "coordinates": {
+      "lng": 16.37921465,
+      "lat": 48.1525477
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524070",
+    "name": "PA Endlichergasse",
+    "address": "PA Endlichergasse, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 22087,
+    "coordinates": {
+      "lng": 16.39015562,
+      "lat": 48.15835802
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524071",
+    "name": "PA Rudolfshügelgasse",
+    "address": "PA Rudolfshügelgasse, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 3301,
+    "coordinates": {
+      "lng": 16.36562899,
+      "lat": 48.16598976
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig+Spielplatz: 6:00-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524072",
+    "name": "Puchsbaumpark",
+    "address": "Puchsbaumpark, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 5704,
+    "coordinates": {
+      "lng": 16.38615449,
+      "lat": 48.17240961
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielplatz 6:00-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524073",
+    "name": "PA Migerkastraße",
+    "address": "PA Migerkastraße, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 554,
+    "coordinates": {
+      "lng": 16.36763996,
+      "lat": 48.16637829
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "06:00-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524074",
+    "name": "Martin-Luther-King-Park",
+    "address": "Martin-Luther-King-Park, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 14552,
+    "coordinates": {
+      "lng": 16.354168,
+      "lat": 48.17542096
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524075",
+    "name": "PA Löwygrube",
+    "address": "PA Löwygrube, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 228478,
+    "coordinates": {
+      "lng": 16.40619601,
+      "lat": 48.16404323
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524076",
+    "name": "PA Haebergasse",
+    "address": "PA Haebergasse, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 2172,
+    "coordinates": {
+      "lng": 16.33847954,
+      "lat": 48.18500364
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524077",
+    "name": "Anton-Krutisch-Park",
+    "address": "Anton-Krutisch-Park, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 2560,
+    "coordinates": {
+      "lng": 16.33126113,
+      "lat": 48.18216615
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524078",
+    "name": "PA Andersengasse",
+    "address": "PA Andersengasse, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 901,
+    "coordinates": {
+      "lng": 16.32836481,
+      "lat": 48.16346092
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524079",
+    "name": "PA An den Eisteichen",
+    "address": "PA An den Eisteichen, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 8807,
+    "coordinates": {
+      "lng": 16.32337093,
+      "lat": 48.1599242
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig:Okt-März:06:00-21:00, Apr-Sep:06:00-21:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524080",
+    "name": "PA Am Schöpfwerk",
+    "address": "PA Am Schöpfwerk, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 844,
+    "coordinates": {
+      "lng": 16.32526181,
+      "lat": 48.16160069
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524081",
+    "name": "PA Altmannsdorfer Anger",
+    "address": "PA Altmannsdorfer Anger, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 1776,
+    "coordinates": {
+      "lng": 16.30406695,
+      "lat": 48.16391669
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524082",
+    "name": "PA Zehngrafweg",
+    "address": "PA Zehngrafweg, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 3887,
+    "coordinates": {
+      "lng": 16.44983919,
+      "lat": 48.15591451
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524083",
+    "name": "Carsonypark",
+    "address": "Carsonypark, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 4965,
+    "coordinates": {
+      "lng": 16.41868604,
+      "lat": 48.16653577
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524084",
+    "name": "PA Paul-Heyse-Gasse",
+    "address": "PA Paul-Heyse-Gasse, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 3236,
+    "coordinates": {
+      "lng": 16.4703139,
+      "lat": 48.15003429
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524085",
+    "name": "PA Simoningplatz",
+    "address": "PA Simoningplatz, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 878,
+    "coordinates": {
+      "lng": 16.42085929,
+      "lat": 48.17945957
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524086",
+    "name": "PA Seeschlachtweg",
+    "address": "PA Seeschlachtweg, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 3256,
+    "coordinates": {
+      "lng": 16.42702145,
+      "lat": 48.17035279
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524087",
+    "name": "PA Herretweg",
+    "address": "PA Herretweg, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 2598,
+    "coordinates": {
+      "lng": 16.45552627,
+      "lat": 48.15587641
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524088",
+    "name": "PA Muhrhoferweg",
+    "address": "PA Muhrhoferweg, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 7157,
+    "coordinates": {
+      "lng": 16.47201518,
+      "lat": 48.15713674
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524089",
+    "name": "PA Mautner-Markhof-Gasse",
+    "address": "PA Mautner-Markhof-Gasse, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 12248,
+    "coordinates": {
+      "lng": 16.42275655,
+      "lat": 48.17762384
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524090",
+    "name": "Hofgartel",
+    "address": "Hofgartel, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 19604,
+    "coordinates": {
+      "lng": 16.46264043,
+      "lat": 48.15630075
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "6:00-20:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524091",
+    "name": "PA Krötzlergasse",
+    "address": "PA Krötzlergasse, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 924,
+    "coordinates": {
+      "lng": 16.41940114,
+      "lat": 48.17383498
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524092",
+    "name": "Hyblerpark",
+    "address": "Hyblerpark, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 27361,
+    "coordinates": {
+      "lng": 16.41198756,
+      "lat": 48.18158381
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Hundezone:06:00-20:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524093",
+    "name": "PA Kobelgasse (Historischer Friedhof)",
+    "address": "PA Kobelgasse (Historischer Friedhof), 11. Bezirk, Wien",
+    "district": 11,
+    "area": 1057,
+    "coordinates": {
+      "lng": 16.42283679,
+      "lat": 48.16942107
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524094",
+    "name": "PA Haugerstraße",
+    "address": "PA Haugerstraße, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 4751,
+    "coordinates": {
+      "lng": 16.41847595,
+      "lat": 48.16895916
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig:06:00-20:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524095",
+    "name": "Hans-Paulas-Park",
+    "address": "Hans-Paulas-Park, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 10199,
+    "coordinates": {
+      "lng": 16.47158521,
+      "lat": 48.16005186
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524096",
+    "name": "PA Küniglberg",
+    "address": "PA Küniglberg, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 104139,
+    "coordinates": {
+      "lng": 16.28940902,
+      "lat": 48.18097518
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524097",
+    "name": "Dingelstedtpark",
+    "address": "Dingelstedtpark, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 456,
+    "coordinates": {
+      "lng": 16.33498462,
+      "lat": 48.1915596
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524098",
+    "name": "GA Eipeldauer Straße",
+    "address": "GA Eipeldauer Straße, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 1066,
+    "coordinates": {
+      "lng": 16.44392244,
+      "lat": 48.25436023
+    },
+    "amenities": [
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524099",
+    "name": "GA Lili-Grün-Platz",
+    "address": "GA Lili-Grün-Platz, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 603,
+    "coordinates": {
+      "lng": 16.38113625,
+      "lat": 48.22285204
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524100",
+    "name": "Else-Feldmann-Park",
+    "address": "Else-Feldmann-Park, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 3438,
+    "coordinates": {
+      "lng": 16.38588998,
+      "lat": 48.22516717
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "6:00-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524101",
+    "name": "PA Starkfriedgasse",
+    "address": "PA Starkfriedgasse, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 2206,
+    "coordinates": {
+      "lng": 16.31094537,
+      "lat": 48.24386515
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524102",
+    "name": "GA Breitenleer Straße",
+    "address": "GA Breitenleer Straße, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 1736,
+    "coordinates": {
+      "lng": 16.49894725,
+      "lat": 48.25133034
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524103",
+    "name": "Leon-Zelman-Park",
+    "address": "Leon-Zelman-Park, 3. Bezirk, Wien",
+    "district": 3,
+    "area": 12207,
+    "coordinates": {
+      "lng": 16.39178295,
+      "lat": 48.19170112
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524104",
+    "name": "PA Dreihausgasse",
+    "address": "PA Dreihausgasse, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 1346,
+    "coordinates": {
+      "lng": 16.32582937,
+      "lat": 48.18708873
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "6:30-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524105",
+    "name": "Dadlerpark",
+    "address": "Dadlerpark, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 9708,
+    "coordinates": {
+      "lng": 16.32920667,
+      "lat": 48.19018427
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig+Hundezone: 6:00-22:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524106",
+    "name": "Braunhirschenpark",
+    "address": "Braunhirschenpark, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 4558,
+    "coordinates": {
+      "lng": 16.32568521,
+      "lat": 48.18860694
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig: Nov-März: 7:00-19:00, Apr-Okt: 7:00-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524107",
+    "name": "PA Ortliebgasse",
+    "address": "PA Ortliebgasse, 17. Bezirk, Wien",
+    "district": 17,
+    "area": 4485,
+    "coordinates": {
+      "lng": 16.33075426,
+      "lat": 48.21756328
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "7:00-19:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524108",
+    "name": "Moriz-Mayer-Park",
+    "address": "Moriz-Mayer-Park, 17. Bezirk, Wien",
+    "district": 17,
+    "area": 2661,
+    "coordinates": {
+      "lng": 16.31212235,
+      "lat": 48.23102893
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524109",
+    "name": "Lorenz-Bayer-Park",
+    "address": "Lorenz-Bayer-Park, 17. Bezirk, Wien",
+    "district": 17,
+    "area": 7360,
+    "coordinates": {
+      "lng": 16.32595272,
+      "lat": 48.21480922
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "6:00-22:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524110",
+    "name": "Josef-Kaderka-Park",
+    "address": "Josef-Kaderka-Park, 17. Bezirk, Wien",
+    "district": 17,
+    "area": 5335,
+    "coordinates": {
+      "lng": 16.30362312,
+      "lat": 48.22920939
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524111",
+    "name": "PA Dr.-Josef-Resch-Platz",
+    "address": "PA Dr.-Josef-Resch-Platz, 17. Bezirk, Wien",
+    "district": 17,
+    "area": 1127,
+    "coordinates": {
+      "lng": 16.31438641,
+      "lat": 48.22503662
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524112",
+    "name": "Clemens-Krauss-Park",
+    "address": "Clemens-Krauss-Park, 17. Bezirk, Wien",
+    "district": 17,
+    "area": 4695,
+    "coordinates": {
+      "lng": 16.32118558,
+      "lat": 48.22426303
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524113",
+    "name": "PA Clemens-Hofbauer-Platz",
+    "address": "PA Clemens-Hofbauer-Platz, 17. Bezirk, Wien",
+    "district": 17,
+    "area": 4994,
+    "coordinates": {
+      "lng": 16.3220825,
+      "lat": 48.21858399
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524114",
+    "name": "PA Altes AKH",
+    "address": "PA Altes AKH, 9. Bezirk, Wien",
+    "district": 9,
+    "area": 11887,
+    "coordinates": {
+      "lng": 16.35227092,
+      "lat": 48.21563418
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524115",
+    "name": "Ölzeltpark",
+    "address": "Ölzeltpark, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 10789,
+    "coordinates": {
+      "lng": 16.267577,
+      "lat": 48.14952546
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524116",
+    "name": "PA Wilhelm-Erben-Gasse",
+    "address": "PA Wilhelm-Erben-Gasse, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 24759,
+    "coordinates": {
+      "lng": 16.32606851,
+      "lat": 48.15645211
+    },
+    "amenities": [
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524117",
+    "name": "Prater - Forstwiesen-Süd",
+    "address": "Prater - Forstwiesen-Süd, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 38846,
+    "coordinates": {
+      "lng": 16.41404394,
+      "lat": 48.20121652
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524118",
+    "name": "PA Tullnertalgasse",
+    "address": "PA Tullnertalgasse, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 10360,
+    "coordinates": {
+      "lng": 16.28997444,
+      "lat": 48.15435251
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524119",
+    "name": "PA Theophil-Hansen-Gasse",
+    "address": "PA Theophil-Hansen-Gasse, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 7440,
+    "coordinates": {
+      "lng": 16.27809523,
+      "lat": 48.1396587
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524120",
+    "name": "PA Steinergasse",
+    "address": "PA Steinergasse, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 7495,
+    "coordinates": {
+      "lng": 16.28830573,
+      "lat": 48.1407099
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524121",
+    "name": "Maurer Schubertpark",
+    "address": "Maurer Schubertpark, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 440,
+    "coordinates": {
+      "lng": 16.25961805,
+      "lat": 48.15000582
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524122",
+    "name": "Inzersdorfer Schubertpark",
+    "address": "Inzersdorfer Schubertpark, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 3596,
+    "coordinates": {
+      "lng": 16.33318619,
+      "lat": 48.14994414
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524123",
+    "name": "PA Meisgeyergasse",
+    "address": "PA Meisgeyergasse, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 3006,
+    "coordinates": {
+      "lng": 16.29699908,
+      "lat": 48.14434001
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524124",
+    "name": "Hedy-Wunsch-Park",
+    "address": "Hedy-Wunsch-Park, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 9127,
+    "coordinates": {
+      "lng": 16.31796794,
+      "lat": 48.14840897
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524125",
+    "name": "PA Panoramaweg",
+    "address": "PA Panoramaweg, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 5099,
+    "coordinates": {
+      "lng": 16.41447139,
+      "lat": 48.18274099
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524126",
+    "name": "PA Rodauner Kirchenplatz",
+    "address": "PA Rodauner Kirchenplatz, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 2623,
+    "coordinates": {
+      "lng": 16.25595724,
+      "lat": 48.13260471
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524127",
+    "name": "PA Papiergasse",
+    "address": "PA Papiergasse, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 662,
+    "coordinates": {
+      "lng": 16.32109307,
+      "lat": 48.15187468
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524128",
+    "name": "PA Neilreichgasse",
+    "address": "PA Neilreichgasse, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 1051,
+    "coordinates": {
+      "lng": 16.35406896,
+      "lat": 48.14817611
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524129",
+    "name": "PA Mühlbreiten",
+    "address": "PA Mühlbreiten, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 19516,
+    "coordinates": {
+      "lng": 16.3087284,
+      "lat": 48.15111573
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524130",
+    "name": "Michael-Bausback-Park",
+    "address": "Michael-Bausback-Park, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 4822,
+    "coordinates": {
+      "lng": 16.30917689,
+      "lat": 48.14820741
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524131",
+    "name": "PA Geßlgasse",
+    "address": "PA Geßlgasse, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 547,
+    "coordinates": {
+      "lng": 16.26856199,
+      "lat": 48.15036194
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524132",
+    "name": "PA Ludwig-Kirschner-Gasse",
+    "address": "PA Ludwig-Kirschner-Gasse, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 1233,
+    "coordinates": {
+      "lng": 16.29228358,
+      "lat": 48.15225832
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524133",
+    "name": "PA Kalksburg",
+    "address": "PA Kalksburg, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 2253,
+    "coordinates": {
+      "lng": 16.24634109,
+      "lat": 48.13781802
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524134",
+    "name": "GA Bennoplatz",
+    "address": "GA Bennoplatz, 8. Bezirk, Wien",
+    "district": 8,
+    "area": 1418,
+    "coordinates": {
+      "lng": 16.34252382,
+      "lat": 48.21217133
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig+Spielplatz: Okt-März:08:00-19:30, Apr-Sep:08:00-20:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524170",
+    "name": "PA Rupertusplatz",
+    "address": "PA Rupertusplatz, 17. Bezirk, Wien",
+    "district": 17,
+    "area": 1716,
+    "coordinates": {
+      "lng": 16.29848258,
+      "lat": 48.2294648
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524171",
+    "name": "PA Schluckergasse",
+    "address": "PA Schluckergasse, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 12235,
+    "coordinates": {
+      "lng": 16.29054611,
+      "lat": 48.15895668
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524172",
+    "name": "Friedrich-Gulda-Park",
+    "address": "Friedrich-Gulda-Park, 3. Bezirk, Wien",
+    "district": 3,
+    "area": 1074,
+    "coordinates": {
+      "lng": 16.3889506,
+      "lat": 48.20248684
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "6:00-21:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524173",
+    "name": "Jakob-Rosenfeld-Park",
+    "address": "Jakob-Rosenfeld-Park, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 1891,
+    "coordinates": {
+      "lng": 16.44162981,
+      "lat": 48.24524172
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524174",
+    "name": "PA Altmannsdorfer Straße",
+    "address": "PA Altmannsdorfer Straße, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 2186,
+    "coordinates": {
+      "lng": 16.3195156,
+      "lat": 48.15732417
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524175",
+    "name": "PA Am Leberberg",
+    "address": "PA Am Leberberg, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 26980,
+    "coordinates": {
+      "lng": 16.46091344,
+      "lat": 48.15352615
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524176",
+    "name": "PA Fuchsröhrenstraße",
+    "address": "PA Fuchsröhrenstraße, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 928,
+    "coordinates": {
+      "lng": 16.41543323,
+      "lat": 48.18098338
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524177",
+    "name": "PA Blériotgasse",
+    "address": "PA Blériotgasse, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 17172,
+    "coordinates": {
+      "lng": 16.42990192,
+      "lat": 48.16877791
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Hundezone:06:00-20:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524178",
+    "name": "Piratenspielplatz",
+    "address": "Piratenspielplatz, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 3931,
+    "coordinates": {
+      "lng": 16.40804571,
+      "lat": 48.13496102
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Spielplatz"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524179",
+    "name": "PA Olaus-Petri-Gasse",
+    "address": "PA Olaus-Petri-Gasse, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 6212,
+    "coordinates": {
+      "lng": 16.38197791,
+      "lat": 48.14868005
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524180",
+    "name": "PA Ober-Laaer Platz",
+    "address": "PA Ober-Laaer Platz, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 2476,
+    "coordinates": {
+      "lng": 16.40395349,
+      "lat": 48.13795008
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524181",
+    "name": "PA Kurt-Tichy-Gasse",
+    "address": "PA Kurt-Tichy-Gasse, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 3540,
+    "coordinates": {
+      "lng": 16.39032464,
+      "lat": 48.14251218
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524182",
+    "name": "PA Untere Kaistraße",
+    "address": "PA Untere Kaistraße, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 693,
+    "coordinates": {
+      "lng": 16.39939199,
+      "lat": 48.13676939
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524183",
+    "name": "Barankapark-Hellerwiese",
+    "address": "Barankapark-Hellerwiese, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 5130,
+    "coordinates": {
+      "lng": 16.3608975,
+      "lat": 48.17459805
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "06:00-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524184",
+    "name": "PA Alma-Rose-Gasse",
+    "address": "PA Alma-Rose-Gasse, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 1499,
+    "coordinates": {
+      "lng": 16.39245054,
+      "lat": 48.14655629
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524185",
+    "name": "Viktor-Frankl-Park",
+    "address": "Viktor-Frankl-Park, 9. Bezirk, Wien",
+    "district": 9,
+    "area": 3428,
+    "coordinates": {
+      "lng": 16.348927,
+      "lat": 48.21662686
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "7:00-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524186",
+    "name": "PA Hochsatzengasse",
+    "address": "PA Hochsatzengasse, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 3673,
+    "coordinates": {
+      "lng": 16.27375577,
+      "lat": 48.19381914
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524187",
+    "name": "PA Antaeusgasse",
+    "address": "PA Antaeusgasse, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 846,
+    "coordinates": {
+      "lng": 16.2827906,
+      "lat": 48.20565632
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524188",
+    "name": "PA Sommerergasse",
+    "address": "PA Sommerergasse, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 1122,
+    "coordinates": {
+      "lng": 16.26976622,
+      "lat": 48.18908437
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524189",
+    "name": "Katharina-Schratt-Park",
+    "address": "Katharina-Schratt-Park, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 1765,
+    "coordinates": {
+      "lng": 16.29627652,
+      "lat": 48.18141031
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524190",
+    "name": "PA Jenbachgasse",
+    "address": "PA Jenbachgasse, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 1024,
+    "coordinates": {
+      "lng": 16.26540342,
+      "lat": 48.16695044
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524191",
+    "name": "Helene-Druskowitz-Park",
+    "address": "Helene-Druskowitz-Park, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 1042,
+    "coordinates": {
+      "lng": 16.27969823,
+      "lat": 48.16923076
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524192",
+    "name": "Franz-Schmidt-Park",
+    "address": "Franz-Schmidt-Park, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 3191,
+    "coordinates": {
+      "lng": 16.26136062,
+      "lat": 48.18252852
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524193",
+    "name": "Prater - Forstwiesen-Nord",
+    "address": "Prater - Forstwiesen-Nord, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 43241,
+    "coordinates": {
+      "lng": 16.40789903,
+      "lat": 48.20189517
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524194",
+    "name": "Prater - Wasserwiese",
+    "address": "Prater - Wasserwiese, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 94692,
+    "coordinates": {
+      "lng": 16.41882218,
+      "lat": 48.19878154
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524195",
+    "name": "Prater - Golfwiese",
+    "address": "Prater - Golfwiese, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 82121,
+    "coordinates": {
+      "lng": 16.42580715,
+      "lat": 48.20123395
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524196",
+    "name": "Baumgartner-Casino-Park",
+    "address": "Baumgartner-Casino-Park, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 19004,
+    "coordinates": {
+      "lng": 16.27530634,
+      "lat": 48.19661703
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524197",
+    "name": "Prater - Grafenwiese",
+    "address": "Prater - Grafenwiese, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 171720,
+    "coordinates": {
+      "lng": 16.43987442,
+      "lat": 48.19569084
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524198",
+    "name": "Prater - Rennbahnstraßenwiese",
+    "address": "Prater - Rennbahnstraßenwiese, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 5128,
+    "coordinates": {
+      "lng": 16.43904054,
+      "lat": 48.19173878
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524199",
+    "name": "PA Feuerhalle Simmering",
+    "address": "PA Feuerhalle Simmering, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 4149,
+    "coordinates": {
+      "lng": 16.44189709,
+      "lat": 48.15639614
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524200",
+    "name": "PA Kobingergasse",
+    "address": "PA Kobingergasse, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 532,
+    "coordinates": {
+      "lng": 16.33688002,
+      "lat": 48.18606523
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "00:00-24:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524201",
+    "name": "Arkadenhof Rathaus",
+    "address": "Arkadenhof Rathaus, 1. Bezirk, Wien",
+    "district": 1,
+    "area": 260,
+    "coordinates": {
+      "lng": 16.35709301,
+      "lat": 48.21087444
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "00:00-24:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524169",
+    "name": "PA Lorettoplatz",
+    "address": "PA Lorettoplatz, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 417,
+    "coordinates": {
+      "lng": 16.38567393,
+      "lat": 48.26979058
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524202",
+    "name": "Prater - Jesuitenwiese",
+    "address": "Prater - Jesuitenwiese, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 214030,
+    "coordinates": {
+      "lng": 16.4074134,
+      "lat": 48.20427668
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524203",
+    "name": "Margit-Czernetz-Promenade",
+    "address": "Margit-Czernetz-Promenade, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 6616,
+    "coordinates": {
+      "lng": 16.36862429,
+      "lat": 48.22235783
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524204",
+    "name": "Prater - Zirkuswiese",
+    "address": "Prater - Zirkuswiese, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 30337,
+    "coordinates": {
+      "lng": 16.40069369,
+      "lat": 48.21200779
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524205",
+    "name": "Wehlistraße/Ostbahn",
+    "address": "Wehlistraße/Ostbahn, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 4447,
+    "coordinates": {
+      "lng": 16.43977932,
+      "lat": 48.20018051
+    },
+    "amenities": [
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524206",
+    "name": "Prater - Avenue",
+    "address": "Prater - Avenue, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 83323,
+    "coordinates": {
+      "lng": 16.40690305,
+      "lat": 48.21196933
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524207",
+    "name": "Prater - Meiereiwiese",
+    "address": "Prater - Meiereiwiese, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 14016,
+    "coordinates": {
+      "lng": 16.40110913,
+      "lat": 48.21328663
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524208",
+    "name": "PA Flammweg",
+    "address": "PA Flammweg, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 7179,
+    "coordinates": {
+      "lng": 16.46997939,
+      "lat": 48.15432376
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524209",
+    "name": "Trpinpark",
+    "address": "Trpinpark, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 3447,
+    "coordinates": {
+      "lng": 16.46836744,
+      "lat": 48.15985029
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524210",
+    "name": "Franz-Schimon-Park",
+    "address": "Franz-Schimon-Park, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 13363,
+    "coordinates": {
+      "lng": 16.25921238,
+      "lat": 48.19659279
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524211",
+    "name": "PA Erzbischofgasse",
+    "address": "PA Erzbischofgasse, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 491,
+    "coordinates": {
+      "lng": 16.26566675,
+      "lat": 48.18780023
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524212",
+    "name": "Coudenhove-Park",
+    "address": "Coudenhove-Park, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 7730,
+    "coordinates": {
+      "lng": 16.30946936,
+      "lat": 48.18734545
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524213",
+    "name": "Kinderspielplatz Fasangarten",
+    "address": "Kinderspielplatz Fasangarten, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 1984,
+    "coordinates": {
+      "lng": 16.28765408,
+      "lat": 48.17522606
+    },
+    "amenities": [
+      "Grünfläche",
+      "Spielplatz"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524214",
+    "name": "PA Lichtensterngasse",
+    "address": "PA Lichtensterngasse, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 11490,
+    "coordinates": {
+      "lng": 16.32665776,
+      "lat": 48.15710798
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524215",
+    "name": "Theresienbadpark",
+    "address": "Theresienbadpark, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 5804,
+    "coordinates": {
+      "lng": 16.3277454,
+      "lat": 48.18233996
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524216",
+    "name": "PA Steinweisweg",
+    "address": "PA Steinweisweg, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 5612,
+    "coordinates": {
+      "lng": 16.31670817,
+      "lat": 48.17859547
+    },
+    "amenities": [
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524217",
+    "name": "PA Steinhagegasse",
+    "address": "PA Steinhagegasse, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 3846,
+    "coordinates": {
+      "lng": 16.34029063,
+      "lat": 48.18553552
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Okt-März:06:00-21:00, Apr-Sep:06:00-21:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524218",
+    "name": "Steinbauerpark",
+    "address": "Steinbauerpark, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 11336,
+    "coordinates": {
+      "lng": 16.33997098,
+      "lat": 48.18139445
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "HuZo: Wint6:00-21:30|Somm6:00-22:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524219",
+    "name": "Grete-Salzer-Park",
+    "address": "Grete-Salzer-Park, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 2984,
+    "coordinates": {
+      "lng": 16.33255821,
+      "lat": 48.17623312
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Okt-März:06:00-21:00, Apr-Sep:06:00-21:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524220",
+    "name": "PA Strohberggasse",
+    "address": "PA Strohberggasse, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 2333,
+    "coordinates": {
+      "lng": 16.31136757,
+      "lat": 48.16882913
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524221",
+    "name": "Franz-Nekula-Park",
+    "address": "Franz-Nekula-Park, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 6787,
+    "coordinates": {
+      "lng": 16.33093523,
+      "lat": 48.17338495
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524222",
+    "name": "PA Rotenmühlgasse",
+    "address": "PA Rotenmühlgasse, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 541,
+    "coordinates": {
+      "lng": 16.32248083,
+      "lat": 48.1773045
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524223",
+    "name": "PA Münchenstraße",
+    "address": "PA Münchenstraße, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 963,
+    "coordinates": {
+      "lng": 16.29706683,
+      "lat": 48.16933795
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524224",
+    "name": "PA Helene-Potetz-Weg",
+    "address": "PA Helene-Potetz-Weg, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 451,
+    "coordinates": {
+      "lng": 16.32510585,
+      "lat": 48.16499519
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524225",
+    "name": "PA Hedy-Lamarr-Weg",
+    "address": "PA Hedy-Lamarr-Weg, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 1017,
+    "coordinates": {
+      "lng": 16.32572816,
+      "lat": 48.16651699
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524226",
+    "name": "Hermann-Leopoldi-Park",
+    "address": "Hermann-Leopoldi-Park, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 6067,
+    "coordinates": {
+      "lng": 16.3332723,
+      "lat": 48.18158247
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Okt-März:06:00-21:00, Apr-Sep:06:00-21:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524227",
+    "name": "PA Adolf-Lorenz-Gasse",
+    "address": "PA Adolf-Lorenz-Gasse, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 1527,
+    "coordinates": {
+      "lng": 16.29363798,
+      "lat": 48.17794716
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524228",
+    "name": "Linsepark",
+    "address": "Linsepark, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 5574,
+    "coordinates": {
+      "lng": 16.33709449,
+      "lat": 48.18676656
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524229",
+    "name": "Streckerpark",
+    "address": "Streckerpark, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 5572,
+    "coordinates": {
+      "lng": 16.27160963,
+      "lat": 48.19026318
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524230",
+    "name": "PA Sillerplatz",
+    "address": "PA Sillerplatz, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 2709,
+    "coordinates": {
+      "lng": 16.27617392,
+      "lat": 48.16042987
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524231",
+    "name": "PA Roter Berg",
+    "address": "PA Roter Berg, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 134338,
+    "coordinates": {
+      "lng": 16.27230429,
+      "lat": 48.18191939
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524232",
+    "name": "Hugo-Pepper-Park",
+    "address": "Hugo-Pepper-Park, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 5484,
+    "coordinates": {
+      "lng": 16.27323163,
+      "lat": 48.17621138
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524233",
+    "name": "PA Gemeindeberggasse",
+    "address": "PA Gemeindeberggasse, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 5142,
+    "coordinates": {
+      "lng": 16.26436431,
+      "lat": 48.17753684
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524234",
+    "name": "Napoleonwald",
+    "address": "Napoleonwald, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 31793,
+    "coordinates": {
+      "lng": 16.26845617,
+      "lat": 48.16097216
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524235",
+    "name": "Maxingpark",
+    "address": "Maxingpark, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 26072,
+    "coordinates": {
+      "lng": 16.30069597,
+      "lat": 48.17777627
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524236",
+    "name": "Max-Mell-Park",
+    "address": "Max-Mell-Park, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 1454,
+    "coordinates": {
+      "lng": 16.25742642,
+      "lat": 48.19427221
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524237",
+    "name": "PA Fred-Liewehr-Gasse",
+    "address": "PA Fred-Liewehr-Gasse, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 2138,
+    "coordinates": {
+      "lng": 16.29195048,
+      "lat": 48.16351734
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524238",
+    "name": "Lainzerbachwiese",
+    "address": "Lainzerbachwiese, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 20269,
+    "coordinates": {
+      "lng": 16.26088472,
+      "lat": 48.16554295
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524239",
+    "name": "PA Lainzerbachstraße",
+    "address": "PA Lainzerbachstraße, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 4486,
+    "coordinates": {
+      "lng": 16.27116233,
+      "lat": 48.16625951
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524240",
+    "name": "PA Josef-Kraft-Weg",
+    "address": "PA Josef-Kraft-Weg, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 6097,
+    "coordinates": {
+      "lng": 16.26359615,
+      "lat": 48.17918246
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524241",
+    "name": "PA Hofjägerstraße",
+    "address": "PA Hofjägerstraße, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 2875,
+    "coordinates": {
+      "lng": 16.2148654,
+      "lat": 48.20518653
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524242",
+    "name": "PA Hochmaisgasse",
+    "address": "PA Hochmaisgasse, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 1736,
+    "coordinates": {
+      "lng": 16.28057492,
+      "lat": 48.16737253
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524243",
+    "name": "PA Himmelbaurgasse",
+    "address": "PA Himmelbaurgasse, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 5050,
+    "coordinates": {
+      "lng": 16.28821102,
+      "lat": 48.17291492
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524244",
+    "name": "PA Hermesstraße",
+    "address": "PA Hermesstraße, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 12515,
+    "coordinates": {
+      "lng": 16.26553574,
+      "lat": 48.16673196
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524245",
+    "name": "Hans-Moser-Park",
+    "address": "Hans-Moser-Park, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 1142,
+    "coordinates": {
+      "lng": 16.30187466,
+      "lat": 48.18788837
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524246",
+    "name": "Gustav-Zelibor-Park",
+    "address": "Gustav-Zelibor-Park, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 1527,
+    "coordinates": {
+      "lng": 16.29724617,
+      "lat": 48.17559373
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524247",
+    "name": "PA Grünbergstraße",
+    "address": "PA Grünbergstraße, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 5685,
+    "coordinates": {
+      "lng": 16.31563389,
+      "lat": 48.17805602
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524248",
+    "name": "Anna-Freud-Park",
+    "address": "Anna-Freud-Park, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 10395,
+    "coordinates": {
+      "lng": 16.27418715,
+      "lat": 48.16461583
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524249",
+    "name": "PA Furtwänglerplatz",
+    "address": "PA Furtwänglerplatz, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 6169,
+    "coordinates": {
+      "lng": 16.28780353,
+      "lat": 48.16776069
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524250",
+    "name": "Auer-Welsbach-Park",
+    "address": "Auer-Welsbach-Park, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 110517,
+    "coordinates": {
+      "lng": 16.31649004,
+      "lat": 48.18860184
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524251",
+    "name": "PA Schöffelplatz",
+    "address": "PA Schöffelplatz, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 3760,
+    "coordinates": {
+      "lng": 16.22767762,
+      "lat": 48.21682007
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524252",
+    "name": "Reinlpark",
+    "address": "Reinlpark, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 3144,
+    "coordinates": {
+      "lng": 16.31136798,
+      "lat": 48.19598288
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524253",
+    "name": "Ordeltpark",
+    "address": "Ordeltpark, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 5042,
+    "coordinates": {
+      "lng": 16.30733665,
+      "lat": 48.20113145
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524254",
+    "name": "PA Molischgasse",
+    "address": "PA Molischgasse, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 1685,
+    "coordinates": {
+      "lng": 16.27306199,
+      "lat": 48.19808558
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524255",
+    "name": "Ludwig-Zatzka-Park",
+    "address": "Ludwig-Zatzka-Park, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 5422,
+    "coordinates": {
+      "lng": 16.30599324,
+      "lat": 48.19809115
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524256",
+    "name": "PA Linzer Straße",
+    "address": "PA Linzer Straße, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 3240,
+    "coordinates": {
+      "lng": 16.2412374,
+      "lat": 48.20392296
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524257",
+    "name": "PA Wolfersberg",
+    "address": "PA Wolfersberg, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 62551,
+    "coordinates": {
+      "lng": 16.24708844,
+      "lat": 48.21040818
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524258",
+    "name": "Karl-Terkal-Park",
+    "address": "Karl-Terkal-Park, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 989,
+    "coordinates": {
+      "lng": 16.25611353,
+      "lat": 48.20250074
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524259",
+    "name": "PA Karl-Bekehrty-Straße",
+    "address": "PA Karl-Bekehrty-Straße, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 5643,
+    "coordinates": {
+      "lng": 16.24729723,
+      "lat": 48.22101954
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524260",
+    "name": "PA Josef-Palme-Platz",
+    "address": "PA Josef-Palme-Platz, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 708,
+    "coordinates": {
+      "lng": 16.21307756,
+      "lat": 48.20908851
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524261",
+    "name": "Hadikpark",
+    "address": "Hadikpark, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 20463,
+    "coordinates": {
+      "lng": 16.30883102,
+      "lat": 48.18785226
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524262",
+    "name": "PA Friedrichsplatz",
+    "address": "PA Friedrichsplatz, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 987,
+    "coordinates": {
+      "lng": 16.3332046,
+      "lat": 48.19442248
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524263",
+    "name": "Forschneritschpark",
+    "address": "Forschneritschpark, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 4899,
+    "coordinates": {
+      "lng": 16.31904054,
+      "lat": 48.19663784
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524264",
+    "name": "Ernestine-Diwisch-Park",
+    "address": "Ernestine-Diwisch-Park, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 1623,
+    "coordinates": {
+      "lng": 16.32688133,
+      "lat": 48.18975845
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524265",
+    "name": "Forsthauspark",
+    "address": "Forsthauspark, 20. Bezirk, Wien",
+    "district": 20,
+    "area": 12891,
+    "coordinates": {
+      "lng": 16.37423306,
+      "lat": 48.24411809
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524266",
+    "name": "PA Durchlaufstraße",
+    "address": "PA Durchlaufstraße, 20. Bezirk, Wien",
+    "district": 20,
+    "area": 844,
+    "coordinates": {
+      "lng": 16.38188414,
+      "lat": 48.2396865
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "6:30-20:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524267",
+    "name": "PA Kürschnergasse",
+    "address": "PA Kürschnergasse, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 4530,
+    "coordinates": {
+      "lng": 16.4460512,
+      "lat": 48.27505896
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524268",
+    "name": "Waldpark Koloniestraße",
+    "address": "Waldpark Koloniestraße, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 11238,
+    "coordinates": {
+      "lng": 16.4000809,
+      "lat": 48.27376439
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524269",
+    "name": "Karl-Brunner-Park",
+    "address": "Karl-Brunner-Park, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 1605,
+    "coordinates": {
+      "lng": 16.41122728,
+      "lat": 48.3026282
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524270",
+    "name": "Joseph-Samuel-Bloch-Park",
+    "address": "Joseph-Samuel-Bloch-Park, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 2819,
+    "coordinates": {
+      "lng": 16.40744271,
+      "lat": 48.2552933
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524271",
+    "name": "PA Walter-Schwarzacher-Gasse",
+    "address": "PA Walter-Schwarzacher-Gasse, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 2754,
+    "coordinates": {
+      "lng": 16.44081441,
+      "lat": 48.27141646
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524272",
+    "name": "PA Jerusalemgasse",
+    "address": "PA Jerusalemgasse, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 4094,
+    "coordinates": {
+      "lng": 16.43976232,
+      "lat": 48.27244574
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524273",
+    "name": "Hans-Hirsch-Park",
+    "address": "Hans-Hirsch-Park, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 11367,
+    "coordinates": {
+      "lng": 16.4224368,
+      "lat": 48.25899169
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524274",
+    "name": "PA Haberditzlgasse",
+    "address": "PA Haberditzlgasse, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 1348,
+    "coordinates": {
+      "lng": 16.45192402,
+      "lat": 48.27029317
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524275",
+    "name": "Grete-und-Otto-Ascher-Park",
+    "address": "Grete-und-Otto-Ascher-Park, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 1472,
+    "coordinates": {
+      "lng": 16.38896755,
+      "lat": 48.26044311
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524276",
+    "name": "PA Gerlosplatz",
+    "address": "PA Gerlosplatz, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 6372,
+    "coordinates": {
+      "lng": 16.45869175,
+      "lat": 48.28148832
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524277",
+    "name": "Franz-Polly-Park",
+    "address": "Franz-Polly-Park, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 4855,
+    "coordinates": {
+      "lng": 16.38893044,
+      "lat": 48.26670355
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524278",
+    "name": "Floridsdorfer Aupark",
+    "address": "Floridsdorfer Aupark, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 51679,
+    "coordinates": {
+      "lng": 16.38921821,
+      "lat": 48.25644423
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524279",
+    "name": "PA Edisonstraße",
+    "address": "PA Edisonstraße, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 2411,
+    "coordinates": {
+      "lng": 16.38998436,
+      "lat": 48.26317277
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524280",
+    "name": "PA Breitenleer Straße",
+    "address": "PA Breitenleer Straße, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 1740,
+    "coordinates": {
+      "lng": 16.53170271,
+      "lat": 48.24945945
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524281",
+    "name": "Bill-Grah-Park",
+    "address": "Bill-Grah-Park, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 3616,
+    "coordinates": {
+      "lng": 16.52571669,
+      "lat": 48.21457569
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524282",
+    "name": "PA Bernoullistraße",
+    "address": "PA Bernoullistraße, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 3048,
+    "coordinates": {
+      "lng": 16.44120448,
+      "lat": 48.24092702
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524283",
+    "name": "Teich Hirschstetten",
+    "address": "Teich Hirschstetten, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 215206,
+    "coordinates": {
+      "lng": 16.47875801,
+      "lat": 48.24389957
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524284",
+    "name": "Astrid-Lindgren-Park",
+    "address": "Astrid-Lindgren-Park, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 6386,
+    "coordinates": {
+      "lng": 16.48251391,
+      "lat": 48.21724249
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524285",
+    "name": "PA An den alten Schanzen",
+    "address": "PA An den alten Schanzen, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 5297,
+    "coordinates": {
+      "lng": 16.49088097,
+      "lat": 48.225604
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524286",
+    "name": "PA Am Müllnermais",
+    "address": "PA Am Müllnermais, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 3502,
+    "coordinates": {
+      "lng": 16.47571672,
+      "lat": 48.21251607
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524287",
+    "name": "Stadlauer Bahnhofspark",
+    "address": "Stadlauer Bahnhofspark, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 2594,
+    "coordinates": {
+      "lng": 16.45141417,
+      "lat": 48.22397452
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524288",
+    "name": "PA Seyringer Straße",
+    "address": "PA Seyringer Straße, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 4737,
+    "coordinates": {
+      "lng": 16.45522953,
+      "lat": 48.26799933
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524289",
+    "name": "PA Trillergasse",
+    "address": "PA Trillergasse, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 10845,
+    "coordinates": {
+      "lng": 16.40164349,
+      "lat": 48.27452729
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524290",
+    "name": "Tora-San-Park",
+    "address": "Tora-San-Park, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 5785,
+    "coordinates": {
+      "lng": 16.39946067,
+      "lat": 48.25168683
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524291",
+    "name": "Fritz-Jöchlinger-Park",
+    "address": "Fritz-Jöchlinger-Park, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 872,
+    "coordinates": {
+      "lng": 16.447384,
+      "lat": 48.26199089
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524292",
+    "name": "Paul-Hock-Park",
+    "address": "Paul-Hock-Park, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 5264,
+    "coordinates": {
+      "lng": 16.39909541,
+      "lat": 48.2616169
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524293",
+    "name": "PA Else-Feldmann-Promenade",
+    "address": "PA Else-Feldmann-Promenade, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 4817,
+    "coordinates": {
+      "lng": 16.44524971,
+      "lat": 48.2718091
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524294",
+    "name": "PA Wassermanngasse",
+    "address": "PA Wassermanngasse, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 2115,
+    "coordinates": {
+      "lng": 16.44740269,
+      "lat": 48.26831617
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524295",
+    "name": "PA Dopschstraße",
+    "address": "PA Dopschstraße, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 4836,
+    "coordinates": {
+      "lng": 16.44542618,
+      "lat": 48.26953695
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524296",
+    "name": "PA Möllplatz",
+    "address": "PA Möllplatz, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 8346,
+    "coordinates": {
+      "lng": 16.44793094,
+      "lat": 48.27773747
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524297",
+    "name": "PA Max-Jellinek-Gasse",
+    "address": "PA Max-Jellinek-Gasse, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 2436,
+    "coordinates": {
+      "lng": 16.43675941,
+      "lat": 48.27061486
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524298",
+    "name": "PA Schickgasse",
+    "address": "PA Schickgasse, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 1451,
+    "coordinates": {
+      "lng": 16.45593973,
+      "lat": 48.22179436
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524299",
+    "name": "PA Rosenbergstraße",
+    "address": "PA Rosenbergstraße, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 2433,
+    "coordinates": {
+      "lng": 16.52532641,
+      "lat": 48.21806873
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524300",
+    "name": "PA Reclamgasse",
+    "address": "PA Reclamgasse, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 1273,
+    "coordinates": {
+      "lng": 16.46572585,
+      "lat": 48.22319113
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524301",
+    "name": "PA Friedhof Hirschstetten",
+    "address": "PA Friedhof Hirschstetten, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 6546,
+    "coordinates": {
+      "lng": 16.4686025,
+      "lat": 48.2356986
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524135",
+    "name": "GA Albertplatz",
+    "address": "GA Albertplatz, 8. Bezirk, Wien",
+    "district": 8,
+    "area": 845,
+    "coordinates": {
+      "lng": 16.34398728,
+      "lat": 48.21429343
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524136",
+    "name": "GA Brahmsplatz",
+    "address": "GA Brahmsplatz, 4. Bezirk, Wien",
+    "district": 4,
+    "area": 1049,
+    "coordinates": {
+      "lng": 16.36890825,
+      "lat": 48.19371433
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524137",
+    "name": "GA Rudolf-von-Alt-Platz",
+    "address": "GA Rudolf-von-Alt-Platz, 3. Bezirk, Wien",
+    "district": 3,
+    "area": 571,
+    "coordinates": {
+      "lng": 16.39363669,
+      "lat": 48.20677707
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524138",
+    "name": "GA Ludwig-Koeßler-Platz",
+    "address": "GA Ludwig-Koeßler-Platz, 3. Bezirk, Wien",
+    "district": 3,
+    "area": 410,
+    "coordinates": {
+      "lng": 16.40940732,
+      "lat": 48.19644327
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524139",
+    "name": "PA Feuerwehrspielplatz",
+    "address": "PA Feuerwehrspielplatz, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 9333,
+    "coordinates": {
+      "lng": 16.49216574,
+      "lat": 48.24824248
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Spielplatz"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524140",
+    "name": "Esperantopark",
+    "address": "Esperantopark, 1. Bezirk, Wien",
+    "district": 1,
+    "area": 945,
+    "coordinates": {
+      "lng": 16.36730848,
+      "lat": 48.20067338
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524141",
+    "name": "GA Dr.-Karl-Lueger-Platz",
+    "address": "GA Dr.-Karl-Lueger-Platz, 1. Bezirk, Wien",
+    "district": 1,
+    "area": 1044,
+    "coordinates": {
+      "lng": 16.3801013,
+      "lat": 48.20742149
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524142",
+    "name": "Dorothea-Neff-Park",
+    "address": "Dorothea-Neff-Park, 7. Bezirk, Wien",
+    "district": 7,
+    "area": 769,
+    "coordinates": {
+      "lng": 16.34569617,
+      "lat": 48.20060636
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524143",
+    "name": "Schütte-Lihotzky-Park",
+    "address": "Schütte-Lihotzky-Park, 5. Bezirk, Wien",
+    "district": 5,
+    "area": 3440,
+    "coordinates": {
+      "lng": 16.36116767,
+      "lat": 48.18991166
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "6:15-21:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524144",
+    "name": "Florianipark",
+    "address": "Florianipark, 8. Bezirk, Wien",
+    "district": 8,
+    "area": 743,
+    "coordinates": {
+      "lng": 16.35538575,
+      "lat": 48.21188513
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524145",
+    "name": "GA Kugelmannplatz",
+    "address": "GA Kugelmannplatz, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 615,
+    "coordinates": {
+      "lng": 16.30654297,
+      "lat": 48.14242499
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524146",
+    "name": "PA Dr.-Pirnitzer-Platz",
+    "address": "PA Dr.-Pirnitzer-Platz, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 1050,
+    "coordinates": {
+      "lng": 16.34770761,
+      "lat": 48.14779029
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524147",
+    "name": "GA Mergenthalerplatz",
+    "address": "GA Mergenthalerplatz, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 464,
+    "coordinates": {
+      "lng": 16.44666686,
+      "lat": 48.24328053
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524148",
+    "name": "GA Anton-Anderer-Platz",
+    "address": "GA Anton-Anderer-Platz, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 549,
+    "coordinates": {
+      "lng": 16.3905851,
+      "lat": 48.26785614
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524149",
+    "name": "GA Bernreiterplatz",
+    "address": "GA Bernreiterplatz, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 1221,
+    "coordinates": {
+      "lng": 16.40747528,
+      "lat": 48.28141368
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524150",
+    "name": "Anna-Ehm-Park",
+    "address": "Anna-Ehm-Park, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 4734,
+    "coordinates": {
+      "lng": 16.33788983,
+      "lat": 48.25061568
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524151",
+    "name": "GA Leopold-Kunschak-Platz",
+    "address": "GA Leopold-Kunschak-Platz, 17. Bezirk, Wien",
+    "district": 17,
+    "area": 2462,
+    "coordinates": {
+      "lng": 16.31782002,
+      "lat": 48.22502424
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524152",
+    "name": "GA Lotte-Lenya-Platz",
+    "address": "GA Lotte-Lenya-Platz, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 706,
+    "coordinates": {
+      "lng": 16.30127819,
+      "lat": 48.19811243
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524153",
+    "name": "Erich-Auer-Park",
+    "address": "Erich-Auer-Park, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 1458,
+    "coordinates": {
+      "lng": 16.29769634,
+      "lat": 48.19431701
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524154",
+    "name": "GA Marschallplatz",
+    "address": "GA Marschallplatz, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 1283,
+    "coordinates": {
+      "lng": 16.30385144,
+      "lat": 48.16439818
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524155",
+    "name": "GA Reumannplatz",
+    "address": "GA Reumannplatz, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 1655,
+    "coordinates": {
+      "lng": 16.3784076,
+      "lat": 48.17420988
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524156",
+    "name": "GA Otto-Probst-Platz",
+    "address": "GA Otto-Probst-Platz, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 3161,
+    "coordinates": {
+      "lng": 16.34915974,
+      "lat": 48.15354089
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524157",
+    "name": "GA Spittelauer Platz",
+    "address": "GA Spittelauer Platz, 9. Bezirk, Wien",
+    "district": 9,
+    "area": 609,
+    "coordinates": {
+      "lng": 16.36249561,
+      "lat": 48.22698473
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524158",
+    "name": "GA Ari-Rath-Platz",
+    "address": "GA Ari-Rath-Platz, 9. Bezirk, Wien",
+    "district": 9,
+    "area": 909,
+    "coordinates": {
+      "lng": 16.35997814,
+      "lat": 48.22127637
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524159",
+    "name": "GA Wickenburggasse",
+    "address": "GA Wickenburggasse, 8. Bezirk, Wien",
+    "district": 8,
+    "area": 95,
+    "coordinates": {
+      "lng": 16.35432214,
+      "lat": 48.21172639
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524160",
+    "name": "Erika-Morini-Park",
+    "address": "Erika-Morini-Park, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 5655,
+    "coordinates": {
+      "lng": 16.41543932,
+      "lat": 48.21467548
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524161",
+    "name": "Planquadrat Park",
+    "address": "Planquadrat Park, 4. Bezirk, Wien",
+    "district": 4,
+    "area": 5286,
+    "coordinates": {
+      "lng": 16.36316501,
+      "lat": 48.19642133
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "keine Angabe",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524162",
+    "name": "Wolfgang-Kössner-Park",
+    "address": "Wolfgang-Kössner-Park, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 5987,
+    "coordinates": {
+      "lng": 16.40549801,
+      "lat": 48.21691368
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "6:30-20:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524163",
+    "name": "PA Schmerlingplatz",
+    "address": "PA Schmerlingplatz, 1. Bezirk, Wien",
+    "district": 1,
+    "area": 3391,
+    "coordinates": {
+      "lng": 16.35618343,
+      "lat": 48.20734772
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524164",
+    "name": "PA Ernst-Jandl-Weg",
+    "address": "PA Ernst-Jandl-Weg, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 4097,
+    "coordinates": {
+      "lng": 16.45564171,
+      "lat": 48.25285517
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524165",
+    "name": "PA Rautenweg",
+    "address": "PA Rautenweg, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 1018,
+    "coordinates": {
+      "lng": 16.46147197,
+      "lat": 48.26233854
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524166",
+    "name": "PA Angeliwiese",
+    "address": "PA Angeliwiese, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 14106,
+    "coordinates": {
+      "lng": 16.4026736,
+      "lat": 48.24782386
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524167",
+    "name": "Adelheid-Popp-Park",
+    "address": "Adelheid-Popp-Park, 17. Bezirk, Wien",
+    "district": 17,
+    "area": 1367,
+    "coordinates": {
+      "lng": 16.32954823,
+      "lat": 48.21637529
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524168",
+    "name": "Herbert-Mayr-Park",
+    "address": "Herbert-Mayr-Park, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 6993,
+    "coordinates": {
+      "lng": 16.27519155,
+      "lat": 48.13725323
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517717",
+    "name": "Henriette-Fahrbach-Promenade",
+    "address": "Henriette-Fahrbach-Promenade, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 7307,
+    "coordinates": {
+      "lng": 16.38795873,
+      "lat": 48.21369008
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielplatz: 6:30-20:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517718",
+    "name": "Park",
+    "address": "Park, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 1099,
+    "coordinates": {
+      "lng": 16.51298135,
+      "lat": 48.22193743
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517719",
+    "name": "Sigmund-Freud-Park",
+    "address": "Sigmund-Freud-Park, 9. Bezirk, Wien",
+    "district": 9,
+    "area": 14464,
+    "coordinates": {
+      "lng": 16.36064633,
+      "lat": 48.21463645
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517720",
+    "name": "Jüdischer Friedhof Seegasse",
+    "address": "Jüdischer Friedhof Seegasse, 9. Bezirk, Wien",
+    "district": 9,
+    "area": 5843,
+    "coordinates": {
+      "lng": 16.36298943,
+      "lat": 48.22367541
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Mo-Fr 7:00-15:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517721",
+    "name": "Gerda-Matejka-Felden-Park (privat)",
+    "address": "Gerda-Matejka-Felden-Park (privat), 9. Bezirk, Wien",
+    "district": 9,
+    "area": 0,
+    "coordinates": {
+      "lng": 16.34732791,
+      "lat": 48.21696431
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517722",
+    "name": "Heldenplatz (Bundesgärten)",
+    "address": "Heldenplatz (Bundesgärten), 1. Bezirk, Wien",
+    "district": 1,
+    "area": 904,
+    "coordinates": {
+      "lng": 16.36159504,
+      "lat": 48.20619204
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517723",
+    "name": "Marianne-Fritz-Park",
+    "address": "Marianne-Fritz-Park, 7. Bezirk, Wien",
+    "district": 7,
+    "area": 360,
+    "coordinates": {
+      "lng": 16.34486885,
+      "lat": 48.19942994
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Okt: 6:45-19:15, Nov-März: 6:45-18:15, Apr-Sep: 6:45-21:15",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517724",
+    "name": "PA Am Krautgarten",
+    "address": "PA Am Krautgarten, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 1954,
+    "coordinates": {
+      "lng": 16.46587806,
+      "lat": 48.23306501
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517725",
+    "name": "Heisspark",
+    "address": "Heisspark, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 5288,
+    "coordinates": {
+      "lng": 16.41679575,
+      "lat": 48.29493051
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517726",
+    "name": "PA Großfeldstraße",
+    "address": "PA Großfeldstraße, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 3387,
+    "coordinates": {
+      "lng": 16.43993099,
+      "lat": 48.26785935
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielplatz 20:30-09:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517727",
+    "name": "PA Am Mühlwasser",
+    "address": "PA Am Mühlwasser, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 21477,
+    "coordinates": {
+      "lng": 16.45682393,
+      "lat": 48.21407921
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517728",
+    "name": "PA Colerusgasse",
+    "address": "PA Colerusgasse, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 4276,
+    "coordinates": {
+      "lng": 16.52205905,
+      "lat": 48.21317943
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517729",
+    "name": "PA Fasangartengasse",
+    "address": "PA Fasangartengasse, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 6261,
+    "coordinates": {
+      "lng": 16.30375184,
+      "lat": 48.16995106
+    },
+    "amenities": [
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517730",
+    "name": "GA Obere Donaustraße",
+    "address": "GA Obere Donaustraße, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 1576,
+    "coordinates": {
+      "lng": 16.37474051,
+      "lat": 48.21570478
+    },
+    "amenities": [
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517731",
+    "name": "Freie Mitte",
+    "address": "Freie Mitte, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 75937,
+    "coordinates": {
+      "lng": 16.39060414,
+      "lat": 48.22985898
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "00:00-24:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517732",
+    "name": "H.-C.-Artmann-Park",
+    "address": "H.-C.-Artmann-Park, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 2353,
+    "coordinates": {
+      "lng": 16.31371441,
+      "lat": 48.20029707
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517733",
+    "name": "PA Gusterergasse",
+    "address": "PA Gusterergasse, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 563,
+    "coordinates": {
+      "lng": 16.28966091,
+      "lat": 48.20408382
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517734",
+    "name": "Gustav-Klimt-Park",
+    "address": "Gustav-Klimt-Park, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 6459,
+    "coordinates": {
+      "lng": 16.28558905,
+      "lat": 48.19492771
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517735",
+    "name": "Franz-Sauer-Park",
+    "address": "Franz-Sauer-Park, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 2015,
+    "coordinates": {
+      "lng": 16.24465535,
+      "lat": 48.20764705
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517736",
+    "name": "Manes-Sperber-Park",
+    "address": "Manes-Sperber-Park, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 3084,
+    "coordinates": {
+      "lng": 16.3780048,
+      "lat": 48.21422505
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig: 6:30-20:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517737",
+    "name": "PA Große Mohrengasse",
+    "address": "PA Große Mohrengasse, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 258,
+    "coordinates": {
+      "lng": 16.38230823,
+      "lat": 48.21511763
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517738",
+    "name": "Elisabeth-Ben David-Hindler-Park",
+    "address": "Elisabeth-Ben David-Hindler-Park, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 5975,
+    "coordinates": {
+      "lng": 16.4110462,
+      "lat": 48.21772165
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517739",
+    "name": "PA Secession",
+    "address": "PA Secession, 1. Bezirk, Wien",
+    "district": 1,
+    "area": 4789,
+    "coordinates": {
+      "lng": 16.36540516,
+      "lat": 48.20071653
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517740",
+    "name": "Schillerpark",
+    "address": "Schillerpark, 1. Bezirk, Wien",
+    "district": 1,
+    "area": 6839,
+    "coordinates": {
+      "lng": 16.36549454,
+      "lat": 48.20210772
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517741",
+    "name": "Rathauspark",
+    "address": "Rathauspark, 1. Bezirk, Wien",
+    "district": 1,
+    "area": 38509,
+    "coordinates": {
+      "lng": 16.35975342,
+      "lat": 48.21090105
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517742",
+    "name": "PA Beethovenplatz",
+    "address": "PA Beethovenplatz, 1. Bezirk, Wien",
+    "district": 1,
+    "area": 4003,
+    "coordinates": {
+      "lng": 16.37704146,
+      "lat": 48.20195045
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielplatz: 6:00-21:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517743",
+    "name": "Johannes-Diodato-Park",
+    "address": "Johannes-Diodato-Park, 4. Bezirk, Wien",
+    "district": 4,
+    "area": 331,
+    "coordinates": {
+      "lng": 16.36521546,
+      "lat": 48.19473347
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517744",
+    "name": "Ernst-Jandl-Park",
+    "address": "Ernst-Jandl-Park, 4. Bezirk, Wien",
+    "district": 4,
+    "area": 529,
+    "coordinates": {
+      "lng": 16.36776299,
+      "lat": 48.19308407
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Okt-März: 7:30-20:00, Apr-Sep: 6:15-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517745",
+    "name": "Alois-Drasche-Park",
+    "address": "Alois-Drasche-Park, 4. Bezirk, Wien",
+    "district": 4,
+    "area": 15875,
+    "coordinates": {
+      "lng": 16.36804725,
+      "lat": 48.18616544
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig: Okt-März: 7:45-21:00, Apr-Sep: 6:45-22:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517746",
+    "name": "Ilija-Jovanovic-Park",
+    "address": "Ilija-Jovanovic-Park, 3. Bezirk, Wien",
+    "district": 3,
+    "area": 1763,
+    "coordinates": {
+      "lng": 16.39684351,
+      "lat": 48.18583744
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517747",
+    "name": "Waisenhauspark",
+    "address": "Waisenhauspark, 3. Bezirk, Wien",
+    "district": 3,
+    "area": 5270,
+    "coordinates": {
+      "lng": 16.39863753,
+      "lat": 48.19124068
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig: Okt-März: 7:30-19:30, Apr-Sep: 7:30-20:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517748",
+    "name": "PA Ungargasse",
+    "address": "PA Ungargasse, 3. Bezirk, Wien",
+    "district": 3,
+    "area": 906,
+    "coordinates": {
+      "lng": 16.3863571,
+      "lat": 48.1955239
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517749",
+    "name": "Haubenstock-Ramati-Park",
+    "address": "Haubenstock-Ramati-Park, 3. Bezirk, Wien",
+    "district": 3,
+    "area": 2070,
+    "coordinates": {
+      "lng": 16.38969454,
+      "lat": 48.19961276
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517750",
+    "name": "Schweizergarten",
+    "address": "Schweizergarten, 3. Bezirk, Wien",
+    "district": 3,
+    "area": 115249,
+    "coordinates": {
+      "lng": 16.38592395,
+      "lat": 48.1864868
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517751",
+    "name": "PA Schwarzenbergplatz",
+    "address": "PA Schwarzenbergplatz, 3. Bezirk, Wien",
+    "district": 3,
+    "area": 14396,
+    "coordinates": {
+      "lng": 16.37639172,
+      "lat": 48.19832592
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517752",
+    "name": "Rochuspark",
+    "address": "Rochuspark, 3. Bezirk, Wien",
+    "district": 3,
+    "area": 3665,
+    "coordinates": {
+      "lng": 16.39314599,
+      "lat": 48.20184864
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517753",
+    "name": "Josef-Pfeifer-Park",
+    "address": "Josef-Pfeifer-Park, 3. Bezirk, Wien",
+    "district": 3,
+    "area": 625,
+    "coordinates": {
+      "lng": 16.38745528,
+      "lat": 48.20607101
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517754",
+    "name": "Joe-Zawinul-Park",
+    "address": "Joe-Zawinul-Park, 3. Bezirk, Wien",
+    "district": 3,
+    "area": 2111,
+    "coordinates": {
+      "lng": 16.39917297,
+      "lat": 48.19425151
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Okt-März: 7:15-20:00, Apr-Sep: 7:15-20:15",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517755",
+    "name": "Bock-Park",
+    "address": "Bock-Park, 3. Bezirk, Wien",
+    "district": 3,
+    "area": 4701,
+    "coordinates": {
+      "lng": 16.40396043,
+      "lat": 48.19607274
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Hundezone: 6:00-20:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517756",
+    "name": "PA Baumgasse",
+    "address": "PA Baumgasse, 3. Bezirk, Wien",
+    "district": 3,
+    "area": 21450,
+    "coordinates": {
+      "lng": 16.40559533,
+      "lat": 48.19206308
+    },
+    "amenities": [
+      "Spielplatz",
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517757",
+    "name": "Arenbergpark",
+    "address": "Arenbergpark, 3. Bezirk, Wien",
+    "district": 3,
+    "area": 30200,
+    "coordinates": {
+      "lng": 16.39123912,
+      "lat": 48.19860733
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig: Okt-März: 6:45-20:15, Apr-Sep: 6:45-20:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517758",
+    "name": "Alma-Mahler-Werfel-Park",
+    "address": "Alma-Mahler-Werfel-Park, 3. Bezirk, Wien",
+    "district": 3,
+    "area": 1169,
+    "coordinates": {
+      "lng": 16.39495832,
+      "lat": 48.19661769
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517759",
+    "name": "Hubert-Marischka-Park",
+    "address": "Hubert-Marischka-Park, 6. Bezirk, Wien",
+    "district": 6,
+    "area": 4412,
+    "coordinates": {
+      "lng": 16.34690774,
+      "lat": 48.19235791
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Okt-März:6:30-21:00, Apr-Sep:6:30-21:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517760",
+    "name": "Fritz-Imhoff-Park",
+    "address": "Fritz-Imhoff-Park, 6. Bezirk, Wien",
+    "district": 6,
+    "area": 4329,
+    "coordinates": {
+      "lng": 16.33943384,
+      "lat": 48.18959305
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517761",
+    "name": "Esterházypark",
+    "address": "Esterházypark, 6. Bezirk, Wien",
+    "district": 6,
+    "area": 11248,
+    "coordinates": {
+      "lng": 16.35219053,
+      "lat": 48.19757117
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig: Okt-März: 8:00-21:30, Apr-Sep: 8:00-21:45",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517762",
+    "name": "Eduard-Gurk-Park",
+    "address": "Eduard-Gurk-Park, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 2342,
+    "coordinates": {
+      "lng": 16.30226215,
+      "lat": 48.19237432
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517763",
+    "name": "PA Dostgasse",
+    "address": "PA Dostgasse, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 1608,
+    "coordinates": {
+      "lng": 16.25216206,
+      "lat": 48.21806485
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517764",
+    "name": "PA Cossmanngasse",
+    "address": "PA Cossmanngasse, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 12988,
+    "coordinates": {
+      "lng": 16.26881498,
+      "lat": 48.19612096
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517765",
+    "name": "PA Joachimsthalerplatz",
+    "address": "PA Joachimsthalerplatz, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 1127,
+    "coordinates": {
+      "lng": 16.3043701,
+      "lat": 48.20878276
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517766",
+    "name": "Huberpark",
+    "address": "Huberpark, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 4586,
+    "coordinates": {
+      "lng": 16.3328236,
+      "lat": 48.21336948
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "März-Nov: 06:00-22:00, Dez-Feb: keine Sperre",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517767",
+    "name": "PA Hofferplatz",
+    "address": "PA Hofferplatz, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 2453,
+    "coordinates": {
+      "lng": 16.33329541,
+      "lat": 48.20870551
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig: März-Nov: 08:00-20:30, Dez-Feb: keine Sperre",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517768",
+    "name": "PA Hettenkofergasse",
+    "address": "PA Hettenkofergasse, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 2016,
+    "coordinates": {
+      "lng": 16.31309324,
+      "lat": 48.2092599
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig: März-Nov: 07:00-20:00, Dez-Feb: keine Sperre",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517769",
+    "name": "Else-Federn-Park",
+    "address": "Else-Federn-Park, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 4665,
+    "coordinates": {
+      "lng": 16.3130339,
+      "lat": 48.22032315
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517770",
+    "name": "Leon-Askin-Park",
+    "address": "Leon-Askin-Park, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 1439,
+    "coordinates": {
+      "lng": 16.33192466,
+      "lat": 48.21060636
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517771",
+    "name": "PA Familienplatz",
+    "address": "PA Familienplatz, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 3611,
+    "coordinates": {
+      "lng": 16.31834419,
+      "lat": 48.2145725
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517772",
+    "name": "PA Baumeistergasse",
+    "address": "PA Baumeistergasse, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 2489,
+    "coordinates": {
+      "lng": 16.30235387,
+      "lat": 48.22108922
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517773",
+    "name": "Regine-Landeis-Park",
+    "address": "Regine-Landeis-Park, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 2556,
+    "coordinates": {
+      "lng": 16.3190713,
+      "lat": 48.1939394
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517774",
+    "name": "PA Tannhäuserplatz",
+    "address": "PA Tannhäuserplatz, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 370,
+    "coordinates": {
+      "lng": 16.325115,
+      "lat": 48.19946976
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517775",
+    "name": "Rohrauerpark",
+    "address": "Rohrauerpark, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 9731,
+    "coordinates": {
+      "lng": 16.31493618,
+      "lat": 48.20643689
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig+Hundezone: Nov-März: 06:00-21:00, Apr-Okt: 06:00-22:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517776",
+    "name": "Märzpark",
+    "address": "Märzpark, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 14499,
+    "coordinates": {
+      "lng": 16.3353855,
+      "lat": 48.20175129
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517777",
+    "name": "PA Mareschplatz",
+    "address": "PA Mareschplatz, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 757,
+    "coordinates": {
+      "lng": 16.31544493,
+      "lat": 48.20413389
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517778",
+    "name": "PA Linke Wienzeile",
+    "address": "PA Linke Wienzeile, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 7145,
+    "coordinates": {
+      "lng": 16.31715329,
+      "lat": 48.18687569
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517779",
+    "name": "Herklotzpark",
+    "address": "Herklotzpark, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 879,
+    "coordinates": {
+      "lng": 16.33274465,
+      "lat": 48.18927093
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Nov-März: 8:00-19:00, Apr-Okt: 08:00-20:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517780",
+    "name": "Schrammelpark",
+    "address": "Schrammelpark, 17. Bezirk, Wien",
+    "district": 17,
+    "area": 1837,
+    "coordinates": {
+      "lng": 16.29508479,
+      "lat": 48.23065143
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517781",
+    "name": "Alexander-Lernet-Holenia-Park",
+    "address": "Alexander-Lernet-Holenia-Park, 17. Bezirk, Wien",
+    "district": 17,
+    "area": 911,
+    "coordinates": {
+      "lng": 16.29886829,
+      "lat": 48.23018136
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517782",
+    "name": "PA Stöberplatz",
+    "address": "PA Stöberplatz, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 3771,
+    "coordinates": {
+      "lng": 16.31691789,
+      "lat": 48.22150937
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig: März-Nov: 07:00-21:00, Dez-Feb: keine Sperre",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517783",
+    "name": "PA Schuhmeierplatz",
+    "address": "PA Schuhmeierplatz, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 2500,
+    "coordinates": {
+      "lng": 16.31912879,
+      "lat": 48.21045549
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig: März-Nov: 07:00-21:00, Dez-Feb: keine Sperre",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517784",
+    "name": "PA Spinozagasse",
+    "address": "PA Spinozagasse, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 3535,
+    "coordinates": {
+      "lng": 16.3019882,
+      "lat": 48.22325258
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517785",
+    "name": "Richard-Wagner-Park",
+    "address": "Richard-Wagner-Park, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 4337,
+    "coordinates": {
+      "lng": 16.32746199,
+      "lat": 48.20982601
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig: März-Nov: 07:00-21:00, Dez-Feb: keine Sperre",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517786",
+    "name": "Reithofferpark",
+    "address": "Reithofferpark, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 10653,
+    "coordinates": {
+      "lng": 16.33109007,
+      "lat": 48.19808393
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Hundezone: 6:00-22:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517787",
+    "name": "PA Nietzscheplatz",
+    "address": "PA Nietzscheplatz, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 1887,
+    "coordinates": {
+      "lng": 16.30655965,
+      "lat": 48.22052844
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517788",
+    "name": "PA Musilplatz",
+    "address": "PA Musilplatz, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 3334,
+    "coordinates": {
+      "lng": 16.30754455,
+      "lat": 48.21589481
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517789",
+    "name": "Arik-Brauer-Park",
+    "address": "Arik-Brauer-Park, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 3507,
+    "coordinates": {
+      "lng": 16.33415891,
+      "lat": 48.20573538
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig: März-Nov: 07:00-21:30, Dez-Feb: keine Sperre",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517790",
+    "name": "Edelsinnstraße Hundezone",
+    "address": "Edelsinnstraße Hundezone, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 1785,
+    "coordinates": {
+      "lng": 16.32832256,
+      "lat": 48.17369947
+    },
+    "amenities": [
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "0-24:00 Uhr",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517791",
+    "name": "Franziska-Löw-Park",
+    "address": "Franziska-Löw-Park, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 6644,
+    "coordinates": {
+      "lng": 16.39079963,
+      "lat": 48.22305913
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517792",
+    "name": "Ohrfandlpark",
+    "address": "Ohrfandlpark, 7. Bezirk, Wien",
+    "district": 7,
+    "area": 1227,
+    "coordinates": {
+      "lng": 16.33934137,
+      "lat": 48.1962683
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517793",
+    "name": "Prater - Rosenbachl",
+    "address": "Prater - Rosenbachl, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 157886,
+    "coordinates": {
+      "lng": 16.42133789,
+      "lat": 48.20085433
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517794",
+    "name": "Schulbrüderpark",
+    "address": "Schulbrüderpark, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 972,
+    "coordinates": {
+      "lng": 16.38930485,
+      "lat": 48.29381041
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517795",
+    "name": "Zeßner-Spitzenberg-Park",
+    "address": "Zeßner-Spitzenberg-Park, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 1269,
+    "coordinates": {
+      "lng": 16.33240643,
+      "lat": 48.25251228
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517796",
+    "name": "PA Gartensteg",
+    "address": "PA Gartensteg, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 3422,
+    "coordinates": {
+      "lng": 16.39704056,
+      "lat": 48.14607002
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517797",
+    "name": "GA Mariahilfer Gürtel",
+    "address": "GA Mariahilfer Gürtel, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 320,
+    "coordinates": {
+      "lng": 16.33905651,
+      "lat": 48.19413001
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517798",
+    "name": "PA Tillmanngasse",
+    "address": "PA Tillmanngasse, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 3887,
+    "coordinates": {
+      "lng": 16.45996855,
+      "lat": 48.26067001
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517799",
+    "name": "PA Rodauner Straße",
+    "address": "PA Rodauner Straße, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 4341,
+    "coordinates": {
+      "lng": 16.2606092,
+      "lat": 48.14086353
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517800",
+    "name": "PA Ortskern Grinzing",
+    "address": "PA Ortskern Grinzing, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 1375,
+    "coordinates": {
+      "lng": 16.34133044,
+      "lat": 48.25604294
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517801",
+    "name": "PA Leopold-Steiner-Gasse",
+    "address": "PA Leopold-Steiner-Gasse, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 545,
+    "coordinates": {
+      "lng": 16.33583083,
+      "lat": 48.24849364
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517802",
+    "name": "PA Ketzergasse",
+    "address": "PA Ketzergasse, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 945,
+    "coordinates": {
+      "lng": 16.26273072,
+      "lat": 48.13313151
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517803",
+    "name": "PA Kästenbaumgasse",
+    "address": "PA Kästenbaumgasse, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 1450,
+    "coordinates": {
+      "lng": 16.40392534,
+      "lat": 48.13931304
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517804",
+    "name": "PA Hofjagdstraße",
+    "address": "PA Hofjagdstraße, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 6356,
+    "coordinates": {
+      "lng": 16.23728281,
+      "lat": 48.20131338
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517805",
+    "name": "PA Filmteichstraße",
+    "address": "PA Filmteichstraße, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 5006,
+    "coordinates": {
+      "lng": 16.39976546,
+      "lat": 48.15236176
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517806",
+    "name": "PA Erbpostgasse",
+    "address": "PA Erbpostgasse, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 1089,
+    "coordinates": {
+      "lng": 16.42006672,
+      "lat": 48.30310063
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517807",
+    "name": "PA Donauturmstraße",
+    "address": "PA Donauturmstraße, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 718,
+    "coordinates": {
+      "lng": 16.40541981,
+      "lat": 48.24142181
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517808",
+    "name": "PA Czernetzplatz",
+    "address": "PA Czernetzplatz, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 2655,
+    "coordinates": {
+      "lng": 16.43643248,
+      "lat": 48.24435405
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517809",
+    "name": "PA Bujattigasse",
+    "address": "PA Bujattigasse, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 3630,
+    "coordinates": {
+      "lng": 16.25445974,
+      "lat": 48.20769775
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517810",
+    "name": "PA Bahnstraße",
+    "address": "PA Bahnstraße, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 2461,
+    "coordinates": {
+      "lng": 16.21800442,
+      "lat": 48.21100034
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517811",
+    "name": "Ladinigpark",
+    "address": "Ladinigpark, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 7669,
+    "coordinates": {
+      "lng": 16.4576421,
+      "lat": 48.25194112
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517812",
+    "name": "GA Schrödingerplatz",
+    "address": "GA Schrödingerplatz, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 743,
+    "coordinates": {
+      "lng": 16.43738569,
+      "lat": 48.24086493
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517813",
+    "name": "GA Margaretenplatz",
+    "address": "GA Margaretenplatz, 5. Bezirk, Wien",
+    "district": 5,
+    "area": 173,
+    "coordinates": {
+      "lng": 16.35850686,
+      "lat": 48.19174631
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517814",
+    "name": "GA In der goldenen Erden",
+    "address": "GA In der goldenen Erden, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 2189,
+    "coordinates": {
+      "lng": 16.42445791,
+      "lat": 48.29715456
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517815",
+    "name": "Andreaspark",
+    "address": "Andreaspark, 7. Bezirk, Wien",
+    "district": 7,
+    "area": 3009,
+    "coordinates": {
+      "lng": 16.34745974,
+      "lat": 48.19878281
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Okt: 6:40-19:15, Nov-März: 6:40-18:15, Apr-Sep: 6:40-21:15",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517816",
+    "name": "GA Sonnenallee",
+    "address": "GA Sonnenallee, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 2555,
+    "coordinates": {
+      "lng": 16.50449554,
+      "lat": 48.22400237
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517817",
+    "name": "PA Hallergasse",
+    "address": "PA Hallergasse, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 2947,
+    "coordinates": {
+      "lng": 16.41791166,
+      "lat": 48.18274308
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517818",
+    "name": "PA Sieveringer Straße",
+    "address": "PA Sieveringer Straße, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 23,
+    "coordinates": {
+      "lng": 16.33138005,
+      "lat": 48.24779191
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517819",
+    "name": "Ulmenpark",
+    "address": "Ulmenpark, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 6771,
+    "coordinates": {
+      "lng": 16.24912059,
+      "lat": 48.21817518
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517820",
+    "name": "GA Koppstraße",
+    "address": "GA Koppstraße, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 282,
+    "coordinates": {
+      "lng": 16.32855659,
+      "lat": 48.20729616
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517821",
+    "name": "PA Asperner Heldenplatz",
+    "address": "PA Asperner Heldenplatz, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 2194,
+    "coordinates": {
+      "lng": 16.48317704,
+      "lat": 48.21824454
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517822",
+    "name": "Jugendaktivzone",
+    "address": "Jugendaktivzone, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 2862,
+    "coordinates": {
+      "lng": 16.33807699,
+      "lat": 48.18802533
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517823",
+    "name": "Motorikpark",
+    "address": "Motorikpark, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 21757,
+    "coordinates": {
+      "lng": 16.47709977,
+      "lat": 48.25305207
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "http://www.motorikpark-wien.at/",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3517824",
+    "name": "GA Auf der Schmelz",
+    "address": "GA Auf der Schmelz, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 4889,
+    "coordinates": {
+      "lng": 16.31982249,
+      "lat": 48.20345264
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3523985",
+    "name": "GA Südtiroler Platz",
+    "address": "GA Südtiroler Platz, 4. Bezirk, Wien",
+    "district": 4,
+    "area": 1011,
+    "coordinates": {
+      "lng": 16.37307783,
+      "lat": 48.18680803
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3523986",
+    "name": "Girardipark",
+    "address": "Girardipark, 1. Bezirk, Wien",
+    "district": 1,
+    "area": 1799,
+    "coordinates": {
+      "lng": 16.36799001,
+      "lat": 48.20085636
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3523987",
+    "name": "PA Fröhlichgasse",
+    "address": "PA Fröhlichgasse, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 3547,
+    "coordinates": {
+      "lng": 16.28835309,
+      "lat": 48.13718339
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3523988",
+    "name": "GA Malfattigasse",
+    "address": "GA Malfattigasse, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 760,
+    "coordinates": {
+      "lng": 16.34373858,
+      "lat": 48.17788365
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3523989",
+    "name": "GA Franklinstraße",
+    "address": "GA Franklinstraße, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 5956,
+    "coordinates": {
+      "lng": 16.40177146,
+      "lat": 48.25499874
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3523990",
+    "name": "Adele-Jellinek-Promenade",
+    "address": "Adele-Jellinek-Promenade, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 5367,
+    "coordinates": {
+      "lng": 16.36856491,
+      "lat": 48.22478272
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3523991",
+    "name": "GA Lorenz-Mandl-Gasse",
+    "address": "GA Lorenz-Mandl-Gasse, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 658,
+    "coordinates": {
+      "lng": 16.30603562,
+      "lat": 48.20606207
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3523992",
+    "name": "GA Am-Ostrom-Park",
+    "address": "GA Am-Ostrom-Park, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 725,
+    "coordinates": {
+      "lng": 16.50907827,
+      "lat": 48.22814869
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3523993",
+    "name": "PA Max-Patat-Weg",
+    "address": "PA Max-Patat-Weg, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 2427,
+    "coordinates": {
+      "lng": 16.35259301,
+      "lat": 48.24330775
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3523994",
+    "name": "Luise-Montag-Park",
+    "address": "Luise-Montag-Park, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 13660,
+    "coordinates": {
+      "lng": 16.41601328,
+      "lat": 48.16741277
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3523995",
+    "name": "PA Am Kanal",
+    "address": "PA Am Kanal, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 7163,
+    "coordinates": {
+      "lng": 16.42390297,
+      "lat": 48.15805388
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3523996",
+    "name": "PA Van-der-Nüll-Gasse",
+    "address": "PA Van-der-Nüll-Gasse, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 391,
+    "coordinates": {
+      "lng": 16.36857136,
+      "lat": 48.17138298
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3523997",
+    "name": "Seeschlachtpark",
+    "address": "Seeschlachtpark, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 3891,
+    "coordinates": {
+      "lng": 16.43412289,
+      "lat": 48.16837301
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3523998",
+    "name": "PA Hasenleitengasse",
+    "address": "PA Hasenleitengasse, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 10010,
+    "coordinates": {
+      "lng": 16.41599583,
+      "lat": 48.16506352
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3523999",
+    "name": "Olga-Misař-Promenade",
+    "address": "Olga-Misař-Promenade, 9. Bezirk, Wien",
+    "district": 9,
+    "area": 9879,
+    "coordinates": {
+      "lng": 16.3680922,
+      "lat": 48.22030423
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524000",
+    "name": "Hans-Pemmer-Park",
+    "address": "Hans-Pemmer-Park, 3. Bezirk, Wien",
+    "district": 3,
+    "area": 7596,
+    "coordinates": {
+      "lng": 16.40236962,
+      "lat": 48.1840796
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524001",
+    "name": "PA Maria vom Siege",
+    "address": "PA Maria vom Siege, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 3370,
+    "coordinates": {
+      "lng": 16.33745294,
+      "lat": 48.19319688
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524002",
+    "name": "Olympiapark",
+    "address": "Olympiapark, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 13458,
+    "coordinates": {
+      "lng": 16.33833728,
+      "lat": 48.24474419
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielplatz: Okt-Mär: 7:00-19:00, Apr-Sep: 7:00-22:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524003",
+    "name": "PA Am Bruckhaufen",
+    "address": "PA Am Bruckhaufen, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 2609,
+    "coordinates": {
+      "lng": 16.39677979,
+      "lat": 48.24524777
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524004",
+    "name": "Währinger Park",
+    "address": "Währinger Park, 18. Bezirk, Wien",
+    "district": 18,
+    "area": 48190,
+    "coordinates": {
+      "lng": 16.34854027,
+      "lat": 48.2323717
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524005",
+    "name": "Kongreßpark",
+    "address": "Kongreßpark, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 51908,
+    "coordinates": {
+      "lng": 16.30859073,
+      "lat": 48.22174602
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspiel:März-Nov v. Mo-Fr:07:00-20:00,Sa+So:09:00-20:30,Hundezone:06:00-22:00,Dez-Feb:keine Sperre",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524006",
+    "name": "Karl-Kantner-Park",
+    "address": "Karl-Kantner-Park, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 5765,
+    "coordinates": {
+      "lng": 16.30474194,
+      "lat": 48.21410377
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524007",
+    "name": "PA Hammerschmidtgasse",
+    "address": "PA Hammerschmidtgasse, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 1469,
+    "coordinates": {
+      "lng": 16.3601592,
+      "lat": 48.25700023
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524008",
+    "name": "PA Am Neustiftblick",
+    "address": "PA Am Neustiftblick, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 2928,
+    "coordinates": {
+      "lng": 16.31282306,
+      "lat": 48.2504129
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524009",
+    "name": "PA Börnergasse",
+    "address": "PA Börnergasse, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 7769,
+    "coordinates": {
+      "lng": 16.33116898,
+      "lat": 48.24562266
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig: Okt-Mär: 7:00-19:00, Apr-Sep: 7:00-22:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524010",
+    "name": "Beethovenpark",
+    "address": "Beethovenpark, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 15304,
+    "coordinates": {
+      "lng": 16.35360528,
+      "lat": 48.25851041
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "0:00-24:00, Ballspielkäfig: 06:00-21:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524011",
+    "name": "PA 12. Februar-Platz",
+    "address": "PA 12. Februar-Platz, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 10417,
+    "coordinates": {
+      "lng": 16.36372775,
+      "lat": 48.24945845
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524012",
+    "name": "PA Französische Botschaft",
+    "address": "PA Französische Botschaft, 4. Bezirk, Wien",
+    "district": 4,
+    "area": 972,
+    "coordinates": {
+      "lng": 16.37489086,
+      "lat": 48.19869642
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524013",
+    "name": "Vilma-Degischer-Park",
+    "address": "Vilma-Degischer-Park, 18. Bezirk, Wien",
+    "district": 18,
+    "area": 1225,
+    "coordinates": {
+      "lng": 16.34609765,
+      "lat": 48.22368618
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524014",
+    "name": "PA Ladenburghöhe",
+    "address": "PA Ladenburghöhe, 18. Bezirk, Wien",
+    "district": 18,
+    "area": 5934,
+    "coordinates": {
+      "lng": 16.30075294,
+      "lat": 48.23943283
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524015",
+    "name": "Robert-Hochner-Park",
+    "address": "Robert-Hochner-Park, 3. Bezirk, Wien",
+    "district": 3,
+    "area": 3317,
+    "coordinates": {
+      "lng": 16.40333973,
+      "lat": 48.18783009
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524016",
+    "name": "Badeteich Süßenbrunn",
+    "address": "Badeteich Süßenbrunn, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 90051,
+    "coordinates": {
+      "lng": 16.48950011,
+      "lat": 48.27668087
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524017",
+    "name": "PA Eisenhutgasse",
+    "address": "PA Eisenhutgasse, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 1865,
+    "coordinates": {
+      "lng": 16.48369258,
+      "lat": 48.21869675
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524018",
+    "name": "GA Gaudenzdorfer Knoten",
+    "address": "GA Gaudenzdorfer Knoten, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 10849,
+    "coordinates": {
+      "lng": 16.3402907,
+      "lat": 48.18809137
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524019",
+    "name": "PA Moselgasse",
+    "address": "PA Moselgasse, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 2377,
+    "coordinates": {
+      "lng": 16.3910897,
+      "lat": 48.16800545
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524020",
+    "name": "PA Pichelmayergasse",
+    "address": "PA Pichelmayergasse, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 26170,
+    "coordinates": {
+      "lng": 16.37531334,
+      "lat": 48.15208107
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524021",
+    "name": "PA Bertha-von-Suttner-Hof",
+    "address": "PA Bertha-von-Suttner-Hof, 4. Bezirk, Wien",
+    "district": 4,
+    "area": 295,
+    "coordinates": {
+      "lng": 16.37113734,
+      "lat": 48.191028
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524022",
+    "name": "Wettsteinpark",
+    "address": "Wettsteinpark, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 15971,
+    "coordinates": {
+      "lng": 16.36910945,
+      "lat": 48.22161353
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524023",
+    "name": "Prater - Sonnenscheinwiese",
+    "address": "Prater - Sonnenscheinwiese, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 141396,
+    "coordinates": {
+      "lng": 16.43028145,
+      "lat": 48.19964707
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524024",
+    "name": "Mignon-Langnas-Park",
+    "address": "Mignon-Langnas-Park, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 4184,
+    "coordinates": {
+      "lng": 16.37655074,
+      "lat": 48.22181639
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524025",
+    "name": "PA Zentaplatz",
+    "address": "PA Zentaplatz, 5. Bezirk, Wien",
+    "district": 5,
+    "area": 1417,
+    "coordinates": {
+      "lng": 16.3600358,
+      "lat": 48.18653229
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "6:45-21:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524026",
+    "name": "PA Josef-Österreicher-Gasse",
+    "address": "PA Josef-Österreicher-Gasse, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 1843,
+    "coordinates": {
+      "lng": 16.30383185,
+      "lat": 48.14954528
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig: Mai-Okt. 8:00-20:00, Nov-Apr: keine Sperre",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524027",
+    "name": "Veza-Canetti-Park",
+    "address": "Veza-Canetti-Park, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 681,
+    "coordinates": {
+      "lng": 16.38488073,
+      "lat": 48.21321136
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524028",
+    "name": "PA Holubstraße",
+    "address": "PA Holubstraße, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 7134,
+    "coordinates": {
+      "lng": 16.39438458,
+      "lat": 48.23259523
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524029",
+    "name": "Therese-Ammon-Park",
+    "address": "Therese-Ammon-Park, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 6037,
+    "coordinates": {
+      "lng": 16.39232642,
+      "lat": 48.23285868
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524030",
+    "name": "Rudolf-Bednar-Park",
+    "address": "Rudolf-Bednar-Park, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 31319,
+    "coordinates": {
+      "lng": 16.39714423,
+      "lat": 48.2261875
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Skateranlage: 6:30-20:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524031",
+    "name": "Irma-Schwager-Park",
+    "address": "Irma-Schwager-Park, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 9383,
+    "coordinates": {
+      "lng": 16.37302606,
+      "lat": 48.22431685
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524032",
+    "name": "Max-Winter-Park",
+    "address": "Max-Winter-Park, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 9852,
+    "coordinates": {
+      "lng": 16.40017823,
+      "lat": 48.22016281
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Apr.-Sept.:06:30-21:30(20:30 an Sa,So,FT),Okt.-März:05:30-21:30(20:30 an Sa,So,FT)",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524033",
+    "name": "PA Siebenbrunnengasse",
+    "address": "PA Siebenbrunnengasse, 5. Bezirk, Wien",
+    "district": 5,
+    "area": 1699,
+    "coordinates": {
+      "lng": 16.35770025,
+      "lat": 48.18644109
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "6:15-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524034",
+    "name": "Scheupark",
+    "address": "Scheupark, 5. Bezirk, Wien",
+    "district": 5,
+    "area": 3132,
+    "coordinates": {
+      "lng": 16.35437019,
+      "lat": 48.1896103
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "6:15-21:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524035",
+    "name": "Rudolf-Sallinger-Park",
+    "address": "Rudolf-Sallinger-Park, 5. Bezirk, Wien",
+    "district": 5,
+    "area": 4919,
+    "coordinates": {
+      "lng": 16.36309383,
+      "lat": 48.18782668
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielplatz+Hundezone: 6:45-21:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524036",
+    "name": "PA Leopold-Rister-Gasse",
+    "address": "PA Leopold-Rister-Gasse, 5. Bezirk, Wien",
+    "district": 5,
+    "area": 4748,
+    "coordinates": {
+      "lng": 16.35532539,
+      "lat": 48.18124161
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig+Hundezone:6:45-22:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524037",
+    "name": "Ernst-Lichtblau-Park",
+    "address": "Ernst-Lichtblau-Park, 5. Bezirk, Wien",
+    "district": 5,
+    "area": 2438,
+    "coordinates": {
+      "lng": 16.3508301,
+      "lat": 48.18290484
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig: 6:45-21:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524038",
+    "name": "Ernst-Arnold-Park",
+    "address": "Ernst-Arnold-Park, 5. Bezirk, Wien",
+    "district": 5,
+    "area": 3788,
+    "coordinates": {
+      "lng": 16.35459126,
+      "lat": 48.1941642
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524039",
+    "name": "Einsiedlerpark",
+    "address": "Einsiedlerpark, 5. Bezirk, Wien",
+    "district": 5,
+    "area": 6359,
+    "coordinates": {
+      "lng": 16.35002026,
+      "lat": 48.18587302
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Hundezone: 6:15-21:45",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524040",
+    "name": "Bacherpark",
+    "address": "Bacherpark, 5. Bezirk, Wien",
+    "district": 5,
+    "area": 6120,
+    "coordinates": {
+      "lng": 16.35557879,
+      "lat": 48.18779561
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig: 6:15-22:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524041",
+    "name": "PA Am Hundsturm",
+    "address": "PA Am Hundsturm, 5. Bezirk, Wien",
+    "district": 5,
+    "area": 4077,
+    "coordinates": {
+      "lng": 16.34738615,
+      "lat": 48.1871971
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Hundezone:6:45-21:45",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524042",
+    "name": "Rubenspark",
+    "address": "Rubenspark, 4. Bezirk, Wien",
+    "district": 4,
+    "area": 2871,
+    "coordinates": {
+      "lng": 16.36528966,
+      "lat": 48.19156086
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524043",
+    "name": "Alfred-Böhm-Park",
+    "address": "Alfred-Böhm-Park, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 33768,
+    "coordinates": {
+      "lng": 16.38445967,
+      "lat": 48.16699298
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig+Hundezone+Skateranlage:06:00-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524044",
+    "name": "PA Latschkagasse",
+    "address": "PA Latschkagasse, 9. Bezirk, Wien",
+    "district": 9,
+    "area": 395,
+    "coordinates": {
+      "lng": 16.35526556,
+      "lat": 48.23128191
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524045",
+    "name": "Tigerpark",
+    "address": "Tigerpark, 8. Bezirk, Wien",
+    "district": 8,
+    "area": 2004,
+    "coordinates": {
+      "lng": 16.34532615,
+      "lat": 48.20872321
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Okt-März: 07:00-22:00, Apr-Sep:06:30-21:15",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524046",
+    "name": "Schönbornpark",
+    "address": "Schönbornpark, 8. Bezirk, Wien",
+    "district": 8,
+    "area": 9650,
+    "coordinates": {
+      "lng": 16.35064127,
+      "lat": 48.21240254
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Okt-März: 06:20-19:45, Apr-Sep:6:50-21:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524047",
+    "name": "Elisa-Springer-Park",
+    "address": "Elisa-Springer-Park, 8. Bezirk, Wien",
+    "district": 8,
+    "area": 126,
+    "coordinates": {
+      "lng": 16.35121089,
+      "lat": 48.20748155
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524048",
+    "name": "Hamerlingpark",
+    "address": "Hamerlingpark, 8. Bezirk, Wien",
+    "district": 8,
+    "area": 6069,
+    "coordinates": {
+      "lng": 16.345403,
+      "lat": 48.21108093
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524049",
+    "name": "Therese-Sip-Park",
+    "address": "Therese-Sip-Park, 6. Bezirk, Wien",
+    "district": 6,
+    "area": 369,
+    "coordinates": {
+      "lng": 16.34894809,
+      "lat": 48.18972262
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524050",
+    "name": "Richard-Waldemar-Park",
+    "address": "Richard-Waldemar-Park, 6. Bezirk, Wien",
+    "district": 6,
+    "area": 1838,
+    "coordinates": {
+      "lng": 16.35232729,
+      "lat": 48.19365373
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig: Okt-März: 7:00-20:30, Apr-Sep: 7:00-22:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524051",
+    "name": "Schmalzhoftempelpark",
+    "address": "Schmalzhoftempelpark, 6. Bezirk, Wien",
+    "district": 6,
+    "area": 5132,
+    "coordinates": {
+      "lng": 16.3483953,
+      "lat": 48.19501389
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Okt-März: 7:45-20:45, Apr-Sep: 7:45-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524052",
+    "name": "PA Keplerplatz",
+    "address": "PA Keplerplatz, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 5658,
+    "coordinates": {
+      "lng": 16.37578429,
+      "lat": 48.17837978
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Hundezone:06:00-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524053",
+    "name": "Johann-Benda-Park",
+    "address": "Johann-Benda-Park, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 52838,
+    "coordinates": {
+      "lng": 16.35307617,
+      "lat": 48.15322906
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524054",
+    "name": "PA Holeyplatz",
+    "address": "PA Holeyplatz, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 2073,
+    "coordinates": {
+      "lng": 16.37753591,
+      "lat": 48.15618795
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524055",
+    "name": "PA Saligergasse",
+    "address": "PA Saligergasse, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 32352,
+    "coordinates": {
+      "lng": 16.37780505,
+      "lat": 48.15857378
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524056",
+    "name": "PA Fingergasse",
+    "address": "PA Fingergasse, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 7428,
+    "coordinates": {
+      "lng": 16.3810712,
+      "lat": 48.1547292
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524057",
+    "name": "PA Erlachplatz",
+    "address": "PA Erlachplatz, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 4467,
+    "coordinates": {
+      "lng": 16.36888877,
+      "lat": 48.17795318
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524058",
+    "name": "PA Eisteichstraße",
+    "address": "PA Eisteichstraße, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 3855,
+    "coordinates": {
+      "lng": 16.41533351,
+      "lat": 48.17943032
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524059",
+    "name": "PA Drischützgasse",
+    "address": "PA Drischützgasse, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 771,
+    "coordinates": {
+      "lng": 16.41056732,
+      "lat": 48.17477701
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524060",
+    "name": "Brehmpark",
+    "address": "Brehmpark, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 799,
+    "coordinates": {
+      "lng": 16.40597458,
+      "lat": 48.17569827
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524061",
+    "name": "Braunhuberpark",
+    "address": "Braunhuberpark, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 4862,
+    "coordinates": {
+      "lng": 16.41454134,
+      "lat": 48.17074606
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Hundezone:06:00-20:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524062",
+    "name": "PA Pretschgasse",
+    "address": "PA Pretschgasse, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 6311,
+    "coordinates": {
+      "lng": 16.42492905,
+      "lat": 48.15693175
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524063",
+    "name": "PA Albin-Hirsch-Platz",
+    "address": "PA Albin-Hirsch-Platz, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 3229,
+    "coordinates": {
+      "lng": 16.41792039,
+      "lat": 48.16736199
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524064",
+    "name": "PA Mannswörther Straße",
+    "address": "PA Mannswörther Straße, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 1936,
+    "coordinates": {
+      "lng": 16.48526159,
+      "lat": 48.15969952
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524065",
+    "name": "PA Wieselburger Gasse",
+    "address": "PA Wieselburger Gasse, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 2801,
+    "coordinates": {
+      "lng": 16.38194723,
+      "lat": 48.1700452
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524066",
+    "name": "PA Wienerfeldsiedlung",
+    "address": "PA Wienerfeldsiedlung, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 16179,
+    "coordinates": {
+      "lng": 16.35974782,
+      "lat": 48.15264465
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524067",
+    "name": "PA Wielandplatz",
+    "address": "PA Wielandplatz, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 4413,
+    "coordinates": {
+      "lng": 16.37961061,
+      "lat": 48.17653241
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "6:00-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524068",
+    "name": "PA Sonnwendgasse",
+    "address": "PA Sonnwendgasse, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 847,
+    "coordinates": {
+      "lng": 16.38005899,
+      "lat": 48.17802706
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524435",
+    "name": "Ottingerwiese",
+    "address": "Ottingerwiese, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 17297,
+    "coordinates": {
+      "lng": 16.30646054,
+      "lat": 48.24806684
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524436",
+    "name": "Setagayapark",
+    "address": "Setagayapark, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 4817,
+    "coordinates": {
+      "lng": 16.35653468,
+      "lat": 48.24545405
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "März: 7:00-18:00, Apr+Sep: 7:00-20:00,Mai-Aug: 7:00-21:00, Okt: 7:00-19:00, Nov-Feb: geschlossen",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524437",
+    "name": "Rudolf-Grünwald-Park",
+    "address": "Rudolf-Grünwald-Park, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 4822,
+    "coordinates": {
+      "lng": 16.3608711,
+      "lat": 48.24764482
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524438",
+    "name": "Pfarrer-Mitschke-Park",
+    "address": "Pfarrer-Mitschke-Park, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 775,
+    "coordinates": {
+      "lng": 16.36174689,
+      "lat": 48.25982663
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524439",
+    "name": "PA Nottebohmstraße",
+    "address": "PA Nottebohmstraße, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 1720,
+    "coordinates": {
+      "lng": 16.31852752,
+      "lat": 48.25095112
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524440",
+    "name": "PA Emil-Reich-Hof",
+    "address": "PA Emil-Reich-Hof, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 3668,
+    "coordinates": {
+      "lng": 16.35459782,
+      "lat": 48.24367897
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524441",
+    "name": "PA Mannagettasteig",
+    "address": "PA Mannagettasteig, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 1268,
+    "coordinates": {
+      "lng": 16.33850623,
+      "lat": 48.25485051
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524442",
+    "name": "PA Linnéplatz",
+    "address": "PA Linnéplatz, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 5870,
+    "coordinates": {
+      "lng": 16.33829496,
+      "lat": 48.23657316
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524443",
+    "name": "Franz-Mayer-Park",
+    "address": "Franz-Mayer-Park, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 4548,
+    "coordinates": {
+      "lng": 16.35074601,
+      "lat": 48.25678338
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524444",
+    "name": "PA Kuchelau",
+    "address": "PA Kuchelau, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 5883,
+    "coordinates": {
+      "lng": 16.34962052,
+      "lat": 48.28218941
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524445",
+    "name": "PA Kranlweg",
+    "address": "PA Kranlweg, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 450,
+    "coordinates": {
+      "lng": 16.31786535,
+      "lat": 48.24530852
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524446",
+    "name": "PA Klabundgasse",
+    "address": "PA Klabundgasse, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 2880,
+    "coordinates": {
+      "lng": 16.35796536,
+      "lat": 48.24726318
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524447",
+    "name": "PA In der Krim",
+    "address": "PA In der Krim, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 3614,
+    "coordinates": {
+      "lng": 16.337272,
+      "lat": 48.24302933
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig: Okt-Mär: 7:00-19:00, Apr-Sep: 7:00-22:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524448",
+    "name": "PA Dominik-Wölfel-Gasse",
+    "address": "PA Dominik-Wölfel-Gasse, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 7323,
+    "coordinates": {
+      "lng": 16.43812169,
+      "lat": 48.26979152
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524449",
+    "name": "PA Doderergasse",
+    "address": "PA Doderergasse, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 6437,
+    "coordinates": {
+      "lng": 16.45452645,
+      "lat": 48.27279275
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524450",
+    "name": "PA Carabelligasse",
+    "address": "PA Carabelligasse, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 4355,
+    "coordinates": {
+      "lng": 16.42190046,
+      "lat": 48.28029283
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524451",
+    "name": "Kleingartenjubiläumspark",
+    "address": "Kleingartenjubiläumspark, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 2330,
+    "coordinates": {
+      "lng": 16.39483477,
+      "lat": 48.26086824
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524452",
+    "name": "PA An der oberen Alten Donau",
+    "address": "PA An der oberen Alten Donau, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 2578,
+    "coordinates": {
+      "lng": 16.40239672,
+      "lat": 48.25096164
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524453",
+    "name": "PA Fultonstraße",
+    "address": "PA Fultonstraße, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 2147,
+    "coordinates": {
+      "lng": 16.41012726,
+      "lat": 48.24942337
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524454",
+    "name": "PA Stromstraße",
+    "address": "PA Stromstraße, 20. Bezirk, Wien",
+    "district": 20,
+    "area": 1468,
+    "coordinates": {
+      "lng": 16.37840152,
+      "lat": 48.23993067
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspiel: 6:30-20:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524455",
+    "name": "Sachsenpark",
+    "address": "Sachsenpark, 20. Bezirk, Wien",
+    "district": 20,
+    "area": 5876,
+    "coordinates": {
+      "lng": 16.37635621,
+      "lat": 48.23207009
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig:Okt-März:07:00-20:00, Apr-Sep:07:00-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524456",
+    "name": "PA Leithastraße",
+    "address": "PA Leithastraße, 20. Bezirk, Wien",
+    "district": 20,
+    "area": 1477,
+    "coordinates": {
+      "lng": 16.37703358,
+      "lat": 48.23724669
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524457",
+    "name": "PA Luntzgasse",
+    "address": "PA Luntzgasse, 20. Bezirk, Wien",
+    "district": 20,
+    "area": 261,
+    "coordinates": {
+      "lng": 16.37590934,
+      "lat": 48.250586
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524458",
+    "name": "PA Spielmanngasse",
+    "address": "PA Spielmanngasse, 20. Bezirk, Wien",
+    "district": 20,
+    "area": 2085,
+    "coordinates": {
+      "lng": 16.36835535,
+      "lat": 48.24015252
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524459",
+    "name": "PA Kapaunplatz",
+    "address": "PA Kapaunplatz, 20. Bezirk, Wien",
+    "district": 20,
+    "area": 6064,
+    "coordinates": {
+      "lng": 16.37728166,
+      "lat": 48.24649813
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig:06:30-20:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524460",
+    "name": "PA Gaußplatz",
+    "address": "PA Gaußplatz, 20. Bezirk, Wien",
+    "district": 20,
+    "area": 4204,
+    "coordinates": {
+      "lng": 16.36932797,
+      "lat": 48.22632167
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig:Okt-März:07:30-20:30, Apr-Sep:07:30-21:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524461",
+    "name": "Prater - Blumenwiese",
+    "address": "Prater - Blumenwiese, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 18907,
+    "coordinates": {
+      "lng": 16.41520234,
+      "lat": 48.20307331
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524462",
+    "name": "PA Eisenhutgasse/Oberleuthnergrund",
+    "address": "PA Eisenhutgasse/Oberleuthnergrund, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 4191,
+    "coordinates": {
+      "lng": 16.48366551,
+      "lat": 48.21906271
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524463",
+    "name": "Franz-Mittasch-Park",
+    "address": "Franz-Mittasch-Park, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 2834,
+    "coordinates": {
+      "lng": 16.43961767,
+      "lat": 48.26318584
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524464",
+    "name": "PA Genossenschaftsstraße",
+    "address": "PA Genossenschaftsstraße, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 4305,
+    "coordinates": {
+      "lng": 16.24488368,
+      "lat": 48.21410424
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524465",
+    "name": "Alfred-Grünwald-Park",
+    "address": "Alfred-Grünwald-Park, 6. Bezirk, Wien",
+    "district": 6,
+    "area": 9230,
+    "coordinates": {
+      "lng": 16.36160775,
+      "lat": 48.19832371
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524466",
+    "name": "PA Wiesberggasse",
+    "address": "PA Wiesberggasse, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 2559,
+    "coordinates": {
+      "lng": 16.30821628,
+      "lat": 48.20940954
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig: März-Nov: 07:00-21:00, Dez-Feb: keine Sperre",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524467",
+    "name": "PA Gersthofer Straße",
+    "address": "PA Gersthofer Straße, 18. Bezirk, Wien",
+    "district": 18,
+    "area": 2148,
+    "coordinates": {
+      "lng": 16.32546462,
+      "lat": 48.22662601
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524631",
+    "name": "Mundypark",
+    "address": "Mundypark, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 2896,
+    "coordinates": {
+      "lng": 16.38441095,
+      "lat": 48.17608042
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig: 6:00-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524632",
+    "name": "PA Otto-Probst-Straße",
+    "address": "PA Otto-Probst-Straße, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 11659,
+    "coordinates": {
+      "lng": 16.35221388,
+      "lat": 48.15581422
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524633",
+    "name": "PA Suchenwirtplatz",
+    "address": "PA Suchenwirtplatz, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 2404,
+    "coordinates": {
+      "lng": 16.37349125,
+      "lat": 48.17000035
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig: 6:00-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524634",
+    "name": "Waldmüllerpark",
+    "address": "Waldmüllerpark, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 39190,
+    "coordinates": {
+      "lng": 16.36553123,
+      "lat": 48.18066574
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524635",
+    "name": "PA Neusserplatz",
+    "address": "PA Neusserplatz, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 593,
+    "coordinates": {
+      "lng": 16.31731646,
+      "lat": 48.20073961
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524636",
+    "name": "PA Lorenz-Reiter-Straße",
+    "address": "PA Lorenz-Reiter-Straße, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 6853,
+    "coordinates": {
+      "lng": 16.41782658,
+      "lat": 48.18088102
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524637",
+    "name": "PA Hutterergasse",
+    "address": "PA Hutterergasse, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 7506,
+    "coordinates": {
+      "lng": 16.41820818,
+      "lat": 48.17745049
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524638",
+    "name": "Rosa-Barach-Park",
+    "address": "Rosa-Barach-Park, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 828,
+    "coordinates": {
+      "lng": 16.33168922,
+      "lat": 48.19064976
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524639",
+    "name": "PA Amstergasse",
+    "address": "PA Amstergasse, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 1560,
+    "coordinates": {
+      "lng": 16.28430537,
+      "lat": 48.14590287
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524640",
+    "name": "GA Wilhelm-Svetelsky-Platz",
+    "address": "GA Wilhelm-Svetelsky-Platz, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 1534,
+    "coordinates": {
+      "lng": 16.46571382,
+      "lat": 48.15449835
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524641",
+    "name": "PA Faistauergasse",
+    "address": "PA Faistauergasse, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 538,
+    "coordinates": {
+      "lng": 16.27597524,
+      "lat": 48.17635197
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524642",
+    "name": "Walter-Kuhn-Park",
+    "address": "Walter-Kuhn-Park, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 9004,
+    "coordinates": {
+      "lng": 16.37149109,
+      "lat": 48.18247585
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "00:00-24:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524643",
+    "name": "Artillerieplatz Hundezone",
+    "address": "Artillerieplatz Hundezone, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 597,
+    "coordinates": {
+      "lng": 16.47323155,
+      "lat": 48.16451954
+    },
+    "amenities": [
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524644",
+    "name": "Stadtpark Atzgersdorf",
+    "address": "Stadtpark Atzgersdorf, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 29172,
+    "coordinates": {
+      "lng": 16.30094486,
+      "lat": 48.14953839
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524645",
+    "name": "Millenbergeweg Hundezone",
+    "address": "Millenbergeweg Hundezone, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 350,
+    "coordinates": {
+      "lng": 16.29095371,
+      "lat": 48.14974487
+    },
+    "amenities": [
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524646",
+    "name": "GA Goldschlagstraße",
+    "address": "GA Goldschlagstraße, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 262,
+    "coordinates": {
+      "lng": 16.33561811,
+      "lat": 48.19888091
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524647",
+    "name": "GA Felberstraße",
+    "address": "GA Felberstraße, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 165,
+    "coordinates": {
+      "lng": 16.33038984,
+      "lat": 48.19624378
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524648",
+    "name": "PA Kranzgasse",
+    "address": "PA Kranzgasse, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 690,
+    "coordinates": {
+      "lng": 16.33321481,
+      "lat": 48.18937098
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524649",
+    "name": "GA Pelzgasse",
+    "address": "GA Pelzgasse, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 63,
+    "coordinates": {
+      "lng": 16.33631843,
+      "lat": 48.19852358
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524650",
+    "name": "GA Maria vom Siege Brücke",
+    "address": "GA Maria vom Siege Brücke, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 22,
+    "coordinates": {
+      "lng": 16.33838679,
+      "lat": 48.19298426
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524651",
+    "name": "GA Pfenninggeldgasse",
+    "address": "GA Pfenninggeldgasse, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 28,
+    "coordinates": {
+      "lng": 16.31787742,
+      "lat": 48.21158452
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524652",
+    "name": "PA Kopalgasse",
+    "address": "PA Kopalgasse, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 2845,
+    "coordinates": {
+      "lng": 16.41842189,
+      "lat": 48.17900833
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524653",
+    "name": "PA Danilovatzgasse",
+    "address": "PA Danilovatzgasse, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 897,
+    "coordinates": {
+      "lng": 16.32143277,
+      "lat": 48.15722176
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524654",
+    "name": "Marillenalm",
+    "address": "Marillenalm, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 10079,
+    "coordinates": {
+      "lng": 16.31755123,
+      "lat": 48.17908864
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Wint: 6:00-21:30|Somm: 6:00-22:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524655",
+    "name": "PA Schlöglgasse",
+    "address": "PA Schlöglgasse, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 10930,
+    "coordinates": {
+      "lng": 16.306801,
+      "lat": 48.1691279
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524656",
+    "name": "Hundezone Himmelbaurgasse",
+    "address": "Hundezone Himmelbaurgasse, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 993,
+    "coordinates": {
+      "lng": 16.28984637,
+      "lat": 48.17274535
+    },
+    "amenities": [
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524657",
+    "name": "PA Anzbachgasse",
+    "address": "PA Anzbachgasse, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 1700,
+    "coordinates": {
+      "lng": 16.24255843,
+      "lat": 48.20846957
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524658",
+    "name": "Heinz-Conrads-Park",
+    "address": "Heinz-Conrads-Park, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 5964,
+    "coordinates": {
+      "lng": 16.31527511,
+      "lat": 48.19129161
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524659",
+    "name": "PA Moshe-Jahoda-Platz",
+    "address": "PA Moshe-Jahoda-Platz, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 534,
+    "coordinates": {
+      "lng": 16.33544271,
+      "lat": 48.19217347
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524660",
+    "name": "Ignaz-Kuranda-Park",
+    "address": "Ignaz-Kuranda-Park, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 2429,
+    "coordinates": {
+      "lng": 16.33373749,
+      "lat": 48.18649197
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524661",
+    "name": "PA Kriemhildplatz",
+    "address": "PA Kriemhildplatz, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 1086,
+    "coordinates": {
+      "lng": 16.32890386,
+      "lat": 48.20244413
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524662",
+    "name": "PA Winckelmannstraße",
+    "address": "PA Winckelmannstraße, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 1859,
+    "coordinates": {
+      "lng": 16.32091476,
+      "lat": 48.19042337
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524663",
+    "name": "PA Hansl-Schmid-Weg",
+    "address": "PA Hansl-Schmid-Weg, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 899,
+    "coordinates": {
+      "lng": 16.28615628,
+      "lat": 48.21261957
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524698",
+    "name": "Blumengärten Hirschstetten",
+    "address": "Blumengärten Hirschstetten, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 83495,
+    "coordinates": {
+      "lng": 16.4741804,
+      "lat": 48.23959801
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Sommer Di-So 9-18",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524699",
+    "name": "Elinor-Ostrom-Park",
+    "address": "Elinor-Ostrom-Park, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 29157,
+    "coordinates": {
+      "lng": 16.5104981,
+      "lat": 48.22846624
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524700",
+    "name": "Rathauspark (Mauer)",
+    "address": "Rathauspark (Mauer), 23. Bezirk, Wien",
+    "district": 23,
+    "area": 13986,
+    "coordinates": {
+      "lng": 16.27013879,
+      "lat": 48.15159639
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524701",
+    "name": "PA Alma-Seidler-Weg",
+    "address": "PA Alma-Seidler-Weg, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 9462,
+    "coordinates": {
+      "lng": 16.31293487,
+      "lat": 48.14831882
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524702",
+    "name": "Mexikopark – Rosenpark",
+    "address": "Mexikopark – Rosenpark, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 15192,
+    "coordinates": {
+      "lng": 16.40309683,
+      "lat": 48.22623204
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Spielplatz: 6:30-20:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524703",
+    "name": "Pötzleinsdorfer Schloßpark",
+    "address": "Pötzleinsdorfer Schloßpark, 18. Bezirk, Wien",
+    "district": 18,
+    "area": 348672,
+    "coordinates": {
+      "lng": 16.30890499,
+      "lat": 48.24099441
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Okt-Mär: 8:00-18:00, Apr-Sep: 7:00-21:00 (Sperrzeiten witterungsabhängig)",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524704",
+    "name": "Anton-Schmid-Promenade/WP",
+    "address": "Anton-Schmid-Promenade/WP, 20. Bezirk, Wien",
+    "district": 20,
+    "area": 42300,
+    "coordinates": {
+      "lng": 16.36340311,
+      "lat": 48.23062756
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524705",
+    "name": "Anton-Schmid-Promenade/AP",
+    "address": "Anton-Schmid-Promenade/AP, 20. Bezirk, Wien",
+    "district": 20,
+    "area": 32015,
+    "coordinates": {
+      "lng": 16.36865548,
+      "lat": 48.24529431
+    },
+    "amenities": [
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524706",
+    "name": "Donaukanalpromenade",
+    "address": "Donaukanalpromenade, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 15186,
+    "coordinates": {
+      "lng": 16.37174192,
+      "lat": 48.25070866
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524707",
+    "name": "Friedl-Dicker-Brandeis-Promenade",
+    "address": "Friedl-Dicker-Brandeis-Promenade, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 1431,
+    "coordinates": {
+      "lng": 16.36970783,
+      "lat": 48.21946964
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524708",
+    "name": "PA Lazargasse",
+    "address": "PA Lazargasse, 17. Bezirk, Wien",
+    "district": 17,
+    "area": 1217,
+    "coordinates": {
+      "lng": 16.32339337,
+      "lat": 48.2266273
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524709",
+    "name": "Franz-Schwarz-Park",
+    "address": "Franz-Schwarz-Park, 6. Bezirk, Wien",
+    "district": 6,
+    "area": 875,
+    "coordinates": {
+      "lng": 16.33925395,
+      "lat": 48.18873536
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524710",
+    "name": "Hetzendorfer Schloßpark",
+    "address": "Hetzendorfer Schloßpark, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 8181,
+    "coordinates": {
+      "lng": 16.30692546,
+      "lat": 48.16354499
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524711",
+    "name": "PA Paltramplatz",
+    "address": "PA Paltramplatz, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 3127,
+    "coordinates": {
+      "lng": 16.36854378,
+      "lat": 48.17089351
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "6:00-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524712",
+    "name": "PA Dürrnbacherstraße",
+    "address": "PA Dürrnbacherstraße, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 29198,
+    "coordinates": {
+      "lng": 16.42801865,
+      "lat": 48.16566421
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524713",
+    "name": "Czapkapark",
+    "address": "Czapkapark, 3. Bezirk, Wien",
+    "district": 3,
+    "area": 2962,
+    "coordinates": {
+      "lng": 16.39114733,
+      "lat": 48.20484785
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Okt-März: 6:00-19:00, Apr-Sep: 6:00-20:45",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524714",
+    "name": "Friederike-Stoiber-Park",
+    "address": "Friederike-Stoiber-Park, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 1911,
+    "coordinates": {
+      "lng": 16.30185652,
+      "lat": 48.16969461
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Okt-März:06:00-21:00, Apr-Sep:06:00-21:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524715",
+    "name": "GA Apostelgasse",
+    "address": "GA Apostelgasse, 3. Bezirk, Wien",
+    "district": 3,
+    "area": 501,
+    "coordinates": {
+      "lng": 16.39793873,
+      "lat": 48.20024093
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524716",
+    "name": "Grete-Jost-Park",
+    "address": "Grete-Jost-Park, 3. Bezirk, Wien",
+    "district": 3,
+    "area": 1776,
+    "coordinates": {
+      "lng": 16.39246156,
+      "lat": 48.20339043
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Okt-März: 6:15-19:15, Apr-Sep: 6:15-21:25",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524717",
+    "name": "Modenapark",
+    "address": "Modenapark, 3. Bezirk, Wien",
+    "district": 3,
+    "area": 7776,
+    "coordinates": {
+      "lng": 16.38240196,
+      "lat": 48.19984622
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524718",
+    "name": "PA Reklewskigasse",
+    "address": "PA Reklewskigasse, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 10366,
+    "coordinates": {
+      "lng": 16.29418156,
+      "lat": 48.14366988
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524719",
+    "name": "PA Yppenplatz",
+    "address": "PA Yppenplatz, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 4196,
+    "coordinates": {
+      "lng": 16.33530868,
+      "lat": 48.21346887
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524720",
+    "name": "PA Mühlstraße",
+    "address": "PA Mühlstraße, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 269,
+    "coordinates": {
+      "lng": 16.37976982,
+      "lat": 48.14063053
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "00:00 - 24:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524721",
+    "name": "An den alten Schanzen Hundezone",
+    "address": "An den alten Schanzen Hundezone, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 573,
+    "coordinates": {
+      "lng": 16.49640256,
+      "lat": 48.22578348
+    },
+    "amenities": [
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524722",
+    "name": "PA Türkenschanzplatz",
+    "address": "PA Türkenschanzplatz, 18. Bezirk, Wien",
+    "district": 18,
+    "area": 1949,
+    "coordinates": {
+      "lng": 16.3279944,
+      "lat": 48.23492172
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524723",
+    "name": "GA Alszeile",
+    "address": "GA Alszeile, 17. Bezirk, Wien",
+    "district": 17,
+    "area": 4209,
+    "coordinates": {
+      "lng": 16.31430369,
+      "lat": 48.2262856
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Hundezone: 06:00-22:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524724",
+    "name": "GA Lambertgasse",
+    "address": "GA Lambertgasse, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 26,
+    "coordinates": {
+      "lng": 16.31964184,
+      "lat": 48.21162022
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524725",
+    "name": "GA Lerchenfelder Gürtel",
+    "address": "GA Lerchenfelder Gürtel, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 51,
+    "coordinates": {
+      "lng": 16.33851179,
+      "lat": 48.20884645
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524726",
+    "name": "GA Grubergasse",
+    "address": "GA Grubergasse, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 104,
+    "coordinates": {
+      "lng": 16.31567573,
+      "lat": 48.21276947
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524727",
+    "name": "Elfi-Dassanowsky-Park",
+    "address": "Elfi-Dassanowsky-Park, 17. Bezirk, Wien",
+    "district": 17,
+    "area": 220,
+    "coordinates": {
+      "lng": 16.33068782,
+      "lat": 48.21951316
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524728",
+    "name": "Hilde-Sochor-Park",
+    "address": "Hilde-Sochor-Park, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 87,
+    "coordinates": {
+      "lng": 16.31279046,
+      "lat": 48.19915977
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524729",
+    "name": "Dora-Schimanko-Park",
+    "address": "Dora-Schimanko-Park, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 1428,
+    "coordinates": {
+      "lng": 16.37352027,
+      "lat": 48.22186741
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524730",
+    "name": "PA Kinzerplatz",
+    "address": "PA Kinzerplatz, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 9801,
+    "coordinates": {
+      "lng": 16.40808398,
+      "lat": 48.25344626
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524731",
+    "name": "Eva-und-Otto-Benesch-Park",
+    "address": "Eva-und-Otto-Benesch-Park, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 15838,
+    "coordinates": {
+      "lng": 16.35241354,
+      "lat": 48.16568895
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524732",
+    "name": "GA Stefan-Fadinger-Platz",
+    "address": "GA Stefan-Fadinger-Platz, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 4254,
+    "coordinates": {
+      "lng": 16.35736796,
+      "lat": 48.16526131
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524733",
+    "name": "Hans-Bock-Park",
+    "address": "Hans-Bock-Park, 17. Bezirk, Wien",
+    "district": 17,
+    "area": 9740,
+    "coordinates": {
+      "lng": 16.30198261,
+      "lat": 48.23549635
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524734",
+    "name": "Ernst-Paul-Zimper-Park",
+    "address": "Ernst-Paul-Zimper-Park, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 13739,
+    "coordinates": {
+      "lng": 16.45004816,
+      "lat": 48.25086735
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524735",
+    "name": "Vally-Wieselthier-Park",
+    "address": "Vally-Wieselthier-Park, 7. Bezirk, Wien",
+    "district": 7,
+    "area": 598,
+    "coordinates": {
+      "lng": 16.35432241,
+      "lat": 48.20375419
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524736",
+    "name": "PA Knöllgasse",
+    "address": "PA Knöllgasse, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 2548,
+    "coordinates": {
+      "lng": 16.35871936,
+      "lat": 48.1779281
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524737",
+    "name": "Hannah-Arendt-Park",
+    "address": "Hannah-Arendt-Park, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 14641,
+    "coordinates": {
+      "lng": 16.50126495,
+      "lat": 48.22355563
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524738",
+    "name": "Votivpark",
+    "address": "Votivpark, 9. Bezirk, Wien",
+    "district": 9,
+    "area": 16795,
+    "coordinates": {
+      "lng": 16.3583884,
+      "lat": 48.21570591
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524739",
+    "name": "Karl-Fellinger-Park",
+    "address": "Karl-Fellinger-Park, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 22500,
+    "coordinates": {
+      "lng": 16.34527958,
+      "lat": 48.24203897
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524740",
+    "name": "Lichtentalerpark",
+    "address": "Lichtentalerpark, 9. Bezirk, Wien",
+    "district": 9,
+    "area": 5007,
+    "coordinates": {
+      "lng": 16.35826616,
+      "lat": 48.22671826
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig: 7:00-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524741",
+    "name": "Lerchenfelder Gürtel Hundezone",
+    "address": "Lerchenfelder Gürtel Hundezone, 7. Bezirk, Wien",
+    "district": 7,
+    "area": 10004,
+    "coordinates": {
+      "lng": 16.33763312,
+      "lat": 48.20679749
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524742",
+    "name": "Resselpark",
+    "address": "Resselpark, 4. Bezirk, Wien",
+    "district": 4,
+    "area": 41532,
+    "coordinates": {
+      "lng": 16.37119533,
+      "lat": 48.19936656
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524743",
+    "name": "Christine-Busta-Park",
+    "address": "Christine-Busta-Park, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 5756,
+    "coordinates": {
+      "lng": 16.32814972,
+      "lat": 48.180351
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Okt-März:06:00-21:00, Apr-Sep:06:00-21:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524744",
+    "name": "Otto-Affenzeller-Park",
+    "address": "Otto-Affenzeller-Park, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 9239,
+    "coordinates": {
+      "lng": 16.44977212,
+      "lat": 48.23219488
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524745",
+    "name": "PA Pötzleinsdorfer Straße",
+    "address": "PA Pötzleinsdorfer Straße, 18. Bezirk, Wien",
+    "district": 18,
+    "area": 791,
+    "coordinates": {
+      "lng": 16.31587683,
+      "lat": 48.23970943
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524746",
+    "name": "PA Don Bosco Wiese",
+    "address": "PA Don Bosco Wiese, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 2960,
+    "coordinates": {
+      "lng": 16.28264434,
+      "lat": 48.18557176
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524747",
+    "name": "Venediger-Au-Park",
+    "address": "Venediger-Au-Park, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 33244,
+    "coordinates": {
+      "lng": 16.3952679,
+      "lat": 48.21883557
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524748",
+    "name": "PA Quellenstraße",
+    "address": "PA Quellenstraße, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 5081,
+    "coordinates": {
+      "lng": 16.39445171,
+      "lat": 48.17181442
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524749",
+    "name": "Claudia-Heill-Park",
+    "address": "Claudia-Heill-Park, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 8891,
+    "coordinates": {
+      "lng": 16.43711162,
+      "lat": 48.24942262
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524750",
+    "name": "Hermann-Gmeiner-Park",
+    "address": "Hermann-Gmeiner-Park, 1. Bezirk, Wien",
+    "district": 1,
+    "area": 4228,
+    "coordinates": {
+      "lng": 16.36736235,
+      "lat": 48.21440929
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig: 6:15-21:45",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524751",
+    "name": "Kurpark Oberlaa",
+    "address": "Kurpark Oberlaa, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 606188,
+    "coordinates": {
+      "lng": 16.40322411,
+      "lat": 48.14733066
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Nov.-Jan.6:00-18:00, Feb.6:00-19:00, Mar.&Okt.6:00-20:00, Apr.&Sept.6:00-21:00, Mai-Aug.6:00-22:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524752",
+    "name": "PA Harthausergasse",
+    "address": "PA Harthausergasse, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 892,
+    "coordinates": {
+      "lng": 16.33823093,
+      "lat": 48.18714589
+    },
+    "amenities": [
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "00:00-24:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524753",
+    "name": "PA Blauer Teich",
+    "address": "PA Blauer Teich, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 3416,
+    "coordinates": {
+      "lng": 16.39302867,
+      "lat": 48.16341132
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524754",
+    "name": "PA Kudlichgasse",
+    "address": "PA Kudlichgasse, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 943,
+    "coordinates": {
+      "lng": 16.38166767,
+      "lat": 48.17271595
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524755",
+    "name": "Matzner-Park",
+    "address": "Matzner-Park, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 29245,
+    "coordinates": {
+      "lng": 16.30327609,
+      "lat": 48.19585876
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524756",
+    "name": "PA Kornauthgasse",
+    "address": "PA Kornauthgasse, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 3089,
+    "coordinates": {
+      "lng": 16.36624951,
+      "lat": 48.16149057
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524757",
+    "name": "Maria-Rekker-Park",
+    "address": "Maria-Rekker-Park, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 2183,
+    "coordinates": {
+      "lng": 16.38185797,
+      "lat": 48.16439085
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524758",
+    "name": "GA Franz-Jachym-Platz",
+    "address": "GA Franz-Jachym-Platz, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 1229,
+    "coordinates": {
+      "lng": 16.39643872,
+      "lat": 48.15314274
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524759",
+    "name": "PA Johann-Pölzer-Gasse",
+    "address": "PA Johann-Pölzer-Gasse, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 3598,
+    "coordinates": {
+      "lng": 16.3949692,
+      "lat": 48.14659918
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524760",
+    "name": "Mexikopark – Kirche",
+    "address": "Mexikopark – Kirche, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 11728,
+    "coordinates": {
+      "lng": 16.40471318,
+      "lat": 48.22456087
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524761",
+    "name": "Saarpark",
+    "address": "Saarpark, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 8020,
+    "coordinates": {
+      "lng": 16.34881788,
+      "lat": 48.2457276
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524794",
+    "name": "Herweghpark",
+    "address": "Herweghpark, 5. Bezirk, Wien",
+    "district": 5,
+    "area": 5663,
+    "coordinates": {
+      "lng": 16.35063365,
+      "lat": 48.1802283
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524795",
+    "name": "Jutta-Steier-Park",
+    "address": "Jutta-Steier-Park, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 5066,
+    "coordinates": {
+      "lng": 16.30505474,
+      "lat": 48.20011637
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524796",
+    "name": "Josef-Strauß-Park",
+    "address": "Josef-Strauß-Park, 7. Bezirk, Wien",
+    "district": 7,
+    "area": 7969,
+    "coordinates": {
+      "lng": 16.34057733,
+      "lat": 48.20766467
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Okt-März: 7:10-19:15, Apr-Sep: 7:10-21:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524797",
+    "name": "PA Eichbachgasse",
+    "address": "PA Eichbachgasse, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 7734,
+    "coordinates": {
+      "lng": 16.24292264,
+      "lat": 48.22244843
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524798",
+    "name": "GA Gaullachergasse",
+    "address": "GA Gaullachergasse, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 328,
+    "coordinates": {
+      "lng": 16.33159421,
+      "lat": 48.2123578
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524799",
+    "name": "Adele-Jellinek-Park",
+    "address": "Adele-Jellinek-Park, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 3128,
+    "coordinates": {
+      "lng": 16.32596105,
+      "lat": 48.21271446
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524800",
+    "name": "PA Franz-Koci-Straße",
+    "address": "PA Franz-Koci-Straße, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 8161,
+    "coordinates": {
+      "lng": 16.39294486,
+      "lat": 48.14478189
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524801",
+    "name": "PA Ada-Christen-Gasse",
+    "address": "PA Ada-Christen-Gasse, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 22365,
+    "coordinates": {
+      "lng": 16.38750638,
+      "lat": 48.14574427
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524802",
+    "name": "PA Holzknechtstraße",
+    "address": "PA Holzknechtstraße, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 2127,
+    "coordinates": {
+      "lng": 16.39427829,
+      "lat": 48.15452473
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "06:00-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524803",
+    "name": "PA Laxenburger Straße",
+    "address": "PA Laxenburger Straße, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 35781,
+    "coordinates": {
+      "lng": 16.36432962,
+      "lat": 48.1520575
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524804",
+    "name": "PA Forstnergasse",
+    "address": "PA Forstnergasse, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 3479,
+    "coordinates": {
+      "lng": 16.45496598,
+      "lat": 48.2472904
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "00:00-24:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524805",
+    "name": "Diana-Budisavljevic-Park",
+    "address": "Diana-Budisavljevic-Park, 9. Bezirk, Wien",
+    "district": 9,
+    "area": 18373,
+    "coordinates": {
+      "lng": 16.36735466,
+      "lat": 48.2233921
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524806",
+    "name": "Hubert-Blamauer-Park",
+    "address": "Hubert-Blamauer-Park, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 7940,
+    "coordinates": {
+      "lng": 16.39242394,
+      "lat": 48.14019012
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig:06:00-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524807",
+    "name": "PA Tichyweg",
+    "address": "PA Tichyweg, 18. Bezirk, Wien",
+    "district": 18,
+    "area": 8055,
+    "coordinates": {
+      "lng": 16.30245702,
+      "lat": 48.23833656
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524808",
+    "name": "Fuchupark",
+    "address": "Fuchupark, 17. Bezirk, Wien",
+    "district": 17,
+    "area": 5392,
+    "coordinates": {
+      "lng": 16.3150521,
+      "lat": 48.23212511
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524809",
+    "name": "PA Haidmannsgasse",
+    "address": "PA Haidmannsgasse, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 839,
+    "coordinates": {
+      "lng": 16.33629923,
+      "lat": 48.19322788
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Nov-März: 08:00-19:00, Apr-Okt: 08:00-20:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524810",
+    "name": "PA Röntgengasse",
+    "address": "PA Röntgengasse, 17. Bezirk, Wien",
+    "district": 17,
+    "area": 2176,
+    "coordinates": {
+      "lng": 16.28292643,
+      "lat": 48.22586657
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524811",
+    "name": "PA Wichtelgasse",
+    "address": "PA Wichtelgasse, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 3755,
+    "coordinates": {
+      "lng": 16.32110525,
+      "lat": 48.21278538
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "März-Nov: 06:00-19:30, Dez-Feb: keine Sperre",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524812",
+    "name": "Erwin-Ringel-Park",
+    "address": "Erwin-Ringel-Park, 9. Bezirk, Wien",
+    "district": 9,
+    "area": 4082,
+    "coordinates": {
+      "lng": 16.36493241,
+      "lat": 48.21722909
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524813",
+    "name": "Karl-Farkas-Park",
+    "address": "Karl-Farkas-Park, 7. Bezirk, Wien",
+    "district": 7,
+    "area": 1667,
+    "coordinates": {
+      "lng": 16.34638293,
+      "lat": 48.20463338
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Okt: 6:50-19:30, Nov-März: 6:50-18:30, Apr-Sep: 6:50-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524814",
+    "name": "PA Vierthalergasse",
+    "address": "PA Vierthalergasse, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 2842,
+    "coordinates": {
+      "lng": 16.3350665,
+      "lat": 48.17884891
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Okt-März:06:00-21:00, Apr-Sep:06:00-21:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524815",
+    "name": "Hernalser Gürtel Hundezone",
+    "address": "Hernalser Gürtel Hundezone, 8. Bezirk, Wien",
+    "district": 8,
+    "area": 675,
+    "coordinates": {
+      "lng": 16.33983757,
+      "lat": 48.21278743
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Okt-März:6:00-19:15, Apr-Sep:06:30-20:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524816",
+    "name": "Alois-Greb-Park",
+    "address": "Alois-Greb-Park, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 4958,
+    "coordinates": {
+      "lng": 16.36033466,
+      "lat": 48.17688336
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524817",
+    "name": "Hebbelpark",
+    "address": "Hebbelpark, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 4018,
+    "coordinates": {
+      "lng": 16.37768424,
+      "lat": 48.16673111
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Hundezone+Spielplatz:06:00-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524818",
+    "name": "Lina-Proksch-Park",
+    "address": "Lina-Proksch-Park, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 2224,
+    "coordinates": {
+      "lng": 16.32007815,
+      "lat": 48.20310817
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524819",
+    "name": "PA Per-Albin-Hansson-Straße",
+    "address": "PA Per-Albin-Hansson-Straße, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 113485,
+    "coordinates": {
+      "lng": 16.37558113,
+      "lat": 48.14868024
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524820",
+    "name": "PA Bergtaidingweg",
+    "address": "PA Bergtaidingweg, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 16630,
+    "coordinates": {
+      "lng": 16.38846573,
+      "lat": 48.14880509
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524821",
+    "name": "Prater - Kaiserwiese",
+    "address": "Prater - Kaiserwiese, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 16452,
+    "coordinates": {
+      "lng": 16.39444075,
+      "lat": 48.21697927
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524822",
+    "name": "Heiligenstädter Park",
+    "address": "Heiligenstädter Park, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 51815,
+    "coordinates": {
+      "lng": 16.35913048,
+      "lat": 48.2530848
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524823",
+    "name": "Rothschildgarten",
+    "address": "Rothschildgarten, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 28414,
+    "coordinates": {
+      "lng": 16.35834262,
+      "lat": 48.25191106
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524824",
+    "name": "Hugo-Wolf-Park",
+    "address": "Hugo-Wolf-Park, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 57193,
+    "coordinates": {
+      "lng": 16.33392598,
+      "lat": 48.23971297
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524834",
+    "name": "PA Schelleingasse",
+    "address": "PA Schelleingasse, 4. Bezirk, Wien",
+    "district": 4,
+    "area": 5091,
+    "coordinates": {
+      "lng": 16.37140659,
+      "lat": 48.18680178
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig: Okt-März: 7:15-20:15, Apr-Sep: 6:30-21:15",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524835",
+    "name": "PA Dolfi-Gruber-Weg",
+    "address": "PA Dolfi-Gruber-Weg, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 2092,
+    "coordinates": {
+      "lng": 16.44213987,
+      "lat": 48.24115232
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524836",
+    "name": "Raimund-Zoder-Park",
+    "address": "Raimund-Zoder-Park, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 10118,
+    "coordinates": {
+      "lng": 16.32570184,
+      "lat": 48.24421585
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Okt-März: 07:00-19:00, Apr-Sep: 07:00-22:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524837",
+    "name": "PA Illgasse",
+    "address": "PA Illgasse, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 6151,
+    "coordinates": {
+      "lng": 16.45058209,
+      "lat": 48.2868124
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524838",
+    "name": "PA Lüssenpromenade",
+    "address": "PA Lüssenpromenade, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 7605,
+    "coordinates": {
+      "lng": 16.41506229,
+      "lat": 48.29141975
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524839",
+    "name": "PA Strebersdorfer Straße",
+    "address": "PA Strebersdorfer Straße, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 1003,
+    "coordinates": {
+      "lng": 16.40581012,
+      "lat": 48.28133912
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524840",
+    "name": "Wasserpark",
+    "address": "Wasserpark, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 144498,
+    "coordinates": {
+      "lng": 16.39532002,
+      "lat": 48.25223436
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524841",
+    "name": "PA Grellgasse",
+    "address": "PA Grellgasse, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 1509,
+    "coordinates": {
+      "lng": 16.43435648,
+      "lat": 48.28763364
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524842",
+    "name": "Alma-Rosé-Park",
+    "address": "Alma-Rosé-Park, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 3433,
+    "coordinates": {
+      "lng": 16.43202955,
+      "lat": 48.28792953
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524843",
+    "name": "PA Ruthnergasse",
+    "address": "PA Ruthnergasse, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 21844,
+    "coordinates": {
+      "lng": 16.42335914,
+      "lat": 48.27667791
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "00:00-24:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524844",
+    "name": "Gaswerkpark",
+    "address": "Gaswerkpark, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 8745,
+    "coordinates": {
+      "lng": 16.4304003,
+      "lat": 48.27565993
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "00:00-24:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524845",
+    "name": "Draschepark",
+    "address": "Draschepark, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 124081,
+    "coordinates": {
+      "lng": 16.34190077,
+      "lat": 48.15181803
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524846",
+    "name": "Hans-Dunkl-Park",
+    "address": "Hans-Dunkl-Park, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 8126,
+    "coordinates": {
+      "lng": 16.3525925,
+      "lat": 48.14742971
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524847",
+    "name": "Donaupark",
+    "address": "Donaupark, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 634043,
+    "coordinates": {
+      "lng": 16.41207133,
+      "lat": 48.23998572
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524848",
+    "name": "Türkenschanzpark",
+    "address": "Türkenschanzpark, 18. Bezirk, Wien",
+    "district": 18,
+    "area": 151547,
+    "coordinates": {
+      "lng": 16.3332188,
+      "lat": 48.23546104
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524849",
+    "name": "GA Herrenholzgasse",
+    "address": "GA Herrenholzgasse, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 672,
+    "coordinates": {
+      "lng": 16.41840359,
+      "lat": 48.29591669
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "00:00-24:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524850",
+    "name": "Engelbert-Schliemann-Park",
+    "address": "Engelbert-Schliemann-Park, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 2220,
+    "coordinates": {
+      "lng": 16.26804249,
+      "lat": 48.13437981
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524851",
+    "name": "Am Rosenhügel Hundeauslauf",
+    "address": "Am Rosenhügel Hundeauslauf, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 749,
+    "coordinates": {
+      "lng": 16.29112217,
+      "lat": 48.16197491
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524852",
+    "name": "PA Augasse",
+    "address": "PA Augasse, 9. Bezirk, Wien",
+    "district": 9,
+    "area": 965,
+    "coordinates": {
+      "lng": 16.35761344,
+      "lat": 48.23014166
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524853",
+    "name": "PA Bertha-Löwi-Weg",
+    "address": "PA Bertha-Löwi-Weg, 9. Bezirk, Wien",
+    "district": 9,
+    "area": 1012,
+    "coordinates": {
+      "lng": 16.35137011,
+      "lat": 48.22515754
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524854",
+    "name": "Wolkersbergenstraße Hundezone",
+    "address": "Wolkersbergenstraße Hundezone, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 1228,
+    "coordinates": {
+      "lng": 16.27662259,
+      "lat": 48.17230927
+    },
+    "amenities": [
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524855",
+    "name": "PA Basler Gasse",
+    "address": "PA Basler Gasse, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 3074,
+    "coordinates": {
+      "lng": 16.31276475,
+      "lat": 48.12868364
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig:Mai-Okt: 08:00-20:00, Nov-Apr: keine Sperre",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524856",
+    "name": "Ferdinand-Wolf-Park",
+    "address": "Ferdinand-Wolf-Park, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 23677,
+    "coordinates": {
+      "lng": 16.2495701,
+      "lat": 48.20220875
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524825",
+    "name": "PA Silvaraweg",
+    "address": "PA Silvaraweg, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 1393,
+    "coordinates": {
+      "lng": 16.32223052,
+      "lat": 48.24322869
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524826",
+    "name": "Rudolfspark",
+    "address": "Rudolfspark, 1. Bezirk, Wien",
+    "district": 1,
+    "area": 4304,
+    "coordinates": {
+      "lng": 16.37142127,
+      "lat": 48.21418799
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "6:20-22:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524827",
+    "name": "GA Linke Bahngasse",
+    "address": "GA Linke Bahngasse, 3. Bezirk, Wien",
+    "district": 3,
+    "area": 2625,
+    "coordinates": {
+      "lng": 16.384797,
+      "lat": 48.20072527
+    },
+    "amenities": [
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Hundezone: 6:00-23:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524828",
+    "name": "Frederic-Morton-Park",
+    "address": "Frederic-Morton-Park, 17. Bezirk, Wien",
+    "district": 17,
+    "area": 2141,
+    "coordinates": {
+      "lng": 16.33483067,
+      "lat": 48.21890744
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524829",
+    "name": "PA Riegermühle",
+    "address": "PA Riegermühle, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 9759,
+    "coordinates": {
+      "lng": 16.30044147,
+      "lat": 48.14735111
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524830",
+    "name": "PA Pollakgasse",
+    "address": "PA Pollakgasse, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 9435,
+    "coordinates": {
+      "lng": 16.31145038,
+      "lat": 48.12608318
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524831",
+    "name": "PA Schreinerweg",
+    "address": "PA Schreinerweg, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 7099,
+    "coordinates": {
+      "lng": 16.44467987,
+      "lat": 48.22919655
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524832",
+    "name": "Rosa-Mayreder-Park",
+    "address": "Rosa-Mayreder-Park, 4. Bezirk, Wien",
+    "district": 4,
+    "area": 5226,
+    "coordinates": {
+      "lng": 16.36813985,
+      "lat": 48.20041584
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524833",
+    "name": "PA Eschenallee",
+    "address": "PA Eschenallee, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 3020,
+    "coordinates": {
+      "lng": 16.34964935,
+      "lat": 48.16993473
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524857",
+    "name": "GA Esteplatz",
+    "address": "GA Esteplatz, 3. Bezirk, Wien",
+    "district": 3,
+    "area": 645,
+    "coordinates": {
+      "lng": 16.39031316,
+      "lat": 48.20546697
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524858",
+    "name": "Friessneggpark",
+    "address": "Friessneggpark, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 5812,
+    "coordinates": {
+      "lng": 16.4176852,
+      "lat": 48.26120929
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524859",
+    "name": "PA Auer-Welsbach-Straße",
+    "address": "PA Auer-Welsbach-Straße, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 13828,
+    "coordinates": {
+      "lng": 16.3122706,
+      "lat": 48.15554281
+    },
+    "amenities": [
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524860",
+    "name": "GA Feuerhalle Simmering",
+    "address": "GA Feuerhalle Simmering, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 26027,
+    "coordinates": {
+      "lng": 16.44021841,
+      "lat": 48.15647523
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524861",
+    "name": "PA Schüttauplatz",
+    "address": "PA Schüttauplatz, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 8926,
+    "coordinates": {
+      "lng": 16.42405466,
+      "lat": 48.22599725
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524862",
+    "name": "GA Naschpark/6.Bezirk",
+    "address": "GA Naschpark/6.Bezirk, 6. Bezirk, Wien",
+    "district": 6,
+    "area": 3828,
+    "coordinates": {
+      "lng": 16.35597938,
+      "lat": 48.1962481
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524863",
+    "name": "Helene-Deutsch-Park",
+    "address": "Helene-Deutsch-Park, 9. Bezirk, Wien",
+    "district": 9,
+    "area": 3352,
+    "coordinates": {
+      "lng": 16.35261218,
+      "lat": 48.22947011
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "6:50-20:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524864",
+    "name": "PA Münnichplatz",
+    "address": "PA Münnichplatz, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 6314,
+    "coordinates": {
+      "lng": 16.47605107,
+      "lat": 48.15914713
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "06:00-20:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524865",
+    "name": "PA Endemanngasse",
+    "address": "PA Endemanngasse, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 751,
+    "coordinates": {
+      "lng": 16.29136863,
+      "lat": 48.15308505
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524866",
+    "name": "PA Berresgasse EPK4",
+    "address": "PA Berresgasse EPK4, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 5026,
+    "coordinates": {
+      "lng": 16.48836855,
+      "lat": 48.24321773
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "00:00 - 24:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524867",
+    "name": "Wanda-Lanzer-Park",
+    "address": "Wanda-Lanzer-Park, 4. Bezirk, Wien",
+    "district": 4,
+    "area": 1072,
+    "coordinates": {
+      "lng": 16.36328206,
+      "lat": 48.18970954
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524868",
+    "name": "Stadtpark - Kinderpark",
+    "address": "Stadtpark - Kinderpark, 3. Bezirk, Wien",
+    "district": 3,
+    "area": 35826,
+    "coordinates": {
+      "lng": 16.38095841,
+      "lat": 48.20359533
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524869",
+    "name": "PA Csokorgasse",
+    "address": "PA Csokorgasse, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 6106,
+    "coordinates": {
+      "lng": 16.46603176,
+      "lat": 48.1518184
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524870",
+    "name": "Wohnparkstraße Hundezone",
+    "address": "Wohnparkstraße Hundezone, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 1327,
+    "coordinates": {
+      "lng": 16.31690266,
+      "lat": 48.1529833
+    },
+    "amenities": [
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524871",
+    "name": "Stadtpark",
+    "address": "Stadtpark, 1. Bezirk, Wien",
+    "district": 1,
+    "area": 58822,
+    "coordinates": {
+      "lng": 16.37994037,
+      "lat": 48.20499334
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524872",
+    "name": "Friedhof St. Marx",
+    "address": "Friedhof St. Marx, 3. Bezirk, Wien",
+    "district": 3,
+    "area": 57561,
+    "coordinates": {
+      "lng": 16.40200445,
+      "lat": 48.18277884
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Okt-März: 6:30-18:30, Apr-Sep: 6:30-20:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524873",
+    "name": "GA Mozartplatz",
+    "address": "GA Mozartplatz, 4. Bezirk, Wien",
+    "district": 4,
+    "area": 247,
+    "coordinates": {
+      "lng": 16.36836712,
+      "lat": 48.19529195
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524874",
+    "name": "PA Ausjagdweg",
+    "address": "PA Ausjagdweg, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 1308,
+    "coordinates": {
+      "lng": 16.24632603,
+      "lat": 48.21864325
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524875",
+    "name": "GA Ottakringer Straße",
+    "address": "GA Ottakringer Straße, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 59,
+    "coordinates": {
+      "lng": 16.33490971,
+      "lat": 48.21454843
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524876",
+    "name": "GA Basler Gasse",
+    "address": "GA Basler Gasse, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 383,
+    "coordinates": {
+      "lng": 16.31417904,
+      "lat": 48.12858945
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "00:00-24:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524877",
+    "name": "GA Ilgplatz",
+    "address": "GA Ilgplatz, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 309,
+    "coordinates": {
+      "lng": 16.40503585,
+      "lat": 48.2195083
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524878",
+    "name": "GA Adele-Perlmutter-Platz",
+    "address": "GA Adele-Perlmutter-Platz, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 359,
+    "coordinates": {
+      "lng": 16.38094179,
+      "lat": 48.21277851
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "00:00-24:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524879",
+    "name": "GA Lancplatz",
+    "address": "GA Lancplatz, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 290,
+    "coordinates": {
+      "lng": 16.38100795,
+      "lat": 48.21701415
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524880",
+    "name": "Felix-Steinwandtner-Park",
+    "address": "Felix-Steinwandtner-Park, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 386,
+    "coordinates": {
+      "lng": 16.3017799,
+      "lat": 48.18585997
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524881",
+    "name": "GA Radetzkyplatz",
+    "address": "GA Radetzkyplatz, 3. Bezirk, Wien",
+    "district": 3,
+    "area": 266,
+    "coordinates": {
+      "lng": 16.39018524,
+      "lat": 48.21092599
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524882",
+    "name": "GA Leopold-Ungar-Platz",
+    "address": "GA Leopold-Ungar-Platz, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 762,
+    "coordinates": {
+      "lng": 16.36796557,
+      "lat": 48.2487844
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "00:00-24:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524883",
+    "name": "GA Liesinger Platz",
+    "address": "GA Liesinger Platz, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 2302,
+    "coordinates": {
+      "lng": 16.28102246,
+      "lat": 48.1358526
+    },
+    "amenities": [
+      "Spielplatz",
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524884",
+    "name": "GA Wientalterrasse",
+    "address": "GA Wientalterrasse, 5. Bezirk, Wien",
+    "district": 5,
+    "area": 667,
+    "coordinates": {
+      "lng": 16.35307223,
+      "lat": 48.19056466
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524885",
+    "name": "GA Ludwig-Hirsch-Platz",
+    "address": "GA Ludwig-Hirsch-Platz, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 178,
+    "coordinates": {
+      "lng": 16.37809937,
+      "lat": 48.2169028
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524886",
+    "name": "GA Atzgersdorfer Platz",
+    "address": "GA Atzgersdorfer Platz, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 87,
+    "coordinates": {
+      "lng": 16.29643681,
+      "lat": 48.14640001
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524887",
+    "name": "GA Jenny-Steiner-Weg",
+    "address": "GA Jenny-Steiner-Weg, 7. Bezirk, Wien",
+    "district": 7,
+    "area": 146,
+    "coordinates": {
+      "lng": 16.34700444,
+      "lat": 48.2000574
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524888",
+    "name": "GA Zentaplatz",
+    "address": "GA Zentaplatz, 5. Bezirk, Wien",
+    "district": 5,
+    "area": 631,
+    "coordinates": {
+      "lng": 16.36052317,
+      "lat": 48.18668482
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "6:30-22:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524889",
+    "name": "GA Akkonplatz",
+    "address": "GA Akkonplatz, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 434,
+    "coordinates": {
+      "lng": 16.31524867,
+      "lat": 48.20166793
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524890",
+    "name": "GA Rennbahnweg",
+    "address": "GA Rennbahnweg, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 818,
+    "coordinates": {
+      "lng": 16.45151352,
+      "lat": 48.25731727
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524891",
+    "name": "GA Kühnplatz",
+    "address": "GA Kühnplatz, 4. Bezirk, Wien",
+    "district": 4,
+    "area": 663,
+    "coordinates": {
+      "lng": 16.36504142,
+      "lat": 48.19797895
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524892",
+    "name": "GA Hugo-Wiener-Platz",
+    "address": "GA Hugo-Wiener-Platz, 4. Bezirk, Wien",
+    "district": 4,
+    "area": 50,
+    "coordinates": {
+      "lng": 16.36395592,
+      "lat": 48.19236529
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524893",
+    "name": "GA Maurer Hauptplatz",
+    "address": "GA Maurer Hauptplatz, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 616,
+    "coordinates": {
+      "lng": 16.26745602,
+      "lat": 48.15099049
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524894",
+    "name": "GA St.-Wendelin-Platz",
+    "address": "GA St.-Wendelin-Platz, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 649,
+    "coordinates": {
+      "lng": 16.44224876,
+      "lat": 48.24956494
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524895",
+    "name": "GA Wallensteinplatz",
+    "address": "GA Wallensteinplatz, 20. Bezirk, Wien",
+    "district": 20,
+    "area": 253,
+    "coordinates": {
+      "lng": 16.3714081,
+      "lat": 48.22969671
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524896",
+    "name": "GA Kardinal-Rauscher-Platz",
+    "address": "GA Kardinal-Rauscher-Platz, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 1466,
+    "coordinates": {
+      "lng": 16.32467651,
+      "lat": 48.19728858
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524897",
+    "name": "Gabriele-Possanner-Park",
+    "address": "Gabriele-Possanner-Park, 9. Bezirk, Wien",
+    "district": 9,
+    "area": 907,
+    "coordinates": {
+      "lng": 16.3438208,
+      "lat": 48.21706542
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524898",
+    "name": "GA Höfergasse",
+    "address": "GA Höfergasse, 9. Bezirk, Wien",
+    "district": 9,
+    "area": 163,
+    "coordinates": {
+      "lng": 16.35014216,
+      "lat": 48.21736469
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524899",
+    "name": "Gumpendorfer Gürtel Hundezone",
+    "address": "Gumpendorfer Gürtel Hundezone, 6. Bezirk, Wien",
+    "district": 6,
+    "area": 187,
+    "coordinates": {
+      "lng": 16.33946099,
+      "lat": 48.18893304
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524900",
+    "name": "GA Volkertplatz",
+    "address": "GA Volkertplatz, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 405,
+    "coordinates": {
+      "lng": 16.3869015,
+      "lat": 48.22278283
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524901",
+    "name": "GA Augustinplatz",
+    "address": "GA Augustinplatz, 7. Bezirk, Wien",
+    "district": 7,
+    "area": 105,
+    "coordinates": {
+      "lng": 16.35134996,
+      "lat": 48.20542154
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524902",
+    "name": "GA Schlesingerplatz",
+    "address": "GA Schlesingerplatz, 8. Bezirk, Wien",
+    "district": 8,
+    "area": 524,
+    "coordinates": {
+      "lng": 16.3466693,
+      "lat": 48.21242702
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524903",
+    "name": "GA Alexander-Poch-Platz",
+    "address": "GA Alexander-Poch-Platz, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 772,
+    "coordinates": {
+      "lng": 16.37910814,
+      "lat": 48.21914473
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524904",
+    "name": "GA Rabbiner-Friedmann-Platz",
+    "address": "GA Rabbiner-Friedmann-Platz, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 594,
+    "coordinates": {
+      "lng": 16.38779854,
+      "lat": 48.21923278
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524905",
+    "name": "Therese-Krones-Park",
+    "address": "Therese-Krones-Park, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 518,
+    "coordinates": {
+      "lng": 16.38413881,
+      "lat": 48.21525332
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524906",
+    "name": "Henriette-Willardt-Promenade",
+    "address": "Henriette-Willardt-Promenade, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 23409,
+    "coordinates": {
+      "lng": 16.40102054,
+      "lat": 48.20296933
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524907",
+    "name": "Maria-Lassnig-Park",
+    "address": "Maria-Lassnig-Park, 5. Bezirk, Wien",
+    "district": 5,
+    "area": 226,
+    "coordinates": {
+      "lng": 16.35689558,
+      "lat": 48.19030989
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524908",
+    "name": "KGV Auf der Schmelz",
+    "address": "KGV Auf der Schmelz, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 2705,
+    "coordinates": {
+      "lng": 16.32311454,
+      "lat": 48.20214548
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524909",
+    "name": "GA Siebenbrunnenplatz",
+    "address": "GA Siebenbrunnenplatz, 5. Bezirk, Wien",
+    "district": 5,
+    "area": 82,
+    "coordinates": {
+      "lng": 16.35330674,
+      "lat": 48.18538164
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524910",
+    "name": "GA Dornerplatz",
+    "address": "GA Dornerplatz, 17. Bezirk, Wien",
+    "district": 17,
+    "area": 350,
+    "coordinates": {
+      "lng": 16.33422921,
+      "lat": 48.22135571
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524911",
+    "name": "GA Leipziger Platz",
+    "address": "GA Leipziger Platz, 20. Bezirk, Wien",
+    "district": 20,
+    "area": 1075,
+    "coordinates": {
+      "lng": 16.36765964,
+      "lat": 48.23549634
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524912",
+    "name": "Ida-Bohatta-Park",
+    "address": "Ida-Bohatta-Park, 3. Bezirk, Wien",
+    "district": 3,
+    "area": 1696,
+    "coordinates": {
+      "lng": 16.39134082,
+      "lat": 48.20930145
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig: Okt-März: 6:30-20:30, Apr-Sep: 6:30-21:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524913",
+    "name": "GA Schwedenplatz",
+    "address": "GA Schwedenplatz, 1. Bezirk, Wien",
+    "district": 1,
+    "area": 609,
+    "coordinates": {
+      "lng": 16.37787537,
+      "lat": 48.2114398
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524914",
+    "name": "PA Rosmaringasse",
+    "address": "PA Rosmaringasse, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 3194,
+    "coordinates": {
+      "lng": 16.46681323,
+      "lat": 48.22407965
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielplatz: Okt-April: 9:00-19:00, Mai-Sep: 9:00-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524915",
+    "name": "GA St.-Elisabeth-Platz",
+    "address": "GA St.-Elisabeth-Platz, 4. Bezirk, Wien",
+    "district": 4,
+    "area": 1492,
+    "coordinates": {
+      "lng": 16.37541695,
+      "lat": 48.19077744
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524762",
+    "name": "PA Wigandgasse",
+    "address": "PA Wigandgasse, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 1412,
+    "coordinates": {
+      "lng": 16.35903397,
+      "lat": 48.27210953
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524763",
+    "name": "Mortarapark",
+    "address": "Mortarapark, 20. Bezirk, Wien",
+    "district": 20,
+    "area": 11944,
+    "coordinates": {
+      "lng": 16.38651826,
+      "lat": 48.23423527
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "6:30-22:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524764",
+    "name": "PA Ungerbau",
+    "address": "PA Ungerbau, 20. Bezirk, Wien",
+    "district": 20,
+    "area": 2152,
+    "coordinates": {
+      "lng": 16.37526553,
+      "lat": 48.23746588
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524765",
+    "name": "PA Vorgartenstraße",
+    "address": "PA Vorgartenstraße, 20. Bezirk, Wien",
+    "district": 20,
+    "area": 6133,
+    "coordinates": {
+      "lng": 16.38275882,
+      "lat": 48.23916451
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524766",
+    "name": "Hugo-Gottschlich-Park",
+    "address": "Hugo-Gottschlich-Park, 20. Bezirk, Wien",
+    "district": 20,
+    "area": 18228,
+    "coordinates": {
+      "lng": 16.36872209,
+      "lat": 48.23521683
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig:07:00-20:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524767",
+    "name": "Jakob-Winter-Park",
+    "address": "Jakob-Winter-Park, 20. Bezirk, Wien",
+    "district": 20,
+    "area": 2255,
+    "coordinates": {
+      "lng": 16.3737782,
+      "lat": 48.23429397
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "6:30-20:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524768",
+    "name": "PA Leipziger Platz",
+    "address": "PA Leipziger Platz, 20. Bezirk, Wien",
+    "district": 20,
+    "area": 529,
+    "coordinates": {
+      "lng": 16.36746711,
+      "lat": 48.23563557
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig:Okt-März:07:00-20:00, Apr-Sep:07:00-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524769",
+    "name": "PA Mühlweg",
+    "address": "PA Mühlweg, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 5848,
+    "coordinates": {
+      "lng": 16.39126495,
+      "lat": 48.28949653
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524770",
+    "name": "PA Schwaigergasse",
+    "address": "PA Schwaigergasse, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 10531,
+    "coordinates": {
+      "lng": 16.39272132,
+      "lat": 48.25933075
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524771",
+    "name": "PA Bahnhofplatz",
+    "address": "PA Bahnhofplatz, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 1216,
+    "coordinates": {
+      "lng": 16.42050279,
+      "lat": 48.29774573
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524772",
+    "name": "PA Haspingerplatz",
+    "address": "PA Haspingerplatz, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 9646,
+    "coordinates": {
+      "lng": 16.4054235,
+      "lat": 48.27666262
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524773",
+    "name": "PA Klederinger Straße",
+    "address": "PA Klederinger Straße, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 8973,
+    "coordinates": {
+      "lng": 16.42072297,
+      "lat": 48.13206753
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524774",
+    "name": "PA Mittelzone",
+    "address": "PA Mittelzone, 5. Bezirk, Wien",
+    "district": 5,
+    "area": 14275,
+    "coordinates": {
+      "lng": 16.34718529,
+      "lat": 48.182356
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524775",
+    "name": "PA Unter-Laaer Straße",
+    "address": "PA Unter-Laaer Straße, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 2997,
+    "coordinates": {
+      "lng": 16.4148575,
+      "lat": 48.13341546
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524776",
+    "name": "PA Schütte-Lihotzky-Weg",
+    "address": "PA Schütte-Lihotzky-Weg, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 1073,
+    "coordinates": {
+      "lng": 16.41808764,
+      "lat": 48.18145342
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524777",
+    "name": "PA Ludwig-Kralik-Weg",
+    "address": "PA Ludwig-Kralik-Weg, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 8391,
+    "coordinates": {
+      "lng": 16.41118979,
+      "lat": 48.16921316
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524778",
+    "name": "PA Edelsinnstraße",
+    "address": "PA Edelsinnstraße, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 1081,
+    "coordinates": {
+      "lng": 16.3090204,
+      "lat": 48.17038769
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524779",
+    "name": "PA Hetzendorfer Straße",
+    "address": "PA Hetzendorfer Straße, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 546,
+    "coordinates": {
+      "lng": 16.30007336,
+      "lat": 48.17012417
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524780",
+    "name": "GA Defreggerstraße",
+    "address": "GA Defreggerstraße, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 4358,
+    "coordinates": {
+      "lng": 16.29705293,
+      "lat": 48.16839856
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524781",
+    "name": "PA Rosasgasse",
+    "address": "PA Rosasgasse, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 273,
+    "coordinates": {
+      "lng": 16.32361939,
+      "lat": 48.1818337
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524782",
+    "name": "Volkspark Laaerberg",
+    "address": "Volkspark Laaerberg, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 199919,
+    "coordinates": {
+      "lng": 16.38663228,
+      "lat": 48.15624086
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524783",
+    "name": "Paula-von-Mirtow-Park",
+    "address": "Paula-von-Mirtow-Park, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 6655,
+    "coordinates": {
+      "lng": 16.34544604,
+      "lat": 48.18008982
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524784",
+    "name": "Stefan-Weber-Park",
+    "address": "Stefan-Weber-Park, 5. Bezirk, Wien",
+    "district": 5,
+    "area": 15385,
+    "coordinates": {
+      "lng": 16.34365888,
+      "lat": 48.18648445
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524785",
+    "name": "Hundertwasser-Promenade",
+    "address": "Hundertwasser-Promenade, 3. Bezirk, Wien",
+    "district": 3,
+    "area": 25130,
+    "coordinates": {
+      "lng": 16.39508784,
+      "lat": 48.21014813
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Hundezone: 07:00-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524786",
+    "name": "Treppelweg - Erdberger Lände",
+    "address": "Treppelweg - Erdberger Lände, 3. Bezirk, Wien",
+    "district": 3,
+    "area": 73764,
+    "coordinates": {
+      "lng": 16.40794274,
+      "lat": 48.19925326
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524787",
+    "name": "Bil-Spira-Park",
+    "address": "Bil-Spira-Park, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 13681,
+    "coordinates": {
+      "lng": 16.32034035,
+      "lat": 48.17114975
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524788",
+    "name": "Vogelweidpark",
+    "address": "Vogelweidpark, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 19150,
+    "coordinates": {
+      "lng": 16.33260041,
+      "lat": 48.20359406
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524789",
+    "name": "PA Elisenstraße",
+    "address": "PA Elisenstraße, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 1055,
+    "coordinates": {
+      "lng": 16.27570401,
+      "lat": 48.13497842
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524790",
+    "name": "Barbara-Prammer-Park",
+    "address": "Barbara-Prammer-Park, 5. Bezirk, Wien",
+    "district": 5,
+    "area": 448,
+    "coordinates": {
+      "lng": 16.3583173,
+      "lat": 48.19657277
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524791",
+    "name": "GA Deutschmeisterplatz",
+    "address": "GA Deutschmeisterplatz, 1. Bezirk, Wien",
+    "district": 1,
+    "area": 651,
+    "coordinates": {
+      "lng": 16.36812125,
+      "lat": 48.2170239
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524792",
+    "name": "PA Litfaßstraße",
+    "address": "PA Litfaßstraße, 3. Bezirk, Wien",
+    "district": 3,
+    "area": 2483,
+    "coordinates": {
+      "lng": 16.40763466,
+      "lat": 48.18475575
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524793",
+    "name": "GA Morzinplatz",
+    "address": "GA Morzinplatz, 1. Bezirk, Wien",
+    "district": 1,
+    "area": 3293,
+    "coordinates": {
+      "lng": 16.3750988,
+      "lat": 48.21241335
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524664",
+    "name": "PA Stillfriedplatz",
+    "address": "PA Stillfriedplatz, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 4054,
+    "coordinates": {
+      "lng": 16.30933491,
+      "lat": 48.21267701
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524665",
+    "name": "Christine-Nöstlinger-Park",
+    "address": "Christine-Nöstlinger-Park, 17. Bezirk, Wien",
+    "district": 17,
+    "area": 15991,
+    "coordinates": {
+      "lng": 16.32402035,
+      "lat": 48.22496876
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524666",
+    "name": "GA Staudgasse",
+    "address": "GA Staudgasse, 18. Bezirk, Wien",
+    "district": 18,
+    "area": 207,
+    "coordinates": {
+      "lng": 16.33421316,
+      "lat": 48.22629908
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "00:00-24:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524667",
+    "name": "Park",
+    "address": "Park, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 1041,
+    "coordinates": {
+      "lng": 16.33771064,
+      "lat": 48.25830855
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524668",
+    "name": "PA Gustav-Pick-Gasse",
+    "address": "PA Gustav-Pick-Gasse, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 1352,
+    "coordinates": {
+      "lng": 16.32673214,
+      "lat": 48.24433081
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524669",
+    "name": "Friedl-Hofbauer-Park",
+    "address": "Friedl-Hofbauer-Park, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 5640,
+    "coordinates": {
+      "lng": 16.34611492,
+      "lat": 48.24985462
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524670",
+    "name": "Richard-Eybner-Park",
+    "address": "Richard-Eybner-Park, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 1933,
+    "coordinates": {
+      "lng": 16.34828078,
+      "lat": 48.24313137
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524671",
+    "name": "PA Weilgasse",
+    "address": "PA Weilgasse, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 1906,
+    "coordinates": {
+      "lng": 16.35914217,
+      "lat": 48.24011032
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524672",
+    "name": "Denglerpark",
+    "address": "Denglerpark, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 19853,
+    "coordinates": {
+      "lng": 16.39383504,
+      "lat": 48.27294923
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524673",
+    "name": "Hans-Smital-Park",
+    "address": "Hans-Smital-Park, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 5355,
+    "coordinates": {
+      "lng": 16.39262704,
+      "lat": 48.26306568
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524674",
+    "name": "Karl-Seidl-Park",
+    "address": "Karl-Seidl-Park, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 5796,
+    "coordinates": {
+      "lng": 16.44367677,
+      "lat": 48.26334009
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524675",
+    "name": "PA Mayerweckstraße",
+    "address": "PA Mayerweckstraße, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 2463,
+    "coordinates": {
+      "lng": 16.38657903,
+      "lat": 48.29484223
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524676",
+    "name": "PA Adolf-Loos-Gasse",
+    "address": "PA Adolf-Loos-Gasse, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 5077,
+    "coordinates": {
+      "lng": 16.45433064,
+      "lat": 48.27451527
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524677",
+    "name": "PA Kurze Zwerchäcker",
+    "address": "PA Kurze Zwerchäcker, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 7176,
+    "coordinates": {
+      "lng": 16.45453364,
+      "lat": 48.27013114
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524678",
+    "name": "PA Avedikstraße",
+    "address": "PA Avedikstraße, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 1778,
+    "coordinates": {
+      "lng": 16.32651363,
+      "lat": 48.1925595
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524679",
+    "name": "PA Ferdinand-Käs-Gasse",
+    "address": "PA Ferdinand-Käs-Gasse, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 2036,
+    "coordinates": {
+      "lng": 16.40041968,
+      "lat": 48.28017848
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524680",
+    "name": "Donauschwabenpark",
+    "address": "Donauschwabenpark, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 2451,
+    "coordinates": {
+      "lng": 16.44005356,
+      "lat": 48.26640439
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524681",
+    "name": "Josef-Grössing-Park",
+    "address": "Josef-Grössing-Park, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 10599,
+    "coordinates": {
+      "lng": 16.44398173,
+      "lat": 48.28620159
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524682",
+    "name": "PA Kummergasse",
+    "address": "PA Kummergasse, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 4044,
+    "coordinates": {
+      "lng": 16.41782838,
+      "lat": 48.29364022
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524683",
+    "name": "Hedwig-und-Johann-Schneider-Park",
+    "address": "Hedwig-und-Johann-Schneider-Park, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 15945,
+    "coordinates": {
+      "lng": 16.44859412,
+      "lat": 48.26919957
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524684",
+    "name": "PA Cottagestraße",
+    "address": "PA Cottagestraße, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 988,
+    "coordinates": {
+      "lng": 16.22480499,
+      "lat": 48.21458343
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524685",
+    "name": "PA Karl-Seitz-Platz",
+    "address": "PA Karl-Seitz-Platz, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 4989,
+    "coordinates": {
+      "lng": 16.38758684,
+      "lat": 48.26257617
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524686",
+    "name": "PA Dragonerhäufel",
+    "address": "PA Dragonerhäufel, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 36302,
+    "coordinates": {
+      "lng": 16.40657885,
+      "lat": 48.24722696
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524687",
+    "name": "PA Fischhofgasse",
+    "address": "PA Fischhofgasse, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 7408,
+    "coordinates": {
+      "lng": 16.38825714,
+      "lat": 48.16465704
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524688",
+    "name": "PA Schnitterweg",
+    "address": "PA Schnitterweg, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 3552,
+    "coordinates": {
+      "lng": 16.42769041,
+      "lat": 48.22187949
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524689",
+    "name": "Emilie-Turecek-Promenade",
+    "address": "Emilie-Turecek-Promenade, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 16449,
+    "coordinates": {
+      "lng": 16.39745368,
+      "lat": 48.20769606
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "00:00-24:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524690",
+    "name": "PA Kartouschgasse",
+    "address": "PA Kartouschgasse, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 24919,
+    "coordinates": {
+      "lng": 16.46811977,
+      "lat": 48.23444772
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524691",
+    "name": "PA Hyazinthengasse",
+    "address": "PA Hyazinthengasse, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 4965,
+    "coordinates": {
+      "lng": 16.46688728,
+      "lat": 48.23171296
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524692",
+    "name": "PA Erzherzog-Karl-Straße",
+    "address": "PA Erzherzog-Karl-Straße, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 14844,
+    "coordinates": {
+      "lng": 16.45210766,
+      "lat": 48.2306936
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524693",
+    "name": "Schulgarten - Schauanlagen",
+    "address": "Schulgarten - Schauanlagen, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 17619,
+    "coordinates": {
+      "lng": 16.43136847,
+      "lat": 48.24311784
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Apr-Okt: jeden 1. Donnerstag im Monat 10:00-18:00, Jul-Aug: Mo-Mi 10:00-18:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524694",
+    "name": "Seepark",
+    "address": "Seepark, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 39431,
+    "coordinates": {
+      "lng": 16.50538628,
+      "lat": 48.22691368
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524695",
+    "name": "Prater - Seitenhafenwiese",
+    "address": "Prater - Seitenhafenwiese, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 37031,
+    "coordinates": {
+      "lng": 16.45704397,
+      "lat": 48.18462545
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524696",
+    "name": "Freiligrathpark",
+    "address": "Freiligrathpark, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 11591,
+    "coordinates": {
+      "lng": 16.41133227,
+      "lat": 48.25141798
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524697",
+    "name": "PA Fontanastraße",
+    "address": "PA Fontanastraße, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 10747,
+    "coordinates": {
+      "lng": 16.41014098,
+      "lat": 48.13986444
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524468",
+    "name": "PA Eichelhofstraße",
+    "address": "PA Eichelhofstraße, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 439,
+    "coordinates": {
+      "lng": 16.36411898,
+      "lat": 48.26490797
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524469",
+    "name": "Wasserspielplatz Wasserturm",
+    "address": "Wasserspielplatz Wasserturm, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 16925,
+    "coordinates": {
+      "lng": 16.35149185,
+      "lat": 48.16981152
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Spielplatz"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "9:00-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524470",
+    "name": "PA Weissauweg",
+    "address": "PA Weissauweg, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 8279,
+    "coordinates": {
+      "lng": 16.41756352,
+      "lat": 48.23112059
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524471",
+    "name": "PA Siedlung Wienerflur",
+    "address": "PA Siedlung Wienerflur, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 28845,
+    "coordinates": {
+      "lng": 16.31316998,
+      "lat": 48.1307547
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig:Juni-Okt. 8:00-22:00, Nov-Mai: keine Sperre",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524472",
+    "name": "Alfred-Auer-Park",
+    "address": "Alfred-Auer-Park, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 3173,
+    "coordinates": {
+      "lng": 16.33064199,
+      "lat": 48.2433088
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524473",
+    "name": "Emil-Maurer-Park",
+    "address": "Emil-Maurer-Park, 7. Bezirk, Wien",
+    "district": 7,
+    "area": 6495,
+    "coordinates": {
+      "lng": 16.33813007,
+      "lat": 48.19972179
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524474",
+    "name": "GA Wonkaplatz",
+    "address": "GA Wonkaplatz, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 3102,
+    "coordinates": {
+      "lng": 16.47443029,
+      "lat": 48.22282001
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524475",
+    "name": "Waidhausenpark",
+    "address": "Waidhausenpark, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 3873,
+    "coordinates": {
+      "lng": 16.28302341,
+      "lat": 48.19872339
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524476",
+    "name": "PA Stammersdorfer Straße",
+    "address": "PA Stammersdorfer Straße, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 1289,
+    "coordinates": {
+      "lng": 16.41013477,
+      "lat": 48.30187805
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524477",
+    "name": "PA Hanreitergasse",
+    "address": "PA Hanreitergasse, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 15890,
+    "coordinates": {
+      "lng": 16.41209546,
+      "lat": 48.28785593
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524478",
+    "name": "PA Lautenschlägergasse",
+    "address": "PA Lautenschlägergasse, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 1639,
+    "coordinates": {
+      "lng": 16.42571152,
+      "lat": 48.1767691
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524479",
+    "name": "Leopold-Rosenmayr-Park",
+    "address": "Leopold-Rosenmayr-Park, 18. Bezirk, Wien",
+    "district": 18,
+    "area": 3985,
+    "coordinates": {
+      "lng": 16.31807123,
+      "lat": 48.23146184
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524480",
+    "name": "Anton-Baumann-Park",
+    "address": "Anton-Baumann-Park, 18. Bezirk, Wien",
+    "district": 18,
+    "area": 3181,
+    "coordinates": {
+      "lng": 16.34247721,
+      "lat": 48.22084491
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig: Okt-Mär: 7:00-19:00, Apr-Sep: 7:00-22:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524481",
+    "name": "Hayekpark",
+    "address": "Hayekpark, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 3828,
+    "coordinates": {
+      "lng": 16.34267756,
+      "lat": 48.23898144
+    },
+    "amenities": [
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524482",
+    "name": "PA Bodenstedtgasse",
+    "address": "PA Bodenstedtgasse, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 15560,
+    "coordinates": {
+      "lng": 16.39971492,
+      "lat": 48.25501345
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524483",
+    "name": "Madame-d'Ora-Park",
+    "address": "Madame-d'Ora-Park, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 4697,
+    "coordinates": {
+      "lng": 16.49883121,
+      "lat": 48.22264578
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524484",
+    "name": "PA Guldengasse",
+    "address": "PA Guldengasse, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 1174,
+    "coordinates": {
+      "lng": 16.28094491,
+      "lat": 48.19385638
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524485",
+    "name": "PA Ziehrerplatz",
+    "address": "PA Ziehrerplatz, 3. Bezirk, Wien",
+    "district": 3,
+    "area": 1980,
+    "coordinates": {
+      "lng": 16.39166905,
+      "lat": 48.19973142
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524486",
+    "name": "Helene-Heppe-Park",
+    "address": "Helene-Heppe-Park, 6. Bezirk, Wien",
+    "district": 6,
+    "area": 500,
+    "coordinates": {
+      "lng": 16.35253545,
+      "lat": 48.19419178
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Okt-März: 7:00-19:30, Apr-Sep: 7:00-20:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524487",
+    "name": "PA Bierhäuselberggasse",
+    "address": "PA Bierhäuselberggasse, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 5356,
+    "coordinates": {
+      "lng": 16.24315091,
+      "lat": 48.20434486
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524488",
+    "name": "Sechshauser Park",
+    "address": "Sechshauser Park, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 3709,
+    "coordinates": {
+      "lng": 16.33484133,
+      "lat": 48.18777948
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig+Spielplatz: Okt-März: 06:30-21:00, Apr-Sep: 06:30-22:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524489",
+    "name": "PA Heiderichstraße",
+    "address": "PA Heiderichstraße, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 2323,
+    "coordinates": {
+      "lng": 16.29835532,
+      "lat": 48.22396315
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524490",
+    "name": "PA Zahnradbahnstraße",
+    "address": "PA Zahnradbahnstraße, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 543,
+    "coordinates": {
+      "lng": 16.3615017,
+      "lat": 48.25960789
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524491",
+    "name": "PA Karl-Borromäus-Platz",
+    "address": "PA Karl-Borromäus-Platz, 3. Bezirk, Wien",
+    "district": 3,
+    "area": 293,
+    "coordinates": {
+      "lng": 16.38890765,
+      "lat": 48.2013756
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524492",
+    "name": "GA Laurentiusplatz",
+    "address": "GA Laurentiusplatz, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 843,
+    "coordinates": {
+      "lng": 16.30880956,
+      "lat": 48.20211927
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524493",
+    "name": "Ruth-Maier-Park",
+    "address": "Ruth-Maier-Park, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 2488,
+    "coordinates": {
+      "lng": 16.37013655,
+      "lat": 48.21954191
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524494",
+    "name": "Heinz-Heger-Park",
+    "address": "Heinz-Heger-Park, 9. Bezirk, Wien",
+    "district": 9,
+    "area": 317,
+    "coordinates": {
+      "lng": 16.34337683,
+      "lat": 48.2168135
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524495",
+    "name": "Dr.-Meißner-Park",
+    "address": "Dr.-Meißner-Park, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 7044,
+    "coordinates": {
+      "lng": 16.32033085,
+      "lat": 48.24109473
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524496",
+    "name": "PA Kaspargasse",
+    "address": "PA Kaspargasse, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 3163,
+    "coordinates": {
+      "lng": 16.48351952,
+      "lat": 48.28075751
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "0:00-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524497",
+    "name": "Karoline-Tintner-Promenade",
+    "address": "Karoline-Tintner-Promenade, 9. Bezirk, Wien",
+    "district": 9,
+    "area": 10286,
+    "coordinates": {
+      "lng": 16.36678438,
+      "lat": 48.22588287
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524498",
+    "name": "Bruno-Kreisky-Park",
+    "address": "Bruno-Kreisky-Park, 5. Bezirk, Wien",
+    "district": 5,
+    "area": 10700,
+    "coordinates": {
+      "lng": 16.34398776,
+      "lat": 48.18795262
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524499",
+    "name": "Laubepark",
+    "address": "Laubepark, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 7550,
+    "coordinates": {
+      "lng": 16.36843244,
+      "lat": 48.17499417
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig+Spielplatz:06:00-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524500",
+    "name": "PA Schleiergasse",
+    "address": "PA Schleiergasse, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 11267,
+    "coordinates": {
+      "lng": 16.37924473,
+      "lat": 48.16499084
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524501",
+    "name": "PA Breitenfurter Straße",
+    "address": "PA Breitenfurter Straße, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 8183,
+    "coordinates": {
+      "lng": 16.32238222,
+      "lat": 48.17033866
+    },
+    "amenities": [
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524502",
+    "name": "PA Oriongasse",
+    "address": "PA Oriongasse, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 4557,
+    "coordinates": {
+      "lng": 16.43438979,
+      "lat": 48.1676361
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524503",
+    "name": "Herderpark",
+    "address": "Herderpark, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 40492,
+    "coordinates": {
+      "lng": 16.41006414,
+      "lat": 48.17225527
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524504",
+    "name": "PA Pölleritzergasse",
+    "address": "PA Pölleritzergasse, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 8179,
+    "coordinates": {
+      "lng": 16.28721934,
+      "lat": 48.15198248
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524505",
+    "name": "GA Süßenbrunner Platz",
+    "address": "GA Süßenbrunner Platz, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 1327,
+    "coordinates": {
+      "lng": 16.49509331,
+      "lat": 48.27788855
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524506",
+    "name": "PA Bruno-Pittermann-Platz",
+    "address": "PA Bruno-Pittermann-Platz, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 5115,
+    "coordinates": {
+      "lng": 16.33479091,
+      "lat": 48.18466228
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524507",
+    "name": "Vinzenz-von-Paul-Park",
+    "address": "Vinzenz-von-Paul-Park, 6. Bezirk, Wien",
+    "district": 6,
+    "area": 824,
+    "coordinates": {
+      "lng": 16.34389353,
+      "lat": 48.19377657
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "08:00-19:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524508",
+    "name": "Mayer-von-Rosenau-Park",
+    "address": "Mayer-von-Rosenau-Park, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 1446,
+    "coordinates": {
+      "lng": 16.28987363,
+      "lat": 48.14809725
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524509",
+    "name": "PA Florian-Hedorfer-Straße",
+    "address": "PA Florian-Hedorfer-Straße, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 1456,
+    "coordinates": {
+      "lng": 16.43205187,
+      "lat": 48.16794555
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524510",
+    "name": "PA Wienerbergstraße",
+    "address": "PA Wienerbergstraße, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 429,
+    "coordinates": {
+      "lng": 16.34806796,
+      "lat": 48.16927581
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524511",
+    "name": "PA Aktivspielplatz",
+    "address": "PA Aktivspielplatz, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 10145,
+    "coordinates": {
+      "lng": 16.45598939,
+      "lat": 48.25576879
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche",
+      "Spielplatz"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524512",
+    "name": "Prater - Fasangarten",
+    "address": "Prater - Fasangarten, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 327507,
+    "coordinates": {
+      "lng": 16.42998154,
+      "lat": 48.19092051
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524513",
+    "name": "Wilhelmsdorfer Park",
+    "address": "Wilhelmsdorfer Park, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 13891,
+    "coordinates": {
+      "lng": 16.33900333,
+      "lat": 48.17810454
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Wint: 6:00-21:30|Somm: 6:00-22:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524514",
+    "name": "PA Karl-Kraus-Gasse",
+    "address": "PA Karl-Kraus-Gasse, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 4095,
+    "coordinates": {
+      "lng": 16.30144125,
+      "lat": 48.16708143
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524515",
+    "name": "Klara-Weingarten-Park",
+    "address": "Klara-Weingarten-Park, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 1191,
+    "coordinates": {
+      "lng": 16.29414321,
+      "lat": 48.1987549
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524516",
+    "name": "Oscar-Straus-Park",
+    "address": "Oscar-Straus-Park, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 4713,
+    "coordinates": {
+      "lng": 16.28205143,
+      "lat": 48.16809008
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524517",
+    "name": "Hügelpark",
+    "address": "Hügelpark, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 8055,
+    "coordinates": {
+      "lng": 16.28743442,
+      "lat": 48.18514917
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524518",
+    "name": "PA Viktor-Kutschera-Platz",
+    "address": "PA Viktor-Kutschera-Platz, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 6797,
+    "coordinates": {
+      "lng": 16.2396417,
+      "lat": 48.21366031
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524519",
+    "name": "PA Langfeldgasse",
+    "address": "PA Langfeldgasse, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 8966,
+    "coordinates": {
+      "lng": 16.4455196,
+      "lat": 48.26833734
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524520",
+    "name": "PA Koschakergasse",
+    "address": "PA Koschakergasse, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 4278,
+    "coordinates": {
+      "lng": 16.43921574,
+      "lat": 48.2711144
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524521",
+    "name": "PA Freiheitsplatz",
+    "address": "PA Freiheitsplatz, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 342,
+    "coordinates": {
+      "lng": 16.41673717,
+      "lat": 48.30125271
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524522",
+    "name": "PA Thomagasse",
+    "address": "PA Thomagasse, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 9852,
+    "coordinates": {
+      "lng": 16.4058163,
+      "lat": 48.27451958
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524523",
+    "name": "PA Moritz-Dreger-Gasse",
+    "address": "PA Moritz-Dreger-Gasse, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 2913,
+    "coordinates": {
+      "lng": 16.44230878,
+      "lat": 48.27159281
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524524",
+    "name": "PA Pilotengasse",
+    "address": "PA Pilotengasse, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 6116,
+    "coordinates": {
+      "lng": 16.48366708,
+      "lat": 48.22140108
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524525",
+    "name": "Ingeborg-Bachmann-Park",
+    "address": "Ingeborg-Bachmann-Park, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 12193,
+    "coordinates": {
+      "lng": 16.44338099,
+      "lat": 48.25855721
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524526",
+    "name": "PA Friedhof Inzersdorf",
+    "address": "PA Friedhof Inzersdorf, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 5712,
+    "coordinates": {
+      "lng": 16.35056038,
+      "lat": 48.14724209
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524527",
+    "name": "Druk-Yul-Park",
+    "address": "Druk-Yul-Park, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 2471,
+    "coordinates": {
+      "lng": 16.27370521,
+      "lat": 48.1562228
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524528",
+    "name": "PA Henriettenplatz",
+    "address": "PA Henriettenplatz, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 1528,
+    "coordinates": {
+      "lng": 16.33248864,
+      "lat": 48.19024731
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig: Nov-März: 7:00-19:00, Apr-Okt: 7:00-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524529",
+    "name": "PA Carminweg",
+    "address": "PA Carminweg, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 586,
+    "coordinates": {
+      "lng": 16.4216621,
+      "lat": 48.25448816
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524530",
+    "name": "Franz-Hengl-Park",
+    "address": "Franz-Hengl-Park, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 306,
+    "coordinates": {
+      "lng": 16.3396293,
+      "lat": 48.25702226
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524531",
+    "name": "PA Edmund-Weber-Weg",
+    "address": "PA Edmund-Weber-Weg, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 1043,
+    "coordinates": {
+      "lng": 16.44406602,
+      "lat": 48.23388831
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524532",
+    "name": "PA Miklosichgasse",
+    "address": "PA Miklosichgasse, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 1183,
+    "coordinates": {
+      "lng": 16.38051793,
+      "lat": 48.28814026
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524533",
+    "name": "GA Frödenplatz",
+    "address": "GA Frödenplatz, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 11216,
+    "coordinates": {
+      "lng": 16.35830146,
+      "lat": 48.15486477
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524534",
+    "name": "PA Naaffgasse",
+    "address": "PA Naaffgasse, 18. Bezirk, Wien",
+    "district": 18,
+    "area": 926,
+    "coordinates": {
+      "lng": 16.30864072,
+      "lat": 48.2345965
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524535",
+    "name": "Hilde-Spiel-Park",
+    "address": "Hilde-Spiel-Park, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 4370,
+    "coordinates": {
+      "lng": 16.36677517,
+      "lat": 48.25391761
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig: Okt-Mär: 7:00-19:00, Apr-Sep: 7:00-22:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524536",
+    "name": "Alois-Heidel-Park",
+    "address": "Alois-Heidel-Park, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 1858,
+    "coordinates": {
+      "lng": 16.38652774,
+      "lat": 48.29182195
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524537",
+    "name": "PA Friedrich-Engels-Platz",
+    "address": "PA Friedrich-Engels-Platz, 20. Bezirk, Wien",
+    "district": 20,
+    "area": 17557,
+    "coordinates": {
+      "lng": 16.38121241,
+      "lat": 48.24500484
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524538",
+    "name": "Schmetterlingspark",
+    "address": "Schmetterlingspark, 20. Bezirk, Wien",
+    "district": 20,
+    "area": 5897,
+    "coordinates": {
+      "lng": 16.37783146,
+      "lat": 48.2490717
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524539",
+    "name": "PA Wallensteinstraße ",
+    "address": "PA Wallensteinstraße , 20. Bezirk, Wien",
+    "district": 20,
+    "area": 1572,
+    "coordinates": {
+      "lng": 16.37751061,
+      "lat": 48.23139716
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524540",
+    "name": "PA Traisengasse",
+    "address": "PA Traisengasse, 20. Bezirk, Wien",
+    "district": 20,
+    "area": 293,
+    "coordinates": {
+      "lng": 16.39024406,
+      "lat": 48.23610344
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524541",
+    "name": "Jonny-Moser-Park",
+    "address": "Jonny-Moser-Park, 1. Bezirk, Wien",
+    "district": 1,
+    "area": 410,
+    "coordinates": {
+      "lng": 16.3718962,
+      "lat": 48.21665588
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524542",
+    "name": "PA Laaer-Berg-Straße",
+    "address": "PA Laaer-Berg-Straße, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 568,
+    "coordinates": {
+      "lng": 16.38229627,
+      "lat": 48.17183685
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524543",
+    "name": "PA Tomaschekstraße",
+    "address": "PA Tomaschekstraße, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 1366,
+    "coordinates": {
+      "lng": 16.38445189,
+      "lat": 48.27528973
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524544",
+    "name": "PA Mölker Bastei",
+    "address": "PA Mölker Bastei, 1. Bezirk, Wien",
+    "district": 1,
+    "area": 108,
+    "coordinates": {
+      "lng": 16.36200575,
+      "lat": 48.21248641
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524545",
+    "name": "PA Landaugasse",
+    "address": "PA Landaugasse, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 246,
+    "coordinates": {
+      "lng": 16.4829256,
+      "lat": 48.28232771
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524546",
+    "name": "PA Kramreiterweg",
+    "address": "PA Kramreiterweg, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 882,
+    "coordinates": {
+      "lng": 16.40106638,
+      "lat": 48.25776383
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524547",
+    "name": "PA Friedstraße",
+    "address": "PA Friedstraße, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 1854,
+    "coordinates": {
+      "lng": 16.4035992,
+      "lat": 48.24144192
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524548",
+    "name": "GA Minoritenplatz",
+    "address": "GA Minoritenplatz, 1. Bezirk, Wien",
+    "district": 1,
+    "area": 780,
+    "coordinates": {
+      "lng": 16.36424454,
+      "lat": 48.20947987
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524549",
+    "name": "Hermine-Weinreb-Park",
+    "address": "Hermine-Weinreb-Park, 17. Bezirk, Wien",
+    "district": 17,
+    "area": 739,
+    "coordinates": {
+      "lng": 16.32597344,
+      "lat": 48.22158627
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524550",
+    "name": "PA Lorettowiese",
+    "address": "PA Lorettowiese, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 31288,
+    "coordinates": {
+      "lng": 16.38388828,
+      "lat": 48.26948353
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524551",
+    "name": "GA Neustiftgasse/102",
+    "address": "GA Neustiftgasse/102, 7. Bezirk, Wien",
+    "district": 7,
+    "area": 41,
+    "coordinates": {
+      "lng": 16.34102909,
+      "lat": 48.20605321
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524552",
+    "name": "GA Wattgasse",
+    "address": "GA Wattgasse, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 1328,
+    "coordinates": {
+      "lng": 16.31884969,
+      "lat": 48.21306739
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524553",
+    "name": "PA Berzeliusgasse",
+    "address": "PA Berzeliusgasse, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 7224,
+    "coordinates": {
+      "lng": 16.41269995,
+      "lat": 48.27748131
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524554",
+    "name": "PA Enkplatz",
+    "address": "PA Enkplatz, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 2467,
+    "coordinates": {
+      "lng": 16.41383798,
+      "lat": 48.17611488
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524555",
+    "name": "Helmut-Zilk-Park",
+    "address": "Helmut-Zilk-Park, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 65030,
+    "coordinates": {
+      "lng": 16.38365285,
+      "lat": 48.17943021
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Hundezone+Spielplatz:06:00-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524556",
+    "name": "GA Kurbadstraße",
+    "address": "GA Kurbadstraße, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 2434,
+    "coordinates": {
+      "lng": 16.40472263,
+      "lat": 48.14176059
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524557",
+    "name": "PA Friedrich-Schmidt-Platz",
+    "address": "PA Friedrich-Schmidt-Platz, 1. Bezirk, Wien",
+    "district": 1,
+    "area": 5752,
+    "coordinates": {
+      "lng": 16.35601656,
+      "lat": 48.2110127
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524558",
+    "name": "Grete-Rehor-Park",
+    "address": "Grete-Rehor-Park, 1. Bezirk, Wien",
+    "district": 1,
+    "area": 7006,
+    "coordinates": {
+      "lng": 16.35841996,
+      "lat": 48.20693944
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524559",
+    "name": "GA Helmut-Zilk-Platz",
+    "address": "GA Helmut-Zilk-Platz, 1. Bezirk, Wien",
+    "district": 1,
+    "area": 966,
+    "coordinates": {
+      "lng": 16.36895067,
+      "lat": 48.20491648
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524560",
+    "name": "PA Franz-Josefs-Kai",
+    "address": "PA Franz-Josefs-Kai, 1. Bezirk, Wien",
+    "district": 1,
+    "area": 2647,
+    "coordinates": {
+      "lng": 16.3730492,
+      "lat": 48.21530118
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524561",
+    "name": "Rockgarten",
+    "address": "Rockgarten, 1. Bezirk, Wien",
+    "district": 1,
+    "area": 119,
+    "coordinates": {
+      "lng": 16.36274714,
+      "lat": 48.21200484
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524562",
+    "name": "Prater - Ameiswiese",
+    "address": "Prater - Ameiswiese, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 43450,
+    "coordinates": {
+      "lng": 16.43538865,
+      "lat": 48.19554404
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524563",
+    "name": "Prater - Feuerwehrwiese",
+    "address": "Prater - Feuerwehrwiese, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 116634,
+    "coordinates": {
+      "lng": 16.43684343,
+      "lat": 48.19109489
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524564",
+    "name": "Prater - Sulzwiese",
+    "address": "Prater - Sulzwiese, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 475754,
+    "coordinates": {
+      "lng": 16.42834913,
+      "lat": 48.19442178
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524565",
+    "name": "Willi-Frank-Park",
+    "address": "Willi-Frank-Park, 5. Bezirk, Wien",
+    "district": 5,
+    "area": 3379,
+    "coordinates": {
+      "lng": 16.35645014,
+      "lat": 48.19344621
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "6:30-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524566",
+    "name": "Klieberpark",
+    "address": "Klieberpark, 5. Bezirk, Wien",
+    "district": 5,
+    "area": 3305,
+    "coordinates": {
+      "lng": 16.36301575,
+      "lat": 48.18469362
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524567",
+    "name": "Hanna-Gärtner-Park",
+    "address": "Hanna-Gärtner-Park, 5. Bezirk, Wien",
+    "district": 5,
+    "area": 2067,
+    "coordinates": {
+      "lng": 16.35124473,
+      "lat": 48.18097199
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524568",
+    "name": "Minna-Lachs-Park",
+    "address": "Minna-Lachs-Park, 6. Bezirk, Wien",
+    "district": 6,
+    "area": 2917,
+    "coordinates": {
+      "lng": 16.34227111,
+      "lat": 48.19365106
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Okt-März: 6:15-20:00, Apr-Sep: 6:15-21:15",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524569",
+    "name": "Humboldtpark",
+    "address": "Humboldtpark, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 2970,
+    "coordinates": {
+      "lng": 16.37826143,
+      "lat": 48.17929853
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "06:00-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524570",
+    "name": "PA Reumannplatz",
+    "address": "PA Reumannplatz, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 10577,
+    "coordinates": {
+      "lng": 16.37846352,
+      "lat": 48.17346405
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524571",
+    "name": "Helga-Pollak-Kinsky-Park",
+    "address": "Helga-Pollak-Kinsky-Park, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 1514,
+    "coordinates": {
+      "lng": 16.33643791,
+      "lat": 48.19577667
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524572",
+    "name": "PA Ruzickagasse",
+    "address": "PA Ruzickagasse, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 3841,
+    "coordinates": {
+      "lng": 16.28700147,
+      "lat": 48.15477962
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524573",
+    "name": "PA Trepetschniggasse",
+    "address": "PA Trepetschniggasse, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 7034,
+    "coordinates": {
+      "lng": 16.30518216,
+      "lat": 48.15191439
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524574",
+    "name": "Yella-Hertzka-Park",
+    "address": "Yella-Hertzka-Park, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 21705,
+    "coordinates": {
+      "lng": 16.49891918,
+      "lat": 48.22660533
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524575",
+    "name": "Liechtensteinpark",
+    "address": "Liechtensteinpark, 9. Bezirk, Wien",
+    "district": 9,
+    "area": 18986,
+    "coordinates": {
+      "lng": 16.35839303,
+      "lat": 48.22324452
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "06:40-20:45",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524576",
+    "name": "PA Hintere Liesingbachstraße",
+    "address": "PA Hintere Liesingbachstraße, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 581,
+    "coordinates": {
+      "lng": 16.39691816,
+      "lat": 48.13675348
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524577",
+    "name": "PA Bischofplatz",
+    "address": "PA Bischofplatz, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 743,
+    "coordinates": {
+      "lng": 16.39781826,
+      "lat": 48.13726451
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524578",
+    "name": "Anton-Stummer-Park",
+    "address": "Anton-Stummer-Park, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 2688,
+    "coordinates": {
+      "lng": 16.46060156,
+      "lat": 48.23130939
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524579",
+    "name": "Haydnpark",
+    "address": "Haydnpark, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 13156,
+    "coordinates": {
+      "lng": 16.34632826,
+      "lat": 48.18174176
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524580",
+    "name": "PA Wlassakstraße",
+    "address": "PA Wlassakstraße, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 10576,
+    "coordinates": {
+      "lng": 16.26779176,
+      "lat": 48.17734574
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524581",
+    "name": "Hackinger-Schloß-Park",
+    "address": "Hackinger-Schloß-Park, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 15883,
+    "coordinates": {
+      "lng": 16.26064855,
+      "lat": 48.19293829
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524582",
+    "name": "Friedrich-Julius-Bieber-Anlage",
+    "address": "Friedrich-Julius-Bieber-Anlage, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 7907,
+    "coordinates": {
+      "lng": 16.27638666,
+      "lat": 48.17338944
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524583",
+    "name": "Raimund-Pokorny-Park",
+    "address": "Raimund-Pokorny-Park, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 1597,
+    "coordinates": {
+      "lng": 16.24334841,
+      "lat": 48.20795079
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524584",
+    "name": "PA Leon-Askin-Platz",
+    "address": "PA Leon-Askin-Platz, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 1517,
+    "coordinates": {
+      "lng": 16.26977086,
+      "lat": 48.19955373
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524585",
+    "name": "Helma-Pavlis-Park",
+    "address": "Helma-Pavlis-Park, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 1766,
+    "coordinates": {
+      "lng": 16.38923791,
+      "lat": 48.29533581
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524586",
+    "name": "PA Großschopfplatz",
+    "address": "PA Großschopfplatz, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 3497,
+    "coordinates": {
+      "lng": 16.42389505,
+      "lat": 48.28671781
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524587",
+    "name": "Schloss Neugebäude - Unterer Garten",
+    "address": "Schloss Neugebäude - Unterer Garten, 11. Bezirk, Wien",
+    "district": 11,
+    "area": 17219,
+    "coordinates": {
+      "lng": 16.44269438,
+      "lat": 48.16123147
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524588",
+    "name": "Marie-Schuller-Park",
+    "address": "Marie-Schuller-Park, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 6503,
+    "coordinates": {
+      "lng": 16.39825115,
+      "lat": 48.2643741
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524589",
+    "name": "PA Falcogasse",
+    "address": "PA Falcogasse, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 10809,
+    "coordinates": {
+      "lng": 16.45511476,
+      "lat": 48.25756763
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524590",
+    "name": "PA Pirquetgasse",
+    "address": "PA Pirquetgasse, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 3159,
+    "coordinates": {
+      "lng": 16.48022941,
+      "lat": 48.23860965
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524591",
+    "name": "Kirschblütenpark",
+    "address": "Kirschblütenpark, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 34840,
+    "coordinates": {
+      "lng": 16.4319122,
+      "lat": 48.24662553
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524592",
+    "name": "PA Dirmhirngasse",
+    "address": "PA Dirmhirngasse, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 7935,
+    "coordinates": {
+      "lng": 16.28676983,
+      "lat": 48.14542587
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524593",
+    "name": "PA Anton-Heger-Platz",
+    "address": "PA Anton-Heger-Platz, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 1179,
+    "coordinates": {
+      "lng": 16.29648429,
+      "lat": 48.14222214
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524594",
+    "name": "Franz-Hübel-Park",
+    "address": "Franz-Hübel-Park, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 10112,
+    "coordinates": {
+      "lng": 16.30641385,
+      "lat": 48.16573447
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524595",
+    "name": "Miep-Gies-Park",
+    "address": "Miep-Gies-Park, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 12603,
+    "coordinates": {
+      "lng": 16.32638718,
+      "lat": 48.16445187
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Hundezone:Okt-März:06:00-21:00, Apr-Sep:06:00-21:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524596",
+    "name": "Park der Freiheit",
+    "address": "Park der Freiheit, 17. Bezirk, Wien",
+    "district": 17,
+    "area": 1267,
+    "coordinates": {
+      "lng": 16.3145414,
+      "lat": 48.22349509
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524597",
+    "name": "PA Töllergasse",
+    "address": "PA Töllergasse, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 2627,
+    "coordinates": {
+      "lng": 16.42090095,
+      "lat": 48.25707255
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524598",
+    "name": "PA Dresdner Straße",
+    "address": "PA Dresdner Straße, 20. Bezirk, Wien",
+    "district": 20,
+    "area": 1299,
+    "coordinates": {
+      "lng": 16.37789779,
+      "lat": 48.23771135
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524599",
+    "name": "Prater - Spenadlwiese",
+    "address": "Prater - Spenadlwiese, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 27206,
+    "coordinates": {
+      "lng": 16.40231894,
+      "lat": 48.21004502
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524600",
+    "name": "Prater - Laufbergerwiese",
+    "address": "Prater - Laufbergerwiese, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 34761,
+    "coordinates": {
+      "lng": 16.39765647,
+      "lat": 48.21347134
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524601",
+    "name": "Prater - Pelzmais",
+    "address": "Prater - Pelzmais, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 161703,
+    "coordinates": {
+      "lng": 16.41179252,
+      "lat": 48.20844039
+    },
+    "amenities": [
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524602",
+    "name": "Odeonpark",
+    "address": "Odeonpark, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 2551,
+    "coordinates": {
+      "lng": 16.38459797,
+      "lat": 48.21792316
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "6:30.20:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524603",
+    "name": "Fritzi-Massary-Park",
+    "address": "Fritzi-Massary-Park, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 4747,
+    "coordinates": {
+      "lng": 16.4167442,
+      "lat": 48.21589363
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524604",
+    "name": "Vilma-Neuwirth-Park ",
+    "address": "Vilma-Neuwirth-Park , 2. Bezirk, Wien",
+    "district": 2,
+    "area": 1184,
+    "coordinates": {
+      "lng": 16.38787259,
+      "lat": 48.22479958
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "6:30-20:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524605",
+    "name": "Rosa-Jochmann-Park",
+    "address": "Rosa-Jochmann-Park, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 1536,
+    "coordinates": {
+      "lng": 16.38606858,
+      "lat": 48.2171951
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "6:30-20:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524606",
+    "name": "Prater - Groß-Enzersdorfer Wiese",
+    "address": "Prater - Groß-Enzersdorfer Wiese, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 436814,
+    "coordinates": {
+      "lng": 16.44718877,
+      "lat": 48.19216029
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524607",
+    "name": "Prater - Untere Heustadelwiese",
+    "address": "Prater - Untere Heustadelwiese, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 25794,
+    "coordinates": {
+      "lng": 16.43488408,
+      "lat": 48.19919481
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524608",
+    "name": "Prater - Epplwiese",
+    "address": "Prater - Epplwiese, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 68003,
+    "coordinates": {
+      "lng": 16.41980109,
+      "lat": 48.20020338
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524609",
+    "name": "Prater - Lusthauswiese",
+    "address": "Prater - Lusthauswiese, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 13313,
+    "coordinates": {
+      "lng": 16.43682632,
+      "lat": 48.19297699
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524610",
+    "name": "Lucie-Goldner-Promenade",
+    "address": "Lucie-Goldner-Promenade, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 27734,
+    "coordinates": {
+      "lng": 16.42135793,
+      "lat": 48.19043988
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524611",
+    "name": "Kardinal-Nagl-Park",
+    "address": "Kardinal-Nagl-Park, 3. Bezirk, Wien",
+    "district": 3,
+    "area": 7763,
+    "coordinates": {
+      "lng": 16.40143888,
+      "lat": 48.19731597
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielplatz+Hundezone: 6:15-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524612",
+    "name": "Rosa-Janku-Park",
+    "address": "Rosa-Janku-Park, 5. Bezirk, Wien",
+    "district": 5,
+    "area": 1201,
+    "coordinates": {
+      "lng": 16.35376504,
+      "lat": 48.19109979
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524613",
+    "name": "Wilhelm-Kienzl-Park",
+    "address": "Wilhelm-Kienzl-Park, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 7381,
+    "coordinates": {
+      "lng": 16.37200796,
+      "lat": 48.21841893
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524614",
+    "name": "Gutenbergpark",
+    "address": "Gutenbergpark, 7. Bezirk, Wien",
+    "district": 7,
+    "area": 359,
+    "coordinates": {
+      "lng": 16.35573774,
+      "lat": 48.20371261
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524615",
+    "name": "PA Kirchengasse",
+    "address": "PA Kirchengasse, 7. Bezirk, Wien",
+    "district": 7,
+    "area": 298,
+    "coordinates": {
+      "lng": 16.35170916,
+      "lat": 48.20472167
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524616",
+    "name": "PA Ceija-Stojka-Platz",
+    "address": "PA Ceija-Stojka-Platz, 7. Bezirk, Wien",
+    "district": 7,
+    "area": 1132,
+    "coordinates": {
+      "lng": 16.34270517,
+      "lat": 48.20755827
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524617",
+    "name": "Siebensternpark",
+    "address": "Siebensternpark, 7. Bezirk, Wien",
+    "district": 7,
+    "area": 1145,
+    "coordinates": {
+      "lng": 16.35220593,
+      "lat": 48.20264253
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Okt: 7:00-19:45, Nov-März: 7:00-18:45, Apr-Sep: 7:00-21:45",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524618",
+    "name": "Mizzi-Langer-Kauba-Park",
+    "address": "Mizzi-Langer-Kauba-Park, 7. Bezirk, Wien",
+    "district": 7,
+    "area": 3643,
+    "coordinates": {
+      "lng": 16.33839144,
+      "lat": 48.20143278
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524619",
+    "name": "Weghuberpark",
+    "address": "Weghuberpark, 7. Bezirk, Wien",
+    "district": 7,
+    "area": 8986,
+    "coordinates": {
+      "lng": 16.35577534,
+      "lat": 48.20634747
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielplatz: Okt: 7:10-20:00, Nov-März: 7:10-19:00, Apr-Sep: 7:10-22:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524620",
+    "name": "GA Uhlplatz",
+    "address": "GA Uhlplatz, 8. Bezirk, Wien",
+    "district": 8,
+    "area": 358,
+    "coordinates": {
+      "lng": 16.34037348,
+      "lat": 48.2123369
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524621",
+    "name": "GA Lisette-Model-Platz",
+    "address": "GA Lisette-Model-Platz, 8. Bezirk, Wien",
+    "district": 8,
+    "area": 773,
+    "coordinates": {
+      "lng": 16.34111444,
+      "lat": 48.20938884
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524622",
+    "name": "Arne-Karlsson-Park",
+    "address": "Arne-Karlsson-Park, 9. Bezirk, Wien",
+    "district": 9,
+    "area": 11727,
+    "coordinates": {
+      "lng": 16.35362999,
+      "lat": 48.22128675
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Skaterpark:07:00-20:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524623",
+    "name": "Josef-Ludwig-Wolf-Park",
+    "address": "Josef-Ludwig-Wolf-Park, 9. Bezirk, Wien",
+    "district": 9,
+    "area": 1108,
+    "coordinates": {
+      "lng": 16.35704225,
+      "lat": 48.22998943
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524624",
+    "name": "Ostarrichi-Park",
+    "address": "Ostarrichi-Park, 9. Bezirk, Wien",
+    "district": 9,
+    "area": 7517,
+    "coordinates": {
+      "lng": 16.35445162,
+      "lat": 48.21540555
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524625",
+    "name": "Treppelweg - Spittelauer Lände",
+    "address": "Treppelweg - Spittelauer Lände, 9. Bezirk, Wien",
+    "district": 9,
+    "area": 9418,
+    "coordinates": {
+      "lng": 16.36307256,
+      "lat": 48.22916452
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524626",
+    "name": "Antonspark",
+    "address": "Antonspark, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 11523,
+    "coordinates": {
+      "lng": 16.37781789,
+      "lat": 48.17054075
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig:06:00-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524627",
+    "name": "PA Heuberggstätten",
+    "address": "PA Heuberggstätten, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 225426,
+    "coordinates": {
+      "lng": 16.37295983,
+      "lat": 48.15906962
+    },
+    "amenities": [
+      "Spielplatz",
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524628",
+    "name": "PA Favoritenstraße",
+    "address": "PA Favoritenstraße, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 7207,
+    "coordinates": {
+      "lng": 16.38143655,
+      "lat": 48.15387364
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524629",
+    "name": "Arthaberpark",
+    "address": "Arthaberpark, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 10569,
+    "coordinates": {
+      "lng": 16.37130409,
+      "lat": 48.17308986
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Hundezone:06:00-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524630",
+    "name": "Fortunapark",
+    "address": "Fortunapark, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 11084,
+    "coordinates": {
+      "lng": 16.35877602,
+      "lat": 48.17242638
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "06:00-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524402",
+    "name": "PA Pfendlergasse",
+    "address": "PA Pfendlergasse, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 12140,
+    "coordinates": {
+      "lng": 16.42276731,
+      "lat": 48.27566515
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524403",
+    "name": "GA Zschokkegasse",
+    "address": "GA Zschokkegasse, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 605,
+    "coordinates": {
+      "lng": 16.47026171,
+      "lat": 48.22751992
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524404",
+    "name": "GA Aspernstraße",
+    "address": "GA Aspernstraße, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 545,
+    "coordinates": {
+      "lng": 16.48053915,
+      "lat": 48.22032268
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524405",
+    "name": "GA Rottstraße",
+    "address": "GA Rottstraße, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 389,
+    "coordinates": {
+      "lng": 16.29867691,
+      "lat": 48.19669598
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524406",
+    "name": "Dechant-Kinzl-Park",
+    "address": "Dechant-Kinzl-Park, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 1521,
+    "coordinates": {
+      "lng": 16.26609117,
+      "lat": 48.1882812
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524407",
+    "name": "GA Sobieskiplatz",
+    "address": "GA Sobieskiplatz, 9. Bezirk, Wien",
+    "district": 9,
+    "area": 461,
+    "coordinates": {
+      "lng": 16.35355773,
+      "lat": 48.22674236
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524408",
+    "name": "GA Liechtensteinstraße",
+    "address": "GA Liechtensteinstraße, 9. Bezirk, Wien",
+    "district": 9,
+    "area": 767,
+    "coordinates": {
+      "lng": 16.35632188,
+      "lat": 48.23029915
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524409",
+    "name": "GA Viktor-Christ-Gasse",
+    "address": "GA Viktor-Christ-Gasse, 5. Bezirk, Wien",
+    "district": 5,
+    "area": 419,
+    "coordinates": {
+      "lng": 16.35998926,
+      "lat": 48.18906862
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524410",
+    "name": "Pauluspark",
+    "address": "Pauluspark, 3. Bezirk, Wien",
+    "district": 3,
+    "area": 1780,
+    "coordinates": {
+      "lng": 16.40116197,
+      "lat": 48.1928975
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524411",
+    "name": "GA Grünangergasse",
+    "address": "GA Grünangergasse, 1. Bezirk, Wien",
+    "district": 1,
+    "area": 171,
+    "coordinates": {
+      "lng": 16.37492644,
+      "lat": 48.20759216
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524412",
+    "name": "PA Am Kaiserwasser",
+    "address": "PA Am Kaiserwasser, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 47391,
+    "coordinates": {
+      "lng": 16.41855889,
+      "lat": 48.2318995
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524413",
+    "name": "Jakob-Bindel-Park",
+    "address": "Jakob-Bindel-Park, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 6599,
+    "coordinates": {
+      "lng": 16.47220327,
+      "lat": 48.2459244
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524414",
+    "name": "Bertha-Neumann-Park",
+    "address": "Bertha-Neumann-Park, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 846,
+    "coordinates": {
+      "lng": 16.27466277,
+      "lat": 48.13985199
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524415",
+    "name": "PA Robinsonweg",
+    "address": "PA Robinsonweg, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 7432,
+    "coordinates": {
+      "lng": 16.2834839,
+      "lat": 48.14119253
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524416",
+    "name": "PA Gaulgasse",
+    "address": "PA Gaulgasse, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 7405,
+    "coordinates": {
+      "lng": 16.29117034,
+      "lat": 48.13837863
+    },
+    "amenities": [
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524417",
+    "name": "PA Kolbegasse",
+    "address": "PA Kolbegasse, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 3549,
+    "coordinates": {
+      "lng": 16.36089742,
+      "lat": 48.14499255
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524418",
+    "name": "PA Friedenszeile",
+    "address": "PA Friedenszeile, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 824,
+    "coordinates": {
+      "lng": 16.26522397,
+      "lat": 48.16719434
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524419",
+    "name": "Schubertpark",
+    "address": "Schubertpark, 18. Bezirk, Wien",
+    "district": 18,
+    "area": 13358,
+    "coordinates": {
+      "lng": 16.33894993,
+      "lat": 48.22676463
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig: Okt-März: 07:00-19:00, Apr-Sep: 07:00-22:00, Hundezone: 06:00-22:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524420",
+    "name": "PA Pötzleinsdorfer Höhe",
+    "address": "PA Pötzleinsdorfer Höhe, 18. Bezirk, Wien",
+    "district": 18,
+    "area": 4588,
+    "coordinates": {
+      "lng": 16.2985301,
+      "lat": 48.24593916
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524421",
+    "name": "Norbert-Liebermann-Park",
+    "address": "Norbert-Liebermann-Park, 18. Bezirk, Wien",
+    "district": 18,
+    "area": 2787,
+    "coordinates": {
+      "lng": 16.33575779,
+      "lat": 48.22840996
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524422",
+    "name": "PA Leopoldsplateau",
+    "address": "PA Leopoldsplateau, 18. Bezirk, Wien",
+    "district": 18,
+    "area": 1786,
+    "coordinates": {
+      "lng": 16.31213975,
+      "lat": 48.23902337
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524423",
+    "name": "Joseph-Kainz-Park",
+    "address": "Joseph-Kainz-Park, 18. Bezirk, Wien",
+    "district": 18,
+    "area": 4787,
+    "coordinates": {
+      "lng": 16.33417097,
+      "lat": 48.23329805
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524424",
+    "name": "PA Johann-Nepomuk-Vogl-Platz",
+    "address": "PA Johann-Nepomuk-Vogl-Platz, 18. Bezirk, Wien",
+    "district": 18,
+    "area": 887,
+    "coordinates": {
+      "lng": 16.3367553,
+      "lat": 48.22352306
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524425",
+    "name": "Gerda-Lerner-Park",
+    "address": "Gerda-Lerner-Park, 18. Bezirk, Wien",
+    "district": 18,
+    "area": 1253,
+    "coordinates": {
+      "lng": 16.31898334,
+      "lat": 48.23715087
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524426",
+    "name": "Ebner-Eschenbach-Park",
+    "address": "Ebner-Eschenbach-Park, 18. Bezirk, Wien",
+    "district": 18,
+    "area": 4881,
+    "coordinates": {
+      "lng": 16.33509153,
+      "lat": 48.22673489
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig: Okt-Mär: 7:00-19:00, Apr-Sep: 7:00-22:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524427",
+    "name": "Albert-Dub-Park",
+    "address": "Albert-Dub-Park, 18. Bezirk, Wien",
+    "district": 18,
+    "area": 6266,
+    "coordinates": {
+      "lng": 16.32459306,
+      "lat": 48.23416872
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524428",
+    "name": "PA Rudolf-Kirchschläger-Platz",
+    "address": "PA Rudolf-Kirchschläger-Platz, 17. Bezirk, Wien",
+    "district": 17,
+    "area": 523,
+    "coordinates": {
+      "lng": 16.29146955,
+      "lat": 48.23333087
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524429",
+    "name": "Brigittapark",
+    "address": "Brigittapark, 20. Bezirk, Wien",
+    "district": 20,
+    "area": 8279,
+    "coordinates": {
+      "lng": 16.37122211,
+      "lat": 48.23187858
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524430",
+    "name": "Anton-Kummerer-Park",
+    "address": "Anton-Kummerer-Park, 20. Bezirk, Wien",
+    "district": 20,
+    "area": 7847,
+    "coordinates": {
+      "lng": 16.36418106,
+      "lat": 48.23472098
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig:06:30-20:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524431",
+    "name": "Allerheiligenpark",
+    "address": "Allerheiligenpark, 20. Bezirk, Wien",
+    "district": 20,
+    "area": 20230,
+    "coordinates": {
+      "lng": 16.38508595,
+      "lat": 48.23823749
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524432",
+    "name": "Wertheimsteinpark",
+    "address": "Wertheimsteinpark, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 62020,
+    "coordinates": {
+      "lng": 16.35909466,
+      "lat": 48.2431801
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524433",
+    "name": "Strauß-Lanner-Park",
+    "address": "Strauß-Lanner-Park, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 8547,
+    "coordinates": {
+      "lng": 16.34421021,
+      "lat": 48.24534293
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524434",
+    "name": "PA Steinbüchlweg",
+    "address": "PA Steinbüchlweg, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 3419,
+    "coordinates": {
+      "lng": 16.36210783,
+      "lat": 48.25652876
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524302",
+    "name": "PA Polgarstraße",
+    "address": "PA Polgarstraße, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 21510,
+    "coordinates": {
+      "lng": 16.45239191,
+      "lat": 48.23720421
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524303",
+    "name": "PA Kirschenallee",
+    "address": "PA Kirschenallee, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 14714,
+    "coordinates": {
+      "lng": 16.51821328,
+      "lat": 48.20886656
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524304",
+    "name": "PA Benjowskigasse",
+    "address": "PA Benjowskigasse, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 6222,
+    "coordinates": {
+      "lng": 16.49059074,
+      "lat": 48.21453888
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524305",
+    "name": "PA Kaschauerplatz",
+    "address": "PA Kaschauerplatz, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 10294,
+    "coordinates": {
+      "lng": 16.53483584,
+      "lat": 48.22925996
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524306",
+    "name": "PA Kagraner Platz",
+    "address": "PA Kagraner Platz, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 4395,
+    "coordinates": {
+      "lng": 16.44763329,
+      "lat": 48.24884289
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524307",
+    "name": "Jazzpark Essling",
+    "address": "Jazzpark Essling, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 4689,
+    "coordinates": {
+      "lng": 16.52564386,
+      "lat": 48.21394625
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524308",
+    "name": "Hirschstettner Aupark",
+    "address": "Hirschstettner Aupark, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 34047,
+    "coordinates": {
+      "lng": 16.46107694,
+      "lat": 48.23417014
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524309",
+    "name": "Lumbyepark",
+    "address": "Lumbyepark, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 4523,
+    "coordinates": {
+      "lng": 16.48860175,
+      "lat": 48.21216402
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524310",
+    "name": "PA Ferdinand-Stransky-Weg",
+    "address": "PA Ferdinand-Stransky-Weg, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 5287,
+    "coordinates": {
+      "lng": 16.44963994,
+      "lat": 48.25519274
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524311",
+    "name": "PA Eßlinger Hauptstraße",
+    "address": "PA Eßlinger Hauptstraße, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 1387,
+    "coordinates": {
+      "lng": 16.52894197,
+      "lat": 48.21313923
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524312",
+    "name": "PA Raphael-Donner-Allee",
+    "address": "PA Raphael-Donner-Allee, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 8749,
+    "coordinates": {
+      "lng": 16.52479045,
+      "lat": 48.21304123
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524313",
+    "name": "PA Eibengasse",
+    "address": "PA Eibengasse, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 6634,
+    "coordinates": {
+      "lng": 16.47788945,
+      "lat": 48.21994539
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielplatz: Mo-Fr: 8:00-22:00 Sa-So: 10:00-22:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524314",
+    "name": "PA Düsseldorfstraße",
+    "address": "PA Düsseldorfstraße, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 4526,
+    "coordinates": {
+      "lng": 16.44376239,
+      "lat": 48.23881176
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524315",
+    "name": "PA Reulingweg",
+    "address": "PA Reulingweg, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 1453,
+    "coordinates": {
+      "lng": 16.26656792,
+      "lat": 48.13755904
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524316",
+    "name": "Josef-Schoiswohl-Park",
+    "address": "Josef-Schoiswohl-Park, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 841,
+    "coordinates": {
+      "lng": 16.26575518,
+      "lat": 48.14350618
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524317",
+    "name": "PA Inzersdorf Kirchenplatz",
+    "address": "PA Inzersdorf Kirchenplatz, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 993,
+    "coordinates": {
+      "lng": 16.34681647,
+      "lat": 48.14994117
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524318",
+    "name": "PA Hadersbergensteig",
+    "address": "PA Hadersbergensteig, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 4265,
+    "coordinates": {
+      "lng": 16.26111047,
+      "lat": 48.13933206
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524319",
+    "name": "PA Gregorygasse",
+    "address": "PA Gregorygasse, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 17656,
+    "coordinates": {
+      "lng": 16.30617228,
+      "lat": 48.15008711
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524320",
+    "name": "Margarete-Ottillinger-Park",
+    "address": "Margarete-Ottillinger-Park, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 12148,
+    "coordinates": {
+      "lng": 16.28010383,
+      "lat": 48.13932081
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524321",
+    "name": "Friedrich-Khek-Anlage",
+    "address": "Friedrich-Khek-Anlage, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 1403,
+    "coordinates": {
+      "lng": 16.28813204,
+      "lat": 48.13609368
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524322",
+    "name": "Fridtjof-Nansen-Park",
+    "address": "Fridtjof-Nansen-Park, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 56607,
+    "coordinates": {
+      "lng": 16.28247686,
+      "lat": 48.14451162
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524323",
+    "name": "PA Friedhof Erlaa",
+    "address": "PA Friedhof Erlaa, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 2529,
+    "coordinates": {
+      "lng": 16.31447358,
+      "lat": 48.14176933
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524324",
+    "name": "Dr.-Rudolf-Hatschek-Park",
+    "address": "Dr.-Rudolf-Hatschek-Park, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 1546,
+    "coordinates": {
+      "lng": 16.29647811,
+      "lat": 48.14374255
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524325",
+    "name": "PA Chromygasse",
+    "address": "PA Chromygasse, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 3029,
+    "coordinates": {
+      "lng": 16.30650675,
+      "lat": 48.15490114
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524326",
+    "name": "PaN-Park",
+    "address": "PaN-Park, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 14528,
+    "coordinates": {
+      "lng": 16.31539802,
+      "lat": 48.14000908
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524327",
+    "name": "PA Ziegelhofstraße",
+    "address": "PA Ziegelhofstraße, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 4449,
+    "coordinates": {
+      "lng": 16.48062621,
+      "lat": 48.24143109
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524328",
+    "name": "PA Strakaweg",
+    "address": "PA Strakaweg, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 13493,
+    "coordinates": {
+      "lng": 16.44967474,
+      "lat": 48.23766018
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524329",
+    "name": "PA Rudolf-Köppl-Gasse",
+    "address": "PA Rudolf-Köppl-Gasse, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 4462,
+    "coordinates": {
+      "lng": 16.43391044,
+      "lat": 48.25250782
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524330",
+    "name": "PA Illnerstraße",
+    "address": "PA Illnerstraße, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 3247,
+    "coordinates": {
+      "lng": 16.51901217,
+      "lat": 48.21543092
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524331",
+    "name": "PA Anfanggasse",
+    "address": "PA Anfanggasse, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 19489,
+    "coordinates": {
+      "lng": 16.46768429,
+      "lat": 48.2371877
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524332",
+    "name": "Cholewkapark",
+    "address": "Cholewkapark, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 5474,
+    "coordinates": {
+      "lng": 16.42512507,
+      "lat": 48.22696136
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524333",
+    "name": "Hans-Hass-Park",
+    "address": "Hans-Hass-Park, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 3373,
+    "coordinates": {
+      "lng": 16.41942689,
+      "lat": 48.22764916
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524334",
+    "name": "Ferdinand-Kaufmann-Platz",
+    "address": "Ferdinand-Kaufmann-Platz, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 22158,
+    "coordinates": {
+      "lng": 16.39889239,
+      "lat": 48.24889257
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524335",
+    "name": "PA Edi-Finger-Straße",
+    "address": "PA Edi-Finger-Straße, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 1311,
+    "coordinates": {
+      "lng": 16.41299396,
+      "lat": 48.2970777
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524336",
+    "name": "Prater - Schulverkehrsgartenwiese",
+    "address": "Prater - Schulverkehrsgartenwiese, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 5173,
+    "coordinates": {
+      "lng": 16.39903664,
+      "lat": 48.21424804
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524337",
+    "name": "PA Neue-Welt-Gasse",
+    "address": "PA Neue-Welt-Gasse, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 245,
+    "coordinates": {
+      "lng": 16.28878362,
+      "lat": 48.18700964
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524338",
+    "name": "Erna-Reitmeyer-Park",
+    "address": "Erna-Reitmeyer-Park, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 1175,
+    "coordinates": {
+      "lng": 16.26207186,
+      "lat": 48.19129356
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524339",
+    "name": "PA Clarplatz",
+    "address": "PA Clarplatz, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 830,
+    "coordinates": {
+      "lng": 16.26549076,
+      "lat": 48.18268378
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524340",
+    "name": "Andreas-Rett-Park",
+    "address": "Andreas-Rett-Park, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 5276,
+    "coordinates": {
+      "lng": 16.28115421,
+      "lat": 48.16568339
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524341",
+    "name": "PA Zanaschkagasse",
+    "address": "PA Zanaschkagasse, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 5228,
+    "coordinates": {
+      "lng": 16.31936979,
+      "lat": 48.15863394
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Okt-März:06:00-21:00, Apr-Sep:06:00-21:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524342",
+    "name": "Vivenotpark",
+    "address": "Vivenotpark, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 2377,
+    "coordinates": {
+      "lng": 16.33124285,
+      "lat": 48.17582055
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Okt-März:06:00-21:00, Apr-Sep:06:00-21:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524343",
+    "name": "Theodor-Körner-Park",
+    "address": "Theodor-Körner-Park, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 6504,
+    "coordinates": {
+      "lng": 16.32859776,
+      "lat": 48.17297127
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524344",
+    "name": "PA Wienerbergbrücke",
+    "address": "PA Wienerbergbrücke, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 1390,
+    "coordinates": {
+      "lng": 16.32686394,
+      "lat": 48.17368983
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524345",
+    "name": "PA Schöpfwerk",
+    "address": "PA Schöpfwerk, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 9446,
+    "coordinates": {
+      "lng": 16.32671054,
+      "lat": 48.15882426
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524346",
+    "name": "Prater - Konstantinhügel",
+    "address": "Prater - Konstantinhügel, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 16175,
+    "coordinates": {
+      "lng": 16.40349988,
+      "lat": 48.2101885
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524347",
+    "name": "Karl-Voitl-Park",
+    "address": "Karl-Voitl-Park, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 1019,
+    "coordinates": {
+      "lng": 16.30593677,
+      "lat": 48.16896588
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524348",
+    "name": "PA Hervicusgasse",
+    "address": "PA Hervicusgasse, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 4706,
+    "coordinates": {
+      "lng": 16.30382934,
+      "lat": 48.16188653
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524349",
+    "name": "PA Canalettogasse",
+    "address": "PA Canalettogasse, 12. Bezirk, Wien",
+    "district": 12,
+    "area": 310,
+    "coordinates": {
+      "lng": 16.33703242,
+      "lat": 48.17788535
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Okt-März:06:00-21:00, Apr-Sep:06:00-21:30",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524350",
+    "name": "Prater - Rotundenwiese",
+    "address": "Prater - Rotundenwiese, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 2993,
+    "coordinates": {
+      "lng": 16.40992657,
+      "lat": 48.21118452
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524351",
+    "name": "PA Glanzinggasse",
+    "address": "PA Glanzinggasse, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 1262,
+    "coordinates": {
+      "lng": 16.3159556,
+      "lat": 48.2424004
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524352",
+    "name": "PA Kutschkergasse",
+    "address": "PA Kutschkergasse, 18. Bezirk, Wien",
+    "district": 18,
+    "area": 237,
+    "coordinates": {
+      "lng": 16.34481062,
+      "lat": 48.22524942
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524353",
+    "name": "PA Franz-Glaser-Gasse",
+    "address": "PA Franz-Glaser-Gasse, 17. Bezirk, Wien",
+    "district": 17,
+    "area": 3567,
+    "coordinates": {
+      "lng": 16.29085433,
+      "lat": 48.22487495
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524354",
+    "name": "PA Dornbacher Straße",
+    "address": "PA Dornbacher Straße, 17. Bezirk, Wien",
+    "district": 17,
+    "area": 490,
+    "coordinates": {
+      "lng": 16.29138241,
+      "lat": 48.23370885
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524355",
+    "name": "Diepoldpark",
+    "address": "Diepoldpark, 17. Bezirk, Wien",
+    "district": 17,
+    "area": 3721,
+    "coordinates": {
+      "lng": 16.33030955,
+      "lat": 48.22315998
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524356",
+    "name": "Karl-Hodina-Park",
+    "address": "Karl-Hodina-Park, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 900,
+    "coordinates": {
+      "lng": 16.32845214,
+      "lat": 48.21248411
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524357",
+    "name": "PA Mildeplatz",
+    "address": "PA Mildeplatz, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 2924,
+    "coordinates": {
+      "lng": 16.31256428,
+      "lat": 48.21544743
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Ballspielkäfig: März-Nov: 07:00-21:00, Dez-Feb: keine Sperre",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524358",
+    "name": "PA Lambertgasse",
+    "address": "PA Lambertgasse, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 258,
+    "coordinates": {
+      "lng": 16.31946658,
+      "lat": 48.21292176
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524359",
+    "name": "Prater - Arenawiese",
+    "address": "Prater - Arenawiese, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 58590,
+    "coordinates": {
+      "lng": 16.40846454,
+      "lat": 48.20756828
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524360",
+    "name": "Katharinenruhe",
+    "address": "Katharinenruhe, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 657,
+    "coordinates": {
+      "lng": 16.29424912,
+      "lat": 48.21521277
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524361",
+    "name": "PA Sechshauser Gürtel",
+    "address": "PA Sechshauser Gürtel, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 1188,
+    "coordinates": {
+      "lng": 16.33765867,
+      "lat": 48.18982178
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524362",
+    "name": "PA Rosinagasse",
+    "address": "PA Rosinagasse, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 689,
+    "coordinates": {
+      "lng": 16.33208759,
+      "lat": 48.19424844
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524363",
+    "name": "Hans-Rott-Park",
+    "address": "Hans-Rott-Park, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 667,
+    "coordinates": {
+      "lng": 16.32687531,
+      "lat": 48.18883319
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524364",
+    "name": "PA Grimmgasse",
+    "address": "PA Grimmgasse, 15. Bezirk, Wien",
+    "district": 15,
+    "area": 379,
+    "coordinates": {
+      "lng": 16.32815841,
+      "lat": 48.18775465
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Nov-März: 7:00-20:00, Apr-Okt: 7:00-21:00",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524365",
+    "name": "Elfriede-Stumpf-Park",
+    "address": "Elfriede-Stumpf-Park, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 54192,
+    "coordinates": {
+      "lng": 16.28190098,
+      "lat": 48.2067087
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524366",
+    "name": "PA Flötzersteig",
+    "address": "PA Flötzersteig, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 1128,
+    "coordinates": {
+      "lng": 16.28840674,
+      "lat": 48.20621681
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524367",
+    "name": "PA Ochsenkopfweg",
+    "address": "PA Ochsenkopfweg, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 3678,
+    "coordinates": {
+      "lng": 16.24613562,
+      "lat": 48.21995023
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524368",
+    "name": "PA Mühlbergstraße",
+    "address": "PA Mühlbergstraße, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 1079,
+    "coordinates": {
+      "lng": 16.21234946,
+      "lat": 48.2079563
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524369",
+    "name": "PA Siebenhirtenstraße",
+    "address": "PA Siebenhirtenstraße, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 4762,
+    "coordinates": {
+      "lng": 16.29443546,
+      "lat": 48.13323106
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524370",
+    "name": "PA Hüttelbergstraße",
+    "address": "PA Hüttelbergstraße, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 2048,
+    "coordinates": {
+      "lng": 16.25554819,
+      "lat": 48.20887565
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524371",
+    "name": "PA Luckenschwemmgasse",
+    "address": "PA Luckenschwemmgasse, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 1898,
+    "coordinates": {
+      "lng": 16.41128202,
+      "lat": 48.29984055
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524372",
+    "name": "PA Julius-Ficker-Straße",
+    "address": "PA Julius-Ficker-Straße, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 1254,
+    "coordinates": {
+      "lng": 16.44772739,
+      "lat": 48.26673712
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524373",
+    "name": "PA Gitlbauergasse",
+    "address": "PA Gitlbauergasse, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 20260,
+    "coordinates": {
+      "lng": 16.44850425,
+      "lat": 48.27217986
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524374",
+    "name": "PA Josef-Flandorfer-Straße",
+    "address": "PA Josef-Flandorfer-Straße, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 801,
+    "coordinates": {
+      "lng": 16.41183487,
+      "lat": 48.2993207
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524375",
+    "name": "Prater - Rustenschacher",
+    "address": "Prater - Rustenschacher, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 189820,
+    "coordinates": {
+      "lng": 16.41198588,
+      "lat": 48.20472729
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524376",
+    "name": "PA Bubergasse",
+    "address": "PA Bubergasse, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 3534,
+    "coordinates": {
+      "lng": 16.45059341,
+      "lat": 48.27043893
+    },
+    "amenities": [
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524377",
+    "name": "PA Donaufelder Straße",
+    "address": "PA Donaufelder Straße, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 2516,
+    "coordinates": {
+      "lng": 16.41506671,
+      "lat": 48.25287476
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524378",
+    "name": "PA Winarskystraße",
+    "address": "PA Winarskystraße, 20. Bezirk, Wien",
+    "district": 20,
+    "area": 649,
+    "coordinates": {
+      "lng": 16.3805536,
+      "lat": 48.23906289
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524379",
+    "name": "PA Meldemannstraße",
+    "address": "PA Meldemannstraße, 20. Bezirk, Wien",
+    "district": 20,
+    "area": 1026,
+    "coordinates": {
+      "lng": 16.37980003,
+      "lat": 48.23867663
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524380",
+    "name": "Wilfanpark",
+    "address": "Wilfanpark, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 3673,
+    "coordinates": {
+      "lng": 16.34120557,
+      "lat": 48.25337712
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524381",
+    "name": "Puchweinpark",
+    "address": "Puchweinpark, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 3125,
+    "coordinates": {
+      "lng": 16.32121816,
+      "lat": 48.25211313
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524382",
+    "name": "PA Felix-Dahn-Straße",
+    "address": "PA Felix-Dahn-Straße, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 421,
+    "coordinates": {
+      "lng": 16.32173182,
+      "lat": 48.24300945
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524383",
+    "name": "PA Kliergasse",
+    "address": "PA Kliergasse, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 8206,
+    "coordinates": {
+      "lng": 16.31871443,
+      "lat": 48.24598045
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524384",
+    "name": "PA Am Kahlenberg",
+    "address": "PA Am Kahlenberg, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 1243,
+    "coordinates": {
+      "lng": 16.33691881,
+      "lat": 48.27567386
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524385",
+    "name": "Pisecpark",
+    "address": "Pisecpark, 19. Bezirk, Wien",
+    "district": 19,
+    "area": 1807,
+    "coordinates": {
+      "lng": 16.31786527,
+      "lat": 48.24326231
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524386",
+    "name": "PA Asperner Wies'n",
+    "address": "PA Asperner Wies'n, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 10470,
+    "coordinates": {
+      "lng": 16.47698325,
+      "lat": 48.21401601
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524387",
+    "name": "Gusti-Wolf-Park",
+    "address": "Gusti-Wolf-Park, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 4024,
+    "coordinates": {
+      "lng": 16.43360767,
+      "lat": 48.254584
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524388",
+    "name": "Trygve-Lie-Park",
+    "address": "Trygve-Lie-Park, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 3882,
+    "coordinates": {
+      "lng": 16.47572973,
+      "lat": 48.21430495
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524389",
+    "name": "PA Steigenteschgasse",
+    "address": "PA Steigenteschgasse, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 3727,
+    "coordinates": {
+      "lng": 16.43624163,
+      "lat": 48.24635036
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524390",
+    "name": "PA Godlewskigasse",
+    "address": "PA Godlewskigasse, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 4900,
+    "coordinates": {
+      "lng": 16.44007488,
+      "lat": 48.23248035
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524391",
+    "name": "Lagerwiese Rehlacke",
+    "address": "Lagerwiese Rehlacke, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 41305,
+    "coordinates": {
+      "lng": 16.43627241,
+      "lat": 48.23098502
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524392",
+    "name": "PA Quadenstraße",
+    "address": "PA Quadenstraße, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 2214,
+    "coordinates": {
+      "lng": 16.48085153,
+      "lat": 48.23737517
+    },
+    "amenities": [
+      "Spielplatz",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524393",
+    "name": "PA Friedhof Aspern",
+    "address": "PA Friedhof Aspern, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 3645,
+    "coordinates": {
+      "lng": 16.48031136,
+      "lat": 48.21711362
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524394",
+    "name": "PA Meißnergasse",
+    "address": "PA Meißnergasse, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 6903,
+    "coordinates": {
+      "lng": 16.4385584,
+      "lat": 48.24710825
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524395",
+    "name": "PA Donaustadtstraße",
+    "address": "PA Donaustadtstraße, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 1798,
+    "coordinates": {
+      "lng": 16.43829876,
+      "lat": 48.23862158
+    },
+    "amenities": [
+      "Hundebereich",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524396",
+    "name": "PA Wankläckergasse",
+    "address": "PA Wankläckergasse, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 5180,
+    "coordinates": {
+      "lng": 16.4131408,
+      "lat": 48.27503132
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524397",
+    "name": "Schweiglpark",
+    "address": "Schweiglpark, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 1677,
+    "coordinates": {
+      "lng": 16.43519072,
+      "lat": 48.26415943
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524398",
+    "name": "PA Tetmajergasse",
+    "address": "PA Tetmajergasse, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 12233,
+    "coordinates": {
+      "lng": 16.39181443,
+      "lat": 48.26088159
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524399",
+    "name": "Bruno-Morpurgo-Park",
+    "address": "Bruno-Morpurgo-Park, 23. Bezirk, Wien",
+    "district": 23,
+    "area": 8041,
+    "coordinates": {
+      "lng": 16.29214708,
+      "lat": 48.14808312
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524400",
+    "name": "Vilma-Webenau-Park",
+    "address": "Vilma-Webenau-Park, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 38927,
+    "coordinates": {
+      "lng": 16.38250038,
+      "lat": 48.27781893
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Hundebereich",
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "3524401",
+    "name": "PA Ernst-Kein-Gasse",
+    "address": "PA Ernst-Kein-Gasse, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 19595,
+    "coordinates": {
+      "lng": 16.45599062,
+      "lat": 48.27692467
+    },
+    "amenities": [
+      "Spielplatz",
+      "Wasserspiele",
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Park",
+    "openingHours": "Täglich 24h geöffnet",
+    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
+    "phone": "01 4000 8042",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "manual-augarten",
+    "name": "Augarten",
+    "address": "Augarten, 2. Bezirk, Wien",
+    "district": 2,
+    "area": 522000,
+    "coordinates": {
+      "lat": 48.226121792463,
+      "lng": 16.376688355191
+    },
+    "amenities": [
+      "Grünfläche",
+      "Toiletten"
+    ],
+    "category": "Park",
+    "description": "Augarten im 2. Bezirk",
+    "openingHours": "Täglich geöffnet",
+    "website": "",
+    "phone": "",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "manual-burggarten",
+    "name": "Burggarten",
+    "address": "Burggarten, 1. Bezirk, Wien",
+    "district": 1,
+    "area": 40000,
+    "coordinates": {
+      "lat": 48.2044454288165,
+      "lng": 16.365833598010685
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Burggarten im 1. Bezirk",
+    "openingHours": "Täglich geöffnet",
+    "website": "",
+    "phone": "",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "manual-volksgarten",
+    "name": "Volksgarten",
+    "address": "Volksgarten, 1. Bezirk, Wien",
+    "district": 1,
+    "area": 50000,
+    "coordinates": {
+      "lat": 48.20813887445002,
+      "lng": 16.36139692102694
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten",
+      "Wasserspiele"
+    ],
+    "category": "Park",
+    "description": "Volksgarten im 1. Bezirk",
+    "openingHours": "Täglich geöffnet",
+    "website": "",
+    "phone": "",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "manual-lainzer-tiergarten",
+    "name": "Lainzer Tiergarten",
+    "address": "Lainzer Tiergarten, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 24500000,
+    "coordinates": {
+      "lat": 48.16983242265272,
+      "lng": 16.22053632684539
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Lainzer Tiergarten im 13. Bezirk",
+    "openingHours": "Täglich geöffnet",
+    "website": "",
+    "phone": "",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "manual-erholungsgebiet-wienerberg",
+    "name": "Erholungsgebiet Wienerberg",
+    "address": "Erholungsgebiet Wienerberg, 10. Bezirk, Wien",
+    "district": 10,
+    "area": 117000,
+    "coordinates": {
+      "lat": 48.160970817931954,
+      "lng": 16.35186664440599
+    },
+    "amenities": [
+      "Hundebereich",
+      "Toiletten"
+    ],
+    "category": "Park",
+    "description": "Erholungsgebiet Wienerberg im 10. Bezirk",
+    "openingHours": "Täglich geöffnet",
+    "website": "",
+    "phone": "",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "manual-schlosspark-schoenbrunn",
+    "name": "Schlosspark Schönbrunn",
+    "address": "Schlosspark Schönbrunn, 13. Bezirk, Wien",
+    "district": 13,
+    "area": 1862800,
+    "coordinates": {
+      "lat": 48.180726503524376,
+      "lng": 16.309724404545165
+    },
+    "amenities": [
+      "Grünfläche",
+      "Hundebereich",
+      "Toiletten"
+    ],
+    "category": "Park",
+    "description": "Schlosspark Schönbrunn im 13. Bezirk",
+    "openingHours": "Täglich geöffnet",
+    "website": "",
+    "phone": "",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "manual-nationlpark-donau-auen",
+    "name": "Nationalpark Donau-Auen (Lobau)",
+    "address": "Nationalpark Donau-Auen (Lobau), 22. Bezirk, Wien",
+    "district": 22,
+    "area": 23000000,
+    "coordinates": {
+      "lat": 48.18937016887611,
+      "lng": 16.51273421924633
+    },
+    "amenities": [
+      "Grünfläche",
+      "Sitzgelegenheiten"
+    ],
+    "category": "Park",
+    "description": "Nationalpark Donau-Auen (Lobau) im 22. Bezirk",
+    "openingHours": "Täglich geöffnet",
+    "website": "",
+    "phone": "",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "manual-wienerwald",
+    "name": "Wienerwald",
+    "address": "Wienerwald, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 68580000,
+    "coordinates": {
+      "lat": 48.25130595135,
+      "lng": 16.2137285339
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Wienerwald im 14. Bezirk",
+    "openingHours": "Täglich geöffnet",
+    "website": "",
+    "phone": "",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": [],
+    "districtAreaSplit": {
+      "13": 10,
+      "14": 35,
+      "16": 5,
+      "17": 12.5,
+      "18": 5,
+      "19": 17.5,
+      "23": 15
+    }
+  },
+  {
+    "id": "manual-steinhofgruende",
+    "name": "Steinhofgründe",
+    "address": "Steinhofgründe, 14. Bezirk, Wien",
+    "district": 14,
+    "area": 430000,
+    "coordinates": {
+      "lat": 48.2121264194,
+      "lng": 16.278393184
+    },
+    "amenities": [
+      "Grünfläche",
+      "Spielplatz",
+      "Toiletten"
+    ],
+    "category": "Park",
+    "description": "Steinhofgründe im 14. Bezirk",
+    "openingHours": "Täglich geöffnet",
+    "website": "",
+    "phone": "",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "manual-ottakringer-wald",
+    "name": "Ottakringer Wald",
+    "address": "Ottakringer Wald, 16. Bezirk, Wien",
+    "district": 16,
+    "area": 1920000,
+    "coordinates": {
+      "lat": 48.2240030744,
+      "lng": 16.2723529975
+    },
+    "amenities": [
+      "Grünfläche",
+      "Grillen"
+    ],
+    "category": "Park",
+    "description": "Ottakringer Wald im 16. Bezirk",
+    "openingHours": "Täglich geöffnet",
+    "website": "",
+    "phone": "",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "manual-norbert-scheed-wald",
+    "name": "Norbert-Scheed-Wald",
+    "address": "Norbert-Scheed-Wald, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 10000000,
+    "coordinates": {
+      "lat": 48.25624027359,
+      "lng": 16.50322909421
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Norbert-Scheed-Wald im 22. Bezirk",
+    "openingHours": "Täglich geöffnet",
+    "website": "",
+    "phone": "",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "manual-jedleseer-aupark",
+    "name": "Jedleseer Aupark",
+    "address": "Jedleseer Aupark, 21. Bezirk, Wien",
+    "district": 21,
+    "area": 110000,
+    "coordinates": {
+      "lat": 48.2671083604,
+      "lng": 16.3791290211
+    },
+    "amenities": [
+      "Grünfläche"
+    ],
+    "category": "Park",
+    "description": "Jedleseer Aupark im 21. Bezirk",
+    "openingHours": "Täglich geöffnet",
+    "website": "",
+    "phone": "",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": []
+  },
+  {
+    "id": "manual-donauinsel",
+    "name": "Donauinsel",
+    "address": "Donauinsel, 22. Bezirk, Wien",
+    "district": 22,
+    "area": 3900000,
+    "coordinates": {
+      "lat": 48.22854668962,
+      "lng": 16.4096939003
+    },
+    "amenities": [
+      "Grünfläche",
+      "Toiletten",
+      "Spielplatz",
+      "Grillen",
+      "Tischtennis",
+      "Hundebereich"
+    ],
+    "category": "Park",
+    "description": "Donauinsel im 22. Bezirk",
+    "openingHours": "Täglich geöffnet",
+    "website": "",
+    "phone": "",
+    "accessibility": "Barrierefreiheit nicht spezifiziert",
+    "publicTransport": [
+      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
+    ],
+    "tips": [],
+    "districtAreaSplit": {
+      "21": 50,
+      "22": 50
+    }
+  }
+];
+
+export const PARKS_METADATA = {
+  generatedAt: '2026-03-14T05:15:50.327Z',
+  totalParks: 1052,
+  source: 'Vienna Open Data API',
+  apiEndpoint: 'ogdwien:PARKINFOOGD'
+};

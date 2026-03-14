@@ -1,48 +1,31 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { getViennaParksForApp } from "../services/viennaApi";
+import { useParksData } from "../hooks/useParksData";
 import { slugifyParkName } from "../data/manualParksData";
 import { Building, Ruler, AlertTriangle, TreePine, Heart, Trash2 } from "lucide-react";
 import { getAmenityIcon } from "../utils/amenityIcons";
 import { getFavorites, removeFavorite } from "../utils/favoritesManager";
 import { getAllDistrictsForPark, formatDistricts } from "../utils/parkUtils";
 import STYLE from "../utils/config";
-import Loading from "../components/Loading";
 import type { Park } from "../types/park";
 
 const FavoritesPage = () => {
+  const { parks } = useParksData();
   const [favoriteParks, setFavoriteParks] = useState<Park[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
 
   // Load favorite parks
   useEffect(() => {
-    const loadFavorites = async () => {
-      try {
-        setLoading(true);
+    if (parks.length > 0) {
+      // Get favorite park IDs from local storage
+      const favoriteIds = getFavorites();
 
-        // Get all parks
-        const allParks = await getViennaParksForApp();
+      // Filter parks to only include favorites
+      const favorites = parks.filter((park: { id: string }) => favoriteIds.includes(park.id));
 
-        // Get favorite park IDs from local storage
-        const favoriteIds = getFavorites();
-
-        // Filter parks to only include favorites
-        const favorites = allParks.filter((park: { id: string }) => favoriteIds.includes(park.id));
-
-        setFavoriteParks(favorites);
-        setError(null);
-      } catch (err) {
-        setError("Fehler beim Laden der Favoriten");
-        console.error("Error loading favorites:", err);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    loadFavorites();
-  }, []);
+      setFavoriteParks(favorites);
+    }
+  }, [parks]);
 
   // Handle removing a park from favorites
   const handleRemoveFavorite = (parkId: string) => {
@@ -50,41 +33,6 @@ const FavoritesPage = () => {
     setFavoriteParks((prevFavorites) => prevFavorites.filter((park: { id: string }) => park.id !== parkId));
   };
 
-  if (loading) {
-    return (
-      <div
-        className="min-h-screen flex items-center justify-center"
-        style={{ background: "var(--main-bg)" }}>
-        <div
-          className="p-6"
-          style={{ backgroundColor: "var(--card-bg)", borderRadius: "8px" }}>
-          <Loading />
-        </div>
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div
-        className="min-h-screen flex items-center justify-center"
-        style={{ background: "var(--main-bg)" }}>
-        <div
-          className="p-6"
-          style={{ backgroundColor: "var(--card-bg)", borderRadius: "8px" }}>
-          <AlertTriangle
-            className="w-16 h-16 mb-5"
-            stroke="var(--accent-gold)"
-          />
-          <p
-            className="font-serif italic text-lg"
-            style={{ color: "var(--deep-charcoal)", fontWeight: "400" }}>
-            {error}
-          </p>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div
