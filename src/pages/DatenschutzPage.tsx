@@ -20,7 +20,7 @@ export const DatenschutzPage: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen p-4 md:p-8" style={{ backgroundColor: "var(--main-bg)" }}>
+    <div className="min-h-screen p-4 md:p-8 bg-main-bg">
       <Helmet>
         <title>Datenschutz | Wiener Grünflächen Index</title>
         <meta
@@ -29,12 +29,10 @@ export const DatenschutzPage: React.FC = () => {
         />
       </Helmet>
       <div className="max-w-4xl mx-auto">
-        <h1 className="font-serif text-3xl mb-6" style={{ color: "var(--primary-green)" }}>
+        <h1 className="font-serif text-3xl mb-6 text-primary-green">
           Datenschutzerklärung
         </h1>
-        <div 
-          className="prose max-w-none font-serif"
-          style={{ color: "var(--deep-charcoal)" }}
+        <div className="prose max-w-none font-serif text-deep-charcoal"
           dangerouslySetInnerHTML={{ __html: content.replace(/\n/g, '<br />') }}
         />
       </div>

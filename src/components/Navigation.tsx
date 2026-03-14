@@ -68,33 +68,11 @@ const Navigation = () => {
     <Link
       to={path}
       onClick={onClick}
-      className={`flex items-center space-x-3 py-2 font-serif relative transition-opacity duration-200 ${
-        isActive(path) ? "active-nav-item italic" : ""
+      className={`flex items-center space-x-3 py-2 font-serif relative transition-opacity duration-200 px-4 ${
+        isActive(path) ? "active-nav-item italic text-primary-green opacity-100" : "text-deep-charcoal opacity-80"
       }`}
-      style={{
-        color: isActive(path) ? "var(--primary-green)" : "var(--deep-charcoal)",
-        opacity: isActive(path) ? 1 : 0.8,
-        // borderLeft: isActive(path) ? '3px solid var(--primary-green)' : '3px solid transparent',
-        paddingLeft: "1.25rem",
-      }}
-      onMouseEnter={(e) => {
-        if (!isActive(path)) {
-          e.currentTarget.style.opacity = "1";
-        }
-      }}
-      onMouseLeave={(e) => {
-        if (!isActive(path)) {
-          e.currentTarget.style.opacity = "0.8";
-        }
-      }}
     >
-      <div
-        style={{
-          color: isActive(path)
-            ? "var(--primary-green)"
-            : "var(--deep-charcoal)",
-        }}
-      >
+      <div className={isActive(path) ? "text-primary-green" : "text-deep-charcoal"}>
         {icon}
       </div>
       <div className="font-serif text-2xl sm:text-xl ">

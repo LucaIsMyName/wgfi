@@ -165,17 +165,11 @@ const MapPage = () => {
         />
 
         {/* Title Overlay - Top Left - Desktop Only */}
-        <div
-          className="sr-only absolute top-4 left-4 z-10 max-w-md p-3 hidden lg:block"
-          style={{ backgroundColor: "rgba(255, 255, 255, 0.9)", borderRadius: "8px" }}>
-          <h1
-            className="font-serif text-2xl"
-            style={{ color: "var(--primary-green)", fontWeight: "400", fontStyle: "italic" }}>
+        <div className="sr-only absolute top-4 left-4 z-10 max-w-md p-3 hidden lg:block bg-white/90 rounded-lg">
+          <h1 className="font-serif text-2xl text-primary-green font-normal italic">
             Wiener Parks Karte
           </h1>
-          <p
-            className="font-mono text-xs"
-            style={{ color: "var(--deep-charcoal)" }}>
+          <p className="font-mono text-xs text-deep-charcoal">
             {filteredParks.length} PARKS {selectedDistrict && <span>IM {selectedDistrict}. BEZIRK</span>}
           </p>
         </div>

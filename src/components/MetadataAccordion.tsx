@@ -291,13 +291,12 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
   };
 
   return (
-    <div style={{ outline: "1px solid var(--border-color)" }} className="p-3">
+    <div className="p-3 outline outline-1 outline-border-color">
       <Accordion.Root type="multiple" value={value} onValueChange={setValue}>
         <Accordion.Item value="rawData">
           <Accordion.Header>
             <Accordion.Trigger
-              className="w-full flex items-center justify-between font-mono text-xs group"
-              style={{ color: "var(--primary-green)" }}
+              className="w-full flex items-center justify-between font-mono text-xs group text-primary-green"
             >
               <span className="flex items-center gap-2">
                 <Database className="w-3.5 h-3.5" />
@@ -308,8 +307,7 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
                   size="sm"
                   icon={FileJson}
                   title="Als JSON exportieren"
-                  className="ml-2 hover:opacity-70"
-                  style={{ padding: "0", minWidth: "auto" }}
+                  className="ml-2 hover:opacity-70 !p-0 min-w-0"
                 />
                 <Button
                   onClick={exportAsCSV}
@@ -317,8 +315,7 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
                   size="sm"
                   icon={FileDown}
                   title="Als CSV exportieren"
-                  className="hover:opacity-70"
-                  style={{ padding: "0", minWidth: "auto" }}
+                  className="hover:opacity-70 !p-0 min-w-0"
                 />
                 <Button
                   onClick={exportAsHTML}
@@ -326,8 +323,7 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
                   size="sm"
                   icon={FileCode}
                   title="Als HTML exportieren"
-                  className="hover:opacity-70"
-                  style={{ padding: "0", minWidth: "auto" }}
+                  className="hover:opacity-70 !p-0 min-w-0"
                 />
               </span>
               <ChevronDown
@@ -342,36 +338,13 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
 
               {/* Complete Park Data Table */}
               <div className="overflow-x-auto max-h-80 overflow-y-auto">
-                <table
-                  className="w-full"
-                  style={{ borderCollapse: "collapse" }}
-                >
+                <table className="w-full border-collapse">
                   <thead>
-                    <tr
-                      style={{ borderBottom: "1px solid var(--border-color)" }}
-                    >
-                      <th
-                        className="font-mono text-xs py-2 px-2 text-left"
-                        style={{
-                          color: "var(--primary-green)",
-                          backgroundColor: "var(--light-sage)",
-                          position: "sticky",
-                          top: 0,
-                          zIndex: 1,
-                        }}
-                      >
+                    <tr className="border-b border-border-color">
+                      <th className="font-mono text-xs py-2 px-2 text-left text-primary-green bg-light-sage sticky top-0 z-[1]">
                         Feld
                       </th>
-                      <th
-                        className="font-mono text-xs py-2 px-2 text-left"
-                        style={{
-                          color: "var(--primary-green)",
-                          backgroundColor: "var(--light-sage)",
-                          position: "sticky",
-                          top: 0,
-                          zIndex: 1,
-                        }}
-                      >
+                      <th className="font-mono text-xs py-2 px-2 text-left text-primary-green bg-light-sage sticky top-0 z-[1]">
                         Wert
                       </th>
                     </tr>
@@ -429,32 +402,12 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
                     {allFields.map(({ key, value }, index) => (
                       <tr
                         key={key}
-                        style={{
-                          borderBottom:
-                            index < allFields.length - 1
-                              ? "1px solid var(--border-color)"
-                              : "none",
-                        }}
+                        className={index < allFields.length - 1 ? "border-b border-border-color" : ""}
                       >
-                        <td
-                          className="font-mono text-xs py-2 px-2"
-                          style={{
-                            color: "var(--deep-charcoal)",
-                            opacity: 0.7,
-                            verticalAlign: "top",
-                            width: "30%",
-                          }}
-                        >
+                        <td className="font-mono text-xs py-2 px-2 text-deep-charcoal opacity-70 align-top w-[30%]">
                           {key}
                         </td>
-                        <td
-                          className="font-mono text-xs py-2 px-2"
-                          style={{
-                            color: "var(--deep-charcoal)",
-                            verticalAlign: "top",
-                            wordBreak: "break-word",
-                          }}
-                        >
+                        <td className="font-mono text-xs py-2 px-2 text-deep-charcoal align-top break-words">
                           {formatValue(value)}
                         </td>
                       </tr>
@@ -464,14 +417,8 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
               </div>
 
               {/* License Info */}
-              <div
-                className="mt-3 pt-3"
-                style={{ borderTop: "1px solid var(--border-color)" }}
-              >
-                <p
-                  className="font-mono text-xs"
-                  style={{ color: "var(--deep-charcoal)", opacity: 0.6 }}
-                >
+              <div className="mt-3 pt-3 border-t border-border-color">
+                <p className="font-mono text-xs text-deep-charcoal opacity-60">
                   Lizenz: CC BY 4.0
                 </p>
               </div>

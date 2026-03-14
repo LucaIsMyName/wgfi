@@ -8,26 +8,22 @@ const NotFoundPage = () => {
         <title>Seite nicht gefunden | Wiener Grünflächen Index</title>
       </Helmet>
       
-      <h1 className="text-6xl font-normal italic mb-6" style={{ color: 'var(--primary-green)' }}>
+      <h1 className="text-6xl font-normal italic mb-6 text-primary-green">
         404
       </h1>
       
-      <h2 className="text-2xl mb-6" style={{ color: 'var(--deep-charcoal)' }}>
+      <h2 className="text-2xl mb-6 text-deep-charcoal">
         Seite nicht gefunden
       </h2>
       
-      <p className="mb-8 text-lg" style={{ color: 'var(--deep-charcoal)' }}>
+      <p className="mb-8 text-lg text-deep-charcoal">
         Die von Ihnen gesuchte Seite konnte nicht gefunden werden. Sie wurde möglicherweise verschoben oder existiert nicht mehr.
       </p>
       
       <div className="mt-12">
         <Link 
           to="/" 
-          className="inline-block px-8 py-4 font-mono text-sm"
-          style={{
-            backgroundColor: 'var(--primary-green)',
-            color: 'var(--soft-cream)',
-          }}
+          className="inline-block px-8 py-4 font-mono text-sm bg-primary-green text-soft-cream"
         >
           ZURÜCK ZUR STARTSEITE
         </Link>

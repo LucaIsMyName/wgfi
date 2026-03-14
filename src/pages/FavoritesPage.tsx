@@ -35,9 +35,7 @@ const FavoritesPage = () => {
 
 
   return (
-    <div
-      className="min-h-screen px-4 lg:px-6"
-      style={{ background: "var(--main-bg)" }}>
+    <div className="min-h-screen px-4 lg:px-6 bg-main-bg">
       <Helmet>
         <title>Wiener Grünflächen Index | Favoriten</title>
         <meta
@@ -48,14 +46,10 @@ const FavoritesPage = () => {
       {/* Header */}
       <div className="pt-6 ">
         <div className="w-full">
-          <h1
-            className={`${STYLE.pageTitle(true)} mb-4`}
-            style={{ color: "var(--primary-green)", fontWeight: "400", fontStyle: "italic" }}>
+          <h1 className={`${STYLE.pageTitle(true)} mb-4 text-primary-green font-normal italic`}>
             Favoriten
           </h1>
-          <p
-            className="sr-only font-serif italic text-lg"
-            style={{ color: "var(--deep-charcoal)", fontWeight: "400" }}>
+          <p className="sr-only font-serif italic text-lg text-deep-charcoal font-normal">
             {favoriteParks.length > 0 ? `${favoriteParks.length} gespeicherte Lieblingsparks` : "Keine Favoriten gespeichert"}
           </p>
         </div>
@@ -65,33 +59,22 @@ const FavoritesPage = () => {
       <div className="py-6">
         <div className="w-full mx-auto">
           {favoriteParks.length === 0 ? (
-            <div
-              className="py-8 px-6 text-left"
-              style={{ backgroundColor: "var(--card-bg)", borderRadius: "8px" }}>
+            <div className="py-8 px-6 text-left bg-card-bg rounded-lg">
               <div className="flex items-start gap-4">
                 <Heart
                   className="w-12 h-12 flex-shrink-0"
                   stroke="var(--primary-green)"
                 />
                 <div>
-                  <h3
-                    className="font-serif italic text-xl mb-2"
-                    style={{ color: "var(--primary-green)", fontWeight: "500" }}>
+                  <h3 className="font-serif italic text-xl mb-2 text-primary-green font-medium">
                     Keine Favoriten gespeichert
                   </h3>
-                  <p
-                    className="font-serif text-base mb-5"
-                    style={{ color: "var(--deep-charcoal)", fontWeight: "400", maxWidth: "500px", lineHeight: "1.6" }}>
+                  <p className="font-serif text-base mb-5 text-deep-charcoal font-normal max-w-[500px] leading-relaxed">
                     Sie haben noch keine Parks zu Ihren Favoriten hinzugefügt. Entdecken Sie Parks in der Übersicht und speichern Sie Ihre Lieblingsparks für schnellen Zugriff.
                   </p>
                   <Link
                     to="/index"
-                    className="px-4 py-2 inline-block font-mono text-xs"
-                    style={{
-                      backgroundColor: "var(--primary-green)",
-                      color: "var(--soft-cream)",
-                      borderRadius: "6px",
-                    }}>
+                    className="px-4 py-2 inline-block font-mono text-xs bg-primary-green text-soft-cream rounded-md">
                     Parks durchstöbern
                   </Link>
                 </div>
@@ -106,15 +89,10 @@ const FavoritesPage = () => {
                 return (
                 <div
                   key={park.id}
-                  className="py-4 relative"
-                  style={{
-                    backgroundColor: "var(--card-bg)",
-                    borderRadius: "8px",
-                  }}>
+                  className="py-4 relative bg-card-bg rounded-lg">
                   <button
                     onClick={() => handleRemoveFavorite(park.id)}
-                    className="absolute top-0 bottom-0 right-4 my-auto flex items-center justify-center p-2 rounded-full hover:bg-light-sage transition-colors"
-                    style={{ color: "var(--primary-green)" }}
+                    className="absolute top-0 bottom-0 right-4 my-auto flex items-center justify-center p-2 rounded-full hover:bg-light-sage transition-colors text-primary-green"
                     aria-label="Aus Favoriten entfernen">
                     <Trash2 className="w-5 h-5" />
                   </button>
@@ -124,20 +102,14 @@ const FavoritesPage = () => {
                     className="block">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                       <div>
-                        <h3
-                          className="font-serif text-2xl mb-3"
-                          style={{ color: "var(--deep-charcoal)", fontWeight: "400", fontStyle: "italic" }}>
+                        <h3 className="font-serif text-2xl mb-3 text-deep-charcoal font-normal italic">
                           {park.name}
                         </h3>
                         <div className="flex flex-wrap gap-6 text-body">
-                          <span
-                            className="flex items-center gap-2 font-mono text-xs"
-                            style={{ color: "var(--deep-charcoal)" }}>
+                          <span className="flex items-center gap-2 font-mono text-xs text-deep-charcoal">
                             <Building className="w-4 h-4" /> {districtsDisplay}
                           </span>
-                          <span
-                            className="flex items-center gap-2 font-mono text-xs"
-                            style={{ color: "var(--deep-charcoal)" }}>
+                          <span className="flex items-center gap-2 font-mono text-xs text-deep-charcoal">
                             <Ruler className="w-4 h-4" /> {park.area.toLocaleString()} M²
                           </span>
                         </div>

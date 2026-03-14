@@ -51,8 +51,7 @@ const ParksListPage = () => {
 
   return (
     <div
-      className="lg:px-6"
-      style={{ background: "var(--main-bg)", height: '100vh', display: 'flex', flexDirection: 'column' }}
+      className="lg:px-6 bg-main-bg h-screen flex flex-col"
       key={refreshKey}>
       <Helmet>
         <title>Wiener Grünflächen Index | Alle Parks</title>

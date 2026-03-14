@@ -89,10 +89,7 @@ const HomePage: React.FC = () => {
   };
 
   return (
-    <div
-      className="h-screen max-h-screen overflow-hidden flex items-center"
-      style={{ background: "var(--main-bg)" }}
-    >
+    <div className="h-screen max-h-screen overflow-hidden flex items-center bg-main-bg">
       <Helmet>
         <title>Wiener Grünflächen Index | Startseite</title>
         <meta
@@ -104,10 +101,7 @@ const HomePage: React.FC = () => {
         <div className="flex flex-col space-y-8">
           {/* Headline */}
           <div>
-            <h1
-              className={`${STYLE.pageTitle(true)} not-italic leading-tight`}
-              style={{ color: "var(--primary-green)" }}
-            >
+            <h1 className={`${STYLE.pageTitle(true)} not-italic leading-tight text-primary-green`}>
               Wiener
               <br /> Grünflächen
               <br />
@@ -119,10 +113,7 @@ const HomePage: React.FC = () => {
 
           {/* Subtitle */}
           <div className="max-w-2xl">
-            <p
-              className="font-serif italic text-lg sm:text-3xl leading-tight text-balance"
-              style={{ color: "var(--primary-green)", fontWeight: "400" }}
-            >
+            <p className="font-serif italic text-lg sm:text-3xl leading-tight text-balance text-primary-green font-normal">
               Eine Liste aller Parks & Grünflächen der Stadt Wien als Liste oder
               Karte.
             </p>
@@ -142,10 +133,7 @@ const HomePage: React.FC = () => {
               variant="outline"
               size="md"
               loading={isLoadingNearby}
-              style={{
-                backgroundColor: "var(--card-bg)",
-                color: "var(--primary-green)",
-              }}
+              className="bg-card-bg text-primary-green"
             >
               {isLoadingNearby ? "Suche..." : "In der nähe"}
             </Button>
@@ -155,10 +143,7 @@ const HomePage: React.FC = () => {
               variant="outline"
               size="md"
               loading={isLoadingRandom}
-              style={{
-                backgroundColor: "var(--card-bg)",
-                color: "var(--primary-green)",
-              }}
+              className="bg-card-bg text-primary-green"
             >
               {isLoadingRandom ? "Lade..." : "Zufallspark"}
             </Button>
