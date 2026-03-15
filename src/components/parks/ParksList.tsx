@@ -6,13 +6,14 @@ import type { Park } from "../../types/park";
 interface ParksListProps {
   parks: Park[];
   onToggleFavorite: (parkId: string) => void;
+  onToggleCompare?: (parkId: string) => void;
   isHighContrast: boolean;
 }
 
 /**
  * ParksList component - renders a virtualized list of park cards
  */
-export default function ParksList({ parks, onToggleFavorite, isHighContrast }: ParksListProps) {
+export default function ParksList({ parks, onToggleFavorite, onToggleCompare, isHighContrast }: ParksListProps) {
   // Use scroll restoration instead of just parentRef
   const scrollRestorationRef = useScrollRestoration();
   const parentRef = scrollRestorationRef; // Use the same ref
@@ -75,6 +76,7 @@ export default function ParksList({ parks, onToggleFavorite, isHighContrast }: P
               <ParkCard
                 park={park}
                 onToggleFavorite={onToggleFavorite}
+                onToggleCompare={onToggleCompare}
                 isHighContrast={isHighContrast}
               />
             </div>

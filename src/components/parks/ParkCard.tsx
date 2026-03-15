@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
-import { Building, Ruler, Heart } from "lucide-react";
+import { Building, Ruler, Heart, GitCompare } from "lucide-react";
 import { getAmenityIcon } from "../../utils/amenityIcons";
 import { isFavorite } from "../../utils/favoritesManager";
+import { isInComparison, toggleComparison } from "../../utils/comparisonManager";
 import { slugifyParkName } from "../../data/manualParksData";
 import { getAllDistrictsForPark, formatDistricts } from "../../utils/parkUtils";
 import type { Park } from "../../types/park";
@@ -9,13 +10,14 @@ import type { Park } from "../../types/park";
 interface ParkCardProps {
   park: Park;
   onToggleFavorite: (parkId: string) => void;
+  onToggleCompare?: (parkId: string) => void;
   isHighContrast: boolean;
 }
 
 /**
  * ParkCard component - renders an individual park card in the list
  */
-export default function ParkCard({ park, onToggleFavorite, isHighContrast }: ParkCardProps) {
+export default function ParkCard({ park, onToggleFavorite, onToggleCompare, isHighContrast }: ParkCardProps) {
   const allDistricts = getAllDistrictsForPark(park);
   const districtsDisplay = formatDistricts(allDistricts, 'full').toUpperCase();
   
@@ -61,11 +63,29 @@ export default function ParkCard({ park, onToggleFavorite, isHighContrast }: Par
           </div>
         </div>
 
-        {/* Favorite button in place of amenities */}
-        <div>
+        {/* Action buttons */}
+        <div className="flex items-center gap-2">
           <button
             onClick={(e) => {
-              e.preventDefault(); // Prevent navigation when clicking the heart
+              e.preventDefault();
+              toggleComparison(park.id);
+              onToggleCompare?.(park.id);
+            }}
+            className="p-2 transition-transform"
+            style={{
+              color: isInComparison(park.id) ? 'var(--primary-green)' : 'var(--deep-charcoal)',
+              opacity: isInComparison(park.id) ? 1 : 0.5,
+            }}
+            aria-label={isInComparison(park.id) ? 'Aus Vergleich entfernen' : 'Zum Vergleich hinzufügen'}
+          >
+            <GitCompare
+              className="w-5 h-5"
+              fill={isInComparison(park.id) ? 'var(--primary-green)' : 'transparent'}
+            />
+          </button>
+          <button
+            onClick={(e) => {
+              e.preventDefault();
               onToggleFavorite(park.id);
             }}
             className="p-2 transition-transform"

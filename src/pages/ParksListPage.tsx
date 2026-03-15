@@ -7,6 +7,7 @@ import ParksFilterSidebar from '../components/parks/ParksFilterSidebar';
 import MobileFiltersPanel from '../components/parks/MobileFiltersPanel';
 import ParksList from '../components/parks/ParksList';
 import { toggleFavorite } from '../utils/favoritesManager';
+import { toggleComparison } from '../utils/comparisonManager';
 import type { Park } from '../types/park';
 
 const ParksListPage = () => {
@@ -30,18 +31,19 @@ const ParksListPage = () => {
     filteredAndSortedParks,
   } = useParksFilters(parks);
 
+  // Force re-render when favorites or comparison change
+  const [refreshKey, setRefreshKey] = useState(0);
+
   // Using the favoritesManager utility for favorites functionality
   const handleToggleFavorite = (parkId: string) => {
-    // This will toggle the favorite status and return the new status
     toggleFavorite(parkId);
-    // Force a re-render to update the UI by updating parks state
-    // Note: This is a workaround - ideally we'd use a context or state management
-    // For now, we'll trigger a re-render by updating a dummy state
     setRefreshKey(prev => prev + 1);
   };
 
-  // Force re-render when favorites change
-  const [refreshKey, setRefreshKey] = useState(0);
+  // Handle comparison toggle
+  const handleToggleCompare = (parkId: string) => {
+    setRefreshKey(prev => prev + 1);
+  };
 
   // Clear saved scroll position when filters change
   // This ensures we start at top when list content changes
@@ -90,6 +92,7 @@ const ParksListPage = () => {
             <ParksList
               parks={filteredAndSortedParks}
               onToggleFavorite={handleToggleFavorite}
+              onToggleCompare={handleToggleCompare}
               isHighContrast={isHighContrast}
             />
           </div>
