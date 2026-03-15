@@ -107,6 +107,37 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
   const lastRegenerationRef = useRef<number>(0);
   const baseDitheredDataRef = useRef<ImageData | null>(null);
   const ditherDimensionsRef = useRef<{ scaledW: number; scaledH: number; containerW: number; containerH: number }>({ scaledW: 0, scaledH: 0, containerW: 0, containerH: 0 });
+  const frameSkipCounterRef = useRef<number>(0);
+  const workerRef = useRef<Worker | null>(null);
+  const useOffscreenCanvas = useRef<boolean>(false);
+
+  // Detect OffscreenCanvas support and initialize worker
+  useEffect(() => {
+    // Check if OffscreenCanvas is supported
+    if (typeof OffscreenCanvas !== 'undefined' && mode === 'dither') {
+      useOffscreenCanvas.current = true;
+      
+      // Initialize worker
+      try {
+        workerRef.current = new Worker(
+          new URL('../workers/ditherAnimationWorker.ts', import.meta.url),
+          { type: 'module' }
+        );
+      } catch (error) {
+        console.warn('Failed to initialize Web Worker, falling back to main thread rendering:', error);
+        useOffscreenCanvas.current = false;
+      }
+    }
+
+    return () => {
+      // Cleanup worker on unmount
+      if (workerRef.current) {
+        workerRef.current.postMessage({ type: 'stop' });
+        workerRef.current.terminate();
+        workerRef.current = null;
+      }
+    };
+  }, [mode]);
 
   // Generate props hash for cache key
   const generatePropsHash = useCallback((w: number, h: number) => {
@@ -679,12 +710,31 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
       const deltaTime = (currentTime - lastTime) / 1000; // seconds
       lastTime = currentTime;
       
-      // Update animation state (every frame for smooth animations)
-      setAnimationState(prev => ({
-        ditherVariation: prev.ditherVariation,
-        wavePhase: (prev.wavePhase + deltaTime * 0.5) % (Math.PI * 2),
-        time: prev.time + deltaTime,
-      }));
+      // Throttle to 30 FPS: skip every other frame
+      frameSkipCounterRef.current++;
+      if (frameSkipCounterRef.current % 2 !== 0) {
+        animationFrameId = requestAnimationFrame(animate);
+        return;
+      }
+      
+      // Update animation state (throttled to 30 FPS)
+      setAnimationState(prev => {
+        const newState = {
+          ditherVariation: prev.ditherVariation,
+          wavePhase: (prev.wavePhase + deltaTime * 0.5) % (Math.PI * 2),
+          time: prev.time + deltaTime,
+        };
+        
+        // Send time update to worker if using OffscreenCanvas
+        if (mode === 'dither' && useOffscreenCanvas.current && workerRef.current) {
+          workerRef.current.postMessage({
+            type: 'update',
+            data: { time: newState.time }
+          });
+        }
+        
+        return newState;
+      });
       
       // Periodic updates based on movementSpeed
       const timeSinceUpdate = currentTime - lastUpdateTimeRef.current;
@@ -766,6 +816,47 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
     const outputCanvas = outputCanvasRef.current;
     const { scaledW, scaledH, containerW, containerH } = ditherDimensionsRef.current;
     if (scaledW === 0 || scaledH === 0) return;
+
+    // Use Web Worker with OffscreenCanvas if available
+    if (useOffscreenCanvas.current && workerRef.current) {
+      try {
+        const offscreen = outputCanvas.transferControlToOffscreen();
+        
+        // Initialize worker with canvas
+        workerRef.current.postMessage({
+          type: 'init',
+          data: {
+            canvas: offscreen,
+            scaledW,
+            scaledH,
+            containerW,
+            containerH,
+            dotSize: ditherDotSize,
+            spacing: ditherDotSpacing,
+          }
+        }, [offscreen]);
+
+        // Send dithered pixel data
+        workerRef.current.postMessage({
+          type: 'update',
+          data: {
+            ditheredPixels: baseDitheredDataRef.current.data,
+            scaledW,
+            scaledH,
+            containerW,
+            containerH,
+            dotSize: ditherDotSize,
+            spacing: ditherDotSpacing,
+            time: animationState.time,
+          }
+        });
+
+        return;
+      } catch (error) {
+        console.warn('OffscreenCanvas transfer failed, falling back to main thread:', error);
+        useOffscreenCanvas.current = false;
+      }
+    }
 
     // Create temporary canvas for animated rendering
     const finalCanvas = document.createElement('canvas');
