@@ -514,7 +514,7 @@ const ParkDetailPage: React.FC = () => {
                 const newStatus = toggleFavorite(parkData.id);
                 setIsFavorited(newStatus);
               }}
-              className="flex-1 px-4 py-3 font-mono text-xs flex items-center justify-center gap-2"
+              className="w-10 h-10 font-mono text-xs flex items-center justify-center gap-2"
               style={{
                 backgroundColor: isFavorited
                   ? "var(--accent-gold)"
@@ -529,7 +529,7 @@ const ParkDetailPage: React.FC = () => {
                 className="w-4 h-4"
                 fill={isFavorited ? "currentColor" : "none"}
               />
-              {isFavorited ? "Favorit" : "Favorit"}
+              {isFavorited ? "" : ""}
             </button>
             <button
               onClick={() => {
@@ -538,7 +538,7 @@ const ParkDetailPage: React.FC = () => {
                   setIsInCompare(!isInCompare);
                 }
               }}
-              className="flex-1 px-4 py-3 font-mono text-xs flex items-center justify-center gap-2"
+              className="w-10 h-10 font-mono text-xs flex items-center justify-center gap-2"
               style={{
                 backgroundColor: isInCompare
                   ? "var(--primary-green)"
@@ -546,11 +546,10 @@ const ParkDetailPage: React.FC = () => {
                 color: isInCompare
                   ? "var(--soft-cream)"
                   : "var(--primary-green)",
-                borderRadius: "6px",
               }}
             >
               <GitCompare className="w-4 h-4" />
-              {isInCompare ? "Vergleich" : "Vergleichen"}
+              {isInCompare ? "" : ""}
             </button>
           </div>
 

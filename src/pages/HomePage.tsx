@@ -104,7 +104,7 @@ const HomePage: React.FC = () => {
       {/* ASCII Background */}
       <div
         className="absolute inset-0 pointer-events-none"
-        style={{ opacity: effectiveTheme === "dark" ? 0.33 : 0.33 }}
+        style={{ opacity: effectiveTheme === "dark" ? 0.23 : 0.23 }}
       >
         <ImageToAscii
           src="/home.jpg"
@@ -120,7 +120,7 @@ const HomePage: React.FC = () => {
           ditherAlgorithm="ordered"
           ditherMatrixSize={8}
           ditherDotSize={effectiveTheme === "dark" ? 2 : 2}
-          ditherDotSpacing={effectiveTheme === "dark" ? -1 : -1}
+          ditherDotSpacing={effectiveTheme === "dark" ? -0.5 : 1}
           width="100%"
           height="100%"
           objectFit="cover"
