@@ -16,7 +16,7 @@ const HomePage: React.FC = () => {
   const [isLoadingNearby, setIsLoadingNearby] = useState(false);
   const [isLoadingRandom, setIsLoadingRandom] = useState(false);
   const navigate = useNavigate();
-  const { mode } = useTheme();
+  const { mode, isHighContrast } = useTheme();
 
   const { parks } = useParksData();
 
@@ -102,25 +102,27 @@ const HomePage: React.FC = () => {
       </Helmet>
 
       {/* ASCII Background */}
-      <div className="absolute inset-0 pointer-events-none">
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{ opacity: mode === "dark" ? 0.2 : 1 }}
+      >
         <ImageToAscii
           src="/home.jpg"
           mode={mode === "dark" ? "dither" : "dither"}
           fontSize={4}
-          saturation={mode === "dark" ? 1 : 3}
-          contrast={mode === "dark" ? 0.9 : 6}
+          saturation={mode === "dark" ? 5 : 3}
+          contrast={mode === "dark" ? 3 : 2}
           brightness={mode === "dark" ? 2 : 1}
           // hueShift={300}
           colorCount={32}
-          scale={0.4}
-          ditherAlgorithm="atkinson"
+          scale={0.3}
+          ditherAlgorithm="floyd-steinberg"
           ditherMatrixSize={8}
-          ditherDotSize={3}
-          ditherDotSpacing={2.5}
+          ditherDotSize={4}
+          ditherDotSpacing={6}
           width="100%"
           height="100%"
           objectFit="cover"
-          className={mode === "dark" ? "opacity-20" : "opacity-40"}
           alt="Background ASCII art"
         />
       </div>

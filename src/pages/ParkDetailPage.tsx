@@ -17,7 +17,11 @@ import {
 } from "lucide-react";
 import { getAmenityIcon } from "../utils/amenityIcons";
 import { isFavorite, toggleFavorite } from "../utils/favoritesManager";
-import { isInComparison, toggleComparison, getComparisonCount } from "../utils/comparisonManager";
+import {
+  isInComparison,
+  toggleComparison,
+  getComparisonCount,
+} from "../utils/comparisonManager";
 import { sharePark } from "../utils/shareUtils";
 import { addVisitSync } from "../hooks/useVisitHistory";
 import { addRecentlyViewed } from "../utils/recentlyViewedManager";
@@ -71,7 +75,7 @@ const ParkDetailPage: React.FC = () => {
         },
         (error) => {
           // console.log("Error getting user location:", error);
-        }
+        },
       );
     }
   }, []);
@@ -87,14 +91,14 @@ const ParkDetailPage: React.FC = () => {
     try {
       // Try to find park by ID first
       let foundPark = parks.find(
-        (p: { id: string; name: string }) => p.id === idOrSlug
+        (p: { id: string; name: string }) => p.id === idOrSlug,
       );
 
       // If not found by ID, try to find by slug
       if (!foundPark) {
         foundPark = parks.find(
           (p: { id: string; name: string }) =>
-            slugifyParkName(p.name) === idOrSlug
+            slugifyParkName(p.name) === idOrSlug,
         );
       }
 
@@ -125,7 +129,7 @@ const ParkDetailPage: React.FC = () => {
 
         setPark(currentPark);
         setError(null);
-        
+
         addVisitSync(foundPark.id);
         addRecentlyViewed(foundPark.id);
       } else {
@@ -147,16 +151,10 @@ const ParkDetailPage: React.FC = () => {
       .filter((p: Park) => p.id !== park.id) // Exclude current park
       .map((p: Park): ParkWithDistance => {
         const manualData =
-          getManualParkData(p.id) ||
-          getManualParkData(slugifyParkName(p.name));
+          getManualParkData(p.id) || getManualParkData(slugifyParkName(p.name));
         // Merge amenities for nearby parks too
         const nearbyMergedAmenities = manualData?.amenities
-          ? [
-            ...new Set([
-              ...(p.amenities || []),
-              ...manualData.amenities,
-            ]),
-          ]
+          ? [...new Set([...(p.amenities || []), ...manualData.amenities])]
           : p.amenities;
         return {
           ...p,
@@ -166,11 +164,13 @@ const ParkDetailPage: React.FC = () => {
             park.coordinates.lat,
             park.coordinates.lng,
             p.coordinates.lat,
-            p.coordinates.lng
+            p.coordinates.lng,
           ),
         };
       })
-      .sort((a: ParkWithDistance, b: ParkWithDistance) => a.distance - b.distance)
+      .sort(
+        (a: ParkWithDistance, b: ParkWithDistance) => a.distance - b.distance,
+      )
       .slice(0, 5); // Get 5 nearest parks
 
     setNearbyParks(parksWithDistance);
@@ -225,57 +225,59 @@ const ParkDetailPage: React.FC = () => {
         map.addControl(new mapboxgl.NavigationControl(), "top-right");
         map.addControl(new mapboxgl.AttributionControl({ compact: true }));
 
-      // Create marker wrapper and inner element to fix hover positioning issues
-      const wrapper = document.createElement("div");
-      wrapper.className = "marker-wrapper";
-      wrapper.style.position = "absolute";
-      wrapper.style.transform = "translate(-50%, -50%)";
+        // Create marker wrapper and inner element to fix hover positioning issues
+        const wrapper = document.createElement("div");
+        wrapper.className = "marker-wrapper";
+        wrapper.style.position = "absolute";
+        wrapper.style.transform = "translate(-50%, -50%)";
 
-      const el = document.createElement("div");
-      el.className = "custom-marker";
-      el.style.width = "30px";
-      el.style.height = "30px";
-      el.style.borderRadius = "50%";
-      el.style.backgroundColor = "var(--primary-green)";
-      el.style.display = "flex";
-      el.style.justifyContent = "center";
-      el.style.alignItems = "center";
-      el.style.color = "var(--soft-cream)";
-      el.style.boxShadow = "0 2px 6px rgba(0,0,0,0.3)";
-      el.style.cursor = "pointer";
-      el.style.transition = "all 0.2s";
-      el.innerHTML =
-        '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>';
+        const el = document.createElement("div");
+        el.className = "custom-marker";
+        el.style.width = "30px";
+        el.style.height = "30px";
+        el.style.borderRadius = "50%";
+        el.style.backgroundColor = "var(--primary-green)";
+        el.style.display = "flex";
+        el.style.justifyContent = "center";
+        el.style.alignItems = "center";
+        el.style.color = "var(--soft-cream)";
+        el.style.boxShadow = "0 2px 6px rgba(0,0,0,0.3)";
+        el.style.cursor = "pointer";
+        el.style.transition = "all 0.2s";
+        el.innerHTML =
+          '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>';
 
-      // Add inner element to wrapper
-      wrapper.appendChild(el);
+        // Add inner element to wrapper
+        wrapper.appendChild(el);
 
-      // Create popup with Art Nouveau styling
-      const popup = new mapboxgl.Popup({ offset: 25, closeButton: false })
-        .setHTML(`
+        // Create popup with Art Nouveau styling
+        const popup = new mapboxgl.Popup({ offset: 25, closeButton: false })
+          .setHTML(`
           <div style=" padding: 12px; border-radius: 8px; text-align:center">
-            <h3 style="font-family: ' Instrument Serif', serif; font-style:italic; font-weight: 600; margin: 0 0 8px 0; color: var(--primary-green); font-size: 24px;">${park.name
-          }</h3>
-            <p style="font-family: 'Geist Mono', monospace; margin: 0; font-size: 14px; color: var(--deep-charcoal);">${park.address || "Adresse nicht verfügbar"
-          }</p>
+            <h3 style="font-family: ' Instrument Serif', serif; font-style:italic; font-weight: 600; margin: 0 0 8px 0; color: var(--primary-green); font-size: 24px;">${
+              park.name
+            }</h3>
+            <p style="font-family: 'Geist Mono', monospace; margin: 0; font-size: 14px; color: var(--deep-charcoal);">${
+              park.address || "Adresse nicht verfügbar"
+            }</p>
           </div>
         `);
 
-      // Add marker using the wrapper
-      const marker = new mapboxgl.Marker(wrapper)
-        .setLngLat([park.coordinates.lng, park.coordinates.lat])
-        .setPopup(popup)
-        .addTo(map);
+        // Add marker using the wrapper
+        const marker = new mapboxgl.Marker(wrapper)
+          .setLngLat([park.coordinates.lng, park.coordinates.lat])
+          .setPopup(popup)
+          .addTo(map);
 
-      // Add hover effect to inner element only
-      el.addEventListener("mouseenter", () => {
-        el.style.transform = "scale(1.1)";
-        el.style.boxShadow = "0 4px 8px rgba(0,0,0,0.4)";
-      });
-      el.addEventListener("mouseleave", () => {
-        el.style.transform = "scale(1)";
-        el.style.boxShadow = "0 2px 6px rgba(0,0,0,0.3)";
-      });
+        // Add hover effect to inner element only
+        el.addEventListener("mouseenter", () => {
+          el.style.transform = "scale(1.1)";
+          el.style.boxShadow = "0 4px 8px rgba(0,0,0,0.4)";
+        });
+        el.addEventListener("mouseleave", () => {
+          el.style.transform = "scale(1)";
+          el.style.boxShadow = "0 2px 6px rgba(0,0,0,0.3)";
+        });
 
         // Store references
         mapInstance.current = map;
@@ -353,10 +355,12 @@ const ParkDetailPage: React.FC = () => {
                 closeButton: false,
               }).setHTML(`
                 <div style="font-family: ' Instrument Serif', serif; padding: 12px; border-radius: 8px;">
-                  <h3 style="font-weight: 600; margin: 0 0 8px 0; color: var(--primary-green); font-size: 16px;">${park.name
-                }</h3>
-                  <p style="margin: 0; font-size: 14px; color: var(--deep-charcoal);">${park.address || "Adresse nicht verfügbar"
-                }</p>
+                  <h3 style="font-weight: 600; margin: 0 0 8px 0; color: var(--primary-green); font-size: 16px;">${
+                    park.name
+                  }</h3>
+                  <p style="margin: 0; font-size: 14px; color: var(--deep-charcoal);">${
+                    park.address || "Adresse nicht verfügbar"
+                  }</p>
                 </div>
               `);
 
@@ -417,7 +421,7 @@ const ParkDetailPage: React.FC = () => {
   // TypeScript now knows park is non-null after the early return
   const parkData: Park = park;
   const allDistricts = getAllDistrictsForPark(parkData);
-  const districtsDisplay = formatDistricts(allDistricts, 'full').toUpperCase();
+  const districtsDisplay = formatDistricts(allDistricts, "full").toUpperCase();
 
   return (
     <div className="min-h-screen bg-main-bg">
@@ -436,12 +440,7 @@ const ParkDetailPage: React.FC = () => {
       {/* Header with park name */}
       <div className="px-4 py-6 lg:mr-[calc(30%+96px)]">
         <div className="flex items-center justify-between mb-4">
-          <Button
-            to="/index"
-            variant="ghost"
-            size="sm"
-            icon={ChevronLeft}
-          >
+          <Button to="/index" variant="ghost" size="sm" icon={ChevronLeft}>
             Zurück
           </Button>
           <button
@@ -551,7 +550,7 @@ const ParkDetailPage: React.FC = () => {
               }}
             >
               <GitCompare className="w-4 h-4" />
-              {isInCompare ? "Im Vergleich" : "Vergleichen"}
+              {isInCompare ? "Vergleich" : "Vergleichen"}
             </button>
           </div>
 
@@ -620,7 +619,7 @@ const ParkDetailPage: React.FC = () => {
               }}
             >
               <GitCompare className="w-4 h-4" />
-              {isInCompare ? "Im Vergleich" : "Vergleichen"}
+              {isInCompare ? "Vergleich" : "Vergleichen"}
             </button>
           </div>
         </div>
@@ -695,7 +694,7 @@ const ParkDetailPage: React.FC = () => {
                         </span>
                       </Link>
                     );
-                  }
+                  },
                 )}
               </div>
             </div>

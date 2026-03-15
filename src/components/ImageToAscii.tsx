@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, useMemo, useCallback } from 'react';
+import React, { useEffect, useRef, useState, useMemo, useCallback } from 'react';
 
 interface ImageToAsciiProps {
   src: string;
@@ -67,12 +67,41 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
   const containerRef = useRef<HTMLDivElement>(null);
   const loadedImgRef = useRef<HTMLImageElement | null>(null);
   const debounceTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  
+  // Cache for memoization
+  const cacheRef = useRef<{
+    propsHash: string;
+    canvasData: ImageData | null;
+    canvasWidth: number;
+    canvasHeight: number;
+  }>({ propsHash: '', canvasData: null, canvasWidth: 0, canvasHeight: 0 });
 
   const [asciiGrid, setAsciiGrid] = useState<AsciiCell[][]>([]);
   const [containerSize, setContainerSize] = useState({ w: 0, h: 0 });
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string>('');
   const [animationOffset, setAnimationOffset] = useState(0);
+
+  // Generate props hash for cache key
+  const generatePropsHash = useCallback((w: number, h: number) => {
+    return JSON.stringify({
+      src,
+      mode,
+      contrast,
+      hueShift,
+      saturation,
+      brightness,
+      objectFit,
+      colorCount,
+      scale,
+      ditherAlgorithm,
+      ditherMatrixSize,
+      ditherDotSize,
+      ditherDotSpacing,
+      w,
+      h,
+    });
+  }, [src, mode, contrast, hueShift, saturation, brightness, objectFit, colorCount, scale, ditherAlgorithm, ditherMatrixSize, ditherDotSize, ditherDotSpacing]);
 
   const charset = useMemo(() => {
     let chars = DEFAULT_CHARSET;
@@ -83,8 +112,12 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
       const blacklistSet = new Set(lettersetBlacklist);
       chars = DEFAULT_CHARSET.split('').filter(c => !blacklistSet.has(c)).join('');
     }
-    
-    return chars || DEFAULT_CHARSET;
+
+    if (chars.length === 0) {
+      chars = DEFAULT_CHARSET;
+    }
+
+    return chars;
   }, [lettersetAllowlist, lettersetBlacklist]);
 
   const rgbToHsl = (r: number, g: number, b: number): [number, number, number] => {
@@ -239,6 +272,19 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
     const canvas = canvasRef.current;
     const outputCanvas = outputCanvasRef.current;
     if (!canvas || !outputCanvas) return;
+
+    // Check cache before processing
+    const currentHash = generatePropsHash(containerW, containerH);
+    if (cacheRef.current.propsHash === currentHash && cacheRef.current.canvasData) {
+      // Cache hit - restore cached canvas data
+      outputCanvas.width = cacheRef.current.canvasWidth;
+      outputCanvas.height = cacheRef.current.canvasHeight;
+      const outputCtx = outputCanvas.getContext('2d');
+      if (outputCtx) {
+        outputCtx.putImageData(cacheRef.current.canvasData, 0, 0);
+      }
+      return;
+    }
 
     const ctx = canvas.getContext('2d', { willReadFrequently: true });
     if (!ctx) return;
@@ -458,7 +504,18 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
       outputCanvas.height = scaledH;
       outputCtx.putImageData(tempData, 0, 0);
     }
-  }, [scale, colorPalette, colorCount, ditherAlgorithm, ditherMatrixSize, contrast, hueShift, saturation, brightness, objectFit, ditherDotSize, ditherDotSpacing]);
+
+    // Save to cache
+    const finalOutputCtx = outputCanvas.getContext('2d');
+    if (finalOutputCtx) {
+      cacheRef.current = {
+        propsHash: currentHash,
+        canvasData: finalOutputCtx.getImageData(0, 0, outputCanvas.width, outputCanvas.height),
+        canvasWidth: outputCanvas.width,
+        canvasHeight: outputCanvas.height,
+      };
+    }
+  }, [scale, colorPalette, colorCount, ditherAlgorithm, ditherMatrixSize, contrast, hueShift, saturation, brightness, objectFit, ditherDotSize, ditherDotSpacing, generatePropsHash]);
 
   // Re-process whenever image or container size changes
   const reprocess = useCallback((w: number, h: number) => {
@@ -635,4 +692,4 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
   );
 };
 
-export default ImageToAscii;
+export default React.memo(ImageToAscii);
