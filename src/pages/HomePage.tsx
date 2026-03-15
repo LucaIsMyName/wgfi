@@ -103,14 +103,19 @@ const HomePage: React.FC = () => {
       <div className="absolute inset-0 pointer-events-none">
         <ImageToAscii
           src="/home.jpg"
-          mode="dither"
-          fontSize={32}
-          saturation={0.1}
+          mode="ascii"
+          fontSize={5}
+          saturation={1}
           contrast={1}
-          colorCount={4}
+          brightness={2}
+          colorCount={8}
+          scale={0.2}
+          ditherAlgorithm="ordered"
+          ditherMatrixSize={8}
           width="100%"
           height="100%"
           objectFit="cover"
+          className="opacity-50"
           alt="Background ASCII art"
         />
       </div>
@@ -155,18 +160,18 @@ const HomePage: React.FC = () => {
           </div>
 
           {/* Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <Button variant="primary" size="sm" loading={isLoadingNearby}>
+          <div className="flex flex-col sm:flex-row gap-4 pt-0">
+            <Button variant="primary" size="md" loading={isLoadingNearby}>
               <Link to="/index">Index</Link>
             </Button>
-            <Button to="/map" variant="primary" size="sm" loading={isLoadingNearby}>
+            <Button to="/map" variant="primary" size="md" loading={isLoadingNearby}>
               Karte
             </Button>
             <Button
               onClick={handleFindNearby}
               disabled={isLoadingNearby}
               variant="secondary"
-              size="sm"
+              size="md"
               loading={isLoadingNearby}
               className="bg-card-bg text-primary-green italic"
             >
@@ -176,7 +181,7 @@ const HomePage: React.FC = () => {
               onClick={handleRandomPark}
               disabled={isLoadingRandom}
               variant="secondary"
-              size="sm"
+              size="md"
               loading={isLoadingRandom}
               className="bg-card-bg text-primary-green italic"
             >

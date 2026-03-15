@@ -6,6 +6,7 @@ interface ImageToAsciiProps {
   contrast?: number;
   hueShift?: number;
   saturation?: number;
+  brightness?: number;
   objectFit?: 'cover' | 'contain';
   width?: number | string;
   height?: number | string;
@@ -40,6 +41,7 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
   contrast = 1.0,
   hueShift = 0,
   saturation = 1.0,
+  brightness = 1.0,
   objectFit = 'cover',
   width,
   height,
@@ -133,10 +135,17 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
   };
 
   const applyColorTransformations = (r: number, g: number, b: number): [number, number, number] => {
+    // Contrast adjustment
     r = Math.max(0, Math.min(255, ((r / 255 - 0.5) * contrast + 0.5) * 255));
     g = Math.max(0, Math.min(255, ((g / 255 - 0.5) * contrast + 0.5) * 255));
     b = Math.max(0, Math.min(255, ((b / 255 - 0.5) * contrast + 0.5) * 255));
 
+    // Brightness adjustment
+    r = Math.max(0, Math.min(255, r * brightness));
+    g = Math.max(0, Math.min(255, g * brightness));
+    b = Math.max(0, Math.min(255, b * brightness));
+
+    // Hue and saturation adjustment
     let [h, s, l] = rgbToHsl(r, g, b);
     h = (h + hueShift) % 360;
     if (h < 0) h += 360;
@@ -218,7 +227,7 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
       grid.push(rowCells);
     }
     return grid;
-  }, [fontSize, charset, contrast, hueShift, saturation]);
+  }, [fontSize, charset, contrast, hueShift, saturation, brightness]);
 
   const processDither = useCallback((
     img: HTMLImageElement,
@@ -232,8 +241,39 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
     const ctx = canvas.getContext('2d', { willReadFrequently: true });
     if (!ctx) return;
 
-    const scaledW = Math.floor(containerW * scale);
-    const scaledH = Math.floor(containerH * scale);
+    // Calculate dimensions respecting objectFit and aspect ratio
+    let canvasW = containerW;
+    let canvasH = containerH;
+    let srcX = 0, srcY = 0, srcW = img.width, srcH = img.height;
+
+    if (objectFit === 'contain') {
+      const imgRatio = img.width / img.height;
+      const containerRatio = containerW / containerH;
+      if (imgRatio > containerRatio) {
+        canvasW = containerW;
+        canvasH = containerW / imgRatio;
+      } else {
+        canvasH = containerH;
+        canvasW = containerH * imgRatio;
+      }
+    } else if (objectFit === 'cover') {
+      const imgRatio = img.width / img.height;
+      const containerRatio = containerW / containerH;
+      if (imgRatio > containerRatio) {
+        // Image is wider - crop sides
+        srcH = img.height;
+        srcW = img.height * containerRatio;
+        srcX = (img.width - srcW) / 2;
+      } else {
+        // Image is taller - crop top/bottom
+        srcW = img.width;
+        srcH = img.width / containerRatio;
+        srcY = (img.height - srcH) / 2;
+      }
+    }
+
+    const scaledW = Math.floor(canvasW * scale);
+    const scaledH = Math.floor(canvasH * scale);
     canvas.width = scaledW;
     canvas.height = scaledH;
     outputCanvas.width = scaledW;
@@ -242,7 +282,7 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
     const outputCtx = outputCanvas.getContext('2d', { willReadFrequently: true });
     if (!outputCtx) return;
 
-    ctx.drawImage(img, 0, 0, scaledW, scaledH);
+    ctx.drawImage(img, srcX, srcY, srcW, srcH, 0, 0, scaledW, scaledH);
     outputCtx.drawImage(canvas, 0, 0, scaledW, scaledH);
 
     const imageData = outputCtx.getImageData(0, 0, scaledW, scaledH);
@@ -340,7 +380,7 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
     }
 
     outputCtx.putImageData(imageData, 0, 0);
-  }, [scale, colorPalette, colorCount, ditherAlgorithm, ditherMatrixSize, contrast, hueShift, saturation]);
+  }, [scale, colorPalette, colorCount, ditherAlgorithm, ditherMatrixSize, contrast, hueShift, saturation, brightness, objectFit]);
 
   // Re-process whenever image or container size changes
   const reprocess = useCallback((w: number, h: number) => {
@@ -416,7 +456,7 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
   useEffect(() => {
     if (!loadedImgRef.current || containerSize.w <= 0) return;
     reprocess(containerSize.w, containerSize.h);
-  }, [mode, contrast, hueShift, saturation, fontSize, charset, ditherAlgorithm, ditherMatrixSize, colorPalette, scale, ditherDotSize, ditherDotSpacing]);
+  }, [mode, contrast, hueShift, saturation, brightness, fontSize, charset, ditherAlgorithm, ditherMatrixSize, colorPalette, scale, ditherDotSize, ditherDotSpacing]);
 
   // Movement animation: continuous slow drift when movement > 0
   useEffect(() => {
