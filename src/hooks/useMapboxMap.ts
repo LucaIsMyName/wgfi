@@ -24,11 +24,17 @@ export function useMapboxMap(effectiveTheme: 'light' | 'dark'): UseMapboxMapRetu
   // Initialize map
   useEffect(() => {
     if (!mapContainerRef.current) return;
+    
+    // Prevent duplicate map creation (especially in StrictMode)
+    if (mapInstance.current) return;
 
     let map: mapboxgl.Map | null = null;
 
     const initMap = async () => {
       if (!mapContainerRef.current) return;
+      
+      // Double-check to prevent race conditions
+      if (mapInstance.current) return;
 
       // Dynamically load mapbox
       const mapboxgl = await loadMapbox();
@@ -89,7 +95,8 @@ export function useMapboxMap(effectiveTheme: 'light' | 'dark'): UseMapboxMapRetu
         map.remove();
       }
     };
-  }, [effectiveTheme]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []); // Only initialize once on mount
   
   // Update map style when theme changes
   useEffect(() => {
