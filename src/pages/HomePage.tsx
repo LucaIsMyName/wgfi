@@ -100,14 +100,14 @@ const HomePage: React.FC = () => {
       </Helmet>
       
       {/* ASCII Background */}
-      <div className="absolute inset-0 opacity-20 pointer-events-none">
+      <div className="absolute inset-0 pointer-events-none">
         <ImageToAscii
           src="/home.jpg"
           mode="dither"
           fontSize={32}
-          saturation={1.2}
-          contrast={1.5}
-          colorCount={2}
+          saturation={0.1}
+          contrast={1}
+          colorCount={4}
           width="100%"
           height="100%"
           objectFit="cover"

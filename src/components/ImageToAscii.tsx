@@ -20,6 +20,9 @@ interface ImageToAsciiProps {
   colorPalette?: string[];
   colorCount?: number;
   scale?: number;
+  movement?: number;
+  ditherDotSize?: number;
+  ditherDotSpacing?: number;
 }
 
 interface AsciiCell {
@@ -51,6 +54,9 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
   colorPalette,
   colorCount = 2,
   scale = 1.0,
+  movement = 0,
+  ditherDotSize = 1,
+  ditherDotSpacing = 0,
 }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const outputCanvasRef = useRef<HTMLCanvasElement>(null);
@@ -62,6 +68,7 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
   const [containerSize, setContainerSize] = useState({ w: 0, h: 0 });
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string>('');
+  const [animationOffset, setAnimationOffset] = useState(0);
 
   const charset = useMemo(() => {
     let chars = DEFAULT_CHARSET;
@@ -409,7 +416,27 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
   useEffect(() => {
     if (!loadedImgRef.current || containerSize.w <= 0) return;
     reprocess(containerSize.w, containerSize.h);
-  }, [mode, contrast, hueShift, saturation, fontSize, charset, ditherAlgorithm, ditherMatrixSize, colorPalette, scale]);
+  }, [mode, contrast, hueShift, saturation, fontSize, charset, ditherAlgorithm, ditherMatrixSize, colorPalette, scale, ditherDotSize, ditherDotSpacing]);
+
+  // Movement animation: continuous slow drift when movement > 0
+  useEffect(() => {
+    if (movement === 0) return;
+    
+    let animationFrameId: number;
+    let lastTime = Date.now();
+    
+    const animate = () => {
+      const now = Date.now();
+      const delta = (now - lastTime) / 1000;
+      lastTime = now;
+      
+      setAnimationOffset(prev => (prev + movement * delta) % 360);
+      animationFrameId = requestAnimationFrame(animate);
+    };
+    
+    animationFrameId = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(animationFrameId);
+  }, [movement]);
 
   // Derived display sizing for exact fill
   const charAspect = 0.55;
@@ -436,7 +463,7 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
       )}
 
       {isLoading && !error && (
-        <div className="absolute inset-0 flex items-center justify-center">
+        <div className="sr-only absolute inset-0 flex items-center justify-center">
           <p className="text-gray-400 text-xs">Loading...</p>
         </div>
       )}
@@ -454,6 +481,8 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
             width: '100%',
             height: '100%',
             userSelect: 'none',
+            transform: movement !== 0 ? `translate(${Math.cos(animationOffset * Math.PI / 180) * 2}px, ${Math.sin(animationOffset * Math.PI / 180) * 2}px)` : undefined,
+            transition: movement === 0 ? 'transform 0.3s ease-out' : undefined,
           }}
         >
           {asciiGrid.map((row, rowIdx) => (
@@ -479,6 +508,8 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
             width: '100%',
             height: '100%',
             imageRendering: 'pixelated',
+            transform: movement !== 0 ? `translate(${Math.cos(animationOffset * Math.PI / 180) * 2}px, ${Math.sin(animationOffset * Math.PI / 180) * 2}px)` : undefined,
+            transition: movement === 0 ? 'transform 0.3s ease-out' : undefined,
           }}
         />
       )}
