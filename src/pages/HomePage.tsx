@@ -105,21 +105,22 @@ const HomePage: React.FC = () => {
       <div className="absolute inset-0 pointer-events-none">
         <ImageToAscii
           src="/home.jpg"
-          mode="dither"
-          fontSize={5}
-          saturation={mode === "dark" ? 1 : 1}
-          contrast={mode === "dark" ? 4 : 3}
-          brightness={mode === "dark" ? 0.15 : 1}
-          colorCount={16}
+          mode={mode === "dark" ? "dither" : "dither"}
+          fontSize={4}
+          saturation={mode === "dark" ? 1 : 3}
+          contrast={mode === "dark" ? 0.9 : 6}
+          brightness={mode === "dark" ? 2 : 1}
+          // hueShift={300}
+          colorCount={32}
           scale={0.4}
           ditherAlgorithm="atkinson"
-          ditherMatrixSize={2}
-          ditherDotSize={6}
-          ditherDotSpacing={7}
+          ditherMatrixSize={8}
+          ditherDotSize={3}
+          ditherDotSpacing={2.5}
           width="100%"
           height="100%"
           objectFit="cover"
-          className="opacity-20"
+          className={mode === "dark" ? "opacity-20" : "opacity-40"}
           alt="Background ASCII art"
         />
       </div>
