@@ -7,6 +7,7 @@ import { findNearestPark } from "../utils/geoUtils";
 import LocationModal from "../components/LocationModal";
 import { slugifyParkName } from "../data/manualParksData";
 import { Button } from "../components/ui/Button";
+import ImageToAscii from "../components/ImageToAscii";
 
 const HomePage: React.FC = () => {
   const [showLocationModal, setShowLocationModal] = useState(false);
@@ -89,15 +90,32 @@ const HomePage: React.FC = () => {
   };
 
   return (
-    <div className="h-screen max-h-screen overflow-hidden flex items-center bg-main-bg">
+    <div className="h-screen max-h-screen overflow-hidden flex items-center bg-main-bg relative">
       <Helmet>
-        <title>Wiener Grünflächen Index | Startseite</title>
+        <title>Wiener Grünflächen Index | Home</title>
         <meta
           name="description"
-          content="Eine kuratierte Sammlung der schönsten Parks und Grünflächen in Wien mit allen wichtigen Informationen für Ihren Besuch."
+          content="Eine Liste und Karte aller Parks und Grünflächen in Wien mit allen wichtigen Informationen für deinen Parkbesuch."
         />
       </Helmet>
-      <div className="container mx-auto px-4">
+      
+      {/* ASCII Background */}
+      <div className="absolute inset-0 opacity-20 pointer-events-none">
+        <ImageToAscii
+          src="/home.jpg"
+          mode="dither"
+          fontSize={32}
+          saturation={1.2}
+          contrast={1.5}
+          colorCount={2}
+          width="100%"
+          height="100%"
+          objectFit="cover"
+          alt="Background ASCII art"
+        />
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col space-y-8">
           {/* Headline */}
           <div>

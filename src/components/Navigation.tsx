@@ -165,10 +165,11 @@ const Navigation = () => {
 
           <Button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            variant="secondary"
+            variant="ghost"
             size="sm"
+            className="w-9 h-9"
             icon={isMobileMenuOpen ? X : Menu}
-            style={{ opacity: 0.9 }}
+            style={{ opacity: 1 }}
           />
         </div>
       </header>
