@@ -21,7 +21,8 @@ interface ImageToAsciiProps {
   colorPalette?: string[];
   colorCount?: number;
   scale?: number;
-  movement?: number;
+  movement?: number; // @deprecated - use movementSpeed instead
+  movementSpeed?: 'slow' | 'medium' | 'fast' | 'ultra-fast' | 'none';
   ditherDotSize?: number;
   ditherDotSpacing?: number;
   ditherDotPolygon?: string;
@@ -58,10 +59,20 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
   colorCount = 2,
   scale = 1.0,
   movement = 0,
+  movementSpeed = 'none',
   ditherDotSize = 1,
   ditherDotSpacing = 0,
   ditherDotPolygon,
 }) => {
+  // Handle backwards compatibility: movement prop -> movementSpeed
+  const effectiveMovementSpeed = useMemo(() => {
+    if (movementSpeed !== 'none') return movementSpeed;
+    if (movement > 0) {
+      console.warn('ImageToAscii: "movement" prop is deprecated. Use "movementSpeed" instead.');
+      return 'medium';
+    }
+    return 'none';
+  }, [movement, movementSpeed]);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const outputCanvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -81,6 +92,21 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string>('');
   const [animationOffset, setAnimationOffset] = useState(0);
+  
+  // Animation state
+  const [animationState, setAnimationState] = useState({
+    ditherVariation: 0,
+    wavePhase: 0,
+    time: 0,
+  });
+  const [asciiFlickerMap, setAsciiFlickerMap] = useState<Map<string, { char: string; hue: number; brightness: number }>>(new Map());
+  
+  // Animation refs
+  const animationFrameRef = useRef<number | null>(null);
+  const lastUpdateTimeRef = useRef<number>(0);
+  const lastRegenerationRef = useRef<number>(0);
+  const baseDitheredDataRef = useRef<ImageData | null>(null);
+  const ditherDimensionsRef = useRef<{ scaledW: number; scaledH: number; containerW: number; containerH: number }>({ scaledW: 0, scaledH: 0, containerW: 0, containerH: 0 });
 
   // Generate props hash for cache key
   const generatePropsHash = useCallback((w: number, h: number) => {
@@ -429,6 +455,10 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
 
     outputCtx.putImageData(imageData, 0, 0);
 
+    // Store base dithered data for animation
+    baseDitheredDataRef.current = outputCtx.getImageData(0, 0, scaledW, scaledH);
+    ditherDimensionsRef.current = { scaledW, scaledH, containerW, containerH };
+
     // Post-process: render dots with spacing and jitter
     if (ditherDotSize !== 1 || ditherDotSpacing !== 0) {
       // Create full-resolution output canvas
@@ -478,21 +508,41 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
           const offsetX = (scaleX - w) / 2;
           const offsetY = (scaleY - h) / 2;
 
-          // Pseudo-random jitter
-          const jitterX = ((col * 7 + row * 13) % 100) / 100 - 0.5;
-          const jitterY = ((col * 11 + row * 17) % 100) / 100 - 0.5;
+          // Pseudo-random jitter (animated if movementSpeed is active)
+          const baseJitterX = ((col * 7 + row * 13) % 100) / 100 - 0.5;
+          const baseJitterY = ((col * 11 + row * 17) % 100) / 100 - 0.5;
           const jitterAmount = spacing * 0.3;
+          
+          // Animate jitter with time-based sine wave
+          const timeOffset = animationState.time || 0;
+          const animatedJitterX = baseJitterX + (effectiveMovementSpeed !== 'none' ? Math.sin(timeOffset + col * 0.5) * 0.3 : 0);
+          const animatedJitterY = baseJitterY + (effectiveMovementSpeed !== 'none' ? Math.cos(timeOffset + row * 0.5) * 0.3 : 0);
 
-          const finalX = x + offsetX + jitterX * jitterAmount;
-          const finalY = y + offsetY + jitterY * jitterAmount;
+          const finalX = x + offsetX + animatedJitterX * jitterAmount;
+          const finalY = y + offsetY + animatedJitterY * jitterAmount;
 
-          finalCtx.fillStyle = `rgb(${r},${g},${b})`;
+          // Breathing effect on dot size
+          const breathingMultiplier = effectiveMovementSpeed !== 'none' 
+            ? 1 + Math.sin(timeOffset * 2 + (col + row) * 0.1) * 0.05
+            : 1;
+          const animatedW = w * breathingMultiplier;
+          const animatedH = h * breathingMultiplier;
+
+          // Subtle color shimmer
+          const shimmer = effectiveMovementSpeed !== 'none'
+            ? 1 + Math.sin(timeOffset * 3 + col * 0.2 + row * 0.2) * 0.03
+            : 1;
+          const shimmerR = Math.min(255, Math.max(0, r * shimmer));
+          const shimmerG = Math.min(255, Math.max(0, g * shimmer));
+          const shimmerB = Math.min(255, Math.max(0, b * shimmer));
+
+          finalCtx.fillStyle = `rgb(${shimmerR},${shimmerG},${shimmerB})`;
           finalCtx.beginPath();
           finalCtx.ellipse(
-            finalX + w / 2,
-            finalY + h / 2,
-            w / 2,
-            h / 2,
+            finalX + animatedW / 2,
+            finalY + animatedH / 2,
+            animatedW / 2,
+            animatedH / 2,
             0,
             0,
             Math.PI * 2
@@ -606,25 +656,210 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
     reprocess(containerSize.w, containerSize.h);
   }, [mode, contrast, hueShift, saturation, brightness, fontSize, charset, ditherAlgorithm, ditherMatrixSize, colorPalette, scale, ditherDotSize, ditherDotSpacing]);
 
-  // Movement animation: continuous slow drift when movement > 0
+  // Dynamic animation system
   useEffect(() => {
-    if (movement === 0) return;
+    if (effectiveMovementSpeed === 'none') return;
+    
+    // Map speed to update interval (ms)
+    const intervalMap = {
+      'slow': 2000,
+      'medium': 1000,
+      'fast': 500,
+      'ultra-fast': 200,
+      'none': 0,
+    };
+    const updateInterval = intervalMap[effectiveMovementSpeed];
     
     let animationFrameId: number;
-    let lastTime = Date.now();
+    let lastTime = performance.now();
+    lastUpdateTimeRef.current = lastTime;
+    lastRegenerationRef.current = lastTime;
     
-    const animate = () => {
-      const now = Date.now();
-      const delta = (now - lastTime) / 1000;
-      lastTime = now;
+    const animate = (currentTime: number) => {
+      const deltaTime = (currentTime - lastTime) / 1000; // seconds
+      lastTime = currentTime;
       
-      setAnimationOffset(prev => (prev + movement * delta) % 360);
+      // Update animation state (every frame for smooth animations)
+      setAnimationState(prev => ({
+        ditherVariation: prev.ditherVariation,
+        wavePhase: (prev.wavePhase + deltaTime * 0.5) % (Math.PI * 2),
+        time: prev.time + deltaTime,
+      }));
+      
+      // Periodic updates based on movementSpeed
+      const timeSinceUpdate = currentTime - lastUpdateTimeRef.current;
+      if (timeSinceUpdate >= updateInterval) {
+        lastUpdateTimeRef.current = currentTime;
+        
+        if (mode === 'ascii') {
+          // ASCII: Random letter flicker
+          updateAsciiFlicker();
+        }
+      }
+      
+      // Dither regeneration (less frequent, more CPU intensive)
+      if (mode === 'dither') {
+        const timeSinceRegen = currentTime - lastRegenerationRef.current;
+        if (timeSinceRegen >= updateInterval * 2) {
+          lastRegenerationRef.current = currentTime;
+          setAnimationState(prev => ({
+            ...prev,
+            ditherVariation: (prev.ditherVariation + 1) % 8,
+          }));
+        }
+      }
+      
       animationFrameId = requestAnimationFrame(animate);
     };
     
     animationFrameId = requestAnimationFrame(animate);
-    return () => cancelAnimationFrame(animationFrameId);
-  }, [movement]);
+    return () => {
+      if (animationFrameId) cancelAnimationFrame(animationFrameId);
+    };
+  }, [effectiveMovementSpeed, mode]);
+  
+  // ASCII flicker update function
+  const updateAsciiFlicker = useCallback(() => {
+    if (!asciiGrid.length) return;
+    
+    const newFlickerMap = new Map(asciiFlickerMap);
+    const totalCells = asciiGrid.length * (asciiGrid[0]?.length || 0);
+    const flickerCount = Math.floor(totalCells * 0.08); // 8% of cells
+    
+    // Clear old flickers gradually
+    const keysToRemove: string[] = [];
+    newFlickerMap.forEach((_, key) => {
+      if (Math.random() > 0.7) keysToRemove.push(key);
+    });
+    keysToRemove.forEach(key => newFlickerMap.delete(key));
+    
+    // Add new flickers
+    for (let i = 0; i < flickerCount; i++) {
+      const row = Math.floor(Math.random() * asciiGrid.length);
+      const col = Math.floor(Math.random() * (asciiGrid[0]?.length || 0));
+      const key = `${row}-${col}`;
+      
+      const cell = asciiGrid[row]?.[col];
+      if (!cell) continue;
+      
+      // Get nearby character in charset
+      const currentIndex = charset.indexOf(cell.char);
+      const offset = Math.floor(Math.random() * 5) - 2; // -2 to +2
+      const newIndex = Math.max(0, Math.min(charset.length - 1, currentIndex + offset));
+      
+      newFlickerMap.set(key, {
+        char: charset[newIndex],
+        hue: Math.random() * 20 - 10, // ±10 degrees
+        brightness: Math.random() * 0.3 - 0.15, // ±15%
+      });
+    }
+    
+    setAsciiFlickerMap(newFlickerMap);
+  }, [asciiGrid, charset, asciiFlickerMap]);
+
+  // Re-render dither dots with animation (without re-dithering)
+  useEffect(() => {
+    if (mode !== 'dither' || effectiveMovementSpeed === 'none') return;
+    if (!baseDitheredDataRef.current || !outputCanvasRef.current) return;
+    if (ditherDotSize === 1 && ditherDotSpacing === 0) return;
+
+    const outputCanvas = outputCanvasRef.current;
+    const { scaledW, scaledH, containerW, containerH } = ditherDimensionsRef.current;
+    if (scaledW === 0 || scaledH === 0) return;
+
+    // Create temporary canvas for animated rendering
+    const finalCanvas = document.createElement('canvas');
+    finalCanvas.width = containerW;
+    finalCanvas.height = containerH;
+    const finalCtx = finalCanvas.getContext('2d');
+    if (!finalCtx) return;
+
+    finalCtx.clearRect(0, 0, containerW, containerH);
+
+    const dotSize = ditherDotSize;
+    const spacing = ditherDotSpacing;
+    const cellSize = dotSize + spacing;
+    const scaleX = containerW / scaledW;
+    const scaleY = containerH / scaledH;
+
+    const ditheredPixels = baseDitheredDataRef.current.data;
+
+    for (let row = 0; row < scaledH; row++) {
+      for (let col = 0; col < scaledW; col++) {
+        const idx = (row * scaledW + col) * 4;
+        const r = ditheredPixels[idx];
+        const g = ditheredPixels[idx + 1];
+        const b = ditheredPixels[idx + 2];
+
+        const brightness = (r + g + b) / (3 * 255);
+        const darkness = 1 - brightness;
+        const dotSizeMultiplier = darkness * darkness;
+
+        const x = col * scaleX;
+        const y = row * scaleY;
+        const maxDotSize = scaleX * (dotSize / cellSize);
+        const w = maxDotSize * dotSizeMultiplier;
+        const h = maxDotSize * dotSizeMultiplier;
+
+        if (w < 0.5 || h < 0.5) continue;
+
+        const offsetX = (scaleX - w) / 2;
+        const offsetY = (scaleY - h) / 2;
+
+        const baseJitterX = ((col * 7 + row * 13) % 100) / 100 - 0.5;
+        const baseJitterY = ((col * 11 + row * 17) % 100) / 100 - 0.5;
+        const jitterAmount = spacing * 0.3;
+
+        const timeOffset = animationState.time;
+        // Random jitter using pseudo-random functions based on position and time
+        const randomSeed1 = Math.sin(col * 12.9898 + row * 78.233 + timeOffset * 0.5) * 43758.5453;
+        const randomSeed2 = Math.sin(col * 93.989 + row * 12.456 + timeOffset * 0.7) * 23421.631;
+        const randomJitterX = (randomSeed1 - Math.floor(randomSeed1)) - 0.5;
+        const randomJitterY = (randomSeed2 - Math.floor(randomSeed2)) - 0.5;
+        
+        const animatedJitterX = baseJitterX + randomJitterX * 0.4;
+        const animatedJitterY = baseJitterY + randomJitterY * 0.4;
+
+        const finalX = x + offsetX + animatedJitterX * jitterAmount;
+        const finalY = y + offsetY + animatedJitterY * jitterAmount;
+
+        // Random size variation based on speed
+        const randomSeed3 = Math.sin(col * 45.123 + row * 67.890 + timeOffset * 1.2) * 12345.678;
+        const randomSizeVariation = (randomSeed3 - Math.floor(randomSeed3)) * 0.15; // ±7.5%
+        const animatedW = w * (1 + randomSizeVariation);
+        const animatedH = h * (1 + randomSizeVariation);
+
+        // Random color variation
+        const randomSeed4 = Math.sin(col * 23.456 + row * 89.012 + timeOffset * 0.9) * 56789.123;
+        const randomColorShift = (randomSeed4 - Math.floor(randomSeed4)) * 0.1 - 0.05; // ±5%
+        const shimmerR = Math.min(255, Math.max(0, r * (1 + randomColorShift)));
+        const shimmerG = Math.min(255, Math.max(0, g * (1 + randomColorShift)));
+        const shimmerB = Math.min(255, Math.max(0, b * (1 + randomColorShift)));
+
+        finalCtx.fillStyle = `rgb(${shimmerR},${shimmerG},${shimmerB})`;
+        finalCtx.beginPath();
+        finalCtx.ellipse(
+          finalX + animatedW / 2,
+          finalY + animatedH / 2,
+          animatedW / 2,
+          animatedH / 2,
+          0,
+          0,
+          Math.PI * 2
+        );
+        finalCtx.fill();
+      }
+    }
+
+    // Copy to output canvas
+    outputCanvas.width = containerW;
+    outputCanvas.height = containerH;
+    const outputCtx = outputCanvas.getContext('2d');
+    if (outputCtx) {
+      outputCtx.clearRect(0, 0, containerW, containerH);
+      outputCtx.drawImage(finalCanvas, 0, 0);
+    }
+  }, [animationState.time, mode, effectiveMovementSpeed, ditherDotSize, ditherDotSpacing]);
 
   // Derived display sizing for exact fill
   const charAspect = 0.55;
@@ -659,7 +894,7 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
       {!isLoading && !error && mode === 'ascii' && asciiGrid.length > 0 && (
         <div
           style={{
-            fontFamily: 'monospace',
+            fontFamily: '"Geist Mono", monospace',
             fontSize: `${charH}px`,
             lineHeight: `${charH}px`,
             letterSpacing: `${charW - charH * charAspect}px`,
@@ -675,14 +910,41 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
         >
           {asciiGrid.map((row, rowIdx) => (
             <div key={rowIdx} style={{ whiteSpace: 'nowrap', height: `${charH}px` }}>
-              {row.map((cell, colIdx) => (
-                <span
-                  key={colIdx}
-                  style={{ color: `rgb(${cell.r},${cell.g},${cell.b})` }}
-                >
-                  {cell.char}
-                </span>
-              ))}
+              {row.map((cell, colIdx) => {
+                const key = `${rowIdx}-${colIdx}`;
+                const flicker = asciiFlickerMap.get(key);
+                
+                // Determine character and color
+                let displayChar = cell.char;
+                let r = cell.r;
+                let g = cell.g;
+                let b = cell.b;
+                
+                if (flicker) {
+                  // Apply flicker effect
+                  displayChar = flicker.char;
+                  const brightness = 1 + flicker.brightness;
+                  r = Math.min(255, Math.max(0, cell.r * brightness));
+                  g = Math.min(255, Math.max(0, cell.g * brightness));
+                  b = Math.min(255, Math.max(0, cell.b * brightness));
+                } else if (effectiveMovementSpeed !== 'none') {
+                  // Random subtle brightness variation
+                  const randomSeed = Math.sin(colIdx * 12.9898 + rowIdx * 78.233 + animationState.time * 0.3) * 43758.5453;
+                  const randomBrightness = (randomSeed - Math.floor(randomSeed)) * 0.15 - 0.075; // ±7.5%
+                  r = Math.min(255, Math.max(0, cell.r * (1 + randomBrightness)));
+                  g = Math.min(255, Math.max(0, cell.g * (1 + randomBrightness)));
+                  b = Math.min(255, Math.max(0, cell.b * (1 + randomBrightness)));
+                }
+                
+                return (
+                  <span
+                    key={colIdx}
+                    style={{ color: `rgb(${r},${g},${b})` }}
+                  >
+                    {displayChar}
+                  </span>
+                );
+              })}
             </div>
           ))}
         </div>

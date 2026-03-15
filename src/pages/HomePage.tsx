@@ -109,12 +109,13 @@ const HomePage: React.FC = () => {
         <ImageToAscii
           src="/home.jpg"
           mode={effectiveTheme === "dark" ? "dither" : "dither"}
-          fontSize={4}
-          saturation={effectiveTheme === "dark" ? 1 : 3}
+          // fontSize={8}
+          saturation={effectiveTheme === "dark" ? 1 : 1}
           contrast={effectiveTheme === "dark" ? 3 : 1}
           brightness={effectiveTheme === "dark" ? 1 : 1}
           // hueShift={300}
-          colorCount={16}
+          movementSpeed={"slow"}
+          colorCount={12}
           scale={effectiveTheme === "dark" ? 0.2 : 0.33}
           ditherAlgorithm="atkinson"
           ditherMatrixSize={8}
