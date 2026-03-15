@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  @view-transition {
+    navigation: auto;
+  }
+  
   :root {
     /* Art Nouveau inspired color palette - Light Mode */
     --primary-green: #2d4a3e;

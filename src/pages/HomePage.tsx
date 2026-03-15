@@ -116,9 +116,9 @@ const HomePage: React.FC = () => {
           // hueShift={300}
           colorCount={16}
           scale={effectiveTheme === "dark" ? 0.2 : 0.33}
-          ditherAlgorithm="ordered"
+          ditherAlgorithm="atkinson"
           ditherMatrixSize={8}
-          ditherDotSize={6}
+          ditherDotSize={effectiveTheme === "dark" ? 4 : 3}
           ditherDotSpacing={effectiveTheme === "dark" ? -2 : 0}
           width="100%"
           height="100%"
