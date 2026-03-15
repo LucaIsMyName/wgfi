@@ -104,23 +104,23 @@ const HomePage: React.FC = () => {
       {/* ASCII Background */}
       <div
         className="absolute inset-0 pointer-events-none"
-        style={{ opacity: effectiveTheme === "dark" ? 0.2 : 0.1 }}
+        style={{ opacity: effectiveTheme === "dark" ? 0.33 : 0.33 }}
       >
         <ImageToAscii
           src="/home.jpg"
           mode={effectiveTheme === "dark" ? "dither" : "dither"}
           fontSize={4}
-          saturation={effectiveTheme === "dark" ? 1 : 1}
+          saturation={effectiveTheme === "dark" ? 1 : 3}
           contrast={effectiveTheme === "dark" ? 3 : 3}
           brightness={effectiveTheme === "dark" ? 0.9 : 0.5}
           // hueShift={300}
           movementSpeed={"slow"}
-          colorCount={32}
-          scale={effectiveTheme === "dark" ? 0.13 : 0.13}
-          ditherAlgorithm="atkinson"
-          ditherMatrixSize={4}
-          ditherDotSize={effectiveTheme === "dark" ? 4 : 4}
-          ditherDotSpacing={effectiveTheme === "dark" ? -2 : 2}
+          colorCount={64}
+          scale={effectiveTheme === "dark" ? 0.25 : 0.25}
+          ditherAlgorithm="ordered"
+          ditherMatrixSize={8}
+          ditherDotSize={effectiveTheme === "dark" ? 2 : 2}
+          ditherDotSpacing={effectiveTheme === "dark" ? -1 : -1}
           width="100%"
           height="100%"
           objectFit="cover"
