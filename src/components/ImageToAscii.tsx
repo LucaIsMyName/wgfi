@@ -24,6 +24,7 @@ interface ImageToAsciiProps {
   movement?: number;
   ditherDotSize?: number;
   ditherDotSpacing?: number;
+  ditherDotPolygon?: string;
 }
 
 interface AsciiCell {
@@ -59,6 +60,7 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
   movement = 0,
   ditherDotSize = 1,
   ditherDotSpacing = 0,
+  ditherDotPolygon,
 }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const outputCanvasRef = useRef<HTMLCanvasElement>(null);
@@ -541,17 +543,97 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
       )}
 
       {mode === 'dither' && (
-        <canvas
-          ref={outputCanvasRef}
+        <div
           style={{
             display: isLoading || error ? 'none' : 'block',
             width: '100%',
             height: '100%',
-            imageRendering: 'pixelated',
+            position: 'relative',
             transform: movement !== 0 ? `translate(${Math.cos(animationOffset * Math.PI / 180) * 2}px, ${Math.sin(animationOffset * Math.PI / 180) * 2}px)` : undefined,
             transition: movement === 0 ? 'transform 0.3s ease-out' : undefined,
           }}
-        />
+        >
+          <canvas ref={outputCanvasRef} style={{ display: 'none' }} />
+          <svg
+            width="100%"
+            height="100%"
+            viewBox={`0 0 ${containerSize.w} ${containerSize.h}`}
+            preserveAspectRatio="none"
+            style={{ display: 'block' }}
+          >
+            {/* Render dither dots as SVG shapes */}
+            {(() => {
+              const canvas = outputCanvasRef.current;
+              if (!canvas || canvas.width === 0) return null;
+
+              const dotSize = ditherDotSize;
+              const spacing = ditherDotSpacing;
+              const cellSize = dotSize + spacing;
+              const dots: React.ReactElement[] = [];
+
+              // Get pixel data from processed canvas
+              const ctx = canvas.getContext('2d');
+              if (!ctx) return null;
+              const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+              const pixels = imageData.data;
+
+              const cols = canvas.width;
+              const rows = canvas.height;
+              const scaleX = containerSize.w / cols;
+              const scaleY = containerSize.h / rows;
+
+              for (let row = 0; row < rows; row++) {
+                for (let col = 0; col < cols; col++) {
+                  const idx = (row * cols + col) * 4;
+                  const r = pixels[idx];
+                  const g = pixels[idx + 1];
+                  const b = pixels[idx + 2];
+
+                  const x = col * scaleX;
+                  const y = row * scaleY;
+                  const w = scaleX * (dotSize / cellSize);
+                  const h = scaleY * (dotSize / cellSize);
+                  const offsetX = (scaleX - w) / 2;
+                  const offsetY = (scaleY - h) / 2;
+
+                  // Add pseudo-random jitter based on position
+                  const jitterX = ((col * 7 + row * 13) % 100) / 100 - 0.5;
+                  const jitterY = ((col * 11 + row * 17) % 100) / 100 - 0.5;
+                  const jitterAmount = spacing * 0.3;
+
+                  const finalX = x + offsetX + jitterX * jitterAmount;
+                  const finalY = y + offsetY + jitterY * jitterAmount;
+
+                  if (ditherDotPolygon) {
+                    // Custom polygon shape
+                    dots.push(
+                      <path
+                        key={`${row}-${col}`}
+                        d={ditherDotPolygon}
+                        fill={`rgb(${r},${g},${b})`}
+                        transform={`translate(${finalX},${finalY}) scale(${w},${h})`}
+                      />
+                    );
+                  } else {
+                    // Default: circle
+                    dots.push(
+                      <ellipse
+                        key={`${row}-${col}`}
+                        cx={finalX + w / 2}
+                        cy={finalY + h / 2}
+                        rx={w / 2}
+                        ry={h / 2}
+                        fill={`rgb(${r},${g},${b})`}
+                      />
+                    );
+                  }
+                }
+              }
+
+              return dots;
+            })()}
+          </svg>
+        </div>
       )}
     </div>
   );

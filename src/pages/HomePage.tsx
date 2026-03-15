@@ -8,6 +8,7 @@ import LocationModal from "../components/LocationModal";
 import { slugifyParkName } from "../data/manualParksData";
 import { Button } from "../components/ui/Button";
 import ImageToAscii from "../components/ImageToAscii";
+import { useTheme } from "../contexts/ThemeContext";
 
 const HomePage: React.FC = () => {
   const [showLocationModal, setShowLocationModal] = useState(false);
@@ -15,6 +16,7 @@ const HomePage: React.FC = () => {
   const [isLoadingNearby, setIsLoadingNearby] = useState(false);
   const [isLoadingRandom, setIsLoadingRandom] = useState(false);
   const navigate = useNavigate();
+  const { mode } = useTheme();
 
   const { parks } = useParksData();
 
@@ -98,24 +100,26 @@ const HomePage: React.FC = () => {
           content="Eine Liste und Karte aller Parks und Grünflächen in Wien mit allen wichtigen Informationen für deinen Parkbesuch."
         />
       </Helmet>
-      
+
       {/* ASCII Background */}
       <div className="absolute inset-0 pointer-events-none">
         <ImageToAscii
           src="/home.jpg"
-          mode="ascii"
+          mode="dither"
           fontSize={5}
-          saturation={1}
-          contrast={1}
-          brightness={2}
-          colorCount={8}
-          scale={0.2}
-          ditherAlgorithm="ordered"
-          ditherMatrixSize={8}
+          saturation={mode === "dark" ? 1 : 1}
+          contrast={mode === "dark" ? 4 : 3}
+          brightness={mode === "dark" ? 0.15 : 1}
+          colorCount={16}
+          scale={0.4}
+          ditherAlgorithm="atkinson"
+          ditherMatrixSize={2}
+          ditherDotSize={6}
+          ditherDotSpacing={7}
           width="100%"
           height="100%"
           objectFit="cover"
-          className="opacity-50"
+          className="opacity-20"
           alt="Background ASCII art"
         />
       </div>
@@ -164,7 +168,12 @@ const HomePage: React.FC = () => {
             <Button variant="primary" size="md" loading={isLoadingNearby}>
               <Link to="/index">Index</Link>
             </Button>
-            <Button to="/map" variant="primary" size="md" loading={isLoadingNearby}>
+            <Button
+              to="/map"
+              variant="primary"
+              size="md"
+              loading={isLoadingNearby}
+            >
               Karte
             </Button>
             <Button
