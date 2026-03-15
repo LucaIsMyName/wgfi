@@ -31,18 +31,20 @@ const ParksListPage = () => {
     filteredAndSortedParks,
   } = useParksFilters(parks);
 
-  // Force re-render when favorites or comparison change
-  const [refreshKey, setRefreshKey] = useState(0);
+  // Local state to trigger re-renders without unmounting components
+  const [, forceUpdate] = useState({});
 
   // Using the favoritesManager utility for favorites functionality
   const handleToggleFavorite = (parkId: string) => {
     toggleFavorite(parkId);
-    setRefreshKey(prev => prev + 1);
+    // Force re-render of ParkCard components without unmounting
+    forceUpdate({});
   };
 
   // Handle comparison toggle
   const handleToggleCompare = (parkId: string) => {
-    setRefreshKey(prev => prev + 1);
+    // Force re-render of ParkCard components without unmounting
+    forceUpdate({});
   };
 
   // Clear saved scroll position when filters change
@@ -53,8 +55,7 @@ const ParksListPage = () => {
 
   return (
     <div
-      className="lg:px-6 bg-main-bg h-screen flex flex-col"
-      key={refreshKey}>
+      className="lg:px-6 bg-main-bg h-screen flex flex-col">
       <Helmet>
         <title>Wiener Grünflächen Index | Alle Parks</title>
         <meta

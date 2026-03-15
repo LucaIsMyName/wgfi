@@ -13,7 +13,6 @@ import {
   TreePine,
   Heart,
   GitCompare,
-  Share2,
 } from "lucide-react";
 import { getAmenityIcon } from "../utils/amenityIcons";
 import { isFavorite, toggleFavorite } from "../utils/favoritesManager";
@@ -22,7 +21,6 @@ import {
   toggleComparison,
   getComparisonCount,
 } from "../utils/comparisonManager";
-import { sharePark } from "../utils/shareUtils";
 import { addVisitSync } from "../hooks/useVisitHistory";
 import { addRecentlyViewed } from "../utils/recentlyViewedManager";
 import ParkInfo from "../components/ParkInfo";
@@ -443,14 +441,6 @@ const ParkDetailPage: React.FC = () => {
           <Button to="/index" variant="ghost" size="sm" icon={ChevronLeft}>
             Zurück
           </Button>
-          <button
-            onClick={() => sharePark(parkData)}
-            className="p-2 hover:bg-light-sage transition-colors"
-            style={{ color: "var(--primary-green)" }}
-            aria-label="Park teilen"
-          >
-            <Share2 className="w-5 h-5" />
-          </button>
         </div>
         <h1
           className={`${STYLE.pageTitle(true)} mb-4`}

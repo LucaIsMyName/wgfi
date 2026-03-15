@@ -7,9 +7,8 @@ import {
   removeFromComparison,
   clearComparison,
 } from "../utils/comparisonManager";
-import { shareComparison } from "../utils/shareUtils";
 import { slugifyParkName } from "../data/manualParksData";
-import { Building, Ruler, X, Trash2, ArrowLeft, Share2 } from "lucide-react";
+import { Building, Ruler, X, Trash2, ArrowLeft } from "lucide-react";
 import { getAmenityIcon } from "../utils/amenityIcons";
 import STYLE from "../utils/config";
 import type { Park } from "../types/park";
@@ -105,26 +104,13 @@ const ComparePage = () => {
               Zurück
             </Button>
             {comparisonParks.length > 0 && (
-              <>
-                <Button
-                  onClick={() =>
-                    shareComparison(comparisonParks.map((p) => p.id))
-                  }
-                  variant="secondary"
-                  size="sm"
-                  icon={Share2}
-                  className="sr-only"
-                >
-                  Teilen
-                </Button>
-                <Button
-                  onClick={handleClearAll}
-                  variant="secondary"
-                  size="sm"
-                  icon={Trash2}
-                  className="w-9 h-9"
-                ></Button>
-              </>
+              <Button
+                onClick={handleClearAll}
+                variant="secondary"
+                size="sm"
+                icon={Trash2}
+                className="w-9 h-9"
+              ></Button>
             )}
           </div>
         </div>
