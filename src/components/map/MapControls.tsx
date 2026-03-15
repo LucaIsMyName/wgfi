@@ -25,44 +25,88 @@ export default function MapControls({
 }: MapControlsProps) {
   return (
     <div className="absolute top-4 right-4 z-10 hidden lg:block">
-      <div className="bg-white shadow-lg p-3 rounded-lg">
-        <div className="flex flex-col gap-2">
-          <Button
-            onClick={() => onDistrictFilter(null)}
-            variant={selectedDistrict === null ? "primary" : "secondary"}
-            size="sm"
-            icon={MapIcon}
-            fullWidth
-            className="text-xs">
-            ALLE PARKS
-          </Button>
+      <div
+        className="bg-soft-cream border border-border-color shadow-lg rounded-lg overflow-hidden"
+        style={{ width: "240px" }}
+      >
+        {/* Header */}
+        <div className="bg-primary-green px-4 py-2.5 border-b border-border-color">
+          <div className="flex items-center justify-between">
+            <span className="font-serif text-base text-soft-cream tracking-wide">
+              Filter
+            </span>
+            <span className="font-mono text-xs text-soft-cream">
+              {filteredParksCount}
+            </span>
+          </div>
+        </div>
 
+        {/* Controls */}
+        <div className="p-3 flex flex-col gap-2 bg-soft-cream">
+          {/* All Parks Button */}
+          <button
+            onClick={() => onDistrictFilter(null)}
+            className="h-10 px-4 flex items-center justify-start gap-2 font-serif text-base tracking-wide transition-all rounded-md"
+            style={{
+              backgroundColor:
+                selectedDistrict === null
+                  ? "var(--primary-green)"
+                  : "var(--light-sage)",
+              color:
+                selectedDistrict === null
+                  ? "var(--soft-cream)"
+                  : "var(--primary-green)",
+              border:
+                selectedDistrict === null
+                  ? "none"
+                  : "1px solid var(--border-color)",
+            }}
+          >
+            <MapIcon className="w-4 h-4" />
+            Alle Parks
+          </button>
+          <button
+            onClick={onGetUserLocation}
+            className="h-10 px-4 flex items-center justify-start gap-2 font-serif text-base tracking-wide transition-all rounded-md border"
+            style={{
+              backgroundColor: userLocation
+                ? "var(--accent-gold)"
+                : "var(--card-bg)",
+              color: userLocation
+                ? "var(--soft-cream)"
+                : "var(--primary-green)",
+              borderColor: userLocation
+                ? "var(--accent-gold)"
+                : "var(--border-color)",
+            }}
+          >
+            <Navigation className="w-4 h-4" />
+            Mein Standort
+          </button>
+          {/* District Dropdown */}
           <Select
-            value={selectedDistrict ? String(selectedDistrict) : 'all'}
-            onValueChange={(value) => onDistrictFilter(value === 'all' ? null : Number(value))}
+            value={selectedDistrict ? String(selectedDistrict) : "all"}
+            onValueChange={(value) =>
+              onDistrictFilter(value === "all" ? null : Number(value))
+            }
             options={[
-              { value: 'all', label: 'Alle Bezirke' },
-              ...districts.sort((a, b) => a - b).map((district) => ({
-                value: String(district),
-                label: `${district}. Bezirk`,
-              })),
+              { value: "all", label: "Alle Bezirke" },
+              ...districts
+                .sort((a, b) => a - b)
+                .map((district) => ({
+                  value: String(district),
+                  label: `${district}. Bezirk`,
+                })),
             ]}
             placeholder="Bezirk wählen"
+            className=""
             fullWidth
           />
 
-          <Button
-            onClick={onGetUserLocation}
-            variant="secondary"
-            size="sm"
-            icon={Navigation}
-            fullWidth
-            className="text-xs"
-            style={{
-              backgroundColor: userLocation ? "var(--accent-gold)" : "var(--light-sage)",
-            }}>
-            MEIN STANDORT
-          </Button>
+          {/* Divider */}
+          {/* <div className="h-px bg-border-color my-1" /> */}
+
+          {/* User Location Button */}
         </div>
       </div>
     </div>
