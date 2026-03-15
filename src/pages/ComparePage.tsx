@@ -100,16 +100,20 @@ const ComparePage = () => {
               variant="ghost"
               size="sm"
               icon={ArrowLeft}
+              className="sr-only"
             >
               Zurück
             </Button>
             {comparisonParks.length > 0 && (
               <>
                 <Button
-                  onClick={() => shareComparison(comparisonParks.map(p => p.id))}
+                  onClick={() =>
+                    shareComparison(comparisonParks.map((p) => p.id))
+                  }
                   variant="secondary"
                   size="sm"
                   icon={Share2}
+                  className="sr-only"
                 >
                   Teilen
                 </Button>
@@ -118,14 +122,13 @@ const ComparePage = () => {
                   variant="secondary"
                   size="sm"
                   icon={Trash2}
-                >
-                  Alle entfernen
-                </Button>
+                  className="w-9 h-9"
+                ></Button>
               </>
             )}
           </div>
         </div>
-        <p className="font-mono text-xs text-primary-green">
+        <p className="sr-only font-mono text-xs text-primary-green">
           {comparisonParks.length}{" "}
           {comparisonParks.length === 1 ? "PARK" : "PARKS"} IM VERGLEICH
         </p>
@@ -134,17 +137,17 @@ const ComparePage = () => {
       {/* Desktop Table View */}
       <div className="hidden md:block overflow-x-auto">
         <table className="w-full border-collapse">
-          <thead>
-            <tr className="border-b-2 border-primary-green">
+          <thead className="">
+            <tr className="border-b-2 border-primary-green ">
               <th className="text-left py-3 px-4 font-mono text-xs text-primary-green sticky left-0 bg-main-bg z-10">
                 EIGENSCHAFT
               </th>
               {comparisonParks.map((park) => (
                 <th key={park.id} className="py-3 px-4 min-w-[200px]">
-                  <div className="flex flex-col items-start gap-2">
+                  <div className="flex items-center justify-between gap-2">
                     <Link
                       to={`/index/${slugifyParkName(park.name)}`}
-                      className="font-serif text-lg italic text-primary-green hover:underline text-left"
+                      className="truncate font-serif text-lg italic text-primary-green hover:underline text-left"
                     >
                       {park.name}
                     </Link>
@@ -169,7 +172,7 @@ const ComparePage = () => {
               {comparisonParks.map((park) => (
                 <td
                   key={park.id}
-                  className="py-3 px-4 font-serif text-deep-charcoal"
+                  className="py-3 px-4 font-serif text-sm text-deep-charcoal"
                 >
                   {park.district}. Bezirk
                 </td>
@@ -184,7 +187,7 @@ const ComparePage = () => {
               {comparisonParks.map((park) => (
                 <td
                   key={park.id}
-                  className="py-3 px-4 font-mono text-sm text-deep-charcoal"
+                  className="py-3 px-4 font-serif text-sm text-deep-charcoal"
                 >
                   {park.area.toLocaleString()} m²
                 </td>
@@ -225,7 +228,7 @@ const ComparePage = () => {
             <tr className="border-b-2 border-primary-green">
               <td
                 colSpan={comparisonParks.length + 1}
-                className="py-3 px-4 font-mono text-xs text-primary-green"
+                className="py-3 px-4 bg-light-sage font-mono text-xs text-primary-green"
               >
                 AUSSTATTUNG
               </td>

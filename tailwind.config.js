@@ -16,6 +16,8 @@ export default {
         'main-bg': 'var(--main-bg)',
         'card-bg': 'var(--card-bg)',
         'sidebar-bg': 'var(--sidebar-bg)',
+        'warm-gold': 'var(--warm-gold)',
+        'light-gold': 'var(--light-gold)'
       },
       fontFamily: {
         'serif': 'var(--font-serif)',

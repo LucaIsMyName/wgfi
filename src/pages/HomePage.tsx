@@ -16,7 +16,7 @@ const HomePage: React.FC = () => {
   const [isLoadingNearby, setIsLoadingNearby] = useState(false);
   const [isLoadingRandom, setIsLoadingRandom] = useState(false);
   const navigate = useNavigate();
-  const { mode, isHighContrast } = useTheme();
+  const { effectiveTheme, isHighContrast } = useTheme();
 
   const { parks } = useParksData();
 
@@ -104,22 +104,22 @@ const HomePage: React.FC = () => {
       {/* ASCII Background */}
       <div
         className="absolute inset-0 pointer-events-none"
-        style={{ opacity: mode === "dark" ? 0.2 : 1 }}
+        style={{ opacity: effectiveTheme === "dark" ? 0.2 : 1 }}
       >
         <ImageToAscii
           src="/home.jpg"
-          mode={mode === "dark" ? "dither" : "dither"}
+          mode={effectiveTheme === "dark" ? "dither" : "dither"}
           fontSize={4}
-          saturation={mode === "dark" ? 5 : 3}
-          contrast={mode === "dark" ? 3 : 2}
-          brightness={mode === "dark" ? 2 : 1}
+          saturation={effectiveTheme === "dark" ? 1 : 3}
+          contrast={effectiveTheme === "dark" ? 3 : 1}
+          brightness={effectiveTheme === "dark" ? 1 : 1}
           // hueShift={300}
-          colorCount={32}
-          scale={0.3}
-          ditherAlgorithm="floyd-steinberg"
+          colorCount={16}
+          scale={effectiveTheme === "dark" ? 0.2 : 0.33}
+          ditherAlgorithm="ordered"
           ditherMatrixSize={8}
-          ditherDotSize={4}
-          ditherDotSpacing={6}
+          ditherDotSize={6}
+          ditherDotSpacing={effectiveTheme === "dark" ? -2 : 0}
           width="100%"
           height="100%"
           objectFit="cover"

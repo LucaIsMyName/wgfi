@@ -13,7 +13,13 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [mode, setModeState] = useState<ThemeMode>('auto');
-  const [systemPreference, setSystemPreference] = useState<'light' | 'dark'>('light');
+  const [systemPreference, setSystemPreference] = useState<'light' | 'dark'>(() => {
+    // Initialize synchronously to avoid flash of wrong theme
+    if (typeof window !== 'undefined') {
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    return 'light';
+  });
 
   // Detect system preference
   useEffect(() => {

@@ -458,10 +458,23 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
           const g = ditheredPixels[idx + 1];
           const b = ditheredPixels[idx + 2];
 
+          // Calculate brightness (0-1) - inverted so dark = large dots
+          const brightness = (r + g + b) / (3 * 255);
+          const darkness = 1 - brightness;
+
+          // Halftone: dot size varies with darkness
+          // Dark areas = large dots, light areas = small/no dots
+          const dotSizeMultiplier = darkness * darkness; // Square for more dramatic effect
+          
           const x = col * scaleX;
           const y = row * scaleY;
-          const w = scaleX * (dotSize / cellSize);
-          const h = scaleY * (dotSize / cellSize);
+          const maxDotSize = scaleX * (dotSize / cellSize);
+          const w = maxDotSize * dotSizeMultiplier;
+          const h = maxDotSize * dotSizeMultiplier;
+          
+          // Skip very small dots (lighter areas)
+          if (w < 0.5 || h < 0.5) continue;
+
           const offsetX = (scaleX - w) / 2;
           const offsetY = (scaleY - h) / 2;
 
