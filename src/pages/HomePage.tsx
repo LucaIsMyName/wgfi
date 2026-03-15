@@ -104,23 +104,23 @@ const HomePage: React.FC = () => {
       {/* ASCII Background */}
       <div
         className="absolute inset-0 pointer-events-none"
-        style={{ opacity: effectiveTheme === "dark" ? 0.23 : 0.23 }}
+        style={{ opacity: effectiveTheme === "dark" ? 0.33 : 0.1 }}
       >
         <ImageToAscii
           src="/home.jpg"
           mode={effectiveTheme === "dark" ? "dither" : "dither"}
           fontSize={4}
-          saturation={effectiveTheme === "dark" ? 1 : 3}
+          saturation={effectiveTheme === "dark" ? 1 : 4}
           contrast={effectiveTheme === "dark" ? 3 : 3}
-          brightness={effectiveTheme === "dark" ? 0.9 : 0.5}
-          // hueShift={300}
-          movementSpeed={"slow"}
-          colorCount={64}
-          scale={effectiveTheme === "dark" ? 0.25 : 0.25}
+          brightness={effectiveTheme === "dark" ? 0.9 : 1}
+          hueShift={effectiveTheme === "dark" ? 20 : 80}
+          movementSpeed={"fast"}
+          colorCount={12}
+          scale={effectiveTheme === "dark" ? 0.2 : 0.2}
           ditherAlgorithm="ordered"
           ditherMatrixSize={8}
-          ditherDotSize={effectiveTheme === "dark" ? 2 : 2}
-          ditherDotSpacing={effectiveTheme === "dark" ? -0.5 : 1}
+          ditherDotSize={effectiveTheme === "dark" ? 2 : 1.5}
+          ditherDotSpacing={effectiveTheme === "dark" ? -0.5 : 0.2}
           width="100%"
           height="100%"
           objectFit="cover"
@@ -129,7 +129,7 @@ const HomePage: React.FC = () => {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="flex flex-col space-y-8">
+        <div className="flex flex-col space-y-8 xl:ml-32">
           {/* Headline */}
           <div>
             <h1

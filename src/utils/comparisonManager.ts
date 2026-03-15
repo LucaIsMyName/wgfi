@@ -4,7 +4,7 @@
  */
 
 const STORAGE_KEY_COMPARISON = 'wgfi:comparison-parks';
-const MAX_COMPARISON_PARKS = 4;
+const MAX_COMPARISON_PARKS = 8;
 
 /**
  * Get all parks in comparison

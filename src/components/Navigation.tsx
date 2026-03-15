@@ -10,6 +10,7 @@ import {
   BookOpen,
   BarChart3,
   Search,
+  GitCompare,
 } from "lucide-react";
 import Logo from "./Logo";
 import ThemeToggle from "./ThemeToggle";
@@ -56,6 +57,11 @@ const Navigation = () => {
       path: "/statistics",
       label: "Statistiken",
       icon: <BarChart3 className="w-5 h-5" />,
+    },
+    {
+      path: "/compare",
+      label: "Vergleich",
+      icon: <GitCompare className="w-5 h-5" />,
     },
     {
       path: "/favorites",

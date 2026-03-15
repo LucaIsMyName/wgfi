@@ -135,8 +135,8 @@ const ComparePage = () => {
       </div>
 
       {/* Desktop Table View */}
-      <div className="hidden md:block overflow-x-auto">
-        <table className="w-full border-collapse">
+      <div className="hidden md:block overflow-x-auto overflow-y-visible">
+        <table className="w-full border-collapse min-w-max">
           <thead className="">
             <tr className="border-b-2 border-primary-green ">
               <th className="text-left py-3 px-4 font-mono text-xs text-primary-green sticky left-0 bg-main-bg z-10">
