@@ -37,12 +37,12 @@ const IdeaPage: React.FC = () => {
       {/* Beta Notice */}
       <div className="max-w-3xl mb-8">
         <div className="p-4 border-2 flex gap-3 bg-card-bg border-accent-gold">
-          <AlertTriangle className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent-gold" />
+          <AlertTriangle className="w-5.5 h-5.5 flex-shrink-0 mt-0.5 text-accent-gold" />
           <div className="font-serif space-y-2 text-deep-charcoal">
-            <p className="font-bold text-accent-gold">
+            <p className="font-bold text-xl text-accent-gold">
               BETA Version
             </p>
-            <p className="text-sm leading-relaxed">
+            <p className="text-base leading-relaxed italic">
               Diese Website befindet sich in der Beta-Phase. Funktionen und
               Features können sich jederzeit ändern. Nicht immer sind alle
               Informationen korrekt und aktuell. Fehler oder

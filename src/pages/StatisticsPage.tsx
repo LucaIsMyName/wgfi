@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
+import { AlertTriangle } from "lucide-react";
 import { useParksData } from "../hooks/useParksData";
 import { slugifyParkName } from "../data/manualParksData";
 import { BarChart3, TrendingUp, MapPin, Sprout, Compass, Ruler, PieChart, Trophy, BarChart } from "lucide-react";
@@ -178,9 +179,17 @@ const StatisticsPage = () => {
           <h1 className={`${STYLE.pageTitle(false)} mb-4 text-primary-green italic`}>
             Statistiken
           </h1>
-          <p className="font-serif text-lg max-w-[65ch] text-deep-charcoal">
-            Beachten Sie dass die Daten der Stadt Wien nicht alle Grünflächen ausweisen und eine vollständige Statistik nicht möglich ist. Bundesforste und Bundesgärten werden manuell nach Möglichkeit hinzugefügt. Flächen von Grünflächen können derzeit nur einem Bezirk zugerechnet werden, was nicht immer korrekt ist.
-          </p>
+          <div className="max-w-[95ch] p-4 border flex gap-3 bg-card-bg border-border-color">
+          <AlertTriangle className="w-6 h-6 flex-shrink-0 mt-0.5 text-primary-green" />
+          <div className="font-serif space-y-2 text-deep-charcoal">
+            <p className="font-bold tracking-widest font-mono text-2xl text-primary-green">
+              INFO
+            </p>
+            <p className="font-serif italic text-lg  text-deep-charcoal">
+              Beachten Sie dass die Daten der Stadt Wien nicht alle Grünflächen ausweisen und eine vollständige Statistik nicht möglich ist. Bundesforste und Bundesgärten werden manuell nach Möglichkeit hinzugefügt. Flächen von Grünflächen können derzeit nur einem Bezirk zugerechnet werden, was nicht immer korrekt ist.
+            </p>
+          </div>
+        </div>
         </div>
 
         {/* Key Metrics */}
