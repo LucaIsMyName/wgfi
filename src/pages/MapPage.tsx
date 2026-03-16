@@ -26,7 +26,12 @@ const MapPage = () => {
   const { effectiveTheme } = useTheme();
 
   // Map hooks
-  const { mapContainerRef, mapInstance, mapLoaded, styleLoadedCounter } = useMapboxMap(effectiveTheme);
+  const { mapContainerRef, mapInstance, mapLoaded, styleLoadedCounter } = useMapboxMap({
+    effectiveTheme,
+    center: [16.3738, 48.2082], // Vienna center
+    zoom: 12,
+    pitch: 60
+  });
   
   // Use markers hook
   useMapMarkers({

@@ -9,11 +9,23 @@ interface UseMapboxMapReturn {
   styleLoadedCounter: number;
 }
 
+interface UseMapboxMapProps {
+  effectiveTheme: 'light' | 'dark';
+  center?: [number, number]; // [lng, lat]
+  zoom?: number;
+  pitch?: number;
+}
+
 /**
  * Custom hook for initializing and managing Mapbox map instance
  * Handles map creation, style loading, theme changes, and cleanup
  */
-export function useMapboxMap(effectiveTheme: 'light' | 'dark'): UseMapboxMapReturn {
+export function useMapboxMap({ 
+  effectiveTheme, 
+  center = [16.3738, 48.2082], // Vienna center
+  zoom = 12,
+  pitch = 60
+}: UseMapboxMapProps): UseMapboxMapReturn {
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const mapInstance = useRef<mapboxgl.Map | null>(null);
   const [mapLoaded, setMapLoaded] = useState(false);
@@ -23,9 +35,21 @@ export function useMapboxMap(effectiveTheme: 'light' | 'dark'): UseMapboxMapRetu
   useEffect(() => {
     if (!mapContainerRef.current) return;
     
+    // Check for access token before creating map
+    if (!mapboxgl.accessToken || mapboxgl.accessToken === 'your_mapbox_token_here') {
+      console.error('Cannot initialize map: Missing or invalid Mapbox access token');
+      return;
+    }
+    
     // Prevent duplicate map creation (especially in StrictMode)
     if (mapInstance.current) {
       console.log('Map already exists, skipping initialization');
+      return;
+    }
+
+    // Only initialize map when we have valid coordinates or fallback
+    if (!center) {
+      console.log('No center coordinates provided, skipping map initialization');
       return;
     }
 
@@ -42,17 +66,22 @@ export function useMapboxMap(effectiveTheme: 'light' | 'dark'): UseMapboxMapRetu
         return;
       }
 
-      const isDark = effectiveTheme === 'dark';
-      map = new mapboxgl.Map({
-      container: mapContainerRef.current,
-      style: STYLE.getMapStyle(isDark),
-      center: [16.3738, 48.2082], // Vienna center
-      zoom: 12,
-      pitch: 60, // Tilt map for 3D view
-      bearing: 0,
-      antialias: true, // Smooth 3D rendering
-      preserveDrawingBuffer: true // Prevent WebGL context loss
-    });
+      try {
+        const isDark = effectiveTheme === 'dark';
+        map = new mapboxgl.Map({
+        container: mapContainerRef.current,
+        style: STYLE.getMapStyle(isDark),
+        center: center, // Use dynamic center
+        zoom: zoom, // Use dynamic zoom
+        pitch: pitch, // Use dynamic pitch
+        bearing: 0,
+        antialias: true, // Smooth 3D rendering
+        preserveDrawingBuffer: true // Prevent WebGL context loss
+      });
+      } catch (error) {
+        console.error('Error creating map:', error);
+        return;
+      }
 
       map.on("load", () => {
         // Add 3D terrain only if it doesn't exist
@@ -145,7 +174,32 @@ export function useMapboxMap(effectiveTheme: 'light' | 'dark'): UseMapboxMapRetu
       setMapLoaded(false);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []); // Only initialize once on mount
+  }, [center]); // Initialize when center becomes available
+  
+  // Update map center/zoom/pitch when they change (but don't recreate map)
+  useEffect(() => {
+    if (!mapInstance.current || !mapLoaded) return;
+    
+    // Only update if center, zoom, or pitch are different from current
+    const currentCenter = mapInstance.current.getCenter();
+    const currentZoom = mapInstance.current.getZoom();
+    const currentPitch = mapInstance.current.getPitch();
+    
+    const centerChanged = !center || 
+      Math.abs(currentCenter.lng - center[0]) > 0.0001 || 
+      Math.abs(currentCenter.lat - center[1]) > 0.0001;
+    const zoomChanged = Math.abs(currentZoom - zoom) > 0.1;
+    const pitchChanged = Math.abs(currentPitch - pitch) > 1;
+    
+    if (centerChanged || zoomChanged || pitchChanged) {
+      mapInstance.current.flyTo({
+        center: center || currentCenter.toArray(),
+        zoom: zoom,
+        pitch: pitch,
+        duration: 1000
+      });
+    }
+  }, [center, zoom, pitch, mapLoaded]);
   
   // Update map style when theme changes
   useEffect(() => {

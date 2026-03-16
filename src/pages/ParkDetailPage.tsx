@@ -25,9 +25,9 @@ import { addVisitSync } from "../hooks/useVisitHistory";
 import { addRecentlyViewed } from "../utils/recentlyViewedManager";
 import ParkInfo from "../components/ParkInfo";
 import MetadataAccordion from "../components/MetadataAccordion";
-import mapboxgl from "mapbox-gl";
-import STYLE from "../utils/config";
+import { useMapboxMap } from "../hooks/useMapboxMap";
 import { useTheme } from "../contexts/ThemeContext";
+import STYLE from "../utils/config";
 import { getAllDistrictsForPark, formatDistricts } from "../utils/parkUtils";
 import type { Park, ParkWithDistance } from "../types/park";
 import { calculateDistance } from "../utils/geoUtils";
@@ -47,10 +47,51 @@ const ParkDetailPage: React.FC = () => {
   const [isInCompare, setIsInCompare] = useState(false);
   const [nearbyParks, setNearbyParks] = useState<ParkWithDistance[]>([]);
 
-  // Map references
-  const mapContainer = useRef<HTMLDivElement>(null);
-  const mapInstance = useRef<mapboxgl.Map | null>(null);
-  const mapMarker = useRef<mapboxgl.Marker | null>(null);
+  // Map references - using shared hook
+  const mapCenter: [number, number] = useMemo(() => {
+    if (park?.coordinates) {
+      return [park.coordinates.lng, park.coordinates.lat];
+    }
+    // Fallback to Vienna center if park coordinates not available yet
+    return [16.3738, 48.2082];
+  }, [park?.coordinates?.lng, park?.coordinates?.lat]);
+  
+  const { mapContainerRef, mapInstance, mapLoaded, styleLoadedCounter } = useMapboxMap({
+    effectiveTheme,
+    center: mapCenter,
+    zoom: 15.5,
+    pitch: 60
+  });
+  const mapMarker = useRef<any>(null);
+  const [mapError, setMapError] = useState<string | null>(null);
+  const [mapReady, setMapReady] = useState(false);
+
+  // Set map ready state when map is loaded and park is available
+  useEffect(() => {
+    setMapReady(mapLoaded && !!park);
+  }, [mapLoaded, park]);
+
+  // Update map center when park coordinates become available
+  useEffect(() => {
+    if (!mapInstance.current || !mapLoaded || !park?.coordinates) return;
+    
+    const currentCenter = mapInstance.current.getCenter();
+    const targetCenter: [number, number] = [park.coordinates.lng, park.coordinates.lat];
+    
+    // Only flyTo if we're not already at the target location
+    const centerChanged = 
+      Math.abs(currentCenter.lng - targetCenter[0]) > 0.0001 || 
+      Math.abs(currentCenter.lat - targetCenter[1]) > 0.0001;
+    
+    if (centerChanged) {
+      mapInstance.current.flyTo({
+        center: targetCenter,
+        zoom: 15.5,
+        pitch: 60,
+        duration: 1000
+      });
+    }
+  }, [park?.coordinates?.lng, park?.coordinates?.lat, mapLoaded]);
 
   // Check if park is in favorites and comparison when it loads
   useEffect(() => {
@@ -173,15 +214,12 @@ const ParkDetailPage: React.FC = () => {
     setNearbyParks(parksWithDistance);
   }, [park, parks]);
 
-  // Initialize map when park data is loaded
+  // Initialize map marker when park and map are ready
   useEffect(() => {
-    if (!park || !park.coordinates || !mapContainer.current) return;
+    if (!park || !park.coordinates || !mapInstance.current || !mapReady) return;
 
-    // Clean up previous map instance if it exists
-    if (mapInstance.current) {
-      mapInstance.current.remove();
-      mapInstance.current = null;
-    }
+    // Reset error state
+    setMapError(null);
 
     // Clean up previous marker if it exists
     if (mapMarker.current) {
@@ -189,41 +227,111 @@ const ParkDetailPage: React.FC = () => {
       mapMarker.current = null;
     }
 
-    const initMap = () => {
+    const initMarker = () => {
       try {
-        // Create map with theme-aware style
-        const isDark = effectiveTheme === "dark";
-        const map = new mapboxgl.Map({
-          container: mapContainer.current!,
-          style: STYLE.getMapStyle(isDark),
-          center: [park.coordinates.lng, park.coordinates.lat],
-          zoom: 15.5,
-          pitch: 60, // Tilt map for 3D view
-          bearing: 0,
-          antialias: true, // Smooth 3D rendering
-          preserveDrawingBuffer: true, // Prevent WebGL context loss
-          attributionControl: false,
+        // Import mapboxgl dynamically for marker creation
+        import('mapbox-gl').then((mapboxgl) => {
+          if (!mapInstance.current || !park) return;
+
+          // Create marker wrapper and inner element
+          const wrapper = document.createElement("div");
+          wrapper.className = "marker-wrapper";
+          wrapper.style.position = "absolute";
+          wrapper.style.transform = "translate(-50%, -50%)";
+
+          const el = document.createElement("div");
+          el.className = "custom-marker";
+          el.style.width = "30px";
+          el.style.height = "30px";
+          el.style.borderRadius = "50%";
+          el.style.backgroundColor = "var(--primary-green)";
+          el.style.display = "flex";
+          el.style.justifyContent = "center";
+          el.style.alignItems = "center";
+          el.style.color = "var(--soft-cream)";
+          el.style.boxShadow = "0 2px 6px rgba(0,0,0,0.3)";
+          el.style.cursor = "pointer";
+          el.style.transition = "all 0.2s";
+          el.innerHTML =
+            '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>';
+
+          wrapper.appendChild(el);
+
+          // Create popup
+          const popup = new mapboxgl.default.Popup({ offset: 25, closeButton: false })
+            .setHTML(`
+            <div style=" padding: 12px; border-radius: 8px; text-align:center">
+              <h3 style="font-family: ' Instrument Serif', serif; font-style:italic; font-weight: 600; margin: 0 0 8px 0; color: var(--primary-green); font-size: 24px;">${
+                park.name
+              }</h3>
+              <p style="font-family: 'Geist Mono', monospace; margin: 0; font-size: 14px; color: var(--deep-charcoal);">${
+                park.address || "Adresse nicht verfügbar"
+              }</p>
+            </div>
+          `);
+
+          // Add marker using the wrapper
+          const marker = new mapboxgl.default.Marker(wrapper)
+            .setLngLat([park.coordinates.lng, park.coordinates.lat])
+            .setPopup(popup)
+            .addTo(mapInstance.current);
+
+          // Add hover effect
+          el.addEventListener("mouseenter", () => {
+            el.style.transform = "scale(1.1)";
+            el.style.boxShadow = "0 4px 8px rgba(0,0,0,0.4)";
+          });
+          el.addEventListener("mouseleave", () => {
+            el.style.transform = "scale(1)";
+            el.style.boxShadow = "0 2px 6px rgba(0,0,0,0.3)";
+          });
+
+          // Store reference
+          mapMarker.current = marker;
+
+          // Map is already centered by the hook, no need to flyTo again
+        }).catch((error) => {
+          console.error("Error loading mapbox:", error);
+          setMapError("Karte konnte nicht geladen werden");
         });
+      } catch (error) {
+        console.error("Error initializing marker:", error);
+        setMapError("Marker konnte nicht geladen werden");
+      }
+    };
 
-        // Add 3D terrain when map loads
-        map.on("load", () => {
-          // Only add source if it doesn't already exist
-          if (!map.getSource("mapbox-dem")) {
-            map.addSource("mapbox-dem", {
-              type: "raster-dem",
-              url: "mapbox://mapbox.mapbox-terrain-dem-v1",
-              tileSize: 512,
-              maxzoom: 14,
-            });
-            map.setTerrain({ source: "mapbox-dem", exaggeration: 1.5 });
-          }
-        });
+    // Wait for map to be fully loaded
+    if (mapInstance.current.isStyleLoaded()) {
+      initMarker();
+    } else {
+      mapInstance.current.once('load', initMarker);
+    }
 
-        // Add navigation controls
-        map.addControl(new mapboxgl.NavigationControl(), "top-right");
-        map.addControl(new mapboxgl.AttributionControl({ compact: true }));
+    // Cleanup function
+    return () => {
+      if (mapMarker.current) {
+        mapMarker.current.remove();
+        mapMarker.current = null;
+      }
+    };
+  }, [park, mapReady, mapInstance, styleLoadedCounter]);
 
-        // Create marker wrapper and inner element to fix hover positioning issues
+  // Update marker when style changes (theme handled by shared hook)
+  useEffect(() => {
+    if (!mapInstance.current || !park || !mapMarker.current) return;
+
+    // Re-create marker when style changes
+    const timer = setTimeout(() => {
+      if (mapMarker.current) {
+        mapMarker.current.remove();
+        mapMarker.current = null;
+      }
+      
+      // Re-initialize marker with new style
+      import('mapbox-gl').then((mapboxgl) => {
+        if (!mapInstance.current || !park) return;
+
+        // Create marker wrapper and inner element
         const wrapper = document.createElement("div");
         wrapper.className = "marker-wrapper";
         wrapper.style.position = "absolute";
@@ -245,29 +353,28 @@ const ParkDetailPage: React.FC = () => {
         el.innerHTML =
           '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>';
 
-        // Add inner element to wrapper
         wrapper.appendChild(el);
 
-        // Create popup with Art Nouveau styling
-        const popup = new mapboxgl.Popup({ offset: 25, closeButton: false })
+        // Create popup
+        const popup = new mapboxgl.default.Popup({ offset: 25, closeButton: false })
           .setHTML(`
-          <div style=" padding: 12px; border-radius: 8px; text-align:center">
-            <h3 style="font-family: ' Instrument Serif', serif; font-style:italic; font-weight: 600; margin: 0 0 8px 0; color: var(--primary-green); font-size: 24px;">${
-              park.name
-            }</h3>
-            <p style="font-family: 'Geist Mono', monospace; margin: 0; font-size: 14px; color: var(--deep-charcoal);">${
-              park.address || "Adresse nicht verfügbar"
-            }</p>
-          </div>
-        `);
+            <div style=" padding: 12px; border-radius: 8px; text-align:center">
+              <h3 style="font-family: ' Instrument Serif', serif; font-style:italic; font-weight: 600; margin: 0 0 8px 0; color: var(--primary-green); font-size: 24px;">${
+                park.name
+              }</h3>
+              <p style="font-family: 'Geist Mono', monospace; margin: 0; font-size: 14px; color: var(--deep-charcoal);">${
+                park.address || "Adresse nicht verfügbar"
+              }</p>
+            </div>
+          `);
 
         // Add marker using the wrapper
-        const marker = new mapboxgl.Marker(wrapper)
+        const marker = new mapboxgl.default.Marker(wrapper)
           .setLngLat([park.coordinates.lng, park.coordinates.lat])
           .setPopup(popup)
-          .addTo(map);
+          .addTo(mapInstance.current);
 
-        // Add hover effect to inner element only
+        // Add hover effect
         el.addEventListener("mouseenter", () => {
           el.style.transform = "scale(1.1)";
           el.style.boxShadow = "0 4px 8px rgba(0,0,0,0.4)";
@@ -277,114 +384,12 @@ const ParkDetailPage: React.FC = () => {
           el.style.boxShadow = "0 2px 6px rgba(0,0,0,0.3)";
         });
 
-        // Store references
-        mapInstance.current = map;
         mapMarker.current = marker;
-      } catch (error) {
-        console.error("Error initializing map:", error);
-      }
-    };
+      });
+    }, 100);
 
-    initMap();
-
-    // Cleanup function
-    return () => {
-      if (mapMarker.current) {
-        mapMarker.current.remove();
-        mapMarker.current = null;
-      }
-      if (mapInstance.current) {
-        mapInstance.current.remove();
-        mapInstance.current = null;
-      }
-    };
-  }, [park, effectiveTheme]);
-
-  // Update map style when theme changes
-  useEffect(() => {
-    if (!mapInstance.current || !park) return;
-
-    const isDark = effectiveTheme === "dark";
-    const newStyle = STYLE.getMapStyle(isDark);
-
-    // Check if style is loaded before updating
-    if (mapInstance.current.isStyleLoaded()) {
-      try {
-        const currentStyle = mapInstance.current.getStyle();
-        // Only update if style URL is different
-        if (currentStyle && !currentStyle.sprite?.includes(newStyle)) {
-          mapInstance.current.setStyle(newStyle);
-
-          // Re-add marker after style loads
-          mapInstance.current.once("style.load", async () => {
-            if (mapMarker.current && mapInstance.current) {
-              // Remove old marker
-              mapMarker.current.remove();
-
-              // Load mapbox dynamically
-              // const mapboxgl = await loadMapbox();
-
-              // Create new marker
-              const wrapper = document.createElement("div");
-              wrapper.className = "marker-wrapper";
-              wrapper.style.position = "absolute";
-              wrapper.style.transform = "translate(-50%, -50%)";
-
-              const el = document.createElement("div");
-              el.className = "custom-marker";
-              el.style.width = "30px";
-              el.style.height = "30px";
-              el.style.borderRadius = "50%";
-              el.style.backgroundColor = "var(--primary-green)";
-              el.style.display = "flex";
-              el.style.justifyContent = "center";
-              el.style.alignItems = "center";
-              el.style.color = "var(--soft-cream)";
-              el.style.boxShadow = "0 2px 6px rgba(0,0,0,0.3)";
-              el.style.cursor = "pointer";
-              el.style.transition = "all 0.2s";
-              el.innerHTML =
-                '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>';
-
-              wrapper.appendChild(el);
-
-              const popup = new mapboxgl.Popup({
-                offset: 25,
-                closeButton: false,
-              }).setHTML(`
-                <div style="font-family: ' Instrument Serif', serif; padding: 12px; border-radius: 8px;">
-                  <h3 style="font-weight: 600; margin: 0 0 8px 0; color: var(--primary-green); font-size: 16px;">${
-                    park.name
-                  }</h3>
-                  <p style="margin: 0; font-size: 14px; color: var(--deep-charcoal);">${
-                    park.address || "Adresse nicht verfügbar"
-                  }</p>
-                </div>
-              `);
-
-              const marker = new mapboxgl.Marker(wrapper)
-                .setLngLat([park.coordinates.lng, park.coordinates.lat])
-                .setPopup(popup)
-                .addTo(mapInstance.current);
-
-              el.addEventListener("mouseenter", () => {
-                el.style.transform = "scale(1.1)";
-                el.style.boxShadow = "0 4px 8px rgba(0,0,0,0.4)";
-              });
-              el.addEventListener("mouseleave", () => {
-                el.style.transform = "scale(1)";
-                el.style.boxShadow = "0 2px 6px rgba(0,0,0,0.3)";
-              });
-
-              mapMarker.current = marker;
-            }
-          });
-        }
-      } catch (error) {
-        console.error("Error updating map style:", error);
-      }
-    }
-  }, [effectiveTheme, park]);
+    return () => clearTimeout(timer);
+  }, [styleLoadedCounter, park, mapInstance]);
 
   // Only show error after parks are loaded to prevent flash
   if (parks.length > 0 && (error || !park)) {
@@ -699,15 +704,82 @@ const ParkDetailPage: React.FC = () => {
               >
                 Lage & Karte
               </h2>
+              
+              {/* Map Container with Loading and Error States */}
               <div
-                ref={mapContainer}
                 style={{
                   height: "400px",
                   width: "100%",
                   position: "relative",
                   overflow: "hidden",
+                  backgroundColor: "var(--light-sage)",
                 }}
-              />
+              >
+                {/* Loading Skeleton */}
+                {!mapLoaded && (
+                  <div 
+                    className="absolute inset-0 flex items-center justify-center"
+                    style={{ backgroundColor: "var(--light-sage)" }}
+                  >
+                    <div className="text-center">
+                      <div className="animate-pulse">
+                        <div 
+                          className="sr-only w-12 h-12 mx-auto mb-3 rounded-full border-4 border-primary-green border-t-transparent"
+                        ></div>
+                        <p 
+                          className="font-mono text-sm"
+                          style={{ color: "var(--primary-green)" }}
+                        >
+                          Karte wird geladen...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* Error State */}
+                {mapError && (
+                  <div 
+                    className="absolute inset-0 flex items-center justify-center"
+                    style={{ backgroundColor: "var(--light-sage)" }}
+                  >
+                    <div className="text-center p-4">
+                      <AlertTriangle 
+                        className="w-12 h-12 mx-auto mb-3"
+                        style={{ color: "var(--accent-gold)" }}
+                      />
+                      <p 
+                        className="font-serif text-lg mb-3"
+                        style={{ color: "var(--deep-charcoal)" }}
+                      >
+                        {mapError}
+                      </p>
+                      <Button
+                        onClick={() => window.location.reload()}
+                        variant="primary"
+                        size="sm"
+                      >
+                        Seite neu laden
+                      </Button>
+                    </div>
+                  </div>
+                )}
+
+                {/* Actual Map */}
+                <div
+                  ref={mapContainerRef}
+                  style={{
+                    height: "100%",
+                    width: "100%",
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    opacity: mapLoaded && !mapError ? 1 : 0,
+                    transition: "opacity 0.3s ease",
+                  }}
+                />
+              </div>
+              
               <p
                 className="font-mono text-xs mt-3 mb-8 flex items-center justify-start gap-2"
                 style={{ color: "var(--deep-charcoal)" }}
