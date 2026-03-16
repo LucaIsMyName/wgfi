@@ -1,7 +1,6 @@
 import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import type mapboxgl from "mapbox-gl";
-import { loadMapbox } from "../utils/mapboxLoader";
+import mapboxgl from "mapbox-gl";
 import { slugifyParkName } from "../data/manualParksData";
 import { isFavorite } from "../utils/favoritesManager";
 import type { Park } from "../types/park";
@@ -17,7 +16,6 @@ interface UseMapMarkersProps {
 /**
  * Custom hook for managing map markers
  * Handles marker creation, updates, popups, and URL synchronization
- * Uses dynamic mapbox loading
  */
 export function useMapMarkers({
   parks,
@@ -35,10 +33,7 @@ export function useMapMarkers({
       return;
     }
 
-    const initMarkers = async () => {
-      // Dynamically load mapbox
-      const mapboxgl = await loadMapbox();
-
+    const initMarkers = () => {
       try {
         // Clear existing markers
         markersRef.current.forEach((marker) => marker.remove());

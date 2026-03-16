@@ -299,30 +299,36 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
               <span className="flex items-center gap-2">
                 <Database className="w-3.5 h-3.5" />
                 Rohdaten
-                <Button
-                  onClick={exportAsJSON}
-                  variant="ghost"
-                  size="sm"
-                  icon={FileJson}
+                <span
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    exportAsJSON(e);
+                  }}
                   title="Als JSON exportieren"
-                  className="ml-2 hover:opacity-70 !p-0 min-w-0"
-                />
-                <Button
-                  onClick={exportAsCSV}
-                  variant="ghost"
-                  size="sm"
-                  icon={FileDown}
+                  className="ml-2 hover:opacity-70 cursor-pointer inline-flex items-center"
+                >
+                  <FileJson className="w-4 h-4" />
+                </span>
+                <span
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    exportAsCSV(e);
+                  }}
                   title="Als CSV exportieren"
-                  className="hover:opacity-70 !p-0 min-w-0"
-                />
-                <Button
-                  onClick={exportAsHTML}
-                  variant="ghost"
-                  size="sm"
-                  icon={FileCode}
+                  className="hover:opacity-70 cursor-pointer inline-flex items-center"
+                >
+                  <FileDown className="w-4 h-4" />
+                </span>
+                <span
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    exportAsHTML(e);
+                  }}
                   title="Als HTML exportieren"
-                  className="hover:opacity-70 !p-0 min-w-0"
-                />
+                  className="hover:opacity-70 cursor-pointer inline-flex items-center"
+                >
+                  <FileCode className="w-4 h-4" />
+                </span>
               </span>
               <ChevronDown
                 className="w-4 h-4 transition-transform duration-200 group-data-[state=open]:rotate-180"

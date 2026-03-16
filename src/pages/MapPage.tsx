@@ -9,6 +9,7 @@ import { useMapMarkers } from "../hooks/useMapMarkers";
 import MapContainer from "../components/map/MapContainer";
 import MapControls from "../components/map/MapControls";
 import MobileMapControls from "../components/map/MobileMapControls";
+import mapboxgl from "mapbox-gl";
 import type { Park } from "../types/park";
 
 const MapPage = () => {
@@ -76,8 +77,6 @@ const MapPage = () => {
             });
 
             // Add user location marker
-            const { loadMapbox } = await import("../utils/mapboxLoader");
-            const mapboxgl = await loadMapbox();
             new mapboxgl.Marker({
               color: "#FF0000",
             })

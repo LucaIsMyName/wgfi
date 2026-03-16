@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import type mapboxgl from "mapbox-gl";
-import { loadMapbox } from "../utils/mapboxLoader";
+import mapboxgl from "mapbox-gl";
 import STYLE from "../utils/config";
 
 interface UseMapboxMapReturn {
@@ -13,7 +12,6 @@ interface UseMapboxMapReturn {
 /**
  * Custom hook for initializing and managing Mapbox map instance
  * Handles map creation, style loading, theme changes, and cleanup
- * Dynamically loads mapbox-gl to reduce initial bundle size
  */
 export function useMapboxMap(effectiveTheme: 'light' | 'dark'): UseMapboxMapReturn {
   const mapContainerRef = useRef<HTMLDivElement>(null);
@@ -26,18 +24,23 @@ export function useMapboxMap(effectiveTheme: 'light' | 'dark'): UseMapboxMapRetu
     if (!mapContainerRef.current) return;
     
     // Prevent duplicate map creation (especially in StrictMode)
-    if (mapInstance.current) return;
+    if (mapInstance.current) {
+      console.log('Map already exists, skipping initialization');
+      return;
+    }
 
     let map: mapboxgl.Map | null = null;
+    let isCleanedUp = false;
+    let handleResize: (() => void) | null = null;
 
-    const initMap = async () => {
-      if (!mapContainerRef.current) return;
+    const initMap = () => {
+      if (!mapContainerRef.current || isCleanedUp) return;
       
       // Double-check to prevent race conditions
-      if (mapInstance.current) return;
-
-      // Dynamically load mapbox
-      const mapboxgl = await loadMapbox();
+      if (mapInstance.current) {
+        console.log('Map instance exists, aborting initialization');
+        return;
+      }
 
       const isDark = effectiveTheme === 'dark';
       map = new mapboxgl.Map({
@@ -47,7 +50,8 @@ export function useMapboxMap(effectiveTheme: 'light' | 'dark'): UseMapboxMapRetu
       zoom: 12,
       pitch: 60, // Tilt map for 3D view
       bearing: 0,
-      antialias: true // Smooth 3D rendering
+      antialias: true, // Smooth 3D rendering
+      preserveDrawingBuffer: true // Prevent WebGL context loss
     });
 
       map.on("load", () => {
@@ -69,31 +73,76 @@ export function useMapboxMap(effectiveTheme: 'light' | 'dark'): UseMapboxMapRetu
       map.addControl(new mapboxgl.NavigationControl(), "top-right");
 
       // Handle resize events to ensure map fills available space
-      const handleResize = () => {
-        map?.resize();
+      handleResize = () => {
+        if (map && map.getCanvas() && !isCleanedUp) {
+          try {
+            map.resize();
+          } catch (error) {
+            console.warn('Error during map resize:', error);
+          }
+        }
       };
 
       window.addEventListener('resize', handleResize);
       
       // Initial resize to ensure correct sizing with sidebar
       setTimeout(() => {
-        map?.resize();
+        if (map && map.getCanvas() && !isCleanedUp) {
+          try {
+            map.resize();
+          } catch (error) {
+            console.warn('Error during initial map resize:', error);
+          }
+        }
       }, 200);
 
       mapInstance.current = map;
-
-      return () => {
-        window.removeEventListener('resize', handleResize);
-        map?.remove();
-      };
     };
 
     initMap();
 
     return () => {
-      if (map) {
-        map.remove();
+      isCleanedUp = true;
+      console.log('Cleaning up map instance');
+      
+      // Remove event listener first before cleaning up map
+      if (handleResize) {
+        try {
+          window.removeEventListener('resize', handleResize);
+        } catch (error) {
+          console.warn('Error removing resize listener:', error);
+        }
+        handleResize = null;
       }
+      
+      // Clean up map instance safely
+      if (mapInstance.current) {
+        try {
+          // Check if map has a canvas before attempting removal
+          if (mapInstance.current.getCanvas()) {
+            mapInstance.current.remove();
+          }
+        } catch (error) {
+          console.warn('Error during map cleanup:', error);
+        } finally {
+          mapInstance.current = null;
+        }
+      }
+      
+      // Also clean up local map variable if it exists
+      if (map) {
+        try {
+          if (map.getCanvas()) {
+            map.remove();
+          }
+        } catch (error) {
+          console.warn('Error during local map cleanup:', error);
+        } finally {
+          map = null;
+        }
+      }
+      
+      setMapLoaded(false);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []); // Only initialize once on mount

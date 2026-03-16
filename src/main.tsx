@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './fonts.css' // Import custom fonts first
 import './index.css'
+import 'mapbox-gl/dist/mapbox-gl.css' // Import Mapbox GL CSS
 import App from './App.tsx'
 import { ThemeProvider } from './contexts/ThemeContext'
 

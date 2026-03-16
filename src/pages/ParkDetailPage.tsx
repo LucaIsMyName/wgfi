@@ -25,8 +25,7 @@ import { addVisitSync } from "../hooks/useVisitHistory";
 import { addRecentlyViewed } from "../utils/recentlyViewedManager";
 import ParkInfo from "../components/ParkInfo";
 import MetadataAccordion from "../components/MetadataAccordion";
-import type mapboxgl from "mapbox-gl";
-import { loadMapbox } from "../utils/mapboxLoader";
+import mapboxgl from "mapbox-gl";
 import STYLE from "../utils/config";
 import { useTheme } from "../contexts/ThemeContext";
 import { getAllDistrictsForPark, formatDistricts } from "../utils/parkUtils";
@@ -190,11 +189,8 @@ const ParkDetailPage: React.FC = () => {
       mapMarker.current = null;
     }
 
-    const initMap = async () => {
+    const initMap = () => {
       try {
-        // Dynamically load mapbox
-        const mapboxgl = await loadMapbox();
-
         // Create map with theme-aware style
         const isDark = effectiveTheme === "dark";
         const map = new mapboxgl.Map({
@@ -205,18 +201,22 @@ const ParkDetailPage: React.FC = () => {
           pitch: 60, // Tilt map for 3D view
           bearing: 0,
           antialias: true, // Smooth 3D rendering
+          preserveDrawingBuffer: true, // Prevent WebGL context loss
           attributionControl: false,
         });
 
         // Add 3D terrain when map loads
         map.on("load", () => {
-          map.addSource("mapbox-dem", {
-            type: "raster-dem",
-            url: "mapbox://mapbox.mapbox-terrain-dem-v1",
-            tileSize: 512,
-            maxzoom: 14,
-          });
-          map.setTerrain({ source: "mapbox-dem", exaggeration: 1.5 });
+          // Only add source if it doesn't already exist
+          if (!map.getSource("mapbox-dem")) {
+            map.addSource("mapbox-dem", {
+              type: "raster-dem",
+              url: "mapbox://mapbox.mapbox-terrain-dem-v1",
+              tileSize: 512,
+              maxzoom: 14,
+            });
+            map.setTerrain({ source: "mapbox-dem", exaggeration: 1.5 });
+          }
         });
 
         // Add navigation controls
@@ -322,7 +322,7 @@ const ParkDetailPage: React.FC = () => {
               mapMarker.current.remove();
 
               // Load mapbox dynamically
-              const mapboxgl = await loadMapbox();
+              // const mapboxgl = await loadMapbox();
 
               // Create new marker
               const wrapper = document.createElement("div");

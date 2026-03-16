@@ -114,7 +114,7 @@ const HomePage: React.FC = () => {
           contrast={effectiveTheme === "dark" ? 3 : 3}
           brightness={effectiveTheme === "dark" ? 0.9 : 1}
           hueShift={effectiveTheme === "dark" ? 20 : 80}
-          movementSpeed={"medium"}
+          movementSpeed={"none"}
           colorCount={12}
           scale={effectiveTheme === "dark" ? 0.25 : 0.25}
           ditherAlgorithm="ordered"

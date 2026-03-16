@@ -1,4 +1,3 @@
-import { useRef, useEffect } from "react";
 import mapboxgl from "mapbox-gl";
 
 // Set Mapbox access token
