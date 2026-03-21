@@ -29,13 +29,13 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     },
     ref,
   ) => {
-    const baseClasses = "inline-flex truncate items-center justify-center gap-2 font-serif font-medium transition-opacity duration-200";
+    const baseClasses = "inline-flex truncate items-center justify-center gap-2 font-serif font-medium transition-all duration-200 focus:outline-none focus:ring focus:ring-primary-green focus:ring-offset-2";
     
     const variantClasses = {
-      primary: "bg-primary-green text-soft-cream border border-primary-green",
-      secondary: "bg-light-sage text-deep-charcoal border border-primary-green",
-      ghost: "bg-transparent text-primary-green border border-transparent",
-      outline: "bg-transparent text-primary-green border border-primary-green",
+      primary: "bg-primary-green text-soft-cream border border-primary-green hover:bg-opacity-90 focus:ring-offset-soft-cream",
+      secondary: "bg-light-sage text-deep-charcoal border border-primary-green hover:bg-opacity-80 focus:ring-offset-soft-cream",
+      ghost: "bg-transparent text-primary-green border border-transparent hover:bg-primary-green/10 focus:ring-offset-transparent",
+      outline: "bg-transparent text-primary-green border border-primary-green hover:bg-primary-green/10 focus:ring-offset-soft-cream",
     };
 
     const sizeClasses = {
@@ -49,14 +49,29 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 
     const combinedClasses = `${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]} ${disabledClasses} ${widthClass} ${className}`;
 
+    const getLoadingText = () => {
+      if (typeof children === 'string') {
+        return loading ? `${children}...` : children;
+      }
+      return loading ? "Laden..." : children;
+    };
+
     const content = (
       <>
-        {Icon && iconPosition === "left" && (
-          <Icon className="w-4 h-4 flex-shrink-0" />
+        {loading && (
+          <div 
+            className="w-4 h-4 animate-spin rounded-full border-2 border-current border-t-transparent"
+            aria-hidden="true"
+          />
         )}
-        {loading ? "Loading..." : children}
-        {Icon && iconPosition === "right" && (
-          <Icon className="w-4 h-4 flex-shrink-0" />
+        {Icon && iconPosition === "left" && !loading && (
+          <Icon className="w-4 h-4 flex-shrink-0" aria-hidden="true" />
+        )}
+        <span className="truncate">
+          {getLoadingText()}
+        </span>
+        {Icon && iconPosition === "right" && !loading && (
+          <Icon className="w-4 h-4 flex-shrink-0" aria-hidden="true" />
         )}
       </>
     );
@@ -66,6 +81,9 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         <Link
           to={to}
           className={`${combinedClasses} no-underline ${disabled || loading ? "pointer-events-none" : ""}`}
+          aria-disabled={disabled || loading}
+          role="button"
+          tabIndex={disabled || loading ? -1 : 0}
         >
           {content}
         </Link>
@@ -77,6 +95,8 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         ref={ref}
         className={combinedClasses}
         disabled={disabled || loading}
+        aria-disabled={disabled || loading}
+        aria-busy={loading}
         {...props}
       >
         {content}

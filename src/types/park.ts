@@ -48,7 +48,7 @@ export interface Park {
    * Contains all original API fields for transparency and data quality verification.
    * Only available for parks fetched from the API (not manual-only parks).
    */
-  rawMetadata?: Record<string, any>;
+  rawMetadata?: Record<string, unknown>;
 }
 
 /**

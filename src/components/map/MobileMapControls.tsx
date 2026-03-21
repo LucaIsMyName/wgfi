@@ -23,8 +23,8 @@ export default function MobileMapControls({
   onGetUserLocation,
 }: MobileMapControlsProps) {
   return (
-    <div className="lg:hidden fixed bottom-0 left-0 right-0 z-10 p-3 bg-white shadow-lg">
-      <div className="flex justify-between items-center mb-2">
+    <div className="lg:hidden fixed bottom-0 left-0 right-0 z-10 p-3 bg-card-bg shadow-lg border-t border-primary-green/20 safe-area-inset-bottom">
+      <div className="flex justify-between items-center mb-3">
         <h3 className="font-mono text-xs text-primary-green">
           {filteredParksCount} PARKS {selectedDistrict && <span>IM {selectedDistrict}. BEZIRK</span>}
         </h3>
@@ -33,10 +33,12 @@ export default function MobileMapControls({
           variant="secondary"
           size="sm"
           icon={Navigation}
-          className="text-xs"
+          className="text-xs min-h-[32px] touch-manipulation"
           style={{
             backgroundColor: userLocation ? "var(--accent-gold)" : "var(--light-sage)",
-          }}>
+          }}
+          aria-label="Aktuellen Standort finden"
+        >
           STANDORT
         </Button>
       </div>
@@ -47,7 +49,9 @@ export default function MobileMapControls({
           variant={selectedDistrict === null ? "primary" : "secondary"}
           size="sm"
           icon={MapIcon}
-          className="text-xs">
+          className="text-xs min-h-[32px] touch-manipulation"
+          aria-label="Alle Parks anzeigen"
+        >
           ALLE PARKS
         </Button>
 
@@ -63,6 +67,8 @@ export default function MobileMapControls({
           ]}
           placeholder="Bezirk"
           fullWidth
+          className="min-h-[32px] touch-manipulation"
+          aria-label="Bezirk auswählen"
         />
       </div>
     </div>

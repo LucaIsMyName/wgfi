@@ -7,12 +7,10 @@ import ParksFilterSidebar from '../components/parks/ParksFilterSidebar';
 import MobileFiltersPanel from '../components/parks/MobileFiltersPanel';
 import ParksList from '../components/parks/ParksList';
 import { toggleFavorite } from '../utils/favoritesManager';
-import { toggleComparison } from '../utils/comparisonManager';
-import type { Park } from '../types/park';
 
 const ParksListPage = () => {
   const { isHighContrast } = useTheme();
-  const { parks, loading, error, availableAmenities, districts } = useParksData();
+  const { parks, availableAmenities, districts } = useParksData();
   
   const {
     searchTerm,
@@ -26,7 +24,6 @@ const ParksListPage = () => {
     updateSortOrder,
     updateSelectedAmenities,
     resetAllFilters,
-    requestLocationPermission,
     handleNearestSort,
     filteredAndSortedParks,
   } = useParksFilters(parks);
@@ -34,16 +31,9 @@ const ParksListPage = () => {
   // Local state to trigger re-renders without unmounting components
   const [, forceUpdate] = useState({});
 
-  // Using the favoritesManager utility for favorites functionality
+  // Handle favorite toggle
   const handleToggleFavorite = (parkId: string) => {
     toggleFavorite(parkId);
-    // Force re-render of ParkCard components without unmounting
-    forceUpdate({});
-  };
-
-  // Handle comparison toggle
-  const handleToggleCompare = (parkId: string) => {
-    // Force re-render of ParkCard components without unmounting
     forceUpdate({});
   };
 
@@ -93,7 +83,6 @@ const ParksListPage = () => {
             <ParksList
               parks={filteredAndSortedParks}
               onToggleFavorite={handleToggleFavorite}
-              onToggleCompare={handleToggleCompare}
               isHighContrast={isHighContrast}
             />
           </div>

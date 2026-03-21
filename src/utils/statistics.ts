@@ -9,7 +9,7 @@ export function getParkDistrictAreaDistribution(park: Park): Map<number, number>
   const distribution = new Map<number, number>();
   
   // Check for manual area split data (stored in park metadata)
-  const areaSplit = (park as any).districtAreaSplit as Record<number, number> | undefined;
+  const areaSplit = park.districtAreaSplit;
   
   if (areaSplit && Object.keys(areaSplit).length > 0) {
     // Calculate total split percentage

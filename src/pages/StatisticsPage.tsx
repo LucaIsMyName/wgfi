@@ -186,7 +186,7 @@ const StatisticsPage = () => {
               INFO
             </p>
             <p className="font-serif italic text-lg  text-deep-charcoal">
-              Beachten Sie dass die Daten der Stadt Wien nicht alle Grünflächen ausweisen und eine vollständige Statistik nicht möglich ist. Bundesforste und Bundesgärten werden manuell nach Möglichkeit hinzugefügt. Flächen von Grünflächen können derzeit nur einem Bezirk zugerechnet werden, was nicht immer korrekt ist.
+              Beachte, dass die Daten der Stadt Wien nicht alle Grünflächen ausweisen und eine vollständige Statistik nicht möglich ist. Bundesforste und Bundesgärten werden manuell nach Möglichkeit hinzugefügt.
             </p>
           </div>
         </div>

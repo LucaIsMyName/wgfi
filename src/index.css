@@ -27,7 +27,7 @@
 
     /* Typography */
     --font-serif: "Instrument Serif", serif;
-    --font-mono: "Geist Mono", monospace;
+    --font-mono: "JetBrains Mono", monospace;
     --font-sans: "TASA Orbiter", sans-serif;
   }
 
@@ -216,7 +216,7 @@ body {
 }
 
 .font-mono {
-  font-family: var(--font-mono, "Geist Mono", monospace);
+  font-family: var(--font-mono, "JetBrains Mono", monospace);
 }
 
 .font-serif {
@@ -456,4 +456,8 @@ body {
 
 .animate-accordion-up {
   animation: accordion-up 0.2s ease-out;
+}
+
+*:focus {
+  outline: 2px dotted var(--deep-charcoal);
 }

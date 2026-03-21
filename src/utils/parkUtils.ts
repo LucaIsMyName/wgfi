@@ -8,7 +8,7 @@ export function getAllDistrictsForPark(park: Park): number[] {
   const districts = new Set<number>([park.district]);
   
   // Check for district area splits
-  const areaSplit = (park as any).districtAreaSplit as Record<number, number> | undefined;
+  const areaSplit = park.districtAreaSplit;
   if (areaSplit) {
     Object.keys(areaSplit).forEach(districtStr => {
       const district = parseInt(districtStr, 10);

@@ -16,7 +16,7 @@ const HomePage: React.FC = () => {
   const [isLoadingNearby, setIsLoadingNearby] = useState(false);
   const [isLoadingRandom, setIsLoadingRandom] = useState(false);
   const navigate = useNavigate();
-  const { effectiveTheme, isHighContrast } = useTheme();
+  const { effectiveTheme } = useTheme();
 
   const { parks } = useParksData();
 
@@ -129,11 +129,13 @@ const HomePage: React.FC = () => {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="flex flex-col space-y-8 xl:ml-32">
+        <div className="flex flex-col space-y-6 sm:space-y-8 xl:ml-32 max-w-4xl">
           {/* Headline */}
           <div>
             <h1
               className={`${STYLE.pageTitle(true)} italic leading-tight text-primary-green`}
+              role="heading"
+              aria-level={1}
             >
               Wiener
               <br /> Grünflächen
@@ -146,21 +148,37 @@ const HomePage: React.FC = () => {
 
           {/* Subtitle */}
           <div className="max-w-2xl">
-            <p className="font-serif text-lg sm:text-2xl leading-tight text-balance text-primary-green font-normal">
-              Eine Index aller Parks & Grünflächen der Stadt Wien als{" "}
-              <Link to="/index" className="underline italic">
+            <p className="font-serif text-lg sm:text-2xl leading-tight text-balance text-primary-green font-normal" role="doc-intro">
+              Ein Index aller Parks & Grünflächen der Stadt Wien als{" "}
+              <Link 
+                to="/index" 
+                className="font-mono text-[0.9em] underline hover:text-primary-green/80 transition-colors focus:outline-none focus:ring focus:ring-primary-green focus:ring-offset-2 focus:ring-offset-soft-cream rounded"
+                aria-label="Zur Liste aller Parks"
+              >
                 Liste
               </Link>{" "}
               oder{" "}
-              <Link to="/map" className="underline italic">
+              <Link 
+                to="/map" 
+                className="underline font-mono text-[0.9em] underline hover:text-primary-green/80 transition-colors focus:outline-none focus:ring focus:ring-primary-green focus:ring-offset-2 focus:ring-offset-soft-cream rounded"
+                aria-label="Zur interaktiven Karte"
+              >
                 Karte
               </Link>
               . Speichere Parks als{" "}
-              <Link to="/favorites" className="underline italic">
+              <Link 
+                to="/favorites" 
+                className="underline font-mono text-[0.9em] underline hover:text-primary-green/80 transition-colors focus:outline-none focus:ring focus:ring-primary-green focus:ring-offset-2 focus:ring-offset-soft-cream rounded"
+                aria-label="Zu deinen Favoriten"
+              >
                 Favoriten
               </Link>{" "}
               oder schau dir die{" "}
-              <Link to="statistics" className="underline italic">
+              <Link 
+                to="statistics" 
+                className="underline font-mono text-[0.9em] underline hover:text-primary-green/80 transition-colors focus:outline-none focus:ring focus:ring-primary-green focus:ring-offset-2 focus:ring-offset-soft-cream rounded"
+                aria-label="Zur Statistik-Seite"
+              >
                 Zahlen
               </Link>{" "}
               an.
@@ -168,15 +186,24 @@ const HomePage: React.FC = () => {
           </div>
 
           {/* Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 pt-0">
-            <Button variant="primary" size="md" loading={isLoadingNearby}>
-              <Link to="/index">Index</Link>
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-0" role="group" aria-label="Hauptnavigation">
+            <Button to="/index"
+
+              variant="primary" 
+              size="md" 
+              loading={isLoadingNearby}
+              aria-label="Zur Liste aller Parks"
+              className="touch-manipulation min-h-[44px]"
+            >
+              Index
             </Button>
             <Button
               to="/map"
               variant="primary"
               size="md"
               loading={isLoadingNearby}
+              aria-label="Zur interaktiven Karte"
+              className="touch-manipulation min-h-[44px]"
             >
               Karte
             </Button>
@@ -186,7 +213,9 @@ const HomePage: React.FC = () => {
               variant="secondary"
               size="md"
               loading={isLoadingNearby}
-              className="bg-card-bg text-primary-green italic"
+              className="bg-card-bg text-primary-green italic touch-manipulation min-h-[44px]"
+              aria-label="Nächstgelegene Parks finden"
+              aria-describedby="location-description"
             >
               {isLoadingNearby ? "Suche..." : "In der nähe"}
             </Button>
@@ -196,7 +225,8 @@ const HomePage: React.FC = () => {
               variant="secondary"
               size="md"
               loading={isLoadingRandom}
-              className="bg-card-bg text-primary-green italic"
+              className="bg-card-bg text-primary-green italic touch-manipulation min-h-[44px]"
+              aria-label="Zufälligen Park auswählen"
             >
               {isLoadingRandom ? "Lade..." : "Zufallspark"}
             </Button>

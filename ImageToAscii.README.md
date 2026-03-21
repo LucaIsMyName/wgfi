@@ -1,6 +1,6 @@
 # ImageToAscii Component
 
-A powerful React component that transforms images into either ASCII art or dithered effects in real-time with extensive customization options.
+A React component that transforms images into either ASCII art or dithered effects in real-time with extensive customization options.
 
 ## Overview
 

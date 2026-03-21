@@ -20,7 +20,7 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
   const [value, setValue] = useAccordionState([]);
 
   // Smart formatting for different value types
-  const formatValue = (value: any): string => {
+  const formatValue = (value: unknown): string => {
     if (value === null || value === undefined || value === "") {
       return "—";
     }
@@ -40,7 +40,7 @@ const MetadataAccordion = ({ park }: MetadataAccordionProps) => {
 
   // Flatten park object for table display
   const getAllFields = () => {
-    const fields: Array<{ key: string; value: any }> = [];
+    const fields: Array<{ key: string; value: unknown }> = [];
     const excludeKeys = ["isFavorite"];
 
     Object.entries(park).forEach(([key, value]) => {

@@ -221,9 +221,11 @@ export function useParksFilters(parks: Park[]): UseParksFiltersReturn {
         return a.district - b.district; // District number ascending
       case "nearest":
         if (!userLocation) return 0;
-        const distanceA = calculateDistance(userLocation.lat, userLocation.lng, a.coordinates.lat, a.coordinates.lng);
-        const distanceB = calculateDistance(userLocation.lat, userLocation.lng, b.coordinates.lat, b.coordinates.lng);
-        return distanceA - distanceB; // Nearest first
+        {
+          const distanceA = calculateDistance(userLocation.lat, userLocation.lng, a.coordinates.lat, a.coordinates.lng);
+          const distanceB = calculateDistance(userLocation.lat, userLocation.lng, b.coordinates.lat, b.coordinates.lng);
+          return distanceA - distanceB; // Nearest first
+        }
       default:
         return 0; // No sorting
     }

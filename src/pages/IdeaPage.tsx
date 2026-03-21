@@ -29,7 +29,9 @@ const IdeaPage: React.FC = () => {
 
       {/* Header */}
       <div className="w-full">
-        <h1 className={`${STYLE.pageTitle(false)} mb-4 text-primary-green font-normal italic`}>
+        <h1
+          className={`${STYLE.pageTitle(false)} mb-4 text-primary-green font-normal italic`}
+        >
           Die Idee
         </h1>
       </div>
@@ -39,9 +41,7 @@ const IdeaPage: React.FC = () => {
         <div className="p-4 border-2 flex gap-3 bg-card-bg border-accent-gold">
           <AlertTriangle className="w-5.5 h-5.5 flex-shrink-0 mt-0.5 text-accent-gold" />
           <div className="font-serif space-y-2 text-deep-charcoal">
-            <p className="font-bold text-xl text-accent-gold">
-              BETA Version
-            </p>
+            <p className="font-bold text-xl text-accent-gold">BETA Version</p>
             <p className="text-base leading-relaxed italic">
               Diese Website befindet sich in der Beta-Phase. Funktionen und
               Features können sich jederzeit ändern. Nicht immer sind alle
@@ -257,28 +257,10 @@ const IdeaPage: React.FC = () => {
                 href="https://github.com/LucaIsMyName/wgfi"
                 target="_blank"
               >
-                Github
+                github.com/LucaIsMyName/wgfi
               </a>
               .<br />
               <br />
-            </p>
-            <p>
-              Die Parks werden Lokal im Browser für 7 Tage gespeichert, um die
-              Ladezeit zu reduzieren und die Performance zu verbessern.
-              <br />
-              Parks zum letzen mal geladen:{" "}
-              <span className="font-mono text-[0.78em]">
-                {new Date(
-                  Number(localStorage.getItem("wgfi:parks-timestamp"))
-                ).toLocaleString()}
-              </span>
-              <br />
-              <button
-                className="px-2 py-1 border border-primary-green rounded mt-4"
-                onClick={() => localStorage.removeItem("wbi-parks-data")}
-              >
-                Alle Park Daten löschen
-              </button>
             </p>
           </section>
         </div>

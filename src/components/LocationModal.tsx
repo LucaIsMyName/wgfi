@@ -50,7 +50,7 @@ const LocationModal: React.FC<LocationModalProps> = ({
           Standortzugriff erforderlich
         </h3>
         <p className="mb-6 font-serif italic text-deep-charcoal">
-          Um die nächstgelegenen Parks zu finden, benötigen wir Zugriff auf Ihren Standort.
+          Um die nächstgelegenen Parks zu finden, benötigen wir Zugriff auf deinen Standort.
         </p>
         <div className="flex justify-end space-x-3">
           <Button

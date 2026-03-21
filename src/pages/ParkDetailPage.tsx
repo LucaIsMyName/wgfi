@@ -10,17 +10,12 @@ import {
   Ruler,
   AlertTriangle,
   ChevronLeft,
-  TreePine,
   Heart,
   GitCompare,
 } from "lucide-react";
 import { getAmenityIcon } from "../utils/amenityIcons";
 import { isFavorite, toggleFavorite } from "../utils/favoritesManager";
-import {
-  isInComparison,
-  toggleComparison,
-  getComparisonCount,
-} from "../utils/comparisonManager";
+import { isInComparison, toggleComparison } from "../utils/comparisonManager";
 import { addVisitSync } from "../hooks/useVisitHistory";
 import { addRecentlyViewed } from "../utils/recentlyViewedManager";
 import ParkInfo from "../components/ParkInfo";
@@ -54,15 +49,16 @@ const ParkDetailPage: React.FC = () => {
     }
     // Fallback to Vienna center if park coordinates not available yet
     return [16.3738, 48.2082];
-  }, [park?.coordinates?.lng, park?.coordinates?.lat]);
-  
-  const { mapContainerRef, mapInstance, mapLoaded, styleLoadedCounter } = useMapboxMap({
-    effectiveTheme,
-    center: mapCenter,
-    zoom: 15.5,
-    pitch: 60
-  });
-  const mapMarker = useRef<any>(null);
+  }, [park?.coordinates]);
+
+  const { mapContainerRef, mapInstance, mapLoaded, styleLoadedCounter } =
+    useMapboxMap({
+      effectiveTheme,
+      center: mapCenter,
+      zoom: 15.5,
+      pitch: 60,
+    });
+  const mapMarker = useRef<mapboxgl.Marker | null>(null);
   const [mapError, setMapError] = useState<string | null>(null);
   const [mapReady, setMapReady] = useState(false);
 
@@ -74,24 +70,27 @@ const ParkDetailPage: React.FC = () => {
   // Update map center when park coordinates become available
   useEffect(() => {
     if (!mapInstance.current || !mapLoaded || !park?.coordinates) return;
-    
+
     const currentCenter = mapInstance.current.getCenter();
-    const targetCenter: [number, number] = [park.coordinates.lng, park.coordinates.lat];
-    
+    const targetCenter: [number, number] = [
+      park.coordinates.lng,
+      park.coordinates.lat,
+    ];
+
     // Only flyTo if we're not already at the target location
-    const centerChanged = 
-      Math.abs(currentCenter.lng - targetCenter[0]) > 0.0001 || 
+    const centerChanged =
+      Math.abs(currentCenter.lng - targetCenter[0]) > 0.0001 ||
       Math.abs(currentCenter.lat - targetCenter[1]) > 0.0001;
-    
+
     if (centerChanged) {
       mapInstance.current.flyTo({
         center: targetCenter,
         zoom: 15.5,
         pitch: 60,
-        duration: 1000
+        duration: 1000,
       });
     }
-  }, [park?.coordinates?.lng, park?.coordinates?.lat, mapLoaded]);
+  }, [park?.coordinates, mapLoaded, mapInstance]);
 
   // Check if park is in favorites and comparison when it loads
   useEffect(() => {
@@ -111,8 +110,8 @@ const ParkDetailPage: React.FC = () => {
             lng: position.coords.longitude,
           });
         },
-        (error) => {
-          // console.log("Error getting user location:", error);
+        (_error) => {
+          // User location denied or unavailable
         },
       );
     }
@@ -230,36 +229,39 @@ const ParkDetailPage: React.FC = () => {
     const initMarker = () => {
       try {
         // Import mapboxgl dynamically for marker creation
-        import('mapbox-gl').then((mapboxgl) => {
-          if (!mapInstance.current || !park) return;
+        import("mapbox-gl")
+          .then((mapboxgl) => {
+            if (!mapInstance.current || !park) return;
 
-          // Create marker wrapper and inner element
-          const wrapper = document.createElement("div");
-          wrapper.className = "marker-wrapper";
-          wrapper.style.position = "absolute";
-          wrapper.style.transform = "translate(-50%, -50%)";
+            // Create marker wrapper and inner element
+            const wrapper = document.createElement("div");
+            wrapper.className = "marker-wrapper";
+            wrapper.style.position = "absolute";
+            wrapper.style.transform = "translate(-50%, -50%)";
 
-          const el = document.createElement("div");
-          el.className = "custom-marker";
-          el.style.width = "30px";
-          el.style.height = "30px";
-          el.style.borderRadius = "50%";
-          el.style.backgroundColor = "var(--primary-green)";
-          el.style.display = "flex";
-          el.style.justifyContent = "center";
-          el.style.alignItems = "center";
-          el.style.color = "var(--soft-cream)";
-          el.style.boxShadow = "0 2px 6px rgba(0,0,0,0.3)";
-          el.style.cursor = "pointer";
-          el.style.transition = "all 0.2s";
-          el.innerHTML =
-            '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>';
+            const el = document.createElement("div");
+            el.className = "custom-marker";
+            el.style.width = "30px";
+            el.style.height = "30px";
+            el.style.borderRadius = "50%";
+            el.style.backgroundColor = "var(--primary-green)";
+            el.style.display = "flex";
+            el.style.justifyContent = "center";
+            el.style.alignItems = "center";
+            el.style.color = "var(--soft-cream)";
+            el.style.boxShadow = "0 2px 6px rgba(0,0,0,0.3)";
+            el.style.cursor = "pointer";
+            el.style.transition = "all 0.2s";
+            el.innerHTML =
+              '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>';
 
-          wrapper.appendChild(el);
+            wrapper.appendChild(el);
 
-          // Create popup
-          const popup = new mapboxgl.default.Popup({ offset: 25, closeButton: false })
-            .setHTML(`
+            // Create popup
+            const popup = new mapboxgl.default.Popup({
+              offset: 25,
+              closeButton: false,
+            }).setHTML(`
             <div style=" padding: 12px; border-radius: 8px; text-align:center">
               <h3 style="font-family: ' Instrument Serif', serif; font-style:italic; font-weight: 600; margin: 0 0 8px 0; color: var(--primary-green); font-size: 24px;">${
                 park.name
@@ -270,30 +272,31 @@ const ParkDetailPage: React.FC = () => {
             </div>
           `);
 
-          // Add marker using the wrapper
-          const marker = new mapboxgl.default.Marker(wrapper)
-            .setLngLat([park.coordinates.lng, park.coordinates.lat])
-            .setPopup(popup)
-            .addTo(mapInstance.current);
+            // Add marker using the wrapper
+            const marker = new mapboxgl.default.Marker(wrapper)
+              .setLngLat([park.coordinates.lng, park.coordinates.lat])
+              .setPopup(popup)
+              .addTo(mapInstance.current);
 
-          // Add hover effect
-          el.addEventListener("mouseenter", () => {
-            el.style.transform = "scale(1.1)";
-            el.style.boxShadow = "0 4px 8px rgba(0,0,0,0.4)";
+            // Add hover effect
+            el.addEventListener("mouseenter", () => {
+              el.style.transform = "scale(1.1)";
+              el.style.boxShadow = "0 4px 8px rgba(0,0,0,0.4)";
+            });
+            el.addEventListener("mouseleave", () => {
+              el.style.transform = "scale(1)";
+              el.style.boxShadow = "0 2px 6px rgba(0,0,0,0.3)";
+            });
+
+            // Store reference
+            mapMarker.current = marker;
+
+            // Map is already centered by the hook, no need to flyTo again
+          })
+          .catch((error) => {
+            console.error("Error loading mapbox:", error);
+            setMapError("Karte konnte nicht geladen werden");
           });
-          el.addEventListener("mouseleave", () => {
-            el.style.transform = "scale(1)";
-            el.style.boxShadow = "0 2px 6px rgba(0,0,0,0.3)";
-          });
-
-          // Store reference
-          mapMarker.current = marker;
-
-          // Map is already centered by the hook, no need to flyTo again
-        }).catch((error) => {
-          console.error("Error loading mapbox:", error);
-          setMapError("Karte konnte nicht geladen werden");
-        });
       } catch (error) {
         console.error("Error initializing marker:", error);
         setMapError("Marker konnte nicht geladen werden");
@@ -304,7 +307,7 @@ const ParkDetailPage: React.FC = () => {
     if (mapInstance.current.isStyleLoaded()) {
       initMarker();
     } else {
-      mapInstance.current.once('load', initMarker);
+      mapInstance.current.once("load", initMarker);
     }
 
     // Cleanup function
@@ -326,9 +329,9 @@ const ParkDetailPage: React.FC = () => {
         mapMarker.current.remove();
         mapMarker.current = null;
       }
-      
+
       // Re-initialize marker with new style
-      import('mapbox-gl').then((mapboxgl) => {
+      import("mapbox-gl").then((mapboxgl) => {
         if (!mapInstance.current || !park) return;
 
         // Create marker wrapper and inner element
@@ -356,8 +359,10 @@ const ParkDetailPage: React.FC = () => {
         wrapper.appendChild(el);
 
         // Create popup
-        const popup = new mapboxgl.default.Popup({ offset: 25, closeButton: false })
-          .setHTML(`
+        const popup = new mapboxgl.default.Popup({
+          offset: 25,
+          closeButton: false,
+        }).setHTML(`
             <div style=" padding: 12px; border-radius: 8px; text-align:center">
               <h3 style="font-family: ' Instrument Serif', serif; font-style:italic; font-weight: 600; margin: 0 0 8px 0; color: var(--primary-green); font-size: 24px;">${
                 park.name
@@ -577,7 +582,7 @@ const ParkDetailPage: React.FC = () => {
                 const newStatus = toggleFavorite(parkData.id);
                 setIsFavorited(newStatus);
               }}
-              className="flex-1 px-4 py-3 font-mono text-xs flex items-center justify-center gap-2"
+              className="flex-1 h-10 w-10 max-w-10 font-mono text-xs flex items-center justify-center gap-2"
               style={{
                 backgroundColor: isFavorited
                   ? "var(--accent-gold)"
@@ -592,7 +597,6 @@ const ParkDetailPage: React.FC = () => {
                 className="w-4 h-4"
                 fill={isFavorited ? "currentColor" : "none"}
               />
-              {isFavorited ? "Favorit" : "Favorit"}
             </button>
             <button
               onClick={() => {
@@ -601,19 +605,18 @@ const ParkDetailPage: React.FC = () => {
                   setIsInCompare(!isInCompare);
                 }
               }}
-              className="flex-1 px-4 py-3 font-mono text-xs flex items-center justify-center gap-2"
+              className="flex-1 h-10 w-10 max-w-10 font-mono text-xs flex items-center justify-center gap-2 border"
               style={{
                 backgroundColor: isInCompare
-                  ? "var(--primary-green)"
-                  : "var(--card-bg)",
+                  ? "var(--deep-charcoal)"
+                  : "var(--light-sage)",
                 color: isInCompare
                   ? "var(--soft-cream)"
-                  : "var(--primary-green)",
-                borderRadius: "6px",
+                  : "var(--deep-charcoal)",
+                
               }}
             >
               <GitCompare className="w-4 h-4" />
-              {isInCompare ? "Vergleich" : "Vergleichen"}
             </button>
           </div>
         </div>
@@ -704,7 +707,7 @@ const ParkDetailPage: React.FC = () => {
               >
                 Lage & Karte
               </h2>
-              
+
               {/* Map Container with Loading and Error States */}
               <div
                 style={{
@@ -717,16 +720,14 @@ const ParkDetailPage: React.FC = () => {
               >
                 {/* Loading Skeleton */}
                 {!mapLoaded && (
-                  <div 
+                  <div
                     className="absolute inset-0 flex items-center justify-center"
                     style={{ backgroundColor: "var(--light-sage)" }}
                   >
                     <div className="text-center">
                       <div className="animate-pulse">
-                        <div 
-                          className="sr-only w-12 h-12 mx-auto mb-3 rounded-full border-4 border-primary-green border-t-transparent"
-                        ></div>
-                        <p 
+                        <div className="sr-only w-12 h-12 mx-auto mb-3 rounded-full border-4 border-primary-green border-t-transparent"></div>
+                        <p
                           className="font-mono text-sm"
                           style={{ color: "var(--primary-green)" }}
                         >
@@ -739,16 +740,16 @@ const ParkDetailPage: React.FC = () => {
 
                 {/* Error State */}
                 {mapError && (
-                  <div 
+                  <div
                     className="absolute inset-0 flex items-center justify-center"
                     style={{ backgroundColor: "var(--light-sage)" }}
                   >
                     <div className="text-center p-4">
-                      <AlertTriangle 
+                      <AlertTriangle
                         className="w-12 h-12 mx-auto mb-3"
                         style={{ color: "var(--accent-gold)" }}
                       />
-                      <p 
+                      <p
                         className="font-serif text-lg mb-3"
                         style={{ color: "var(--deep-charcoal)" }}
                       >
@@ -779,7 +780,7 @@ const ParkDetailPage: React.FC = () => {
                   }}
                 />
               </div>
-              
+
               <p
                 className="font-mono text-xs mt-3 mb-8 flex items-center justify-start gap-2"
                 style={{ color: "var(--deep-charcoal)" }}

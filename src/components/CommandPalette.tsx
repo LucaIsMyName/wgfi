@@ -1,4 +1,4 @@
-import { useEffect, useState, useMemo } from 'react';
+import { useEffect, useState, useMemo, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Command } from 'cmdk';
 import { useParksData } from '../hooks/useParksData';
@@ -32,6 +32,8 @@ export function CommandPalette() {
   const navigate = useNavigate();
   const { parks } = useParksData();
   const { mode, setMode, effectiveTheme } = useTheme();
+  const commandRef = useRef<HTMLDivElement>(null);
+  const previousActiveElement = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
     const down = (e: KeyboardEvent) => {
@@ -44,6 +46,67 @@ export function CommandPalette() {
     document.addEventListener('keydown', down);
     return () => document.removeEventListener('keydown', down);
   }, []);
+
+  // Focus trap implementation
+  useEffect(() => {
+    if (open) {
+      // Store the previously focused element
+      previousActiveElement.current = document.activeElement as HTMLElement;
+      
+      // Focus the input field when command palette opens
+      const inputElement = commandRef.current?.querySelector('input') as HTMLInputElement;
+      if (inputElement) {
+        setTimeout(() => inputElement.focus(), 0);
+      }
+      
+      // Prevent focus from leaving the command palette and handle escape
+      const handleKeyDown = (e: KeyboardEvent) => {
+        if (e.key === 'Escape') {
+          setOpen(false);
+          return;
+        }
+        
+        if (e.key === 'Tab') {
+          const container = commandRef.current;
+          if (!container) return;
+          
+          const focusableElements = container.querySelectorAll(
+            'input, button, [href], [tabindex]:not([tabindex="-1"]), [cmdk-item], [role="option"]'
+          );
+          
+          if (focusableElements.length === 0) return;
+          
+          const firstElement = focusableElements[0] as HTMLElement;
+          const lastElement = focusableElements[focusableElements.length - 1] as HTMLElement;
+          
+          if (e.shiftKey) {
+            // Shift + Tab (going backwards)
+            if (document.activeElement === firstElement) {
+              e.preventDefault();
+              lastElement.focus();
+            }
+          } else {
+            // Tab (going forwards)
+            if (document.activeElement === lastElement) {
+              e.preventDefault();
+              firstElement.focus();
+            }
+          }
+        }
+      };
+      
+      document.addEventListener('keydown', handleKeyDown);
+      
+      return () => {
+        document.removeEventListener('keydown', handleKeyDown);
+      };
+    } else {
+      // Restore focus to the previously focused element when closing
+      if (previousActiveElement.current && previousActiveElement.current.focus) {
+        setTimeout(() => previousActiveElement.current?.focus(), 0);
+      }
+    }
+  }, [open]);
 
   useEffect(() => {
     if (!open) {
@@ -112,8 +175,12 @@ export function CommandPalette() {
         backdropFilter: 'blur(4px)',
       }}
       onClick={() => setOpen(false)}
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="cmdk-label"
     >
       <div
+        ref={commandRef}
         style={{
           position: 'fixed',
           top: '20%',
@@ -151,6 +218,8 @@ export function CommandPalette() {
               value={search}
               onValueChange={setSearch}
               placeholder="Suche Parks, Seiten oder Aktionen..."
+              id="cmdk-input"
+              aria-label="Suche Parks, Seiten oder Aktionen"
               style={{
                 width: '100%',
                 border: 'none',
@@ -170,6 +239,7 @@ export function CommandPalette() {
                 opacity: 0.6,
                 flexShrink: 0,
               }}
+              aria-hidden="true"
             >
               ESC
             </kbd>
