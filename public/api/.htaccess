@@ -1,0 +1,42 @@
+# API URL Rewriting
+RewriteEngine On
+RewriteBase /api/
+
+# Enable CORS
+Header always set Access-Control-Allow-Origin "*"
+Header always set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+Header always set Access-Control-Allow-Headers "Content-Type"
+
+# Handle preflight requests
+RewriteCond %{REQUEST_METHOD} OPTIONS
+RewriteRule ^(.*)$ index.php [QSA,L]
+
+# Parks list endpoint
+RewriteRule ^parks/?$ parks.php [L,QSA]
+
+# Single park endpoint
+RewriteRule ^park/([^/]+)/?$ park.php?id=$1 [L,QSA]
+
+# API index (fallback)
+RewriteRule ^$ index.php [L,QSA]
+
+# Security headers
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options nosniff
+    Header always set X-Frame-Options DENY
+    Header always set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# Optional: Rate limiting (requires mod_security or mod_ratelimit)
+# Uncomment if you have these modules available
+# <IfModule mod_security.c>
+#     SecRuleEngine On
+#     SecRule REQUEST_URI "@beginsWith /api/" "phase:1,log,allow"
+# </IfModule>
+
+# <IfModule mod_ratelimit.c>
+#     # Limit to 100 requests per minute per IP
+#     RLimitCPU 60
+#     RLimitMEM 104857600
+# </IfModule>
+?>

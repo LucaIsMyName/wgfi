@@ -48,13 +48,51 @@ The app uses Vienna's official open government data:
 
 The app is configured for static hosting with SPA routing support:
 
-1. Build the project:
+1. Build project:
    ```bash
    npm run build
    ```
 
 2. The `dist/` folder contains the built application
 3. The included `.htaccess` file handles client-side routing for Apache servers
+
+## 🌐 REST API
+
+### Public PHP API
+
+A complete REST API is available at `/public/api/` for external access to Vienna parks data:
+
+**Features**:
+- **Pagination**: Default 50 items per page, maximum 200
+- **Filtering**: By district, area range, name search, field selection
+- **Caching**: 1-hour file-based caching for performance
+- **No Authentication**: Public access for all users
+- **CORS Support**: Configured for cross-origin requests
+
+**Key Endpoints**:
+- `GET /api/` - API documentation and information
+- `GET /api/parks` - List all parks with filtering and pagination
+- `GET /api/park/{id|slug}` - Get single park by ID or slug
+
+**Example Usage**:
+```bash
+# Get parks from districts 1, 2, 3
+curl "https://yourdomain.com/api/parks?district=1,2,3&limit=10"
+
+# Search for parks with "garten" in name
+curl "https://yourdomain.com/api/parks?name=garten&sort=name"
+
+# Get specific park
+curl "https://yourdomain.com/api/park/3538666"
+```
+
+**Setup Instructions**:
+1. Deploy `/public/api/` folder to your PHP web server
+2. Ensure URL rewriting is enabled (`.htaccess` included)
+3. Configure web server for PHP 8.0+
+4. Set write permissions for `cache/` directory
+
+See `/public/api/README.md` for complete API documentation.
 
 ## 🔧 Development
 
