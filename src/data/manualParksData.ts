@@ -409,6 +409,18 @@ export const manualParksDB: Record<string, ManualParkData> = {
       },
     ],
   },
+  "volkspark-laaerberg": {
+    description:
+      "Der Volkspark-Laaerberg ist ein romantischer Landschaftspark am Südhang des Laaerberges. Er ist ein Bestandteil des Wiener Grüngürtels, gemeinsam mit dem Kurpark Oberlaa, dem Laaer Wald und dem Wienerberg. In unmittelbarer Nachbarschaft des Volksparks befinden sich das Laaerbergbad und die Per-Albin-Hansson-Siedlung.",
+    descriptionLicense: "Stadt Wien",
+    links: [
+      {
+        title: "Stadt Wien",
+        url: "https://www.wien.gv.at/freizeit/laaerberg-volkspark",
+        type: "official",
+      },
+    ],
+  },
   "pa-loewygrube": {
     description:
       "Die Parkanlage Löwygrube ist eine ca. 164.000 m² naturnahe Parkanlage im Bezirksteil Oberlaa. Die Parkanlage liegt zwischen Bitterlichstraße, An der Ostbahn, Donabaumgasse und Löwyweg. Sie wird extensiv gepflegt und ist fast vollständig als Hundezone gewidmet. Neben weitläufigen Wiesenflächen und einem alten Baumbestand verfügt sie über einen Kinderspielplatz, Fußballplatz, öffentliche Toilette, Sitzmöglichkeiten und einen Trinkbrunnen. Die Löwygrube gehört mit dem Kurpark Oberlaa, dem Volkspark Laaerberg, dem Böhmischen Prater und dem Laaerwald zum Großerholungsraum Laaerberg.",

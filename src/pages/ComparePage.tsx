@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { useParksData } from "../hooks/useParksData";
 import {
   getComparisonParks,
   removeFromComparison,
   clearComparison,
+  setComparisonParkIds,
 } from "../utils/comparisonManager";
 import { slugifyParkName } from "../data/manualParksData";
 import { Building, Ruler, X, Trash2, ArrowLeft } from "lucide-react";
@@ -14,18 +15,38 @@ import STYLE from "../utils/config";
 import type { Park } from "../types/park";
 import { Button } from "../components/ui/Button";
 
+function resolveParkQueryParam(param: string, parkList: Park[]): string | null {
+  if (parkList.some((p) => p.id === param)) return param;
+  const bySlug = parkList.find((p) => slugifyParkName(p.name) === param);
+  return bySlug?.id ?? null;
+}
+
 const ComparePage = () => {
   const { parks } = useParksData();
   const navigate = useNavigate();
+  const [searchParams, setSearchParams] = useSearchParams();
   const [comparisonParks, setComparisonParks] = useState<Park[]>([]);
 
   useEffect(() => {
+    if (parks.length === 0) return;
+
+    const fromUrl = searchParams.getAll("park");
+    if (fromUrl.length > 0) {
+      const ids = fromUrl
+        .map((q) => resolveParkQueryParam(q, parks))
+        .filter((id): id is string => id !== null);
+      if (ids.length > 0) {
+        setComparisonParkIds(ids);
+        setSearchParams({}, { replace: true });
+      }
+    }
+
     const comparisonIds = getComparisonParks();
     const parksToCompare = comparisonIds
       .map((id) => parks.find((p) => p.id === id))
       .filter((p): p is Park => p !== undefined);
     setComparisonParks(parksToCompare);
-  }, [parks]);
+  }, [parks, searchParams, setSearchParams]);
 
   const handleRemove = (parkId: string) => {
     removeFromComparison(parkId);
@@ -48,7 +69,7 @@ const ComparePage = () => {
           <title>Wiener Grünflächen Index | Parkvergleich</title>
           <meta
             name="description"
-            content="Vergleichen Sie Parks in Wien nebeneinander"
+            content="Vergleiche Parks in Wien nebeneinander"
           />
         </Helmet>
 
@@ -64,9 +85,9 @@ const ComparePage = () => {
               Keine Parks zum Vergleichen ausgewählt.
             </p>
             <p className="font-serif text-base mb-6 text-deep-charcoal opacity-70">
-              Fügen Sie Parks zum Vergleich hinzu, indem Sie auf den
+              Füge Parks zum Vergleich hinzu, indem du auf den
               Vergleichen-Button auf Parkdetailseiten oder in der Parkliste
-              klicken.
+              klickst.
             </p>
             <Button to="/index" variant="primary" size="md">
               Zur Parkliste

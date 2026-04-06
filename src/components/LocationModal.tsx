@@ -1,6 +1,5 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import { Button } from './ui/Button';
+import * as Dialog from "@radix-ui/react-dialog";
+import { Button } from "./ui/Button";
 
 interface LocationModalProps {
   isOpen: boolean;
@@ -15,61 +14,62 @@ const LocationModal: React.FC<LocationModalProps> = ({
   onRequestLocation,
   isError,
 }) => {
-  const navigate = useNavigate();
-
-  if (!isOpen) return null;
-
-  if (isError) {
-    return (
-      <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[10000] p-4">
-        <div className="p-6 rounded-lg max-w-md w-full border-2 bg-soft-cream border-border-color">
-          <h3 className="text-lg font-mono mb-4 text-primary-green">
-            Standort nicht verfügbar
-          </h3>
-          <p className="mb-6 font-serif italic text-deep-charcoal">
-            Wir konnten Ihren Standort nicht ermitteln. Bitte überprüfen Sie Ihre Browsereinstellungen und stellen Sie sicher, dass Sie den Standortzugriff erlaubt haben.
-          </p>
-          <div className="flex justify-end space-x-3">
-            <Button
-              onClick={onClose}
-              variant="primary"
-              size="md"
-            >
-              Schließen
-            </Button>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[10000] p-4">
-      <div className="p-6 rounded-lg max-w-md w-full border-2 bg-soft-cream border-border-color">
-        <h3 className="text-lg font-mono mb-4 text-primary-green">
-          Standortzugriff erforderlich
-        </h3>
-        <p className="mb-6 font-serif italic text-deep-charcoal">
-          Um die nächstgelegenen Parks zu finden, benötigen wir Zugriff auf deinen Standort.
-        </p>
-        <div className="flex justify-end space-x-3">
-          <Button
-            onClick={onClose}
-            variant="outline"
-            size="md"
-          >
-            Abbrechen
-          </Button>
-          <Button
-            onClick={onRequestLocation}
-            variant="primary"
-            size="md"
-          >
-            Standort teilen
-          </Button>
-        </div>
-      </div>
-    </div>
+    <Dialog.Root
+      open={isOpen}
+      onOpenChange={(open) => {
+        if (!open) onClose();
+      }}
+    >
+      <Dialog.Portal>
+        <Dialog.Overlay className="fixed inset-0 z-[10000] bg-black/50" />
+        <Dialog.Content className="fixed left-1/2 top-1/2 z-[10001] w-[calc(100%-2rem)] max-w-md -translate-x-1/2 -translate-y-1/2 rounded-lg border-2 border-border-color bg-soft-cream p-6 shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-green focus-visible:ring-offset-2">
+          {isError ? (
+            <>
+              <Dialog.Title className="text-lg font-mono mb-4 text-primary-green">
+                Standort nicht verfügbar
+              </Dialog.Title>
+              <Dialog.Description className="mb-6 font-serif italic text-deep-charcoal">
+                Wir konnten Ihren Standort nicht ermitteln. Bitte überprüfen Sie
+                Ihre Browsereinstellungen und stellen Sie sicher, dass Sie den
+                Standortzugriff erlaubt haben.
+              </Dialog.Description>
+              <div className="flex justify-end">
+                <Dialog.Close asChild>
+                  <Button variant="primary" size="md">
+                    Schließen
+                  </Button>
+                </Dialog.Close>
+              </div>
+            </>
+          ) : (
+            <>
+              <Dialog.Title className="text-lg font-mono mb-4 text-primary-green">
+                Standortzugriff erforderlich
+              </Dialog.Title>
+              <Dialog.Description className="mb-6 font-serif italic text-deep-charcoal">
+                Um die nächstgelegenen Parks zu finden, benötigen wir Zugriff
+                auf deinen Standort.
+              </Dialog.Description>
+              <div className="flex justify-end gap-3">
+                <Dialog.Close asChild>
+                  <Button variant="outline" size="md">
+                    Abbrechen
+                  </Button>
+                </Dialog.Close>
+                <Button
+                  variant="primary"
+                  size="md"
+                  onClick={onRequestLocation}
+                >
+                  Standort teilen
+                </Button>
+              </div>
+            </>
+          )}
+        </Dialog.Content>
+      </Dialog.Portal>
+    </Dialog.Root>
   );
 };
 

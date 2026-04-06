@@ -459,6 +459,6 @@ body {
 }
 
 *:focus {
-  outline: 2px dotted var(--deep-charcoal);
-  outline-offset: 1px;
+  outline: 2px dotted var(--deep-charcoal) !important;
+  outline-offset: 1px !important;
 }

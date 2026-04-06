@@ -65,6 +65,22 @@ export function clearComparison(): void {
 }
 
 /**
+ * Replace comparison list with the given park IDs (e.g. from shared URL).
+ * Only IDs are kept; order is preserved; duplicates removed; max length enforced.
+ */
+export function setComparisonParkIds(ids: string[]): void {
+  const seen = new Set<string>();
+  const unique: string[] = [];
+  for (const id of ids) {
+    if (!id || seen.has(id)) continue;
+    seen.add(id);
+    unique.push(id);
+    if (unique.length >= MAX_COMPARISON_PARKS) break;
+  }
+  localStorage.setItem(STORAGE_KEY_COMPARISON, JSON.stringify(unique));
+}
+
+/**
  * Get count of parks in comparison
  * @returns Number of parks
  */

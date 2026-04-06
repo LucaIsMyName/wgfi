@@ -31,7 +31,7 @@ export default function ParksList({ parks, onToggleFavorite, onToggleCompare, is
     return (
       <div className="py-16 text-center">
         <p className="font-serif italic text-xl text-deep-charcoal font-normal">
-          Keine Parks gefunden, die Ihren Kriterien entsprechen.
+          Keine Parks gefunden, die deinen Kriterien entsprechen.
         </p>
       </div>
     );

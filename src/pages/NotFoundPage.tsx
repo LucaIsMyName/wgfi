@@ -17,7 +17,7 @@ const NotFoundPage = () => {
       </h2>
       
       <p className="mb-8 text-lg text-deep-charcoal">
-        Die von Ihnen gesuchte Seite konnte nicht gefunden werden. Sie wurde möglicherweise verschoben oder existiert nicht mehr.
+        Die Seite, die du suchst, konnte nicht gefunden werden. Sie wurde möglicherweise verschoben oder existiert nicht mehr.
       </p>
       
       <div className="mt-12">

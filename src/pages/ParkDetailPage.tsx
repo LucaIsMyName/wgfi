@@ -26,6 +26,7 @@ import STYLE from "../utils/config";
 import { getAllDistrictsForPark, formatDistricts } from "../utils/parkUtils";
 import type { Park, ParkWithDistance } from "../types/park";
 import { calculateDistance } from "../utils/geoUtils";
+import { createParkDetailMapPopupEl } from "../utils/mapPopupDom";
 import { Button } from "../components/ui/Button";
 
 const ParkDetailPage: React.FC = () => {
@@ -257,20 +258,16 @@ const ParkDetailPage: React.FC = () => {
 
             wrapper.appendChild(el);
 
-            // Create popup
+            // Create popup (DOM nodes avoid HTML injection from park fields)
             const popup = new mapboxgl.default.Popup({
               offset: 25,
               closeButton: false,
-            }).setHTML(`
-            <div style=" padding: 12px; border-radius: 8px; text-align:center">
-              <h3 style="font-family: ' Instrument Serif', serif; font-style:italic; font-weight: 600; margin: 0 0 8px 0; color: var(--primary-green); font-size: 24px;">${
-                park.name
-              }</h3>
-              <p style="font-family: 'Geist Mono', monospace; margin: 0; font-size: 14px; color: var(--deep-charcoal);">${
-                park.address || "Adresse nicht verfügbar"
-              }</p>
-            </div>
-          `);
+            }).setDOMContent(
+              createParkDetailMapPopupEl({
+                name: park.name,
+                address: park.address,
+              }),
+            );
 
             // Add marker using the wrapper
             const marker = new mapboxgl.default.Marker(wrapper)
@@ -358,20 +355,16 @@ const ParkDetailPage: React.FC = () => {
 
         wrapper.appendChild(el);
 
-        // Create popup
+        // Create popup (DOM nodes avoid HTML injection from park fields)
         const popup = new mapboxgl.default.Popup({
           offset: 25,
           closeButton: false,
-        }).setHTML(`
-            <div style=" padding: 12px; border-radius: 8px; text-align:center">
-              <h3 style="font-family: ' Instrument Serif', serif; font-style:italic; font-weight: 600; margin: 0 0 8px 0; color: var(--primary-green); font-size: 24px;">${
-                park.name
-              }</h3>
-              <p style="font-family: 'Geist Mono', monospace; margin: 0; font-size: 14px; color: var(--deep-charcoal);">${
-                park.address || "Adresse nicht verfügbar"
-              }</p>
-            </div>
-          `);
+        }).setDOMContent(
+          createParkDetailMapPopupEl({
+            name: park.name,
+            address: park.address,
+          }),
+        );
 
         // Add marker using the wrapper
         const marker = new mapboxgl.default.Marker(wrapper)

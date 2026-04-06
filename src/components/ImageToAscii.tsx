@@ -100,6 +100,18 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
     time: 0,
   });
   const [asciiFlickerMap, setAsciiFlickerMap] = useState<Map<string, { char: string; hue: number; brightness: number }>>(new Map());
+
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(() => {
+    if (typeof window === "undefined") return false;
+    return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  });
+
+  useEffect(() => {
+    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const onChange = () => setPrefersReducedMotion(mq.matches);
+    mq.addEventListener("change", onChange);
+    return () => mq.removeEventListener("change", onChange);
+  }, []);
   
   // Animation refs
   const animationFrameRef = useRef<number | null>(null);
@@ -689,7 +701,7 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
 
   // Dynamic animation system
   useEffect(() => {
-    if (effectiveMovementSpeed === 'none') return;
+    if (effectiveMovementSpeed === "none" || prefersReducedMotion) return;
     
     // Map speed to update interval (ms)
     const intervalMap = {
@@ -766,7 +778,7 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
     return () => {
       if (animationFrameId) cancelAnimationFrame(animationFrameId);
     };
-  }, [effectiveMovementSpeed, mode]);
+  }, [effectiveMovementSpeed, mode, prefersReducedMotion]);
   
   // ASCII flicker update function
   const updateAsciiFlicker = useCallback(() => {
@@ -809,7 +821,8 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
 
   // Re-render dither dots with animation (without re-dithering)
   useEffect(() => {
-    if (mode !== 'dither' || effectiveMovementSpeed === 'none') return;
+    if (mode !== "dither" || effectiveMovementSpeed === "none" || prefersReducedMotion)
+      return;
     if (!baseDitheredDataRef.current || !outputCanvasRef.current) return;
     if (ditherDotSize === 1 && ditherDotSpacing === 0) return;
 
@@ -950,7 +963,14 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
       outputCtx.clearRect(0, 0, containerW, containerH);
       outputCtx.drawImage(finalCanvas, 0, 0);
     }
-  }, [animationState.time, mode, effectiveMovementSpeed, ditherDotSize, ditherDotSpacing]);
+  }, [
+    animationState.time,
+    mode,
+    effectiveMovementSpeed,
+    ditherDotSize,
+    ditherDotSpacing,
+    prefersReducedMotion,
+  ]);
 
   // Derived display sizing for exact fill
   const charAspect = 0.55;

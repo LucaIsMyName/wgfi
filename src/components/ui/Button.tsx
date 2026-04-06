@@ -29,7 +29,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     },
     ref,
   ) => {
-    const baseClasses = "inline-flex truncate items-center justify-center gap-2 font-serif font-medium transition-all duration-200 focus:outline-none focus:ring focus:ring-primary-green focus:ring-offset-2";
+    const baseClasses = "inline-flex truncate items-center justify-center gap-2 font-serif font-medium transition-all duration-200";
     
     const variantClasses = {
       primary: "bg-primary-green text-soft-cream border border-primary-green hover:bg-opacity-90 focus:ring-offset-soft-cream",
@@ -82,8 +82,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
           to={to}
           className={`${combinedClasses} no-underline ${disabled || loading ? "pointer-events-none" : ""}`}
           aria-disabled={disabled || loading}
-          role="button"
-          tabIndex={disabled || loading ? -1 : 0}
+          tabIndex={disabled || loading ? -1 : undefined}
         >
           {content}
         </Link>

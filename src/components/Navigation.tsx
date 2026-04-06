@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { Link, useLocation } from "react-router-dom";
 import {
   Home,
@@ -20,8 +20,15 @@ import { Button } from "./ui/Button";
 const Navigation = () => {
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [commandPaletteOpen, setCommandPaletteOpen] = useState(false);
-  const isMapPage = location.pathname.startsWith("/map");
+  const mobileMenuButtonRef = useRef<HTMLButtonElement>(null);
+  const mobileNavPanelRef = useRef<HTMLDivElement>(null);
+
+  const closeMobileMenu = useCallback((returnFocusToButton: boolean) => {
+    setIsMobileMenuOpen(false);
+    if (returnFocusToButton) {
+      requestAnimationFrame(() => mobileMenuButtonRef.current?.focus());
+    }
+  }, []);
 
   const openCommandPalette = () => {
     const event = new KeyboardEvent("keydown", {
@@ -48,6 +55,44 @@ const Navigation = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    if (!isMobileMenuOpen) return;
+
+    const panel = mobileNavPanelRef.current;
+    if (!panel) return;
+
+    const focusable = panel.querySelectorAll<HTMLElement>(
+      'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])',
+    );
+    const list = Array.from(focusable);
+    const first = list[0];
+    const last = list[list.length - 1];
+    first?.focus();
+
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        closeMobileMenu(true);
+        return;
+      }
+      if (e.key !== "Tab" || list.length === 0) return;
+      if (e.shiftKey) {
+        if (document.activeElement === first) {
+          e.preventDefault();
+          last?.focus();
+        }
+      } else {
+        if (document.activeElement === last) {
+          e.preventDefault();
+          first?.focus();
+        }
+      }
+    };
+
+    document.addEventListener("keydown", onKeyDown);
+    return () => document.removeEventListener("keydown", onKeyDown);
+  }, [isMobileMenuOpen, closeMobileMenu]);
 
   const navItems = [
     { path: "/", label: "Home", icon: <Home className="w-5 h-5" /> },
@@ -170,12 +215,27 @@ const Navigation = () => {
           <Logo />
 
           <Button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            ref={mobileMenuButtonRef}
+            type="button"
+            onClick={() =>
+              setIsMobileMenuOpen((wasOpen) => {
+                if (wasOpen) {
+                  requestAnimationFrame(() =>
+                    mobileMenuButtonRef.current?.focus(),
+                  );
+                }
+                return !wasOpen;
+              })
+            }
             variant="ghost"
             size="sm"
             className="w-9 h-9"
             icon={isMobileMenuOpen ? X : Menu}
             style={{ opacity: 1 }}
+            aria-expanded={isMobileMenuOpen}
+            aria-controls="mobile-nav-panel"
+            aria-haspopup="dialog"
+            aria-label={isMobileMenuOpen ? "Menü schließen" : "Menü öffnen"}
           />
         </div>
       </header>
@@ -186,14 +246,19 @@ const Navigation = () => {
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
         <div className="lg:hidden fixed inset-0 z-[1000]">
-          {/* Backdrop */}
-          <div
-            className="fixed inset-0 bg-black bg-opacity-50 "
-            onClick={() => setIsMobileMenuOpen(false)}
+          <button
+            type="button"
+            className="fixed inset-0 bg-black bg-opacity-50"
+            aria-label="Menü schließen"
+            onClick={() => closeMobileMenu(true)}
           />
 
-          {/* Menu Panel */}
           <div
+            ref={mobileNavPanelRef}
+            id="mobile-nav-panel"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="mobile-nav-title"
             className="fixed top-0 right-0 h-full w-full transform transition-transform duration-300 ease-in-out bg-sidebar-bg"
             style={{
               boxShadow: "-2px 0 10px rgba(0, 0, 0, 0.05)",
@@ -202,15 +267,20 @@ const Navigation = () => {
             <div className="flex flex-col h-full">
               {/* Header */}
               <div className="flex items-center justify-between px-4 py-6 border-b border-border-color">
-                <span className="font-sans text-xl font-bold text-primary-green">
+                <span
+                  id="mobile-nav-title"
+                  className="font-sans text-xl font-bold text-primary-green"
+                >
                   Menü
                 </span>
                 <Button
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  type="button"
+                  onClick={() => closeMobileMenu(true)}
                   variant="ghost"
                   size="sm"
                   icon={X}
                   style={{ opacity: 0.8 }}
+                  aria-label="Menü schließen"
                 />
               </div>
 
@@ -220,7 +290,7 @@ const Navigation = () => {
                   <NavLink
                     key={item.path}
                     {...item}
-                    onClick={() => setIsMobileMenuOpen(false)}
+                    onClick={() => closeMobileMenu(false)}
                   />
                 ))}
               </div>
@@ -234,7 +304,7 @@ const Navigation = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[12px] hover:underline font-serif italic text-primary-green"
-                    onClick={() => setIsMobileMenuOpen(false)}
+                    onClick={() => closeMobileMenu(false)}
                   >
                     Impressum
                   </a>
@@ -243,7 +313,7 @@ const Navigation = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[12px] hover:underline font-serif italic text-primary-green"
-                    onClick={() => setIsMobileMenuOpen(false)}
+                    onClick={() => closeMobileMenu(false)}
                   >
                     Datenschutz
                   </a>
@@ -252,8 +322,9 @@ const Navigation = () => {
                 <div className="flex items-center gap-2">
                   <ThemeToggle />
                   <Button
+                    type="button"
                     onClick={() => {
-                      setIsMobileMenuOpen(false);
+                      closeMobileMenu(false);
                       setTimeout(openCommandPalette, 100);
                     }}
                     variant="ghost"

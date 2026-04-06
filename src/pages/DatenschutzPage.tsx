@@ -12,7 +12,7 @@ export const DatenschutzPage: React.FC = () => {
         setContent(text);
       } catch (error) {
         console.error("Error fetching datenschutz:", error);
-        setContent("Der Datenschutztext konnte nicht geladen werden. Bitte versuchen Sie es später erneut.");
+        setContent("Der Datenschutztext konnte nicht geladen werden. Bitte versuche es später erneut.");
       }
     };
 

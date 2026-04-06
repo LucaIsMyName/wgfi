@@ -21,7 +21,7 @@ export default defineConfig({
     // Bundle analyzer - only runs during build
     visualizer({
       filename: 'dist/stats.html',
-      open: true,
+      open: process.env.ANALYZE === 'true',
       gzipSize: true,
       brotliSize: false,
       template: 'treemap', // Interactive treemap visualization

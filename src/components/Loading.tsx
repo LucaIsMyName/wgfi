@@ -23,17 +23,17 @@ const Loading = ({ message = "Laden...", size = "md", showBackground = true }: L
         <div className="relative">
           <PalmtreeIcon
             strokeWidth={1}
-            className={`${sizeClasses[size]} text-primary-green animate-pulse`}
+            className={`${sizeClasses[size]} text-primary-green animate-pulse motion-reduce:animate-none`}
             aria-hidden="true"
           />
-          <div className="absolute inset-0 animate-spin">
+          <div className="absolute inset-0 animate-spin motion-reduce:animate-none">
             <div className={`${
               size === "sm" ? "w-4 h-4" : size === "md" ? "w-8 h-8" : "w-12 h-12"
-            } rounded-full border-2 border-primary-green/20 border-t-primary-green animate-spin`} />
+            } rounded-full border-2 border-primary-green/20 border-t-primary-green animate-spin motion-reduce:animate-none`} />
           </div>
         </div>
         {message && (
-          <p className="font-serif text-primary-green text-sm md:text-base animate-pulse">
+          <p className="font-serif text-primary-green text-sm md:text-base animate-pulse motion-reduce:animate-none">
             {message}
           </p>
         )}

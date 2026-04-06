@@ -30,10 +30,15 @@ const MapPage = () => {
         <title>Wiener Grünflächen Index | Karte</title>
         <meta
           name="description"
-          content="Interaktive Karte aller Parks in Wien. Finden Sie Parks in Ihrer Nähe und entdecken Sie Grünflächen in jedem Bezirk."
+          content="Interaktive Karte aller Parks in Wien. Finde Parks in deiner Nähe und entdecke Grünflächen in jedem Bezirk."
         />
       </Helmet>
-      
+
+      <p className="sr-only" id="map-page-intro">
+        Interaktive Karte der Wiener Parks. Steuerung über die beschrifteten Schaltflächen am
+        Kartenrand. Alle Parks finden Sie auch in der Index-Ansicht.
+      </p>
+
       {/* Map Container - Respects sidebar on desktop */}
       <div className="relative flex-1 h-screen" data-lg-margin>
         <Suspense fallback={<SkeletonMap />}>

@@ -12,7 +12,7 @@ export const ImpressumPage: React.FC = () => {
         setContent(text);
       } catch (error) {
         console.error("Error fetching impressum:", error);
-        setContent("Das Impressum konnte nicht geladen werden. Bitte versuchen Sie es später erneut.");
+        setContent("Das Impressum konnte nicht geladen werden. Bitte versuche es später erneut.");
       }
     };
 

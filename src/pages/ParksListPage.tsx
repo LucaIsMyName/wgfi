@@ -50,7 +50,7 @@ const ParksListPage = () => {
         <title>Wiener Grünflächen Index | Alle Parks</title>
         <meta
           name="description"
-          content={`Entdecken Sie ${filteredAndSortedParks.length} Parks in Wien mit detaillierten Informationen zu Lage, Ausstattung und Größe.`}
+          content={`Entdecke ${filteredAndSortedParks.length} Parks in Wien mit detaillierten Informationen zu Lage, Ausstattung und Größe.`}
         />
       </Helmet>
       {/* Screen reader only H1 for both mobile and desktop */}

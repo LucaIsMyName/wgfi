@@ -1,22 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { Helmet } from "react-helmet-async";
 import STYLE from "../utils/config";
-import { clearParksCache } from "../services/viennaApi";
 import { AlertTriangle } from "lucide-react";
 
 const IdeaPage: React.FC = () => {
-  const [cacheCleared, setCacheCleared] = useState(false);
-
-  const handleClearCache = () => {
-    clearParksCache();
-    setCacheCleared(true);
-
-    // Reset notification after 3 seconds
-    setTimeout(() => {
-      setCacheCleared(false);
-    }, 3000);
-  };
-
   return (
     <div className="min-h-screen px-4 lg:px-6 py-6 bg-main-bg">
       <Helmet>

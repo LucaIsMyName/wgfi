@@ -113,9 +113,9 @@ const HomePage: React.FC = () => {
           saturation={effectiveTheme === "dark" ? 1 : 4}
           contrast={effectiveTheme === "dark" ? 3 : 3}
           brightness={effectiveTheme === "dark" ? 0.9 : 1}
-          hueShift={effectiveTheme === "dark" ? 20 : 80}
-          movementSpeed={"none"}
-          colorCount={12}
+          hueShift={effectiveTheme === "dark" ? 20 : 30}
+          movementSpeed={"slow"}
+          colorCount={8}
           scale={effectiveTheme === "dark" ? 0.25 : 0.25}
           ditherAlgorithm="ordered"
           ditherMatrixSize={8}
@@ -134,8 +134,6 @@ const HomePage: React.FC = () => {
           <div>
             <h1
               className={`${STYLE.pageTitle(true)} italic leading-tight text-primary-green`}
-              role="heading"
-              aria-level={1}
             >
               Wiener
               <br /> Grünflächen
@@ -148,34 +146,34 @@ const HomePage: React.FC = () => {
 
           {/* Subtitle */}
           <div className="max-w-2xl">
-            <p className="font-serif text-lg sm:text-2xl leading-tight text-balance text-primary-green font-normal" role="doc-intro">
+            <p className="font-serif text-lg sm:text-2xl leading-tight text-balance text-primary-green font-normal">
               Ein Index aller Parks & Grünflächen der Stadt Wien als{" "}
-              <Link 
-                to="/index" 
+              <Link
+                to="/index"
                 className="font-mono text-[0.9em] underline hover:text-primary-green/80 transition-colors focus:outline-none focus:ring focus:ring-primary-green focus:ring-offset-2 focus:ring-offset-soft-cream rounded"
                 aria-label="Zur Liste aller Parks"
               >
                 Liste
               </Link>{" "}
               oder{" "}
-              <Link 
-                to="/map" 
+              <Link
+                to="/map"
                 className="underline font-mono text-[0.9em] underline hover:text-primary-green/80 transition-colors focus:outline-none focus:ring focus:ring-primary-green focus:ring-offset-2 focus:ring-offset-soft-cream rounded"
                 aria-label="Zur interaktiven Karte"
               >
                 Karte
               </Link>
               . Speichere Parks als{" "}
-              <Link 
-                to="/favorites" 
+              <Link
+                to="/favorites"
                 className="underline font-mono text-[0.9em] underline hover:text-primary-green/80 transition-colors focus:outline-none focus:ring focus:ring-primary-green focus:ring-offset-2 focus:ring-offset-soft-cream rounded"
                 aria-label="Zu deinen Favoriten"
               >
                 Favoriten
               </Link>{" "}
               oder schau dir die{" "}
-              <Link 
-                to="statistics" 
+              <Link
+                to="/statistics"
                 className="underline font-mono text-[0.9em] underline hover:text-primary-green/80 transition-colors focus:outline-none focus:ring focus:ring-primary-green focus:ring-offset-2 focus:ring-offset-soft-cream rounded"
                 aria-label="Zur Statistik-Seite"
               >
@@ -186,11 +184,15 @@ const HomePage: React.FC = () => {
           </div>
 
           {/* Buttons */}
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-0" role="group" aria-label="Hauptnavigation">
-            <Button to="/index"
-
-              variant="primary" 
-              size="md" 
+          <div
+            className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-0"
+            role="group"
+            aria-label="Hauptnavigation"
+          >
+            <Button
+              to="/index"
+              variant="primary"
+              size="md"
               loading={isLoadingNearby}
               aria-label="Zur Liste aller Parks"
               className="touch-manipulation min-h-[44px]"

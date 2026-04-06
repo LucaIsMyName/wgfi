@@ -1,9 +1,10 @@
 import { Suspense, lazy, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import Navigation from "./components/Navigation";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { CommandPalette } from "./components/CommandPalette";
+import Loading from "./components/Loading";
 
 // Lazy load page components
 const HomePage = lazy(() => import("./pages/HomePage"));
@@ -15,15 +16,6 @@ const FavoritesPage = lazy(() => import("./pages/FavoritesPage"));
 const ComparePage = lazy(() => import("./pages/ComparePage"));
 const IdeaPage = lazy(() => import("./pages/IdeaPage"));
 const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
-
-// Loading component
-const LoadingFallback = () => (
-  <div
-    style={{ backgroundColor: "var(--soft-cream)" }}
-    className="flex items-center justify-center h-screen bg-soft-cream w-full">
-    {/* <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div> */}
-  </div>
-);
 
 function AppContent() {
   const location = useLocation();
@@ -42,16 +34,23 @@ function AppContent() {
     <div
       className="min-h-screen w-full"
       style={{ backgroundColor: "var(--soft-cream)" }}>
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100000] focus:rounded focus:bg-primary-green focus:px-4 focus:py-2 focus:font-serif focus:text-soft-cream focus:outline-none focus:ring-2 focus:ring-primary-green focus:ring-offset-2"
+      >
+        Zum Hauptinhalt springen
+      </a>
       <Navigation />
       <CommandPalette />
 
       {/* Main Content Area */}
       <main
+        id="main-content"
         className={isMapPage ? "" : "lg:ml-[clamp(200px,16vw,280px)]"}
         style={isMapPage ? { minHeight: "100vh" } : { minHeight: "calc(100vh - 64px)" }}>
         <div className="w-full h-full">
           <ErrorBoundary>
-            <Suspense fallback={<LoadingFallback />}>
+            <Suspense fallback={<Loading showBackground />}>
               <Routes>
                 <Route
                   path="/"

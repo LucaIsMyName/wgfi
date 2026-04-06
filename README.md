@@ -24,10 +24,11 @@
    npm install
    ```
 
-3. **Set up Mapbox API Key** (Required for map functionality):
-   - Get a free API key at [mapbox.com](https://www.mapbox.com/)
-   - Open `src/pages/MapPage.tsx`
-   - Replace `'YOUR_MAPBOX_ACCESS_TOKEN'` with your actual API key
+3. **Set up Mapbox API key** (required for the map):
+   - Create a free access token at [mapbox.com](https://www.mapbox.com/)
+   - In the project root, copy `.env.example` to `.env` if needed, then set:
+     `VITE_MAPBOX_ACCESS_TOKEN=your_token_here`
+   - The token is read in `src/main.tsx` via `import.meta.env.VITE_MAPBOX_ACCESS_TOKEN`
 
 4. Start the development server:
    ```bash
@@ -103,6 +104,7 @@ See `/public/api/README.md` for complete API documentation.
 - `npm run generate:sitemap` - Generate sitemap.xml with all park URLs
 - `npm run preview` - Preview production build
 - `npm run lint` - Run ESLint
+- `ANALYZE=true npm run build` - Production build and open bundle stats (`dist/stats.html`) when `ANALYZE` is set
 
 ### Dynamic Sitemap Generation
 

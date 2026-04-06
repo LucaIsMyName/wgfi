@@ -204,6 +204,9 @@ export function CommandPalette() {
           }}
           shouldFilter={false}
         >
+          <h2 id="cmdk-label" className="sr-only">
+            Kommando-Palette
+          </h2>
           <div
             style={{
               display: 'flex',
@@ -213,7 +216,7 @@ export function CommandPalette() {
               gap: '12px',
             }}
           >
-            <Search className="w-5 h-5" style={{ color: 'var(--primary-green)', flexShrink: 0 }} />
+            <Search className="w-5 h-5" style={{ color: 'var(--primary-green)', flexShrink: 0 }} aria-hidden />
             <Command.Input
               value={search}
               onValueChange={setSearch}

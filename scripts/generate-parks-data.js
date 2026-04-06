@@ -79,7 +79,8 @@ async function fetchViennaParks() {
 }
 
 /**
- * Get district from coordinates
+ * Get district from coordinates (simplified bounds).
+ * Keep in sync with `src/utils/viennaDistrictFromCoordinates.ts`.
  */
 function getDistrictFromCoordinates(coordinates) {
   const { lat, lng } = coordinates;

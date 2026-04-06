@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import mapboxgl from "mapbox-gl";
 import { slugifyParkName } from "../data/manualParksData";
 import { isFavorite } from "../utils/favoritesManager";
+import { createMapMarkerPopupEl } from "../utils/mapPopupDom";
 import type { Park } from "../types/park";
 
 interface UseMapMarkersProps {
@@ -87,15 +88,10 @@ export function useMapMarkers({
         // Append inner element to wrapper
         wrapper.appendChild(el);
 
-        // Create popup
-        const popup = new mapboxgl.Popup({ offset: 25, closeOnClick: true })
-          .setHTML(`
-            <div style="padding: 16px;">
-              <h3 className="" style="width:100%;font-size:32px;font-style:italic;color: var(--primary-green); font-family: 'Instrument Serif', serif;  line-height: 0.9; margin-right:0.75em;">${park.name}</h3>
-              <p style="margin: 0; font-size: 12px; font-family: 'Geist Mono', monospace;">${park.district}. BEZIRK</p>
-              <a href="/index/${slugifyParkName(park.name)}" style="background-color: var(--primary-green); color: var(--soft-cream); padding: 6px 12px; display: inline-block; margin-top: 16px; text-decoration: none; font-family: 'Geist Mono', sans-serif; font-weight: 500; font-size: 12px">DETAILS</a>
-            </div>
-          `);
+        // Create popup (DOM nodes avoid HTML injection from park fields)
+        const popup = new mapboxgl.Popup({ offset: 25, closeOnClick: true }).setDOMContent(
+          createMapMarkerPopupEl(park),
+        );
           
         // Store popup reference and set park ID as data attribute
         popupRefs.current[park.id] = popup;

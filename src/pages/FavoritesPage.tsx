@@ -39,7 +39,7 @@ const FavoritesPage = () => {
         <title>Wiener Grünflächen Index | Favoriten</title>
         <meta
           name="description"
-          content="Ihre gespeicherten Lieblingsparks in Wien. Verwalten Sie Ihre favorisierten Grünflächen und finden Sie sie schnell wieder."
+          content="Deine gespeicherten Lieblingsparks in Wien. Verwalte deine favorisierten Grünflächen und finde sie schnell wieder."
         />
       </Helmet>
       {/* Header */}
@@ -69,7 +69,7 @@ const FavoritesPage = () => {
                     Keine Favoriten gespeichert
                   </h3>
                   <p className="font-serif text-base mb-5 text-deep-charcoal font-normal max-w-[500px] leading-relaxed">
-                    Sie haben noch keine Parks zu Ihren Favoriten hinzugefügt. Entdecken Sie Parks in der Übersicht und speichern Sie Ihre Lieblingsparks für schnellen Zugriff.
+                    Du hast noch keine Parks zu deinen Favoriten hinzugefügt. Entdecke Parks in der Übersicht und speichere deine Lieblingsparks für schnellen Zugriff.
                   </p>
                   <Link
                     to="/index"
