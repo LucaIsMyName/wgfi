@@ -29,7 +29,7 @@ const Loading = ({ message = "Laden...", size = "md", showBackground = true }: L
           <div className="absolute inset-0 animate-spin motion-reduce:animate-none">
             <div className={`${
               size === "sm" ? "w-4 h-4" : size === "md" ? "w-8 h-8" : "w-12 h-12"
-            } rounded-full border-2 border-primary-green/20 border-t-primary-green animate-spin motion-reduce:animate-none`} />
+            } rounded-full motion-reduce:animate-none`} />
           </div>
         </div>
         {message && (

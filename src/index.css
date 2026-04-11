@@ -6,7 +6,7 @@
   @view-transition {
     navigation: auto;
   }
-  
+
   :root {
     /* Art Nouveau inspired color palette - Light Mode */
     --primary-green: #2d4a3e;
@@ -83,6 +83,9 @@
     border-radius: 0 !important;
   }
 
+  .high-contrast .mapboxgl-canvas {
+    border: 1px solid var(--border-color) !important;
+  }
   /* Park list item styles */
   /* .park-list-item {
     transition: border-color 0.3s ease, border-width 0.15s ease, transform 0.2s ease, box-shadow 0.2s ease;
@@ -96,8 +99,6 @@
   .dark .park-list-item:hover {
     box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
   } */
-
-  
 }
 
 body {
@@ -110,7 +111,9 @@ body {
 }
 
 /* Smooth theme transitions - exclude transform and other animation properties */
-*:not(.park-marker):not(.park-list-item):not(.animate-fade-gradient):not([class*="animate"]):not(.mapboxgl-popup):not(.mapboxgl-popup *) {
+*:not(.park-marker):not(.park-list-item):not(.animate-fade-gradient):not(
+    [class*="animate"]
+  ):not(.mapboxgl-popup):not(.mapboxgl-popup *) {
   transition-property: background-color, color, border-color, fill, stroke;
   transition-duration: 0.3s;
   transition-timing-function: ease;
@@ -410,7 +413,9 @@ body {
 }
 
 .park-marker {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
   /* Ensure transform origin is center */
   transform-origin: center center;
   /* Don't set position - let Mapbox handle it */
