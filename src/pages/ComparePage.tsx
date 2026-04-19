@@ -128,10 +128,12 @@ const ComparePage = () => {
               <Button
                 onClick={handleClearAll}
                 variant="secondary"
-                size="sm"
+                size="md"
                 icon={Trash2}
-                className="w-9 h-9"
-              ></Button>
+                className="!px-2.5 flex !justify-center !items-center"
+              >
+                Alle entfernen
+              </Button>
             )}
           </div>
         </div>
@@ -232,13 +234,14 @@ const ComparePage = () => {
             </tr>
 
             {/* Amenities Header */}
-            <tr className="border-b-2 border-primary-green">
+            <tr className="border-t-2 border-b border-b-border-color border-primary-green">
               <td
-                colSpan={comparisonParks.length + 1}
-                className="py-3 px-4 bg-light-sage font-mono text-xs text-primary-green"
+                colSpan={1}
+                className="py-3 px-4  sticky left-0 bg-main-bg bg-light-sage font-serif text-base text-primary-green italic"
               >
-                AUSSTATTUNG
+                Ausstattung
               </td>
+              <td colSpan={comparisonParks.length}></td>
             </tr>
 
             {/* Individual Amenities */}
@@ -249,7 +252,7 @@ const ComparePage = () => {
                   key={amenity}
                   className={`border-b border-border-color ${index % 2 === 0 ? "bg-light-sage bg-opacity-30" : ""}`}
                 >
-                  <td className="py-3 px-4 sticky left-0 bg-main-bg">
+                  <td className="sm:z-50 py-3 px-4 sticky left-0 bg-main-bg">
                     <div className="flex items-center gap-2">
                       <Icon className="w-4 h-4 text-primary-green" />
                       <span className="font-mono text-xs text-deep-charcoal">
