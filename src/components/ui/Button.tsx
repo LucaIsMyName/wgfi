@@ -30,13 +30,13 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     },
     ref,
   ) => {
-    const baseClasses = "inline-flex truncate items-center justify-center gap-2 font-serif transition-all duration-200";
+    const baseClasses = "border border-border-color inline-flex truncate items-center justify-center gap-2 font-serif transition-all duration-200";
     
     const variantClasses = {
       primary: "bg-primary-green text-soft-cream border border-primary-green hover:bg-opacity-90 focus:ring-offset-soft-cream",
-      secondary: "bg-light-sage text-deep-charcoal border border-primary-green hover:bg-opacity-80 focus:ring-offset-soft-cream",
-      ghost: "bg-transparent text-primary-green border border-transparent hover:bg-primary-green/10 focus:ring-offset-transparent",
-      outline: "bg-transparent text-primary-green border border-primary-green hover:bg-primary-green/10 focus:ring-offset-soft-cream",
+      secondary: "bg-light-sage text-deep-charcoal border border-primary-green hover:bg-opacity-80 focus:ring-offset-soft-cream !bg-light-sage/40 backdrop-blur-sm background-blend-multiply",
+      ghost: " text-primary-green border border-transparent hover:bg-primary-green/10 focus:ring-offset-transparent",
+      outline: " text-primary-green border border-bordeer-color hover:bg-primary-green/10 focus:ring-offset-soft-cream !bg-light-sage/40 backdrop-blur-sm",
     };
 
     const sizeClasses = {

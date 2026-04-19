@@ -6,6 +6,9 @@
 // Local storage key for favorites
 const STORAGE_KEY_FAVORITES = 'wgfi:favorite-parks';
 
+// Custom event for favorites changes
+export const FAVORITES_CHANGED_EVENT = 'wgfi:favorites-changed';
+
 /**
  * Get all favorite parks from local storage
  * @returns Array of park IDs that are favorites
@@ -38,6 +41,7 @@ export function addFavorite(parkId: string): void {
   if (!favorites.includes(parkId)) {
     favorites.push(parkId);
     localStorage.setItem(STORAGE_KEY_FAVORITES, JSON.stringify(favorites));
+    window.dispatchEvent(new CustomEvent(FAVORITES_CHANGED_EVENT, { detail: { parkId, action: 'add' } }));
   }
 }
 
@@ -49,6 +53,7 @@ export function removeFavorite(parkId: string): void {
   const favorites = getFavorites();
   const updatedFavorites = favorites.filter(id => id !== parkId);
   localStorage.setItem(STORAGE_KEY_FAVORITES, JSON.stringify(updatedFavorites));
+  window.dispatchEvent(new CustomEvent(FAVORITES_CHANGED_EVENT, { detail: { parkId, action: 'remove' } }));
 }
 
 /**

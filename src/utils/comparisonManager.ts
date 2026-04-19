@@ -6,6 +6,9 @@
 const STORAGE_KEY_COMPARISON = 'wgfi:comparison-parks';
 const MAX_COMPARISON_PARKS = 128;
 
+// Custom event for comparison changes
+export const COMPARISON_CHANGED_EVENT = 'wgfi:comparison-changed';
+
 /**
  * Get all parks in comparison
  * @returns Array of park IDs
@@ -39,6 +42,7 @@ export function addToComparison(parkId: string): boolean {
   
   current.push(parkId);
   localStorage.setItem(STORAGE_KEY_COMPARISON, JSON.stringify(current));
+  window.dispatchEvent(new CustomEvent(COMPARISON_CHANGED_EVENT, { detail: { parkId, action: 'add' } }));
   return true;
 }
 
@@ -50,6 +54,7 @@ export function removeFromComparison(parkId: string): void {
   const current = getComparisonParks();
   const updated = current.filter(id => id !== parkId);
   localStorage.setItem(STORAGE_KEY_COMPARISON, JSON.stringify(updated));
+  window.dispatchEvent(new CustomEvent(COMPARISON_CHANGED_EVENT, { detail: { parkId, action: 'remove' } }));
 }
 
 /**

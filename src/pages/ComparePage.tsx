@@ -128,7 +128,7 @@ const ComparePage = () => {
                 className="border-border-color !px-2 sm:!px-2.5 flex !justify-center !items-center"
               >
                 <Trash2 className="w-4 h-4" />
-                <span className="hidden sm:inline">Alle entfernen</span>
+                <span className="sr-only">Alle entfernen</span>
               </Button>
             )}
           </div>

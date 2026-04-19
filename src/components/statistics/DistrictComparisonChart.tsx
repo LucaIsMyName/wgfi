@@ -5,7 +5,10 @@ import { Bar } from "@visx/shape";
 import { scaleBand, scaleLinear } from "@visx/scale";
 import { useTooltip, useTooltipInPortal, defaultStyles } from "@visx/tooltip";
 import { localPoint } from "@visx/event";
-import { prepareDistrictChartData, type DistrictChartData } from "@/utils/statistics";
+import {
+  prepareDistrictChartData,
+  type DistrictChartData,
+} from "@/utils/statistics";
 import { getParkDistrictAreaDistribution } from "@/utils/parkUtils";
 import type { Park } from "@/types/park";
 
@@ -49,15 +52,19 @@ export default function DistrictComparisonChart({
   // Prepare district data
   const districtData = useMemo(
     () => prepareDistrictChartData(parks, districtAreas),
-    [parks, districtAreas]
+    [parks, districtAreas],
   );
 
   if (districtData.length === 0) {
     return (
-      <div className="flex items-center justify-center" style={{ width, height }}>
+      <div
+        className="flex items-center justify-center"
+        style={{ width, height }}
+      >
         <p
           className="font-serif italic"
-          style={{ color: "var(--deep-charcoal)" }}>
+          style={{ color: "var(--deep-charcoal)" }}
+        >
           Keine Daten verfügbar
         </p>
       </div>
@@ -87,7 +94,7 @@ export default function DistrictComparisonChart({
         domain: districtData.map((d) => d.district),
         padding: 0.2,
       }),
-    [innerWidth, districtData]
+    [innerWidth, districtData],
   );
 
   const yScale = useMemo(
@@ -97,7 +104,7 @@ export default function DistrictComparisonChart({
         domain: [0, Math.max(...districtData.map((d) => getMetricValue(d)))],
         nice: true,
       }),
-    [innerHeight, districtData, metric]
+    [innerHeight, districtData, metric],
   );
 
   const getPrimaryGreen = () => {
@@ -163,7 +170,8 @@ export default function DistrictComparisonChart({
                 fill={getBarColor()}
                 rx={4}
                 onMouseMove={(event: React.MouseEvent<SVGRectElement>) => {
-                  const svgElement = (event.target as SVGRectElement).ownerSVGElement;
+                  const svgElement = (event.target as SVGRectElement)
+                    .ownerSVGElement;
                   if (svgElement) {
                     const coords = localPoint(svgElement, event);
                     if (coords) {
@@ -187,7 +195,10 @@ export default function DistrictComparisonChart({
             stroke={getDeepCharcoal()}
             tickStroke={getDeepCharcoal()}
             tickFormat={(value) => {
-              const numValue = typeof value === 'number' ? value : (value as { valueOf(): number }).valueOf();
+              const numValue =
+                typeof value === "number"
+                  ? value
+                  : (value as { valueOf(): number }).valueOf();
               if (metric === "totalArea") {
                 if (numValue >= 1e6) return `${(numValue / 1e6).toFixed(1)}km²`;
                 if (numValue >= 1e4) return `${(numValue / 1e4).toFixed(1)}ha`;
@@ -210,8 +221,11 @@ export default function DistrictComparisonChart({
             scale={xScale}
             stroke={getDeepCharcoal()}
             tickStroke={getDeepCharcoal()}
-            tickFormat={(value) => {
-              const numValue = typeof value === 'number' ? value : (value as { valueOf(): number }).valueOf();
+            tickFormat={(value: number | any) => {
+              const numValue =
+                typeof value === "number"
+                  ? value
+                  : (value as { valueOf(): number }).valueOf();
               return `${numValue}`;
             }}
             tickLabelProps={() => ({
@@ -237,14 +251,16 @@ export default function DistrictComparisonChart({
             padding: "8px 12px",
             fontFamily: "Geist Mono, monospace",
             fontSize: "12px",
-          }}>
+          }}
+        >
           <div>
             <strong style={{ color: getPrimaryGreen() }}>
               {tooltipData.district}. Bezirk
             </strong>
             <br />
             <span style={{ color: getDeepCharcoal() }}>
-              {tooltipData.parkCount} {tooltipData.parkCount === 1 ? "Park" : "Parks"}
+              {tooltipData.parkCount}{" "}
+              {tooltipData.parkCount === 1 ? "Park" : "Parks"}
             </span>
             <br />
             <span style={{ color: getDeepCharcoal() }}>

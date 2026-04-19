@@ -1,8 +1,9 @@
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Building, Ruler, Heart, Trash2, GitCompare } from "lucide-react";
 import { getAmenityIcon } from "@/utils/amenityIcons";
-import { isFavorite } from "@/utils/favoritesManager";
-import { isInComparison, toggleComparison } from "@/utils/comparisonManager";
+import { isFavorite, FAVORITES_CHANGED_EVENT } from "@/utils/favoritesManager";
+import { isInComparison, toggleComparison, COMPARISON_CHANGED_EVENT } from "@/utils/comparisonManager";
 import { slugifyParkName } from "@/data/manualParksData";
 import { getAllDistrictsForPark, formatDistricts } from "@/utils/parkUtils";
 import type { Park } from "@/types/park";
@@ -24,9 +25,37 @@ export default function ParkCard({ park, onToggleFavorite, onToggleCompare, isHi
   const allDistricts = getAllDistrictsForPark(park);
   const districtsDisplay = formatDistricts(allDistricts, 'full').toUpperCase();
   
+  // Local state to trigger re-renders when favorites/comparison changes
+  const [, setUpdateTrigger] = useState(0);
+  
   // Use props if provided, otherwise fall back to localStorage check
   const parkIsFavorited = isFavorited ?? isFavorite(park.id);
   const parkIsInComparison = isInCompare ?? isInComparison(park.id);
+  
+  // Listen for favorites/comparison changes and re-render this card
+  useEffect(() => {
+    const handleFavoritesChange = (e: Event) => {
+      const customEvent = e as CustomEvent;
+      if (customEvent.detail?.parkId === park.id) {
+        setUpdateTrigger(prev => prev + 1);
+      }
+    };
+    
+    const handleComparisonChange = (e: Event) => {
+      const customEvent = e as CustomEvent;
+      if (customEvent.detail?.parkId === park.id) {
+        setUpdateTrigger(prev => prev + 1);
+      }
+    };
+    
+    window.addEventListener(FAVORITES_CHANGED_EVENT, handleFavoritesChange);
+    window.addEventListener(COMPARISON_CHANGED_EVENT, handleComparisonChange);
+    
+    return () => {
+      window.removeEventListener(FAVORITES_CHANGED_EVENT, handleFavoritesChange);
+      window.removeEventListener(COMPARISON_CHANGED_EVENT, handleComparisonChange);
+    };
+  }, [park.id]);
   
   return (
     <Link
