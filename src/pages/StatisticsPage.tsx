@@ -4,7 +4,17 @@ import { Link } from "react-router-dom";
 import { AlertTriangle } from "lucide-react";
 import { useParksData } from "../hooks/useParksData";
 import { slugifyParkName } from "../data/manualParksData";
-import { BarChart3, TrendingUp, MapPin, Sprout, Compass, Ruler, PieChart, Trophy, BarChart } from "lucide-react";
+import {
+  BarChart3,
+  TrendingUp,
+  MapPin,
+  Sprout,
+  Compass,
+  Ruler,
+  PieChart,
+  Trophy,
+  BarChart,
+} from "lucide-react";
 import ResponsiveContainer from "../components/statistics/ResponsiveContainer";
 import STYLE from "../utils/config";
 import AmenitiesChart from "../components/statistics/AmenitiesChart";
@@ -65,7 +75,9 @@ const StatisticsPage = () => {
   const { parks } = useParksData();
   const [districtStats, setDistrictStats] = useState<DistrictStats[]>([]);
   const [viennaCoverage, setViennaCoverage] = useState(0);
-  const [districtMetric, setDistrictMetric] = useState<"parkCount" | "totalArea" | "coveragePercentage">("parkCount");
+  const [districtMetric, setDistrictMetric] = useState<
+    "parkCount" | "totalArea" | "coveragePercentage"
+  >("parkCount");
 
   useEffect(() => {
     if (parks.length > 0) {
@@ -94,60 +106,88 @@ const StatisticsPage = () => {
       });
     });
 
-    const stats: DistrictStats[] = Array.from(statsMap.entries()).map(([district, data]) => {
-      const districtArea = DISTRICT_AREAS[district] || 1;
-      return {
-        district,
-        totalArea: data.totalArea,
-        parkCount: data.count,
-        percentage: (data.totalArea / districtArea) * 100,
-        avgParkSize: data.totalArea / data.count,
-      };
-    });
+    const stats: DistrictStats[] = Array.from(statsMap.entries()).map(
+      ([district, data]) => {
+        const districtArea = DISTRICT_AREAS[district] || 1;
+        return {
+          district,
+          totalArea: data.totalArea,
+          parkCount: data.count,
+          percentage: (data.totalArea / districtArea) * 100,
+          avgParkSize: data.totalArea / data.count,
+        };
+      },
+    );
 
     setDistrictStats(stats);
   };
 
-  const topDistrictsByPercentage = [...districtStats].sort((a, b) => b.percentage - a.percentage).slice(0, 5);
+  const topDistrictsByPercentage = [...districtStats]
+    .sort((a, b) => b.percentage - a.percentage)
+    .slice(0, 5);
 
-  const topDistrictsByArea = [...districtStats].sort((a, b) => b.totalArea - a.totalArea).slice(0, 5);
+  const topDistrictsByArea = [...districtStats]
+    .sort((a, b) => b.totalArea - a.totalArea)
+    .slice(0, 5);
 
   const largestParks = [...parks].sort((a, b) => b.area - a.area).slice(0, 5);
 
   // Geographical extremes
-  const northernmostPark = parks.reduce((max, park) => (park.coordinates.lat > max.coordinates.lat ? park : max), parks[0]);
-  const southernmostPark = parks.reduce((min, park) => (park.coordinates.lat < min.coordinates.lat ? park : min), parks[0]);
-  const easternmostPark = parks.reduce((max, park) => (park.coordinates.lng > max.coordinates.lng ? park : max), parks[0]);
-  const westernmostPark = parks.reduce((min, park) => (park.coordinates.lng < min.coordinates.lng ? park : min), parks[0]);
-  
+  const northernmostPark = parks.reduce(
+    (max, park) => (park.coordinates.lat > max.coordinates.lat ? park : max),
+    parks[0],
+  );
+  const southernmostPark = parks.reduce(
+    (min, park) => (park.coordinates.lat < min.coordinates.lat ? park : min),
+    parks[0],
+  );
+  const easternmostPark = parks.reduce(
+    (max, park) => (park.coordinates.lng > max.coordinates.lng ? park : max),
+    parks[0],
+  );
+  const westernmostPark = parks.reduce(
+    (min, park) => (park.coordinates.lng < min.coordinates.lng ? park : min),
+    parks[0],
+  );
+
   // Most centered park (closest to geographic center of all parks)
-  const centerLat = parks.reduce((sum, park) => sum + park.coordinates.lat, 0) / parks.length;
-  const centerLng = parks.reduce((sum, park) => sum + park.coordinates.lng, 0) / parks.length;
+  const centerLat =
+    parks.reduce((sum, park) => sum + park.coordinates.lat, 0) / parks.length;
+  const centerLng =
+    parks.reduce((sum, park) => sum + park.coordinates.lng, 0) / parks.length;
   const mostCenteredPark = parks.reduce((closest, park) => {
     const distToCurrent = Math.sqrt(
-      Math.pow(park.coordinates.lat - centerLat, 2) + 
-      Math.pow(park.coordinates.lng - centerLng, 2)
+      Math.pow(park.coordinates.lat - centerLat, 2) +
+        Math.pow(park.coordinates.lng - centerLng, 2),
     );
     const distToClosest = Math.sqrt(
-      Math.pow(closest.coordinates.lat - centerLat, 2) + 
-      Math.pow(closest.coordinates.lng - centerLng, 2)
+      Math.pow(closest.coordinates.lat - centerLat, 2) +
+        Math.pow(closest.coordinates.lng - centerLng, 2),
     );
     return distToCurrent < distToClosest ? park : closest;
   }, parks[0]);
 
   // Size extremes
-  const smallestPark = parks.reduce((min, park) => (park.area < min.area ? park : min), parks[0]);
-  const largestPark = parks.reduce((max, park) => (park.area > max.area ? park : max), parks[0]);
-  const averageParkSize = parks.reduce((sum, p) => sum + p.area, 0) / parks.length;
+  const smallestPark = parks.reduce(
+    (min, park) => (park.area < min.area ? park : min),
+    parks[0],
+  );
+  const largestPark = parks.reduce(
+    (max, park) => (park.area > max.area ? park : max),
+    parks[0],
+  );
+  const averageParkSize =
+    parks.reduce((sum, p) => sum + p.area, 0) / parks.length;
   const closestToAveragePark = parks.reduce((closest, park) => {
     const distToCurrent = Math.abs(park.area - averageParkSize);
     const distToClosest = Math.abs(closest.area - averageParkSize);
     return distToCurrent < distToClosest ? park : closest;
   }, parks[0]);
   const sortedByArea = [...parks].sort((a, b) => a.area - b.area);
-  const medianPark = sortedByArea.length % 2 === 0
-    ? sortedByArea[Math.floor(sortedByArea.length / 2) - 1]
-    : sortedByArea[Math.floor(sortedByArea.length / 2)];
+  const medianPark =
+    sortedByArea.length % 2 === 0
+      ? sortedByArea[Math.floor(sortedByArea.length / 2) - 1]
+      : sortedByArea[Math.floor(sortedByArea.length / 2)];
 
   const formatArea = (area: number) => {
     if (area >= 1e6) return `${(area / 1e6).toFixed(2)} km²`;
@@ -176,20 +216,25 @@ const StatisticsPage = () => {
       <main className="px-4 lg:px-6 pb-8 lg:pb-12 pt-6">
         {/* Header */}
         <div className="mb-12">
-          <h1 className={`${STYLE.pageTitle(false)} mb-4 text-primary-green italic`}>
+          <h1
+            className={`${STYLE.pageTitle(false)} mb-4 text-primary-green italic`}
+          >
             Statistiken
           </h1>
           <div className="max-w-[95ch] p-4 border flex gap-3 bg-card-bg border-border-color">
-          <AlertTriangle className="w-6 h-6 flex-shrink-0 mt-0.5 text-primary-green" />
-          <div className="font-serif space-y-2 text-deep-charcoal">
-            <p className="font-bold tracking-widest font-mono text-2xl text-primary-green">
-              INFO
-            </p>
-            <p className="font-serif italic text-lg  text-deep-charcoal">
-              Beachte, dass die Daten der Stadt Wien nicht alle Grünflächen ausweisen und eine vollständige Statistik nicht möglich ist. Bundesforste und Bundesgärten werden manuell nach Möglichkeit hinzugefügt.
-            </p>
+            <AlertTriangle className="w-6 h-6 flex-shrink-0 mt-0.5 text-primary-green" />
+            <div className="font-serif space-y-2 text-deep-charcoal">
+              <p className="font-bold tracking-widest font-mono text-2xl text-primary-green">
+                INFO
+              </p>
+              <p className="font-serif italic text-lg  text-deep-charcoal">
+                Beachte, dass die Daten der Stadt Wien nicht alle Grünflächen
+                ausweisen und eine vollständige Statistik nicht möglich ist.
+                Bundesforste und Bundesgärten werden manuell nach Möglichkeit
+                hinzugefügt.
+              </p>
+            </div>
           </div>
-        </div>
         </div>
 
         {/* Key Metrics */}
@@ -247,7 +292,9 @@ const StatisticsPage = () => {
               </p>
             </div>
             <p className="font-serif text-2xl xl:text-4xl italic text-primary-green">
-              {formatArea(parks.reduce((sum, p) => sum + p.area, 0) / parks.length)}
+              {formatArea(
+                parks.reduce((sum, p) => sum + p.area, 0) / parks.length,
+              )}
             </p>
             <p className="font-serif italic text-xs xl:text-base mt-1 text-deep-charcoal opacity-70">
               Durchschnittliche Parkgröße
@@ -319,22 +366,31 @@ const StatisticsPage = () => {
                 <button
                   onClick={() => setDistrictMetric("parkCount")}
                   className={`px-3 py-1 font-mono text-xs rounded ${
-                    districtMetric === "parkCount" ? "opacity-100 bg-primary-green text-soft-cream" : "opacity-60 bg-light-sage text-deep-charcoal"
-                  }`}>
+                    districtMetric === "parkCount"
+                      ? "opacity-100 bg-primary-green text-soft-cream"
+                      : "opacity-60 bg-light-sage text-deep-charcoal"
+                  }`}
+                >
                   ANZAHL PARKS
                 </button>
                 <button
                   onClick={() => setDistrictMetric("totalArea")}
                   className={`px-3 py-1 font-mono text-xs rounded ${
-                    districtMetric === "totalArea" ? "opacity-100 bg-primary-green text-soft-cream" : "opacity-60 bg-light-sage text-deep-charcoal"
-                  }`}>
+                    districtMetric === "totalArea"
+                      ? "opacity-100 bg-primary-green text-soft-cream"
+                      : "opacity-60 bg-light-sage text-deep-charcoal"
+                  }`}
+                >
                   GESAMTFLÄCHE
                 </button>
                 <button
                   onClick={() => setDistrictMetric("coveragePercentage")}
                   className={`px-3 py-1 font-mono text-xs rounded ${
-                    districtMetric === "coveragePercentage" ? "opacity-100 bg-primary-green text-soft-cream" : "opacity-60 bg-light-sage text-deep-charcoal"
-                  }`}>
+                    districtMetric === "coveragePercentage"
+                      ? "opacity-100 bg-primary-green text-soft-cream"
+                      : "opacity-60 bg-light-sage text-deep-charcoal"
+                  }`}
+                >
                   ABDECKUNG %
                 </button>
               </div>
@@ -535,14 +591,16 @@ const StatisticsPage = () => {
             {largestParks.map((park, index) => (
               <div
                 key={park.id}
-                className="flex flex-col md:flex-row md:justify-between md:items-center py-3 border-b gap-2 border-border-color">
+                className="flex flex-col md:flex-row md:justify-between md:items-center py-3 border-b gap-2 border-border-color"
+              >
                 <div>
                   <span className="font-mono text-xs mr-3 text-accent-gold">
                     #{index + 1}
                   </span>
                   <Link
                     to={`/index/${slugifyParkName(park.name)}`}
-                    className="font-serif text-lg hover:underline text-primary-green">
+                    className="font-serif text-lg hover:underline text-primary-green"
+                  >
                     {park.name}
                   </Link>
                   <span className="font-mono text-xs ml-3 text-deep-charcoal opacity-60">
@@ -560,84 +618,88 @@ const StatisticsPage = () => {
         {/* Geographical & Size Extremes */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
           {/* Geography Section */}
-          <div className="mb-12">
+          <div>
             <div className="p-6 border bg-card-bg border-border-color">
-              <div className="flex items-center gap-2 mb-6">
+              <div className="flex items-center gap-3 mb-6">
                 <Compass className="w-6 h-6 text-primary-green" />
                 <h2 className="font-serif text-2xl text-primary-green italic">
                   Geografie
                 </h2>
-                <div>
+              </div>
+
+              <div className="space-y-4">
+                <div className="py-3 border-b border-border-color">
                   <p className="font-mono text-xs mb-1 text-accent-gold">
                     NÖRDLICHSTER PARK
                   </p>
                   <Link
                     to={`/index/${slugifyParkName(northernmostPark.name)}`}
-                    className="font-serif text-lg hover:underline text-primary-green">
+                    className="font-serif text-lg hover:underline text-primary-green"
+                  >
                     {northernmostPark.name}
                   </Link>
                   <p className="font-mono text-xs mt-1 text-deep-charcoal opacity-60">
-                    {northernmostPark.district}. Bezirk · {northernmostPark.coordinates.lat.toFixed(4)}°N
+                    {northernmostPark.district}. Bezirk ·{" "}
+                    {northernmostPark.coordinates.lat.toFixed(4)}°N
                   </p>
                 </div>
-              </div>
 
-              <div className="flex justify-between items-center py-3 border-b border-border-color">
-                <div>
+                <div className="py-3 border-b border-border-color">
                   <p className="font-mono text-xs mb-1 text-accent-gold">
                     SÜDLICHSTER PARK
                   </p>
                   <Link
                     to={`/index/${slugifyParkName(southernmostPark.name)}`}
-                    className="font-serif text-lg hover:underline text-primary-green">
+                    className="font-serif text-lg hover:underline text-primary-green"
+                  >
                     {southernmostPark.name}
                   </Link>
                   <p className="font-mono text-xs mt-1 text-deep-charcoal opacity-60">
-                    {southernmostPark.district}. Bezirk · {southernmostPark.coordinates.lat.toFixed(4)}°N
+                    {southernmostPark.district}. Bezirk ·{" "}
+                    {southernmostPark.coordinates.lat.toFixed(4)}°N
                   </p>
                 </div>
-              </div>
 
-              <div className="flex justify-between items-center py-3 border-b border-border-color">
-                <div>
+                <div className="py-3 border-b border-border-color">
                   <p className="font-mono text-xs mb-1 text-accent-gold">
                     ÖSTLICHSTER PARK
                   </p>
                   <Link
                     to={`/index/${slugifyParkName(easternmostPark.name)}`}
-                    className="font-serif text-lg hover:underline text-primary-green">
+                    className="font-serif text-lg hover:underline text-primary-green"
+                  >
                     {easternmostPark.name}
                   </Link>
                   <p className="font-mono text-xs mt-1 text-deep-charcoal opacity-60">
-                    {easternmostPark.district}. Bezirk · {easternmostPark.coordinates.lng.toFixed(4)}°E
+                    {easternmostPark.district}. Bezirk ·{" "}
+                    {easternmostPark.coordinates.lng.toFixed(4)}°E
                   </p>
                 </div>
-              </div>
 
-              <div className="flex justify-between items-center py-3 border-b border-border-color">
-                <div>
+                <div className="py-3 border-b border-border-color">
                   <p className="font-mono text-xs mb-1 text-accent-gold">
                     WESTLICHSTER PARK
                   </p>
                   <Link
                     to={`/index/${slugifyParkName(westernmostPark.name)}`}
-                    className="font-serif text-lg hover:underline text-primary-green">
+                    className="font-serif text-lg hover:underline text-primary-green"
+                  >
                     {westernmostPark.name}
                   </Link>
                   <p className="font-mono text-xs mt-1 text-deep-charcoal opacity-60">
-                    {westernmostPark.district}. Bezirk · {westernmostPark.coordinates.lng.toFixed(4)}°E
+                    {westernmostPark.district}. Bezirk ·{" "}
+                    {westernmostPark.coordinates.lng.toFixed(4)}°E
                   </p>
                 </div>
-              </div>
 
-              <div className="flex justify-between items-center py-3 border-b border-border-color">
-                <div>
+                <div className="py-3">
                   <p className="font-mono text-xs mb-1 text-accent-gold">
                     ZENTRALSTER PARK
                   </p>
                   <Link
                     to={`/index/${slugifyParkName(mostCenteredPark.name)}`}
-                    className="font-serif text-lg hover:underline text-primary-green">
+                    className="font-serif text-lg hover:underline text-primary-green"
+                  >
                     {mostCenteredPark.name}
                   </Link>
                   <p className="font-mono text-xs mt-1 text-deep-charcoal opacity-60">
@@ -664,7 +726,8 @@ const StatisticsPage = () => {
                   </p>
                   <Link
                     to={`/index/${slugifyParkName(largestPark.name)}`}
-                    className="font-serif text-lg hover:underline text-primary-green">
+                    className="font-serif text-lg hover:underline text-primary-green"
+                  >
                     {largestPark.name}
                   </Link>
                   <p className="font-mono text-xs mt-1 text-deep-charcoal opacity-60">
@@ -683,11 +746,13 @@ const StatisticsPage = () => {
                   </p>
                   <Link
                     to={`/index/${slugifyParkName(closestToAveragePark.name)}`}
-                    className="font-serif text-lg hover:underline text-primary-green">
+                    className="font-serif text-lg hover:underline text-primary-green"
+                  >
                     {closestToAveragePark.name}
                   </Link>
                   <p className="font-mono text-xs mt-1 text-deep-charcoal opacity-60">
-                    {closestToAveragePark.district}. Bezirk · Ø {formatArea(averageParkSize)}
+                    {closestToAveragePark.district}. Bezirk · Ø{" "}
+                    {formatArea(averageParkSize)}
                   </p>
                 </div>
                 <span className="font-serif text-lg italic md:ml-4 text-primary-green">
@@ -702,7 +767,8 @@ const StatisticsPage = () => {
                   </p>
                   <Link
                     to={`/index/${slugifyParkName(medianPark.name)}`}
-                    className="font-serif text-lg hover:underline text-primary-green">
+                    className="font-serif text-lg hover:underline text-primary-green"
+                  >
                     {medianPark.name}
                   </Link>
                   <p className="font-mono text-xs mt-1 text-deep-charcoal opacity-60">
@@ -721,7 +787,8 @@ const StatisticsPage = () => {
                   </p>
                   <Link
                     to={`/index/${slugifyParkName(smallestPark.name)}`}
-                    className="font-serif text-lg hover:underline text-primary-green">
+                    className="font-serif text-lg hover:underline text-primary-green"
+                  >
                     {smallestPark.name}
                   </Link>
                   <p className="font-mono text-xs mt-1 text-deep-charcoal opacity-60">
@@ -741,7 +808,7 @@ const StatisticsPage = () => {
           <h2 className="font-serif text-2xl mb-6 text-primary-green italic">
             Alle Bezirke im Überblick
           </h2>
-          
+
           {/* Desktop Table View */}
           <div className="hidden md:block overflow-x-auto">
             <table className="w-full">
@@ -770,7 +837,8 @@ const StatisticsPage = () => {
                   .map((stat) => (
                     <tr
                       key={stat.district}
-                      className="border-b hover:bg-opacity-50 border-border-color">
+                      className="border-b hover:bg-opacity-50 border-border-color"
+                    >
                       <td className="py-3 px-2 font-serif text-primary-green">
                         {stat.district}. Bezirk
                       </td>
@@ -799,13 +867,14 @@ const StatisticsPage = () => {
               .map((stat) => (
                 <div
                   key={stat.district}
-                  className="p-4 border bg-light-sage border-border-color">
+                  className="p-4 border bg-light-sage border-border-color"
+                >
                   <div className="mb-3">
                     <p className="font-serif text-xl text-primary-green">
                       {stat.district}. Bezirk
                     </p>
                   </div>
-                  
+
                   <div className="space-y-2">
                     <div className="flex justify-between items-center">
                       <span className="font-mono text-xs text-primary-green">
@@ -815,7 +884,7 @@ const StatisticsPage = () => {
                         {stat.parkCount}
                       </span>
                     </div>
-                    
+
                     <div className="flex justify-between items-center">
                       <span className="font-mono text-xs text-primary-green">
                         FLÄCHE
@@ -824,7 +893,7 @@ const StatisticsPage = () => {
                         {formatArea(stat.totalArea)}
                       </span>
                     </div>
-                    
+
                     <div className="flex justify-between items-center">
                       <span className="font-mono text-xs text-primary-green">
                         ANTEIL
@@ -833,7 +902,7 @@ const StatisticsPage = () => {
                         {stat.percentage.toFixed(2)}%
                       </span>
                     </div>
-                    
+
                     <div className="flex justify-between items-center">
                       <span className="font-mono text-xs text-primary-green">
                         Ø GRÖßE

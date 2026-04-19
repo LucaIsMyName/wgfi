@@ -14,7 +14,7 @@ Both modes share a common image processing pipeline with color transformations (
 ## Installation
 
 ```tsx
-import ImageToAscii from './components/ImageToAscii';
+import ImageToAscii from "./components/ImageToAscii";
 ```
 
 ## Quick Start
@@ -22,7 +22,7 @@ import ImageToAscii from './components/ImageToAscii';
 ### ASCII Mode (Basic)
 
 ```tsx
-<ImageToAscii 
+<ImageToAscii
   src="/images/photo.jpg"
   mode="ascii"
   fontSize={8}
@@ -34,7 +34,7 @@ import ImageToAscii from './components/ImageToAscii';
 ### Dither Mode (Basic)
 
 ```tsx
-<ImageToAscii 
+<ImageToAscii
   src="/images/photo.jpg"
   mode="dither"
   ditherAlgorithm="floyd-steinberg"
@@ -47,49 +47,49 @@ import ImageToAscii from './components/ImageToAscii';
 
 ### Required Props
 
-| Prop | Type | Description |
-|------|------|-------------|
+| Prop  | Type     | Description                               |
+| ----- | -------- | ----------------------------------------- |
 | `src` | `string` | Image source (local path or external URL) |
 
 ### Mode Selection
 
-| Prop | Type | Default | Description |
-|------|------|---------|-------------|
+| Prop   | Type                  | Default   | Description         |
+| ------ | --------------------- | --------- | ------------------- |
 | `mode` | `'ascii' \| 'dither'` | `'ascii'` | Transformation mode |
 
 ### Shared Props (Both Modes)
 
-| Prop | Type | Default | Description |
-|------|------|---------|-------------|
-| `contrast` | `number` | `1.0` | Contrast adjustment (0.0 - 2.0) |
-| `hueShift` | `number` | `0` | Hue rotation in degrees (0-360) |
-| `saturation` | `number` | `1.0` | Saturation adjustment (0.0 = grayscale, 2.0+ = hyper-saturated) |
-| `objectFit` | `'cover' \| 'contain'` | `'cover'` | How image fits in container |
-| `width` | `number \| string` | - | Container width |
-| `height` | `number \| string` | - | Container height |
-| `className` | `string` | `''` | Additional CSS classes |
-| `alt` | `string` | `''` | Alt text for accessibility |
+| Prop         | Type                   | Default   | Description                                                     |
+| ------------ | ---------------------- | --------- | --------------------------------------------------------------- |
+| `contrast`   | `number`               | `1.0`     | Contrast adjustment (0.0 - 2.0)                                 |
+| `hueShift`   | `number`               | `0`       | Hue rotation in degrees (0-360)                                 |
+| `saturation` | `number`               | `1.0`     | Saturation adjustment (0.0 = grayscale, 2.0+ = hyper-saturated) |
+| `objectFit`  | `'cover' \| 'contain'` | `'cover'` | How image fits in container                                     |
+| `width`      | `number \| string`     | -         | Container width                                                 |
+| `height`     | `number \| string`     | -         | Container height                                                |
+| `className`  | `string`               | `''`      | Additional CSS classes                                          |
+| `alt`        | `string`               | `''`      | Alt text for accessibility                                      |
 
 ### ASCII Mode Only
 
-| Prop | Type | Default | Description |
-|------|------|---------|-------------|
-| `lettersetAllowlist` | `string[]` | - | Only use these characters (e.g., `['a', 'b', '/']`) |
-| `lettersetBlacklist` | `string[]` | - | Exclude these characters from default set |
-| `fontSize` | `number` | `8` | Character size in pixels (controls detail density) |
+| Prop                 | Type       | Default | Description                                         |
+| -------------------- | ---------- | ------- | --------------------------------------------------- |
+| `lettersetAllowlist` | `string[]` | -       | Only use these characters (e.g., `['a', 'b', '/']`) |
+| `lettersetBlacklist` | `string[]` | -       | Exclude these characters from default set           |
+| `fontSize`           | `number`   | `8`     | Character size in pixels (controls detail density)  |
 
 **Default Character Set**: `` .'\`^",:;Il!i><~+_-?][}{1)(|\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$``
 
 ### Dither Mode Only
 
-| Prop | Type | Default | Description |
-|------|------|---------|-------------|
-| `ditherAlgorithm` | `'floyd-steinberg' \| 'ordered' \| 'atkinson'` | `'floyd-steinberg'` | Dithering algorithm |
-| `ditherThreshold` | `number` | `128` | Brightness threshold (0-255) |
-| `ditherMatrixSize` | `2 \| 4 \| 8` | `4` | Bayer matrix size for ordered dithering |
-| `colorPalette` | `string[]` | `['#000000', '#ffffff']` | Custom color palette (hex colors) |
-| `colorCount` | `number` | `2` | Number of colors to reduce to (2-256) |
-| `scale` | `number` | `1.0` | Output resolution scale (0.1 - 1.0) |
+| Prop               | Type                                           | Default                  | Description                             |
+| ------------------ | ---------------------------------------------- | ------------------------ | --------------------------------------- |
+| `ditherAlgorithm`  | `'floyd-steinberg' \| 'ordered' \| 'atkinson'` | `'floyd-steinberg'`      | Dithering algorithm                     |
+| `ditherThreshold`  | `number`                                       | `128`                    | Brightness threshold (0-255)            |
+| `ditherMatrixSize` | `2 \| 4 \| 8`                                  | `4`                      | Bayer matrix size for ordered dithering |
+| `colorPalette`     | `string[]`                                     | `['#000000', '#ffffff']` | Custom color palette (hex colors)       |
+| `colorCount`       | `number`                                       | `2`                      | Number of colors to reduce to (2-256)   |
+| `scale`            | `number`                                       | `1.0`                    | Output resolution scale (0.1 - 1.0)     |
 
 ## Mode Comparison
 
@@ -120,10 +120,10 @@ import ImageToAscii from './components/ImageToAscii';
 #### Custom Character Set
 
 ```tsx
-<ImageToAscii 
+<ImageToAscii
   mode="ascii"
   src="/images/logo.png"
-  lettersetAllowlist={['W', 'G', 'F', 'I', ' ']}
+  lettersetAllowlist={["W", "G", "F", "I", " "]}
   fontSize={10}
   contrast={1.3}
   width="100%"
@@ -134,7 +134,7 @@ import ImageToAscii from './components/ImageToAscii';
 #### High Contrast Monochrome
 
 ```tsx
-<ImageToAscii 
+<ImageToAscii
   mode="ascii"
   src="/images/portrait.jpg"
   saturation={0}
@@ -149,7 +149,7 @@ import ImageToAscii from './components/ImageToAscii';
 #### Color-Shifted Art
 
 ```tsx
-<ImageToAscii 
+<ImageToAscii
   mode="ascii"
   src="/images/landscape.jpg"
   hueShift={180}
@@ -166,7 +166,7 @@ import ImageToAscii from './components/ImageToAscii';
 #### Floyd-Steinberg (Smooth Gradients)
 
 ```tsx
-<ImageToAscii 
+<ImageToAscii
   mode="dither"
   src="/images/photo.jpg"
   ditherAlgorithm="floyd-steinberg"
@@ -180,12 +180,12 @@ import ImageToAscii from './components/ImageToAscii';
 #### Ordered Dithering (Pattern Effect)
 
 ```tsx
-<ImageToAscii 
+<ImageToAscii
   mode="dither"
   src="/images/photo.jpg"
   ditherAlgorithm="ordered"
   ditherMatrixSize={8}
-  colorPalette={['#000000', '#ffffff']}
+  colorPalette={["#000000", "#ffffff"]}
   scale={0.8}
   width="600px"
   height="400px"
@@ -195,7 +195,7 @@ import ImageToAscii from './components/ImageToAscii';
 #### Atkinson (High Contrast)
 
 ```tsx
-<ImageToAscii 
+<ImageToAscii
   mode="dither"
   src="/images/photo.jpg"
   ditherAlgorithm="atkinson"
@@ -210,17 +210,17 @@ import ImageToAscii from './components/ImageToAscii';
 #### Multi-Color Palette
 
 ```tsx
-<ImageToAscii 
+<ImageToAscii
   mode="dither"
   src="/images/sunset.jpg"
   ditherAlgorithm="floyd-steinberg"
   colorPalette={[
-    '#000000',
-    '#2d1b00',
-    '#ff6b35',
-    '#f7931e',
-    '#fdc500',
-    '#ffffff'
+    "#000000",
+    "#2d1b00",
+    "#ff6b35",
+    "#f7931e",
+    "#fdc500",
+    "#ffffff",
   ]}
   colorCount={6}
   scale={0.9}
@@ -232,7 +232,7 @@ import ImageToAscii from './components/ImageToAscii';
 ### External Image Sources
 
 ```tsx
-<ImageToAscii 
+<ImageToAscii
   mode="ascii"
   src="https://picsum.photos/800/600"
   fontSize={7}
@@ -246,17 +246,20 @@ import ImageToAscii from './components/ImageToAscii';
 ## Dithering Algorithms Explained
 
 ### Floyd-Steinberg
+
 **Best for**: Smooth gradients, photographic images  
 **Characteristics**: Error diffusion to 4 neighboring pixels (right, bottom-left, bottom, bottom-right)  
 **Visual**: Organic, natural-looking dithering with minimal patterns
 
 ### Ordered (Bayer Matrix)
+
 **Best for**: Stylized effects, consistent patterns  
 **Characteristics**: Uses predefined matrix for threshold comparison  
 **Visual**: Distinctive crosshatch or grid patterns, very "retro"  
 **Matrix sizes**: 2×2 (coarse), 4×4 (balanced), 8×8 (fine)
 
 ### Atkinson
+
 **Best for**: High contrast images, line art  
 **Characteristics**: Lighter error diffusion to 6 neighbors, preserves highlights  
 **Visual**: High contrast with bright highlights, classic Mac aesthetic
@@ -264,11 +267,13 @@ import ImageToAscii from './components/ImageToAscii';
 ## Image Source Compatibility
 
 ### Local Images
+
 - **Relative paths**: `/images/photo.jpg`, `./assets/image.png`
 - **Public folder**: Images in your public directory
 - **No CORS issues**: Works seamlessly with local files
 
 ### External URLs
+
 - **Full URLs**: `https://example.com/image.jpg`
 - **CORS handling**: Automatically sets `crossOrigin="anonymous"`
 - **Requirements**: External server must send `Access-Control-Allow-Origin` header
@@ -321,7 +326,8 @@ import ImageToAscii from './components/ImageToAscii';
 ### "Failed to process image. This may be due to CORS restrictions."
 
 **Cause**: External image server doesn't allow cross-origin canvas access  
-**Solution**: 
+**Solution**:
+
 - Use local images instead
 - Configure server to send CORS headers
 - Use a CORS proxy service
@@ -340,7 +346,8 @@ import ImageToAscii from './components/ImageToAscii';
 ### Performance is slow
 
 **Cause**: Image too large or too many characters  
-**Solution**: 
+**Solution**:
+
 - Reduce container dimensions
 - Increase `fontSize` (ASCII mode)
 - Decrease `scale` (Dither mode)
@@ -349,7 +356,8 @@ import ImageToAscii from './components/ImageToAscii';
 ### Colors look wrong
 
 **Cause**: Color transformations are too extreme  
-**Solution**: 
+**Solution**:
+
 - Reset `contrast`, `hueShift`, `saturation` to defaults
 - Adjust values gradually
 - Check if image has correct color profile
@@ -364,6 +372,7 @@ import ImageToAscii from './components/ImageToAscii';
 ## Accessibility
 
 The component includes proper ARIA attributes:
+
 - `role="img"` on output elements
 - `aria-label` using the `alt` prop
 - Semantic HTML structure
@@ -371,7 +380,7 @@ The component includes proper ARIA attributes:
 Always provide meaningful `alt` text for screen readers:
 
 ```tsx
-<ImageToAscii 
+<ImageToAscii
   src="/images/park.jpg"
   alt="Aerial view of Central Park in autumn"
   mode="ascii"
@@ -387,7 +396,7 @@ Switch between modes dynamically:
 ```tsx
 const [mode, setMode] = useState<'ascii' | 'dither'>('ascii');
 
-<ImageToAscii 
+<ImageToAscii
   src="/images/photo.jpg"
   mode={mode}
   width="600px"
@@ -401,7 +410,7 @@ const [mode, setMode] = useState<'ascii' | 'dither'>('ascii');
 ### Responsive Sizing
 
 ```tsx
-<ImageToAscii 
+<ImageToAscii
   src="/images/photo.jpg"
   mode="ascii"
   width="100%"
@@ -413,14 +422,14 @@ const [mode, setMode] = useState<'ascii' | 'dither'>('ascii');
 ### Dynamic Color Palettes
 
 ```tsx
-const [palette, setPalette] = useState(['#000000', '#ffffff']);
+const [palette, setPalette] = useState(["#000000", "#ffffff"]);
 
-<ImageToAscii 
+<ImageToAscii
   src="/images/photo.jpg"
   mode="dither"
   colorPalette={palette}
   ditherAlgorithm="floyd-steinberg"
-/>
+/>;
 ```
 
 ## Examples in Context
@@ -429,7 +438,7 @@ const [palette, setPalette] = useState(['#000000', '#ffffff']);
 
 ```tsx
 <div className="relative h-screen">
-  <ImageToAscii 
+  <ImageToAscii
     src="/images/hero-background.jpg"
     mode="ascii"
     fontSize={6}
@@ -449,8 +458,8 @@ const [palette, setPalette] = useState(['#000000', '#ffffff']);
 
 ```tsx
 <div className="grid grid-cols-3 gap-4">
-  {images.map(img => (
-    <ImageToAscii 
+  {images.map((img) => (
+    <ImageToAscii
       key={img.id}
       src={img.url}
       mode="dither"
@@ -470,6 +479,7 @@ This component is part of the WGFI project.
 ## Credits
 
 Dithering algorithms based on classic image processing techniques:
+
 - Floyd-Steinberg (1976)
 - Bayer ordered dithering (1973)
 - Atkinson dithering (Apple, 1980s)
