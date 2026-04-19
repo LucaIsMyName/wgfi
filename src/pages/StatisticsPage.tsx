@@ -359,6 +359,7 @@ const StatisticsPage = () => {
                 </ChartErrorBoundary>
               </div>
             </div>
+          </div>
 
           {/* District Comparison Chart */}
           <div className="p-6 border mb-12 bg-card-bg border-border-color">
@@ -522,7 +523,6 @@ const StatisticsPage = () => {
               </div>
             </div>
           </div>
-        </div>
         </div>
 
         {/* Park Density Analysis */}

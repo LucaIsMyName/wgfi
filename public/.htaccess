@@ -13,14 +13,3 @@ RewriteRule ^ index.html [QSA,L]
     # Content Security Policy
     Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://tiles.mapbox.com https://api.mapbox.com; style-src 'self' 'unsafe-inline' https://api.mapbox.com; img-src 'self' data: https: blob:; connect-src 'self' https://api.mapbox.com https://tiles.mapbox.com https://events.mapbox.com; font-src 'self' data:; object-src 'none'; media-src 'self'; frame-src 'none'; worker-src 'self' blob:;"
 </IfModule>
-
-# Redirects
-
-RewriteRule ^karte/?$ /map [R=301,L]
-RewriteRule ^liste/?$ /index [R=301,L]
-RewriteRule ^statistiken/?$ /statistics [R=301,L]
-RewriteRule ^vergleich/?$ /compare [R=301,L]
-RewriteRule ^favoriten/?$ /favorites [R=301,L]
-RewriteRule ^idee/?$ /idea [R=301,L]
-RewriteRule ^datenschutz/?$ /privacy [R=301,L]
-RewriteRule ^impressum/?$ /imprint [R=301,L]
