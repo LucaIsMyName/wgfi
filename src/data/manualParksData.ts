@@ -844,7 +844,6 @@ export const manualParksDB: Record<string, ManualParkData> = {
   "lorenz-bayer-park": {
     amenities: ["Tischtennis"],
   },
-
   "ga-staudgasse": {
     amenities: ["Tischtennis"],
   },

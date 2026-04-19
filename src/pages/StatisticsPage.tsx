@@ -25,6 +25,7 @@ import CategoryDistributionChart from "../components/statistics/CategoryDistribu
 import TopParksChart from "../components/statistics/TopParksChart";
 import AmenitiesPerParkChart from "../components/statistics/AmenitiesPerParkChart";
 import AverageParkSizeByDistrictChart from "../components/statistics/AverageParkSizeByDistrictChart";
+import StatisticsMap from "../components/statistics/StatisticsMap";
 import { getParkDistrictAreaDistribution } from "../utils/statistics";
 import type { Park } from "../types/park";
 
@@ -587,48 +588,54 @@ const StatisticsPage = () => {
           <h2 className="font-serif text-2xl mb-6 text-primary-green italic">
             Die größten Parks in Wien
           </h2>
-          <div className="space-y-4">
-            {largestParks.map((park, index) => (
-              <div
-                key={park.id}
-                className="flex flex-col md:flex-row md:justify-between md:items-center py-3 border-b gap-2 border-border-color"
-              >
-                <div>
-                  <span className="font-mono text-xs mr-3 text-accent-gold">
-                    #{index + 1}
-                  </span>
+
+          {/* Largest Parks in Single Row */}
+          <div className="mb-6">
+            <div className="flex flex-wrap gap-4 mb-4">
+              {largestParks.map((park, index) => (
+                <div key={park.id} className="flex-1 min-w-[200px]">
+                  <p className="font-mono text-xs mb-1 text-accent-gold">
+                    #{index + 1} GRÖßTER PARK
+                  </p>
                   <Link
                     to={`/index/${slugifyParkName(park.name)}`}
                     className="font-serif text-lg hover:underline text-primary-green"
                   >
                     {park.name}
                   </Link>
-                  <span className="font-mono text-xs ml-3 text-deep-charcoal opacity-60">
+                  <p className="font-mono text-xs mt-1 text-deep-charcoal opacity-60">
                     {park.district}. Bezirk
+                  </p>
+                  <span className="font-serif text-lg italic text-primary-green">
+                    {formatArea(park.area)}
                   </span>
                 </div>
-                <span className="font-serif text-xl italic md:text-right text-primary-green">
-                  {formatArea(park.area)}
-                </span>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
+
+          {/* Largest Parks Map */}
+          <StatisticsMap 
+            parks={largestParks} 
+            height="250px"
+          />
         </div>
 
         {/* Geographical & Size Extremes */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+        <div className="space-y-8 mb-12">
           {/* Geography Section */}
-          <div>
-            <div className="p-6 border bg-card-bg border-border-color">
-              <div className="flex items-center gap-3 mb-6">
-                <Compass className="w-6 h-6 text-primary-green" />
-                <h2 className="font-serif text-2xl text-primary-green italic">
-                  Geografie
-                </h2>
-              </div>
+          <div className="p-6 border bg-card-bg border-border-color">
+            <div className="flex items-center gap-3 mb-6">
+              <Compass className="w-6 h-6 text-primary-green" />
+              <h2 className="font-serif text-2xl text-primary-green italic">
+                Geografie
+              </h2>
+            </div>
 
-              <div className="space-y-4">
-                <div className="py-3 border-b border-border-color">
+            {/* Geography Parks in Single Row */}
+            <div className="mb-6">
+              <div className="flex flex-wrap gap-4 mb-4">
+                <div className="flex-1 min-w-[200px]">
                   <p className="font-mono text-xs mb-1 text-accent-gold">
                     NÖRDLICHSTER PARK
                   </p>
@@ -644,7 +651,7 @@ const StatisticsPage = () => {
                   </p>
                 </div>
 
-                <div className="py-3 border-b border-border-color">
+                <div className="flex-1 min-w-[200px]">
                   <p className="font-mono text-xs mb-1 text-accent-gold">
                     SÜDLICHSTER PARK
                   </p>
@@ -660,7 +667,7 @@ const StatisticsPage = () => {
                   </p>
                 </div>
 
-                <div className="py-3 border-b border-border-color">
+                <div className="flex-1 min-w-[200px]">
                   <p className="font-mono text-xs mb-1 text-accent-gold">
                     ÖSTLICHSTER PARK
                   </p>
@@ -676,7 +683,7 @@ const StatisticsPage = () => {
                   </p>
                 </div>
 
-                <div className="py-3 border-b border-border-color">
+                <div className="flex-1 min-w-[200px]">
                   <p className="font-mono text-xs mb-1 text-accent-gold">
                     WESTLICHSTER PARK
                   </p>
@@ -692,7 +699,7 @@ const StatisticsPage = () => {
                   </p>
                 </div>
 
-                <div className="py-3">
+                <div className="flex-1 min-w-[200px]">
                   <p className="font-mono text-xs mb-1 text-accent-gold">
                     ZENTRALSTER PARK
                   </p>
@@ -708,6 +715,18 @@ const StatisticsPage = () => {
                 </div>
               </div>
             </div>
+
+            {/* Geography Map */}
+            <StatisticsMap 
+              parks={[
+                northernmostPark,
+                southernmostPark, 
+                easternmostPark, 
+                westernmostPark, 
+                mostCenteredPark
+              ]} 
+              height="250px"
+            />
           </div>
 
           {/* Size Extremes */}
@@ -718,9 +737,11 @@ const StatisticsPage = () => {
                 Größe
               </h2>
             </div>
-            <div className="space-y-4">
-              <div className="flex flex-col md:flex-row md:justify-between md:items-center py-3 border-b gap-2 border-border-color">
-                <div className="flex-1">
+
+            {/* Size Parks in Single Row */}
+            <div className="mb-6">
+              <div className="flex flex-wrap gap-4 mb-4">
+                <div className="flex-1 min-w-[200px]">
                   <p className="font-mono text-xs mb-1 text-accent-gold">
                     GRÖßTER PARK
                   </p>
@@ -733,14 +754,12 @@ const StatisticsPage = () => {
                   <p className="font-mono text-xs mt-1 text-deep-charcoal opacity-60">
                     {largestPark.district}. Bezirk
                   </p>
+                  <span className="font-serif text-lg italic text-primary-green">
+                    {formatArea(largestPark.area)}
+                  </span>
                 </div>
-                <span className="font-serif text-lg italic md:ml-4 text-primary-green">
-                  {formatArea(largestPark.area)}
-                </span>
-              </div>
 
-              <div className="flex flex-col md:flex-row md:justify-between md:items-center py-3 border-b gap-2 border-border-color">
-                <div className="flex-1">
+                <div className="flex-1 min-w-[200px]">
                   <p className="font-mono text-xs mb-1 text-accent-gold">
                     DURCHSCHNITTSPARK
                   </p>
@@ -754,14 +773,12 @@ const StatisticsPage = () => {
                     {closestToAveragePark.district}. Bezirk · Ø{" "}
                     {formatArea(averageParkSize)}
                   </p>
+                  <span className="font-serif text-lg italic text-primary-green">
+                    {formatArea(closestToAveragePark.area)}
+                  </span>
                 </div>
-                <span className="font-serif text-lg italic md:ml-4 text-primary-green">
-                  {formatArea(closestToAveragePark.area)}
-                </span>
-              </div>
 
-              <div className="flex flex-col md:flex-row md:justify-between md:items-center py-3 border-b gap-2 border-border-color">
-                <div className="flex-1">
+                <div className="flex-1 min-w-[200px]">
                   <p className="font-mono text-xs mb-1 text-accent-gold">
                     MEDIAN PARK
                   </p>
@@ -774,14 +791,12 @@ const StatisticsPage = () => {
                   <p className="font-mono text-xs mt-1 text-deep-charcoal opacity-60">
                     {medianPark.district}. Bezirk
                   </p>
+                  <span className="font-serif text-lg italic text-primary-green">
+                    {formatArea(medianPark.area)}
+                  </span>
                 </div>
-                <span className="font-serif text-lg italic md:ml-4 text-primary-green">
-                  {formatArea(medianPark.area)}
-                </span>
-              </div>
 
-              <div className="flex flex-col md:flex-row md:justify-between md:items-center py-3 border-b gap-2 border-border-color">
-                <div className="flex-1">
+                <div className="flex-1 min-w-[200px]">
                   <p className="font-mono text-xs mb-1 text-accent-gold">
                     KLEINSTER PARK
                   </p>
@@ -794,12 +809,23 @@ const StatisticsPage = () => {
                   <p className="font-mono text-xs mt-1 text-deep-charcoal opacity-60">
                     {smallestPark.district}. Bezirk
                   </p>
+                  <span className="font-serif text-lg italic text-primary-green">
+                    {formatArea(smallestPark.area)}
+                  </span>
                 </div>
-                <span className="font-serif text-lg italic md:ml-4 text-primary-green">
-                  {formatArea(smallestPark.area)}
-                </span>
               </div>
             </div>
+
+            {/* Size Map */}
+            <StatisticsMap 
+              parks={[
+                largestPark,
+                closestToAveragePark,
+                medianPark,
+                smallestPark
+              ]} 
+              height="250px"
+            />
           </div>
         </div>
 
