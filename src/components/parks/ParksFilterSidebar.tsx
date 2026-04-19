@@ -4,6 +4,7 @@ import type { SortOrder } from "@/hooks/useParksFilters";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 import { MultiSelect } from "@/components/ui/MultiSelect";
+import { Select } from "@/components/ui/Select";
 
 interface ParksFilterSidebarProps {
   searchTerm: string;
@@ -70,7 +71,7 @@ export default function ParksFilterSidebar({
         <div className="mb-6">
           <Select
             value={selectedDistrict || "all"}
-            onValueChange={(value) =>
+            onValueChange={(value: string) =>
               onDistrictChange(value === "all" ? "" : value)
             }
             options={[

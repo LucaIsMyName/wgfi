@@ -1,10 +1,10 @@
 import { useMemo } from "react";
 import { Group } from "@visx/group";
-import { AxisBottom, AxisLeft } from "@/lib/visx/axis";
-import { Bar } from "@/lib/visx/shape";
-import { scaleBand, scaleLinear } from "@/lib/visx/scale";
-import { useTooltip, useTooltipInPortal, defaultStyles } from "@/lib/visx/tooltip";
-import { localPoint } from "@/lib/visx/event";
+import { AxisBottom, AxisLeft } from "@visx/axis";
+import { Bar } from "@visx/shape";
+import { scaleBand, scaleLinear } from "@visx/scale";
+import { useTooltip, useTooltipInPortal, defaultStyles } from "@visx/tooltip";
+import { localPoint } from "@visx/event";
 import { calculateAmenitiesDistribution } from "@/utils/statistics";
 import { getAmenityIcon } from "@/utils/amenityIcons";
 import type { Park } from "@/types/park";

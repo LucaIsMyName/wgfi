@@ -1,11 +1,11 @@
 import { useMemo } from "react";
 import { Group } from "@visx/group";
-import { AxisBottom, AxisLeft } from "@/lib/visx/axis";
-import { Bar } from "@/lib/visx/shape";
-import { scaleBand, scaleLinear } from "@/lib/visx/scale";
-import { useTooltip, useTooltipInPortal, defaultStyles } from "@/lib/visx/tooltip";
-import { localPoint } from "@/lib/visx/event";
-import { calculateAmenitiesPerParkDistribution } from "@/utils/statistics";
+import { AxisBottom, AxisLeft } from "@visx/axis";
+import { Bar } from "@visx/shape";
+import { scaleBand, scaleLinear } from "@visx/scale";
+import { useTooltip, useTooltipInPortal, defaultStyles } from "@visx/tooltip";
+import { localPoint } from "@visx/event";
+import { binAmenitiesPerPark, type AmenitiesPerParkBin } from "@/utils/statistics";
 import type { Park } from "@/types/park";
 
 interface AmenitiesPerParkChartProps {
@@ -40,9 +40,9 @@ export default function AmenitiesPerParkChart({
   });
 
   // Calculate bins
-  const bins = useMemo(() => binAmenitiesPerPark(parks), [parks]);
+  const bins: AmenitiesPerParkBin[] = useMemo(() => binAmenitiesPerPark(parks), [parks]);
 
-  if (bins.length === 0 || bins.every((bin) => bin.count === 0)) {
+  if (bins.length === 0 || bins.every((bin: AmenitiesPerParkBin) => bin.count === 0)) {
     return (
       <div className="flex items-center justify-center" style={{ width, height }}>
         <p
@@ -62,7 +62,7 @@ export default function AmenitiesPerParkChart({
     () =>
       scaleBand<string>({
         range: [0, innerWidth],
-        domain: bins.map((b) => b.range),
+        domain: bins.map((b: AmenitiesPerParkBin) => b.range),
         padding: 0.2,
       }),
     [innerWidth, bins]
@@ -72,7 +72,7 @@ export default function AmenitiesPerParkChart({
     () =>
       scaleLinear<number>({
         range: [innerHeight, 0],
-        domain: [0, Math.max(...bins.map((b) => b.count))],
+        domain: [0, Math.max(...bins.map((b: AmenitiesPerParkBin) => b.count))],
         nice: true,
       }),
     [innerHeight, bins]
@@ -106,7 +106,7 @@ export default function AmenitiesPerParkChart({
       <svg ref={containerRef} width={width} height={height}>
         <Group left={margin.left} top={margin.top}>
           {/* Bars */}
-          {bins.map((bin) => {
+          {bins.map((bin: AmenitiesPerParkBin) => {
             const barWidth = xScale.bandwidth();
             const barHeight = innerHeight - yScale(bin.count);
             const barX = xScale(bin.range);

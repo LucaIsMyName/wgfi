@@ -4,7 +4,7 @@ import { Pie } from "@visx/shape";
 import { scaleOrdinal } from "@visx/scale";
 import { useTooltip, useTooltipInPortal, defaultStyles } from "@visx/tooltip";
 import { localPoint } from "@visx/event";
-import { calculateCategoryDistribution } from "@/utils/statistics";
+import { calculateCategoryDistribution, calculateDistrictAreaDistribution, type DistrictAreaData } from "@/utils/statistics";
 import type { Park } from "@/types/park";
 
 interface CategoryDistributionChartProps {
@@ -98,7 +98,7 @@ export default function CategoryDistributionChart({
       "#4A5A26",
     ];
     return scaleOrdinal({
-      domain: districtData.map((d) => d.district),
+      domain: districtData.map((d: DistrictAreaData) => d.district),
       range: colors,
     });
   };
@@ -129,7 +129,7 @@ export default function CategoryDistributionChart({
         <Group left={margin.left + centerX} top={margin.top + centerY}>
           <Pie
             data={districtData}
-            pieValue={(d) => d.totalArea}
+            pieValue={(d: DistrictAreaData) => d.totalArea}
             outerRadius={radius}
             innerRadius={radius - donutThickness}
             padAngle={0.005}>
@@ -192,9 +192,9 @@ export default function CategoryDistributionChart({
           padding: "0 8px",
         }}>
         {districtData
-          .sort((a, b) => b.totalArea - a.totalArea)
+          .sort((a: DistrictAreaData, b: DistrictAreaData) => b.totalArea - a.totalArea)
           .slice(0, 10)
-          .map((d) => (
+          .map((d: DistrictAreaData) => (
             <div
               key={d.district}
               style={{

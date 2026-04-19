@@ -5,7 +5,7 @@ import { Bar } from "@visx/shape";
 import { scaleBand, scaleLinear } from "@visx/scale";
 import { useTooltip, useTooltipInPortal, defaultStyles } from "@visx/tooltip";
 import { localPoint } from "@visx/event";
-import { calculateParkSizeDistribution } from "@/utils/statistics";
+import { binParkSizes, type ParkSizeBin } from "@/utils/statistics";
 import type { Park } from "@/types/park";
 
 interface ParkSizeHistogramProps {
@@ -36,9 +36,9 @@ export default function ParkSizeHistogram({ parks, width, height }: ParkSizeHist
   });
 
   // Calculate size bins
-  const bins = useMemo(() => binParkSizes(parks), [parks]);
+  const bins: ParkSizeBin[] = useMemo(() => binParkSizes(parks), [parks]);
 
-  if (bins.length === 0 || bins.every((bin) => bin.count === 0)) {
+  if (bins.length === 0 || bins.every((bin: ParkSizeBin) => bin.count === 0)) {
     return (
       <div className="flex items-center justify-center" style={{ width, height }}>
         <p
@@ -58,7 +58,7 @@ export default function ParkSizeHistogram({ parks, width, height }: ParkSizeHist
     () =>
       scaleBand<string>({
         range: [0, innerWidth],
-        domain: bins.map((b) => b.range),
+        domain: bins.map((b: ParkSizeBin) => b.range),
         padding: 0.2,
       }),
     [innerWidth, bins]
@@ -68,7 +68,7 @@ export default function ParkSizeHistogram({ parks, width, height }: ParkSizeHist
     () =>
       scaleLinear<number>({
         range: [innerHeight, 0],
-        domain: [0, Math.max(...bins.map((b) => b.count))],
+        domain: [0, Math.max(...bins.map((b: ParkSizeBin) => b.count))],
         nice: true,
       }),
     [innerHeight, bins]
@@ -102,7 +102,7 @@ export default function ParkSizeHistogram({ parks, width, height }: ParkSizeHist
       <svg ref={containerRef} width={width} height={height}>
         <Group left={margin.left} top={margin.top}>
           {/* Bars */}
-          {bins.map((bin) => {
+          {bins.map((bin: ParkSizeBin) => {
             const barWidth = xScale.bandwidth();
             const barHeight = innerHeight - yScale(bin.count);
             const barX = xScale(bin.range);
