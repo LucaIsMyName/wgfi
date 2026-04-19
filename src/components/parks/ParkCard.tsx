@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Building, Ruler, Heart, GitCompare } from "lucide-react";
+import { Building, Ruler, Heart, Trash2, GitCompare } from "lucide-react";
 import { getAmenityIcon } from "../../utils/amenityIcons";
 import { isFavorite } from "../../utils/favoritesManager";
 import { isInComparison, toggleComparison } from "../../utils/comparisonManager";
@@ -14,12 +14,13 @@ interface ParkCardProps {
   isHighContrast: boolean;
   isFavorited?: boolean;
   isInCompare?: boolean;
+  showTrashForFavorite?: boolean;
 }
 
 /**
  * ParkCard component - renders an individual park card in the list
  */
-export default function ParkCard({ park, onToggleFavorite, onToggleCompare, isHighContrast, isFavorited, isInCompare }: ParkCardProps) {
+export default function ParkCard({ park, onToggleFavorite, onToggleCompare, isHighContrast, isFavorited, isInCompare, showTrashForFavorite }: ParkCardProps) {
   const allDistricts = getAllDistrictsForPark(park);
   const districtsDisplay = formatDistricts(allDistricts, 'full').toUpperCase();
   
@@ -96,14 +97,18 @@ export default function ParkCard({ park, onToggleFavorite, onToggleCompare, isHi
             }}
             className="p-2 transition-transform"
             style={{
-              color: parkIsFavorited ? 'var(--accent-gold)' : 'var(--primary-green)',
+              color: showTrashForFavorite ? 'var(--primary-green)' : parkIsFavorited ? 'var(--accent-gold)' : 'var(--primary-green)',
             }}
-            aria-label={parkIsFavorited ? 'Aus Favoriten entfernen' : 'Zu Favoriten hinzufügen'}
+            aria-label="Aus Favoriten entfernen"
           >
-            <Heart
-              className="w-6 h-6"
-              fill={parkIsFavorited ? 'var(--accent-gold)' : 'transparent'}
-            />
+            {showTrashForFavorite ? (
+              <Trash2 className="w-5 h-5" />
+            ) : (
+              <Heart
+                className="w-6 h-6"
+                fill={parkIsFavorited ? 'var(--accent-gold)' : 'transparent'}
+              />
+            )}
           </button>
         </div>
       </div>

@@ -1,9 +1,11 @@
 # Wiener Beserl Park Index (WBI) - Project Documentation
 
 ## Project Overview
-The Wiener Beserl Park Index (WBI) is a comprehensive web application that serves as an index for all parks in Vienna, Austria. It provides users with detailed information about Vienna's 1000+ parks using official open government data.
+
+The Wiener Grünflächen Park Index (WBI) is a comprehensive web application that serves as an index for all parks in Vienna, Austria. It provides users with detailed information about Vienna's 1000+ parks using official open government data.
 
 ## Tech Stack
+
 - **Frontend Framework**: Vite + React 18 + TypeScript
 - **Styling**: Tailwind CSS (via CDN)
 - **Routing**: React Router DOM
@@ -12,6 +14,7 @@ The Wiener Beserl Park Index (WBI) is a comprehensive web application that serve
 - **Package Manager**: npm
 
 ## Project Structure
+
 ```
 src/
 ├── components/
@@ -31,6 +34,7 @@ public/
 ```
 
 ## Key Features
+
 - **Park Discovery**: Browse all Vienna parks with search and filtering
 - **Detailed Information**: Individual park pages with amenities, location, and metadata
 - **Responsive Design**: Mobile-first approach with Tailwind CSS
@@ -38,42 +42,40 @@ public/
 - **Open Data Integration**: Real-time data from Vienna's official APIs
 
 ## Data Sources
+
 - **Primary**: Vienna Parks Dataset (Parkanlagen Standorte Wien)
 - **Format**: WFS (Web Feature Service) JSON endpoints
 - **API Access**: Free, no authentication required
 - **Available Data**: Park names, locations, districts, coordinates, amenities
 
 ## URL Structure
+
 - `/` - Homepage
 - `/parks` - All parks listing
 - `/park/:id` - Individual park details
 - `/map` - Interactive map view
 
 ## Development Setup
+
 1. `npm install` - Install dependencies
 2. `npm run dev` - Start development server
 3. Access at `http://localhost:5173/`
 
 ## API Integration (Planned)
+
 - Vienna WFS endpoints for real-time park data
 - District boundaries for geographic context
 - Amenities and facilities information
 - Accessibility data
 
 ## Deployment Notes
+
 - Includes .htaccess for SPA routing support
 - Optimized for static hosting (Netlify, Vercel, etc.)
 - No backend required - pure frontend application
 
-## Future Enhancements
-- Interactive map with Leaflet/MapBox
-- Favorites system with local storage
-- Advanced search and filtering
-- Public transport integration
-- Photo galleries for parks
-- Accessibility information display
-
 ## Code Style
+
 - TypeScript for type safety
 - Functional components with hooks
 - Tailwind CSS for styling
@@ -81,4 +83,5 @@ public/
 - Performance-optimized with Vite
 
 ## Last Updated
-September 2025 - Initial setup and routing implementation complete
+
+April 2026 by `LucaIsMyName`

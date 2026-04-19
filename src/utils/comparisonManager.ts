@@ -11,8 +11,12 @@ const MAX_COMPARISON_PARKS = 128;
  * @returns Array of park IDs
  */
 export function getComparisonParks(): string[] {
-  const stored = localStorage.getItem(STORAGE_KEY_COMPARISON);
-  return stored ? JSON.parse(stored) : [];
+  try {
+    const stored = localStorage.getItem(STORAGE_KEY_COMPARISON);
+    return stored ? JSON.parse(stored) : [];
+  } catch {
+    return [];
+  }
 }
 
 /**

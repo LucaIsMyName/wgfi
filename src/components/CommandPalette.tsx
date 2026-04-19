@@ -10,7 +10,7 @@ import { slugifyParkName } from '../data/manualParksData';
 import type { Park } from '../types/park';
 import {
   Home,
-  Palmtree,
+  TreePalm,
   Map,
   BarChart3,
   Heart,
@@ -519,7 +519,7 @@ export function CommandPalette() {
                     }}
                     className="command-item"
                   >
-                    <Palmtree className="w-4 h-4" style={{ color: 'var(--primary-green)', flexShrink: 0 }} />
+                    <TreePalm className="w-4 h-4" style={{ color: 'var(--primary-green)', flexShrink: 0 }} />
                     Index
                   </Command.Item>
                   <Command.Item
@@ -621,7 +621,7 @@ export function CommandPalette() {
                     }}
                     className="command-item"
                   >
-                    <Palmtree className="w-4 h-4 mt-1" style={{ color: 'var(--primary-green)', flexShrink: 0 }} />
+                    <TreePalm className="w-4 h-4 mt-1" style={{ color: 'var(--primary-green)', flexShrink: 0 }} />
                     <div style={{ flex: 1 }}>
                       <div style={{ fontStyle: 'italic', fontSize: '16px' }}>{park.name}</div>
                       <div style={{ fontFamily: 'var(--font-mono)', fontSize: '11px', opacity: 0.7, marginTop: '2px' }}>

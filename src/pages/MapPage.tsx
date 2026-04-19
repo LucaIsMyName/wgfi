@@ -1,4 +1,4 @@
-import { useState, useEffect, Suspense, lazy } from "react";
+import { useState, useEffect, Suspense, lazy, useMemo } from "react";
 import { Helmet } from "react-helmet-async";
 import { useParams, useSearchParams } from "react-router-dom";
 import { useParksData } from "../hooks/useParksData";
@@ -51,10 +51,10 @@ const MapPage = () => {
     }, { replace: true });
   };
 
-  // Get available amenities from all parks
-  const availableAmenities = Array.from(
-    new Set(parks.flatMap(park => park.amenities))
-  ).sort((a, b) => a.localeCompare(b));
+  const availableAmenities = useMemo(
+    () => Array.from(new Set(parks.flatMap(park => park.amenities))).sort((a, b) => a.localeCompare(b)),
+    [parks]
+  );
 
   // Apply filters to parks
   useEffect(() => {

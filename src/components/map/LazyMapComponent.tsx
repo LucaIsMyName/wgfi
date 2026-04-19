@@ -43,6 +43,7 @@ const LazyMapComponent: React.FC<LazyMapComponentProps> = ({
   const { effectiveTheme } = useTheme();
   const navigate = useNavigate();
   const addressMarkerRef = useRef<mapboxgl.Marker | null>(null);
+  const userLocationMarkerRef = useRef<mapboxgl.Marker | null>(null);
 
   // Map hooks
   const { mapContainerRef, mapInstance, mapLoaded, styleLoadedCounter } = useMapboxMap({
@@ -100,8 +101,11 @@ const LazyMapComponent: React.FC<LazyMapComponentProps> = ({
             zoom: 14,
           });
 
-          // Add user location marker
-          new mapboxgl.Marker({
+          // Remove previous user location marker before adding new one
+          if (userLocationMarkerRef.current) {
+            userLocationMarkerRef.current.remove();
+          }
+          userLocationMarkerRef.current = new mapboxgl.Marker({
             color: "#FF0000",
           })
             .setLngLat([userPos.lng, userPos.lat])
@@ -159,11 +163,14 @@ const LazyMapComponent: React.FC<LazyMapComponentProps> = ({
     );
   }, [parks]);
 
-  // Cleanup address marker on unmount only
+  // Cleanup markers on unmount only
   useEffect(() => {
     return () => {
       if (addressMarkerRef.current) {
         addressMarkerRef.current.remove();
+      }
+      if (userLocationMarkerRef.current) {
+        userLocationMarkerRef.current.remove();
       }
     };
   }, []);

@@ -25,7 +25,7 @@ interface UseParksFiltersReturn {
   updateSortOrder: (order: SortOrder) => void;
   updateSelectedAmenities: (value: string[]) => void;
   resetAllFilters: () => void;
-  requestLocationPermission: () => Promise<void>;
+  requestLocationPermission: () => Promise<{ lat: number; lng: number } | null>;
   handleNearestSort: () => Promise<void>;
   filteredAndSortedParks: Park[];
 }
@@ -54,8 +54,12 @@ export function useParksFilters(parks: Park[]): UseParksFiltersReturn {
     if (urlAmenities) {
       return urlAmenities.split(",").filter(Boolean);
     }
-    const stored = localStorage.getItem(STORAGE_KEY_AMENITIES);
-    return stored ? JSON.parse(stored) : [];
+    try {
+      const stored = localStorage.getItem(STORAGE_KEY_AMENITIES);
+      return stored ? JSON.parse(stored) : [];
+    } catch {
+      return [];
+    }
   });
   const [userLocation, setUserLocation] = useState<{lat: number, lng: number} | null>(null);
   const [locationPermission, setLocationPermission] = useState<boolean | null>(() => {
@@ -127,11 +131,12 @@ export function useParksFilters(parks: Park[]): UseParksFiltersReturn {
   };
 
   // Request geolocation permission and get user location
-  const requestLocationPermission = async () => {
+  // Returns the resolved location on success, null on failure
+  const requestLocationPermission = async (): Promise<{ lat: number; lng: number } | null> => {
     if (!navigator.geolocation) {
       setLocationPermission(false);
       localStorage.setItem(STORAGE_KEY_LOCATION_PERMISSION, JSON.stringify(false));
-      return;
+      return null;
     }
 
     try {
@@ -143,25 +148,30 @@ export function useParksFilters(parks: Park[]): UseParksFiltersReturn {
         });
       });
       
-      setUserLocation({
+      const location = {
         lat: position.coords.latitude,
         lng: position.coords.longitude
-      });
+      };
+      setUserLocation(location);
       setLocationPermission(true);
       localStorage.setItem(STORAGE_KEY_LOCATION_PERMISSION, JSON.stringify(true));
+      return location;
     } catch (error) {
       console.error('Error getting location:', error);
       setLocationPermission(false);
       localStorage.setItem(STORAGE_KEY_LOCATION_PERMISSION, JSON.stringify(false));
+      return null;
     }
   };
 
   // Handle nearest sort - request permission if needed
   const handleNearestSort = async () => {
-    if (locationPermission === null) {
-      await requestLocationPermission();
+    if (userLocation) {
+      updateSortOrder('nearest');
+      return;
     }
-    if (locationPermission === true || userLocation) {
+    const location = await requestLocationPermission();
+    if (location) {
       updateSortOrder('nearest');
     }
   };

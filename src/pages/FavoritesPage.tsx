@@ -2,10 +2,9 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { useParksData } from "../hooks/useParksData";
-import { slugifyParkName } from "../data/manualParksData";
-import { Heart, Trash2 } from "lucide-react";
-import { getFavorites, removeFavorite, toggleFavorite } from "../utils/favoritesManager";
-import { isInComparison, toggleComparison } from "../utils/comparisonManager";
+import { Heart } from "lucide-react";
+import { getFavorites, toggleFavorite } from "../utils/favoritesManager";
+import { toggleComparison } from "../utils/comparisonManager";
 import STYLE from "../utils/config";
 import ParkCard from "../components/parks/ParkCard";
 import type { Park } from "../types/park";
@@ -27,24 +26,11 @@ const FavoritesPage = () => {
     }
   }, [parks]);
 
-  // Handle removing a park from favorites
-  const handleRemoveFavorite = (parkId: string) => {
-    removeFavorite(parkId);
-    setFavoriteParks((prevFavorites) => prevFavorites.filter((park: { id: string }) => park.id !== parkId));
-  };
-
-  // Handle toggle favorite (for ParkCard compatibility)
   const handleToggleFavorite = (parkId: string) => {
     toggleFavorite(parkId);
-    setFavoriteParks((prevFavorites) => {
-      const isCurrentlyFavorited = getFavorites().includes(parkId);
-      if (isCurrentlyFavorited) {
-        return prevFavorites.filter((park: { id: string }) => park.id !== parkId);
-      } else {
-        // This shouldn't happen in favorites page, but handle it gracefully
-        return prevFavorites;
-      }
-    });
+    setFavoriteParks((prevFavorites) =>
+      prevFavorites.filter((park: { id: string }) => park.id !== parkId)
+    );
   };
 
   // Handle toggle compare (for ParkCard compatibility)
@@ -102,22 +88,15 @@ const FavoritesPage = () => {
           ) : (
             <div className="space-y-4">
               {favoriteParks.map((park) => (
-                <div key={park.id} className="relative">
-                  <ParkCard
-                    park={park}
-                    onToggleFavorite={handleToggleFavorite}
-                    onToggleCompare={handleToggleCompare}
-                    isHighContrast={false}
-                    isFavorited={true}
-                  />
-                  {/* Additional remove button for favorites page */}
-                  <button
-                    onClick={() => handleRemoveFavorite(park.id)}
-                    className="absolute top-2 right-2 p-2 rounded-full bg-card-bg border border-border-color hover:bg-light-sage transition-colors text-primary-green z-10"
-                    aria-label="Aus Favoriten entfernen">
-                    <Trash2 className="w-4 h-4" />
-                  </button>
-                </div>
+                <ParkCard
+                  key={park.id}
+                  park={park}
+                  onToggleFavorite={handleToggleFavorite}
+                  onToggleCompare={handleToggleCompare}
+                  isHighContrast={false}
+                  isFavorited={true}
+                  showTrashForFavorite={true}
+                />
               ))}
             </div>
           )}

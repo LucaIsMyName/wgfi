@@ -11,8 +11,12 @@ const STORAGE_KEY_FAVORITES = 'wgfi:favorite-parks';
  * @returns Array of park IDs that are favorites
  */
 export function getFavorites(): string[] {
-  const storedFavorites = localStorage.getItem(STORAGE_KEY_FAVORITES);
-  return storedFavorites ? JSON.parse(storedFavorites) : [];
+  try {
+    const storedFavorites = localStorage.getItem(STORAGE_KEY_FAVORITES);
+    return storedFavorites ? JSON.parse(storedFavorites) : [];
+  } catch {
+    return [];
+  }
 }
 
 /**

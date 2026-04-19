@@ -28,6 +28,7 @@ export function useMapboxMap({
 }: UseMapboxMapProps): UseMapboxMapReturn {
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const mapInstance = useRef<mapboxgl.Map | null>(null);
+  const appliedStyleUrl = useRef<string>('');
   const [mapLoaded, setMapLoaded] = useState(false);
   const [styleLoadedCounter, setStyleLoadedCounter] = useState(0);
 
@@ -75,13 +76,14 @@ export function useMapboxMap({
         zoom: zoom, // Use dynamic zoom
         pitch: pitch, // Use dynamic pitch
         bearing: 0,
-        antialias: true, // Smooth 3D rendering
-        preserveDrawingBuffer: true // Prevent WebGL context loss
+        antialias: true,
       });
       } catch (error) {
         console.error('Error creating map:', error);
         return;
       }
+
+      appliedStyleUrl.current = STYLE.getMapStyle(effectiveTheme === 'dark');
 
       map.on("load", () => {
         // Add 3D terrain only if it doesn't exist
@@ -207,36 +209,22 @@ export function useMapboxMap({
     
     const isDark = effectiveTheme === 'dark';
     const newStyle = STYLE.getMapStyle(isDark);
-    
-    // Check if style is loaded before updating
-    if (mapInstance.current.isStyleLoaded()) {
-      try {
-        const currentStyle = mapInstance.current.getStyle();
-        // Only update if style URL is different
-        if (currentStyle && !currentStyle.sprite?.includes(newStyle)) {
-          mapInstance.current.setStyle(newStyle);
-          // Increment counter after new style loads to trigger marker re-creation
-          mapInstance.current.once('style.load', () => {
-            setStyleLoadedCounter(prev => prev + 1);
-          });
-        }
-      } catch (error) {
-        // If style is not loaded, wait for it
-        mapInstance.current.once('style.load', () => {
-          mapInstance.current?.setStyle(newStyle);
-          mapInstance.current?.once('style.load', () => {
-            setStyleLoadedCounter(prev => prev + 1);
-          });
-        });
-      }
-    } else {
-      // Wait for style to load
+
+    if (newStyle === appliedStyleUrl.current) return;
+
+    const applyStyle = () => {
+      if (!mapInstance.current) return;
+      appliedStyleUrl.current = newStyle;
+      mapInstance.current.setStyle(newStyle);
       mapInstance.current.once('style.load', () => {
-        mapInstance.current?.setStyle(newStyle);
-        mapInstance.current?.once('style.load', () => {
-          setStyleLoadedCounter(prev => prev + 1);
-        });
+        setStyleLoadedCounter(prev => prev + 1);
       });
+    };
+
+    if (mapInstance.current.isStyleLoaded()) {
+      applyStyle();
+    } else {
+      mapInstance.current.once('style.load', applyStyle);
     }
   }, [effectiveTheme, mapLoaded]);
 

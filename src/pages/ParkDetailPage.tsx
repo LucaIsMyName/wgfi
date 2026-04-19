@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useMemo } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { useParksData } from "../hooks/useParksData";
 import { getManualParkData, slugifyParkName } from "../data/manualParksData";
@@ -31,6 +31,7 @@ import { Button } from "../components/ui/Button";
 
 const ParkDetailPage: React.FC = () => {
   const { idOrSlug } = useParams<{ idOrSlug: string }>();
+  const navigate = useNavigate();
   const { effectiveTheme, isHighContrast } = useTheme();
   const { parks } = useParksData();
   const [park, setPark] = useState<Park | null>(null);
@@ -186,128 +187,105 @@ const ParkDetailPage: React.FC = () => {
     if (!park || !park.coordinates) return;
 
     const parksWithDistance: ParkWithDistance[] = parks
-      .filter((p: Park) => p.id !== park.id) // Exclude current park
-      .map((p: Park): ParkWithDistance => {
+      .filter((p: Park) => p.id !== park.id)
+      .map((p: Park) => ({
+        ...p,
+        distance: calculateDistance(
+          park.coordinates.lat,
+          park.coordinates.lng,
+          p.coordinates.lat,
+          p.coordinates.lng,
+        ),
+      }))
+      .sort((a, b) => a.distance - b.distance)
+      .slice(0, 5)
+      .map((p): ParkWithDistance => {
         const manualData =
           getManualParkData(p.id) || getManualParkData(slugifyParkName(p.name));
-        // Merge amenities for nearby parks too
         const nearbyMergedAmenities = manualData?.amenities
           ? [...new Set([...(p.amenities || []), ...manualData.amenities])]
           : p.amenities;
-        return {
-          ...p,
-          ...manualData,
-          amenities: nearbyMergedAmenities,
-          distance: calculateDistance(
-            park.coordinates.lat,
-            park.coordinates.lng,
-            p.coordinates.lat,
-            p.coordinates.lng,
-          ),
-        };
-      })
-      .sort(
-        (a: ParkWithDistance, b: ParkWithDistance) => a.distance - b.distance,
-      )
-      .slice(0, 5); // Get 5 nearest parks
+        return { ...p, ...manualData, amenities: nearbyMergedAmenities };
+      });
 
     setNearbyParks(parksWithDistance);
   }, [park, parks]);
 
-  // Initialize map marker when park and map are ready
+  // Initialize map marker when park and map are ready (also re-runs on style change via styleLoadedCounter)
   useEffect(() => {
     if (!park || !park.coordinates || !mapInstance.current || !mapReady) return;
 
-    // Reset error state
     setMapError(null);
 
-    // Clean up previous marker if it exists
     if (mapMarker.current) {
       mapMarker.current.remove();
       mapMarker.current = null;
     }
 
-    const initMarker = () => {
-      try {
-        // Import mapboxgl dynamically for marker creation
-        import("mapbox-gl")
-          .then((mapboxgl) => {
-            if (!mapInstance.current || !park) return;
+    const buildMarker = (mapboxgl: typeof import("mapbox-gl")) => {
+      if (!mapInstance.current || !park) return;
 
-            // Create marker wrapper and inner element
-            const wrapper = document.createElement("div");
-            wrapper.className = "marker-wrapper";
-            wrapper.style.position = "absolute";
-            wrapper.style.transform = "translate(-50%, -50%)";
+      const wrapper = document.createElement("div");
+      wrapper.className = "marker-wrapper";
+      wrapper.style.position = "absolute";
+      wrapper.style.transform = "translate(-50%, -50%)";
 
-            const el = document.createElement("div");
-            el.className = "custom-marker";
-            el.style.width = "30px";
-            el.style.height = "30px";
-            el.style.borderRadius = "50%";
-            el.style.backgroundColor = "var(--primary-green)";
-            el.style.display = "flex";
-            el.style.justifyContent = "center";
-            el.style.alignItems = "center";
-            el.style.color = "var(--soft-cream)";
-            el.style.boxShadow = "0 2px 6px rgba(0,0,0,0.3)";
-            el.style.cursor = "pointer";
-            el.style.transition = "all 0.2s";
-            el.innerHTML =
-              '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>';
+      const el = document.createElement("div");
+      el.className = "custom-marker";
+      el.style.width = "30px";
+      el.style.height = "30px";
+      el.style.borderRadius = "50%";
+      el.style.backgroundColor = "var(--primary-green)";
+      el.style.display = "flex";
+      el.style.justifyContent = "center";
+      el.style.alignItems = "center";
+      el.style.color = "var(--soft-cream)";
+      el.style.boxShadow = "0 2px 6px rgba(0,0,0,0.3)";
+      el.style.cursor = "pointer";
+      el.style.transition = "all 0.2s";
+      el.innerHTML =
+        '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>';
+      wrapper.appendChild(el);
 
-            wrapper.appendChild(el);
+      const popup = new mapboxgl.default.Popup({
+        offset: 25,
+        closeButton: false,
+      }).setDOMContent(
+        createParkDetailMapPopupEl({ name: park.name, address: park.address }),
+      );
 
-            // Create popup (DOM nodes avoid HTML injection from park fields)
-            const popup = new mapboxgl.default.Popup({
-              offset: 25,
-              closeButton: false,
-            }).setDOMContent(
-              createParkDetailMapPopupEl({
-                name: park.name,
-                address: park.address,
-              }),
-            );
+      const marker = new mapboxgl.default.Marker(wrapper)
+        .setLngLat([park.coordinates.lng, park.coordinates.lat])
+        .setPopup(popup)
+        .addTo(mapInstance.current);
 
-            // Add marker using the wrapper
-            const marker = new mapboxgl.default.Marker(wrapper)
-              .setLngLat([park.coordinates.lng, park.coordinates.lat])
-              .setPopup(popup)
-              .addTo(mapInstance.current);
+      el.addEventListener("mouseenter", () => {
+        el.style.transform = "scale(1.1)";
+        el.style.boxShadow = "0 4px 8px rgba(0,0,0,0.4)";
+      });
+      el.addEventListener("mouseleave", () => {
+        el.style.transform = "scale(1)";
+        el.style.boxShadow = "0 2px 6px rgba(0,0,0,0.3)";
+      });
 
-            // Add hover effect
-            el.addEventListener("mouseenter", () => {
-              el.style.transform = "scale(1.1)";
-              el.style.boxShadow = "0 4px 8px rgba(0,0,0,0.4)";
-            });
-            el.addEventListener("mouseleave", () => {
-              el.style.transform = "scale(1)";
-              el.style.boxShadow = "0 2px 6px rgba(0,0,0,0.3)";
-            });
-
-            // Store reference
-            mapMarker.current = marker;
-
-            // Map is already centered by the hook, no need to flyTo again
-          })
-          .catch((error) => {
-            console.error("Error loading mapbox:", error);
-            setMapError("Karte konnte nicht geladen werden");
-          });
-      } catch (error) {
-        console.error("Error initializing marker:", error);
-        setMapError("Marker konnte nicht geladen werden");
-      }
+      mapMarker.current = marker;
     };
 
-    // Wait for map to be fully loaded
+    const initMarker = () => {
+      import("mapbox-gl")
+        .then(buildMarker)
+        .catch((error) => {
+          console.error("Error loading mapbox:", error);
+          setMapError("Karte konnte nicht geladen werden");
+        });
+    };
+
     if (mapInstance.current.isStyleLoaded()) {
       initMarker();
     } else {
       mapInstance.current.once("load", initMarker);
     }
 
-    // Cleanup function
     return () => {
       if (mapMarker.current) {
         mapMarker.current.remove();
@@ -315,79 +293,6 @@ const ParkDetailPage: React.FC = () => {
       }
     };
   }, [park, mapReady, mapInstance, styleLoadedCounter]);
-
-  // Update marker when style changes (theme handled by shared hook)
-  useEffect(() => {
-    if (!mapInstance.current || !park || !mapMarker.current) return;
-
-    // Re-create marker when style changes
-    const timer = setTimeout(() => {
-      if (mapMarker.current) {
-        mapMarker.current.remove();
-        mapMarker.current = null;
-      }
-
-      // Re-initialize marker with new style
-      import("mapbox-gl").then((mapboxgl) => {
-        if (!mapInstance.current || !park) return;
-
-        // Create marker wrapper and inner element
-        const wrapper = document.createElement("div");
-        wrapper.className = "marker-wrapper";
-        wrapper.style.position = "absolute";
-        wrapper.style.transform = "translate(-50%, -50%)";
-
-        const el = document.createElement("div");
-        el.className = "custom-marker";
-        el.style.width = "30px";
-        el.style.height = "30px";
-        el.style.borderRadius = "50%";
-        el.style.backgroundColor = "var(--primary-green)";
-        el.style.display = "flex";
-        el.style.justifyContent = "center";
-        el.style.alignItems = "center";
-        el.style.color = "var(--soft-cream)";
-        el.style.boxShadow = "0 2px 6px rgba(0,0,0,0.3)";
-        el.style.cursor = "pointer";
-        el.style.transition = "all 0.2s";
-        el.innerHTML =
-          '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>';
-
-        wrapper.appendChild(el);
-
-        // Create popup (DOM nodes avoid HTML injection from park fields)
-        const popup = new mapboxgl.default.Popup({
-          offset: 25,
-          closeButton: false,
-        }).setDOMContent(
-          createParkDetailMapPopupEl({
-            name: park.name,
-            address: park.address,
-          }),
-        );
-
-        // Add marker using the wrapper
-        const marker = new mapboxgl.default.Marker(wrapper)
-          .setLngLat([park.coordinates.lng, park.coordinates.lat])
-          .setPopup(popup)
-          .addTo(mapInstance.current);
-
-        // Add hover effect
-        el.addEventListener("mouseenter", () => {
-          el.style.transform = "scale(1.1)";
-          el.style.boxShadow = "0 4px 8px rgba(0,0,0,0.4)";
-        });
-        el.addEventListener("mouseleave", () => {
-          el.style.transform = "scale(1)";
-          el.style.boxShadow = "0 2px 6px rgba(0,0,0,0.3)";
-        });
-
-        mapMarker.current = marker;
-      });
-    }, 100);
-
-    return () => clearTimeout(timer);
-  }, [styleLoadedCounter, park, mapInstance]);
 
   // Only show error after parks are loaded to prevent flash
   if (parks.length > 0 && (error || !park)) {
@@ -402,7 +307,7 @@ const ParkDetailPage: React.FC = () => {
             {error || "Park nicht gefunden"}
           </p>
           <Button
-            onClick={() => history.back()}
+            onClick={() => navigate(-1)}
             variant="primary"
             size="md"
             className="mt-4"
@@ -559,7 +464,7 @@ const ParkDetailPage: React.FC = () => {
           {/* Actions for Mobile */}
           <div className="flex gap-2">
             <Link
-              to="/map"
+              to={`/map/${slugifyParkName(parkData.name)}`}
               className="flex-1 px-4 py-3 font-mono text-xs flex items-center justify-center gap-2"
               style={{
                 backgroundColor: "var(--primary-green)",

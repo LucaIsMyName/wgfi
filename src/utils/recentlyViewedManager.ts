@@ -16,8 +16,12 @@ export interface RecentPark {
  * @returns Array of recent park objects sorted by most recent first
  */
 export function getRecentlyViewed(): RecentPark[] {
-  const stored = localStorage.getItem(STORAGE_KEY_RECENT);
-  return stored ? JSON.parse(stored) : [];
+  try {
+    const stored = localStorage.getItem(STORAGE_KEY_RECENT);
+    return stored ? JSON.parse(stored) : [];
+  } catch {
+    return [];
+  }
 }
 
 /**

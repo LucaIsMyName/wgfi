@@ -194,7 +194,6 @@ const HomePage: React.FC = () => {
               to="/index"
               variant="primary"
               size="md"
-              loading={isLoadingNearby}
               aria-label="Zur Liste aller Parks"
               className="touch-manipulation min-h-[44px] !justify-start sm:!justify-start !text-left"
               icon={TreePalm}
@@ -206,7 +205,6 @@ const HomePage: React.FC = () => {
               to="/map"
               variant="primary"
               size="md"
-              loading={isLoadingNearby}
               aria-label="Zur interaktiven Karte"
               className="touch-manipulation min-h-[44px] !justify-start sm:!justify-start !text-left"
               icon={Map}

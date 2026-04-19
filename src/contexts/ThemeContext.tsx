@@ -12,7 +12,13 @@ interface ThemeContextType {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [mode, setModeState] = useState<ThemeMode>('auto');
+  const [mode, setModeState] = useState<ThemeMode>(() => {
+    const saved = typeof window !== 'undefined' ? localStorage.getItem('wgfi-theme-mode') : null;
+    if (saved && ['auto', 'light', 'dark', 'light-hc', 'dark-hc'].includes(saved)) {
+      return saved as ThemeMode;
+    }
+    return 'auto';
+  });
   const [systemPreference, setSystemPreference] = useState<'light' | 'dark'>(() => {
     // Initialize synchronously to avoid flash of wrong theme
     if (typeof window !== 'undefined') {
@@ -35,13 +41,6 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     return () => mediaQuery.removeEventListener('change', updateSystemPreference);
   }, []);
 
-  // Load saved preference from localStorage
-  useEffect(() => {
-    const saved = localStorage.getItem('wgfi-theme-mode');
-    if (saved && ['auto', 'light', 'dark', 'light-hc', 'dark-hc'].includes(saved)) {
-      setModeState(saved as ThemeMode);
-    }
-  }, []);
 
   // Set mode and save to localStorage
   const setMode = (newMode: ThemeMode) => {

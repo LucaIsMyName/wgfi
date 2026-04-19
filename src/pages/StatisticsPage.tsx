@@ -1,10 +1,8 @@
 import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { AlertTriangle } from "lucide-react";
-import { useParksData } from "../hooks/useParksData";
-import { slugifyParkName } from "../data/manualParksData";
 import {
+  AlertTriangle,
   BarChart3,
   TrendingUp,
   MapPin,
@@ -15,6 +13,8 @@ import {
   Trophy,
   BarChart,
 } from "lucide-react";
+import { useParksData } from "../hooks/useParksData";
+import { slugifyParkName } from "../data/manualParksData";
 import ResponsiveContainer from "../components/statistics/ResponsiveContainer";
 import STYLE from "../utils/config";
 import AmenitiesChart from "../components/statistics/AmenitiesChart";
@@ -30,7 +30,12 @@ import ParkDensityChart from "../components/statistics/ParkDensityChart";
 import AmenityDensityChart from "../components/statistics/AmenityDensityChart";
 import TransportConnectivityChart from "../components/statistics/TransportConnectivityChart";
 import { getParkDistrictAreaDistribution } from "../utils/statistics";
-import { calculateParkDensity, calculateAmenityDensity, calculateTransportConnectivity, getDensitySummary } from "../utils/advancedStatistics";
+import {
+  calculateParkDensity,
+  calculateAmenityDensity,
+  calculateTransportConnectivity,
+  getDensitySummary,
+} from "../utils/advancedStatistics";
 import type { Park } from "../types/park";
 
 interface DistrictStats {
@@ -68,13 +73,7 @@ const DISTRICT_AREAS: Record<number, number> = {
   23: 32.0e6,
 };
 
-const VIENNA_TOTAL_AREA = (): number => {
-  let area = 0;
-  for (let i = 1; i <= 23; i++) {
-    area += DISTRICT_AREAS[i];
-  }
-  return area;
-}; // Vienna total area in square meters
+const VIENNA_TOTAL_AREA: number = Object.values(DISTRICT_AREAS).reduce((a, b) => a + b, 0);
 
 const StatisticsPage = () => {
   const { parks } = useParksData();
@@ -94,7 +93,9 @@ const StatisticsPage = () => {
   >("connectivityPercentage");
   const [parkDensityStats, setParkDensityStats] = useState<any[]>([]);
   const [amenityDensityStats, setAmenityDensityStats] = useState<any[]>([]);
-  const [transportConnectivityStats, setTransportConnectivityStats] = useState<any[]>([]);
+  const [transportConnectivityStats, setTransportConnectivityStats] = useState<
+    any[]
+  >([]);
 
   useEffect(() => {
     if (parks.length > 0) {
@@ -105,7 +106,7 @@ const StatisticsPage = () => {
   const calculateStats = (parkData: Park[]) => {
     // Calculate total park area in Vienna
     const totalParkArea = parkData.reduce((sum, park) => sum + park.area, 0);
-    const coverage = (totalParkArea / VIENNA_TOTAL_AREA()) * 100;
+    const coverage = (totalParkArea / VIENNA_TOTAL_AREA) * 100;
     setViennaCoverage(coverage);
 
     // Calculate stats per district
@@ -137,15 +138,15 @@ const StatisticsPage = () => {
     );
 
     setDistrictStats(stats);
-    
+
     // Calculate park density statistics
     const densityStats = calculateParkDensity(parkData);
     setParkDensityStats(densityStats);
-    
+
     // Calculate amenity density statistics
     const amenityStats = calculateAmenityDensity(parkData);
     setAmenityDensityStats(amenityStats);
-    
+
     // Calculate transport connectivity statistics
     const transportStats = calculateTransportConnectivity(parkData);
     setTransportConnectivityStats(transportStats);
@@ -327,7 +328,6 @@ const StatisticsPage = () => {
             </p>
             <p className="font-serif italic text-xs xl:text-base mt-1 text-deep-charcoal opacity-70">
               Durchschnittliche Parkgröße
-
             </p>
           </div>
         </div>
@@ -746,10 +746,7 @@ const StatisticsPage = () => {
           </div>
 
           {/* Largest Parks Map */}
-          <StatisticsMap 
-            parks={largestParks} 
-            height="250px"
-          />
+          <StatisticsMap parks={largestParks} height="250px" />
         </div>
 
         {/* Geographical & Size Extremes */}
@@ -848,14 +845,14 @@ const StatisticsPage = () => {
             </div>
 
             {/* Geography Map */}
-            <StatisticsMap 
+            <StatisticsMap
               parks={[
                 northernmostPark,
-                southernmostPark, 
-                easternmostPark, 
-                westernmostPark, 
-                mostCenteredPark
-              ]} 
+                southernmostPark,
+                easternmostPark,
+                westernmostPark,
+                mostCenteredPark,
+              ]}
               height="250px"
             />
           </div>
@@ -948,13 +945,13 @@ const StatisticsPage = () => {
             </div>
 
             {/* Size Map */}
-            <StatisticsMap 
+            <StatisticsMap
               parks={[
                 largestPark,
                 closestToAveragePark,
                 medianPark,
-                smallestPark
-              ]} 
+                smallestPark,
+              ]}
               height="250px"
             />
           </div>
