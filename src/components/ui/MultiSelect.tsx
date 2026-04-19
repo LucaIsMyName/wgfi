@@ -107,7 +107,7 @@ export const MultiSelect = React.forwardRef<HTMLButtonElement, MultiSelectProps>
                   <DropdownMenu.Separator className="h-px bg-border-color my-1" />
                   <DropdownMenu.Item 
                     onSelect={() => onValueChange([])}
-                    className="px-4 py-2 font-serif italic text-deep-charcoal cursor-pointer outline-none hover:bg-light-sage data-[highlighted]:bg-light-sage text-primary-green font-semibold"
+                    className="px-4 py-2 font-serif italic text-deep-charcoal cursor-pointer outline-none hover:bg-light-sage data-[highlighted]:bg-light-sage text-primary-green"
                   >
                     Alle zurücksetzen
                   </DropdownMenu.Item>

@@ -17,7 +17,7 @@ const IdeaPage: React.FC = () => {
       {/* Header */}
       <div className="w-full">
         <h1
-          className={`${STYLE.pageTitle(false)} mb-4 text-primary-green font-normal italic`}
+          className={`${STYLE.pageTitle(false)} mb-4 text-primary-green  italic`}
         >
           Die Idee
         </h1>
@@ -97,10 +97,10 @@ const IdeaPage: React.FC = () => {
 
           {/* Data Sources */}
           <section className="bg-card-bg rounded-lg">
-            <h2 className="font-serif italic text-xl mb-4 text-primary-green font-medium">
+            <h2 className="font-serif italic text-xl mb-4 text-primary-green">
               Woher kommen die Daten?
             </h2>
-            <div className="font-serif space-y-4 text-deep-charcoal font-normal leading-relaxed">
+            <div className="font-serif space-y-4 text-deep-charcoal  leading-relaxed">
               <p>
                 Alle Parkdaten stammen direkt von der Bundesrepublik Österreich
                 über deren offene Datenplattform (
@@ -148,10 +148,10 @@ const IdeaPage: React.FC = () => {
 
           {/* Features in Detail */}
           <section className="bg-card-bg rounded-lg">
-            <h2 className="font-serif italic text-xl mb-4 text-primary-green font-medium">
+            <h2 className="font-serif italic text-xl mb-4 text-primary-green">
               Was macht diese Website so alles?
             </h2>
-            <div className="font-serif space-y-4 text-deep-charcoal font-normal leading-relaxed">
+            <div className="font-serif space-y-4 text-deep-charcoal  leading-relaxed">
               <div className="space-y-6">
                 <div>
                   <h3 className="font-serif text-lg mb-2 text-primary-green">

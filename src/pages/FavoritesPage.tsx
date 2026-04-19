@@ -65,10 +65,10 @@ const FavoritesPage = () => {
                   stroke="var(--primary-green)"
                 />
                 <div>
-                  <h3 className="font-serif italic text-xl mb-2 text-primary-green font-medium">
+                  <h3 className="font-serif italic text-xl mb-2 text-primary-green">
                     Keine Favoriten gespeichert
                   </h3>
-                  <p className="font-serif text-base mb-5 text-deep-charcoal font-normal max-w-[500px] leading-relaxed">
+                  <p className="font-serif text-base mb-5 text-deep-charcoal max-w-[500px] leading-relaxed">
                     Du hast noch keine Parks zu deinen Favoriten hinzugefügt. Entdecke Parks in der Übersicht und speichere deine Lieblingsparks für schnellen Zugriff.
                   </p>
                   <Link

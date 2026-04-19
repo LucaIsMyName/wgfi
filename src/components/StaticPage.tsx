@@ -23,7 +23,7 @@ const mdComponents: React.ComponentProps<typeof ReactMarkdown>["components"] = {
     </h2>
   ),
   h3: ({ children }) => (
-    <h3 className="font-serif text-lg text-deep-charcoal mt-6 mb-2 font-semibold">
+    <h3 className="font-serif text-lg text-deep-charcoal mt-6 mb-2">
       {children}
     </h3>
   ),

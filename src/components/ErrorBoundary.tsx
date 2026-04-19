@@ -51,7 +51,7 @@ class ErrorBoundary extends Component<Props, State> {
           <div className="bg-card-bg p-8 rounded-lg shadow-lg max-w-2xl w-full border border-primary-green">
             <div className="flex items-center gap-3 mb-6">
               <AlertTriangle className="w-8 h-8 text-accent-gold flex-shrink-0" />
-              <h1 className="text-2xl font-serif font-bold text-primary-green">
+              <h1 className="text-2xl font-serif text-primary-green">
                 Etwas ist schief gelaufen
               </h1>
             </div>
