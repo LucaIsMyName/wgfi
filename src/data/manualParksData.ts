@@ -701,6 +701,7 @@ export const manualParksDB: Record<string, ManualParkData> = {
   "lainzer-tiergarten": {
     isFullPark: true,
     name: "Lainzer Tiergarten",
+    category: "Wald",
     district: 13,
     area: 2.45e7,
     coordinates: {
@@ -796,6 +797,7 @@ export const manualParksDB: Record<string, ManualParkData> = {
   },
   wienerwald: {
     name: "Wienerwald",
+    category: "Wald",
     description:
       "Der Wienerwald oder Wiener Wald als östlichster Ausläufer der Nordalpen ist eine Gebirgsgruppe in Niederösterreich und Wien und bildet damit das Nordostende der Alpen. Das 45 km lange und 20 bis 30 km breite Mittelgebirge ist großteils bewaldet und ein beliebtes Naherholungsgebiet für Wiener. Es ist heute – unter Einschluss der Randgebiete in der Millionenstadt Wien selbst – weitgehend vollständig als UNESCO-Biosphärenpark Wienerwald ausgewiesen. ",
     descriptionLicense: "Wikipedia",
