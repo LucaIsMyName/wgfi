@@ -358,7 +358,7 @@ body {
 }
 
 .animate-pulse-reverse {
-  animation: pulseReverse 1s ease infinite;  
+  animation: pulseReverse 1s ease infinite;
 }
 
 @keyframes pulseReverse {
@@ -371,7 +371,6 @@ body {
     transform: translateX(-20px);
   }
 }
-
 
 .animate-fade-gradient {
   animation: fadeInLeft 2s linear infinite;
@@ -477,6 +476,29 @@ body {
 
 .animate-accordion-up {
   animation: accordion-up 0.2s ease-out;
+}
+
+@keyframes bgMove {
+  0% {
+    background-position: 0% 0%;
+    opacity: 0.5;
+  }
+  25% {
+    background-position: 0% 200%;
+    opacity: 0.8;
+  }
+  50% {
+    background-position: 200% 200%;
+    opacity: 0.5;
+  }
+  75% {
+    background-position: 200% 0%;
+    opacity: 0.8;
+  }
+  100% {
+    background-position: 0% 0%;
+    opacity: 0.5;
+  }
 }
 
 *:focus {

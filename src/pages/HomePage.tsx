@@ -100,10 +100,16 @@ const HomePage: React.FC = () => {
           name="description"
           content="Entdecke alle Parks und Grünflächen Wiens. Der umfassende Index mit über 1000 Parks, interaktiver Karte und detaillierten Informationen zu Ausstattung und Lage."
         />
-        
+
         {/* Open Graph tags */}
-        <meta property="og:title" content="Wiener Grünflächen Index | Entdecke alle Parks in Wien" />
-        <meta property="og:description" content="Der umfassende Index mit über 1000 Parks, interaktiver Karte und detaillierten Informationen zu Ausstattung und Lage." />
+        <meta
+          property="og:title"
+          content="Wiener Grünflächen Index | Entdecke alle Parks in Wien"
+        />
+        <meta
+          property="og:description"
+          content="Der umfassende Index mit über 1000 Parks, interaktiver Karte und detaillierten Informationen zu Ausstattung und Lage."
+        />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={window.location.href} />
         <meta property="og:image" content="/home.jpg" />
@@ -111,13 +117,19 @@ const HomePage: React.FC = () => {
         <meta property="og:image:height" content="630" />
         <meta property="og:locale" content="de_DE" />
         <meta property="og:site_name" content="Wiener Grünflächen Index" />
-        
+
         {/* Twitter Card tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Wiener Grünflächen Index | Entdecke alle Parks in Wien" />
-        <meta name="twitter:description" content="Der umfassende Index mit über 1000 Parks, interaktiver Karte und detaillierten Informationen zu Ausstattung und Lage." />
+        <meta
+          name="twitter:title"
+          content="Wiener Grünflächen Index | Entdecke alle Parks in Wien"
+        />
+        <meta
+          name="twitter:description"
+          content="Der umfassende Index mit über 1000 Parks, interaktiver Karte und detaillierten Informationen zu Ausstattung und Lage."
+        />
         <meta name="twitter:image" content="/home.jpg" />
-        
+
         {/* Additional meta tags */}
         <meta name="robots" content="index, follow" />
         <meta name="language" content="de" />
@@ -136,17 +148,17 @@ const HomePage: React.FC = () => {
           src="/home.jpg"
           mode={effectiveTheme === "dark" ? "dither" : "dither"}
           fontSize={4}
-          saturation={effectiveTheme === "dark" ? 1 : 4}
-          contrast={effectiveTheme === "dark" ? 3 : 3}
+          saturation={effectiveTheme === "dark" ? 1 : 2}
+          contrast={effectiveTheme === "dark" ? 2 : 2}
           brightness={effectiveTheme === "dark" ? 0.9 : 1}
           hueShift={effectiveTheme === "dark" ? 20 : 30}
           movementSpeed={"slow"}
-          colorCount={8}
-          scale={effectiveTheme === "dark" ? 0.25 : 0.25}
-          ditherAlgorithm="ordered"
-          ditherMatrixSize={8}
-          ditherDotSize={effectiveTheme === "dark" ? 1 : 1}
-          ditherDotSpacing={effectiveTheme === "dark" ? -0.1 : -0.1}
+          colorCount={64}
+          scale={effectiveTheme === "dark" ? 0.33 : 0.33}
+          ditherAlgorithm="atkinson"
+          ditherMatrixSize={2}
+          ditherDotSize={effectiveTheme === "dark" ? 6 : 6}
+          ditherDotSpacing={effectiveTheme === "dark" ? 0.1 : 0.1}
           width="100%"
           height="100%"
           objectFit="cover"
@@ -154,12 +166,70 @@ const HomePage: React.FC = () => {
         />
       </div>
 
+      {/* Gradient Overlay */}
+      <section
+        id="gradient-layers"
+        className="absolute inset-0 pointer-events-none"
+      >
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            backgroundSize: "300%",
+            animation: "bgMove",
+            animationDuration: "7.5s",
+            animationTimingFunction: "ease",
+            animationIterationCount: "infinite",
+            background:
+              effectiveTheme === "dark"
+                ? "linear-gradient(135deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.1) 100%)"
+                : "linear-gradient(135deg, rgba(123,255,255,0.15) 0%, rgba(123,123,255,0.2) 50%, rgba(255,255,123,0.1) 100%)",
+            mixBlendMode: "multiply",
+            filter: "saturation(1.5)"
+          }}
+        />
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            backgroundSize: "300% ",
+            animation: "bgMove",
+            animationDuration: "10s",
+            animationTimingFunction: "ease",
+            animationIterationCount: "infinite",
+            animationDirection: "alternate",
+            background:
+              effectiveTheme === "dark"
+                ? "linear-gradient(23deg, rgba(0,0,0,0.12) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.2) 100%)"
+                : "linear-gradient(24deg, rgba(123,255,123,0.15) 0%, rgba(123,255,255,0.15) 25%, rgba(190,123,123,0.15) 50%, rgba(123,255,123,0.15) 75%, rgba(123,255,255,0.15) 100%)",
+            mixBlendMode: "multiply",
+            filter: "saturation(1.5)"
+          }}
+        />
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            backgroundSize: "300%",
+            animation: "bgMove",
+            animationDuration: "10s",
+            animationTimingFunction: "ease",
+            animationIterationCount: "infinite",
+            background:
+              effectiveTheme === "dark"
+                ? "linear-gradient(74deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.15) 50%, rgba(0,0,0,0.05) 100%)"
+                : "linear-gradient(74deg, rgba(123,255,123,0.15) 0%, rgba(123,255,255,0.15) 25%, rgba(190,123,123,0.15) 50%, rgba(123,255,123,0.15) 75%, rgba(123,255,255,0.15) 100%)",
+            mixBlendMode: "multiply",
+            filter: "saturation(1.5)"
+          }}
+        />
+      </section>
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col space-y-6 sm:space-y-8 xl:ml-32 max-w-4xl">
           {/* Headline */}
           <div>
             <h1
-              className={cn(STYLE.pageTitle(true), "italic leading-tight text-primary-green")}
+              className={cn(
+                STYLE.pageTitle(true),
+                "italic leading-tight text-primary-green",
+              )}
             >
               Wiener
               <br /> Grünflächen
@@ -249,7 +319,9 @@ const HomePage: React.FC = () => {
               icon={Navigation}
               iconPosition="left"
             >
-              <span className="text-left sm:text-lg">{isLoadingNearby ? "Suche..." : "In der nähe"}</span>
+              <span className="text-left sm:text-lg">
+                {isLoadingNearby ? "Suche..." : "In der nähe"}
+              </span>
             </Button>
             <Button
               onClick={handleRandomPark}
@@ -262,7 +334,9 @@ const HomePage: React.FC = () => {
               icon={Shuffle}
               iconPosition="left"
             >
-              <span className="text-left sm:text-lg">{isLoadingRandom ? "Lade..." : "Zufallspark"}</span>
+              <span className="text-left sm:text-lg">
+                {isLoadingRandom ? "Lade..." : "Zufallspark"}
+              </span>
             </Button>
           </div>
 

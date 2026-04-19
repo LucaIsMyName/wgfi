@@ -1,6 +1,6 @@
 /**
  * Auto-generated parks data - DO NOT EDIT MANUALLY
- * Generated at: 2026-04-19T13:19:48.723Z
+ * Generated at: 2026-04-19T13:24:42.461Z
  * Source: Vienna Open Data API
  * 
  * This file is generated during build time by scripts/generate-parks-data.js
@@ -40741,7 +40741,7 @@ export const PARKS_DATA: Park[] = [
 ];
 
 export const PARKS_METADATA = {
-  generatedAt: '2026-04-19T13:19:48.723Z',
+  generatedAt: '2026-04-19T13:24:42.461Z',
   totalParks: 1056,
   source: 'Vienna Open Data API',
   apiEndpoint: 'ogdwien:PARKINFOOGD'
