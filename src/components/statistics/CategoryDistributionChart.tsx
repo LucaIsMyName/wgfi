@@ -4,8 +4,8 @@ import { Pie } from "@visx/shape";
 import { scaleOrdinal } from "@visx/scale";
 import { useTooltip, useTooltipInPortal, defaultStyles } from "@visx/tooltip";
 import { localPoint } from "@visx/event";
-import { calculateDistrictAreaDistribution, type DistrictAreaData } from "../../utils/statistics";
-import type { Park } from "../../types/park";
+import { calculateCategoryDistribution } from "@/utils/statistics";
+import type { Park } from "@/types/park";
 
 interface CategoryDistributionChartProps {
   parks: Park[];

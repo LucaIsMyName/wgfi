@@ -1,5 +1,5 @@
-import type { ViennaPark } from "../services/viennaApi";
-import type { Park } from "../types/park";
+import type { ViennaPark } from "@/services/viennaApi";
+import type { Park } from "@/types/park";
 
 function getParkCoordinates(park: Park | ViennaPark): { lat: number; lng: number } {
   if ('coordinates' in park) {

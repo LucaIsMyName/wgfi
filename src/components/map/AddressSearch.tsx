@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, useMemo, memo } from "react";
+import { Input } from "@/components/ui/Input";
 import { Search, X, MapPin, Loader2 } from "lucide-react";
-import { useAddressSearch, type GeocodingResult } from "../../hooks/useAddressSearch";
+import { useAddressSearch, type GeocodingResult } from "@/hooks/useAddressSearch";
 
 interface AddressSearchProps {
   onAddressSelect: (coordinates: [number, number], address: string) => void;

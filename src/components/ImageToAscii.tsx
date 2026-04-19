@@ -1,3 +1,4 @@
+import {  cn } from '@/utils/cn';
 import React, { useEffect, useRef, useState, useMemo, useCallback } from 'react';
 
 interface ImageToAsciiProps {

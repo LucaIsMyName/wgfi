@@ -2,6 +2,7 @@ import React from 'react';
 import * as SelectPrimitive from '@radix-ui/react-select';
 import * as Label from '@radix-ui/react-label';
 import { ChevronDown, Check } from 'lucide-react';
+import { cn } from '@/utils/cn';
 
 export interface SelectOption {
   value: string;
@@ -29,15 +30,15 @@ export const Select = React.forwardRef<HTMLButtonElement, SelectProps>(
       lg: 'px-6 py-3 text-base',
     };
 
-    const triggerClasses = `
-      inline-flex items-center justify-between gap-2 bg-soft-cream text-deep-charcoal 
-      border border-border-color font-serif italic font-normal cursor-pointer
-      ${fullWidth ? 'w-full' : 'w-auto'}
-      ${sizeClasses[size]}
-    `.trim().replace(/\s+/g, ' ');
+    const triggerClasses = cn(
+      'inline-flex items-center justify-between gap-2 bg-soft-cream text-deep-charcoal',
+      'border border-border-color font-serif italic font-normal cursor-pointer',
+      fullWidth ? 'w-full' : 'w-auto',
+      sizeClasses[size]
+    );
 
     return (
-      <div className={`${fullWidth ? 'w-full' : 'w-auto'} ${className}`}>
+      <div className={cn(fullWidth ? 'w-full' : 'w-auto', className)}>
         {label && (
           <Label.Root 
             htmlFor={selectId} 

@@ -1,4 +1,4 @@
-import type { Park } from '../types/park';
+import type { Park } from "@/types/park";
 
 export interface SearchResult {
   park: Park;

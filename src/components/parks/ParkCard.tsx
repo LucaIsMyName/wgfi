@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import { Building, Ruler, Heart, Trash2, GitCompare } from "lucide-react";
-import { getAmenityIcon } from "../../utils/amenityIcons";
-import { isFavorite } from "../../utils/favoritesManager";
-import { isInComparison, toggleComparison } from "../../utils/comparisonManager";
-import { slugifyParkName } from "../../data/manualParksData";
-import { getAllDistrictsForPark, formatDistricts } from "../../utils/parkUtils";
-import type { Park } from "../../types/park";
+import { getAmenityIcon } from "@/utils/amenityIcons";
+import { isFavorite } from "@/utils/favoritesManager";
+import { isInComparison, toggleComparison } from "@/utils/comparisonManager";
+import { slugifyParkName } from "@/data/manualParksData";
+import { getAllDistrictsForPark, formatDistricts } from "@/utils/parkUtils";
+import type { Park } from "@/types/park";
 
 interface ParkCardProps {
   park: Park;

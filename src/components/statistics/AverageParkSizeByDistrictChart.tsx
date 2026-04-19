@@ -8,8 +8,9 @@ import { localPoint } from "@visx/event";
 import {
   calculateAverageParkSizeByDistrict,
   type AverageParkSizeByDistrict,
-} from "../../utils/statistics";
-import type { Park } from "../../types/park";
+} from "@/utils/statistics";
+import { getParkDistrictAreaDistribution } from "@/utils/parkUtils";
+import type { Park } from "@/types/park";
 
 interface AverageParkSizeByDistrictChartProps {
   parks: Park[];

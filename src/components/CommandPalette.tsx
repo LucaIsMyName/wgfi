@@ -1,13 +1,13 @@
 import { useEffect, useState, useMemo, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Command } from 'cmdk';
-import { useParksData } from '../hooks/useParksData';
-import { useTheme } from '../contexts/ThemeContext';
-import { getRecentVisitsSync } from '../hooks/useVisitHistory';
-import { getRecentlyViewedIds } from '../utils/recentlyViewedManager';
-import { searchParks, getTopParksByArea } from '../utils/searchUtils';
-import { slugifyParkName } from '../data/manualParksData';
-import type { Park } from '../types/park';
+import { useParksData } from '@/hooks/useParksData';
+import { useTheme } from '@/contexts/ThemeContext';
+import { getRecentVisitsSync } from '@/hooks/useVisitHistory';
+import { getRecentlyViewedIds } from '@/utils/recentlyViewedManager';
+import { searchParks, getTopParksByArea } from '@/utils/searchUtils';
+import { slugifyParkName } from '@/data/manualParksData';
+import type { Park } from '@/types/park';
 import {
   Home,
   TreePalm,

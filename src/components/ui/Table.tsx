@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowUpDown, ArrowUp, ArrowDown } from 'lucide-react';
+import { cn } from '@/utils/cn';
 
 export interface TableColumn<T> {
   key: string;
@@ -97,19 +98,19 @@ export function Table<T>({
   return (
     <>
       {/* Desktop Table View */}
-      <div className={`${mobileCardView ? 'hidden md:block' : ''} ${responsive ? 'overflow-x-auto' : ''} ${className}`}>
+      <div className={cn(mobileCardView && 'hidden md:block', responsive && 'overflow-x-auto', className)}>
         <table className="w-full border-collapse">
           <thead>
             <tr>
               {columns.map((column) => (
                 <th 
                   key={column.key} 
-                  className={`
-                    font-mono text-xs text-primary-green bg-light-sage px-2 py-3 
-                    border-b-2 border-primary-green
-                    ${stickyHeader ? 'sticky top-0 z-10' : 'relative'}
-                    ${getAlignClass(column.align)}
-                  `}
+                  className={cn(
+                    'font-mono text-xs text-primary-green bg-light-sage px-2 py-3',
+                    'border-b-2 border-primary-green',
+                    stickyHeader ? 'sticky top-0 z-10' : 'relative',
+                    getAlignClass(column.align)
+                  )}
                 >
                   {column.sortable ? (
                     <button
@@ -130,19 +131,19 @@ export function Table<T>({
             {sortedData.map((row, index) => (
               <tr
                 key={keyExtractor(row, index)}
-                className={`
-                  ${striped && index % 2 !== 0 ? 'bg-light-sage' : 'bg-transparent'}
-                  ${hoverable ? 'hover:bg-light-sage hover:bg-opacity-50' : ''}
-                `}
+                className={cn(
+                  striped && index % 2 !== 0 ? 'bg-light-sage' : 'bg-transparent',
+                  hoverable && 'hover:bg-light-sage hover:bg-opacity-50'
+                )}
               >
                 {columns.map((column) => (
                   <td 
                     key={column.key} 
-                    className={`
-                      font-mono text-sm text-deep-charcoal px-2 py-3 
-                      border-b border-border-color align-top
-                      ${getAlignClass(column.align)}
-                    `}
+                    className={cn(
+                      'font-mono text-sm text-deep-charcoal px-2 py-3',
+                      'border-b border-border-color align-top',
+                      getAlignClass(column.align)
+                    )}
                   >
                     {column.accessor(row)}
                   </td>

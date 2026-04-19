@@ -1,13 +1,14 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { useParksData } from "../hooks/useParksData";
+import { useParksData } from "@/hooks/useParksData";
+import { cn } from "@/utils/cn";
 import { Heart } from "lucide-react";
-import { getFavorites, toggleFavorite } from "../utils/favoritesManager";
-import { toggleComparison } from "../utils/comparisonManager";
-import STYLE from "../utils/config";
-import ParkCard from "../components/parks/ParkCard";
-import type { Park } from "../types/park";
+import { getFavorites, toggleFavorite } from "@/utils/favoritesManager";
+import { toggleComparison } from "@/utils/comparisonManager";
+import STYLE from "@/utils/config";
+import ParkCard from "@/components/parks/ParkCard";
+import type { Park } from "@/types/park";
 
 const FavoritesPage = () => {
   const { parks } = useParksData();
@@ -51,7 +52,7 @@ const FavoritesPage = () => {
       {/* Header */}
       <div className="pt-6 ">
         <div className="w-full">
-          <h1 className={`${STYLE.pageTitle(true)} mb-4 text-primary-green font-normal italic`}>
+          <h1 className={cn(STYLE.pageTitle(true), "mb-4 text-primary-green font-normal italic")}>
             Favoriten
           </h1>
           <p className="sr-only font-serif italic text-lg text-deep-charcoal font-normal">

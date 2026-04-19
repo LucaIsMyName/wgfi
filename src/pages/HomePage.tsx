@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import type { Park } from "@/types/park";
 import { Helmet } from "react-helmet-async";
 import { TreePalm, Map, Navigation, Shuffle } from "lucide-react";
-import STYLE from "../utils/config";
-import { useParksData } from "../hooks/useParksData";
-import { findNearestPark } from "../utils/geoUtils";
-import LocationModal from "../components/LocationModal";
-import { slugifyParkName } from "../data/manualParksData";
-import { Button } from "../components/ui/Button";
-import ImageToAscii from "../components/ImageToAscii";
-import { useTheme } from "../contexts/ThemeContext";
+import STYLE from "@/utils/config";
+import { cn } from "@/utils/cn";
+import { useParksData } from "@/hooks/useParksData";
+import { findNearestPark } from "@/utils/geoUtils";
+import LocationModal from "@/components/LocationModal";
+import { slugifyParkName } from "@/data/manualParksData";
+import { Button } from "@/components/ui/Button";
+import ImageToAscii from "@/components/ImageToAscii";
+import { useTheme } from "@/contexts/ThemeContext";
 
 const HomePage: React.FC = () => {
   const [showLocationModal, setShowLocationModal] = useState(false);
@@ -134,7 +136,7 @@ const HomePage: React.FC = () => {
           {/* Headline */}
           <div>
             <h1
-              className={`${STYLE.pageTitle(true)} italic leading-tight text-primary-green`}
+              className={cn(STYLE.pageTitle(true), "italic leading-tight text-primary-green")}
             >
               Wiener
               <br /> Grünflächen

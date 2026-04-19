@@ -1,6 +1,6 @@
 import { useMemo } from "react";
-import { PARKS_DATA } from "../data/generatedParks";
-import type { Park } from "../types/park";
+import { PARKS_DATA } from "@/data/generatedParks";
+import type { Park } from "@/types/park";
 
 /**
  * Custom hook for managing parks data

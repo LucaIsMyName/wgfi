@@ -1,7 +1,7 @@
 import { useMemo } from "react";
-import { calculateAmenitiesCorrelation, type AmenityCorrelation } from "../../utils/statistics";
-import type { Park } from "../../types/park";
-import { Table } from "../ui/Table";
+import { calculateAmenitiesCorrelation, type AmenityCorrelation } from "@/utils/statistics";
+import type { Park } from "@/types/park";
+import { Table } from "@/components/ui/Table";
 
 interface AmenitiesCorrelationTableProps {
   parks: Park[];

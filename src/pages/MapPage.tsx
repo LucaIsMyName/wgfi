@@ -1,12 +1,12 @@
 import { useState, useEffect, Suspense, lazy, useMemo } from "react";
 import { Helmet } from "react-helmet-async";
 import { useParams, useSearchParams } from "react-router-dom";
-import { useParksData } from "../hooks/useParksData";
-import Loading from "../components/Loading";
-import type { Park } from "../types/park";
+import { useParksData } from "@/hooks/useParksData";
+import Loading from "@/components/Loading";
+import type { Park } from "@/types/park";
 
 // Lazy load the entire map component to reduce initial bundle size
-const LazyMapComponent = lazy(() => import("../components/map/LazyMapComponent"));
+const LazyMapComponent = lazy(() => import("@/components/map/LazyMapComponent"));
 
 // Local storage key
 const STORAGE_KEY_AMENITIES = "wgfi:map-selected-amenities";

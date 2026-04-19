@@ -1,7 +1,7 @@
 import { useVirtualizer } from '@tanstack/react-virtual';
-import { useScrollRestoration } from "../../hooks/useScrollRestoration";
+import { useScrollRestoration } from "@/hooks/useScrollRestoration";
 import ParkCard from "./ParkCard";
-import type { Park } from "../../types/park";
+import type { Park } from "@/types/park";
 
 interface ParksListProps {
   parks: Park[];

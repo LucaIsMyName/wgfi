@@ -5,8 +5,8 @@ import { Bar } from "@visx/shape";
 import { scaleBand, scaleLinear } from "@visx/scale";
 import { useTooltip, useTooltipInPortal, defaultStyles } from "@visx/tooltip";
 import { localPoint } from "@visx/event";
-import { getTopParksBySize } from "../../utils/statistics";
-import type { Park } from "../../types/park";
+import { getTopParksBySize } from "@/utils/statistics";
+import type { Park } from "@/types/park";
 
 interface TopParksChartProps {
   parks: Park[];

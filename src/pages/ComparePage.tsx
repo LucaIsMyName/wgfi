@@ -1,19 +1,15 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { useParksData } from "../hooks/useParksData";
-import {
-  getComparisonParks,
-  removeFromComparison,
-  clearComparison,
-  setComparisonParkIds,
-} from "../utils/comparisonManager";
-import { slugifyParkName } from "../data/manualParksData";
+import { useParksData } from "@/hooks/useParksData";
+import { getComparisonParks, removeFromComparison, clearComparison, setComparisonParkIds } from "@/utils/comparisonManager";
+import { slugifyParkName } from "@/data/manualParksData";
 import { Building, Ruler, X, Trash2, ArrowLeft } from "lucide-react";
-import { getAmenityIcon } from "../utils/amenityIcons";
-import STYLE from "../utils/config";
-import type { Park } from "../types/park";
-import { Button } from "../components/ui/Button";
+import { getAmenityIcon } from "@/utils/amenityIcons";
+import STYLE from "@/utils/config";
+import type { Park } from "@/types/park";
+import { cn } from "@/utils/cn";
+import { Button } from "@/components/ui/Button";
 
 function resolveParkQueryParam(param: string, parkList: Park[]): string | null {
   if (parkList.some((p) => p.id === param)) return param;
@@ -75,7 +71,7 @@ const ComparePage = () => {
 
         <div className="max-w-3xl">
           <h1
-            className={`${STYLE.pageTitle(false)} mb-4 text-primary-green italic`}
+            className={cn(STYLE.pageTitle(false), "mb-4 text-primary-green italic")}
           >
             Parkvergleich
           </h1>
@@ -111,7 +107,7 @@ const ComparePage = () => {
       {/* Header */}
       <div className="mb-6">
         <div className="flex items-center justify-between mb-4">
-          <h1 className={`${STYLE.pageTitle(false)} text-primary-green italic`}>
+          <h1 className={cn(STYLE.pageTitle(false), "text-primary-green italic")}>
             Parkvergleich
           </h1>
           <div className="flex gap-2">
@@ -129,10 +125,10 @@ const ComparePage = () => {
                 onClick={handleClearAll}
                 variant="secondary"
                 size="md"
-                icon={Trash2}
-                className="!px-2.5 flex !justify-center !items-center"
+                className="border-border-color !px-2 sm:!px-2.5 flex !justify-center !items-center"
               >
-                Alle entfernen
+                <Trash2 className="w-4 h-4" />
+                <span className="hidden sm:inline">Alle entfernen</span>
               </Button>
             )}
           </div>

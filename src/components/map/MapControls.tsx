@@ -1,5 +1,5 @@
 import { Navigation, Map as MapIcon } from "lucide-react";
-import type { Park } from "../../types/park";
+import type { Park } from "@/types/park";
 import { Button } from "../ui/Button";
 import { Select } from "../ui/Select";
 import { MultiSelect } from "../ui/MultiSelect";

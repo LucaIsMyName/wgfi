@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
-import { useTheme } from '../contexts/ThemeContext';
-import { useParksData } from '../hooks/useParksData';
-import { useParksFilters } from '../hooks/useParksFilters';
-import ParksFilterSidebar from '../components/parks/ParksFilterSidebar';
-import MobileFiltersPanel from '../components/parks/MobileFiltersPanel';
-import ParksList from '../components/parks/ParksList';
-import { toggleFavorite } from '../utils/favoritesManager';
+import { useTheme } from "@/contexts/ThemeContext";
+import { useParksData } from "@/hooks/useParksData";
+import { useParksFilters } from "@/hooks/useParksFilters";
+import ParksFilterSidebar from "@/components/parks/ParksFilterSidebar";
+import MobileFiltersPanel from "@/components/parks/MobileFiltersPanel";
+import ParksList from "@/components/parks/ParksList";
+import { toggleFavorite } from "@/utils/favoritesManager";
 
 const ParksListPage = () => {
   const { isHighContrast } = useTheme();

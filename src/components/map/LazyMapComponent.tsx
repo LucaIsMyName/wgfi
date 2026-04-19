@@ -1,14 +1,14 @@
 import { useState, useEffect, useCallback, useRef, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
-import { useTheme } from "../../contexts/ThemeContext";
-import { useMapboxMap } from "../../hooks/useMapboxMap";
-import { useMapMarkers } from "../../hooks/useMapMarkers";
-import { slugifyParkName } from "../../data/manualParksData";
+import { useTheme } from "@/contexts/ThemeContext";
+import { useMapboxMap } from "@/hooks/useMapboxMap";
+import { useMapMarkers } from "@/hooks/useMapMarkers";
+import { slugifyParkName } from "@/data/manualParksData";
 import MapContainer from "./MapContainer";
 import MapControls from "./MapControls";
 import MobileMapControls from "./MobileMapControls";
 import mapboxgl from "mapbox-gl";
-import type { Park } from "../../types/park";
+import type { Park } from "@/types/park";
 
 // Vienna center coordinates - defined outside component to prevent recreation
 const VIENNA_CENTER: [number, number] = [16.3738, 48.2082];

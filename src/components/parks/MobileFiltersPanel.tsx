@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { ArrowDownUp, Check, Filter } from 'lucide-react';
-import { getAmenityIcon } from '../../utils/amenityIcons';
-import type { SortOrder } from '../../hooks/useParksFilters';
-import { Button } from '../ui/Button';
-import { Input } from '../ui/Input';
-import { Select } from '../ui/Select';
+import { getAmenityIcon } from '@/utils/amenityIcons';
+import type { SortOrder } from '@/hooks/useParksFilters';
+import { Button } from '@/components/ui/Button';
+import { Input } from '@/components/ui/Input';
+import { Select } from '@/components/ui/Select';
 
 interface MobileFiltersPanelProps {
   searchTerm: string;

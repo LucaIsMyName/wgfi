@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
-import { calculateDistance } from "../utils/geoUtils";
-import { getAllDistrictsForPark } from "../utils/parkUtils";
-import type { Park } from "../types/park";
+import { calculateDistance } from "@/utils/geoUtils";
+import { getAllDistrictsForPark } from "@/utils/parkUtils";
+import { searchParks } from "@/utils/searchUtils";
+import type { Park } from "@/types/park";
 
 // Local storage keys
 const STORAGE_KEY_SEARCH = "wgfi:search-term";

@@ -1,4 +1,4 @@
-import type { Park } from "../types/park";
+import type { Park } from "@/types/park";
 
 // Vienna district areas in square meters (approximate)
 const DISTRICT_AREAS: Record<number, number> = {

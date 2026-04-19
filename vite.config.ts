@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from 'tailwindcss'
 import autoprefixer from 'autoprefixer'
 import { visualizer } from 'rollup-plugin-visualizer'
+import path from 'path'
 
 const ReactCompilerConfig = {
   // React Compiler configuration
@@ -27,6 +28,11 @@ export default defineConfig({
       template: 'treemap', // Interactive treemap visualization
     }),
   ],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
   css: {
     postcss: {
       plugins: [

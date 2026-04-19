@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import type { LucideIcon } from "lucide-react";
+import { cn } from "@/utils/cn";
 
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "primary" | "secondary" | "ghost" | "outline";
@@ -47,7 +48,14 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     const disabledClasses = disabled || loading ? "cursor-not-allowed opacity-60" : "cursor-pointer";
     const widthClass = fullWidth ? "w-full" : "w-auto";
 
-    const combinedClasses = `${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]} ${disabledClasses} ${widthClass} ${className}`;
+    const combinedClasses = cn(
+      baseClasses,
+      variantClasses[variant],
+      sizeClasses[size],
+      disabledClasses,
+      widthClass,
+      className
+    );
 
     const getLoadingText = () => {
       if (typeof children === 'string') {
@@ -80,7 +88,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       return (
         <Link
           to={to}
-          className={`${combinedClasses} no-underline ${disabled || loading ? "pointer-events-none" : ""}`}
+          className={cn(combinedClasses, "no-underline", disabled || loading && "pointer-events-none")}
           aria-disabled={disabled || loading}
           tabIndex={disabled || loading ? -1 : undefined}
         >

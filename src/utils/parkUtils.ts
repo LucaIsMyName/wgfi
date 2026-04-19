@@ -1,4 +1,4 @@
-import type { Park } from "../types/park";
+import type { Park } from "@/types/park";
 
 /**
  * Get all districts for a park (primary district + any districts from districtAreaSplit)
@@ -34,4 +34,27 @@ export function formatDistricts(districts: number[], format: 'short' | 'full' = 
   
   const formatted = districts.map(d => `${d}.`).join(', ');
   return format === 'short' ? formatted : `${formatted} Bezirk`;
+}
+
+/**
+ * Get park area distribution across districts
+ * Returns a Map of district number to area in that district
+ */
+export function getParkDistrictAreaDistribution(park: Park): Map<number, number> {
+  const distribution = new Map<number, number>();
+  
+  // If park has explicit district area split, use it
+  if (park.districtAreaSplit) {
+    Object.entries(park.districtAreaSplit).forEach(([districtStr, area]) => {
+      const district = parseInt(districtStr, 10);
+      if (!isNaN(district)) {
+        distribution.set(district, area);
+      }
+    });
+  } else {
+    // Otherwise, assign full area to primary district
+    distribution.set(park.district, park.area);
+  }
+  
+  return distribution;
 }

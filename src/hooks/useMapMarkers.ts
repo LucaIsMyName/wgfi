@@ -1,10 +1,10 @@
 import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import mapboxgl from "mapbox-gl";
-import { slugifyParkName } from "../data/manualParksData";
-import { isFavorite } from "../utils/favoritesManager";
-import { createMapMarkerPopupEl } from "../utils/mapPopupDom";
-import type { Park } from "../types/park";
+import { slugifyParkName } from "@/data/manualParksData";
+import { isFavorite } from "@/utils/favoritesManager";
+import { createMapMarkerPopupEl } from "@/utils/mapPopupDom";
+import type { Park } from "@/types/park";
 
 interface UseMapMarkersProps {
   parks: Park[];

@@ -1,12 +1,14 @@
 import { useEffect, useRef } from "react";
-import { useTheme } from "../../contexts/ThemeContext";
-import { useMapboxMap } from "../../hooks/useMapboxMap";
+import { useTheme } from "@/contexts/ThemeContext";
+import { useMapboxMap } from "@/hooks/useMapboxMap";
+import { useMapMarkers } from "@/hooks/useMapMarkers";
 import { useNavigate } from "react-router-dom";
-import { slugifyParkName } from "../../data/manualParksData";
-import { isFavorite } from "../../utils/favoritesManager";
-import { createMapMarkerPopupEl } from "../../utils/mapPopupDom";
+import { slugifyParkName } from "@/data/manualParksData";
+import { isFavorite } from "@/utils/favoritesManager";
+import { createMapMarkerPopupEl } from "@/utils/mapPopupDom";
+import MapContainer from "@/components/map/MapContainer";
 import mapboxgl from "mapbox-gl";
-import type { Park } from "../../types/park";
+import type { Park } from "@/types/park";
 
 interface StatisticsMapProps {
   parks: Park[];

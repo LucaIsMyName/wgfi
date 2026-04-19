@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef, useMemo } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { useParksData } from "../hooks/useParksData";
-import { getManualParkData, slugifyParkName } from "../data/manualParksData";
+import { useParksData } from "@/hooks/useParksData";
+import { getManualParkData, slugifyParkName } from "@/data/manualParksData";
 import {
   MapPin,
   Map,
@@ -13,21 +13,22 @@ import {
   Heart,
   GitCompare,
 } from "lucide-react";
-import { getAmenityIcon } from "../utils/amenityIcons";
-import { isFavorite, toggleFavorite } from "../utils/favoritesManager";
-import { isInComparison, toggleComparison } from "../utils/comparisonManager";
-import { addVisitSync } from "../hooks/useVisitHistory";
-import { addRecentlyViewed } from "../utils/recentlyViewedManager";
-import ParkInfo from "../components/ParkInfo";
-import MetadataAccordion from "../components/MetadataAccordion";
-import { useMapboxMap } from "../hooks/useMapboxMap";
-import { useTheme } from "../contexts/ThemeContext";
-import STYLE from "../utils/config";
-import { getAllDistrictsForPark, formatDistricts } from "../utils/parkUtils";
-import type { Park, ParkWithDistance } from "../types/park";
-import { calculateDistance } from "../utils/geoUtils";
-import { createParkDetailMapPopupEl } from "../utils/mapPopupDom";
-import { Button } from "../components/ui/Button";
+import { getAmenityIcon } from "@/utils/amenityIcons";
+import { isFavorite, toggleFavorite } from "@/utils/favoritesManager";
+import { isInComparison, toggleComparison } from "@/utils/comparisonManager";
+import { addVisitSync } from "@/hooks/useVisitHistory";
+import { addRecentlyViewed } from "@/utils/recentlyViewedManager";
+import ParkInfo from "@/components/ParkInfo";
+import MetadataAccordion from "@/components/MetadataAccordion";
+import { useMapboxMap } from "@/hooks/useMapboxMap";
+import { useTheme } from "@/contexts/ThemeContext";
+import STYLE from "@/utils/config";
+import { getAllDistrictsForPark, formatDistricts } from "@/utils/parkUtils";
+import type { Park, ParkWithDistance } from "@/types/park";
+import { calculateDistance } from "@/utils/geoUtils";
+import { createParkDetailMapPopupEl } from "@/utils/mapPopupDom";
+import { Button } from "@/components/ui/Button";
+import { cn } from "@/utils/cn";
 
 const ParkDetailPage: React.FC = () => {
   const { idOrSlug } = useParams<{ idOrSlug: string }>();
@@ -351,7 +352,7 @@ const ParkDetailPage: React.FC = () => {
           </Button>
         </div>
         <h1
-          className={`${STYLE.pageTitle(true)} mb-4`}
+          className={cn(STYLE.pageTitle(true), "mb-4")}
           style={{
             color: "var(--primary-green)",
             fontWeight: "400",

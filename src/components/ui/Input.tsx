@@ -1,5 +1,6 @@
 import React from 'react';
 import * as Label from '@radix-ui/react-label';
+import { cn } from '@/utils/cn';
 
 export interface InputProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size'> {
   label?: string;
@@ -18,16 +19,16 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
       lg: 'px-6 py-3 text-base',
     };
 
-    const inputClasses = `
-      bg-soft-cream text-deep-charcoal border font-serif italic font-normal outline-none
-      ${error ? 'border-copper' : 'border-border-color'}
-      ${fullWidth ? 'w-full' : 'w-auto'}
-      ${sizeClasses[inputSize]}
-      ${className}
-    `.trim().replace(/\s+/g, ' ');
+    const inputClasses = cn(
+      'bg-soft-cream text-deep-charcoal border font-serif italic font-normal outline-none',
+      error ? 'border-copper' : 'border-border-color',
+      fullWidth ? 'w-full' : 'w-auto',
+      sizeClasses[inputSize],
+      className
+    );
 
     return (
-      <div className={fullWidth ? 'w-full' : 'w-auto'}>
+      <div className={cn(fullWidth ? 'w-full' : 'w-auto')}>
         {label && (
           <Label.Root 
             htmlFor={inputId} 

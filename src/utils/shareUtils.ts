@@ -2,7 +2,7 @@
  * Share utilities using Web Share API
  */
 
-import type { Park } from '../types/park';
+import type { Park } from "@/types/park";
 
 /**
  * Check if Web Share API is available

@@ -1,5 +1,6 @@
-import { slugifyParkName } from "../data/manualParksData";
-import type { Park } from "../types/park";
+import { slugifyParkName } from "@/data/manualParksData";
+import { formatDistricts, getAllDistrictsForPark } from "@/utils/parkUtils";
+import type { Park } from "@/types/park";
 
 /** Mapbox Popup content for the park detail page mini-map (text-safe, no HTML injection). */
 export function createParkDetailMapPopupEl(park: {

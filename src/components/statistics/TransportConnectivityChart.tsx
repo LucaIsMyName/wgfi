@@ -2,11 +2,12 @@ import { useMemo } from "react";
 import { Group } from "@visx/group";
 import { AxisBottom, AxisLeft } from "@visx/axis";
 import { Bar } from "@visx/shape";
+import type { Park } from "@/types/park";
 import { scaleBand, scaleLinear } from "@visx/scale";
 import { useTooltip, useTooltipInPortal, defaultStyles } from "@visx/tooltip";
 import { localPoint } from "@visx/event";
-import ResponsiveContainer from "./ResponsiveContainer";
-import type { TransportConnectivityStats } from "../../utils/advancedStatistics";
+import ResponsiveContainer from "@/components/statistics/ResponsiveContainer";
+import type { TransportConnectivityStats } from "@/utils/advancedStatistics";
 
 interface TransportConnectivityChartProps {
   data: TransportConnectivityStats[];
@@ -195,7 +196,7 @@ const TransportConnectivityChart: React.FC<TransportConnectivityChartProps> = ({
                       height={barHeight}
                       fill={getColor(value)}
                       rx={2}
-                      onMouseMove={(event) => {
+                      onMouseMove={(event: React.MouseEvent<SVGRectElement>) => {
                         const point = localPoint(event) || { x: 0, y: 0 };
                         showTooltip({
                           tooltipData: d,

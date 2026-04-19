@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
+import { cn } from "@/utils/cn";
 import {
   AlertTriangle,
   BarChart3,
@@ -13,30 +14,30 @@ import {
   Trophy,
   BarChart,
 } from "lucide-react";
-import { useParksData } from "../hooks/useParksData";
-import { slugifyParkName } from "../data/manualParksData";
-import ResponsiveContainer from "../components/statistics/ResponsiveContainer";
-import STYLE from "../utils/config";
-import AmenitiesChart from "../components/statistics/AmenitiesChart";
-import ParkSizeHistogram from "../components/statistics/ParkSizeHistogram";
-import DistrictComparisonChart from "../components/statistics/DistrictComparisonChart";
-import AmenitiesCorrelationTable from "../components/statistics/AmenitiesCorrelationTable";
-import CategoryDistributionChart from "../components/statistics/CategoryDistributionChart";
-import TopParksChart from "../components/statistics/TopParksChart";
-import AmenitiesPerParkChart from "../components/statistics/AmenitiesPerParkChart";
-import AverageParkSizeByDistrictChart from "../components/statistics/AverageParkSizeByDistrictChart";
-import StatisticsMap from "../components/statistics/StatisticsMap";
-import ParkDensityChart from "../components/statistics/ParkDensityChart";
-import AmenityDensityChart from "../components/statistics/AmenityDensityChart";
-import TransportConnectivityChart from "../components/statistics/TransportConnectivityChart";
-import { getParkDistrictAreaDistribution } from "../utils/statistics";
+import { useParksData } from "@/hooks/useParksData";
+import { slugifyParkName } from "@/data/manualParksData";
+import ResponsiveContainer from "@/components/statistics/ResponsiveContainer";
+import STYLE from "@/utils/config";
+import AmenitiesChart from "@/components/statistics/AmenitiesChart";
+import ParkSizeHistogram from "@/components/statistics/ParkSizeHistogram";
+import DistrictComparisonChart from "@/components/statistics/DistrictComparisonChart";
+import AmenitiesCorrelationTable from "@/components/statistics/AmenitiesCorrelationTable";
+import CategoryDistributionChart from "@/components/statistics/CategoryDistributionChart";
+import TopParksChart from "@/components/statistics/TopParksChart";
+import AmenitiesPerParkChart from "@/components/statistics/AmenitiesPerParkChart";
+import AverageParkSizeByDistrictChart from "@/components/statistics/AverageParkSizeByDistrictChart";
+import StatisticsMap from "@/components/statistics/StatisticsMap";
+import ParkDensityChart from "@/components/statistics/ParkDensityChart";
+import AmenityDensityChart from "@/components/statistics/AmenityDensityChart";
+import TransportConnectivityChart from "@/components/statistics/TransportConnectivityChart";
+import { getParkDistrictAreaDistribution } from "@/utils/parkUtils";
 import {
   calculateParkDensity,
   calculateAmenityDensity,
   calculateTransportConnectivity,
   getDensitySummary,
-} from "../utils/advancedStatistics";
-import type { Park } from "../types/park";
+} from "@/utils/advancedStatistics";
+import type { Park } from "@/types/park";
 
 interface DistrictStats {
   district: number;
@@ -73,7 +74,10 @@ const DISTRICT_AREAS: Record<number, number> = {
   23: 32.0e6,
 };
 
-const VIENNA_TOTAL_AREA: number = Object.values(DISTRICT_AREAS).reduce((a, b) => a + b, 0);
+const VIENNA_TOTAL_AREA: number = Object.values(DISTRICT_AREAS).reduce(
+  (a, b) => a + b,
+  0,
+);
 
 const StatisticsPage = () => {
   const { parks } = useParksData();
@@ -115,7 +119,7 @@ const StatisticsPage = () => {
     parkData.forEach((park) => {
       // Use area distribution helper to handle parks spanning multiple districts
       const areaDistribution = getParkDistrictAreaDistribution(park);
-      areaDistribution.forEach((area, district) => {
+      areaDistribution.forEach((area: number, district: number) => {
         const existing = statsMap.get(district) || { totalArea: 0, count: 0 };
         statsMap.set(district, {
           totalArea: existing.totalArea + area,
@@ -247,7 +251,7 @@ const StatisticsPage = () => {
         {/* Header */}
         <div className="mb-12">
           <h1
-            className={`${STYLE.pageTitle(false)} mb-4 text-primary-green italic`}
+            className={cn(STYLE.pageTitle(false), "mb-4 text-primary-green italic")}
           >
             Statistiken
           </h1>
@@ -395,31 +399,34 @@ const StatisticsPage = () => {
               <div className="flex flex-wrap gap-2">
                 <button
                   onClick={() => setDistrictMetric("parkCount")}
-                  className={`px-3 py-1 font-mono text-xs rounded ${
+                  className={cn(
+                    "px-3 py-1 font-mono text-xs rounded",
                     districtMetric === "parkCount"
                       ? "opacity-100 bg-primary-green text-soft-cream"
                       : "opacity-60 bg-light-sage text-deep-charcoal"
-                  }`}
+                  )}
                 >
                   ANZAHL PARKS
                 </button>
                 <button
                   onClick={() => setDistrictMetric("totalArea")}
-                  className={`px-3 py-1 font-mono text-xs rounded ${
+                  className={cn(
+                    "px-3 py-1 font-mono text-xs rounded",
                     districtMetric === "totalArea"
                       ? "opacity-100 bg-primary-green text-soft-cream"
                       : "opacity-60 bg-light-sage text-deep-charcoal"
-                  }`}
+                  )}
                 >
                   GESAMTFLÄCHE
                 </button>
                 <button
                   onClick={() => setDistrictMetric("coveragePercentage")}
-                  className={`px-3 py-1 font-mono text-xs rounded ${
+                  className={cn(
+                    "px-3 py-1 font-mono text-xs rounded",
                     districtMetric === "coveragePercentage"
                       ? "opacity-100 bg-primary-green text-soft-cream"
                       : "opacity-60 bg-light-sage text-deep-charcoal"
-                  }`}
+                  )}
                 >
                   ABDECKUNG %
                 </button>
@@ -554,11 +561,12 @@ const StatisticsPage = () => {
             <div className="flex flex-wrap gap-2">
               <button
                 onClick={() => setDensityMetric("parksPerKm2")}
-                className={`px-3 py-1 font-mono text-xs rounded ${
+                className={cn(
+                  "px-3 py-1 font-mono text-xs rounded",
                   densityMetric === "parksPerKm2"
                     ? "opacity-100 bg-primary-green text-soft-cream"
                     : "opacity-60 bg-light-sage text-deep-charcoal"
-                }`}
+                )}
               >
                 PARKS PRO KM²
               </button>
@@ -600,31 +608,34 @@ const StatisticsPage = () => {
             <div className="flex flex-wrap gap-2">
               <button
                 onClick={() => setAmenityDensityMetric("amenitiesPerKm2")}
-                className={`px-3 py-1 font-mono text-xs rounded ${
+                className={cn(
+                  "px-3 py-1 font-mono text-xs rounded",
                   amenityDensityMetric === "amenitiesPerKm2"
                     ? "opacity-100 bg-primary-green text-soft-cream"
                     : "opacity-60 bg-light-sage text-deep-charcoal"
-                }`}
+                )}
               >
                 AUSSTATTUNGEN PRO KM²
               </button>
               <button
                 onClick={() => setAmenityDensityMetric("amenitiesPerPark")}
-                className={`px-3 py-1 font-mono text-xs rounded ${
+                className={cn(
+                  "px-3 py-1 font-mono text-xs rounded",
                   amenityDensityMetric === "amenitiesPerPark"
                     ? "opacity-100 bg-primary-green text-soft-cream"
                     : "opacity-60 bg-light-sage text-deep-charcoal"
-                }`}
+                )}
               >
                 AUSSTATTUNGEN PRO PARK
               </button>
               <button
                 onClick={() => setAmenityDensityMetric("uniqueAmenityTypes")}
-                className={`px-3 py-1 font-mono text-xs rounded ${
+                className={cn(
+                  "px-3 py-1 font-mono text-xs rounded",
                   amenityDensityMetric === "uniqueAmenityTypes"
                     ? "opacity-100 bg-primary-green text-soft-cream"
                     : "opacity-60 bg-light-sage text-deep-charcoal"
-                }`}
+                )}
               >
                 EINZIGARTIGE TYPEN
               </button>

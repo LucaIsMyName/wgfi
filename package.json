@@ -1,7 +1,7 @@
 {
   "name": "wgfi",
   "private": true,
-  "version": "2026.04.19.14",
+  "version": "2026.04.19.15",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -13,9 +13,9 @@
     "analyze": "ANALYZE=true npm run build"
   },
   "dependencies": {
-    "@fontsource-variable/jetbrains-mono": "^5.3.8",
-    "@fontsource-variable/tasa-orbiter": "^5.2.2",
-    "@fontsource/instrument-serif": "^5.2.8",
+    "@fontsource-variable/jetbrains-mono": "^5.1.0",
+    "@fontsource-variable/tasa-orbiter": "^5.1.0",
+    "@fontsource/instrument-serif": "^5.1.0",
     "@radix-ui/react-accordion": "^1.2.12",
     "@radix-ui/react-dialog": "^1.1.15",
     "@radix-ui/react-dropdown-menu": "^2.1.16",
@@ -32,6 +32,7 @@
     "@visx/scale": "^3.4.0",
     "@visx/shape": "^3.4.0",
     "@visx/tooltip": "^3.4.0",
+    "clsx": "^2.1.1",
     "cmdk": "^1.1.1",
     "lucide-react": "^0.544.0",
     "mapbox-gl": "^3.15.0",
@@ -39,7 +40,8 @@
     "react-dom": "^19.1.1",
     "react-helmet-async": "^2.0.5",
     "react-markdown": "^10.1.0",
-    "react-router-dom": "^7.9.1"
+    "react-router-dom": "^7.9.1",
+    "tailwind-merge": "^3.5.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.35.0",

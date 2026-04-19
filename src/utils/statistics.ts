@@ -1,4 +1,4 @@
-import type { Park } from "../types/park";
+import type { Park } from "@/types/park";
 
 /**
  * Get district area contributions for a park
