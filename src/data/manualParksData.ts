@@ -186,7 +186,13 @@ export const manualParksDB: Record<string, ManualParkData> = {
         type: "official",
       },
     ],
-    amenities: ["Toiletten"],
+    amenities: ["Toiletten", "Tischtennis"],
+  },
+  "pa-mildeplatz": {
+    amenities: ["Tischtennis", "Toiletten"],
+  },
+  "pa-stillfriedplatz": {
+    amenities: ["Tischtennis", "Toiletten"],
   },
   /** Prater */
   "prater-jesuitenwiese": {
@@ -372,6 +378,19 @@ export const manualParksDB: Record<string, ManualParkData> = {
         title: "Stadt Wien",
         url: "https://www.wien.gv.at/umwelt/parks/anlagen/teich-hirschstetten.html",
         type: "official",
+      },
+    ],
+  },
+  kongresspark: {
+    amenities: ["Tischtennis", "Toiletten"],
+    description:
+      "Der Kongresspark ist eine rund 61.000 m² große öffentliche Parkanlage in Ottakring im Westen Wiens, an der Bezirksgrenze zu Hernals. Er wurde 1927/28 auf einer ehemaligen Sandgewinnungsstätte und Mülldeponie nach Plänen des Architekten Erich Franz Leischner angelegt und ist im Ensemble mit den benachbarten städtischen Wohnhausanlagen (Sandleitenhof, Wiedenhoferhof) der 1920er Jahre zu verstehen (siehe auch Eintrag Kongressplatz). Zeitgleich mit dem Park wurde das östlich anschließende Kongressbad errichtet. Der weitläufige Kongresspark mit seinen extensiven Spielmöglichkeiten für Kinder spielt für die Freizeitgestaltung im noch dicht besiedelten äußeren Westen der Wiener Kernstadt eine wichtige Rolle und zieht auch Besucher aus anderen Teilen der 16. und 17. Bezirke an.",
+    descriptionLicense: "Wikipedia",
+    links: [
+      {
+        title: "Wikipedia",
+        url: "https://de.wikipedia.org/wiki/Kongresspark",
+        type: "wiki",
       },
     ],
   },
@@ -612,6 +631,44 @@ export const manualParksDB: Record<string, ManualParkData> = {
         title: "Österreichische Bundesgärten",
         url: "https://www.bundesgaerten.at/hofburggaerten/Burggarten.html",
         type: "official",
+      },
+    ],
+  },
+  "belvedere-schlossgarten": {
+    isFullPark: true,
+    name: "Belvedere Schlossgarten",
+    district: 3, // District number (1-23)
+    address: "Prinz-Eugen-Straße 27, 1030 Wien",
+    area: 173000, // Area in square meters
+    website: "https://www.belvedere.at/das-belvedere/gaerten",
+    coordinates: {
+      lat: 48.19129467870188,
+      lng: 16.381099523148823,
+    },
+    // category: "Park", // e.g., "Park", "Schlosspark", "Bundesgarten"
+    amenities: ["Grünfläche", "Sitzgelegenheiten", "Toiletten"], // Array of amenities
+    description:
+      "Die Gartenanlage des Belvedere ist ein Juwel barocker Landschaftsarchitektur und bildet mit den beiden Schlössern eine harmonische Einheit, die von der UNESCO zum Weltkulturerbe ernannt wurde. Der Park diente im 18. Jahrhundert hauptsächlich als Bühne zum Lustwandeln, Promenieren und Konversieren und sollte gleichzeitig Macht, Weisheit und Reichtum seines Besitzers vor Augen führen. Heute präsentiert sich der Garten des Belvedere als eines der bedeutenden historischen Gartenkunstwerke Europas in französischem Stil. Bis 1726 wurde das Anwesen um eine ostseitig des Oberen Belvedere liegende halbkreisförmige Menagerie des Prinzen erweitert, südlich davon, wo sich heute der Botanische Garten ausbreitet, war der barocke, geometrisch gegliederte Küchengarten situiert.",
+    descriptionLicense: "belvedere.at", // Optional: source of description
+    openingHours:
+      "März: 7:00 - 19:00; April: 6:30 - 20:00; Mai - Juli: 6:30 - 21:00; August - September: 6:30 - 20:00; November - Februar: 7:00 - 17:30", // Optional
+    accessibility: "Parkanlage hat Gehwege, jedoch hügelig", // Optional
+    publicTransport: [
+      "U4 Stadtpark",
+      "S-Bahn Quartier Belvedere",
+      "BIM D Schloss Belvedere",
+      "BIM 71 Schwarzenbergplatz",
+    ], // Optional
+    links: [
+      {
+        title: "Belvedere",
+        url: "https://www.belvedere.at",
+        type: "official",
+      },
+      {
+        title: "Wikipedia",
+        url: "https://de.wikipedia.org/wiki/Belvedere_(Wien)",
+        type: "wiki",
       },
     ],
   },

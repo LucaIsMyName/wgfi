@@ -1,9 +1,10 @@
+/* Instrument Serif — weight 400, normal + italic */
+@import '@fontsource/instrument-serif/400.css';
+@import '@fontsource/instrument-serif/400-italic.css';
 
-/* JetBrains Mono */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 100 800; /* Variable font weight range */
-  font-display: swap;
-  src: url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
-}
+/* JetBrains Mono — variable weight 100–800, normal + italic */
+@import '@fontsource-variable/jetbrains-mono/index.css';
+@import '@fontsource-variable/jetbrains-mono/wght-italic.css';
+
+/* TASA Orbiter — variable weight 400–800, normal */
+@import '@fontsource-variable/tasa-orbiter/index.css';

@@ -169,22 +169,18 @@ const Navigation = () => {
           <div className="px-4 py-4 space-y-3">
             {/* Row 1: Imprint & Privacy */}
             <div className="flex items-center gap-3">
-              <a
-                href="https://lucamack.at/impressum.txt"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                to="/impressum"
                 className="hover:underline font-serif italic text-[12px] text-primary-green"
               >
                 Impressum
-              </a>
-              <a
-                href="https://lucamack.at/datenschutz.txt"
-                target="_blank"
-                rel="noopener noreferrer"
+              </Link>
+              <Link
+                to="/datenschutz"
                 className="hover:underline font-serif italic text-[12px] text-primary-green"
               >
                 Datenschutz
-              </a>
+              </Link>
             </div>
             {/* Row 2: Theme Toggle & Search */}
             <div className="flex items-center gap-4">
@@ -299,24 +295,20 @@ const Navigation = () => {
               <div className="px-4 pt-3 pb-8 border-t border-border-color space-y-3">
                 {/* Row 1: Imprint & Privacy */}
                 <div className="flex items-center gap-3">
-                  <a
-                    href="https://lucamack.at/impressum.txt"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    to="/impressum"
                     className="text-[12px] hover:underline font-serif italic text-primary-green"
                     onClick={() => closeMobileMenu(false)}
                   >
                     Impressum
-                  </a>
-                  <a
-                    href="https://lucamack.at/datenschutz.txt"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  </Link>
+                  <Link
+                    to="/datenschutz"
                     className="text-[12px] hover:underline font-serif italic text-primary-green"
                     onClick={() => closeMobileMenu(false)}
                   >
                     Datenschutz
-                  </a>
+                  </Link>
                 </div>
                 {/* Row 2: Theme Toggle & Search */}
                 <div className="flex items-center gap-2">

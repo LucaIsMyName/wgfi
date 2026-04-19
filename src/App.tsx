@@ -15,6 +15,8 @@ const StatisticsPage = lazy(() => import("./pages/StatisticsPage"));
 const FavoritesPage = lazy(() => import("./pages/FavoritesPage"));
 const ComparePage = lazy(() => import("./pages/ComparePage"));
 const IdeaPage = lazy(() => import("./pages/IdeaPage"));
+const DatenschutzPage = lazy(() => import("./pages/DatenschutzPage"));
+const ImpressumPage = lazy(() => import("./pages/ImpressumPage"));
 const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
 
 function AppContent() {
@@ -83,6 +85,14 @@ function AppContent() {
                 <Route
                   path="/idea"
                   element={<IdeaPage />}
+                />
+                <Route
+                  path="/datenschutz"
+                  element={<DatenschutzPage />}
+                />
+                <Route
+                  path="/impressum"
+                  element={<ImpressumPage />}
                 />
                 {/* 404 Route - no path means it matches when no other routes do */}
                 <Route
