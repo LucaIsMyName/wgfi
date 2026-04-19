@@ -1,6 +1,7 @@
 import { Navigation, Map as MapIcon } from "lucide-react";
 import { Button } from "../ui/Button";
 import { Select } from "../ui/Select";
+import AddressSearch from "./AddressSearch";
 
 interface MobileMapControlsProps {
   selectedDistrict: number | null;
@@ -9,6 +10,7 @@ interface MobileMapControlsProps {
   filteredParksCount: number;
   onDistrictFilter: (district: number | null) => void;
   onGetUserLocation: () => void;
+  onAddressSelect: (coordinates: [number, number], address: string) => void;
 }
 
 /**
@@ -21,9 +23,14 @@ export default function MobileMapControls({
   filteredParksCount,
   onDistrictFilter,
   onGetUserLocation,
+  onAddressSelect,
 }: MobileMapControlsProps) {
   return (
     <div className="lg:hidden fixed bottom-0 left-0 right-0 z-10 p-3 bg-card-bg shadow-lg border-t border-primary-green/20 safe-area-inset-bottom">
+      <div className="mb-3">
+        <AddressSearch onAddressSelect={onAddressSelect} />
+      </div>
+      
       <div className="flex justify-between items-center mb-3">
         <h3 className="font-mono text-xs text-primary-green">
           {filteredParksCount} PARKS {selectedDistrict && <span>IM {selectedDistrict}. BEZIRK</span>}

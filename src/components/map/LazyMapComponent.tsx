@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTheme } from "../../contexts/ThemeContext";
 import { useMapboxMap } from "../../hooks/useMapboxMap";
@@ -9,6 +9,9 @@ import MapControls from "./MapControls";
 import MobileMapControls from "./MobileMapControls";
 import mapboxgl from "mapbox-gl";
 import type { Park } from "../../types/park";
+
+// Vienna center coordinates - defined outside component to prevent recreation
+const VIENNA_CENTER: [number, number] = [16.3738, 48.2082];
 
 interface LazyMapComponentProps {
   parks: Park[];
@@ -33,11 +36,12 @@ const LazyMapComponent: React.FC<LazyMapComponentProps> = ({
 }) => {
   const { effectiveTheme } = useTheme();
   const navigate = useNavigate();
+  const addressMarkerRef = useRef<mapboxgl.Marker | null>(null);
 
   // Map hooks
   const { mapContainerRef, mapInstance, mapLoaded, styleLoadedCounter } = useMapboxMap({
     effectiveTheme,
-    center: [16.3738, 48.2082], // Vienna center
+    center: VIENNA_CENTER,
     zoom: 12,
     pitch: 60
   });
@@ -115,6 +119,32 @@ const LazyMapComponent: React.FC<LazyMapComponentProps> = ({
     onUserLocationChange(null);
   }, [onUserLocationChange]);
 
+  // Handle address selection
+  const handleAddressSelect = useCallback((coordinates: [number, number], address: string) => {
+    if (!mapInstance.current) return;
+
+    // Remove existing address marker
+    if (addressMarkerRef.current) {
+      addressMarkerRef.current.remove();
+    }
+
+    // Create new address marker with different style
+    const marker = new mapboxgl.Marker({
+      color: "#FF6B35", // Orange color to distinguish from park markers
+    })
+      .setLngLat(coordinates)
+      .addTo(mapInstance.current);
+
+    addressMarkerRef.current = marker;
+
+    // Fly to the address location
+    mapInstance.current.flyTo({
+      center: coordinates,
+      zoom: 16,
+      duration: 1000
+    });
+  }, [mapInstance]);
+
   // Function to find park by ID or slug
   const findParkByIdOrSlug = useCallback((idOrSlug: string): Park | undefined => {
     return parks.find(park => 
@@ -122,6 +152,15 @@ const LazyMapComponent: React.FC<LazyMapComponentProps> = ({
       slugifyParkName(park.name) === idOrSlug
     );
   }, [parks]);
+
+  // Cleanup address marker on unmount only
+  useEffect(() => {
+    return () => {
+      if (addressMarkerRef.current) {
+        addressMarkerRef.current.remove();
+      }
+    };
+  }, []);
 
   // Handle park selection from URL
   useEffect(() => {
@@ -182,6 +221,7 @@ const LazyMapComponent: React.FC<LazyMapComponentProps> = ({
             filteredParksCount={filteredParks.length}
             onDistrictFilter={onSelectedDistrictChange}
             onGetUserLocation={getUserLocation}
+            onAddressSelect={handleAddressSelect}
           />
           
           <MobileMapControls
@@ -191,6 +231,7 @@ const LazyMapComponent: React.FC<LazyMapComponentProps> = ({
             filteredParksCount={filteredParks.length}
             onDistrictFilter={onSelectedDistrictChange}
             onGetUserLocation={getUserLocation}
+            onAddressSelect={handleAddressSelect}
           />
         </>
       )}

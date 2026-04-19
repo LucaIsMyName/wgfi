@@ -2,6 +2,7 @@ import { Navigation, Map as MapIcon } from "lucide-react";
 import type { Park } from "../../types/park";
 import { Button } from "../ui/Button";
 import { Select } from "../ui/Select";
+import AddressSearch from "./AddressSearch";
 
 interface MapControlsProps {
   selectedDistrict: number | null;
@@ -10,6 +11,7 @@ interface MapControlsProps {
   filteredParksCount: number;
   onDistrictFilter: (district: number | null) => void;
   onGetUserLocation: () => void;
+  onAddressSelect: (coordinates: [number, number], address: string) => void;
 }
 
 /**
@@ -22,6 +24,7 @@ export default function MapControls({
   filteredParksCount,
   onDistrictFilter,
   onGetUserLocation,
+  onAddressSelect,
 }: MapControlsProps) {
   return (
     <div className="absolute top-4 right-4 z-10 hidden lg:block">
@@ -43,6 +46,9 @@ export default function MapControls({
 
         {/* Controls */}
         <div className="p-3 flex flex-col gap-2 bg-soft-cream">
+          {/* Address Search */}
+          <AddressSearch onAddressSelect={onAddressSelect} />
+          
           {/* All Parks Button */}
           <button
             onClick={() => onDistrictFilter(null)}
