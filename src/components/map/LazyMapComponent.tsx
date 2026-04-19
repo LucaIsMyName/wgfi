@@ -84,7 +84,6 @@ const LazyMapComponent: React.FC<LazyMapComponentProps> = ({
   // Get user location
   const getUserLocation = useCallback(() => {
     if (!navigator.geolocation) {
-      console.warn("Geolocation is not supported by this browser");
       return;
     }
 
@@ -113,7 +112,6 @@ const LazyMapComponent: React.FC<LazyMapComponentProps> = ({
         }
       },
       (error) => {
-        console.error("Error getting user location:", error);
         onUserLocationChange(null);
       },
       {

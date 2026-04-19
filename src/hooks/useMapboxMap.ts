@@ -44,13 +44,11 @@ export function useMapboxMap({
     
     // Prevent duplicate map creation (especially in StrictMode)
     if (mapInstance.current) {
-      console.log('Map already exists, skipping initialization');
       return;
     }
 
     // Only initialize map when we have valid coordinates or fallback
     if (!center) {
-      console.log('No center coordinates provided, skipping map initialization');
       return;
     }
 
@@ -63,7 +61,6 @@ export function useMapboxMap({
       
       // Double-check to prevent race conditions
       if (mapInstance.current) {
-        console.log('Map instance exists, aborting initialization');
         return;
       }
 
@@ -134,7 +131,6 @@ export function useMapboxMap({
 
     return () => {
       isCleanedUp = true;
-      console.log('Cleaning up map instance');
       
       // Remove event listener first before cleaning up map
       if (handleResize) {

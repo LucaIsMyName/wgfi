@@ -23,7 +23,6 @@ export function useVisitHistory() {
         setHistory(parsed);
       }
     } catch (error) {
-      console.error('Error loading visit history:', error);
       setHistory([]);
     }
   }, []);
@@ -52,7 +51,7 @@ export function useVisitHistory() {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(currentHistory));
       setHistory(currentHistory);
     } catch (error) {
-      console.error('Error adding visit to history:', error);
+      // History update failed
     }
   }, []);
 
@@ -65,7 +64,7 @@ export function useVisitHistory() {
       localStorage.removeItem(STORAGE_KEY);
       setHistory([]);
     } catch (error) {
-      console.error('Error clearing visit history:', error);
+      // History clear failed
     }
   }, []);
 
@@ -85,7 +84,7 @@ export function getRecentVisitsSync(count: number = 5): string[] {
       return parsed.slice(0, count).map(item => item.parkId);
     }
   } catch (error) {
-    console.error('Error getting recent visits:', error);
+    // Recent visits lookup failed
   }
   return [];
 }
@@ -113,6 +112,6 @@ export function addVisitSync(parkId: string): void {
 
     localStorage.setItem(STORAGE_KEY, JSON.stringify(currentHistory));
   } catch (error) {
-    console.error('Error adding visit to history:', error);
+    // Visit history update failed
   }
 }

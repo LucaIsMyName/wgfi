@@ -23,6 +23,24 @@ header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type');
 
+// Security Headers
+header('X-Content-Type-Options: nosniff');
+header('X-Frame-Options: DENY');
+header('X-XSS-Protection: 1; mode=block');
+header('Referrer-Policy: strict-origin-when-cross-origin');
+
+// Content Security Policy
+$csp = "default-src 'none'; " .
+       "script-src 'self'; " .
+       "style-src 'self'; " .
+       "img-src 'self' data: https:; " .
+       "connect-src 'self'; " .
+       "font-src 'self'; " .
+       "object-src 'none'; " .
+       "media-src 'self'; " .
+       "frame-src 'none';";
+header('Content-Security-Policy: ' . $csp);
+
 // Handle preflight requests
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit(0);
@@ -32,8 +50,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 header('Content-Type: application/json; charset=utf-8');
 
 // Error reporting (disable in production)
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+if (getenv('ENVIRONMENT') === 'development' || getenv('APP_ENV') === 'development') {
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
+} else {
+    error_reporting(0);
+    ini_set('display_errors', 0);
+}
 
 /**
  * Send JSON response

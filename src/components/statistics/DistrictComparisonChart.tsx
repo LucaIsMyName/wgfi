@@ -107,33 +107,20 @@ export default function DistrictComparisonChart({
     [innerHeight, districtData, metric],
   );
 
-  const getPrimaryGreen = () => {
-    return getComputedStyle(document.documentElement)
-      .getPropertyValue("--primary-green")
-      .trim();
-  };
-
-  const getDeepCharcoal = () => {
-    return getComputedStyle(document.documentElement)
-      .getPropertyValue("--deep-charcoal")
-      .trim();
-  };
-
-  const getSoftCream = () => {
-    return getComputedStyle(document.documentElement)
-      .getPropertyValue("--soft-cream")
-      .trim();
-  };
-
-  const getAccentGold = () => {
-    return getComputedStyle(document.documentElement)
-      .getPropertyValue("--accent-gold")
-      .trim();
-  };
+  // Cache CSS variables at component mount to avoid repeated DOM reads
+  const cssVars = useMemo(() => {
+    const styles = getComputedStyle(document.documentElement);
+    return {
+      primaryGreen: styles.getPropertyValue("--primary-green").trim(),
+      deepCharcoal: styles.getPropertyValue("--deep-charcoal").trim(),
+      softCream: styles.getPropertyValue("--soft-cream").trim(),
+      accentGold: styles.getPropertyValue("--accent-gold").trim(),
+    };
+  }, []);
 
   // Use consistent primary green color for all bars
   const getBarColor = () => {
-    return "var(--primary-green)";
+    return cssVars.primaryGreen;
   };
 
   const formatMetricValue = (value: number) => {
@@ -192,13 +179,13 @@ export default function DistrictComparisonChart({
           {/* Y-axis */}
           <AxisLeft
             scale={yScale}
-            stroke={getDeepCharcoal()}
-            tickStroke={getDeepCharcoal()}
-            tickFormat={(value) => {
-              const numValue =
-                typeof value === "number"
-                  ? value
-                  : (value as { valueOf(): number }).valueOf();
+            stroke={cssVars.deepCharcoal}
+            tickStroke={cssVars.deepCharcoal}
+            tickFormat={(value: unknown) => {
+              const numValue = typeof value === "number" ? value : 
+                (typeof value === "object" && value !== null && "valueOf" in value) 
+                  ? (value as { valueOf(): number }).valueOf() 
+                  : 0;
               if (metric === "totalArea") {
                 if (numValue >= 1e6) return `${(numValue / 1e6).toFixed(1)}km²`;
                 if (numValue >= 1e4) return `${(numValue / 1e4).toFixed(1)}ha`;
@@ -207,7 +194,7 @@ export default function DistrictComparisonChart({
               return `${numValue}`;
             }}
             tickLabelProps={() => ({
-              fill: getDeepCharcoal(),
+              fill: cssVars.deepCharcoal,
               fontSize: 11,
               fontFamily: "Geist Mono, monospace",
               textAnchor: "end",
@@ -219,17 +206,17 @@ export default function DistrictComparisonChart({
           <AxisBottom
             top={innerHeight}
             scale={xScale}
-            stroke={getDeepCharcoal()}
-            tickStroke={getDeepCharcoal()}
-            tickFormat={(value: number | any) => {
-              const numValue =
-                typeof value === "number"
-                  ? value
-                  : (value as { valueOf(): number }).valueOf();
+            stroke={cssVars.deepCharcoal}
+            tickStroke={cssVars.deepCharcoal}
+            tickFormat={(value: unknown) => {
+              const numValue = typeof value === "number" ? value : 
+                (typeof value === "object" && value !== null && "valueOf" in value) 
+                  ? (value as { valueOf(): number }).valueOf() 
+                  : 0;
               return `${numValue}`;
             }}
             tickLabelProps={() => ({
-              fill: getDeepCharcoal(),
+              fill: cssVars.deepCharcoal,
               fontSize: 11,
               fontFamily: "Geist Mono, monospace",
               textAnchor: "middle",
@@ -245,8 +232,8 @@ export default function DistrictComparisonChart({
           left={tooltipLeft}
           style={{
             ...defaultStyles,
-            backgroundColor: getSoftCream(),
-            border: `1px solid ${getPrimaryGreen()}`,
+            backgroundColor: cssVars.softCream,
+            border: `1px solid ${cssVars.primaryGreen}`,
             borderRadius: "4px",
             padding: "8px 12px",
             fontFamily: "Geist Mono, monospace",
@@ -254,20 +241,20 @@ export default function DistrictComparisonChart({
           }}
         >
           <div>
-            <strong style={{ color: getPrimaryGreen() }}>
+            <strong style={{ color: cssVars.primaryGreen }}>
               {tooltipData.district}. Bezirk
             </strong>
             <br />
-            <span style={{ color: getDeepCharcoal() }}>
+            <span style={{ color: cssVars.deepCharcoal }}>
               {tooltipData.parkCount}{" "}
               {tooltipData.parkCount === 1 ? "Park" : "Parks"}
             </span>
             <br />
-            <span style={{ color: getDeepCharcoal() }}>
+            <span style={{ color: cssVars.deepCharcoal }}>
               {formatMetricValue(getMetricValue(tooltipData))}
             </span>
             <br />
-            <span style={{ color: getDeepCharcoal(), opacity: 0.7 }}>
+            <span style={{ color: cssVars.deepCharcoal, opacity: 0.7 }}>
               {tooltipData.coveragePercentage.toFixed(2)}% Abdeckung
             </span>
           </div>

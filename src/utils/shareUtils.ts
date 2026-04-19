@@ -24,7 +24,6 @@ export async function sharePark(park: Park, url?: string): Promise<boolean> {
       await navigator.clipboard.writeText(shareUrl);
       return true;
     } catch (err) {
-      console.error('Failed to copy to clipboard:', err);
       return false;
     }
   }
@@ -38,9 +37,6 @@ export async function sharePark(park: Park, url?: string): Promise<boolean> {
     return true;
   } catch (err) {
     // User cancelled or error occurred
-    if ((err as Error).name !== 'AbortError') {
-      console.error('Share failed:', err);
-    }
     return false;
   }
 }
@@ -54,7 +50,6 @@ export async function copyToClipboard(url: string): Promise<boolean> {
     await navigator.clipboard.writeText(url);
     return true;
   } catch (err) {
-    console.error('Failed to copy to clipboard:', err);
     return false;
   }
 }
@@ -80,9 +75,7 @@ export async function shareComparison(parkIds: string[]): Promise<boolean> {
     });
     return true;
   } catch (err) {
-    if ((err as Error).name !== 'AbortError') {
-      console.error('Share failed:', err);
-    }
+    // User cancelled or error occurred
     return false;
   }
 }

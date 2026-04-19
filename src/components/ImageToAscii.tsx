@@ -69,7 +69,6 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
   const effectiveMovementSpeed = useMemo(() => {
     if (movementSpeed !== 'none') return movementSpeed;
     if (movement > 0) {
-      console.warn('ImageToAscii: "movement" prop is deprecated. Use "movementSpeed" instead.');
       return 'medium';
     }
     return 'none';
@@ -137,7 +136,6 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
           { type: 'module' }
         );
       } catch (error) {
-        console.warn('Failed to initialize Web Worker, falling back to main thread rendering:', error);
         useOffscreenCanvas.current = false;
       }
     }
@@ -867,7 +865,6 @@ const ImageToAscii: React.FC<ImageToAsciiProps> = ({
 
         return;
       } catch (error) {
-        console.warn('OffscreenCanvas transfer failed, falling back to main thread:', error);
         useOffscreenCanvas.current = false;
       }
     }

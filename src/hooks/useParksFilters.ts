@@ -158,7 +158,6 @@ export function useParksFilters(parks: Park[]): UseParksFiltersReturn {
       localStorage.setItem(STORAGE_KEY_LOCATION_PERMISSION, JSON.stringify(true));
       return location;
     } catch (error) {
-      console.error('Error getting location:', error);
       setLocationPermission(false);
       localStorage.setItem(STORAGE_KEY_LOCATION_PERMISSION, JSON.stringify(false));
       return null;

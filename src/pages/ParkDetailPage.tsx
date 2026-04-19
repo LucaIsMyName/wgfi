@@ -177,7 +177,6 @@ const ParkDetailPage: React.FC = () => {
         setError("Park nicht gefunden");
       }
     } catch (err) {
-      console.error("Error loading park:", err);
       setPark(null);
       setError("Fehler beim Laden des Parks");
     }
@@ -276,7 +275,6 @@ const ParkDetailPage: React.FC = () => {
       import("mapbox-gl")
         .then(buildMarker)
         .catch((error) => {
-          console.error("Error loading mapbox:", error);
           setMapError("Karte konnte nicht geladen werden");
         });
     };

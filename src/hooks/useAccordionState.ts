@@ -26,7 +26,7 @@ export function useAccordionState(defaultOpen: string[] = []): [string[], (value
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(value));
     } catch (error) {
-      console.error('Failed to save accordion state to localStorage:', error);
+      // localStorage failed - state will reset on refresh
     }
   }, [value]);
 

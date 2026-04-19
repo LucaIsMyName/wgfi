@@ -31,6 +31,7 @@ import ParkDensityChart from "@/components/statistics/ParkDensityChart";
 import AmenityDensityChart from "@/components/statistics/AmenityDensityChart";
 import TransportConnectivityChart from "@/components/statistics/TransportConnectivityChart";
 import { getParkDistrictAreaDistribution } from "@/utils/parkUtils";
+import ChartErrorBoundary from "@/components/ChartErrorBoundary";
 import {
   calculateParkDensity,
   calculateAmenityDensity,
@@ -38,6 +39,7 @@ import {
   getDensitySummary,
 } from "@/utils/advancedStatistics";
 import type { Park } from "@/types/park";
+import { DISTRICT_AREAS, VIENNA_TOTAL_AREA, CHART_DEFAULT_HEIGHT, CHART_DEFAULT_WIDTH, LARGE_CHART_HEIGHT, LARGE_CHART_WIDTH } from "@/constants/districtAreas";
 
 interface DistrictStats {
   district: number;
@@ -46,38 +48,6 @@ interface DistrictStats {
   percentage: number;
   avgParkSize: number;
 }
-
-// Vienna district areas in square meters (approximate)
-const DISTRICT_AREAS: Record<number, number> = {
-  1: 3.0e6,
-  2: 19.2e6,
-  3: 7.4e6,
-  4: 1.8e6,
-  5: 2.2e6,
-  6: 1.5e6,
-  7: 2.1e6,
-  8: 1.1e6,
-  9: 1.6e6,
-  10: 31.8e6,
-  11: 23.7e6,
-  12: 8.2e6,
-  13: 37.7e6,
-  14: 33.8e6,
-  15: 3.8e6,
-  16: 7.3e6,
-  17: 11.3e6,
-  18: 6.3e6,
-  19: 24.9e6,
-  20: 5.6e6,
-  21: 44.5e6,
-  22: 102.2e6,
-  23: 32.0e6,
-};
-
-const VIENNA_TOTAL_AREA: number = Object.values(DISTRICT_AREAS).reduce(
-  (a, b) => a + b,
-  0,
-);
 
 const StatisticsPage = () => {
   const { parks } = useParksData();
@@ -353,15 +323,17 @@ const StatisticsPage = () => {
                 </h3>
               </div>
               <div className="w-full h-[400px]">
-                <ResponsiveContainer className="w-full h-full">
-                  {({ width, height }) => (
-                    <AmenitiesChart
-                      parks={parks}
-                      width={width || 400}
-                      height={height || 400}
-                    />
-                  )}
-                </ResponsiveContainer>
+                <ChartErrorBoundary chartName="Ausstattung Verteilung">
+                  <ResponsiveContainer className="w-full h-full">
+                    {({ width, height }) => (
+                      <AmenitiesChart
+                        parks={parks}
+                        width={width || 400}
+                        height={height || 400}
+                      />
+                    )}
+                  </ResponsiveContainer>
+                </ChartErrorBoundary>
               </div>
             </div>
 
@@ -374,18 +346,19 @@ const StatisticsPage = () => {
                 </h3>
               </div>
               <div className="w-full h-[400px]">
-                <ResponsiveContainer className="w-full h-full">
-                  {({ width, height }) => (
-                    <ParkSizeHistogram
-                      parks={parks}
-                      width={width || 400}
-                      height={height || 400}
-                    />
-                  )}
-                </ResponsiveContainer>
+                <ChartErrorBoundary chartName="Parkgrößen Verteilung">
+                  <ResponsiveContainer className="w-full h-full">
+                    {({ width, height }) => (
+                      <ParkSizeHistogram
+                        parks={parks}
+                        width={width || CHART_DEFAULT_WIDTH}
+                        height={height || CHART_DEFAULT_HEIGHT}
+                      />
+                    )}
+                  </ResponsiveContainer>
+                </ChartErrorBoundary>
               </div>
             </div>
-          </div>
 
           {/* District Comparison Chart */}
           <div className="p-6 border mb-12 bg-card-bg border-border-color">
@@ -433,17 +406,19 @@ const StatisticsPage = () => {
               </div>
             </div>
             <div className="w-full h-[600px]">
-              <ResponsiveContainer className="w-full h-full">
-                {({ width, height }) => (
-                  <DistrictComparisonChart
-                    parks={parks}
-                    districtAreas={DISTRICT_AREAS}
-                    width={width || 800}
-                    height={height || 600}
-                    metric={districtMetric}
-                  />
-                )}
-              </ResponsiveContainer>
+              <ChartErrorBoundary chartName="Bezirksvergleich">
+                <ResponsiveContainer className="w-full h-full">
+                  {({ width, height }) => (
+                    <DistrictComparisonChart
+                      parks={parks}
+                      districtAreas={DISTRICT_AREAS}
+                      width={width || LARGE_CHART_WIDTH}
+                      height={height || LARGE_CHART_HEIGHT}
+                      metric={districtMetric}
+                    />
+                  )}
+                </ResponsiveContainer>
+              </ChartErrorBoundary>
             </div>
           </div>
 
@@ -518,8 +493,8 @@ const StatisticsPage = () => {
                   {({ width, height }) => (
                     <AmenitiesPerParkChart
                       parks={parks}
-                      width={width || 400}
-                      height={height || 400}
+                      width={width || CHART_DEFAULT_WIDTH}
+                      height={height || CHART_DEFAULT_HEIGHT}
                     />
                   )}
                 </ResponsiveContainer>
@@ -547,6 +522,7 @@ const StatisticsPage = () => {
               </div>
             </div>
           </div>
+        </div>
         </div>
 
         {/* Park Density Analysis */}

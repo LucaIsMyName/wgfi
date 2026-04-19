@@ -52,15 +52,13 @@ const HomePage: React.FC = () => {
             setLocationError(true);
           }
         } catch (error) {
-          console.error("Error finding nearest park:", error);
           setLocationError(true);
-        } finally {
           setIsLoadingNearby(false);
+        } finally {
           setShowLocationModal(false);
         }
       },
       (error) => {
-        console.error("Error getting location:", error);
         setLocationError(true);
         setIsLoadingNearby(false);
       },
@@ -88,7 +86,7 @@ const HomePage: React.FC = () => {
         navigate(`/index/${slugifyParkName(randomPark.name)}`);
       }
     } catch (error) {
-      console.error("Error selecting random park:", error);
+      // Error handled by loading state
     } finally {
       setIsLoadingRandom(false);
     }
@@ -100,8 +98,33 @@ const HomePage: React.FC = () => {
         <title>Wiener Grünflächen Index | Home</title>
         <meta
           name="description"
-          content="Eine Liste und Karte aller Parks und Grünflächen in Wien mit allen wichtigen Informationen für deinen Parkbesuch."
+          content="Entdecke alle Parks und Grünflächen Wiens. Der umfassende Index mit über 1000 Parks, interaktiver Karte und detaillierten Informationen zu Ausstattung und Lage."
         />
+        
+        {/* Open Graph tags */}
+        <meta property="og:title" content="Wiener Grünflächen Index | Entdecke alle Parks in Wien" />
+        <meta property="og:description" content="Der umfassende Index mit über 1000 Parks, interaktiver Karte und detaillierten Informationen zu Ausstattung und Lage." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={window.location.href} />
+        <meta property="og:image" content="/home.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:locale" content="de_DE" />
+        <meta property="og:site_name" content="Wiener Grünflächen Index" />
+        
+        {/* Twitter Card tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Wiener Grünflächen Index | Entdecke alle Parks in Wien" />
+        <meta name="twitter:description" content="Der umfassende Index mit über 1000 Parks, interaktiver Karte und detaillierten Informationen zu Ausstattung und Lage." />
+        <meta name="twitter:image" content="/home.jpg" />
+        
+        {/* Additional meta tags */}
+        <meta name="robots" content="index, follow" />
+        <meta name="language" content="de" />
+        <meta name="geo.region" content="AT-9" />
+        <meta name="geo.placename" content="Wien" />
+        <meta name="geo.position" content="48.2082;16.3738" />
+        <link rel="canonical" href={window.location.href} />
       </Helmet>
 
       {/* ASCII Background */}

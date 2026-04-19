@@ -199,7 +199,7 @@ export function useMapMarkers({
           }
         }
       } catch (error) {
-        console.error("Error adding markers:", error);
+        // Markers failed to load
       }
     };
 
