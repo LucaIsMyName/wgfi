@@ -1,21 +1,21 @@
 # Impressum
 
-## Angaben gemäß § 5 ECG (Österreich)
+## Angaben gemäß § 5 ECG
 
-**[Dein Name / Organisation]**
-[Straße und Hausnummer]
-[PLZ Ort], Österreich
+Luca Mack BA,
+Lorystrasse 71,
+1110 Wien
 
-**E-Mail:** [E-Mail-Adresse]
-**Website:** [https://ihre-domain.at](https://ihre-domain.at)
+E-Mail: lucamack3@gmail.com /
+Website: [lucamack.at](https://lucamack.at)
 
 ## Zweck der Website
 
-Der **Wiener Grünflächen Index** ist ein nicht-kommerzielles Informationsangebot zur Übersicht über Parks und öffentliche Grünflächen in Wien. Die Anwendung verwendet öffentlich zugängliche Daten der Stadt Wien (data.wien.gv.at) und stellt diese benutzerfreundlich aufbereitet zur Verfügung.
+Der `Wiener Grünflächen Index` ist ein nicht-kommerzielles Informationsangebot zur Übersicht über Parks und öffentliche Grünflächen in Wien. Die Anwendung verwendet öffentlich zugängliche Daten der Stadt Wien (data.wien.gv.at) und stellt diese benutzerfreundlich aufbereitet zur Verfügung.
 
 ## Datenquelle
 
-Die Parkdaten stammen aus dem offenen Datensatz **PARKINFOOGD** der Stadt Wien, bereitgestellt unter der [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) Lizenz über [data.wien.gv.at](https://data.wien.gv.at).
+Die Parkdaten stammen aus dem offenen Datensatz `PARKINFOOGD` der Stadt Wien, bereitgestellt unter der [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) Lizenz über [data.wien.gv.at](https://data.wien.gv.at).
 
 ## Haftungsausschluss
 
@@ -29,4 +29,4 @@ Der Quellcode dieser Anwendung ist Open Source und steht unter der [MIT Lizenz](
 
 ---
 
-*Stand: April 2026*
+Stand: April 2026
