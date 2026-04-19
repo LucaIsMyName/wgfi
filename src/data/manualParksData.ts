@@ -64,6 +64,12 @@ export interface ManualParkData {
    * Example: { 2: 70, 22: 30 } means 70% in district 2, 30% in district 22.
    */
   districtAreaSplit?: Record<number, number>;
+  /**
+   * Set to true to exclude this park from the application.
+   * Works for both API parks (enrichment mode) and manual parks (isFullPark mode).
+   * Hidden parks will not appear in listings, maps, statistics, or sitemaps.
+   */
+  hidden?: boolean;
 }
 
 const praterDescription =
@@ -113,7 +119,9 @@ export const manualParksDB: Record<string, ManualParkData> = {
         type: "official",
       },
     ],
+    amenities: ["Tischtennis"],
   },
+
   /** Stadtpark */
   stadtpark: {
     name: "Stadtpark",
@@ -201,6 +209,7 @@ export const manualParksDB: Record<string, ManualParkData> = {
     descriptionLicense: "Wikipedia",
     links: praterLinks,
     tips: ["Volksstimme-Fest am letzten Wochenende in den Sommerferien"],
+    amenities: ["Tischtennis"],
   },
   "prater-sulzwiese": {
     description: praterDescription,
@@ -301,6 +310,7 @@ export const manualParksDB: Record<string, ManualParkData> = {
     description: praterDescription,
     descriptionLicense: "Wikipedia",
     links: praterLinks,
+    amenities: ["Tischtennis"],
   },
   "prater-spenadlwiese": {
     description: praterDescription,
@@ -362,6 +372,7 @@ export const manualParksDB: Record<string, ManualParkData> = {
     description:
       "Der Kurpark Oberlaa ist eine Parkanlage im 10. Wiener Gemeindebezirk Favoriten, am Südosthang des Laaer Berges bei Oberlaa. Seine Fläche beträgt rund 608.000 m². Gartenbaudenkmale, Wegsysteme und künstliche Bodenformationen stehen unter Denkmalschutz.",
     descriptionLicense: "Wikipedia",
+    amenities: ["Tischtennis"],
   },
   /** HIrschstetten */
   "teich-hirschstetten": {
@@ -466,6 +477,7 @@ export const manualParksDB: Record<string, ManualParkData> = {
     description:
       "Der Floridsdorfer Wasserpark ist ein kleiner, als Parkanlage gestalteter Teil der Alten Donau im 21. Wiener Gemeindebezirk, Floridsdorf. Der Park wurde von 1928 bis 1929 angelegt und hat eine Fläche von 143.000 m², rund ein Drittel davon wird von Wasserflächen eingenommen.",
     descriptionLicense: "Wikipedia",
+    amenities: ["Tischtennis"],
   },
   "pa-roter-berg": {
     description:
@@ -503,6 +515,7 @@ export const manualParksDB: Record<string, ManualParkData> = {
         type: "official",
       },
     ],
+    amenities: ["Tischtennis"],
   },
   "auer-welsbach-park": {
     description:
@@ -569,6 +582,411 @@ export const manualParksDB: Record<string, ManualParkData> = {
     tips: ["Winter: Christkindlmarkt & Eistraum", "Sommer: Filmfestival"],
     amenities: ["Toiletten"],
   },
+  "pa-beethovenplatz": {
+    amenities: ["Tischtennis"],
+  },
+  "franziska-loew-park": {
+    amenities: ["Tischtennis"],
+  },
+  "mexikopark-kirche": {
+    amenities: ["Tischtennis"],
+  },
+  "rudolf-bednar-park": {
+    amenities: ["Tischtennis"],
+  },
+  "vilma-neuwirth-park": {
+    amenities: ["Tischtennis"],
+  },
+  arenbergpark: {
+    amenities: ["Tischtennis"],
+  },
+  "kardinal-nagl-park": {
+    amenities: ["Tischtennis"],
+  },
+  "leon-zelman-park": {
+    amenities: ["Tischtennis"],
+  },
+  modenapark: {
+    amenities: ["Tischtennis"],
+  },
+  "pa-litfassstrasse": {
+    amenities: ["Tischtennis"],
+  },
+  rochuspark: {
+    amenities: ["Tischtennis"],
+  },
+  "alois-drasche-park": {
+    amenities: ["Tischtennis"],
+  },
+  "pa-schelleingasse": {
+    amenities: ["Tischtennis"],
+  },
+  "planquadrat-park": {
+    amenities: ["Tischtennis"],
+  },
+  rubenspark: {
+    amenities: ["Tischtennis"],
+  },
+  bacherpark: {
+    amenities: ["Tischtennis"],
+  },
+  einsiedlerpark: {
+    amenities: ["Tischtennis"],
+  },
+  "ernst-lichtblau-park": {
+    amenities: ["Tischtennis"],
+  },
+  herweghpark: {
+    amenities: ["Tischtennis"],
+  },
+  klieberpark: {
+    amenities: ["Tischtennis"],
+  },
+  "pa-leopold-rister-gasse": {
+    amenities: ["Tischtennis"],
+  },
+  "rudolf-sallinger-park": {
+    amenities: ["Tischtennis"],
+  },
+  "stefan-weber-park": {
+    amenities: ["Tischtennis"],
+  },
+  "willi-frank-park": {
+    amenities: ["Tischtennis"],
+  },
+  "esterh-zypark": {
+    amenities: ["Tischtennis"],
+  },
+  "fritz-imhoff-park": {
+    amenities: ["Tischtennis"],
+  },
+  "hubert-marischka-park": {
+    amenities: ["Tischtennis"],
+  },
+  "josef-strauss-park": {
+    amenities: ["Tischtennis"],
+  },
+  "karl-farkas-park": {
+    amenities: ["Tischtennis"],
+  },
+  "mizzi-langer-kauba-park": {
+    amenities: ["Tischtennis"],
+  },
+  siebensternpark: {
+    amenities: ["Tischtennis"],
+  },
+  hamerlingpark: {
+    amenities: ["Tischtennis"],
+  },
+  schoenbornpark: {
+    amenities: ["Tischtennis"],
+  },
+  tigerpark: {
+    amenities: ["Tischtennis"],
+  },
+  "arne-karlsson-park": {
+    amenities: ["Tischtennis"],
+  },
+  lichtentalerpark: {
+    amenities: ["Tischtennis"],
+  },
+  liechtensteinpark: {
+    amenities: ["Tischtennis"],
+  },
+  votivpark: {
+    amenities: ["Tischtennis"],
+  },
+  "alfred-boehm-park": {
+    amenities: ["Tischtennis"],
+  },
+  antonspark: {
+    amenities: ["Tischtennis"],
+  },
+  arthaberpark: {
+    amenities: ["Tischtennis"],
+  },
+  fortunapark: {
+    amenities: ["Tischtennis"],
+  },
+  "helmut-zilk-park": {
+    amenities: ["Tischtennis"],
+  },
+  humboldtpark: {
+    amenities: ["Tischtennis"],
+  },
+  laubepark: {
+    amenities: ["Tischtennis"],
+  },
+  "martin-luther-king-park": {
+    amenities: ["Tischtennis"],
+  },
+  "pa-favoritenstrasse": {
+    amenities: ["Tischtennis"],
+  },
+  "pa-wielandplatz": {
+    amenities: ["Tischtennis"],
+  },
+  "pa-heuberggstaetten": {
+    amenities: ["Tischtennis"],
+  },
+  "pa-quellenstrasse": {
+    amenities: ["Tischtennis"],
+  },
+  "pa-bergtaidingweg": {
+    amenities: ["Tischtennis"],
+  },
+  waldmuellerpark: {
+    amenities: ["Tischtennis"],
+  },
+  "walter-kuhn-park": {
+    amenities: ["Tischtennis"],
+  },
+  "wasserspielplatz-wasserturm": {
+    amenities: ["Tischtennis"],
+  },
+  carsonypark: {
+    amenities: ["Tischtennis"],
+  },
+  herderpark: {
+    amenities: ["Tischtennis"],
+  },
+  "pa-am-leberberg": {
+    amenities: ["Tischtennis"],
+  },
+  "pa-bl-riotgasse": {
+    amenities: ["Tischtennis"],
+  },
+  "pa-duerrnbacherstrasse": {
+    amenities: ["Tischtennis"],
+  },
+  "pa-lorenz-reiter-strasse": {
+    amenities: ["Tischtennis"],
+  },
+  "pa-vierthalergasse": {
+    amenities: ["Tischtennis"],
+  },
+  steinbauerpark: {
+    amenities: ["Tischtennis"],
+  },
+  "friedrich-julius-bieber-anlage": {
+    amenities: ["Tischtennis"],
+  },
+  "pa-furtwaenglerplatz": {
+    amenities: ["Tischtennis"],
+  },
+  "baumgartner-casino-park": {
+    amenities: ["Tischtennis"],
+  },
+  "ferdinand-wolf-park": {
+    amenities: ["Tischtennis"],
+  },
+  "matzner-park": {
+    amenities: ["Tischtennis"],
+  },
+  "pa-hochsatzengasse": {
+    amenities: ["Tischtennis"],
+  },
+  "pa-muehlbergstrasse": {
+    amenities: ["Tischtennis"],
+  },
+  reinlpark: {
+    amenities: ["Tischtennis"],
+  },
+
+  dadlerpark: {
+    amenities: ["Tischtennis"],
+  },
+  forschneritschpark: {
+    amenities: ["Tischtennis"],
+  },
+  "ga-auf-der-schmelz": {
+    amenities: ["Tischtennis"],
+  },
+  maerzpark: {
+    amenities: ["Tischtennis"],
+  },
+  "pa-friedrichsplatz": {
+    amenities: ["Tischtennis"],
+  },
+  "regine-landeis-park": {
+    amenities: ["Tischtennis"],
+  },
+  rohrauerpark: {
+    amenities: ["Tischtennis"],
+  },
+  vogelweidpark: {
+    amenities: ["Tischtennis"],
+  },
+  "adele-jelinek-park": {
+    amenities: ["Tischtennis"],
+  },
+  "arik-brauer-park": {
+    amenities: ["Tischtennis"],
+  },
+  "pa-yppenplatz": {
+    amenities: ["Tischtennis"],
+  },
+  "christine-noestlinger-park": {
+    amenities: ["Tischtennis"],
+  },
+  diepoldpark: {
+    amenities: ["Tischtennis"],
+  },
+  fuchupark: {
+    amenities: ["Tischtennis"],
+  },
+  "pa-clemens-hofbauer-platz": {
+    amenities: ["Tischtennis"],
+  },
+  "pa-dr-josef-resch-platz": {
+    amenities: ["Tischtennis"],
+  },
+  "lorenz-bayer-park": {
+    amenities: ["Tischtennis"],
+  },
+
+  "ga-staudgasse": {
+    amenities: ["Tischtennis"],
+  },
+  "leopold-rosenmayr-park": {
+    amenities: ["Tischtennis"],
+  },
+  "pa-johann-nepomuk-vogl-platz": {
+    amenities: ["Tischtennis"],
+  },
+  schubertpark: {
+    amenities: ["Tischtennis"],
+  },
+  beethovenpark: {
+    amenities: ["Tischtennis"],
+  },
+  "heiligenstaedter-park": {
+    amenities: ["Tischtennis"],
+  },
+  "hugo-wolf-park": {
+    amenities: ["Tischtennis"],
+  },
+  olympiapark: {
+    amenities: ["Tischtennis"],
+  },
+  ottingerwise: {
+    amenities: ["Tischtennis"],
+  },
+  "pa-kliergasse": {
+    amenities: ["Tischtennis"],
+  },
+  saarpark: {
+    amenities: ["Tischtennis"],
+  },
+  allerheiligenpark: {
+    amenities: ["Tischtennis"],
+  },
+  "anton-kummerer-park": {
+    amenities: ["Tischtennis"],
+  },
+  forsthauspark: {
+    amenities: ["Tischtennis"],
+  },
+  mortarapark: {
+    amenities: ["Tischtennis"],
+  },
+  "pa-leipziger-park": {
+    amenities: ["Tischtennis"],
+  },
+  schmetterlingspark: {
+    amenities: ["Tischtennis"],
+  },
+  denglerpark: {
+    amenities: ["Tischtennis"],
+  },
+  "floridsdorfer-aupark": {
+    amenities: ["Tischtennis"],
+  },
+  freiligrathpark: {
+    amenities: ["Tischtennis"],
+  },
+  "pa-dragonerhaeufl": {
+    amenities: ["Tischtennis"],
+  },
+  "marie-schuller-park": {
+    amenities: ["Tischtennis"],
+  },
+  "pa-langfeldgasse": {
+    amenities: ["Tischtennis"],
+  },
+  "pa-luessenpromenade": {
+    amenities: ["Tischtennis"],
+  },
+
+  "ga-rennbahnweg": {
+    amenities: ["Tischtennis"],
+  },
+  "hans-hass-park": {
+    amenities: ["Tischtennis"],
+  },
+  "hirschstettner-aupark": {
+    amenities: ["Tischtennis"],
+  },
+  "lagerwiese-rehlacke": {
+    amenities: ["Tischtennis"],
+  },
+  lumbyepark: {
+    amenities: ["Tischtennis"],
+  },
+  "pa-am-kaiserwasser": {
+    amenities: ["Tischtennis"],
+  },
+  "pa-am-muehlwasser": {
+    amenities: ["Tischtennis"],
+  },
+  "pa-am-muellnermais": {
+    amenities: ["Tischtennis"],
+  },
+  "pa-an-der-alten-schanze": {
+    amenities: ["Tischtennis"],
+  },
+  "pa-duesseldorfstrassse": {
+    amenities: ["Tischtennis"],
+  },
+  "pa-kaschauerplatz": {
+    amenities: ["Tischtennis"],
+  },
+  "pa-meissnergasse": {
+    amenities: ["Tischtennis"],
+  },
+  "pa-polgartstrasse": {
+    amenities: ["Tischtennis"],
+  },
+  "pa-raphael-donner-allee": {
+    amenities: ["Tischtennis"],
+  },
+  "pa-strakaweg": {
+    amenities: ["Tischtennis"],
+  },
+  "pa-weissausweg": {
+    amenities: ["Tischtennis"],
+  },
+  "pa-ziegelhofstrasse": {
+    amenities: ["Tischtennis"],
+  },
+  seepark: {
+    amenities: ["Tischtennis"],
+  },
+  "teisch-hischstetten": {
+    amenities: ["Tischtennis"],
+  },
+  "fridtjof-nansen-park": {
+    amenities: ["Tischtennis"],
+  },
+  "pan-park": {
+    amenities: ["Tischtennis"],
+  },
+  "pa-alma-seidler-weg": {
+    amenities: ["Tischtennis"],
+  },
+  "stadtpark-atzgersdorf": {
+    amenities: ["Tischtennis"],
+  },
   reithofferpark: {
     amenities: ["Tischtennis", "Toiletten"],
     description:
@@ -594,7 +1012,7 @@ export const manualParksDB: Record<string, ManualParkData> = {
         type: "event",
       },
     ],
-    amenities: ["Toiletten"],
+    amenities: ["Toiletten", "Tischtennis"],
   },
   "venediger-au-park": {
     amenities: ["Tischtennis"],
@@ -1013,6 +1431,9 @@ export const manualParksDB: Record<string, ManualParkData> = {
       "Tischtennis",
       "Hundebereich",
     ],
+  },
+  "gerda-matejka-felden-park-privat": {
+    hidden: true,
   },
 };
 

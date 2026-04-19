@@ -1,6 +1,6 @@
 /**
  * Auto-generated parks data - DO NOT EDIT MANUALLY
- * Generated at: 2026-04-19T07:52:26.137Z
+ * Generated at: 2026-04-19T09:43:24.676Z
  * Source: Vienna Open Data API
  * 
  * This file is generated during build time by scripts/generate-parks-data.js
@@ -142,7 +142,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -221,7 +222,8 @@ export const PARKS_DATA: Park[] = [
     "amenities": [
       "Spielplatz",
       "Wasserspiele",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -299,7 +301,8 @@ export const PARKS_DATA: Park[] = [
     "amenities": [
       "Spielplatz",
       "Wasserspiele",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -2133,7 +2136,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -2674,7 +2678,8 @@ export const PARKS_DATA: Park[] = [
     "amenities": [
       "Spielplatz",
       "Wasserspiele",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -2753,7 +2758,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Hundebereich",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -3099,7 +3105,8 @@ export const PARKS_DATA: Park[] = [
     "amenities": [
       "Spielplatz",
       "Wasserspiele",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -3483,7 +3490,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -3712,7 +3720,8 @@ export const PARKS_DATA: Park[] = [
     "amenities": [
       "Spielplatz",
       "Wasserspiele",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -3790,7 +3799,8 @@ export const PARKS_DATA: Park[] = [
     },
     "amenities": [
       "Spielplatz",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -4336,7 +4346,8 @@ export const PARKS_DATA: Park[] = [
       "Wasserspiele",
       "Hundebereich",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -5528,7 +5539,8 @@ export const PARKS_DATA: Park[] = [
     "amenities": [
       "Spielplatz",
       "Wasserspiele",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -5957,7 +5969,8 @@ export const PARKS_DATA: Park[] = [
     "amenities": [
       "Spielplatz",
       "Wasserspiele",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -5997,7 +6010,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -6077,7 +6091,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -6542,7 +6557,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -6854,7 +6870,8 @@ export const PARKS_DATA: Park[] = [
     "amenities": [
       "Spielplatz",
       "Wasserspiele",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -7581,7 +7598,8 @@ export const PARKS_DATA: Park[] = [
     "amenities": [
       "Spielplatz",
       "Wasserspiele",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -7753,44 +7771,6 @@ export const PARKS_DATA: Park[] = [
       "BEZIRK": 9,
       "FLAECHE": "5.843 m²",
       "OEFF_ZEITEN": "Mo-Fr 7:00-15:00",
-      "SPIELEN_IM_PARK": "Nein",
-      "WASSER_IM_PARK": "Nein",
-      "HUNDE_IM_PARK": "Nein",
-      "TELEFON": "01 4000 8042",
-      "WEBLINK1": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
-      "SE_ANNO_CAD_DATA": null
-    }
-  },
-  {
-    "id": "3601428",
-    "name": "Gerda-Matejka-Felden-Park (privat)",
-    "address": "Gerda-Matejka-Felden-Park (privat), 9. Bezirk, Wien",
-    "district": 9,
-    "area": 0,
-    "coordinates": {
-      "lng": 16.34732791,
-      "lat": 48.21696431
-    },
-    "amenities": [
-      "Grünfläche",
-      "Sitzgelegenheiten"
-    ],
-    "category": "Park",
-    "description": "Park",
-    "openingHours": "Täglich 24h geöffnet",
-    "website": "http://www.wien.gv.at/umwelt/parks/anlagen/index.html",
-    "phone": "01 4000 8042",
-    "accessibility": "Barrierefreiheit nicht spezifiziert",
-    "publicTransport": [
-      "Öffentliche Verkehrsmittel in der Nähe verfügbar"
-    ],
-    "tips": [],
-    "rawMetadata": {
-      "OBJECTID": 3601428,
-      "ANL_NAME": "Gerda-Matejka-Felden-Park (privat)",
-      "BEZIRK": 9,
-      "FLAECHE": "0 m²",
-      "OEFF_ZEITEN": "0:00-24:00",
       "SPIELEN_IM_PARK": "Nein",
       "WASSER_IM_PARK": "Nein",
       "HUNDE_IM_PARK": "Nein",
@@ -8004,7 +7984,8 @@ export const PARKS_DATA: Park[] = [
     "amenities": [
       "Spielplatz",
       "Wasserspiele",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -8592,7 +8573,8 @@ export const PARKS_DATA: Park[] = [
     },
     "amenities": [
       "Spielplatz",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -8711,7 +8693,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -8942,7 +8925,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Hundebereich",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Der Schweizergarten ist eine Parkanlage im 3. Wiener Gemeindebezirk, Landstraße, zwischen dem Park des Belvederes bzw. dem Landstraßer Gürtel im Norden, dem Quartier Belvedere (dem Areal des früheren Südbahnhofs) bzw. der Arsenalstraße im Westen und dem Arsenal bzw. der Ghegastraße im Südosten.",
@@ -9020,7 +9004,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -9220,7 +9205,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -9299,7 +9285,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -9339,7 +9326,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -9379,7 +9367,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -9847,7 +9836,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -9925,7 +9915,8 @@ export const PARKS_DATA: Park[] = [
       "Wasserspiele",
       "Hundebereich",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -9965,7 +9956,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -10475,7 +10467,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -10554,7 +10547,8 @@ export const PARKS_DATA: Park[] = [
       "Wasserspiele",
       "Hundebereich",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -12378,7 +12372,8 @@ export const PARKS_DATA: Park[] = [
       "Wasserspiele",
       "Hundebereich",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -12457,7 +12452,8 @@ export const PARKS_DATA: Park[] = [
       "Hundebereich",
       "Grünfläche",
       "Sitzgelegenheiten",
-      "Toiletten"
+      "Toiletten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Der Waehringer Park ist eine Parkanlage im 18. Wiener Gemeindebezirk.",
@@ -13428,7 +13424,8 @@ export const PARKS_DATA: Park[] = [
       "Wasserspiele",
       "Hundebereich",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -13625,7 +13622,8 @@ export const PARKS_DATA: Park[] = [
       "Wasserspiele",
       "Hundebereich",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -13664,7 +13662,8 @@ export const PARKS_DATA: Park[] = [
     "amenities": [
       "Spielplatz",
       "Wasserspiele",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -13704,7 +13703,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -13782,7 +13782,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -13822,7 +13823,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -13901,7 +13903,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -13941,7 +13944,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -14019,7 +14023,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -14059,7 +14064,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -14138,7 +14144,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -14874,7 +14881,8 @@ export const PARKS_DATA: Park[] = [
     "amenities": [
       "Spielplatz",
       "Wasserspiele",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -15145,7 +15153,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -15492,7 +15501,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -16263,7 +16273,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -16343,7 +16354,8 @@ export const PARKS_DATA: Park[] = [
       "Wasserspiele",
       "Hundebereich",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -16835,7 +16847,8 @@ export const PARKS_DATA: Park[] = [
       "Wasserspiele",
       "Hundebereich",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -17215,7 +17228,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -17255,7 +17269,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -17374,7 +17389,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -17799,7 +17815,8 @@ export const PARKS_DATA: Park[] = [
     "amenities": [
       "Spielplatz",
       "Wasserspiele",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -17995,7 +18012,8 @@ export const PARKS_DATA: Park[] = [
       "Wasserspiele",
       "Hundebereich",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -18073,7 +18091,8 @@ export const PARKS_DATA: Park[] = [
     "amenities": [
       "Spielplatz",
       "Wasserspiele",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -18804,7 +18823,8 @@ export const PARKS_DATA: Park[] = [
       "Wasserspiele",
       "Hundebereich",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -18883,7 +18903,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -19200,7 +19221,8 @@ export const PARKS_DATA: Park[] = [
     "amenities": [
       "Spielplatz",
       "Wasserspiele",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -19320,7 +19342,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Der Kurpark Oberlaa ist eine Parkanlage im 10. Wiener Gemeindebezirk Favoriten, am Südosthang des Laaer Berges bei Oberlaa. Seine Fläche beträgt rund 608.000 m². Gartenbaudenkmale, Wegsysteme und künstliche Bodenformationen stehen unter Denkmalschutz.",
@@ -19473,7 +19496,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -19666,7 +19690,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -19705,7 +19730,8 @@ export const PARKS_DATA: Park[] = [
     "amenities": [
       "Spielplatz",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -19782,7 +19808,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -20595,7 +20622,8 @@ export const PARKS_DATA: Park[] = [
       "Wasserspiele",
       "Hundebereich",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -20754,7 +20782,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -20906,7 +20935,8 @@ export const PARKS_DATA: Park[] = [
     },
     "amenities": [
       "Spielplatz",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -20983,7 +21013,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -21062,7 +21093,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -21527,7 +21559,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -21723,7 +21756,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -21762,7 +21796,8 @@ export const PARKS_DATA: Park[] = [
     "amenities": [
       "Spielplatz",
       "Wasserspiele",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -21998,7 +22033,8 @@ export const PARKS_DATA: Park[] = [
     "amenities": [
       "Spielplatz",
       "Wasserspiele",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -22117,7 +22153,8 @@ export const PARKS_DATA: Park[] = [
       "Wasserspiele",
       "Hundebereich",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -22541,7 +22578,8 @@ export const PARKS_DATA: Park[] = [
     "amenities": [
       "Spielplatz",
       "Wasserspiele",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -22697,7 +22735,8 @@ export const PARKS_DATA: Park[] = [
     "amenities": [
       "Spielplatz",
       "Wasserspiele",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -22774,7 +22813,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Der Floridsdorfer Wasserpark ist ein kleiner, als Parkanlage gestalteter Teil der Alten Donau im 21. Wiener Gemeindebezirk, Floridsdorf. Der Park wurde von 1928 bis 1929 angelegt und hat eine Fläche von 143.000 m², rund ein Drittel davon wird von Wasserflächen eingenommen.",
@@ -23054,7 +23094,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Der Donaupark wurde 1964 im Zuge der ",
@@ -23402,7 +23443,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -23634,7 +23676,8 @@ export const PARKS_DATA: Park[] = [
       "Wasserspiele",
       "Hundebereich",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -23789,7 +23832,8 @@ export const PARKS_DATA: Park[] = [
     "amenities": [
       "Spielplatz",
       "Wasserspiele",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -24259,7 +24303,8 @@ export const PARKS_DATA: Park[] = [
       "Wasserspiele",
       "Hundebereich",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -24339,7 +24384,8 @@ export const PARKS_DATA: Park[] = [
       "Wasserspiele",
       "Hundebereich",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -25484,7 +25530,8 @@ export const PARKS_DATA: Park[] = [
       "lat": 48.25731727
     },
     "amenities": [
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -26427,7 +26474,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -26698,7 +26746,8 @@ export const PARKS_DATA: Park[] = [
     "amenities": [
       "Spielplatz",
       "Wasserspiele",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -26929,7 +26978,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -27555,7 +27605,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -27827,7 +27878,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -28061,7 +28113,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -28101,7 +28154,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -28215,7 +28269,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -28368,7 +28423,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -28407,7 +28463,8 @@ export const PARKS_DATA: Park[] = [
     "amenities": [
       "Spielplatz",
       "Hundebereich",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -28445,7 +28502,8 @@ export const PARKS_DATA: Park[] = [
     },
     "amenities": [
       "Spielplatz",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -28485,7 +28543,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -28525,7 +28584,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -28681,7 +28741,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -28758,7 +28819,8 @@ export const PARKS_DATA: Park[] = [
     "amenities": [
       "Spielplatz",
       "Wasserspiele",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -28989,7 +29051,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -29067,7 +29130,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -29867,7 +29931,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -29904,7 +29969,8 @@ export const PARKS_DATA: Park[] = [
       "lat": 48.22629908
     },
     "amenities": [
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -30137,7 +30203,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -30940,7 +31007,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -31018,7 +31086,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -31216,7 +31285,8 @@ export const PARKS_DATA: Park[] = [
     "amenities": [
       "Spielplatz",
       "Wasserspiele",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -32446,7 +32516,7 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Spielplatz"
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -32872,7 +32942,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -33644,7 +33715,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -33797,7 +33869,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -34417,7 +34490,8 @@ export const PARKS_DATA: Park[] = [
     },
     "amenities": [
       "Spielplatz",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -35069,7 +35143,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -35299,7 +35374,8 @@ export const PARKS_DATA: Park[] = [
     "amenities": [
       "Spielplatz",
       "Wasserspiele",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -35568,7 +35644,8 @@ export const PARKS_DATA: Park[] = [
       "Wasserspiele",
       "Hundebereich",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -35758,7 +35835,8 @@ export const PARKS_DATA: Park[] = [
     "amenities": [
       "Spielplatz",
       "Wasserspiele",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -35993,7 +36071,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -36033,7 +36112,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -36493,7 +36573,8 @@ export const PARKS_DATA: Park[] = [
     "amenities": [
       "Spielplatz",
       "Wasserspiele",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -36875,7 +36956,8 @@ export const PARKS_DATA: Park[] = [
       "Wasserspiele",
       "Hundebereich",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -37027,7 +37109,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -37066,7 +37149,8 @@ export const PARKS_DATA: Park[] = [
     "amenities": [
       "Spielplatz",
       "Wasserspiele",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -37105,7 +37189,8 @@ export const PARKS_DATA: Park[] = [
     "amenities": [
       "Spielplatz",
       "Wasserspiele",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -37298,7 +37383,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -37608,7 +37694,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -37648,7 +37735,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -38261,7 +38349,8 @@ export const PARKS_DATA: Park[] = [
       "Spielplatz",
       "Wasserspiele",
       "Grünfläche",
-      "Sitzgelegenheiten"
+      "Sitzgelegenheiten",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -38720,7 +38809,8 @@ export const PARKS_DATA: Park[] = [
     },
     "amenities": [
       "Spielplatz",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -39255,7 +39345,8 @@ export const PARKS_DATA: Park[] = [
     "amenities": [
       "Spielplatz",
       "Wasserspiele",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -39561,7 +39652,8 @@ export const PARKS_DATA: Park[] = [
     "amenities": [
       "Spielplatz",
       "Wasserspiele",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -39675,7 +39767,8 @@ export const PARKS_DATA: Park[] = [
     "amenities": [
       "Spielplatz",
       "Wasserspiele",
-      "Grünfläche"
+      "Grünfläche",
+      "Tischtennis"
     ],
     "category": "Park",
     "description": "Park",
@@ -40648,8 +40741,8 @@ export const PARKS_DATA: Park[] = [
 ];
 
 export const PARKS_METADATA = {
-  generatedAt: '2026-04-19T07:52:26.137Z',
-  totalParks: 1057,
+  generatedAt: '2026-04-19T09:43:24.676Z',
+  totalParks: 1056,
   source: 'Vienna Open Data API',
   apiEndpoint: 'ogdwien:PARKINFOOGD'
 };

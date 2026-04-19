@@ -18,6 +18,41 @@ function slugifyParkName(name) {
     .replace(/^-+|-+$/g, '');
 }
 
+// Get enrichment data to check for hidden parks
+function getEnrichmentData() {
+  try {
+    const manualDataPath = path.join(__dirname, '../src/data/manualParksData.ts');
+    const fileContent = fs.readFileSync(manualDataPath, 'utf-8');
+    
+    const dbMatch = fileContent.match(/export const manualParksDB[^=]*=\s*\{([\s\S]*?)\n\};/);
+    if (!dbMatch) return {};
+    
+    const dbContent = dbMatch[1];
+    const enrichmentData = {};
+    
+    const parkEntryRegex = /(?:^|\n)\s*["']?([a-z0-9-]+)["']?\s*:\s*\{([\s\S]*?)\n\s*\},?(?=\n|$)/gm;
+    let match;
+    
+    while ((match = parkEntryRegex.exec(dbContent)) !== null) {
+      const key = match[1];
+      const parkContent = match[2];
+      
+      // Only process enrichment entries (not full parks)
+      const isFullPark = /isFullPark\s*:\s*true/.test(parkContent);
+      if (!isFullPark) {
+        const isHidden = /hidden\s*:\s*true/.test(parkContent);
+        if (isHidden) {
+          enrichmentData[key] = { hidden: true };
+        }
+      }
+    }
+    
+    return enrichmentData;
+  } catch (error) {
+    return {};
+  }
+}
+
 // Get manual parks from the TypeScript file
 function getManualParks() {
   try {
@@ -50,10 +85,14 @@ function getManualParks() {
       
       // Check if this entry has isFullPark: true
       if (/isFullPark\s*:\s*true/.test(parkContent)) {
-        // Extract the name
-        const nameMatch = parkContent.match(/name\s*:\s*["']([^"']+)["']/);
-        if (nameMatch) {
-          manualParks.push({ slug, name: nameMatch[1] });
+        // Check if park is hidden
+        const isHidden = /hidden\s*:\s*true/.test(parkContent);
+        if (!isHidden) {
+          // Extract the name
+          const nameMatch = parkContent.match(/name\s*:\s*["']([^"']+)["']/);
+          if (nameMatch) {
+            manualParks.push({ slug, name: nameMatch[1] });
+          }
         }
       }
     }
@@ -99,6 +138,9 @@ async function generateSitemap() {
   
   // console.log(`✅ Found ${parks.length} API parks`);
   
+  // Get enrichment data to check for hidden parks
+  const enrichmentData = getEnrichmentData();
+  
   // Get manual parks
   // console.log('🔍 Checking for manual parks...');
   const manualParks = getManualParks();
@@ -123,6 +165,13 @@ async function generateSitemap() {
     if (!name) return null;
     
     const slug = slugifyParkName(name);
+    const parkId = (park.properties?.OBJECTID || park.properties?.ID || park.properties?.FID || '').toString();
+    
+    // Check if this park is hidden in enrichment data
+    if (enrichmentData[parkId]?.hidden || enrichmentData[slug]?.hidden) {
+      return null;
+    }
+    
     return {
       url: `/index/${slug}`,
       priority: '0.8',

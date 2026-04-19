@@ -2,14 +2,18 @@ import { Navigation, Map as MapIcon } from "lucide-react";
 import type { Park } from "../../types/park";
 import { Button } from "../ui/Button";
 import { Select } from "../ui/Select";
+import { MultiSelect } from "../ui/MultiSelect";
 import AddressSearch from "./AddressSearch";
 
 interface MapControlsProps {
   selectedDistrict: number | null;
   districts: number[];
+  selectedAmenities: string[];
+  availableAmenities: string[];
   userLocation: { lat: number; lng: number } | null;
   filteredParksCount: number;
   onDistrictFilter: (district: number | null) => void;
+  onAmenitiesChange: (amenities: string[]) => void;
   onGetUserLocation: () => void;
   onAddressSelect: (coordinates: [number, number], address: string) => void;
 }
@@ -20,9 +24,12 @@ interface MapControlsProps {
 export default function MapControls({
   selectedDistrict,
   districts,
+  selectedAmenities,
+  availableAmenities,
   userLocation,
   filteredParksCount,
   onDistrictFilter,
+  onAmenitiesChange,
   onGetUserLocation,
   onAddressSelect,
 }: MapControlsProps) {
@@ -107,6 +114,18 @@ export default function MapControls({
             placeholder="Bezirk wählen"
             className=""
             fullWidth
+          />
+
+          {/* Amenities Multiselect */}
+          <MultiSelect
+            value={selectedAmenities}
+            onValueChange={onAmenitiesChange}
+            options={availableAmenities.map(amenity => ({ value: amenity, label: amenity }))}
+            placeholder="Ausstattung wählen..."
+            label="AUSSTATTUNG"
+            fullWidth
+            size="md"
+            className="mt-2"
           />
 
           {/* Divider */}

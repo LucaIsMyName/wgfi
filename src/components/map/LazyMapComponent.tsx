@@ -17,22 +17,28 @@ interface LazyMapComponentProps {
   parks: Park[];
   filteredParks: Park[];
   selectedDistrict: number | null;
+  selectedAmenities: string[];
+  availableAmenities: string[];
   userLocation: { lat: number; lng: number } | null;
   parkId?: string;
   onFilteredParksChange: (parks: Park[]) => void;
   onUserLocationChange: (location: { lat: number; lng: number } | null) => void;
   onSelectedDistrictChange: (district: number | null) => void;
+  onSelectedAmenitiesChange: (amenities: string[]) => void;
 }
 
 const LazyMapComponent: React.FC<LazyMapComponentProps> = ({
   parks,
   filteredParks,
   selectedDistrict,
+  selectedAmenities,
+  availableAmenities,
   userLocation,
   parkId,
   onFilteredParksChange,
   onUserLocationChange,
   onSelectedDistrictChange,
+  onSelectedAmenitiesChange,
 }) => {
   const { effectiveTheme } = useTheme();
   const navigate = useNavigate();
@@ -217,9 +223,12 @@ const LazyMapComponent: React.FC<LazyMapComponentProps> = ({
           <MapControls
             selectedDistrict={selectedDistrict}
             districts={districts}
+            selectedAmenities={selectedAmenities}
+            availableAmenities={availableAmenities}
             userLocation={userLocation}
             filteredParksCount={filteredParks.length}
             onDistrictFilter={onSelectedDistrictChange}
+            onAmenitiesChange={onSelectedAmenitiesChange}
             onGetUserLocation={getUserLocation}
             onAddressSelect={handleAddressSelect}
           />
@@ -227,9 +236,12 @@ const LazyMapComponent: React.FC<LazyMapComponentProps> = ({
           <MobileMapControls
             selectedDistrict={selectedDistrict}
             districts={districts}
+            selectedAmenities={selectedAmenities}
+            availableAmenities={availableAmenities}
             userLocation={userLocation}
             filteredParksCount={filteredParks.length}
             onDistrictFilter={onSelectedDistrictChange}
+            onAmenitiesChange={onSelectedAmenitiesChange}
             onGetUserLocation={getUserLocation}
             onAddressSelect={handleAddressSelect}
           />

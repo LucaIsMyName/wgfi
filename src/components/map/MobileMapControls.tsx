@@ -1,14 +1,18 @@
 import { Navigation, Map as MapIcon } from "lucide-react";
 import { Button } from "../ui/Button";
 import { Select } from "../ui/Select";
+import { MultiSelect } from "../ui/MultiSelect";
 import AddressSearch from "./AddressSearch";
 
 interface MobileMapControlsProps {
   selectedDistrict: number | null;
   districts: number[];
+  selectedAmenities: string[];
+  availableAmenities: string[];
   userLocation: { lat: number; lng: number } | null;
   filteredParksCount: number;
   onDistrictFilter: (district: number | null) => void;
+  onAmenitiesChange: (amenities: string[]) => void;
   onGetUserLocation: () => void;
   onAddressSelect: (coordinates: [number, number], address: string) => void;
 }
@@ -19,9 +23,12 @@ interface MobileMapControlsProps {
 export default function MobileMapControls({
   selectedDistrict,
   districts,
+  selectedAmenities,
+  availableAmenities,
   userLocation,
   filteredParksCount,
   onDistrictFilter,
+  onAmenitiesChange,
   onGetUserLocation,
   onAddressSelect,
 }: MobileMapControlsProps) {
@@ -76,6 +83,20 @@ export default function MobileMapControls({
           fullWidth
           className="min-h-[32px] touch-manipulation"
           aria-label="Bezirk auswählen"
+        />
+      </div>
+
+      {/* Amenities Multiselect */}
+      <div className="mt-3">
+        <MultiSelect
+          value={selectedAmenities}
+          onValueChange={onAmenitiesChange}
+          options={availableAmenities.map(amenity => ({ value: amenity, label: amenity }))}
+          placeholder="Ausstattung wählen..."
+          label="AUSSTATTUNG"
+          fullWidth
+          size="sm"
+          className="touch-manipulation"
         />
       </div>
     </div>

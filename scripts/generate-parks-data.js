@@ -324,7 +324,11 @@ async function loadManualParksData() {
       // Check if it's a full park (check both quoted and unquoted versions)
       const isFullPark = /["']?isFullPark["']?\s*:\s*true/.test(parkObject);
       
-      if (isFullPark) {
+      // Check if park is hidden
+      const hiddenMatch = parkObject.match(/["']?hidden["']?\s*:\s*(true|false)/);
+      const isHidden = hiddenMatch && hiddenMatch[1] === 'true';
+      
+      if (isFullPark && !isHidden) {
         // Extract required fields
         const nameMatch = parkObject.match(/["']?name["']?\s*:\s*["']([^"']+)["']/);
         const districtMatch = parkObject.match(/["']?district["']?\s*:\s*(\d+)/);
@@ -426,6 +430,9 @@ async function loadManualParksData() {
         
         const openingHoursMatch = parkObject.match(/["']?openingHours["']?\s*:\s*["']([^"']+)["']/);
         if (openingHoursMatch) enrichmentData.openingHours = openingHoursMatch[1];
+        
+        const hiddenMatch = parkObject.match(/["']?hidden["']?\s*:\s*(true|false)/);
+        if (hiddenMatch) enrichmentData.hidden = hiddenMatch[1] === 'true';
         
         // Extract arrays (publicTransport, amenities, tips)
         const publicTransportMatch = parkObject.match(/["']?publicTransport["']?\s*:\s*\[([^\]]+)\]/);
@@ -567,9 +574,21 @@ async function main() {
     
     // Transform parks
     console.log('Transforming parks data...');
-    const transformedParks = viennaParks.map(park => transformViennaPark(park, enrichmentData));
+    const allTransformedParks = viennaParks.map(park => transformViennaPark(park, enrichmentData));
     
-    console.log(`✓ Transformed ${transformedParks.length} parks from API`);
+    // Filter out hidden parks
+    const transformedParks = allTransformedParks.filter(park => {
+      // Check if this park is marked as hidden in enrichment data
+      const parkId = park.id;
+      const slug = park.name.toLowerCase()
+        .replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss')
+        .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+      const enrichment = enrichmentData[parkId] || enrichmentData[slug];
+      return !enrichment?.hidden;
+    });
+    
+    const hiddenCount = allTransformedParks.length - transformedParks.length;
+    console.log(`✓ Transformed ${transformedParks.length} parks from API${hiddenCount > 0 ? ` (${hiddenCount} hidden)` : ''}`);
     
     // Add manual-only parks (full parks not in Vienna API)
     const manualOnlyParks = fullParks.map(transformManualOnlyPark);
