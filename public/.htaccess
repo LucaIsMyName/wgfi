@@ -2,3 +2,14 @@ Options -MultiViews
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^ index.html [QSA,L]
+
+# Redirects
+
+RewriteRule ^karte/?$ /map [R=301,L]
+RewriteRule ^liste/?$ /index [R=301,L]
+RewriteRule ^statistiken/?$ /statistics [R=301,L]
+RewriteRule ^vergleich/?$ /compare [R=301,L]
+RewriteRule ^favoriten/?$ /favorites [R=301,L]
+RewriteRule ^idee/?$ /idea [R=301,L]
+RewriteRule ^datenschutz/?$ /privacy [R=301,L]
+RewriteRule ^impressum/?$ /imprint [R=301,L]
