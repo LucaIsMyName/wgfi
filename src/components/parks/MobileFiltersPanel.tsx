@@ -47,37 +47,38 @@ export default function MobileFiltersPanel({
   return (
     <div className="lg:hidden fixed bottom-0 left-0 right-0 z-50">
       {/* Accordion Header/Toggle */}
-      <button
-        onClick={() => setMobileFiltersOpen(!mobileFiltersOpen)}
-        className="w-full p-4 flex items-center justify-between bg-light-sage border border-border-color rounded-t-2xl">
-        <h2 className="font-mono text-lg text-primary-green tracking-wide">
-          SUCHE & FILTER
-        </h2>
-        <span className="font-mono text-xl text-primary-green">
-          {mobileFiltersOpen ? '−' : '+'}
-        </span>
-      </button>
+      <div className="bg-card-bg shadow-lg border-t border-primary-green/20">
+        <button
+          onClick={() => setMobileFiltersOpen(!mobileFiltersOpen)}
+          className="w-full px-4 py-4 flex items-center justify-between rounded-t-2xl">
+          <h2 className="font-mono text-lg text-primary-green tracking-wide">
+            SUCHE & FILTER
+          </h2>
+          <span className="font-mono text-xl text-primary-green">
+            {mobileFiltersOpen ? 'â' : '+'}
+          </span>
+        </button>
 
-      {/* Accordion Content */}
-      <div 
-        className="overflow-y-auto transition-all duration-300 bg-light-sage border border-border-color border-t-0"
-        style={{ 
-          height: mobileFiltersOpen ? '50vh' : '0',
-          opacity: mobileFiltersOpen ? 1 : 0,
-        }}>
-        {mobileFiltersOpen && (
-          <div className="p-4">
-            {/* Search Input */}
-            <div className="mb-6">
-              <Input
-                type="text"
-                value={searchTerm}
-                onChange={(e) => onSearchChange(e.target.value)}
-                placeholder="Park suchen..."
-                label="PARKNAME ODER ADRESSE"
-                fullWidth
-              />
-            </div>
+        {/* Accordion Content */}
+        <div 
+          className="overflow-y-auto transition-all duration-300"
+          style={{ 
+            height: mobileFiltersOpen ? '50vh' : '0',
+            opacity: mobileFiltersOpen ? 1 : 0,
+          }}>
+          {mobileFiltersOpen && (
+            <div className="px-4 pb-4">
+              {/* Search Input */}
+              <div className="mb-6">
+                <Input
+                  type="text"
+                  value={searchTerm}
+                  onChange={(e) => onSearchChange(e.target.value)}
+                  placeholder="Park suchen..."
+                  label="PARKNAME ODER ADRESSE"
+                  fullWidth
+                />
+              </div>
 
             {/* District Filter */}
             <div className="mb-6">
@@ -199,6 +200,7 @@ export default function MobileFiltersPanel({
             )}
           </div>
         )}
+        </div>
       </div>
     </div>
   );

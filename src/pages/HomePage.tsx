@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { TreePalm, Map, Navigation, Shuffle } from "lucide-react";
 import STYLE from "../utils/config";
 import { useParksData } from "../hooks/useParksData";
 import { findNearestPark } from "../utils/geoUtils";
@@ -185,7 +186,7 @@ const HomePage: React.FC = () => {
 
           {/* Buttons */}
           <div
-            className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-0"
+            className="grid grid-cols-2 sm:flex items-center justify-start gap-3 sm:gap-4 pt-0"
             role="group"
             aria-label="Hauptnavigation"
           >
@@ -195,9 +196,11 @@ const HomePage: React.FC = () => {
               size="md"
               loading={isLoadingNearby}
               aria-label="Zur Liste aller Parks"
-              className="touch-manipulation min-h-[44px]"
+              className="touch-manipulation min-h-[44px] !justify-start sm:!justify-start !text-left"
+              icon={TreePalm}
+              iconPosition="left"
             >
-              Index
+              <span className="text-left sm:text-lg">Index</span>
             </Button>
             <Button
               to="/map"
@@ -205,9 +208,11 @@ const HomePage: React.FC = () => {
               size="md"
               loading={isLoadingNearby}
               aria-label="Zur interaktiven Karte"
-              className="touch-manipulation min-h-[44px]"
+              className="touch-manipulation min-h-[44px] !justify-start sm:!justify-start !text-left"
+              icon={Map}
+              iconPosition="left"
             >
-              Karte
+              <span className="text-left sm:text-lg">Karte</span>
             </Button>
             <Button
               onClick={handleFindNearby}
@@ -215,11 +220,13 @@ const HomePage: React.FC = () => {
               variant="secondary"
               size="md"
               loading={isLoadingNearby}
-              className="bg-card-bg text-primary-green italic touch-manipulation min-h-[44px]"
+              className="bg-card-bg text-primary-green italic touch-manipulation min-h-[44px] !justify-start sm:!ustify-start !text-left"
               aria-label="Nächstgelegene Parks finden"
               aria-describedby="location-description"
+              icon={Navigation}
+              iconPosition="left"
             >
-              {isLoadingNearby ? "Suche..." : "In der nähe"}
+              <span className="text-left sm:text-lg">{isLoadingNearby ? "Suche..." : "In der nähe"}</span>
             </Button>
             <Button
               onClick={handleRandomPark}
@@ -227,10 +234,12 @@ const HomePage: React.FC = () => {
               variant="secondary"
               size="md"
               loading={isLoadingRandom}
-              className="bg-card-bg text-primary-green italic touch-manipulation min-h-[44px]"
+              className="bg-card-bg text-primary-green italic touch-manipulation min-h-[44px] !justify-start sm:!justify-start !text-left"
               aria-label="Zufälligen Park auswählen"
+              icon={Shuffle}
+              iconPosition="left"
             >
-              {isLoadingRandom ? "Lade..." : "Zufallspark"}
+              <span className="text-left sm:text-lg">{isLoadingRandom ? "Lade..." : "Zufallspark"}</span>
             </Button>
           </div>
 

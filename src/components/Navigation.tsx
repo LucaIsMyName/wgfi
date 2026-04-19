@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import { Link, useLocation } from "react-router-dom";
 import {
   Home,
-  Palmtree,
+  TreePalm,
   Map,
   Menu,
   X,
@@ -11,6 +11,8 @@ import {
   BarChart3,
   Search,
   GitCompare,
+  MapIcon,
+  ChartScatterIcon,
 } from "lucide-react";
 import Logo from "./Logo";
 import ThemeToggle from "./ThemeToggle";
@@ -96,12 +98,12 @@ const Navigation = () => {
 
   const navItems = [
     { path: "/", label: "Home", icon: <Home className="w-5 h-5" /> },
-    { path: "/index", label: "Index", icon: <Palmtree className="w-5 h-5" /> },
+    { path: "/index", label: "Index", icon: <TreePalm className="w-5 h-5" /> },
     { path: "/map", label: "Karte", icon: <Map className="w-5 h-5" /> },
     {
       path: "/statistics",
       label: "Statistiken",
-      icon: <BarChart3 className="w-5 h-5" />,
+      icon: <ChartScatterIcon className="w-5 h-5" />,
     },
     {
       path: "/compare",
@@ -209,30 +211,70 @@ const Navigation = () => {
       >
         <div className="flex items-center justify-between py-2 pr-4 transition-all duration-300">
           <Logo />
-
-          <Button
-            ref={mobileMenuButtonRef}
-            type="button"
-            onClick={() =>
-              setIsMobileMenuOpen((wasOpen) => {
-                if (wasOpen) {
-                  requestAnimationFrame(() =>
-                    mobileMenuButtonRef.current?.focus(),
-                  );
-                }
-                return !wasOpen;
-              })
-            }
-            variant="ghost"
-            size="sm"
-            className="w-9 h-9"
-            icon={isMobileMenuOpen ? X : Menu}
-            style={{ opacity: 1 }}
-            aria-expanded={isMobileMenuOpen}
-            aria-controls="mobile-nav-panel"
-            aria-haspopup="dialog"
-            aria-label={isMobileMenuOpen ? "Menü schließen" : "Menü öffnen"}
-          />
+          <section className="flex items-center gap-3">
+            <Link
+              to="/index"
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+              }}
+              className="!p-2 flex items-center gap-2 bg-light-sage border border-border-color sm:!pr-4 sm:!pl-3"
+            >
+              <TreePalm className="w-4 h-4" />
+              <span className="text-xs hidden sm:inline-block">Index</span>{" "}
+            </Link>
+            <Link
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+              }}
+              to="/map"
+              className="!p-2 flex items-center gap-2 bg-light-sage border border-border-color sm:!pr-4 sm:!pl-3"
+            >
+              <MapIcon className="w-4 h-4" />
+              <span className="text-xs hidden sm:inline-block">Karte</span>{" "}
+            </Link>
+            <Link
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+              }}
+              to="/statistics"
+              className="!p-2 flex items-center gap-2 bg-light-sage border border-border-color sm:!pr-4 sm:!pl-3"
+            >
+              <ChartScatterIcon className="w-4 h-4" />
+              <span className="text-xs hidden sm:inline-block">
+                Statistiken
+              </span>{" "}
+            </Link>
+            <div className="w-[1px] h-full min-h-8 bg-border-color" />
+            <Button
+              ref={mobileMenuButtonRef}
+              type="button"
+              onClick={() =>
+                setIsMobileMenuOpen((wasOpen) => {
+                  if (wasOpen) {
+                    requestAnimationFrame(() =>
+                      mobileMenuButtonRef.current?.focus(),
+                    );
+                  }
+                  return !wasOpen;
+                })
+              }
+              variant="ghost"
+              size="sm"
+              className="w-9 h-9 !p-2 mr-2"
+              // icon={isMobileMenuOpen ? X : Menu}
+              style={{ opacity: 1 }}
+              aria-expanded={isMobileMenuOpen}
+              aria-controls="mobile-nav-panel"
+              aria-haspopup="dialog"
+              aria-label={isMobileMenuOpen ? "Menü schließen" : "Menü öffnen"}
+            >
+              {isMobileMenuOpen ? (
+                <X className="w-4 h-4" />
+              ) : (
+                <Menu className="w-4 h-4" />
+              )}
+            </Button>
+          </section>
         </div>
       </header>
 

@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { useParksData } from "../hooks/useParksData";
 import { slugifyParkName } from "../data/manualParksData";
-import { Building, Ruler, Heart, Trash2 } from "lucide-react";
-import { getFavorites, removeFavorite } from "../utils/favoritesManager";
-import { getAllDistrictsForPark, formatDistricts } from "../utils/parkUtils";
+import { Heart, Trash2 } from "lucide-react";
+import { getFavorites, removeFavorite, toggleFavorite } from "../utils/favoritesManager";
+import { isInComparison, toggleComparison } from "../utils/comparisonManager";
 import STYLE from "../utils/config";
+import ParkCard from "../components/parks/ParkCard";
 import type { Park } from "../types/park";
 
 const FavoritesPage = () => {
@@ -30,6 +31,25 @@ const FavoritesPage = () => {
   const handleRemoveFavorite = (parkId: string) => {
     removeFavorite(parkId);
     setFavoriteParks((prevFavorites) => prevFavorites.filter((park: { id: string }) => park.id !== parkId));
+  };
+
+  // Handle toggle favorite (for ParkCard compatibility)
+  const handleToggleFavorite = (parkId: string) => {
+    toggleFavorite(parkId);
+    setFavoriteParks((prevFavorites) => {
+      const isCurrentlyFavorited = getFavorites().includes(parkId);
+      if (isCurrentlyFavorited) {
+        return prevFavorites.filter((park: { id: string }) => park.id !== parkId);
+      } else {
+        // This shouldn't happen in favorites page, but handle it gracefully
+        return prevFavorites;
+      }
+    });
+  };
+
+  // Handle toggle compare (for ParkCard compatibility)
+  const handleToggleCompare = (parkId: string) => {
+    toggleComparison(parkId);
   };
 
 
@@ -81,43 +101,24 @@ const FavoritesPage = () => {
             </div>
           ) : (
             <div className="space-y-4">
-              {favoriteParks.map((park) => {
-                const allDistricts = getAllDistrictsForPark(park);
-                const districtsDisplay = formatDistricts(allDistricts, 'full').toUpperCase();
-                
-                return (
-                <div
-                  key={park.id}
-                  className="py-4 relative bg-card-bg rounded-lg">
+              {favoriteParks.map((park) => (
+                <div key={park.id} className="relative">
+                  <ParkCard
+                    park={park}
+                    onToggleFavorite={handleToggleFavorite}
+                    onToggleCompare={handleToggleCompare}
+                    isHighContrast={false}
+                    isFavorited={true}
+                  />
+                  {/* Additional remove button for favorites page */}
                   <button
                     onClick={() => handleRemoveFavorite(park.id)}
-                    className="absolute top-0 bottom-0 right-4 my-auto flex items-center justify-center p-2 rounded-full hover:bg-light-sage transition-colors text-primary-green"
+                    className="absolute top-2 right-2 p-2 rounded-full bg-card-bg border border-border-color hover:bg-light-sage transition-colors text-primary-green z-10"
                     aria-label="Aus Favoriten entfernen">
-                    <Trash2 className="w-5 h-5" />
+                    <Trash2 className="w-4 h-4" />
                   </button>
-
-                  <Link
-                    to={`/index/${slugifyParkName(park.name)}`}
-                    className="block">
-                    <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-                      <div>
-                        <h3 className="font-serif text-2xl mb-3 text-deep-charcoal font-normal italic">
-                          {park.name}
-                        </h3>
-                        <div className="flex flex-wrap gap-6 text-body">
-                          <span className="flex items-center gap-2 font-mono text-xs text-deep-charcoal">
-                            <Building className="w-4 h-4" /> {districtsDisplay}
-                          </span>
-                          <span className="flex items-center gap-2 font-mono text-xs text-deep-charcoal">
-                            <Ruler className="w-4 h-4" /> {park.area.toLocaleString()} M²
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
                 </div>
-              );
-              })}
+              ))}
             </div>
           )}
         </div>
