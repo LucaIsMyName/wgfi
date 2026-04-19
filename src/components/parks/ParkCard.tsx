@@ -12,14 +12,20 @@ interface ParkCardProps {
   onToggleFavorite: (parkId: string) => void;
   onToggleCompare?: (parkId: string) => void;
   isHighContrast: boolean;
+  isFavorited?: boolean;
+  isInCompare?: boolean;
 }
 
 /**
  * ParkCard component - renders an individual park card in the list
  */
-export default function ParkCard({ park, onToggleFavorite, onToggleCompare, isHighContrast }: ParkCardProps) {
+export default function ParkCard({ park, onToggleFavorite, onToggleCompare, isHighContrast, isFavorited, isInCompare }: ParkCardProps) {
   const allDistricts = getAllDistrictsForPark(park);
   const districtsDisplay = formatDistricts(allDistricts, 'full').toUpperCase();
+  
+  // Use props if provided, otherwise fall back to localStorage check
+  const parkIsFavorited = isFavorited ?? isFavorite(park.id);
+  const parkIsInComparison = isInCompare ?? isInComparison(park.id);
   
   return (
     <Link
@@ -73,14 +79,14 @@ export default function ParkCard({ park, onToggleFavorite, onToggleCompare, isHi
             }}
             className="p-2 transition-transform"
             style={{
-              color: isInComparison(park.id) ? 'var(--primary-green)' : 'var(--deep-charcoal)',
-              opacity: isInComparison(park.id) ? 1 : 0.5,
+              color: parkIsInComparison ? 'var(--primary-green)' : 'var(--deep-charcoal)',
+              opacity: parkIsInComparison ? 1 : 0.5,
             }}
-            aria-label={isInComparison(park.id) ? 'Aus Vergleich entfernen' : 'Zum Vergleich hinzufügen'}
+            aria-label={parkIsInComparison ? 'Aus Vergleich entfernen' : 'Zum Vergleich hinzufügen'}
           >
             <GitCompare
               className="w-5 h-5"
-              fill={isInComparison(park.id) ? 'var(--primary-green)' : 'transparent'}
+              fill={parkIsInComparison ? 'var(--primary-green)' : 'transparent'}
             />
           </button>
           <button
@@ -90,13 +96,13 @@ export default function ParkCard({ park, onToggleFavorite, onToggleCompare, isHi
             }}
             className="p-2 transition-transform"
             style={{
-              color: isFavorite(park.id) ? 'var(--accent-gold)' : 'var(--primary-green)',
+              color: parkIsFavorited ? 'var(--accent-gold)' : 'var(--primary-green)',
             }}
-            aria-label={isFavorite(park.id) ? 'Aus Favoriten entfernen' : 'Zu Favoriten hinzufügen'}
+            aria-label={parkIsFavorited ? 'Aus Favoriten entfernen' : 'Zu Favoriten hinzufügen'}
           >
             <Heart
               className="w-6 h-6"
-              fill={isFavorite(park.id) ? 'var(--accent-gold)' : 'transparent'}
+              fill={parkIsFavorited ? 'var(--accent-gold)' : 'transparent'}
             />
           </button>
         </div>

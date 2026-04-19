@@ -29,12 +29,17 @@ const ParksListPage = () => {
   } = useParksFilters(parks);
 
   // Local state to trigger re-renders without unmounting components
-  const [, forceUpdate] = useState({});
+  const [renderKey, setRenderKey] = useState(0);
 
   // Handle favorite toggle
   const handleToggleFavorite = (parkId: string) => {
     toggleFavorite(parkId);
-    forceUpdate({});
+    setRenderKey(prev => prev + 1);
+  };
+
+  // Handle compare toggle
+  const handleToggleCompare = (parkId: string) => {
+    setRenderKey(prev => prev + 1);
   };
 
   // Clear saved scroll position when filters change
@@ -81,8 +86,10 @@ const ParksListPage = () => {
           {/* Parks List - Virtualized */}
           <div className="flex-1 overflow-hidden h-full">
             <ParksList
+              key={renderKey}
               parks={filteredAndSortedParks}
               onToggleFavorite={handleToggleFavorite}
+              onToggleCompare={handleToggleCompare}
               isHighContrast={isHighContrast}
             />
           </div>
