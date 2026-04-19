@@ -357,6 +357,22 @@ body {
   scrollbar-width: none; /* Firefox */
 }
 
+.animate-pulse-reverse {
+  animation: pulseReverse 1s ease infinite;  
+}
+
+@keyframes pulseReverse {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+}
+
+
 .animate-fade-gradient {
   animation: fadeInLeft 2s linear infinite;
 }

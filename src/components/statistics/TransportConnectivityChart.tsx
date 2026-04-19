@@ -90,10 +90,10 @@ const TransportConnectivityChart: React.FC<TransportConnectivityChartProps> = ({
           const chartHeight = dimensions.height - margin.top - margin.bottom;
           
           // Update scales based on container dimensions
-          const xScale = scaleBand<string>({
+          const xScale = scaleBand<number>({
             range: [0, chartWidth],
             round: true,
-            domain: data.map((d) => `${d.district}. Bezirk`),
+            domain: data.map((d) => d.district),
             padding: 0.2,
           });
 
@@ -140,12 +140,13 @@ const TransportConnectivityChart: React.FC<TransportConnectivityChartProps> = ({
                   scale={xScale}
                   stroke="#2c2c2c"
                   tickStroke="#2c2c2c"
-                  tickTransform={`translate(0, ${chartHeight + 5})`}
-                  tickLabelProps={{
+                  tickFormat={(value) => String(value)}
+                  tickLabelProps={() => ({
                     fill: "#2c2c2c",
-                    fontSize: 12,
+                    fontSize: 11,
+                    fontFamily: "Geist Mono, monospace",
                     textAnchor: "middle",
-                  }}
+                  })}
                 />
                 
                 <AxisLeft
@@ -180,7 +181,7 @@ const TransportConnectivityChart: React.FC<TransportConnectivityChartProps> = ({
                     }
                   })();
 
-                  const barX = xScale(`${d.district}. Bezirk`) || 0;
+                  const barX = xScale(d.district) || 0;
                   const barY = yScale(value);
                   const barWidth = xScale.bandwidth();
                   const barHeight = chartHeight - barY;

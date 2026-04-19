@@ -2,7 +2,7 @@ import { useState, useEffect, Suspense, lazy } from "react";
 import { Helmet } from "react-helmet-async";
 import { useParams, useSearchParams } from "react-router-dom";
 import { useParksData } from "../hooks/useParksData";
-import { SkeletonMap } from "../components/Loading";
+import Loading from "../components/Loading";
 import type { Park } from "../types/park";
 
 // Lazy load the entire map component to reduce initial bundle size
@@ -99,7 +99,7 @@ const MapPage = () => {
 
       {/* Map Container - Respects sidebar on desktop */}
       <div className="relative flex-1 h-screen" data-lg-margin>
-        <Suspense fallback={<SkeletonMap />}>
+        <Suspense fallback={<Loading variant="map" />}>
           <LazyMapComponent
             parks={parks}
             filteredParks={filteredParks}

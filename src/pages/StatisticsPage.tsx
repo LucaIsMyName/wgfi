@@ -644,52 +644,6 @@ const StatisticsPage = () => {
           </div>
         </div>
 
-        {/* Transport Connectivity Analysis */}
-        <div className="p-6 border mb-12 bg-card-bg border-border-color">
-          <div className="flex items-center gap-2 mb-6">
-            <BarChart3 className="w-6 h-6 text-primary-green" />
-            <h3 className="font-serif text-2xl text-primary-green italic">
-              ÖV-Anbindung Analyse
-            </h3>
-          </div>
-          <div className="mb-4">
-            <div className="flex flex-wrap gap-2">
-              <button
-                onClick={() => setTransportMetric("connectivityPercentage")}
-                className={`px-3 py-1 font-mono text-xs rounded ${
-                  transportMetric === "connectivityPercentage"
-                    ? "opacity-100 bg-primary-green text-soft-cream"
-                    : "opacity-60 bg-light-sage text-deep-charcoal"
-                }`}
-              >
-                ÖV-ABDECKUNG %
-              </button>
-              <button
-                onClick={() => setTransportMetric("avgTransportOptions")}
-                className={`px-3 py-1 font-mono text-xs rounded ${
-                  transportMetric === "avgTransportOptions"
-                    ? "opacity-100 bg-primary-green text-soft-cream"
-                    : "opacity-60 bg-light-sage text-deep-charcoal"
-                }`}
-              >
-                DURCHSCHNITT OPTIONEN
-              </button>
-            </div>
-          </div>
-          <div className="w-full h-[400px]">
-            <ResponsiveContainer className="w-full h-full">
-              {({ width, height }) => (
-                <TransportConnectivityChart
-                  data={transportConnectivityStats}
-                  width={width || 800}
-                  height={height || 400}
-                  metric={transportMetric}
-                />
-              )}
-            </ResponsiveContainer>
-          </div>
-        </div>
-
         {/* District Rankings */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
           {/* Top Districts by Percentage */}

@@ -1,40 +1,102 @@
-import { PalmtreeIcon } from "lucide-react";
+import { useState, useEffect } from "react";
+import { PalmtreeIcon, TreesIcon, Flower2Icon } from "lucide-react";
 
 interface LoadingProps {
   message?: string;
   size?: "sm" | "md" | "lg";
   showBackground?: boolean;
+  variant?: "default" | "map" | "skeleton";
 }
 
-const Loading = ({ message = "Laden...", size = "md", showBackground = true }: LoadingProps) => {
+const Loading = ({ 
+  message = "Laden...", 
+  size = "md", 
+  showBackground = true,
+  variant = "default"
+}: LoadingProps) => {
+  const [currentIconIndex, setCurrentIconIndex] = useState(0);
+  const [isFading, setIsFading] = useState(false);
+  
+  const icons = [PalmtreeIcon, TreesIcon, Flower2Icon];
+  const CurrentIcon = icons[currentIconIndex];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsFading(true);
+      
+      setTimeout(() => {
+        setCurrentIconIndex((prev) => (prev + 1) % icons.length);
+        setIsFading(false);
+      }, 300); // Fade duration
+    }, 2000); // Switch every 2 seconds
+
+    return () => clearInterval(interval);
+  }, [icons.length]);
+
   const sizeClasses = {
     sm: "w-4 h-4",
     md: "w-8 h-8", 
     lg: "w-12 h-12"
   };
 
-  const containerClasses = showBackground 
-    ? "animate-fade-gradient flex items-center justify-center min-h-screen bg-soft-cream"
-    : "flex items-center justify-center";
+  // Variant-specific configurations
+  const getVariantConfig = () => {
+    switch (variant) {
+      case "map":
+        return {
+          container: "w-full h-full min-h-screen bg-card-bg animate-pulse flex items-center justify-center",
+          iconColor: "text-primary-green/30",
+          textColor: "text-primary-green/50",
+          message: "Karte wird geladen...",
+          showSpinner: false
+        };
+      case "skeleton":
+        return {
+          container: "animate-pulse",
+          iconColor: "text-primary-green/20",
+          textColor: "text-primary-green/30",
+          message: "",
+          showSpinner: false
+        };
+      default:
+        return {
+          container: showBackground 
+            ? "flex items-center justify-center min-h-screen bg-soft-cream"
+            : "flex items-center justify-center",
+          iconColor: "text-primary-green",
+          textColor: "text-primary-green",
+          message,
+          showSpinner: true
+        };
+    }
+  };
+
+  const config = getVariantConfig();
 
   return (
-    <div className={containerClasses} role="status" aria-live="polite">
+    <div className={config.container} role="status" aria-live="polite">
       <div className="flex flex-col items-center gap-3">
         <div className="relative">
-          <PalmtreeIcon
+          <CurrentIcon
             strokeWidth={1}
-            className={`${sizeClasses[size]} text-primary-green animate-pulse motion-reduce:animate-none`}
+            className={`${sizeClasses[size]} ${config.iconColor} transition-opacity duration-300 ${
+              isFading ? 'opacity-0' : 'opacity-100'
+            } ${variant === "default" ? "animate-fade-gradient" : ""} motion-reduce:animate-none`}
             aria-hidden="true"
           />
-          <div className="absolute inset-0 animate-spin motion-reduce:animate-none">
-            <div className={`${
-              size === "sm" ? "w-4 h-4" : size === "md" ? "w-8 h-8" : "w-12 h-12"
-            } rounded-full motion-reduce:animate-none`} />
-          </div>
+          {config.showSpinner && (
+            <div className="absolute inset-0 animate-spin motion-reduce:animate-none">
+              <div className={`${
+                size === "sm" ? "w-4 h-4" : size === "md" ? "w-8 h-8" : "w-12 h-12"
+              } rounded-full animate-pulse motion-reduce:animate-none`} />
+            </div>
+          )}
         </div>
-        {message && (
-          <p className="font-serif text-primary-green text-sm md:text-base animate-pulse motion-reduce:animate-none">
-            {message}
+        {config.message && (
+          <p className={`font-serif ${
+            variant === "default" ? "animate-pulse-reverse" : ""
+          } ${config.textColor} text-sm md:text-base motion-reduce:animate-none`}>
+            {config.message}
           </p>
         )}
       </div>
@@ -61,13 +123,5 @@ export const SkeletonList = ({ items = 3 }: { items?: number }) => (
   </div>
 );
 
-export const SkeletonMap = () => (
-  <div className="w-full h-full min-h-screen bg-card-bg animate-pulse flex items-center justify-center">
-    <div className="text-center">
-      <PalmtreeIcon strokeWidth={1} className="w-12 h-12 text-primary-green/30 mx-auto mb-3" />
-      <p className="font-serif text-primary-green/50">Karte wird geladen...</p>
-    </div>
-  </div>
-);
-
+// Export the main Loading component as default
 export default Loading;
