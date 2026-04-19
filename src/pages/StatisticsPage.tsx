@@ -26,7 +26,11 @@ import TopParksChart from "../components/statistics/TopParksChart";
 import AmenitiesPerParkChart from "../components/statistics/AmenitiesPerParkChart";
 import AverageParkSizeByDistrictChart from "../components/statistics/AverageParkSizeByDistrictChart";
 import StatisticsMap from "../components/statistics/StatisticsMap";
+import ParkDensityChart from "../components/statistics/ParkDensityChart";
+import AmenityDensityChart from "../components/statistics/AmenityDensityChart";
+import TransportConnectivityChart from "../components/statistics/TransportConnectivityChart";
 import { getParkDistrictAreaDistribution } from "../utils/statistics";
+import { calculateParkDensity, calculateAmenityDensity, calculateTransportConnectivity, getDensitySummary } from "../utils/advancedStatistics";
 import type { Park } from "../types/park";
 
 interface DistrictStats {
@@ -79,6 +83,18 @@ const StatisticsPage = () => {
   const [districtMetric, setDistrictMetric] = useState<
     "parkCount" | "totalArea" | "coveragePercentage"
   >("parkCount");
+  const [densityMetric, setDensityMetric] = useState<
+    "parksPerKm2" | "avgParkSize"
+  >("parksPerKm2");
+  const [amenityDensityMetric, setAmenityDensityMetric] = useState<
+    "amenitiesPerKm2" | "amenitiesPerPark" | "uniqueAmenityTypes"
+  >("amenitiesPerPark");
+  const [transportMetric, setTransportMetric] = useState<
+    "connectivityPercentage" | "avgTransportOptions"
+  >("connectivityPercentage");
+  const [parkDensityStats, setParkDensityStats] = useState<any[]>([]);
+  const [amenityDensityStats, setAmenityDensityStats] = useState<any[]>([]);
+  const [transportConnectivityStats, setTransportConnectivityStats] = useState<any[]>([]);
 
   useEffect(() => {
     if (parks.length > 0) {
@@ -121,6 +137,18 @@ const StatisticsPage = () => {
     );
 
     setDistrictStats(stats);
+    
+    // Calculate park density statistics
+    const densityStats = calculateParkDensity(parkData);
+    setParkDensityStats(densityStats);
+    
+    // Calculate amenity density statistics
+    const amenityStats = calculateAmenityDensity(parkData);
+    setAmenityDensityStats(amenityStats);
+    
+    // Calculate transport connectivity statistics
+    const transportStats = calculateTransportConnectivity(parkData);
+    setTransportConnectivityStats(transportStats);
   };
 
   const topDistrictsByPercentage = [...districtStats]
@@ -299,6 +327,7 @@ const StatisticsPage = () => {
             </p>
             <p className="font-serif italic text-xs xl:text-base mt-1 text-deep-charcoal opacity-70">
               Durchschnittliche Parkgröße
+
             </p>
           </div>
         </div>
@@ -510,6 +539,154 @@ const StatisticsPage = () => {
                 </ResponsiveContainer>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Park Density Analysis */}
+        <div className="p-6 border mb-12 bg-card-bg border-border-color">
+          <div className="flex items-center gap-2 mb-6">
+            <BarChart3 className="w-6 h-6 text-primary-green" />
+            <h3 className="font-serif text-2xl text-primary-green italic">
+              Park Dichte Analyse
+            </h3>
+          </div>
+          <div className="mb-4">
+            <div className="flex flex-wrap gap-2">
+              <button
+                onClick={() => setDensityMetric("parksPerKm2")}
+                className={`px-3 py-1 font-mono text-xs rounded ${
+                  densityMetric === "parksPerKm2"
+                    ? "opacity-100 bg-primary-green text-soft-cream"
+                    : "opacity-60 bg-light-sage text-deep-charcoal"
+                }`}
+              >
+                PARKS PRO KM²
+              </button>
+              {/* <button
+                onClick={() => setDensityMetric("avgParkSize")}
+                className={`px-3 py-1 font-mono text-xs rounded ${
+                  densityMetric === "avgParkSize"
+                    ? "opacity-100 bg-primary-green text-soft-cream"
+                    : "opacity-60 bg-light-sage text-deep-charcoal"
+                }`}
+              >
+                DURCHSCHNITTLICHE GRÖSSE
+              </button> */}
+            </div>
+          </div>
+          <div className="w-full h-[400px]">
+            <ResponsiveContainer className="w-full h-full">
+              {({ width, height }) => (
+                <ParkDensityChart
+                  data={parkDensityStats}
+                  width={width || 800}
+                  height={height || 400}
+                  metric={densityMetric}
+                />
+              )}
+            </ResponsiveContainer>
+          </div>
+        </div>
+
+        {/* Amenity Density Analysis */}
+        <div className="p-6 border mb-12 bg-card-bg border-border-color">
+          <div className="flex items-center gap-2 mb-6">
+            <BarChart3 className="w-6 h-6 text-primary-green" />
+            <h3 className="font-serif text-2xl text-primary-green italic">
+              Ausstattung Dichte Analyse
+            </h3>
+          </div>
+          <div className="mb-4">
+            <div className="flex flex-wrap gap-2">
+              <button
+                onClick={() => setAmenityDensityMetric("amenitiesPerKm2")}
+                className={`px-3 py-1 font-mono text-xs rounded ${
+                  amenityDensityMetric === "amenitiesPerKm2"
+                    ? "opacity-100 bg-primary-green text-soft-cream"
+                    : "opacity-60 bg-light-sage text-deep-charcoal"
+                }`}
+              >
+                AUSSTATTUNGEN PRO KM²
+              </button>
+              <button
+                onClick={() => setAmenityDensityMetric("amenitiesPerPark")}
+                className={`px-3 py-1 font-mono text-xs rounded ${
+                  amenityDensityMetric === "amenitiesPerPark"
+                    ? "opacity-100 bg-primary-green text-soft-cream"
+                    : "opacity-60 bg-light-sage text-deep-charcoal"
+                }`}
+              >
+                AUSSTATTUNGEN PRO PARK
+              </button>
+              <button
+                onClick={() => setAmenityDensityMetric("uniqueAmenityTypes")}
+                className={`px-3 py-1 font-mono text-xs rounded ${
+                  amenityDensityMetric === "uniqueAmenityTypes"
+                    ? "opacity-100 bg-primary-green text-soft-cream"
+                    : "opacity-60 bg-light-sage text-deep-charcoal"
+                }`}
+              >
+                EINZIGARTIGE TYPEN
+              </button>
+            </div>
+          </div>
+          <div className="w-full h-[400px]">
+            <ResponsiveContainer className="w-full h-full">
+              {({ width, height }) => (
+                <AmenityDensityChart
+                  data={amenityDensityStats}
+                  width={width || 800}
+                  height={height || 400}
+                  metric={amenityDensityMetric}
+                />
+              )}
+            </ResponsiveContainer>
+          </div>
+        </div>
+
+        {/* Transport Connectivity Analysis */}
+        <div className="p-6 border mb-12 bg-card-bg border-border-color">
+          <div className="flex items-center gap-2 mb-6">
+            <BarChart3 className="w-6 h-6 text-primary-green" />
+            <h3 className="font-serif text-2xl text-primary-green italic">
+              ÖV-Anbindung Analyse
+            </h3>
+          </div>
+          <div className="mb-4">
+            <div className="flex flex-wrap gap-2">
+              <button
+                onClick={() => setTransportMetric("connectivityPercentage")}
+                className={`px-3 py-1 font-mono text-xs rounded ${
+                  transportMetric === "connectivityPercentage"
+                    ? "opacity-100 bg-primary-green text-soft-cream"
+                    : "opacity-60 bg-light-sage text-deep-charcoal"
+                }`}
+              >
+                ÖV-ABDECKUNG %
+              </button>
+              <button
+                onClick={() => setTransportMetric("avgTransportOptions")}
+                className={`px-3 py-1 font-mono text-xs rounded ${
+                  transportMetric === "avgTransportOptions"
+                    ? "opacity-100 bg-primary-green text-soft-cream"
+                    : "opacity-60 bg-light-sage text-deep-charcoal"
+                }`}
+              >
+                DURCHSCHNITT OPTIONEN
+              </button>
+            </div>
+          </div>
+          <div className="w-full h-[400px]">
+            <ResponsiveContainer className="w-full h-full">
+              {({ width, height }) => (
+                <TransportConnectivityChart
+                  data={transportConnectivityStats}
+                  width={width || 800}
+                  height={height || 400}
+                  metric={transportMetric}
+                />
+              )}
+            </ResponsiveContainer>
           </div>
         </div>
 
