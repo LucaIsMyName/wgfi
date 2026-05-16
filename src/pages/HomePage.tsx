@@ -169,7 +169,7 @@ const HomePage: React.FC = () => {
       {/* Gradient Overlay */}
       <section
         id="gradient-layers"
-        className="absolute inset-0 pointer-events-none"
+        className="hidden absolute inset-0 pointer-events-none"
       >
         <div
           className="absolute inset-0 pointer-events-none"
