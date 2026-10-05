@@ -76,7 +76,6 @@ const ParksListPage = () => {
             onSortChange={updateSortOrder}
             onNearestSort={handleNearestSort}
             onResetFilters={resetAllFilters}
-            isHighContrast={isHighContrast}
           />
 
           {/* Parks List - Virtualized */}
@@ -106,7 +105,6 @@ const ParksListPage = () => {
         onSortChange={updateSortOrder}
         onNearestSort={handleNearestSort}
         onResetFilters={resetAllFilters}
-        isHighContrast={isHighContrast}
       />
     </div>
   );

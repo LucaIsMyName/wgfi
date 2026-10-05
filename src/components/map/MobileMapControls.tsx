@@ -1,8 +1,10 @@
+import { useMemo } from "react";
 import { Navigation, Map as MapIcon } from "lucide-react";
 import { Button } from "../ui/Button";
 import { Select } from "../ui/Select";
 import { MultiSelect } from "../ui/MultiSelect";
 import AddressSearch from "./AddressSearch";
+import { buildDistrictSelectOptions } from "@/components/parks/parksFilterUtils";
 
 interface MobileMapControlsProps {
   selectedDistrict: number | null;
@@ -32,9 +34,14 @@ export default function MobileMapControls({
   onGetUserLocation,
   onAddressSelect,
 }: MobileMapControlsProps) {
+  const districtOptions = useMemo(
+    () => buildDistrictSelectOptions(districts),
+    [districts],
+  );
+
   return (
-    <div className="lg:hidden fixed bottom-0 left-0 right-0 z-10 safe-area-inset-bottom">
-      <div className="bg-card-bg shadow-lg border-t border-primary-green/20">
+    <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40 safe-area-inset-bottom">
+      <div className="bg-main-bg shadow-lg border-t border-primary-green/20">
         {/* Inner spacing container */}
         <div className="px-4 pb-4 pt-3">
           <div className="mb-4">
@@ -75,13 +82,7 @@ export default function MobileMapControls({
             <Select
               value={selectedDistrict ? String(selectedDistrict) : 'all'}
               onValueChange={(value) => onDistrictFilter(value === 'all' ? null : Number(value))}
-              options={[
-                { value: 'all', label: 'Alle Bezirke' },
-                ...districts.sort((a, b) => a - b).map((district) => ({
-                  value: String(district),
-                  label: `${district}. Bezirk`,
-                })),
-              ]}
+              options={districtOptions}
               placeholder="Bezirk"
               fullWidth
               className="min-h-[36px] touch-manipulation"

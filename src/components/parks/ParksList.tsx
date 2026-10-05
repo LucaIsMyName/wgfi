@@ -40,7 +40,7 @@ export default function ParksList({ parks, onToggleFavorite, onToggleCompare, is
   return (
     <div
       ref={parentRef}
-      className="p-4 pt-6 lg:pt-6 h-full"
+      className="p-4 pt-6 pb-24 lg:pb-4 lg:pt-6 h-full"
       style={{
         overflow: 'auto',
         scrollbarWidth: 'none', /* Firefox */
